@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function WeaponsPage() {
   return (
-    <main className="text-white">
+    <main className="text-white col-span-8">
       <div className="prose prose-invert">
         <h1>Weapons</h1>
         <p>
