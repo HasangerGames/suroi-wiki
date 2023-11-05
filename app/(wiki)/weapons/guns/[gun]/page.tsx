@@ -21,11 +21,11 @@ export default function GunPage({ params }: { params: { gun: string } }) {
   );
 
   return (
-    <main className="grid grid-cols-6 lg:grid-cols-8 gap-4">
+    <>
       <div className="col-span-4 lg:col-span-6 prose prose-invert">
         <h1>{gun.name}</h1>
       </div>
       <GunSidebar gun={gun} explosion={explosion} />
-    </main>
+    </>
   );
 }
