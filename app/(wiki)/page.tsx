@@ -37,7 +37,7 @@ export default async function Home() {
         </p>
         <p>
           Based off <span className="font-mono">vendor/suroi</span> commit{" "}
-          <span className="font-mono">{HEAD}</span>
+          <span className="font-mono">{HEAD.slice(0,7)}</span>
         </p>
         <h2>Notable Pages</h2>
         <p>
