@@ -24,7 +24,6 @@ export default function GunPage({ params }: { params: { gun: string } }) {
     <>
       <div className="col-span-4 lg:col-span-6 prose prose-invert">
         <h1 className="hidden sm:block">{gun.name}</h1>
-        <p>Placeholder text</p>
       </div>
       <GunSidebar gun={gun} explosion={explosion} />
       {/* here because reverse flex-col */}
