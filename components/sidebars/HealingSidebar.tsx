@@ -47,7 +47,6 @@ export default function HealingSidebar({
         ))}
       </InfoboxRow>
 
-      <InfoxboxHeader>Sounds</InfoxboxHeader>
       <InfoboxAudioGroup>
         <InfoboxAudio
           name="Use"

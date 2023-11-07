@@ -16,13 +16,16 @@
     "@tailwindcss/typography": "^0.5.10",
     "@types/mdx": "^2.0.9",
     "@vercel/analytics": "^1.1.1",
+    "lucide-react": "^0.292.0",
     "next": "14.0.1",
     "react": "^18",
+    "react-collapse": "^5.1.1",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-collapse": "^5.0.3",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",

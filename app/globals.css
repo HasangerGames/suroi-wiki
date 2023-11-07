@@ -49,4 +49,8 @@
     --input: 12 6.5% 15.1%;
     --ring: 209, 97%, 51%;
   }
+
+  .ReactCollapse--collapse {
+    transition: height 500ms;
+  }
 }

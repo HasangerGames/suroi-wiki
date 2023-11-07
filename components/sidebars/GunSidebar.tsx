@@ -7,6 +7,8 @@ import AmmoIcon from "../icons/AmmoIcon";
 import InfoxboxHeader from "./utils/InfoboxHeader";
 import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
 import GenericSidebar from "./utils/GenericSidebar";
+import InfoboxAudio from "./utils/InfoboxAudio";
+import InfoboxAudioGroup from "./utils/InfoboxAudioGroup";
 
 export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
   return (
@@ -169,6 +171,28 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           </InfoboxRow>
         </>
       )}
+
+      <InfoboxAudioGroup>
+        <InfoboxAudio
+          name="Fire"
+          src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/weapons/${gun.idString}_fire.mp3`}
+        />
+        <InfoboxAudio
+          name="Switch"
+          src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/weapons/${gun.idString}_switch.mp3`}
+        />
+        <InfoboxAudio
+          name="Reload"
+          src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/weapons/${gun.idString}_reload.mp3`}
+        />
+        {explosion && (
+          <InfoboxAudio
+            name="Explosion"
+            // HACK: hardcoded because USAS is the only explosive gun atm
+            src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/usas_explosion.mp3`}
+          />
+        )}
+      </InfoboxAudioGroup>
 
       <InfoxboxHeader>Advanced Stats</InfoxboxHeader>
       <InfoboxRow grid="grid-cols-1">
