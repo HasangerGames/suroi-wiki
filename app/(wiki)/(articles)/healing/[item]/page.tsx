@@ -17,7 +17,6 @@ const ARTICLES = {
 } as Record<string, (props: MDXProps) => JSX.Element>;
 
 export default function HealingPage({ params }: { params: { item: string } }) {
-  // TODO: Article MDX functionality
   const article = ARTICLES[params.item] ?? null;
   return <>{article?.({})}</>;
 }
