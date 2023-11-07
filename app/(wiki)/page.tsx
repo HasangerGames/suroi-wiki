@@ -37,7 +37,7 @@ export default async function Home() {
         </p>
         <p>
           Based off <span className="font-mono">vendor/suroi</span> commit{" "}
-          <span className="font-mono">{HEAD.slice(0,7)}</span>
+          <span className="font-mono">{HEAD.slice(0, 7)}</span>
         </p>
         <h2>Notable Pages</h2>
         <p>
@@ -46,6 +46,9 @@ export default async function Home() {
         <ul>
           <li>
             <Link href="/weapons">List of Weapons</Link>
+          </li>
+          <li>
+            <Link href="/healing">List of Healing Items</Link>
           </li>
         </ul>
       </div>
