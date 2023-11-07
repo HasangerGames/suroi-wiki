@@ -16,7 +16,7 @@ export default function WeaponsPage() {
       </div>
       <FlexTable>
         {Guns.map((gun) => (
-          <div key={gun.idString} className="flex divide-x divide-muted">
+          <div key={gun.idString} className="flex divide-x divide-muted-foreground">
             <div className="flex p-2 items-center justify-center">
               <Image
                 src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/weapons/${gun.idString}.svg`}
