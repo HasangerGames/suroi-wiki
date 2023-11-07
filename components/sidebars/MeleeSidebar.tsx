@@ -30,6 +30,24 @@ export default function MeleeSidebar({ melee }: MeleeSidebarProps) {
             {melee.obstacleMultiplier * melee.damage})
           </InfoboxColumn>
         </InfoboxRow>
+        <InfoboxRow grid="grid-cols-2">
+          <InfoboxColumn
+            title="Max. DPS"
+            abbr="Hypothetical maximum damage per second"
+          >
+            {(melee.damage * (1000 / melee.cooldown)).toFixed(2)}
+          </InfoboxColumn>
+          <InfoboxColumn
+            title="Max. Obstacle DPS"
+            abbr="Hypothetical maximum damage per second for obstacles"
+          >
+            {(
+              melee.damage *
+              melee.obstacleMultiplier *
+              (1000 / melee.cooldown)
+            ).toFixed(2)}
+          </InfoboxColumn>
+        </InfoboxRow>
 
         <InfoxboxHeader>Advanced Stats</InfoxboxHeader>
         <InfoboxRow grid="grid-cols-2">
