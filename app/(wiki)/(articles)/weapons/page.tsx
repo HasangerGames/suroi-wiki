@@ -1,3 +1,4 @@
+import FlexTable from "@/components/tables/FlexTable";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import Image from "next/image";
@@ -13,7 +14,7 @@ export default function WeaponsPage() {
           {Melees.length} melee weapons in the game.
         </p>
       </div>
-      <WeaponsFlexTable>
+      <FlexTable>
         {Guns.map((gun) => (
           <div key={gun.idString} className="flex divide-x divide-muted">
             <div className="flex p-2 items-center justify-center">
@@ -31,8 +32,8 @@ export default function WeaponsPage() {
             </div>
           </div>
         ))}
-      </WeaponsFlexTable>
-      <WeaponsFlexTable>
+      </FlexTable>
+      <FlexTable>
         {Melees.map((melee) => (
           <div key={melee.idString} className="flex divide-x divide-muted">
             <div className="flex p-2 items-center justify-center">
@@ -50,17 +51,7 @@ export default function WeaponsPage() {
             </div>
           </div>
         ))}
-      </WeaponsFlexTable>
+      </FlexTable>
     </main>
-  );
-}
-
-function WeaponsFlexTable({ children }: React.PropsWithChildren) {
-  return (
-    <div className="mt-8 flex justify-center">
-      <div className="w-[60ch] flex divide-y divide-muted flex-col border border-muted">
-        {children}
-      </div>
-    </div>
   );
 }
