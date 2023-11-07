@@ -6,6 +6,8 @@ import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoxboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
+import InfoboxAudioGroup from "./utils/InfoboxAudioGroup";
+import InfoboxAudio from "./utils/InfoboxAudio";
 
 export default function HealingSidebar({
   item,
@@ -39,6 +41,11 @@ export default function HealingSidebar({
           {item.healType === HealType.Adrenaline && "%"}
         </InfoboxColumn>
       </InfoboxRow>
+
+      <InfoxboxHeader>Sounds</InfoxboxHeader>
+      <InfoboxAudioGroup>
+        <InfoboxAudio name="Use" src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/healing/${item.idString}.mp3`}/>
+      </InfoboxAudioGroup>
 
       <InfoxboxHeader>Advanced Stats</InfoxboxHeader>
       <InfoboxRow grid="grid-cols-1">
