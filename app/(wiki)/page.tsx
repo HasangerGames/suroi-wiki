@@ -1,3 +1,4 @@
+import CommitLink from "@/components/links/CommitLink";
 import fs from "fs/promises";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,7 +38,7 @@ export default async function Home() {
         </p>
         <p>
           Based off <span className="font-mono">vendor/suroi</span> commit{" "}
-          <span className="font-mono">{HEAD.slice(0, 7)}</span>
+          <CommitLink sha={HEAD} />.
         </p>
         <h2>Notable Pages</h2>
         <p>
