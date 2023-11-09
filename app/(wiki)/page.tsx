@@ -50,6 +50,9 @@ export default async function Home() {
           <li>
             <Link href="/healing">List of Healing Items</Link>
           </li>
+          <li>
+            <Link href="/loot">Loot Tables</Link>
+          </li>
         </ul>
       </div>
     </main>
