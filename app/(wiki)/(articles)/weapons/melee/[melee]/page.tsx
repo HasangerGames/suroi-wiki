@@ -12,6 +12,12 @@ export function generateMetadata({ params }: { params: { melee: string } }) {
   };
 }
 
+export function generateStaticParams() {
+  return Melees.map((melee) => ({
+    melee: melee.idString,
+  }));
+}
+
 const ARTICLES = {
   kbar: KBarArticle,
 } as Record<string, (props: MDXProps) => JSX.Element>;

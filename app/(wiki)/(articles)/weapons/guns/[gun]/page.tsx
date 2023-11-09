@@ -12,6 +12,12 @@ export function generateMetadata({ params }: { params: { gun: string } }) {
   };
 }
 
+export function generateStaticParams() {
+  return Guns.map((gun) => ({
+    gun: gun.idString,
+  }));
+}
+
 const ARTICLES = {
   ak47: AK47Article,
 } as Record<string, (props: MDXProps) => JSX.Element>;

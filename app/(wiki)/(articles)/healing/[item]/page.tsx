@@ -12,6 +12,12 @@ export function generateMetadata({ params }: { params: { item: string } }) {
   };
 }
 
+export function generateStaticParams() {
+  return HealingItems.map((item) => ({
+    item: item.idString,
+  }));
+}
+
 const ARTICLES = {
   gauze: GauzeArticle,
 } as Record<string, (props: MDXProps) => JSX.Element>;
