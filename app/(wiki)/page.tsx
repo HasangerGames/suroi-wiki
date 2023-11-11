@@ -54,6 +54,9 @@ export default async function Home() {
           <li>
             <Link href="/loot">Loot Tables</Link>
           </li>
+          <li>
+            <Link href="/equipment/armor">List of Armor</Link>
+          </li>
         </ul>
       </div>
     </main>
