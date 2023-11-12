@@ -1,3 +1,4 @@
+import PageCard from "@/components/cards/PageCard";
 import CommitLink from "@/components/links/CommitLink";
 import fs from "fs/promises";
 import Image from "next/image";
@@ -41,23 +42,32 @@ export default async function Home() {
           <CommitLink sha={HEAD} />.
         </p>
         <h2>Notable Pages</h2>
-        <p>
-          <i>More coming soon™</i>
-        </p>
-        <ul>
-          <li>
-            <Link href="/weapons">List of Weapons</Link>
-          </li>
-          <li>
-            <Link href="/healing">List of Healing Items</Link>
-          </li>
-          <li>
-            <Link href="/loot">Loot Tables</Link>
-          </li>
-          <li>
-            <Link href="/equipment/armor">List of Armor</Link>
-          </li>
-        </ul>
+      </div>
+      <div className="flex flex-col lg:flex-row flex-wrap gap-4 mt-8">
+        <PageCard
+          title="Weapons"
+          url="/weapons"
+          image="https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/weapons/ak47.svg"
+          description="List of all weapons in the game"
+        />
+        <PageCard
+          title="Healing Items"
+          url="/healing"
+          image="https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/medikit.svg"
+          description="List of healing items"
+        />
+        <PageCard
+          title="Loot Tables"
+          url="/loot"
+          image="https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/obstacles/flint_crate.svg"
+          description="Loot drop rates"
+        />
+        <PageCard
+          title="Armor"
+          url="/loot"
+          image="https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/vest_2.svg"
+          description="List of armor in the game including helmets and vests"
+        />
       </div>
     </main>
   );
