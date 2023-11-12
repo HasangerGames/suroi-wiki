@@ -2,7 +2,7 @@ import ArmorSidebar from "@/components/sidebars/ArmorSidebar";
 import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
 import { notFound } from "next/navigation";
 
-export default function HealingLayout({
+export default function ArmorLayout({
   children,
   params,
 }: {
