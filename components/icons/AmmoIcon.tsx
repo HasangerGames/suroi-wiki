@@ -6,7 +6,7 @@ export default function AmmoIcon({ ammo, scale = 1 }: AmmoIconProps) {
       src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${ammo}.svg`}
       width={72 * scale}
       height={50 * scale}
-      alt={`Amomo icon for ${ammo}`}
+      alt={`Ammo icon for ${ammo}`}
     />
   );
 }
