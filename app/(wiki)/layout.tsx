@@ -1,5 +1,11 @@
+import { Russo_One } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+
+const font = Russo_One({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function WikiLayout({ children }: React.PropsWithChildren) {
   return (
@@ -15,7 +21,7 @@ export default function WikiLayout({ children }: React.PropsWithChildren) {
                 height={96 / 2}
               />
               <div className="ml-2">
-                <span className="text-lg font-bold group-hover:underline">
+                <span className={`${font.className} text-lg font-bold group-hover:underline`}>
                   Suroi
                   <span className="text-suroi">Auto</span>
                   Wiki
