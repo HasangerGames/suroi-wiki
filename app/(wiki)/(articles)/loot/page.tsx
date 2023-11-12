@@ -12,7 +12,7 @@ export default function LootPage() {
         <p>
           Loot Tables are lists of items that determine the possible drops from
           features around the map. Loot tables also define the chances of
-          various items to drop. .
+          various items to drop.
         </p>
         <h2>Loot Tiers</h2>
         <p>
