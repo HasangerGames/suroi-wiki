@@ -10,13 +10,15 @@ export default function InfoboxColumn({
         {abbr ? <abbr title={abbr}>{title}</abbr> : title}
       </h4>
       {!image && <p className="">{children}</p>}
-      {image && <div className="flex justify-center items-center">{children}</div>}
+      {image && (
+        <div className="flex justify-center items-center">{children}</div>
+      )}
     </div>
   );
 }
 
 export interface InfoboxColumnProps extends React.PropsWithChildren {
-  title: string;
+  title: React.ReactNode;
   abbr?: string;
   image?: boolean;
 }
