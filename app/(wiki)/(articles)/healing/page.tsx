@@ -14,7 +14,7 @@ export default function HealingPage() {
       </div>
       <FlexTable>
         {HealingItems.map((item) => (
-          <div key={item.idString} className="flex divide-x divide-muted-foreground">
+          <div key={item.idString} className="flex divide-x divide-border">
             <div className="flex p-4 items-center justify-center">
               <Image
                 src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${item.idString}.svg`}

@@ -29,11 +29,11 @@ export default function LootPage() {
               </h3>
             </div>
             <div className="flex justify-center p-8">
-              <table className="table-fixed border-collapse flex-1 border">
-                <thead className="border-b">
+              <table className="table-fixed border-collapse flex-1 border border-border">
+                <thead className="border-b border-border">
                   <tr className="bg-primary">
-                    <th className="p-4 border-r">Item</th>
-                    <th className="p-4 border-r">Weight</th>
+                    <th className="p-4 border-r border-border">Item</th>
+                    <th className="p-4 border-r border-border">Weight</th>
                     <th className="p-4">
                       <abbr title="Relative to other items in this loot tier (approx)">
                         % Chance
@@ -47,14 +47,14 @@ export default function LootPage() {
                       "item" in tier && (
                         <tr
                           key={tier.item}
-                          className="border-b even:bg-blue-400/20"
+                          className="border-b border-border even:bg-blue-400/20"
                         >
-                          <td className="p-4 border-r w-24">
+                          <td className="p-4 border-r border-border w-24">
                             {Loots.definitions.find(
                               (item) => item.idString === tier.item
                             )?.name ?? tier.item}
                           </td>
-                          <td className="p-4 border-r w-24">{tier.weight}</td>
+                          <td className="p-4 border-r border-border w-24">{tier.weight}</td>
                           <td className="p-4 w-24">
                             {(
                               (tier.weight /
@@ -91,11 +91,11 @@ export default function LootPage() {
             </h3>
           </div>
           <div className="flex justify-center p-8">
-            <table className="table-fixed border-collapse flex-1 border">
-              <thead className="border-b">
+            <table className="table-fixed border-collapse flex-1 border border-border">
+              <thead className="border-b border-border">
                 <tr className="bg-primary">
-                  <th className="p-4 border-r">Tier / Item</th>
-                  <th className="p-4 border-r">Weight</th>
+                  <th className="p-4 border-r border-border">Tier / Item</th>
+                  <th className="p-4 border-r border-border">Weight</th>
                   <th className="p-4">
                     <abbr title="Relative to other tiers in this loot table (approx)">
                       % Chance
@@ -108,10 +108,10 @@ export default function LootPage() {
                   "tier" in tier ? (
                     <tr
                       key={tier.tier}
-                      className="border-b even:bg-blue-400/20"
+                      className="border-b border-border even:bg-blue-400/20"
                     >
-                      <td className="p-4 border-r w-24">Tier {tier.tier}</td>
-                      <td className="p-4 border-r w-24">{tier.weight}</td>
+                      <td className="p-4 border-r border-border w-24">Tier {tier.tier}</td>
+                      <td className="p-4 border-r border-border w-24">{tier.weight}</td>
                       <td className="p-4 w-24">
                         {(
                           (tier.weight /
@@ -127,15 +127,15 @@ export default function LootPage() {
                     "item" in tier && (
                       <tr
                         key={tier.item}
-                        className="border-b even:bg-blue-400/20"
+                        className="border-b border-border even:bg-blue-400/20"
                       >
-                        <td className="p-4 border-r w-24">
+                        <td className="p-4 border-r border-border w-24">
                           Item{" "}
                           {Loots.definitions.find(
                             (item) => item.idString === tier.item
                           )?.name ?? tier.item}
                         </td>
-                        <td className="p-4 border-r w-24">{tier.weight}</td>
+                        <td className="p-4 border-r border-border w-24">{tier.weight}</td>
                         <td className="p-4 w-24">
                           {(
                             (tier.weight /
