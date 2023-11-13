@@ -37,6 +37,11 @@ export default function Searchbar() {
         />
         {searchQuery.data && (
           <div className="top-[95%] max-h-[50vh] overflow-y-auto absolute flex flex-col gap-2 p-2 pt-4 w-full rounded-b-md bg-muted border-x border-b border-border">
+            {!searchQuery.data.length && (
+              <div className="flex justify-center items-center">
+                <span>No items found</span>
+              </div>
+            )}
             {searchQuery.data.map((item) => (
               <div key={item.idString}>
                 <Link
