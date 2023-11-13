@@ -11,7 +11,6 @@ import { useState } from "react";
 
 export default function Searchbar() {
   const [query, setQuery] = useState("");
-  const [focused, setFocused] = useState(false);
   const search = useDebounce(query, 200);
 
   const searchQuery = useQuery<(ItemDefinition & { search: SearchResult })[]>({
@@ -23,7 +22,9 @@ export default function Searchbar() {
 
   return (
     <>
-      <div className="flex relative">
+      <div
+        className="flex relative"
+      >
         <div className="flex items-center border-l border-y z-10 border-border rounded-l-md p-2 bg-muted">
           <Search className="w-4 h-4" />
         </div>
@@ -33,10 +34,8 @@ export default function Searchbar() {
           onChange={(e) => setQuery(e.target.value)}
           className="bg-muted rounded-r-md p-2 z-10"
           placeholder="Search..."
-          onFocus={() => setFocused(true)}
-          onBlur={() => setFocused(false)}
         />
-        {searchQuery.data && focused && (
+        {searchQuery.data && (
           <div className="top-[95%] max-h-[50vh] overflow-y-auto absolute flex flex-col gap-2 p-2 pt-4 w-full rounded-b-md bg-muted border-x border-b border-border">
             {searchQuery.data.map((item) => (
               <div key={item.idString}>
