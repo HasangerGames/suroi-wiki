@@ -1,4 +1,7 @@
+import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
+import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import { ItemDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { NextRequest, NextResponse } from "next/server";
@@ -18,6 +21,29 @@ const CATEGORIES: SearchCategory[] = [
     imagePath:
       "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/weapons/",
   },
+
+  {
+    path: "/equipment/armor",
+    name: "Armor",
+    items: Armors,
+    imagePath:
+      "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/",
+  },
+  {
+    path: "/equipment/backpacks",
+    name: "Backpacks",
+    items: Backpacks,
+    imagePath:
+      "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/",
+  },
+
+  {
+    path: "/healing",
+    name: "Healing",
+    items: HealingItems,
+    imagePath:
+      "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/",
+  },
 ];
 
 // Handle search server side so we don't ship too much of vendor/suroi to the client
@@ -30,7 +56,14 @@ export async function GET(req: NextRequest) {
 
   for (const category of CATEGORIES) {
     for (const item of category.items) {
-      if (item.name.toLowerCase().includes(search.toLowerCase())) {
+      const expanded = item.name
+        .toLowerCase()
+        .replace("lvl", "level")
+        .replace(".", "");
+      if (
+        item.name.toLowerCase().includes(search.toLowerCase()) ||
+        expanded.includes(search.toLowerCase())
+      ) {
         items.push({
           ...item,
           search: {
