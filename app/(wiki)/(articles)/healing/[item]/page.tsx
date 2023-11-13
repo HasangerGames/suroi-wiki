@@ -1,28 +1,12 @@
+import GenericMDXPageFactory, {
+  GenericGenerateMetadataFactory,
+  GenericGenerateStaticParamsFactory,
+} from "@/components/layouts/GenericMDXPageFactory";
 import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems";
-import { notFound } from "next/navigation";
-import GauzeArticle from "../articles/gauze.mdx";
-import { MDXProps } from "mdx/types";
 
-export function generateMetadata({ params }: { params: { item: string } }) {
-  const item = HealingItems.find((item) => item.idString === params.item);
-  if (!item) notFound();
+export const generateMetadata = GenericGenerateMetadataFactory(HealingItems);
+export const generateStaticParams = GenericGenerateStaticParamsFactory(HealingItems);
 
-  return {
-    title: item.name,
-  };
-}
-
-export function generateStaticParams() {
-  return HealingItems.map((item) => ({
-    item: item.idString,
-  }));
-}
-
-const ARTICLES = {
-  gauze: GauzeArticle,
-} as Record<string, (props: MDXProps) => JSX.Element>;
-
-export default function HealingPage({ params }: { params: { item: string } }) {
-  const article = ARTICLES[params.item] ?? null;
-  return <>{article?.({})}</>;
-}
+export default GenericMDXPageFactory({
+  path: "healing"
+});

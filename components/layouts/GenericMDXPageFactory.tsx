@@ -1,22 +1,48 @@
 import { ItemDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
-import { MDXProps } from "mdx/types";
 import { notFound } from "next/navigation";
+import fs from "fs/promises";
+import { serialize } from "next-mdx-remote/serialize";
+import path from "path";
+// import { MDXRemote } from "next-mdx-remote";
+import MDXClient from "../client/MDXClient";
 
 export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
-  return function GenericMDXPage({
+  return async function GenericMDXPage({
     params,
   }: {
     params: {
       item: string;
     };
   }) {
-    const article = args.articles[params.item] ?? null;
-    return <>{article?.({})}</>;
+    const files = await fs.readdir(
+      path.join(process.cwd(), `/app/(wiki)/(articles)/${args.path}/articles`),
+      { withFileTypes: true }
+    );
+
+    const articles = Object.fromEntries(
+      await Promise.all(
+        files.map(async (file) => [
+          file.name,
+          await serialize(await fs.readFile(path.join(file.path, file.name))),
+        ])
+      )
+    );
+
+    const article = articles[params.item + ".mdx"] ?? null;
+
+    if (article)
+      return (
+        <>
+          <MDXClient {...article} />
+        </>
+      );
+
+    return <></>;
   };
 }
 
 export interface GenericMDXPageFactoryArgs {
-  articles: Record<string, (props: MDXProps) => JSX.Element>;
+  path: string;
 }
 
 export function GenericGenerateStaticParamsFactory<T extends ItemDefinition>(
@@ -29,7 +55,9 @@ export function GenericGenerateStaticParamsFactory<T extends ItemDefinition>(
   };
 }
 
-export function GenericGenerateMetadataFactory<T extends ItemDefinition>(items: T[]) {
+export function GenericGenerateMetadataFactory<T extends ItemDefinition>(
+  items: T[]
+) {
   return function ({ params }: { params: { item: string } }) {
     const item = items.find((item) => item.idString === params.item);
     if (!item) notFound();

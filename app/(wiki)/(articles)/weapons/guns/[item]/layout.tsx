@@ -8,10 +8,10 @@ export default function GunLayout({
   params,
 }: {
   params: {
-    gun: string;
+    item: string;
   };
 } & React.PropsWithChildren) {
-  const gun = Guns.find((gun) => gun.idString === params.gun);
+  const gun = Guns.find((gun) => gun.idString === params.item);
   if (!gun) notFound();
 
   const explosion = Explosions.definitions.find(

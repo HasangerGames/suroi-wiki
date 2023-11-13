@@ -1,3 +1,4 @@
+import Searchbar from "@/components/interactive/Searchbar";
 import { Russo_One } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,7 +22,9 @@ export default function WikiLayout({ children }: React.PropsWithChildren) {
                 height={96 / 2}
               />
               <div className="ml-2">
-                <span className={`${font.className} text-lg font-bold group-hover:underline`}>
+                <span
+                  className={`${font.className} text-lg font-bold group-hover:underline`}
+                >
                   Suroi
                   <span className="text-suroi">Auto</span>
                   Wiki
@@ -30,7 +33,9 @@ export default function WikiLayout({ children }: React.PropsWithChildren) {
             </div>
           </Link>
           <div className="flex-1"></div>
-          <div></div>
+          <div className="flex items-center">
+            <Searchbar />
+          </div>
         </div>
       </nav>
       <div className="container my-8">

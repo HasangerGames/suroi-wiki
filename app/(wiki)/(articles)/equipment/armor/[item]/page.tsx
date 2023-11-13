@@ -1,28 +1,12 @@
-import { notFound } from "next/navigation";
-import { MDXProps } from "mdx/types";
 import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
-import Vest2Article from "../articles/vest_2.mdx";
+import GenericMDXPageFactory, {
+  GenericGenerateMetadataFactory,
+  GenericGenerateStaticParamsFactory,
+} from "@/components/layouts/GenericMDXPageFactory";
 
-export function generateMetadata({ params }: { params: { item: string } }) {
-  const item = Armors.find((item) => item.idString === params.item);
-  if (!item) notFound();
+export const generateMetadata = GenericGenerateMetadataFactory(Armors);
+export const generateStaticParams = GenericGenerateStaticParamsFactory(Armors);
 
-  return {
-    title: item.name,
-  };
-}
-
-export function generateStaticParams() {
-  return Armors.map((item) => ({
-    item: item.idString,
-  }));
-}
-
-const ARTICLES = {
-  vest_2: Vest2Article,
-} as Record<string, (props: MDXProps) => JSX.Element>;
-
-export default function ArmorPage({ params }: { params: { item: string } }) {
-  const article = ARTICLES[params.item] ?? null;
-  return <>{article?.({})}</>;
-}
+export default GenericMDXPageFactory({
+  path: "equipment/armor",
+});

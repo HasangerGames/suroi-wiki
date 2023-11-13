@@ -1,6 +1,5 @@
 import { FireMode } from "@/vendor/suroi/common/src/constants";
 import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
-import Image from "next/image";
 import InfoboxRow from "./utils/InfoboxRow";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import AmmoIcon from "../icons/AmmoIcon";
