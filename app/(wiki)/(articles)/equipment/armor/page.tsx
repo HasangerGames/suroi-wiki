@@ -82,7 +82,7 @@ export default function ArmorPage() {
               />
             </div>
             <div className="flex-1 flex items-center p-2">
-              <Link href={`/weapons/melee/${helmet.idString}`}>
+              <Link href={`/equipment/armor/${helmet.idString}`}>
                 <h2 className="text-lg font-bold underline">{helmet.name}</h2>
               </Link>
             </div>
