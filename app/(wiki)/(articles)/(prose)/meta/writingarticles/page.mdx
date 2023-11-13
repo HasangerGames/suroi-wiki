@@ -1,0 +1,59 @@
+import Link from "next/link"
+import Event from "@/components/articles/notices/Event"
+import TimeLink from "@/components/links/TimeLink"
+
+# Writing Articles
+
+First of all, thanks for helping out with the documentation! Since this wiki is community-run, we need all the help we can get.
+Since this wiki is a custom coded solution, creating articles is a bit different to what you might be used to over on Fandom.
+
+Articles are written in [MDX](https://mdxjs.com/docs/what-is-mdx/), an extension of the typical Markdown you may be used to.
+
+# Style Guide
+
+There is currently no official style guide. Just make sure it is understandable to a wide audience and free of spelling and grammar mistakes.
+In addition, try to keep the article balanced in opinion.
+
+# Syntax
+
+See the [MDX](https://mdxjs.com/docs/what-is-mdx/) docs for a detailed overview of MDX. If you are new to Markdown, you can find a 
+guide [here](https://www.markdownguide.org/basic-syntax/).
+
+There are a few special syntax rules.
+
+1. Use `<Link>` when linking to other articles. Use normal markdown links (`[Text](https://example.com)`) when linking to external sites.
+The reason for this is that the wiki uses a custom Link component that allows for internal linking without reloading the page.
+
+2. Use `<Image src="https://example.com/image.png" height={128} width={128} alt="A placeholder image" />` when inserting images. This is because Next.js
+(the software used to render the wiki) can optimise images for faster loading when using this special tag.
+
+## Extensions
+
+There are a couple MDX/JSX tags you can use to make your articles more interactive. They are listed below for your reference.
+
+### `<Event />`
+Shows a small banner at the top of the page like the one on the <Link href="/weapons/guns/usas12">USAS-12 Article</Link> notifying readers
+that this item is only available in a specific event. See below:
+
+<Event />
+
+### `<CommitLink sha="" />`
+Shows a link to a commit on the GitHub repo. Useful for linking to the commit that introduced a feature.
+
+- **sha** The SHA1 hash of the commit. Can be shortened to 7 characters.
+
+```md
+This vest used to be called the "Bulletproof Vest" until it was updated in <CommitLink sha="1da8f75e"/>. **#bringbackbulletproofvest**
+```
+
+### `<TimeLink time={1699868632020} />`
+Shows a link to a specific time. Adjusts to the user's timezone. Clicking on it copies the ISO 8601 timestamp to the clipboard, and hovering shows it.
+See below:
+
+<TimeLink time={1699868632020}/>
+
+- **time** Unix milliseconds, UTC of course
+
+```md
+The example used above is: <TimeLink date={1699868632020}/>
+```
