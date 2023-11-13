@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import TanstackQuery from "@/components/providers/TanstackQuery";
 
 const font = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,7 @@ export default function RootLayout({
       <body
         className={`min-h-screen bg-background font-sans antialiased text-white box-border dark ${font.className}`}
       >
-        {children}
+        <TanstackQuery>{children}</TanstackQuery>
         <Analytics />
       </body>
     </html>
