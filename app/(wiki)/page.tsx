@@ -65,7 +65,7 @@ export default async function Home() {
         <PageCard
           title="Armor"
           url="/equipment/armor"
-          image="https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/vest_2.svg"
+          image="https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/regular_vest.svg"
           description="List of armor in the game including helmets and vests"
         />
       </div>
