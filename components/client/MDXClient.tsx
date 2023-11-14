@@ -6,13 +6,15 @@ import EventItem from "../articles/notices/Event";
 import TimeLink from "../links/TimeLink";
 import CommitLink from "../links/CommitLink";
 import FileLink from "../links/FileLink";
+import DevWeapon from "../articles/notices/DevWeapon";
 
 const components = {
   Link,
   Event: EventItem,
   TimeLink,
   FileLink,
-  CommitLink
+  CommitLink,
+  DevWeapon,
 };
 
 export default function MDXClient(props: MDXRemoteProps) {
