@@ -21,7 +21,7 @@ export default function WikiLayout({ children }: React.PropsWithChildren) {
                 width={96 / 2}
                 height={96 / 2}
               />
-              <div className="ml-2">
+              <div className="ml-2 hidden sm:block">
                 <span
                   className={`${font.className} text-lg font-bold group-hover:underline`}
                 >

@@ -23,7 +23,7 @@ export default function Searchbar() {
   return (
     <>
       <div
-        className="flex relative"
+        className="flex relative justify-end"
       >
         <div className="flex items-center border-l border-y z-10 border-border rounded-l-md p-2 bg-muted">
           <Search className="w-4 h-4" />
@@ -32,7 +32,7 @@ export default function Searchbar() {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="bg-muted rounded-r-md p-2 z-10"
+          className="bg-muted rounded-r-md p-2 z-10 max-sm:max-w-[50%]"
           placeholder="Search..."
         />
         {searchQuery.data && (
