@@ -22,7 +22,7 @@ export default function ArmorPage() {
         <p>
           Wearing armor helps reduce damage to you from most sources. Damage
           reduction is additive (see{" "}
-          <FileLink file="server/src/objects/player.ts" lines={[592, 595]}>
+          <FileLink file="server/src/objects/player.ts" lines={747}>
             player.ts
           </FileLink>
           ). For example if you were wearing a{" "}
