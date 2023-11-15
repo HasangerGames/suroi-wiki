@@ -7,6 +7,7 @@ import TimeLink from "../links/TimeLink";
 import CommitLink from "../links/CommitLink";
 import FileLink from "../links/FileLink";
 import DevWeapon from "../articles/notices/DevWeapon";
+import { HTMLProps } from "react";
 
 const components = {
   Link,
@@ -15,6 +16,11 @@ const components = {
   FileLink,
   CommitLink,
   DevWeapon,
+  a: (props: HTMLProps<HTMLAnchorElement>) => (
+    <Link title={props.title} href={props.href!}>
+      {props.children}
+    </Link>
+  ),
 };
 
 export default function MDXClient(props: MDXRemoteProps) {
