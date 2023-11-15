@@ -3,6 +3,7 @@ import {
   LootTables,
 } from "@/vendor/suroi/server/src/data/lootTables";
 import { Loots } from "@/vendor/suroi/common/src/definitions/loots";
+import LootCalc from "@/components/interactive/LootCalc";
 
 export default function LootPage() {
   return (
@@ -54,7 +55,9 @@ export default function LootPage() {
                               (item) => item.idString === tier.item
                             )?.name ?? tier.item}
                           </td>
-                          <td className="p-4 border-r border-border w-24">{tier.weight}</td>
+                          <td className="p-4 border-r border-border w-24">
+                            {tier.weight}
+                          </td>
                           <td className="p-4 w-24">
                             {(
                               (tier.weight /
@@ -110,8 +113,12 @@ export default function LootPage() {
                       key={tier.tier}
                       className="border-b border-border even:bg-blue-400/20"
                     >
-                      <td className="p-4 border-r border-border w-24">Tier {tier.tier}</td>
-                      <td className="p-4 border-r border-border w-24">{tier.weight}</td>
+                      <td className="p-4 border-r border-border w-24">
+                        Tier {tier.tier}
+                      </td>
+                      <td className="p-4 border-r border-border w-24">
+                        {tier.weight}
+                      </td>
                       <td className="p-4 w-24">
                         {(
                           (tier.weight /
@@ -135,7 +142,9 @@ export default function LootPage() {
                             (item) => item.idString === tier.item
                           )?.name ?? tier.item}
                         </td>
-                        <td className="p-4 border-r border-border w-24">{tier.weight}</td>
+                        <td className="p-4 border-r border-border w-24">
+                          {tier.weight}
+                        </td>
                         <td className="p-4 w-24">
                           {(
                             (tier.weight /
@@ -162,9 +171,8 @@ export default function LootPage() {
             Use this interactive calculator to determine the chance of an item
             dropping from an obstacle.
           </p>
-
-          <p>Loot calculator coming soon™</p>
         </div>
+        <LootCalc />
       </div>
     </div>
   );
