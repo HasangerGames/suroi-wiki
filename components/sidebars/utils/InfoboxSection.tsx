@@ -26,7 +26,7 @@ export default function InfoboxSection({
         </div>
       </div>
       <Collapse isOpened={isOpened}>
-        <div className={`border-t-primary border-t text-center divide-x divide-primary grid ${grid} text-sm`}>
+        <div className={`border-t border-t-primary text-center divide-x divide-primary grid ${grid} text-sm`}>
           {children}
         </div>
       </Collapse>
@@ -35,7 +35,7 @@ export default function InfoboxSection({
 }
 
 export interface InfoboxSectionProps extends React.PropsWithChildren {
-  grid?: `grid-cols-${number}`;
+  grid?: `grid-cols-${number}`
   abbr?: string;
   title?: string;
 }
