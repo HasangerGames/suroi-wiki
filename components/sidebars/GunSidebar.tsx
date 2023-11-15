@@ -9,7 +9,11 @@ import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxAudio from "./utils/InfoboxAudio";
 import InfoboxAudioGroup from "./utils/InfoboxAudioGroup";
 import InfoboxSection from "./utils/InfoboxSection";
-import { WithRequired } from "@/lib/ts/utility";
+import { Unpacked, WithRequired } from "@/lib/ts/utility";
+import {
+  ItemDefinition,
+  WearerAttributes,
+} from "@/vendor/suroi/common/src/utils/objectDefinitions";
 
 export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
   return (
@@ -357,7 +361,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
         </>
       )} */}
 
-      {gun.wearerAttributes && <WearerAttributes gun={gun as any} />}
+      {gun.wearerAttributes && <Effects gun={gun as any} />}
 
       {explosion && (
         <>
@@ -438,10 +442,80 @@ export interface GunSidebarProps {
   explosion?: ExplosionDefinition;
 }
 
-function WearerAttributes({
+function Effects({
   gun,
 }: {
   gun: WithRequired<GunDefinition, "wearerAttributes">;
 }) {
-  return <></>;
+  return (
+    <>
+      <InfoboxSection title="Effects" grid="grid-cols-1">
+        {gun.wearerAttributes.passive && (
+          <InfoboxSection title="Passive" grid="grid-cols-1">
+            <Attributes attributes={gun.wearerAttributes.passive} />
+          </InfoboxSection>
+        )}
+        {gun.wearerAttributes.on && (
+          <InfoboxSection title="Conditional" grid="grid-cols-1">
+            {gun.wearerAttributes.on.kill && (
+              <>
+                {gun.wearerAttributes.on.kill.map((attr) => (
+                  <Attributes attributes={attr} key={attr.healthRestored} />
+                ))}
+              </>
+            )}
+          </InfoboxSection>
+        )}
+      </InfoboxSection>
+    </>
+  );
+}
+
+function Attributes({
+  attributes,
+}: {
+  attributes:
+    | WearerAttributes
+    | NonNullable<
+        Unpacked<
+          WithRequired<
+            WithRequired<
+              ItemDefinition,
+              "wearerAttributes"
+            >["wearerAttributes"],
+            "on"
+          >["on"]["kill"]
+        >
+      >;
+}) {
+  return (
+    <>
+      <InfoboxRow grid="grid-cols-2">
+        <InfoboxColumn title="Health Multiplier">
+          {attributes.maxHealth ?? "None"}
+        </InfoboxColumn>
+        <InfoboxColumn title="Adrenaline Multiplier">
+          {attributes.maxAdrenaline ?? "None"}
+        </InfoboxColumn>
+      </InfoboxRow>
+      <InfoboxRow grid="grid-cols-2">
+        <InfoboxColumn title="Min. Adrenaline">
+          {attributes.minAdrenaline ?? "Unchanged"}
+        </InfoboxColumn>
+        <InfoboxColumn title="Speed Multipler">
+          {attributes.speedBoost ?? "None"}
+        </InfoboxColumn>
+      </InfoboxRow>
+      {"limit" in attributes && (
+        <InfoboxRow>
+          <InfoboxColumn
+            title="Health Restored"
+            abbr="Health restored when this condition is met"
+          >
+            {attributes.healthRestored ?? "None"}
+          </InfoboxColumn>
+        </InfoboxRow>
+      )}
+    </>
+  );
 }
