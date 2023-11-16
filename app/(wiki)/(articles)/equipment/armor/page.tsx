@@ -5,7 +5,7 @@ import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
 import { Helmets } from "@/vendor/suroi/common/src/definitions/helmets";
 import { Vests } from "@/vendor/suroi/common/src/definitions/vests";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/links/Link";
 
 export default function ArmorPage() {
   const vest2 = Vests[2];
