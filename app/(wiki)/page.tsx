@@ -34,7 +34,7 @@ export default async function Home() {
           .
         </p>
         <p>
-          Stats are based off commit{" "}
+          Stats are based off Suroi commit{" "}
           <CommitLink sha={HEAD} />.
         </p>
         <h2>Notable Pages</h2>
