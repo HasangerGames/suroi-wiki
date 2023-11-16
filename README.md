@@ -3,13 +3,13 @@
 The official wiki for [Suroi](https://suroi.io), an open-source 2D battle royale game inspired by surviv.io.
 
 ## Setup
-[Node.js](https://nodejs.org/en) and [pnpm](https://pnpm.io) are required.
+[Node.js](https://nodejs.org/en) 20+ and [pnpm](https://pnpm.io) are required.
 
 If you don't have `pnpm` installed, you can install it with `npm i -g pnpm`.
 
 ```shell
-git clone https://github.com/Compositr/suroiautowiki.git
-cd suroiautowiki
+git clone https://github.com/HasangerGames/suroi-wiki.git
+cd suroi-wiki
 git submodule init
 git submodule update --remote
 pnpm install
