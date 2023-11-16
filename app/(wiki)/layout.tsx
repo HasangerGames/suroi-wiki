@@ -19,7 +19,7 @@ export default function WikiLayout({ children }: React.PropsWithChildren) {
               </div>
             </div>
           </Link>
-          <div className="flex items-center ml-auto w-1/4">
+          <div className="flex items-center ml-5 min-[530px]:ml-auto">
             <Searchbar />
           </div>
         </div>
