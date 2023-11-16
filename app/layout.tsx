@@ -7,17 +7,17 @@ import TanstackQuery from "@/components/providers/TanstackQuery";
 const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://suroiwautowiki.vercel.app"),
+  metadataBase: new URL("https://wiki.suroi.io"),
 
   title: {
-    default: "Suroi Auto Wiki",
-    template: "%s | Suroi Auto Wiki",
+    default: "Suroi Wiki",
+    template: "%s | Suroi Wiki",
   },
-  description: "Automatically updating knowledge base for suroi.io",
+  description: "The official wiki for Suroi, an open-source 2D battle royale game inspired by surviv.io.",
   openGraph: {
     type: "website",
   },
-  keywords: ["suroi", "surviv", "suroi.io", "suroiio", "wiki", "community", "shooter"],
+  keywords: ["suroi", "surviv", "suroi.io", "suroiio", "wiki", "open-source", "battle-royale", "community", "shooter"],
 };
 
 export const viewport: Viewport = {
