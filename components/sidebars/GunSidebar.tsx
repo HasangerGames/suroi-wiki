@@ -54,9 +54,9 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
         </InfoboxColumn>
         <InfoboxColumn
           title="Move Spread"
-          abbr="Spread when moving (added onto regular spread)"
+          abbr="Spread (angle of inaccuracy when moving"
         >
-          {gun.moveSpread}°
+          {((gun.moveSpread)+(gun.shotSpread))}°
         </InfoboxColumn>
       </InfoboxRow>
       <InfoxboxHeader>Ballistics</InfoxboxHeader>
