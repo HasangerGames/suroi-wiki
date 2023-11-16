@@ -5,9 +5,19 @@ export default function URLLink(
     React.PropsWithChildren & {
       target?: string;
       className?: string;
+      unstyled?: boolean;
     }
 ) {
+  const { unstyled, ...passProps } = props;
+  
   return (
-    <Link {...props} className={`${props.className} text-suroi no-underline hover:underline`} />
+    <Link
+      {...passProps}
+      className={
+        unstyled
+          ? props.className
+          : `${props.className} text-suroi no-underline hover:underline`
+      }
+    />
   );
 }
