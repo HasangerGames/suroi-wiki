@@ -1,7 +1,7 @@
 import Searchbar from "@/components/interactive/Searchbar";
 import { Russo_One } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/links/Link";
 
 const font = Russo_One({
   subsets: ["latin"],
