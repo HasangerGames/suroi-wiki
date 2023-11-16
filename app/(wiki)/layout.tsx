@@ -13,7 +13,7 @@ export default function WikiLayout({ children }: React.PropsWithChildren) {
     <div>
       <nav className="mb-4 py-4 border-b border-b-[gray]">
         <div className="container flex">
-          <Link href="/">
+          <Link href="/" unstyled>
             <div className="flex items-center group">
               <Image
                 src="/img/logo.svg"
