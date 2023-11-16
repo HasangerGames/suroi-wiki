@@ -16,7 +16,7 @@ pnpm install
 ```
 
 ## Development
-To start a local development server, run `pnpm dev`.
+To start a local development server, run `pnpm dev`, then go to https://127.0.0.1:3000 in your browser.
 
 ## Production
 To build for production, run `pnpm build`. To start the server, run `pnpm start`.
