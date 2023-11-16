@@ -5,6 +5,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
 // import { MDXRemote } from "next-mdx-remote";
 import MDXClient from "../client/MDXClient";
+import { Metadata } from "next";
 
 export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
   return async function GenericMDXPage({
@@ -58,12 +59,15 @@ export function GenericGenerateStaticParamsFactory<T extends ItemDefinition>(
 export function GenericGenerateMetadataFactory<T extends ItemDefinition>(
   items: T[]
 ) {
-  return function ({ params }: { params: { item: string } }) {
+  return function ({ params }: { params: { item: string } }): Metadata {
     const item = items.find((item) => item.idString === params.item);
     if (!item) notFound();
 
     return {
       title: item.name,
+      openGraph: {
+        type: "article",
+      }
     };
   };
 }
