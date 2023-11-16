@@ -8,6 +8,6 @@ export default function URLLink(
     }
 ) {
   return (
-    <Link {...props} className={`${props.className} text-suroi no-underline`} />
+    <Link {...props} className={`${props.className} text-suroi no-underline hover:underline`} />
   );
 }
