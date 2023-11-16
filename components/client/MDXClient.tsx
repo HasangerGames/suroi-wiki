@@ -8,6 +8,7 @@ import CommitLink from "../links/CommitLink";
 import FileLink from "../links/FileLink";
 import DevWeapon from "../articles/notices/DevWeapon";
 import { HTMLProps } from "react";
+import Removed from "../articles/notices/Removed";
 
 const components = {
   Link,
@@ -15,6 +16,7 @@ const components = {
   TimeLink,
   FileLink,
   CommitLink,
+  Removed,
   DevWeapon,
   a: (props: HTMLProps<HTMLAnchorElement>) => (
     <Link title={props.title} href={props.href!}>
