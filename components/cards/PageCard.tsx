@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/links/Link";
 
 export default function PageCard({
   title,
@@ -9,7 +9,7 @@ export default function PageCard({
 }: PageCardProps) {
   return (
     <div className="flex-1">
-      <Link href={url}>
+      <Link href={url} unstyled>
         <div className="p-4 rounded-md border border-border flex gap-8 w-full transition-colors h-full hover:border-blue-500 group">
           <div className="flex items-center justify-center">
             <Image
