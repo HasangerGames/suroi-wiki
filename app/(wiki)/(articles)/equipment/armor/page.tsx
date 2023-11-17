@@ -56,19 +56,18 @@ export default function ArmorPage() {
           </thead>
           <tbody>
             {Armors.map((armor) => (
-              <tr key={armor.idString}>
+              <tr key={armor.idString} className="">
                 <td>
-                  <div className="flex items-center gap-2 w-min h-min">
-                    <Image
-                      src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${armor.idString}.svg`}
-                      width={32}
-                      height={32}
-                      alt={`${armor.name} image`}
-                    />
-                    <Link href={`/equipment/armor/${armor.idString}`}>
-                      {armor.name}
-                    </Link>
-                  </div>
+                  <Image
+                    src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${armor.idString}.svg`}
+                    width={32}
+                    height={32}
+                    alt={`${armor.name} image`}
+                    className="h-min inline-block m-0 mr-2"
+                  />
+                  <Link href={`/equipment/armor/${armor.idString}`}>
+                    {armor.name}
+                  </Link>
                 </td>
                 <td>{armor.level}</td>
                 <td>{armor.damageReduction * 100}%</td>
