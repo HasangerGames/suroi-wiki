@@ -1,4 +1,5 @@
 import { FileCode2 } from "lucide-react";
+import Link from "./Link"
 
 export default function FileLink({
   file,
@@ -9,7 +10,7 @@ export default function FileLink({
   lines?: number | [number, number];
 } & Required<React.PropsWithChildren>) {
   return (
-    <a
+    <Link
       target="_blank"
       href={`https://github.com/HasangerGames/suroi/blob/master/${file}${
         lines ? `#L${Array.isArray(lines) ? lines.join("-L") : lines}` : ""
@@ -20,6 +21,6 @@ export default function FileLink({
         <FileCode2 />
       </span>
       <span className="flex-1">{children}</span>
-    </a>
+    </Link>
   );
 }
