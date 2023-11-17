@@ -22,9 +22,9 @@ export default async function Home() {
         <p>
           Welcome to the official Suroi wiki! Suroi is an open-source 2D battle royale game inspired by surviv.io.
           You can play it at{" "}
-          <a href="https://suroi.io" target="_blank">
+          <Link href="https://suroi.io" target="_blank">
             suroi.io
-          </a>
+          </Link>
           .
         </p>
         <p>
