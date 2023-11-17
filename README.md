@@ -2,7 +2,7 @@
 
 The official wiki for [Suroi](https://suroi.io), an open-source 2D battle royale game inspired by surviv.io.
 
-https://wiki.suroi.io
+[https://wiki.suroi.io](wiki.suroi.io)
 
 ## Setup
 [Node.js](https://nodejs.org/en) 20+ and [pnpm](https://pnpm.io) are required.
