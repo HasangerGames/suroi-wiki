@@ -1,10 +1,8 @@
 import ArmorCalc from "@/components/interactive/ArmorCalc";
 import FileLink from "@/components/links/FileLink";
-import FlexTable from "@/components/tables/FlexTable";
 import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
 import { Helmets } from "@/vendor/suroi/common/src/definitions/helmets";
 import { Vests } from "@/vendor/suroi/common/src/definitions/vests";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function ArmorPage() {
@@ -45,50 +43,32 @@ export default function ArmorPage() {
         </p>
       </div>
 
-      <FlexTable>
-        {Vests.map((vest) => (
-          <div
-            key={vest.idString}
-            className="flex divide-x divide-muted-foreground"
-          >
-            <div className="flex p-2 items-center justify-center">
-              <Image
-                src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${vest.idString}.svg`}
-                width={128}
-                height={128}
-                alt={`Image of ${vest.name}`}
-              />
-            </div>
-            <div className="flex-1 flex items-center p-2">
-              <Link href={`/equipment/armor/${vest.idString}`}>
-                <h2 className="text-lg font-bold underline">{vest.name}</h2>
-              </Link>
-            </div>
-          </div>
-        ))}
-      </FlexTable>
-      <FlexTable>
-        {Helmets.map((helmet) => (
-          <div
-            key={helmet.idString}
-            className="flex divide-x divide-muted-foreground"
-          >
-            <div className="flex p-2 items-center justify-center">
-              <Image
-                src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${helmet.idString}.svg`}
-                width={128}
-                height={128}
-                alt={`Image of ${helmet.name}`}
-              />
-            </div>
-            <div className="flex-1 flex items-center p-2">
-              <Link href={`/equipment/armor/${helmet.idString}`}>
-                <h2 className="text-lg font-bold underline">{helmet.name}</h2>
-              </Link>
-            </div>
-          </div>
-        ))}
-      </FlexTable>
+      <div className="prose prose-invert mt-8">
+        <table>
+          <caption>Armor Statistics</caption>
+          <thead>
+            <tr>
+              <th>Armor</th>
+              <th>Level</th>
+              <th>Damage Reduction</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Armors.map((armor) => (
+              <tr key={armor.idString}>
+                <td>
+                  <Link href={`/equipment/armor/${armor.idString}`}>
+                    {armor.name}
+                  </Link>
+                </td>
+                <td>{armor.level}</td>
+                <td>{armor.damageReduction * 100}%</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
       <div className="mt-8">
         <div className="prose prose-invert" id="calc">
           <h2>Calculator</h2>
