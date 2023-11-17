@@ -1,13 +1,13 @@
 import Searchbar from "@/components/interactive/Searchbar";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/links/Link";
 
 export default function WikiLayout({ children }: React.PropsWithChildren) {
   return (
     <div>
       <nav className="mb-4 py-4 border-b border-b-[gray]">
         <div className="container flex items-center">
-          <Link href="/">
+          <Link href="/" unstyled>
             <div className="flex items-center group">
               <Image
                 src="/img/logo.svg"
