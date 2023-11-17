@@ -1,6 +1,7 @@
 import Link from "@/components/links/Link";
 import Event from "@/components/articles/notices/Event";
 import TimeLink from "@/components/links/TimeLink";
+import Removed from "@/components/articles/notices/Removed"
 
 # Writing Articles
 
@@ -12,7 +13,7 @@ Articles are written in [MDX](https://mdxjs.com/docs/what-is-mdx/), an extension
 # Style Guide
 
 When writing an article for an object in the game, please follow the layout below. If in doubt, consult an existing 
-article (e.g., <Link href="/weapons/guns/ak47">AK47</Link>).
+article (e.g., [AK47](/weapons/guns/ak47)).
 
 ## Article Layout
 
@@ -35,7 +36,7 @@ There are a couple MDX/JSX tags you can use to make your articles more interacti
 
 ### `<Event />`
 
-Shows a small banner at the top of the page like the one on the <Link href="/weapons/guns/usas12">USAS-12 Article</Link> notifying readers
+Shows a small banner at the top of the page like the one on the [USAS-12 Article](/weapons/guns/usas12) notifying readers
 that this item is only available in a specific event. See below:
 
 <Event />
@@ -62,3 +63,7 @@ See below:
 ```md
 The example used above is: <TimeLink date={1699868632020}/>
 ```
+
+### `<RemovedItem />`
+
+<Removed/>
