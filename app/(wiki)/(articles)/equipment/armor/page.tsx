@@ -3,6 +3,7 @@ import FileLink from "@/components/links/FileLink";
 import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
 import { Helmets } from "@/vendor/suroi/common/src/definitions/helmets";
 import { Vests } from "@/vendor/suroi/common/src/definitions/vests";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function ArmorPage() {
@@ -44,7 +45,7 @@ export default function ArmorPage() {
       </div>
 
       <div className="prose prose-invert mt-8">
-        <table>
+        <table className="table-fixed">
           <caption>Armor Statistics</caption>
           <thead>
             <tr>
@@ -57,9 +58,17 @@ export default function ArmorPage() {
             {Armors.map((armor) => (
               <tr key={armor.idString}>
                 <td>
-                  <Link href={`/equipment/armor/${armor.idString}`}>
-                    {armor.name}
-                  </Link>
+                  <div className="flex items-center gap-2 w-min h-min">
+                    <Image
+                      src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${armor.idString}.svg`}
+                      width={32}
+                      height={32}
+                      alt={`${armor.name} image`}
+                    />
+                    <Link href={`/equipment/armor/${armor.idString}`}>
+                      {armor.name}
+                    </Link>
+                  </div>
                 </td>
                 <td>{armor.level}</td>
                 <td>{armor.damageReduction * 100}%</td>
