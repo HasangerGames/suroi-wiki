@@ -35,9 +35,6 @@ dependencies:
   lucide-react:
     specifier: ^0.292.0
     version: 0.292.0(react@18.2.0)
-  luxon:
-    specifier: ^3.4.4
-    version: 3.4.4
   next:
     specifier: 14.0.3
     version: 14.0.3(react-dom@18.2.0)(react@18.2.0)
@@ -2459,11 +2456,6 @@ packages:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
-    dev: false
-
-  /luxon@3.4.4:
-    resolution: {integrity: sha512-zobTr7akeGHnv7eBOXcRgMeCP6+uyYsczwmeRCauvpvaAltgNyTbLH/+VaEAPUeWBT+1GuNmz4wC/6jtQzbbVA==}
-    engines: {node: '>=12'}
     dev: false
 
   /markdown-extensions@1.1.1:
