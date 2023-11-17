@@ -2,7 +2,7 @@ import FlexTable from "@/components/tables/FlexTable";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/links/Link";
 
 export default function WeaponsPage() {
   return (
