@@ -1,22 +1,22 @@
 "use client";
 
-import { DateTime } from "luxon";
 import { Tooltip } from "react-tooltip";
 
 export default function TimeLink({ time }: TimeLinkProps) {
-  const dateTime = DateTime.fromMillis(time);
+  const date = new Date(time);
+  const formatter = new Intl.DateTimeFormat(undefined, {
+    timeStyle: "medium",
+    dateStyle: "medium",
+  });
   return (
     <>
       <span
         data-tooltip-id="time"
-        data-tooltip-content={dateTime.toString()}
-        className="p-2 mx-1 rounded-md hover:cursor-pointer bg-muted"
-        onClick={() => navigator.clipboard.writeText(dateTime.toString())}
+        data-tooltip-content={date.toString()}
+        className="hover:cursor-pointer p-2 mx-1 rounded-md bg-muted"
+        onClick={() => navigator.clipboard.writeText(date.toString())}
       >
-        {dateTime.toLocaleString({
-          timeStyle: "medium",
-          dateStyle: "medium"
-        })}
+        {formatter.format(date)}
       </span>
       <Tooltip id="time" />
     </>

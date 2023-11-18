@@ -1,8 +1,9 @@
 import { GitCommitHorizontal } from "lucide-react";
+import Link from "./Link";
 
 export default function CommitLink({ sha, children }: CommitLinkProps) {
   return (
-    <a
+    <Link
       target="_blank"
       href={`https://github.com/HasangerGames/suroi/commit/${sha}`}
       className="inline-flex gap-1 items-baseline underline"
@@ -10,8 +11,8 @@ export default function CommitLink({ sha, children }: CommitLinkProps) {
       <span className="inline-flex self-center">
         <GitCommitHorizontal />
       </span>
-      <span className="flex-1">{children ?? sha.slice(0,7)}</span>
-    </a>
+      <span className="flex-1">{children ?? sha.slice(0, 7)}</span>
+    </Link>
   );
 }
 
