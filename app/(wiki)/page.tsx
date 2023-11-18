@@ -2,6 +2,7 @@ import PageCard from "@/components/cards/PageCard";
 import CommitLink from "@/components/links/CommitLink";
 import fs from "fs/promises";
 import Image from "next/image";
+import Link from "@/components/links/Link";
 
 export default async function Home() {
   const HEAD = await fs.readFile(".git/modules/vendor/suroi/HEAD", "utf8");
@@ -21,16 +22,16 @@ export default async function Home() {
         <p>
           Welcome to the official Suroi wiki! Suroi is an open-source 2D battle royale game inspired by surviv.io.
           You can play it at{" "}
-          <a href="https://suroi.io" target="_blank">
+          <Link href="https://suroi.io" target="_blank">
             suroi.io
-          </a>
+          </Link>
           .
         </p>
         <p>
           This wiki is also open-source! Any contributions are appreciated. To contribute, head over to{" "}
-          <a href="https://github.com/HasangerGames/suroi-wiki" target="_blank">
+          <Link href="https://github.com/HasangerGames/suroi-wiki" target="_blank">
             the GitHub repo
-          </a>
+          </Link>
           .
         </p>
         <p>

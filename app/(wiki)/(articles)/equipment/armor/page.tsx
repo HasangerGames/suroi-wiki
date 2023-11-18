@@ -1,15 +1,19 @@
 import ArmorCalc from "@/components/interactive/ArmorCalc";
 import FileLink from "@/components/links/FileLink";
-import FlexTable from "@/components/tables/FlexTable";
 import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
 import { Helmets } from "@/vendor/suroi/common/src/definitions/helmets";
 import { Vests } from "@/vendor/suroi/common/src/definitions/vests";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/links/Link";
 
 export default function ArmorPage() {
   const vest2 = Vests[2];
   const helmet1 = Helmets[1];
+
+  const combos = Vests.flatMap((vest) =>
+    Helmets.map((helmet) => ({ vest, helmet }))
+  );
+
   return (
     <main className="col-span-8 text-white">
       <div className="prose prose-invert">
@@ -45,50 +49,96 @@ export default function ArmorPage() {
         </p>
       </div>
 
-      <FlexTable>
-        {Vests.map((vest) => (
-          <div
-            key={vest.idString}
-            className="flex divide-x divide-muted-foreground"
-          >
-            <div className="flex justify-center items-center p-2">
-              <Image
-                src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${vest.idString}.svg`}
-                width={128}
-                height={128}
-                alt={`Image of ${vest.name}`}
-              />
-            </div>
-            <div className="flex flex-1 items-center p-2">
-              <Link href={`/equipment/armor/${vest.idString}`}>
-                <h2 className="text-lg font-bold underline">{vest.name}</h2>
-              </Link>
-            </div>
-          </div>
-        ))}
-      </FlexTable>
-      <FlexTable>
-        {Helmets.map((helmet) => (
-          <div
-            key={helmet.idString}
-            className="flex divide-x divide-muted-foreground"
-          >
-            <div className="flex justify-center items-center p-2">
-              <Image
-                src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${helmet.idString}.svg`}
-                width={128}
-                height={128}
-                alt={`Image of ${helmet.name}`}
-              />
-            </div>
-            <div className="flex flex-1 items-center p-2">
-              <Link href={`/equipment/armor/${helmet.idString}`}>
-                <h2 className="text-lg font-bold underline">{helmet.name}</h2>
-              </Link>
-            </div>
-          </div>
-        ))}
-      </FlexTable>
+      <div className="prose prose-invert mt-8">
+        <table className="table-fixed">
+          <caption>Armor Statistics</caption>
+          <thead>
+            <tr>
+              <th>Armor</th>
+              <th>Level</th>
+              <th>Damage Reduction</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Armors.map((armor) => (
+              <tr key={armor.idString} className="">
+                <td>
+                  <Image
+                    src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${armor.idString}.svg`}
+                    width={32}
+                    height={32}
+                    alt={`${armor.name} image`}
+                    className="h-min inline-block m-0 mr-2"
+                  />
+                  <Link href={`/equipment/armor/${armor.idString}`}>
+                    {armor.name}
+                  </Link>
+                </td>
+                <td>{armor.level}</td>
+                <td>{armor.damageReduction * 100}%</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div className="prose prose-invert mt-8">
+        <table className="table-fixed">
+          <caption>Effective Health</caption>
+          <thead>
+            <tr>
+              <th>Helmet</th>
+              <th>Vest</th>
+              <th>Damage Reduction</th>
+              <th>Effective Health</th>
+            </tr>
+          </thead>
+          <tbody>
+            {combos.map(({ helmet, vest }) => (
+              <tr key={helmet.idString + vest.idString} className="">
+                <td>
+                  <Image
+                    src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${helmet.idString}.svg`}
+                    width={32}
+                    height={32}
+                    alt={`${helmet.name} image`}
+                    className="h-min inline-block m-0 mr-2"
+                  />
+                  <Link href={`/equipment/armor/${helmet.idString}`}>
+                    {helmet.name}
+                  </Link>
+                </td>
+                <td>
+                  <Image
+                    src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${vest.idString}.svg`}
+                    width={32}
+                    height={32}
+                    alt={`${vest.name} image`}
+                    className="h-min inline-block m-0 mr-2"
+                  />
+                  <Link href={`/equipment/armor/${vest.idString}`}>
+                    {vest.name}
+                  </Link>
+                </td>
+                <td>
+                  {(
+                    (vest.damageReduction + helmet.damageReduction) *
+                    100
+                  ).toFixed(2)}
+                  %
+                </td>
+                <td>
+                  {(
+                    (1 + vest.damageReduction + helmet.damageReduction) *
+                    100
+                  ).toFixed(2)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
       <div className="mt-8">
         <div className="prose prose-invert" id="calc">
           <h2>Calculator</h2>

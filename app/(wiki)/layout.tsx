@@ -1,7 +1,7 @@
 import NavigationMenu from "@/components/interactive/NavigationMenu";
 import { Menu } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/links/Link";
 
 export default function WikiLayout({ children }: React.PropsWithChildren) {
   return (
@@ -13,7 +13,7 @@ export default function WikiLayout({ children }: React.PropsWithChildren) {
               <Menu size={36} />
             </div>
           </Link>
-          <Link href="/">
+          <Link href="/" unstyled>
             <div className="flex items-center group">
               <Image
                 src="/img/logo.svg"

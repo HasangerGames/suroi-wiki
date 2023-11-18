@@ -1,7 +1,7 @@
 import FlexTable from "@/components/tables/FlexTable";
 import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/links/Link";
 
 export default function HealingPage() {
   return (

@@ -56,10 +56,9 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           title="Move Spread"
           abbr="Spread (angle of inaccuracy when moving)"
         >
-          {gun.moveSpread + gun.shotSpread}°{" "}
-          <abbr title="When compared to normal spread">
-            ({gun.moveSpread > 0 ? "+" : ""}
-            {gun.moveSpread}°)
+          {gun.moveSpread}° <abbr title="When compared to normal spread">
+            ({gun.moveSpread - gun.shotSpread > 0 ? "+" : ""}
+            {(gun.moveSpread - gun.shotSpread).toFixed(2)}°)
           </abbr>
         </InfoboxColumn>
       </InfoboxRow>
@@ -139,7 +138,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
         </>
       )}
 
-      {/* TODO: Gun attributes */}
+      {/* fixme: Gun attributes */}
       {/* {gun.wearerAttributes && (
         <>
           <InfoxboxHeader>Wearer Attributes</InfoxboxHeader>

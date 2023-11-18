@@ -6,7 +6,7 @@ import { ItemDefinition } from "@/vendor/suroi/common/src/utils/objectDefinition
 import { useQuery } from "@tanstack/react-query";
 import { Search } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/links/Link";
 import { useState } from "react";
 
 export default function Searchbar() {
