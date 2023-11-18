@@ -10,7 +10,7 @@ export default function TimeLink({ time }: TimeLinkProps) {
       <span
         data-tooltip-id="time"
         data-tooltip-content={dateTime.toString()}
-        className="hover:cursor-pointer p-2 mx-1 rounded-md bg-muted"
+        className="p-2 mx-1 rounded-md hover:cursor-pointer bg-muted"
         onClick={() => navigator.clipboard.writeText(dateTime.toString())}
       >
         {dateTime.toLocaleString({

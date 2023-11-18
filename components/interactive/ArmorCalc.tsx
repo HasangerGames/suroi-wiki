@@ -21,11 +21,11 @@ export default function ArmorCalc() {
 
   return (
     <div className="p-4 border border-[gray]">
-      <div className="mt-2 flex items-center gap-2">
+      <div className="flex gap-2 items-center mt-2">
         <label htmlFor="gun">Gun</label>
         <select
           id="gun"
-          className="bg-muted rounded flex-1"
+          className="flex-1 rounded bg-muted"
           onChange={(e) => {
             if (e.target.value === "") setSelectedGun(null);
             else
@@ -43,11 +43,11 @@ export default function ArmorCalc() {
         </select>
       </div>
 
-      <div className="mt-2 flex items-center gap-2">
+      <div className="flex gap-2 items-center mt-2">
         <label htmlFor="helmet">Helmet</label>
         <select
           id="helmet"
-          className="bg-muted rounded flex-1"
+          className="flex-1 rounded bg-muted"
           onChange={(e) => {
             if (e.target.value === "") setSelectedHelmet(null);
             else
@@ -66,11 +66,11 @@ export default function ArmorCalc() {
         </select>
       </div>
 
-      <div className="mt-2 flex items-center gap-2">
+      <div className="flex gap-2 items-center mt-2">
         <label htmlFor="vest">Vest</label>
         <select
           id="vest"
-          className="bg-muted rounded flex-1"
+          className="flex-1 rounded bg-muted"
           onChange={(e) => {
             if (e.target.value === "") setSelectedVest(null);
             else
@@ -88,7 +88,7 @@ export default function ArmorCalc() {
         </select>
       </div>
 
-      <div className="mt-4 flex justify-center items-center flex-col">
+      <div className="flex flex-col justify-center items-center mt-4">
         {!selectedGun && (
           <span className="font-bold">Select a gun to begin.</span>
         )}

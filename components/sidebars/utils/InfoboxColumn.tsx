@@ -6,7 +6,7 @@ export default function InfoboxColumn({
 }: InfoboxColumnProps) {
   return (
     <div className="p-2">
-      <h4 className="font-bold mb-1">
+      <h4 className="mb-1 font-bold">
         {abbr ? <abbr title={abbr}>{title}</abbr> : title}
       </h4>
       {!image && <p className="">{children}</p>}

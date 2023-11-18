@@ -11,7 +11,7 @@ export default function ArmorPage() {
   const vest2 = Vests[2];
   const helmet1 = Helmets[1];
   return (
-    <main className="text-white col-span-8">
+    <main className="col-span-8 text-white">
       <div className="prose prose-invert">
         <h1>Armor</h1>
         <p>
@@ -51,7 +51,7 @@ export default function ArmorPage() {
             key={vest.idString}
             className="flex divide-x divide-muted-foreground"
           >
-            <div className="flex p-2 items-center justify-center">
+            <div className="flex justify-center items-center p-2">
               <Image
                 src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${vest.idString}.svg`}
                 width={128}
@@ -59,7 +59,7 @@ export default function ArmorPage() {
                 alt={`Image of ${vest.name}`}
               />
             </div>
-            <div className="flex-1 flex items-center p-2">
+            <div className="flex flex-1 items-center p-2">
               <Link href={`/equipment/armor/${vest.idString}`}>
                 <h2 className="text-lg font-bold underline">{vest.name}</h2>
               </Link>
@@ -73,7 +73,7 @@ export default function ArmorPage() {
             key={helmet.idString}
             className="flex divide-x divide-muted-foreground"
           >
-            <div className="flex p-2 items-center justify-center">
+            <div className="flex justify-center items-center p-2">
               <Image
                 src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${helmet.idString}.svg`}
                 width={128}
@@ -81,7 +81,7 @@ export default function ArmorPage() {
                 alt={`Image of ${helmet.name}`}
               />
             </div>
-            <div className="flex-1 flex items-center p-2">
+            <div className="flex flex-1 items-center p-2">
               <Link href={`/equipment/armor/${helmet.idString}`}>
                 <h2 className="text-lg font-bold underline">{helmet.name}</h2>
               </Link>
