@@ -25,31 +25,16 @@ export default function ArmorPage() {
         </p>
         <p>
           Wearing armor helps reduce damage to you from most sources. Damage
-          reduction is additive (see{" "}
-          <FileLink file="server/src/objects/player.ts" lines={747}>
-            player.ts
-          </FileLink>
-          ). For example if you were wearing a{" "}
-          <Link
-            href={`/equipment/armor/${vest2.idString}`}
-          >
-            {vest2.name}
-          </Link>{" "}
-          ({vest2.damageReduction * 100}% damage reduction) and a{" "}
-          <Link
-            href={`/equipment/armor/${helmet1.idString}`}
-          >
-            {helmet1.name}
-          </Link>{" "}
+          reduction is additive (see <FileLink file="server/src/objects/player.ts" lines={747}> player.ts </FileLink> ). For example if you were wearing a <Link href={`/equipment/armor/${vest2.idString}`}>{vest2.name}</Link> ({vest2.damageReduction * 100}% damage reduction) and a <Link href={`/equipment/armor/${helmet1.idString}`}>{helmet1.name}</Link>
           ({helmet1.damageReduction * 100}% damage reduction) you would have a
-          total of {vest2.damageReduction * 100 + helmet1.damageReduction * 100}
+          total of {(vest2.damageReduction + helmet1.damageReduction) * 100}
           % damage reduction overall.
         </p>
       </div>
 
       <div className="prose prose-invert mt-8">
         <table className="table-fixed">
-          <caption>Armor Statistics</caption>
+          <caption><h3>Armor Statistics</h3></caption>
           <thead>
             <tr>
               <th>Armor</th>
@@ -82,31 +67,11 @@ export default function ArmorPage() {
 
       <div className="prose prose-invert mt-8">
         <table className="table-fixed">
-          <caption>Effective Health</caption>
-          <thead>
-            <tr>
-              <th>Helmet</th>
-              <th>Vest</th>
-              <th>Damage Reduction</th>
-              <th>Effective Health</th>
-            </tr>
-          </thead>
+          <caption><h3>Effective Health</h3></caption>
           <tbody>
-            {combos.map(({ helmet, vest }) => (
-              <tr key={helmet.idString + vest.idString} className="">
-                <td>
-                  <Image
-                    src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${helmet.idString}.svg`}
-                    width={32}
-                    height={32}
-                    alt={`${helmet.name} image`}
-                    className="h-min inline-block m-0 mr-2"
-                  />
-                  <Link href={`/equipment/armor/${helmet.idString}`}>
-                    {helmet.name}
-                  </Link>
-                </td>
-                <td>
+            <tr>
+              <td></td>
+              {Vests.map(vest => <td key={vest.idString}>
                   <Image
                     src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${vest.idString}.svg`}
                     width={32}
@@ -118,21 +83,29 @@ export default function ArmorPage() {
                     {vest.name}
                   </Link>
                 </td>
+              )}
+            </tr>
+            {Helmets.map((helmet, i) =>
+              <tr key={i}>
                 <td>
-                  {(
-                    (vest.damageReduction + helmet.damageReduction) *
-                    100
-                  ).toFixed(2)}
-                  %
+                <Image
+                    src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${helmet.idString}.svg`}
+                    width={32}
+                    height={32}
+                    alt={`${helmet.name} image`}
+                    className="h-min inline-block m-0 mr-2"
+                  />
+                  <Link href={`/equipment/armor/${helmet.idString}`}>
+                    {helmet.name}
+                  </Link>
                 </td>
-                <td>
-                  {(
-                    (1 + vest.damageReduction + helmet.damageReduction) *
-                    100
-                  ).toFixed(2)}
-                </td>
+                {Vests.map((vest, j) =>
+                  <td key={`${i}${j}`}>
+                    {(100 / (1 - helmet.damageReduction - vest.damageReduction)).toFixed(2)}
+                  </td>
+                )}
               </tr>
-            ))}
+            )}
           </tbody>
         </table>
       </div>
