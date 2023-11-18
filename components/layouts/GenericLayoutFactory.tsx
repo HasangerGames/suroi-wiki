@@ -1,8 +1,8 @@
-import { ItemDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { notFound } from "next/navigation";
 import React, { ComponentType } from "react";
 
-export default function GenericLayoutFactory<T extends ItemDefinition>(
+export default function GenericLayoutFactory<T extends ObjectDefinition>(
   args: GenericLayoutFactoryArgs<T>
 ) {
   return function GenericLayout({
@@ -32,7 +32,7 @@ export default function GenericLayoutFactory<T extends ItemDefinition>(
   };
 }
 
-export interface GenericLayoutFactoryArgs<T extends ItemDefinition> {
+export interface GenericLayoutFactoryArgs<T extends ObjectDefinition> {
   Sidebar: ComponentType<{ item: T }>;
   items: T[];
 }
