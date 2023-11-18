@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function WikiLayout({ children }: React.PropsWithChildren) {
   return (
     <div>
-      <nav className="mb-4 py-4 border-b border-b-[gray]">
+      <nav className="mb-4 py-4 border-b border-b-[gray] bg-background top-0 sticky">
         <div className="container flex items-center">
           <Link href="#navigation">
             <div className="mr-8 lg:hidden">
