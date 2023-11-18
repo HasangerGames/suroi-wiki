@@ -8,10 +8,10 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
   return (
     <div className="col-span-2">
       <div className="flex flex-col border border-primary">
-        <div className="p-2 bg-primary border-b border-primary">
-          <h2 className="font-bold text-xl text-center">{item.name}</h2>
+        <div className="p-2 border-b bg-primary border-primary">
+          <h2 className="text-xl font-bold text-center">{item.name}</h2>
         </div>
-        <div className="p-2 flex justify-center">
+        <div className="flex justify-center p-2">
           <Image
             src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/weapons/${item.idString}.svg`}
             width={128}

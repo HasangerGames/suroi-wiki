@@ -10,8 +10,8 @@ export default function PageCard({
   return (
     <div className="flex-1">
       <Link href={url}>
-        <div className="p-4 rounded-md border border-border flex gap-8 w-full transition-colors h-full hover:border-blue-500 group">
-          <div className="flex items-center justify-center">
+        <div className="flex gap-8 p-4 w-full h-full rounded-md border transition-colors border-border hover:border-blue-500 group">
+          <div className="flex justify-center items-center">
             <Image
               src={image}
               width={100}
@@ -21,7 +21,7 @@ export default function PageCard({
             />
           </div>
           <div className="flex-1">
-            <h3 className="font-bold text-lg underline group-hover:text-blue-500 transition-colors leading-loose">
+            <h3 className="text-lg font-bold leading-loose underline transition-colors group-hover:text-blue-500">
               {title}
             </h3>
             <p className="transition-colors group-hover:text-blue-500">{description}</p>

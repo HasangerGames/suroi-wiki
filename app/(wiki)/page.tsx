@@ -39,7 +39,7 @@ export default async function Home() {
         </p>
         <h2>Notable Pages</h2>
       </div>
-      <div className="flex flex-col lg:flex-row flex-wrap gap-4 mt-8">
+      <div className="flex flex-col flex-wrap gap-4 mt-8 lg:flex-row">
         <PageCard
           title="Weapons"
           url="/weapons"
