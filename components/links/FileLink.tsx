@@ -15,7 +15,7 @@ export default function FileLink({
       href={`https://github.com/HasangerGames/suroi/blob/master/${file}${
         lines ? `#L${Array.isArray(lines) ? lines.join("-L") : lines}` : ""
       }`}
-      className="underline inline-flex items-baseline gap-1"
+      className="inline-flex gap-1 items-baseline underline"
     >
       <span className="inline-flex self-center">
         <FileCode2 />

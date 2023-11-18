@@ -7,7 +7,7 @@ import LootCalc from "@/components/interactive/LootCalc";
 
 export default function LootPage() {
   return (
-    <div className="text-white col-span-8">
+    <div className="col-span-8 text-white">
       <div className="prose prose-invert">
         <h1>Loot Tables</h1>
         <p>
@@ -30,7 +30,7 @@ export default function LootPage() {
               </h3>
             </div>
             <div className="flex justify-center p-8">
-              <table className="table-fixed border-collapse flex-1 border border-border">
+              <table className="flex-1 border border-collapse table-fixed border-border">
                 <thead className="border-b border-border">
                   <tr className="bg-primary">
                     <th className="p-4 border-r border-border">Item</th>
@@ -50,12 +50,12 @@ export default function LootPage() {
                           key={tier.item}
                           className="border-b border-border even:bg-blue-400/20"
                         >
-                          <td className="p-4 border-r border-border w-24">
+                          <td className="p-4 w-24 border-r border-border">
                             {Loots.definitions.find(
                               (item) => item.idString === tier.item
                             )?.name ?? tier.item}
                           </td>
-                          <td className="p-4 border-r border-border w-24">
+                          <td className="p-4 w-24 border-r border-border">
                             {tier.weight}
                           </td>
                           <td className="p-4 w-24">
@@ -94,7 +94,7 @@ export default function LootPage() {
             </h3>
           </div>
           <div className="flex justify-center p-8">
-            <table className="table-fixed border-collapse flex-1 border border-border">
+            <table className="flex-1 border border-collapse table-fixed border-border">
               <thead className="border-b border-border">
                 <tr className="bg-primary">
                   <th className="p-4 border-r border-border">Tier / Item</th>
@@ -113,10 +113,10 @@ export default function LootPage() {
                       key={tier.tier}
                       className="border-b border-border even:bg-blue-400/20"
                     >
-                      <td className="p-4 border-r border-border w-24">
+                      <td className="p-4 w-24 border-r border-border">
                         Tier {tier.tier}
                       </td>
-                      <td className="p-4 border-r border-border w-24">
+                      <td className="p-4 w-24 border-r border-border">
                         {tier.weight}
                       </td>
                       <td className="p-4 w-24">
@@ -136,13 +136,13 @@ export default function LootPage() {
                         key={tier.item}
                         className="border-b border-border even:bg-blue-400/20"
                       >
-                        <td className="p-4 border-r border-border w-24">
+                        <td className="p-4 w-24 border-r border-border">
                           Item{" "}
                           {Loots.definitions.find(
                             (item) => item.idString === tier.item
                           )?.name ?? tier.item}
                         </td>
-                        <td className="p-4 border-r border-border w-24">
+                        <td className="p-4 w-24 border-r border-border">
                           {tier.weight}
                         </td>
                         <td className="p-4 w-24">

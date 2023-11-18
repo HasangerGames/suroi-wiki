@@ -14,7 +14,7 @@ export default function InfoboxAudioGroup({
     <>
       <div
         onClick={() => setIsOpened(!isOpened)}
-        className="cursor-pointer relative"
+        className="relative cursor-pointer"
       >
         <InfoxboxHeader>Sounds</InfoxboxHeader>
         <div className="absolute right-2 top-1/4">
@@ -22,7 +22,7 @@ export default function InfoboxAudioGroup({
         </div>
       </div>
       <Collapse isOpened={isOpened}>
-        <div className="flex flex-col divide-y divide-primary text-sm border-t border-t-primary">
+        <div className="flex flex-col text-sm border-t divide-y divide-primary border-t-primary">
           {children}
         </div>
       </Collapse>
