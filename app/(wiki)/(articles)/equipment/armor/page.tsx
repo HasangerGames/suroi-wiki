@@ -32,14 +32,12 @@ export default function ArmorPage() {
           ). For example if you were wearing a{" "}
           <Link
             href={`/equipment/armor/${vest2.idString}`}
-            className="underline"
           >
             {vest2.name}
           </Link>{" "}
           ({vest2.damageReduction * 100}% damage reduction) and a{" "}
           <Link
             href={`/equipment/armor/${helmet1.idString}`}
-            className="underline"
           >
             {helmet1.name}
           </Link>{" "}

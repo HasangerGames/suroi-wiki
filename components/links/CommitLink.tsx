@@ -6,7 +6,7 @@ export default function CommitLink({ sha, children }: CommitLinkProps) {
     <Link
       target="_blank"
       href={`https://github.com/HasangerGames/suroi/commit/${sha}`}
-      className="inline-flex gap-1 items-baseline underline"
+      className="inline-flex gap-1 items-baseline"
     >
       <span className="inline-flex self-center">
         <GitCommitHorizontal />
