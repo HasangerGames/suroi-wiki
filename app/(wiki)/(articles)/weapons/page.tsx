@@ -27,7 +27,7 @@ export default function WeaponsPage() {
             </div>
             <div className="flex flex-1 items-center p-2">
               <Link href={`/weapons/guns/${gun.idString}`}>
-                <h2 className="text-lg font-bold underline">{gun.name}</h2>
+                <h2 className="text-lg font-bold">{gun.name}</h2>
               </Link>
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function WeaponsPage() {
             </div>
             <div className="flex flex-1 items-center p-2">
               <Link href={`/weapons/melee/${melee.idString}`}>
-                <h2 className="text-lg font-bold underline">{melee.name}</h2>
+                <h2 className="text-lg font-bold">{melee.name}</h2>
               </Link>
             </div>
           </div>
