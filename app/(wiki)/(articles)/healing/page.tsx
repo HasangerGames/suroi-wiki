@@ -25,7 +25,7 @@ export default function HealingPage() {
             </div>
             <div className="flex flex-1 items-center p-2">
               <Link href={`/healing/${item.idString}`}>
-                <h2 className="text-lg font-bold underline">{item.name}</h2>
+                <h2 className="text-lg font-bold">{item.name}</h2>
               </Link>
             </div>
           </div>
