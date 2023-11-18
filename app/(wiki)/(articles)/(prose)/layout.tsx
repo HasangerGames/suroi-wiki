@@ -3,5 +3,5 @@ export default function EventsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="prose prose-invert col-span-full">{children}</div>;
+  return <div className="col-span-full prose prose-invert">{children}</div>;
 }

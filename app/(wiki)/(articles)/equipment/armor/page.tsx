@@ -15,7 +15,7 @@ export default function ArmorPage() {
   );
 
   return (
-    <main className="text-white col-span-8">
+    <main className="col-span-8 text-white">
       <div className="prose prose-invert">
         <h1>Armor</h1>
         <p>

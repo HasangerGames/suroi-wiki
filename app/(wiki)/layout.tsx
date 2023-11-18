@@ -1,12 +1,18 @@
-import Searchbar from "@/components/interactive/Searchbar";
+import NavigationMenu from "@/components/interactive/NavigationMenu";
+import { Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "@/components/links/Link";
 
 export default function WikiLayout({ children }: React.PropsWithChildren) {
   return (
     <div>
-      <nav className="mb-4 py-4 border-b border-b-[gray]">
+      <nav className="mb-4 py-4 border-b border-b-[gray] bg-background top-0 sticky">
         <div className="container flex items-center">
+          <Link href="#navigation">
+            <div className="mr-8 lg:hidden">
+              <Menu size={36} />
+            </div>
+          </Link>
           <Link href="/" unstyled>
             <div className="flex items-center group">
               <Image
@@ -15,13 +21,10 @@ export default function WikiLayout({ children }: React.PropsWithChildren) {
                 width={169}
                 height={48}
               />
-              <div className="ml-2 hidden sm:block">
-              </div>
+              <div className="hidden ml-2 sm:block"></div>
             </div>
           </Link>
-          <div className="flex items-center ml-5 min-[530px]:ml-auto">
-            <Searchbar />
-          </div>
+          <NavigationMenu />
         </div>
       </nav>
       <div className="container my-8">
