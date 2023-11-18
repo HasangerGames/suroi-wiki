@@ -9,6 +9,11 @@ import Link from "@/components/links/Link";
 export default function ArmorPage() {
   const vest2 = Vests[2];
   const helmet1 = Helmets[1];
+
+  const combos = Vests.flatMap((vest) =>
+    Helmets.map((helmet) => ({ vest, helmet }))
+  );
+
   return (
     <main className="text-white col-span-8">
       <div className="prose prose-invert">
@@ -71,6 +76,63 @@ export default function ArmorPage() {
                 </td>
                 <td>{armor.level}</td>
                 <td>{armor.damageReduction * 100}%</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div className="prose prose-invert mt-8">
+        <table className="table-fixed">
+          <caption>Effective Health</caption>
+          <thead>
+            <tr>
+              <th>Helmet</th>
+              <th>Vest</th>
+              <th>Damage Reduction</th>
+              <th>Effective Health</th>
+            </tr>
+          </thead>
+          <tbody>
+            {combos.map(({ helmet, vest }) => (
+              <tr key={helmet.idString + vest.idString} className="">
+                <td>
+                  <Image
+                    src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${helmet.idString}.svg`}
+                    width={32}
+                    height={32}
+                    alt={`${helmet.name} image`}
+                    className="h-min inline-block m-0 mr-2"
+                  />
+                  <Link href={`/equipment/armor/${helmet.idString}`}>
+                    {helmet.name}
+                  </Link>
+                </td>
+                <td>
+                  <Image
+                    src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${vest.idString}.svg`}
+                    width={32}
+                    height={32}
+                    alt={`${vest.name} image`}
+                    className="h-min inline-block m-0 mr-2"
+                  />
+                  <Link href={`/equipment/armor/${vest.idString}`}>
+                    {vest.name}
+                  </Link>
+                </td>
+                <td>
+                  {(
+                    (vest.damageReduction + helmet.damageReduction) *
+                    100
+                  ).toFixed(2)}
+                  %
+                </td>
+                <td>
+                  {(
+                    (1 + vest.damageReduction + helmet.damageReduction) *
+                    100
+                  ).toFixed(2)}
+                </td>
               </tr>
             ))}
           </tbody>
