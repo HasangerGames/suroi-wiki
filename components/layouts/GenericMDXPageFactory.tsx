@@ -1,9 +1,8 @@
-import { ItemDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { notFound } from "next/navigation";
 import fs from "fs/promises";
 import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
-// import { MDXRemote } from "next-mdx-remote";
 import MDXClient from "../client/MDXClient";
 import { Metadata } from "next";
 
@@ -46,7 +45,7 @@ export interface GenericMDXPageFactoryArgs {
   path: string;
 }
 
-export function GenericGenerateStaticParamsFactory<T extends ItemDefinition>(
+export function GenericGenerateStaticParamsFactory<T extends ObjectDefinition>(
   items: T[]
 ) {
   return function () {
@@ -56,7 +55,7 @@ export function GenericGenerateStaticParamsFactory<T extends ItemDefinition>(
   };
 }
 
-export function GenericGenerateMetadataFactory<T extends ItemDefinition>(
+export function GenericGenerateMetadataFactory<T extends ObjectDefinition>(
   items: T[]
 ) {
   return function ({ params }: { params: { item: string } }): Metadata {
