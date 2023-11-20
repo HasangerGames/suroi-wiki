@@ -3,6 +3,6 @@ import BackpackSidebar from "@/components/sidebars/BackpackSidebar";
 import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
 
 export default GenericLayoutFactory({
-  items: Backpacks,
+  items: Backpacks.definitions,
   Sidebar: BackpackSidebar,
 });

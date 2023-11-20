@@ -40,7 +40,7 @@ export default function HealingSidebar({
 
       <InfoxboxHeader>Capacity</InfoxboxHeader>
       <InfoboxRow grid="grid-cols-4">
-        {Backpacks.map((backpack) => (
+        {Backpacks.definitions.map((backpack) => (
           <InfoboxColumn title={backpack.name} key={backpack.idString}>
             {backpack.maxCapacity[item.idString]}
           </InfoboxColumn>
