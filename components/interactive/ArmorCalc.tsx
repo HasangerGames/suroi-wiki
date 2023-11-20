@@ -1,12 +1,18 @@
 "use client";
 
-import { ArmorDefinition } from "@/vendor/suroi/common/src/definitions/armors";
+import { ArmorDefinition, ArmorType } from "@/vendor/suroi/common/src/definitions/armors";
 import {
   GunDefinition,
   Guns,
 } from "@/vendor/suroi/common/src/definitions/guns";
-import { Helmets as Vest } from "@/vendor/suroi/common/src/definitions/helmets";
-import { Vests } from "@/vendor/suroi/common/src/definitions/vests";
+import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
+
+const Vests = Armors.definitions.filter(
+  (armor) => armor.armorType === ArmorType.Vest
+);
+const Helmets = Armors.definitions.filter(
+  (armor) => armor.armorType === ArmorType.Helmet
+);
 
 import { useState } from "react";
 
@@ -52,13 +58,13 @@ export default function ArmorCalc() {
             if (e.target.value === "") setSelectedHelmet(null);
             else
               setSelectedHelmet(
-                Vest.find((helmet) => helmet.idString === e.target.value) ??
+                Helmets.find((helmet) => helmet.idString === e.target.value) ??
                   null
               );
           }}
         >
           <option value="">None</option>
-          {Vest.map((helmet) => (
+          {Helmets.map((helmet) => (
             <option value={helmet.idString} key={helmet.idString}>
               {helmet.name}
             </option>

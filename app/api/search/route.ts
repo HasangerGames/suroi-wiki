@@ -25,14 +25,14 @@ const CATEGORIES: SearchCategory[] = [
   {
     path: "/equipment/armor",
     name: "Armor",
-    items: Armors,
+    items: Armors.definitions,
     imagePath:
       "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/",
   },
   {
     path: "/equipment/backpacks",
     name: "Backpacks",
-    items: Backpacks,
+    items: Backpacks.definitions,
     imagePath:
       "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/",
   },
@@ -40,7 +40,7 @@ const CATEGORIES: SearchCategory[] = [
   {
     path: "/healing",
     name: "Healing",
-    items: HealingItems,
+    items: HealingItems.definitions,
     imagePath:
       "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/",
   },
