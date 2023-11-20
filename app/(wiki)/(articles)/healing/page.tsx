@@ -9,11 +9,11 @@ export default function HealingPage() {
       <div className="prose prose-invert">
         <h1>Healing Items</h1>
         <p>
-          There are currently {HealingItems.length} healing items in the game. 
+          There are currently {HealingItems.definitions.length} healing items in the game. 
         </p>
       </div>
       <FlexTable>
-        {HealingItems.map((item) => (
+        {HealingItems.definitions.map((item) => (
           <div key={item.idString} className="flex divide-x divide-border">
             <div className="flex justify-center items-center p-4">
               <Image
