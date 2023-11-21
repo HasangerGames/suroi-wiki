@@ -1,18 +1,10 @@
 import ArmorCalc from "@/components/interactive/ArmorCalc";
 import FileLink from "@/components/links/FileLink";
-import {
-  ArmorType,
-  Armors,
-} from "@/vendor/suroi/common/src/definitions/armors";
 import Image from "next/image";
 import Link from "@/components/links/Link";
-
-const Vests = Armors.definitions.filter(
-  (armor) => armor.armorType === ArmorType.Vest
-);
-const Helmets = Armors.definitions.filter(
-  (armor) => armor.armorType === ArmorType.Helmet
-);
+import { Vests } from "@/vendor/suroi/common/src/definitions/vests";
+import { Helmets } from "@/vendor/suroi/common/src/definitions/helmets";
+import { ArmorDefinition } from "@/vendor/suroi/common/src/definitions/armors";
 
 const vest2 = Vests[2];
 const helmet1 = Helmets[1];
@@ -23,22 +15,15 @@ export default function ArmorPage() {
       <div className="prose prose-invert">
         <h1>Armor</h1>
         <p>
-          There are currently {Armors.definitions.length} unique pieces of armor
-          in the game. These include {Helmets.length} helmets along with{" "}
-          {Vests.length} vests.
+          There are currently {Vests.length + Helmets.length} unique pieces of armor
+          in the game. These include {Helmets.length} helmets along with {Vests.length} vests.
         </p>
         <p>
           Wearing armor helps reduce damage to you from most sources. Damage
-          reduction is additive (see{" "}
-          <FileLink file="server/src/objects/player.ts" lines={747}>
-            player.ts
-          </FileLink>{" "}
-          ). For example if you were wearing a{" "}
-          <Link href={`/equipment/armor/${vest2.idString}`}>{vest2.name}</Link>{" "}
+          reduction is additive (see <FileLink file="server/src/objects/player.ts" lines={747}>player.ts</FileLink>).
+          For example if you were wearing a <Link href={`/equipment/armor/${vest2.idString}`}>{vest2.name}</Link>{" "}
           ({vest2.damageReduction * 100}% damage reduction) and a{" "}
-          <Link href={`/equipment/armor/${helmet1.idString}`}>
-            {helmet1.name}
-          </Link>
+          <Link href={`/equipment/armor/${helmet1.idString}`}>{helmet1.name}</Link>
           ({helmet1.damageReduction * 100}% damage reduction) you would have a
           total of {(vest2.damageReduction + helmet1.damageReduction) * 100}%
           damage reduction overall.
@@ -58,7 +43,7 @@ export default function ArmorPage() {
             </tr>
           </thead>
           <tbody>
-            {Armors.definitions.map((armor) => (
+            {Vests.concat(...Helmets).map(armor => (
               <tr key={armor.idString} className="">
                 <td>
                   <Image
@@ -88,45 +73,55 @@ export default function ArmorPage() {
           <tbody>
             <tr>
               <td></td>
-              {Vests.map((vest) => (
+              {[{ idString: "", name: "(None)", damageReduction: 0 } as ArmorDefinition, ...Vests].map(vest =>
                 <td key={vest.idString}>
-                  <Image
-                    src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${vest.idString}.svg`}
-                    width={32}
-                    height={32}
-                    alt={`${vest.name} image`}
-                    className="h-min inline-block m-0 mr-2"
-                  />
-                  <Link href={`/equipment/armor/${vest.idString}`}>
-                    {vest.name}
-                  </Link>
+                  {vest.idString
+                    ? <>
+                      <Image
+                        src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${vest.idString}.svg`}
+                        width={32}
+                        height={32}
+                        alt={`${vest.name} image`}
+                        className="h-min inline-block m-0 mr-2"
+                      />
+                      <Link href={`/equipment/armor/${vest.idString}`}>
+                        {vest.name}
+                      </Link>
+                    </>
+                    : <p>{vest.name}</p>
+                  }
                 </td>
-              ))}
+              )}
             </tr>
-            {Helmets.map((helmet, i) => (
+            {[{ idString: "", name: "(None)", damageReduction: 0 } as ArmorDefinition, ...Helmets].map((helmet, i) =>
               <tr key={i}>
                 <td>
-                  <Image
-                    src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${helmet.idString}.svg`}
-                    width={32}
-                    height={32}
-                    alt={`${helmet.name} image`}
-                    className="h-min inline-block m-0 mr-2"
-                  />
-                  <Link href={`/equipment/armor/${helmet.idString}`}>
-                    {helmet.name}
-                  </Link>
+                  {helmet.idString
+                      ? <>
+                        <Image
+                          src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${helmet.idString}.svg`}
+                          width={32}
+                          height={32}
+                          alt={`${helmet.name} image`}
+                          className="h-min inline-block m-0 mr-2"
+                        />
+                        <Link href={`/equipment/armor/${helmet.idString}`}>
+                          {helmet.name}
+                        </Link>
+                      </>
+                      : <p>{helmet.name}</p>
+                    }
                 </td>
-                {Vests.map((vest, j) => (
+                {[{ idString: "none", name: "(None)", damageReduction: 0 } as ArmorDefinition, ...Vests].map((vest, j) =>
                   <td key={`${i}${j}`}>
                     {(
                       100 /
                       (1 - helmet.damageReduction - vest.damageReduction)
                     ).toFixed(2)}
                   </td>
-                ))}
+                )}
               </tr>
-            ))}
+            )}
           </tbody>
         </table>
       </div>
