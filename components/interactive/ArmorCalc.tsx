@@ -1,11 +1,12 @@
 "use client";
 
-import { ArmorDefinition } from "@/vendor/suroi/common/src/definitions/armors";
+import { ArmorDefinition, ArmorType } from "@/vendor/suroi/common/src/definitions/armors";
 import { GunDefinition, Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
 import { useState } from "react";
-import { Helmets } from "@/vendor/suroi/common/src/definitions/helmets";
-import { Vests } from "@/vendor/suroi/common/src/definitions/vests";
+
+const Helmets = Armors.definitions.filter((armor) => armor.armorType === ArmorType.Helmet);
+const Vests = Armors.definitions.filter((armor) => armor.armorType === ArmorType.Vest);
 
 export default function ArmorCalc() {
   const [selectedGun, setSelectedGun] = useState<null | GunDefinition>(null);
