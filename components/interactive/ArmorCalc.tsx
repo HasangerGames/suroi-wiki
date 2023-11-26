@@ -96,9 +96,9 @@ export default function ArmorCalc() {
             </span>
             <span>
               <span className="font-bold">Damage Reduction:</span>{" "}
-              {((selectedHelmet?.damageReduction ?? 0) +
+              {(((selectedHelmet?.damageReduction ?? 0) +
                 (selectedVest?.damageReduction ?? 0)) *
-                100}
+                100).toFixed(2)}
               %
             </span>
             <span>
