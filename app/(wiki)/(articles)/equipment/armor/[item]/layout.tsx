@@ -3,6 +3,6 @@ import ArmorSidebar from "@/components/sidebars/ArmorSidebar";
 import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
 
 export default GenericLayoutFactory({
-  items: Armors,
+  items: Armors.definitions,
   Sidebar: ArmorSidebar,
 });
