@@ -17,6 +17,7 @@ export default async function Home() {
             alt="Suroi Battle Royale"
             width={750 / 2}
             height={300 / 2}
+            priority
           />
         </div>
         <p>
