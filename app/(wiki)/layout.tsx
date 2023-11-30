@@ -8,7 +8,7 @@ export default function WikiLayout({ children }: React.PropsWithChildren) {
     <div>
       <nav className="mb-4 py-4 border-b border-b-[gray] bg-background top-0 sticky">
         <div className="container flex items-center">
-          <Link href="#navigation">
+          <Link aria-label="Open mobile navigation" href="#navigation">
             <div className="mr-8 lg:hidden">
               <Menu size={36} />
             </div>
