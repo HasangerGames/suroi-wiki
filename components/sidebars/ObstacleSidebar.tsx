@@ -13,6 +13,7 @@ export default function ObstacleSidebar({
       image={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/obstacles/${
         item.idString
       }${item.variations ? "_1" : ""}.svg`}
+      
       imageVariations={
         item.variations &&
         range(item.variations).map(
