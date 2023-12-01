@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Collapse } from "react-collapse";
-import InfoxboxHeader from "./InfoboxHeader";
+import InfoboxHeader from "./InfoboxHeader";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function InfoboxAudioGroup({
@@ -16,7 +16,7 @@ export default function InfoboxAudioGroup({
         onClick={() => setIsOpened(!isOpened)}
         className="relative cursor-pointer"
       >
-        <InfoxboxHeader>Sounds</InfoxboxHeader>
+        <InfoboxHeader>Sounds</InfoboxHeader>
         <div className="absolute right-2 top-1/4">
           {isOpened ? <ChevronUp /> : <ChevronDown />}
         </div>

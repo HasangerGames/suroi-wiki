@@ -3,7 +3,7 @@ import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
 import InfoboxRow from "./utils/InfoboxRow";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import AmmoIcon from "../icons/AmmoIcon";
-import InfoxboxHeader from "./utils/InfoboxHeader";
+import InfoboxHeader from "./utils/InfoboxHeader";
 import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
 import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxAudio from "./utils/InfoboxAudio";
@@ -62,7 +62,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           </abbr>
         </InfoboxColumn>
       </InfoboxRow>
-      <InfoxboxHeader>Ballistics</InfoxboxHeader>
+      <InfoboxHeader>Ballistics</InfoboxHeader>
       <InfoboxRow>
         <InfoboxColumn title="Damage">{gun.ballistics.damage}</InfoboxColumn>
         <InfoboxColumn title="Bullet Speed">
@@ -120,7 +120,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
 
       {gun.bulletCount && (
         <>
-          <InfoxboxHeader>Shotgun Stats</InfoxboxHeader>
+          <InfoboxHeader>Shotgun Stats</InfoboxHeader>
           <InfoboxRow>
             <InfoboxColumn title="Bullet Count" abbr="Bullets fired per shot">
               {gun.bulletCount}
@@ -141,7 +141,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
       {/* fixme: Gun attributes */}
       {/* {gun.wearerAttributes && (
         <>
-          <InfoxboxHeader>Wearer Attributes</InfoxboxHeader>
+          <InfoboxHeader>Wearer Attributes</InfoboxHeader>
           {gun.wearerAttributes.passive && (
             <InfoboxSection
               title="Passive"
@@ -369,7 +369,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
 
       {explosion && (
         <>
-          <InfoxboxHeader>Explosion Ballistics</InfoxboxHeader>
+          <InfoboxHeader>Explosion Ballistics</InfoboxHeader>
           <InfoboxRow>
             <InfoboxColumn title="Explosion Damage">
               {explosion.damage}
@@ -431,7 +431,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
         )}
       </InfoboxAudioGroup>
 
-      <InfoxboxHeader>Advanced Stats</InfoxboxHeader>
+      <InfoboxHeader>Advanced Stats</InfoboxHeader>
       <InfoboxRow>
         <InfoboxColumn title="Internal ID">
           <span className="font-mono">{gun.idString}</span>

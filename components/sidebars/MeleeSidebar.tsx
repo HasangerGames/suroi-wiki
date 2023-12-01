@@ -2,7 +2,7 @@ import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/melees";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxRow from "./utils/InfoboxRow";
 import Image from "next/image";
-import InfoxboxHeader from "./utils/InfoboxHeader";
+import InfoboxHeader from "./utils/InfoboxHeader";
 
 export default function MeleeSidebar({ item }: MeleeSidebarProps) {
   return (
@@ -49,7 +49,7 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
           </InfoboxColumn>
         </InfoboxRow>
 
-        <InfoxboxHeader>Advanced Stats</InfoxboxHeader>
+        <InfoboxHeader>Advanced Stats</InfoboxHeader>
         <InfoboxRow>
           <InfoboxColumn title="Internal ID">
             <span className="font-mono">{item.idString}</span>
