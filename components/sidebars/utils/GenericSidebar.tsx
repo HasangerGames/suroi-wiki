@@ -19,16 +19,17 @@ export default function GenericSidebar({
         </div>
         <div className="flex flex-col items-center justify-center gap-2 p-2">
           {imageVariations?.length && (
-            <div className="flex w-full justify-around gap-4 border-b border-primary pb-1z">
-              <span>Variation: </span>
+            <div className="flex w-full justify-around gap-4 items-center pb-1">
               {imageVariations.map((image, i) => (
-                <span
+                <button
                   key={image}
-                  className={`cursor-pointer text-muted-foreground hover:text-white ${imageNum === i ? "!text-white underline": ""}`}
+                  className={`cursor-pointer text-muted-foreground hover:text-white ${
+                    imageNum === i ? "!text-white underline" : ""
+                  } p-2 rounded-md border`}
                   onClick={() => setImageNum(i)}
                 >
                   {i + 1}
-                </span>
+                </button>
               ))}
             </div>
           )}
