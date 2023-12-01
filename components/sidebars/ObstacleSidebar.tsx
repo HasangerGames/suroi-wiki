@@ -1,6 +1,14 @@
-import { ObstacleDefinition } from "@/vendor/suroi/common/src/definitions/obstacles";
+import {
+  ObstacleDefinition,
+  RotationMode,
+} from "@/vendor/suroi/common/src/definitions/obstacles";
 import GenericSidebar from "./utils/GenericSidebar";
+import InfoboxRow from "./utils/InfoboxRow";
 import { range } from "@/lib/util/arrays";
+import InfoboxColumn from "./utils/InfoboxColumn";
+import InfoboxHeader from "./utils/InfoboxHeader";
+import { ObstacleSpecialRoles } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import { getSuroiItem } from "@/lib/util/suroi";
 
 export default function ObstacleSidebar({
   item,
@@ -9,11 +17,11 @@ export default function ObstacleSidebar({
 }) {
   return (
     <GenericSidebar
+      noImage={item.invisible}
       title={item.name}
       image={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/obstacles/${
         item.idString
       }${item.variations ? "_1" : ""}.svg`}
-      
       imageVariations={
         item.variations &&
         range(item.variations).map(
@@ -23,6 +31,84 @@ export default function ObstacleSidebar({
             }_${i + 1}.svg`
         )
       }
-    ></GenericSidebar>
+    >
+      <InfoboxRow>
+        <InfoboxColumn title="Health">
+          {!item.impenetrable && !item.indestructible ? item.health : "∞"}
+          {item.impenetrable && " Impenetrable"}
+          {item.indestructible && " Indestructible"}
+        </InfoboxColumn>
+        <InfoboxColumn title="Material">
+          <code>{item.material}</code>
+        </InfoboxColumn>
+      </InfoboxRow>
+
+      <InfoboxHeader>Properties</InfoboxHeader>
+      <InfoboxRow>
+        <InfoboxColumn
+          title="Rotation Mode"
+          abbr="Full: Allows 360° rotation, Limited: Allows four cardinal directions (up, down, left, right), Binary: Allows two 'flipped' directions, (up or down, left or right, etc.), None: No rotation"
+        >
+          {RotationMode[item.rotationMode]}
+        </InfoboxColumn>
+        <InfoboxColumn title="Variations">{item.variations ?? 1}</InfoboxColumn>
+      </InfoboxRow>
+      <InfoboxRow>
+        {item.hasLoot ||
+          (item.spawnWithLoot && <InfoboxColumn title="Drops Loot" />)}
+        {item.noResidue && <InfoboxColumn title="No Residue" />}
+        {item.invisible && <InfoboxColumn title="Invisible" />}
+        {item.hideOnMap && <InfoboxColumn title="Hidden on Map" />}
+        {item.explosion && <InfoboxColumn title="Explodes" />}
+        {item.reflectBullets && <InfoboxColumn title="Reflects Bullets" />}
+        {item.noCollisions && <InfoboxColumn title="No Collisions" />}
+        {item.role !== undefined && (
+          <InfoboxColumn title={`Is ${ObstacleSpecialRoles[item.role]}`} />
+        )}
+      </InfoboxRow>
+
+      {/* Special Properties */}
+
+      {item.role === ObstacleSpecialRoles.Door && (
+        <>
+          <InfoboxHeader>Door Properties</InfoboxHeader>
+          <InfoboxRow>
+            {item.operationStyle && (
+              <InfoboxColumn
+                title="Operation Style"
+                abbr="How the door opens and closes"
+              >
+                {item.operationStyle}
+              </InfoboxColumn>
+            )}
+          </InfoboxRow>
+          <InfoboxRow>
+            {item.locked && <InfoboxColumn title="Locked" />}
+            {item.openOnce && <InfoboxColumn title="Opens Once" />}
+          </InfoboxRow>
+        </>
+      )}
+
+      {item.role === ObstacleSpecialRoles.Activatable && (
+        <>
+          <InfoboxHeader>Activatable Properties</InfoboxHeader>
+          <InfoboxRow>
+            <InfoboxColumn title="Item Required">
+              {getSuroiItem(item?.requiredItem ?? "")?.name ?? "None"}
+            </InfoboxColumn>
+            {item.interactText && (
+              <InfoboxColumn title="Interact Text">
+                {item.interactText}
+              </InfoboxColumn>
+            )}
+            {item.interactDelay && (
+              <InfoboxColumn title="Interaction Delay">
+                {item.interactDelay / 1000}s
+              </InfoboxColumn>
+            )}
+          </InfoboxRow>
+        </>
+      )}
+    </GenericSidebar>
   );
 }
