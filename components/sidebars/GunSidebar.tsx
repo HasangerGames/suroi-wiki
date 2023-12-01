@@ -45,7 +45,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
         </InfoboxColumn>
       </InfoboxRow>
 
-      <InfoboxRow grid="grid-cols-2">
+      <InfoboxRow>
         <InfoboxColumn
           title="Spread"
           abbr="Spread (angle of inaccuracy) when still"
@@ -146,7 +146,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
             <InfoboxSection
               title="Passive"
               abbr="Attributes applied when the item is in the user's inventory"
-              grid="grid-cols-4"
+             
             >
               <InfoboxColumn
                 title="Max. adren"
@@ -186,7 +186,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
             <InfoboxSection
               title="Active"
               abbr="Attributes applied when the item is active"
-              grid="grid-cols-4"
+             
             >
               <InfoboxColumn
                 title="Max. adren"
@@ -226,13 +226,13 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
             <InfoboxSection
               title="Conditional"
               abbr="Attributes applied when a condition is met"
-              grid="grid-cols-1"
+             
             >
               {(gun.wearerAttributes.on.kill?.length ?? 0) > 0 && (
                 <InfoboxSection
                   title="On Kill"
                   abbr="Attributes applied every time this weapon kills another player"
-                  grid="grid-cols-4"
+                 
                 >
                   {gun.wearerAttributes.on.kill!.map((v) => (
                     <>
@@ -298,7 +298,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
                 <InfoboxSection
                   title="On Damage Dealt"
                   abbr="Attributes applied every time this weapon inflicts damage to another player"
-                  grid="grid-cols-7"
+                 
                 >
                   {gun.wearerAttributes.on.damageDealt!.map((v) => (
                     <>
@@ -432,7 +432,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
       </InfoboxAudioGroup>
 
       <InfoxboxHeader>Advanced Stats</InfoxboxHeader>
-      <InfoboxRow grid="grid-cols-1">
+      <InfoboxRow>
         <InfoboxColumn title="Internal ID">
           <span className="font-mono">{gun.idString}</span>
         </InfoboxColumn>
@@ -453,14 +453,14 @@ function Effects({
 }) {
   return (
     <>
-      <InfoboxSection title="Effects" grid="grid-cols-1">
+      <InfoboxSection title="Effects">
         {gun.wearerAttributes.passive && (
-          <InfoboxSection title="Passive" grid="grid-cols-1">
+          <InfoboxSection title="Passive">
             <Attributes attributes={gun.wearerAttributes.passive} />
           </InfoboxSection>
         )}
         {gun.wearerAttributes.on && (
-          <InfoboxSection title="Conditional" grid="grid-cols-1">
+          <InfoboxSection title="Conditional">
             {gun.wearerAttributes.on.kill && (
               <>
                 {gun.wearerAttributes.on.kill.map((attr) => (
@@ -494,7 +494,7 @@ function Attributes({
 }) {
   return (
     <>
-      <InfoboxRow grid="grid-cols-2">
+      <InfoboxRow>
         <InfoboxColumn title="Health Multiplier">
           {attributes.maxHealth ?? "None"}
         </InfoboxColumn>
@@ -502,7 +502,7 @@ function Attributes({
           {attributes.maxAdrenaline ?? "None"}
         </InfoboxColumn>
       </InfoboxRow>
-      <InfoboxRow grid="grid-cols-2">
+      <InfoboxRow>
         <InfoboxColumn title="Min. Adrenaline">
           {attributes.minAdrenaline ?? "Unchanged"}
         </InfoboxColumn>
