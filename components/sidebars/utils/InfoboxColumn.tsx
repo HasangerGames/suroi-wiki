@@ -6,10 +6,10 @@ export default function InfoboxColumn({
 }: InfoboxColumnProps) {
   return (
     <div className="p-2">
-      <h4 className="mb-1 font-bold">
+      <h4 className={`${children && "mb-1"} font-bold`}>
         {abbr ? <abbr title={abbr}>{title}</abbr> : title}
       </h4>
-      {!image && <p className="">{children}</p>}
+      {!image && children && <p className="">{children}</p>}
       {image && (
         <div className="flex justify-center items-center">{children}</div>
       )}
