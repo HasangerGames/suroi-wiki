@@ -30,7 +30,7 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
             {item.obstacleMultiplier * item.damage})
           </InfoboxColumn>
         </InfoboxRow>
-        <InfoboxRow grid="grid-cols-2">
+        <InfoboxRow>
           <InfoboxColumn
             title="Max. DPS"
             abbr="Hypothetical maximum damage per second"
@@ -50,7 +50,7 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
         </InfoboxRow>
 
         <InfoxboxHeader>Advanced Stats</InfoxboxHeader>
-        <InfoboxRow grid="grid-cols-2">
+        <InfoboxRow>
           <InfoboxColumn title="Internal ID">
             <span className="font-mono">{item.idString}</span>
           </InfoboxColumn>

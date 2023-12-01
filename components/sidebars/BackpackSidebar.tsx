@@ -17,7 +17,7 @@ export default function BackpackSidebar({
       image={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${item.idString}.svg`}
     >
       <InfoxboxHeader>Healing Capacity</InfoxboxHeader>
-      <InfoboxRow grid="grid-cols-2">
+      <InfoboxRow>
         {["gauze", "medikit"].map((healing) => (
           <InfoboxColumn
             key={healing}
@@ -31,7 +31,7 @@ export default function BackpackSidebar({
           </InfoboxColumn>
         ))}
       </InfoboxRow>
-      <InfoboxRow grid="grid-cols-2">
+      <InfoboxRow>
         {["cola", "tablets"].map((healing) => (
           <InfoboxColumn
             key={healing}
@@ -47,7 +47,7 @@ export default function BackpackSidebar({
       </InfoboxRow>
 
       <InfoxboxHeader>Ammo Capacity</InfoxboxHeader>
-      <InfoboxRow grid="grid-cols-4">
+      <InfoboxRow>
         {["12g", "556mm", "762mm", "9mm"].map((ammo) => (
           <InfoboxColumn
             key={ammo}

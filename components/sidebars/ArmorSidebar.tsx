@@ -10,7 +10,7 @@ export default function ArmorSidebar({ item }: { item: ArmorDefinition }) {
       title={item.name}
       image={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${item.idString}.svg`}
     >
-      <InfoboxRow grid="grid-cols-2">
+      <InfoboxRow>
         <InfoboxColumn title="Level">{item.level}</InfoboxColumn>
         <InfoboxColumn title="Damage Reduction">
           {item.damageReduction * 100}%
@@ -18,7 +18,7 @@ export default function ArmorSidebar({ item }: { item: ArmorDefinition }) {
       </InfoboxRow>
 
       <InfoxboxHeader>Advanced Stats</InfoxboxHeader>
-      <InfoboxRow grid="grid-cols-1">
+      <InfoboxRow>
         <InfoboxColumn title="Internal ID">
           <span className="font-mono">{item.idString}</span>
         </InfoboxColumn>
