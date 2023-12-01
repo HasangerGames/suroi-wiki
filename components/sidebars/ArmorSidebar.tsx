@@ -2,7 +2,7 @@ import { ArmorDefinition } from "@/vendor/suroi/common/src/definitions/armors";
 import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxRow from "./utils/InfoboxRow";
 import InfoboxColumn from "./utils/InfoboxColumn";
-import InfoxboxHeader from "./utils/InfoboxHeader";
+import InfoboxHeader from "./utils/InfoboxHeader";
 
 export default function ArmorSidebar({ item }: { item: ArmorDefinition }) {
   return (
@@ -17,7 +17,7 @@ export default function ArmorSidebar({ item }: { item: ArmorDefinition }) {
         </InfoboxColumn>
       </InfoboxRow>
 
-      <InfoxboxHeader>Advanced Stats</InfoxboxHeader>
+      <InfoboxHeader>Advanced Stats</InfoboxHeader>
       <InfoboxRow>
         <InfoboxColumn title="Internal ID">
           <span className="font-mono">{item.idString}</span>

@@ -4,7 +4,7 @@ import {
 } from "@/vendor/suroi/common/src/definitions/healingItems";
 import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";
-import InfoxboxHeader from "./utils/InfoboxHeader";
+import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
 import InfoboxAudioGroup from "./utils/InfoboxAudioGroup";
 import InfoboxAudio from "./utils/InfoboxAudio";
@@ -38,7 +38,7 @@ export default function HealingSidebar({
         </InfoboxColumn>
       </InfoboxRow>
 
-      <InfoxboxHeader>Capacity</InfoxboxHeader>
+      <InfoboxHeader>Capacity</InfoboxHeader>
       <InfoboxRow>
         {Backpacks.definitions.map((backpack) => (
           <InfoboxColumn title={backpack.name} key={backpack.idString}>
@@ -54,7 +54,7 @@ export default function HealingSidebar({
         />
       </InfoboxAudioGroup>
 
-      <InfoxboxHeader>Advanced Stats</InfoxboxHeader>
+      <InfoboxHeader>Advanced Stats</InfoboxHeader>
       <InfoboxRow>
         <InfoboxColumn title="Internal ID">
           <span className="font-mono">{item.idString}</span>

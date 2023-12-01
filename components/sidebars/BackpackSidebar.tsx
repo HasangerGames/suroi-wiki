@@ -1,7 +1,7 @@
 import { BackpackDefinition } from "@/vendor/suroi/common/src/definitions/backpacks";
 import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxRow from "./utils/InfoboxRow";
-import InfoxboxHeader from "./utils/InfoboxHeader";
+import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import AmmoIcon from "../icons/AmmoIcon";
 import HealingIcon from "../icons/HealingIcon";
@@ -16,7 +16,7 @@ export default function BackpackSidebar({
       title={item.name}
       image={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${item.idString}.svg`}
     >
-      <InfoxboxHeader>Healing Capacity</InfoxboxHeader>
+      <InfoboxHeader>Healing Capacity</InfoboxHeader>
       <InfoboxRow>
         {["gauze", "medikit"].map((healing) => (
           <InfoboxColumn
@@ -46,7 +46,7 @@ export default function BackpackSidebar({
         ))}
       </InfoboxRow>
 
-      <InfoxboxHeader>Ammo Capacity</InfoxboxHeader>
+      <InfoboxHeader>Ammo Capacity</InfoboxHeader>
       <InfoboxRow>
         {["12g", "556mm", "762mm", "9mm"].map((ammo) => (
           <InfoboxColumn
