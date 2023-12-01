@@ -8,6 +8,7 @@ export default function GenericSidebar({
   title,
   image,
   imageVariations,
+  noImage,
 }: GenericSidebarProps) {
   const [imageNum, setImageNum] = useState(0);
 
@@ -33,12 +34,16 @@ export default function GenericSidebar({
               ))}
             </div>
           )}
-          <Image
-            src={imageVariations ? imageVariations[imageNum] : image}
-            width={128}
-            height={128}
-            alt={`Image of ${title}`}
-          />
+          {noImage ? <div className="m-4 flex justify-center">
+            <span>(No image available)</span>
+          </div> : (
+            <Image
+              src={imageVariations ? imageVariations[imageNum] : image}
+              width={128}
+              height={128}
+              alt={`Image of ${title}`}
+            />
+          )}
         </div>
         {children}
       </div>
@@ -50,4 +55,5 @@ export interface GenericSidebarProps extends React.PropsWithChildren {
   title: string;
   image: string;
   imageVariations?: string[];
+  noImage?: boolean;
 }
