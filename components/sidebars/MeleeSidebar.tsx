@@ -3,6 +3,7 @@ import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxRow from "./utils/InfoboxRow";
 import Image from "next/image";
 import InfoboxHeader from "./utils/InfoboxHeader";
+import { getSuroiImageLink } from "@/lib/util/suroi";
 
 export default function MeleeSidebar({ item }: MeleeSidebarProps) {
   return (
@@ -13,7 +14,7 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
         </div>
         <div className="flex justify-center p-2">
           <Image
-            src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/weapons/${item.idString}.svg`}
+            src={getSuroiImageLink(item)}
             width={128}
             height={128}
             alt={`Image of ${item.name}`}

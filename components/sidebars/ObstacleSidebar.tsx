@@ -8,7 +8,7 @@ import { range } from "@/lib/util/arrays";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import { ObstacleSpecialRoles } from "@/vendor/suroi/common/src/utils/objectDefinitions";
-import { getSuroiItem } from "@/lib/util/suroi";
+import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 
 export default function ObstacleSidebar({
   item,
@@ -19,17 +19,10 @@ export default function ObstacleSidebar({
     <GenericSidebar
       noImage={item.invisible}
       title={item.name}
-      image={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/obstacles/${
-        item.idString
-      }${item.variations ? "_1" : ""}.svg`}
+      image={getSuroiImageLink(item, item.variations ? 1 : undefined)}
       imageVariations={
         item.variations &&
-        range(item.variations).map(
-          (i) =>
-            `https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/obstacles/${
-              item.idString
-            }_${i + 1}.svg`
-        )
+        range(item.variations).map((i) => getSuroiImageLink(item, i + 1))
       }
     >
       <InfoboxRow>

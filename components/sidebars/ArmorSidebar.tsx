@@ -3,12 +3,13 @@ import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxRow from "./utils/InfoboxRow";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
+import { getSuroiImageLink } from "@/lib/util/suroi";
 
 export default function ArmorSidebar({ item }: { item: ArmorDefinition }) {
   return (
     <GenericSidebar
       title={item.name}
-      image={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${item.idString}.svg`}
+      image={getSuroiImageLink(item)}
     >
       <InfoboxRow>
         <InfoboxColumn title="Level">{item.level}</InfoboxColumn>

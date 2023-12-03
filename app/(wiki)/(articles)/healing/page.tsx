@@ -2,6 +2,7 @@ import FlexTable from "@/components/tables/FlexTable";
 import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems";
 import Image from "next/image";
 import Link from "@/components/links/Link";
+import { getSuroiImageLink } from "@/lib/util/suroi";
 
 export default function HealingPage() {
   return (
@@ -9,7 +10,8 @@ export default function HealingPage() {
       <div className="prose prose-invert">
         <h1>Healing Items</h1>
         <p>
-          There are currently {HealingItems.definitions.length} healing items in the game. 
+          There are currently {HealingItems.definitions.length} healing items in
+          the game.
         </p>
       </div>
       <FlexTable>
@@ -17,7 +19,7 @@ export default function HealingPage() {
           <div key={item.idString} className="flex divide-x divide-border">
             <div className="flex justify-center items-center p-4">
               <Image
-                src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${item.idString}.svg`}
+                src={getSuroiImageLink(item)}
                 width={64}
                 height={64}
                 alt={`Image of ${item.name}`}

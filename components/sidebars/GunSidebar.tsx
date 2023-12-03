@@ -14,12 +14,13 @@ import {
   ItemDefinition,
   WearerAttributes,
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import { getSuroiImageLink } from "@/lib/util/suroi";
 
 export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
   return (
     <GenericSidebar
       title={gun.name}
-      image={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/weapons/${gun.idString}.svg`}
+      image={getSuroiImageLink(gun)}
     >
       <InfoboxRow>
         <InfoboxColumn title="Fire Mode">
@@ -69,7 +70,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           {gun.ballistics.speed}
         </InfoboxColumn>
         <InfoboxColumn title="Range">
-          {gun.ballistics.maxDistance}
+          {gun.ballistics.range}
         </InfoboxColumn>
       </InfoboxRow>
 
@@ -394,7 +395,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           </InfoboxRow>
           <InfoboxRow>
             <InfoboxColumn title="Shrapnel Range">
-              {explosion.ballistics.maxDistance}
+              {explosion.ballistics.range}
             </InfoboxColumn>
             <InfoboxColumn title="Shrapnel Obstacle Damage">
               x{explosion.ballistics.obstacleMultiplier}

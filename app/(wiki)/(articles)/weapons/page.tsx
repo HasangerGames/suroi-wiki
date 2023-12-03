@@ -3,6 +3,7 @@ import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import Image from "next/image";
 import Link from "@/components/links/Link";
+import { getSuroiImageLink } from "@/lib/util/suroi";
 
 export default function WeaponsPage() {
   return (
@@ -19,7 +20,7 @@ export default function WeaponsPage() {
           <div key={gun.idString} className="flex divide-x divide-border">
             <div className="flex justify-center items-center p-2">
               <Image
-                src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/weapons/${gun.idString}.svg`}
+                src={getSuroiImageLink(gun)}
                 width={128}
                 height={128}
                 alt={`Image of ${gun.name}`}
@@ -38,7 +39,7 @@ export default function WeaponsPage() {
           <div key={melee.idString} className="flex divide-x divide-border">
             <div className="flex justify-center items-center p-2">
               <Image
-                src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/weapons/${melee.idString}.svg`}
+                src={getSuroiImageLink(melee)}
                 width={128}
                 height={128}
                 alt={`Image of ${melee.name}`}
