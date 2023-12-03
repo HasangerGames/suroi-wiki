@@ -10,15 +10,20 @@ export function ObjectCard({ obj, path }: ObjectCardProps) {
       className="rounded-md border hover:border-primary transition-colors hover:text-primary flex gap-4 p-4 cursor-pointer"
     >
       <div className="flex items-center">
-        <Image
-          src={getSuroiImageLink(
-            obj,
-            "variations" in obj && obj.variations ? 1 : 0
-          )}
-          alt={`Image of ${obj.name}`}
-          width={100}
-          height={100}
-        />
+        {"invisible" in obj && obj.invisible ? (
+          <span>(No image available)</span>
+        ) : (
+          <Image
+            src={getSuroiImageLink(
+              obj,
+              "variations" in obj && obj.variations ? 1 : 0
+            )}
+            alt={`Image of ${obj.name}`}
+            width={100}
+            height={100}
+            priority
+          />
+        )}
       </div>
       <div className="flex-1">
         <span className="font-bold block text-lg underline">{obj.name}</span>
