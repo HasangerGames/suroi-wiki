@@ -21,7 +21,8 @@ export function ObjectCard({ obj, path }: ObjectCardProps) {
         />
       </div>
       <div className="flex-1">
-        <span className="font-bold text-lg underline">{obj.name}</span>
+        <span className="font-bold block text-lg underline">{obj.name}</span>
+        <span className="font-mono text-sm">{obj.idString}</span>
       </div>
     </Link>
   );
