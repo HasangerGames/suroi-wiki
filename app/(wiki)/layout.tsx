@@ -6,7 +6,7 @@ import Link from "@/components/links/Link";
 export default function WikiLayout({ children }: React.PropsWithChildren) {
   return (
     <div>
-      <nav className="mb-4 py-4 border-b border-b-[gray] bg-background top-0 sticky">
+      <nav className="mb-4 py-4 border-b border-b-[gray] bg-background top-0 z-50 sticky">
         <div className="container flex items-center">
           <Link aria-label="Open mobile navigation" href="#navigation">
             <div className="mr-8 lg:hidden">
