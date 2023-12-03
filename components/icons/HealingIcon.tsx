@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+// TODO: I have no idea what this was for?
+
 export default function HealingIcon({
   item: ammo,
   scale = 1,

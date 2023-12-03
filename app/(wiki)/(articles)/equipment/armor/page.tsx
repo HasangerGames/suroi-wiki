@@ -7,6 +7,7 @@ import {
   Armors,
 } from "@/vendor/suroi/common/src/definitions/armors";
 import { ArmorDefinition } from "@/vendor/suroi/common/src/definitions/armors";
+import { getSuroiImageLink } from "@/lib/util/suroi";
 
 const Helmets = Armors.definitions.filter(
   (armor) => armor.armorType === ArmorType.Helmet
@@ -63,7 +64,7 @@ export default function ArmorPage() {
               <tr key={armor.idString} className="">
                 <td>
                   <Image
-                    src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${armor.idString}.svg`}
+                    src={getSuroiImageLink(armor)}
                     width={32}
                     height={32}
                     alt={`${armor.name} image`}
@@ -101,7 +102,7 @@ export default function ArmorPage() {
                   {vest.idString ? (
                     <>
                       <Image
-                        src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${vest.idString}.svg`}
+                        src={getSuroiImageLink(vest)}
                         width={32}
                         height={32}
                         alt={`${vest.name} image`}
@@ -130,7 +131,7 @@ export default function ArmorPage() {
                   {helmet.idString ? (
                     <>
                       <Image
-                        src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${helmet.idString}.svg`}
+                        src={getSuroiImageLink(helmet)}
                         width={32}
                         height={32}
                         alt={`${helmet.name} image`}

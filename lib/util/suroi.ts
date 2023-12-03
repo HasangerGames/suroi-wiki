@@ -15,7 +15,6 @@ import {
   ObstacleDefinition,
   Obstacles,
 } from "@/vendor/suroi/common/src/definitions/obstacles";
-import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 import {
   ItemDefinition,
   ItemType,
@@ -26,26 +25,26 @@ export function getSuroiItem(idString: string) {
   return Loots.definitions.find((item) => item.idString === idString);
 }
 
-export const IMAGE_BASE_URLS: Record<ItemType | ObjectCategory, string> = {
+export const IMAGE_BASE_URLS = {
   // Items
-  [ItemType.None]: "",
-  [ItemType.Gun]: "game/weapons",
-  [ItemType.Ammo]: "game/loot",
-  [ItemType.Melee]: "game/weapons",
-  [ItemType.Healing]: "game/loot",
-  [ItemType.Armor]: "game/loot",
-  [ItemType.Backpack]: "game/loot",
-  [ItemType.Scope]: "game/loot",
-  [ItemType.Skin]: "game/skins",
+  None: "",
+  Gun: "game/weapons",
+  Ammo: "game/loot",
+  Melee: "game/weapons",
+  Healing: "game/loot",
+  Armor: "game/loot",
+  Backpack: "game/loot",
+  Scope: "game/loot",
+  Skin: "game/skins",
 
   // Objects
-  [ObjectCategory.Player]: "",
-  [ObjectCategory.DeathMarker]: "",
-  [ObjectCategory.Obstacle]: "game/obstacles",
-  [ObjectCategory.Loot]: "game/loot",
-  [ObjectCategory.Building]: "game/buildings",
-  [ObjectCategory.Decal]: "game/decals",
-};
+  Player: "",
+  DeathMarker: "",
+  Obstacle: "game/obstacles",
+  Loot: "game/loot",
+  Building: "game/buildings",
+  Decal: "game/decals",
+} satisfies Record<keyof typeof ItemType | keyof typeof ObjectCategory, string>;
 
 export const IMAGE_BASE_URL =
   "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/";
@@ -56,34 +55,46 @@ export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
 ) {
   // Is obj an item?
   if ("itemType" in obj)
-    return _imageLink(obj.idString, obj.itemType, variation);
+    return _itemImageLink(obj.idString, obj.itemType, variation);
 
   // Is a building?
   if (isBuilding(obj))
-    return _imageLink(obj.idString, ObjectCategory.Building, variation);
+    return _otherImageLink(obj.idString, ObjectCategory.Building, variation);
 
   // Is an obstacle?
   if (isObstacle(obj))
-    return _imageLink(obj.idString, ObjectCategory.Obstacle, variation);
+    return _otherImageLink(obj.idString, ObjectCategory.Obstacle, variation);
 
   // Is a decal?
   if (isDecal(obj))
-    return _imageLink(obj.idString, ObjectCategory.Decal, variation);
+    return _otherImageLink(obj.idString, ObjectCategory.Decal, variation);
 
   // Is loot? (should be covered by items already)
   if (isLoot(obj))
-    return _imageLink(obj.idString, ObjectCategory.Loot, variation);
+    return _otherImageLink(obj.idString, ObjectCategory.Loot, variation);
 
-  // Is a skin
-  if (isSkin(obj)) return _imageLink(obj.idString, ItemType.Skin, variation);
+  // Return missing texture
+  return `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
 }
 
-function _imageLink(
+function _itemImageLink(
   idString: string,
-  category: ObjectCategory | ItemType,
+  itemType: ItemType,
   variation?: number
 ) {
-  return `${IMAGE_BASE_URL}${IMAGE_BASE_URLS[category]}/${idString}${
+  return `${IMAGE_BASE_URL}${
+    IMAGE_BASE_URLS[ItemType[itemType] as keyof typeof ItemType]
+  }/${idString}${variation ? `_${variation}` : ""}.svg`;
+}
+
+function _otherImageLink(
+  idString: string,
+  category: ObjectCategory,
+  variation?: number
+) {
+  const key = ObjectCategory[category] as keyof typeof ObjectCategory;
+
+  return `${IMAGE_BASE_URL}${IMAGE_BASE_URLS[key]}/${idString}${
     variation ? `_${variation}` : ""
   }.svg`;
 }
@@ -116,8 +127,3 @@ function isLoot(obj: ObjectDefinition): obj is LootDefinition {
   );
 }
 
-function isSkin(obj: ObjectDefinition) {
-  return Boolean(
-    Skins.definitions.find((skin) => skin.idString === obj.idString)
-  );
-}
