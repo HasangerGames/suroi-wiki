@@ -5,6 +5,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
 import MDXClient from "../client/MDXClient";
 import { Metadata } from "next";
+import Empty from "../articles/notices/Empty";
 
 export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
   return async function GenericMDXPage({
@@ -37,7 +38,11 @@ export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
         </>
       );
 
-    return <></>;
+    return (
+      <>
+        <Empty />
+      </>
+    );
   };
 }
 
@@ -66,7 +71,7 @@ export function GenericGenerateMetadataFactory<T extends ObjectDefinition>(
       title: item.name,
       openGraph: {
         type: "article",
-      }
+      },
     };
   };
 }
