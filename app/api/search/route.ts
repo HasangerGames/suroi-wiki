@@ -3,7 +3,8 @@ import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
-import { ItemDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import { Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
+import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { NextRequest, NextResponse } from "next/server";
 
 const CATEGORIES: SearchCategory[] = [
@@ -44,6 +45,14 @@ const CATEGORIES: SearchCategory[] = [
     imagePath:
       "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/",
   },
+
+  {
+    path: "/obstacles",
+    name: "Obstacles",
+    items: Obstacles.definitions,
+    imagePath:
+      "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/obstacles/",
+  },
 ];
 
 // Handle search server side so we don't ship too much of vendor/suroi to the client
@@ -52,7 +61,7 @@ export async function GET(req: NextRequest) {
 
   if (!search) return new NextResponse(null, { status: 400 });
 
-  const items: (ItemDefinition & { search: SearchResult })[] = [];
+  const items: (ObjectDefinition & { search: SearchResult })[] = [];
 
   for (const category of CATEGORIES) {
     for (const item of category.items) {
@@ -62,7 +71,8 @@ export async function GET(req: NextRequest) {
         .replace(".", "");
       if (
         item.name.toLowerCase().includes(search.toLowerCase()) ||
-        expanded.includes(search.toLowerCase())
+        expanded.includes(search.toLowerCase()) ||
+        item.idString.toLowerCase().includes(search.toLowerCase())
       ) {
         items.push({
           ...item,
@@ -70,6 +80,7 @@ export async function GET(req: NextRequest) {
             imagePath: category.imagePath,
             name: category.name,
             path: category.path,
+            variations: "variations" in item ? item.variations as number : undefined,
           },
         });
       }
@@ -83,8 +94,9 @@ export interface SearchResult {
   path: string;
   imagePath: string;
   name: string;
+  variations?: number;
 }
 
 interface SearchCategory extends SearchResult {
-  items: ItemDefinition[];
+  items: ObjectDefinition[];
 }
