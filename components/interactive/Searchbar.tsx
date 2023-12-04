@@ -22,9 +22,7 @@ export default function Searchbar() {
 
   return (
     <>
-      <div
-        className="flex relative justify-end w-full"
-      >
+      <div className="flex relative justify-end w-full">
         <div className="flex z-10 items-center p-2 rounded-l-md border-l border-y border-border bg-muted">
           <Search className="w-4 h-4" />
         </div>
@@ -52,7 +50,9 @@ export default function Searchbar() {
                   <div className="p-2 rounded-md hover:bg-neutral-600/80 cursor-pointer flex gap-2 transition-colors">
                     <div className="p-1">
                       <Image
-                        src={`${item.search.imagePath}${item.idString}.svg`}
+                        src={`${item.search.imagePath}${item.idString}${
+                          item.search.variations !== undefined ? "_1" : ""
+                        }.svg`}
                         alt={`Image of ${item.name}`}
                         height={100}
                         width={100}
