@@ -2,17 +2,13 @@ export default function InfoboxColumn({
   children,
   title,
   abbr,
-  image = false,
 }: InfoboxColumnProps) {
   return (
-    <div className="p-2">
+    <div className="p-2 flex flex-col">
       <h4 className={`${children && "mb-1"} font-bold`}>
         {abbr ? <abbr title={abbr}>{title}</abbr> : title}
       </h4>
-      {!image && children && <p className="">{children}</p>}
-      {image && (
-        <div className="flex justify-center items-center">{children}</div>
-      )}
+      <div className="flex justify-center items-center flex-1">{children}</div>
     </div>
   );
 }
