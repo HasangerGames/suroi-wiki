@@ -7,6 +7,7 @@ import {
   DecalDefinition,
   Decals,
 } from "@/vendor/suroi/common/src/definitions/decals";
+import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
 import {
   LootDefinition,
   Loots,
@@ -51,11 +52,12 @@ export const IMAGE_BASE_URL =
 
 export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
   obj: T,
-  variation?: number
+  variation?: number,
+  append?: string | string[]
 ) {
   // Is obj an item?
   if ("itemType" in obj)
-    return _itemImageLink(obj.idString, obj.itemType, variation);
+    return _itemImageLink(obj.idString, obj.itemType, variation, append);
 
   // Is a building?
   if (isBuilding(obj))
@@ -77,14 +79,25 @@ export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
   return `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
 }
 
+export function getSuroiKillfeedImageLink(gun: GunDefinition) {
+  return `${IMAGE_BASE_URL}/killfeed/${gun.idString}_killfeed.svg`
+}
+
 function _itemImageLink(
   idString: string,
   itemType: ItemType,
-  variation?: number
+  variation?: number,
+  append?: string | string[]
 ) {
   return `${IMAGE_BASE_URL}${
     IMAGE_BASE_URLS[ItemType[itemType] as keyof typeof ItemType]
-  }/${idString}${variation ? `_${variation}` : ""}.svg`;
+  }/${idString}${variation ? `_${variation}` : ""}${
+    append
+      ? Array.isArray(append)
+        ? "_" + append.join("_")
+        : `_${append}`
+      : ""
+  }.svg`;
 }
 
 function _otherImageLink(
@@ -126,4 +139,3 @@ function isLoot(obj: ObjectDefinition): obj is LootDefinition {
     Loots.definitions.find((loot) => loot.idString === obj.idString)
   );
 }
-

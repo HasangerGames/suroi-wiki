@@ -14,19 +14,37 @@ import {
   ItemDefinition,
   WearerAttributes,
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
-import { getSuroiImageLink } from "@/lib/util/suroi";
+import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
+import Image from "next/image";
 
 export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
   return (
-    <GenericSidebar
-      title={gun.name}
-      image={getSuroiImageLink(gun)}
-    >
+    <GenericSidebar title={gun.name} image={getSuroiImageLink(gun)}>
+      <InfoboxRow>
+        <InfoboxColumn title="World Image">
+          <div className="flex items-center">
+            <Image
+              width={128}
+              height={128}
+              alt={`World image of ${gun.name}`}
+              src={getSuroiImageLink(gun, undefined, "world")}
+            />
+          </div>
+        </InfoboxColumn>
+        <InfoboxColumn title="Killfeed Icon">
+          <Image
+            width={128}
+            height={128}
+            alt={`Killfeed icon of ${gun.name}`}
+            src={getSuroiKillfeedImageLink(gun)}
+          />
+        </InfoboxColumn>
+      </InfoboxRow>
       <InfoboxRow>
         <InfoboxColumn title="Fire Mode">
           {FireMode[gun.fireMode]}
         </InfoboxColumn>
-        <InfoboxColumn title="Ammo Type" image>
+        <InfoboxColumn title="Ammo Type">
           <AmmoIcon ammo={gun.ammoType} scale={0.5} />
         </InfoboxColumn>
         <InfoboxColumn title="Capacity">{gun.capacity}</InfoboxColumn>
@@ -57,7 +75,8 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           title="Move Spread"
           abbr="Spread (angle of inaccuracy when moving)"
         >
-          {gun.moveSpread}° <abbr title="When compared to normal spread">
+          {gun.moveSpread}°{" "}
+          <abbr title="When compared to normal spread">
             ({gun.moveSpread - gun.shotSpread > 0 ? "+" : ""}
             {(gun.moveSpread - gun.shotSpread).toFixed(2)}°)
           </abbr>
@@ -69,9 +88,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
         <InfoboxColumn title="Bullet Speed">
           {gun.ballistics.speed}
         </InfoboxColumn>
-        <InfoboxColumn title="Range">
-          {gun.ballistics.range}
-        </InfoboxColumn>
+        <InfoboxColumn title="Range">{gun.ballistics.range}</InfoboxColumn>
       </InfoboxRow>
 
       <InfoboxRow>
