@@ -12,11 +12,25 @@ export const metadata: Metadata = {
     default: "Suroi Wiki",
     template: "%s | Suroi Wiki",
   },
-  description: "The official wiki for Suroi, an open-source 2D battle royale game inspired by surviv.io.",
+  description:
+    "The official wiki for Suroi, an open-source 2D battle royale game inspired by surviv.io.",
   openGraph: {
     type: "website",
   },
-  keywords: ["suroi", "surviv", "suroi.io", "suroiio", "wiki", "open-source", "battle-royale", "community", "shooter"],
+  keywords: [
+    "suroi",
+    "surviv",
+    "suroi.io",
+    "suroiio",
+    "wiki",
+    "open-source",
+    "battle-royale",
+    "community",
+    "shooter",
+  ],
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export const viewport: Viewport = {

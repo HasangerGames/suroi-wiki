@@ -71,6 +71,9 @@ export function GenericGenerateMetadataFactory<T extends ObjectDefinition>(
       title: item.name,
       openGraph: {
         type: "article",
+        images: [
+          `/api/og/${item.idString}`
+        ],
       },
     };
   };
