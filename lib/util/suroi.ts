@@ -45,6 +45,7 @@ export const IMAGE_BASE_URLS = {
   Loot: "game/loot",
   Building: "game/buildings",
   Decal: "game/decals",
+  Parachute: "game/airdrop",
 } satisfies Record<keyof typeof ItemType | keyof typeof ObjectCategory, string>;
 
 export const IMAGE_BASE_URL =
@@ -80,7 +81,7 @@ export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
 }
 
 export function getSuroiKillfeedImageLink(gun: GunDefinition) {
-  return `${IMAGE_BASE_URL}/killfeed/${gun.idString}_killfeed.svg`
+  return `${IMAGE_BASE_URL}/killfeed/${gun.idString}_killfeed.svg`;
 }
 
 function _itemImageLink(
@@ -91,7 +92,7 @@ function _itemImageLink(
 ) {
   return `${IMAGE_BASE_URL}${
     IMAGE_BASE_URLS[ItemType[itemType] as keyof typeof ItemType]
-  }/${idString}${variation ? `_${variation}` : ""}${
+  }/${idString.replace("dual_", "")}${variation ? `_${variation}` : ""}${
     append
       ? Array.isArray(append)
         ? "_" + append.join("_")

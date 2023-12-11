@@ -1,5 +1,8 @@
 import { FireMode } from "@/vendor/suroi/common/src/constants";
-import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
+import {
+  GunDefinition,
+  Guns,
+} from "@/vendor/suroi/common/src/definitions/guns";
 import InfoboxRow from "./utils/InfoboxRow";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import AmmoIcon from "../icons/AmmoIcon";
@@ -14,8 +17,13 @@ import {
   ItemDefinition,
   WearerAttributes,
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
-import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
+import {
+  getSuroiImageLink,
+  getSuroiItem,
+  getSuroiKillfeedImageLink,
+} from "@/lib/util/suroi";
 import Image from "next/image";
+import Link from "../links/Link";
 
 export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
   return (
@@ -71,6 +79,22 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
         >
           {gun.shotSpread}°
         </InfoboxColumn>
+        {gun.isDual && (
+          <InfoboxColumn title="Single Variant">
+            <Link href={`/weapons/guns/${gun.singleVariant}`}>
+              {getSuroiItem(gun.singleVariant)?.name}
+            </Link>
+          </InfoboxColumn>
+        )}
+        {[Guns.find((g) => g.idString === `dual_${gun.idString}`)].map(
+          (gun) => (
+            <InfoboxColumn title="Dual Variant">
+              <Link href={`/weapons/guns/dual_${gun?.idString}`}>
+                {gun?.name}
+              </Link>
+            </InfoboxColumn>
+          )
+        )}
         <InfoboxColumn
           title="Move Spread"
           abbr="Spread (angle of inaccuracy when moving)"
