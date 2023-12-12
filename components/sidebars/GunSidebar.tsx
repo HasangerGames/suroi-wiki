@@ -90,7 +90,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
             </Link>
           </InfoboxColumn>
         )}
-        {[Guns.find((g) => g.idString === `dual_${gun.idString}`)].map(
+        {[Guns.find((g) => g.idString === `dual_${gun.idString}`)].filter(Boolean).map(
           (gun) => (
             <InfoboxColumn title="Dual Variant" key={gun?.idString}>
               <Link href={`/weapons/guns/dual_${gun?.idString}`}>
