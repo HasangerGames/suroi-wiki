@@ -1,21 +1,22 @@
 "use client";
 
-import Link from "next/link";
 import MenuItem from "./MenuItem";
 import Searchbar from "./Searchbar";
 import { X } from "lucide-react";
 
-export default function NavigationMenu() {
+export default function NavigationMenu({ open, setOpen }: NavigationMenuProps) {
   return (
     <div
       id="navigation"
-      className="absolute top-0 right-0 bottom-0 left-0 w-full transition-transform duration-500 ease-out -translate-y-full border-b-border target:border-b-2 lg:border-none border-border lg:transition-none bg-background target:translate-y-0 lg:translate-y-0 lg:static h-max"
+      className={`${
+        !open ? "-translate-y-full" : "translate-y-0"
+      } border-b absolute top-0 right-0 bottom-0 left-0 w-full transition-transform duration-500 ease-out border-b-border target:border-b-2 lg:border-none border-border lg:transition-none bg-background lg:translate-y-0 lg:static h-max`}
     >
       <div className="flex flex-col gap-8 p-8 lg:ml-8 lg:p-0 lg:flex-row">
         <div className="lg:hidden">
-          <Link aria-label="Close navigation" href="#">
+          <button aria-label="Close navigation" onClick={() => setOpen(false)}>
             <X size={36} />
-          </Link>
+          </button>
         </div>
         <MenuItem title="Weapons" href="/weapons" />
         <MenuItem title="Healing Items" href="/healing" />
@@ -27,4 +28,9 @@ export default function NavigationMenu() {
       </div>
     </div>
   );
+}
+
+export interface NavigationMenuProps {
+  open: boolean;
+  setOpen: (open: boolean) => void;
 }
