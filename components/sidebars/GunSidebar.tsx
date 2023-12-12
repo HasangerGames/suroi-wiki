@@ -14,7 +14,11 @@ import {
   ItemDefinition,
   WearerAttributes,
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
-import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
+import {
+  getSuroiImageLink,
+  getSuroiItem,
+  getSuroiKillfeedImageLink,
+} from "@/lib/util/suroi";
 import Image from "next/image";
 
 export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
@@ -27,7 +31,11 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
               width={128}
               height={128}
               alt={`World image of ${gun.name}`}
-              src={getSuroiImageLink(gun, undefined, "world")}
+              src={getSuroiImageLink(
+                gun.isDual ? getSuroiItem(gun.singleVariant)! : gun,
+                undefined,
+                "world"
+              )}
             />
           </div>
         </InfoboxColumn>
