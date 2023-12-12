@@ -1,31 +1,10 @@
-import NavigationMenu from "@/components/interactive/NavigationMenu";
-import { Menu } from "lucide-react";
-import Image from "next/image";
-import Link from "@/components/links/Link";
+import NavContainer from "@/components/interactive/NavContainer";
 
 export default function WikiLayout({ children }: React.PropsWithChildren) {
   return (
     <div>
       <nav className="mb-4 py-4 border-b border-b-[gray] bg-background top-0 z-50 sticky">
-        <div className="container flex items-center">
-          <Link aria-label="Open mobile navigation" href="#navigation">
-            <div className="mr-8 lg:hidden">
-              <Menu size={36} />
-            </div>
-          </Link>
-          <Link href="/" unstyled>
-            <div className="flex items-center group">
-              <Image
-                src="/img/logo.svg"
-                alt="Suroi logo"
-                width={169}
-                height={48}
-              />
-              <div className="hidden ml-2 sm:block"></div>
-            </div>
-          </Link>
-          <NavigationMenu />
-        </div>
+        <NavContainer />
       </nav>
       <div className="container my-8">
         <div>{children}</div>
