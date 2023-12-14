@@ -47,8 +47,9 @@ export default function ObstacleSidebar({
         <InfoboxColumn title="Variations">{item.variations ?? 1}</InfoboxColumn>
       </InfoboxRow>
       <InfoboxRow>
-        {item.hasLoot ||
-          (item.spawnWithLoot && <InfoboxColumn title="Drops Loot" />)}
+        {(item.hasLoot || item.spawnWithLoot) && (
+          <InfoboxColumn title="Drops Loot" />
+        )}
         {item.noResidue && <InfoboxColumn title="No Residue" />}
         {item.invisible && <InfoboxColumn title="Invisible" />}
         {item.hideOnMap && <InfoboxColumn title="Hidden on Map" />}
