@@ -1,10 +1,14 @@
 "use client";
 
+import { useEffect } from "react";
 import MenuItem from "./MenuItem";
 import Searchbar from "./Searchbar";
 import { X } from "lucide-react";
 
 export default function NavigationMenu({ open, setOpen }: NavigationMenuProps) {
+  function close() {
+    setOpen(false);
+  }
   return (
     <div
       id="navigation"
@@ -14,14 +18,15 @@ export default function NavigationMenu({ open, setOpen }: NavigationMenuProps) {
     >
       <div className="flex flex-col gap-8 p-8 lg:ml-8 lg:p-0 lg:flex-row">
         <div className="lg:hidden">
-          <button aria-label="Close navigation" onClick={() => setOpen(false)}>
+          <button aria-label="Close navigation" onClick={close}>
             <X size={36} />
           </button>
         </div>
-        <MenuItem title="Weapons" href="/weapons" />
-        <MenuItem title="Healing Items" href="/healing" />
-        <MenuItem title="Loot Tables" href="/loot" />
-        <MenuItem title="Armor" href="/equipment/armor" />
+        <MenuItem title="Weapons" href="/weapons" onClick={close} />
+        <MenuItem title="Healing Items" href="/healing" onClick={close} />
+        <MenuItem title="Loot Tables" href="/loot" onClick={close} />
+        <MenuItem title="Armor" href="/equipment/armor" onClick={close} />
+        <MenuItem title="Obstacles" href="/obstacles" onClick={close} />
         <div className="flex items-center lg:ml-auto">
           <Searchbar />
         </div>
