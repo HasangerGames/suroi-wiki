@@ -27,7 +27,10 @@ import Link from "../links/Link";
 
 export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
   return (
-    <GenericSidebar title={gun.name} image={getSuroiImageLink(gun)}>
+    <GenericSidebar
+      title={gun.name}
+      image={getSuroiImageLink(gun, undefined, undefined, true)}
+    >
       <InfoboxRow>
         <InfoboxColumn title="World Image">
           <div className="flex items-center">
@@ -90,15 +93,15 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
             </Link>
           </InfoboxColumn>
         )}
-        {[Guns.find((g) => g.idString === `dual_${gun.idString}`)].filter(Boolean).map(
-          (gun) => (
+        {[Guns.find((g) => g.idString === `dual_${gun.idString}`)]
+          .filter(Boolean)
+          .map((gun) => (
             <InfoboxColumn title="Dual Variant" key={gun?.idString}>
               <Link href={`/weapons/guns/dual_${gun?.idString}`}>
                 {gun?.name}
               </Link>
             </InfoboxColumn>
-          )
-        )}
+          ))}
         <InfoboxColumn
           title="Move Spread"
           abbr="Spread (angle of inaccuracy when moving)"

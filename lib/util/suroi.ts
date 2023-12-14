@@ -54,11 +54,12 @@ export const IMAGE_BASE_URL =
 export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
   obj: T,
   variation?: number,
-  append?: string | string[]
+  append?: string | string[],
+  dual?: boolean
 ) {
   // Is obj an item?
   if ("itemType" in obj)
-    return _itemImageLink(obj.idString, obj.itemType, variation, append);
+    return _itemImageLink(obj.idString, obj.itemType, variation, append, dual);
 
   // Is a building?
   if (isBuilding(obj))
@@ -88,11 +89,12 @@ function _itemImageLink(
   idString: string,
   itemType: ItemType,
   variation?: number,
-  append?: string | string[]
+  append?: string | string[],
+  dual?: boolean
 ) {
   return `${IMAGE_BASE_URL}${
     IMAGE_BASE_URLS[ItemType[itemType] as keyof typeof ItemType]
-  }/${idString.replace("dual_", "")}${variation ? `_${variation}` : ""}${
+  }/${dual ? idString : idString.replace("dual_", "")}${variation ? `_${variation}` : ""}${
     append
       ? Array.isArray(append)
         ? "_" + append.join("_")
