@@ -3,6 +3,7 @@ import CommitLink from "@/components/links/CommitLink";
 import fs from "fs/promises";
 import Image from "next/image";
 import Link from "@/components/links/Link";
+import TagLink from "@/components/links/TagLink";
 
 export default async function Home() {
   const HEAD = await fs.readFile(".git/modules/vendor/suroi/HEAD", "utf8");
@@ -37,7 +38,7 @@ export default async function Home() {
         </p>
         <p>
           Stats are based off Suroi commit{" "}
-          <CommitLink sha={HEAD} />.
+          <CommitLink sha={HEAD} /> @ <TagLink sha={HEAD} /> 
         </p>
         <h2>Notable Pages</h2>
       </div>
