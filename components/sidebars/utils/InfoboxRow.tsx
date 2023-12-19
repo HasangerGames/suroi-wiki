@@ -5,6 +5,9 @@ export default function InfoboxRow({ columns, children }: InfoboxRowProps) {
   Children.forEach(children, (child) =>
     Boolean(child) ? childrenCount++ : null
   );
+
+  // Make infoboxrow empty if there are no children
+  if(childrenCount === 0) return <></>
   
   return (
     <div
