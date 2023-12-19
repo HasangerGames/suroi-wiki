@@ -21,7 +21,7 @@ const components = {
   DevWeapon,
   Stub,
   a: (props: HTMLProps<HTMLAnchorElement>) => (
-    <Link title={props.title} href={props.href!}>
+    <Link href={props.href!}>
       {props.children}
     </Link>
   ),
