@@ -5,9 +5,9 @@ export default function InfoboxColumn({
 }: InfoboxColumnProps) {
   return (
     <div className="p-2 flex flex-col">
-      <h4 className={`${children && "mb-1"} font-bold`}>
+      <span className={`${children && "mb-1"} font-bold`}>
         {abbr ? <abbr title={abbr}>{title}</abbr> : title}
-      </h4>
+      </span>
       <div className="flex justify-center items-center flex-1">{children}</div>
     </div>
   );
