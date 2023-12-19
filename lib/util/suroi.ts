@@ -51,6 +51,17 @@ export const IMAGE_BASE_URLS = {
 export const IMAGE_BASE_URL =
   "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/";
 
+type ObjectCategoryMapping<Category extends ObjectCategory> =
+  Category extends ObjectCategory.Obstacle
+    ? ObstacleDefinition
+    : Category extends ObjectCategory.Building
+    ? BuildingDefinition
+    : Category extends ObjectCategory.Decal
+    ? DecalDefinition
+    : Category extends ObjectCategory.Loot
+    ? LootDefinition
+    : never;
+
 export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
   obj: T,
   variation?: number,
@@ -63,19 +74,18 @@ export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
 
   // Is a building?
   if (isBuilding(obj))
-    return _otherImageLink(obj.idString, ObjectCategory.Building, variation);
+    return _otherImageLink(obj, ObjectCategory.Building, variation);
 
   // Is an obstacle?
   if (isObstacle(obj))
-    return _otherImageLink(obj.idString, ObjectCategory.Obstacle, variation);
+    return _otherImageLink(obj, ObjectCategory.Obstacle, variation);
 
   // Is a decal?
   if (isDecal(obj))
-    return _otherImageLink(obj.idString, ObjectCategory.Decal, variation);
+    return _otherImageLink(obj, ObjectCategory.Decal, variation);
 
   // Is loot? (should be covered by items already)
-  if (isLoot(obj))
-    return _otherImageLink(obj.idString, ObjectCategory.Loot, variation);
+  if (isLoot(obj)) return _otherImageLink(obj, ObjectCategory.Loot, variation);
 
   // Return missing texture
   return `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
@@ -94,7 +104,9 @@ function _itemImageLink(
 ) {
   return `${IMAGE_BASE_URL}${
     IMAGE_BASE_URLS[ItemType[itemType] as keyof typeof ItemType]
-  }/${dual ? idString : idString.replace("dual_", "")}${variation ? `_${variation}` : ""}${
+  }/${dual ? idString : idString.replace("dual_", "")}${
+    variation ? `_${variation}` : ""
+  }${
     append
       ? Array.isArray(append)
         ? "_" + append.join("_")
@@ -103,16 +115,29 @@ function _itemImageLink(
   }.svg`;
 }
 
-function _otherImageLink(
-  idString: string,
-  category: ObjectCategory,
+function _otherImageLink<Category extends ObjectCategory>(
+  obj: ObjectCategoryMapping<Category>,
+  category: Category,
   variation?: number
 ) {
   const key = ObjectCategory[category] as keyof typeof ObjectCategory;
 
-  return `${IMAGE_BASE_URL}${IMAGE_BASE_URLS[key]}/${idString}${
-    variation ? `_${variation}` : ""
-  }.svg`;
+  return `${IMAGE_BASE_URL}${IMAGE_BASE_URLS[key]}/${
+    isBuilding(obj)
+      ? obj.ceilingImages?.[0].key || obj.floorImages?.[0].key
+      : obj.idString
+  }${variation ? `_${variation}` : ""}.svg`;
+}
+
+export function buildingVariations(building: BuildingDefinition) {
+  return [
+    ...(building?.ceilingImages?.map(
+      (image) => `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`
+    ) ?? []),
+    ...(building?.floorImages?.map(
+      (image) => `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`
+    ) ?? []),
+  ];
 }
 
 /**
