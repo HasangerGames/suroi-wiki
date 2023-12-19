@@ -26,6 +26,14 @@ export function getSuroiItem(idString: string) {
   return Loots.definitions.find((item) => item.idString === idString);
 }
 
+export function getSuroiObstacle(idString: string) {
+  return Obstacles.definitions.find((item) => item.idString === idString);
+}
+
+export function getSuroiBuilding(idString: string) {
+  return Buildings.definitions.find((item) => item.idString === idString);
+}
+
 export const IMAGE_BASE_URLS = {
   // Items
   None: "",
