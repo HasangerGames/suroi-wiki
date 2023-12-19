@@ -34,10 +34,13 @@ export default function GenericSidebar({
               ))}
             </div>
           )}
-          {noImage ? <div className="m-4 flex justify-center">
-            <span>(No image available)</span>
-          </div> : (
+          {noImage ? (
+            <div className="m-4 flex justify-center">
+              <span>(No image available)</span>
+            </div>
+          ) : (
             <Image
+              priority
               src={imageVariations ? imageVariations[imageNum] : image}
               width={128}
               height={128}
