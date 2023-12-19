@@ -4,7 +4,6 @@ import {
   buildingVariations,
   getSuroiBuilding,
   getSuroiImageLink,
-  getSuroiItem,
   getSuroiObstacle,
 } from "@/lib/util/suroi";
 import InfoboxColumn from "./utils/InfoboxColumn";
