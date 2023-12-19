@@ -461,11 +461,17 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
       <InfoboxAudioGroup>
         <InfoboxAudio
           name="Fire"
-          src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/weapons/${gun.idString.replace("dual_", "")}_fire.mp3`}
+          src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/weapons/${gun.idString.replace(
+            "dual_",
+            ""
+          )}_fire.mp3`}
         />
         <InfoboxAudio
           name="Switch"
-          src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/weapons/${gun.idString.replace("dual_", "")}_switch.mp3`}
+          src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/weapons/${gun.idString.replace(
+            "dual_",
+            ""
+          )}_switch.mp3`}
         />
         <InfoboxAudio
           name="Reload"
@@ -502,30 +508,50 @@ function Effects({
 }) {
   return (
     <>
-      <InfoboxSection title="Effects">
-        {gun.wearerAttributes.passive && (
-          <InfoboxSection title="Passive">
+      <InfoboxHeader>Effects</InfoboxHeader>
+      {gun.wearerAttributes.passive && (
+        <>
+          <InfoboxRow>
+            <InfoboxHeader>Passive</InfoboxHeader>
+          </InfoboxRow>
+          <InfoboxRow>
             <Attributes attributes={gun.wearerAttributes.passive} />
-          </InfoboxSection>
-        )}
-        {gun.wearerAttributes.on && (
-          <InfoboxSection title="Conditional">
+          </InfoboxRow>
+        </>
+      )}
+
+      {gun.wearerAttributes.on && (
+        <>
+          <InfoboxRow>
             {gun.wearerAttributes.on.kill && (
               <>
-                {gun.wearerAttributes.on.kill.map((attr) => (
-                  <Attributes attributes={attr} key={attr.healthRestored} />
+                <InfoboxHeader>On Kill</InfoboxHeader>
+                {gun.wearerAttributes.on.kill.map((attr, i) => (
+                  <Attributes attributes={attr} key={i} n={i} />
                 ))}
               </>
             )}
-          </InfoboxSection>
-        )}
-      </InfoboxSection>
+          </InfoboxRow>
+
+          <InfoboxRow>
+            {gun.wearerAttributes.on.damageDealt && (
+              <>
+                <InfoboxHeader>On Damage Dealt</InfoboxHeader>
+                {gun.wearerAttributes.on.damageDealt.map((attr, i) => (
+                  <Attributes attributes={attr} key={i} n={i} />
+                ))}
+              </>
+            )}
+          </InfoboxRow>
+        </>
+      )}
     </>
   );
 }
 
 function Attributes({
   attributes,
+  n,
 }: {
   attributes:
     | WearerAttributes
@@ -540,35 +566,86 @@ function Attributes({
           >["on"]["kill"]
         >
       >;
+  n?: number;
 }) {
+  const limit =
+    "limit" in attributes ? (
+      <>
+        {" "}
+        <abbr
+          title={`This effect can be applied up to a maximum of ${attributes.limit} times`}
+          className="inline-block ml-[1ch]"
+        >
+          ({attributes.limit} limit)
+        </abbr>
+      </>
+    ) : (
+      <>
+        {" "}
+        <abbr
+          title={`This effect can be applied an infinite amount of times`}
+          className="inline-block ml-[1ch]"
+        >
+          (No limit)
+        </abbr>
+      </>
+    );
+
   return (
     <>
+      {n !== undefined && (
+        <div className="border-t border-primary">
+          <InfoboxColumn title={`Effect ${n + 1}`}></InfoboxColumn>
+        </div>
+      )}
       <InfoboxRow>
-        <InfoboxColumn title="Health Multiplier">
-          {attributes.maxHealth ?? "None"}
-        </InfoboxColumn>
-        <InfoboxColumn title="Adrenaline Multiplier">
-          {attributes.maxAdrenaline ?? "None"}
-        </InfoboxColumn>
+        {attributes.maxHealth && (
+          <InfoboxColumn title="Health Multiplier">
+            {attributes.maxHealth}
+            {limit}
+          </InfoboxColumn>
+        )}
+        {attributes.maxAdrenaline && (
+          <InfoboxColumn title="Adrenaline Multiplier">
+            {attributes.maxAdrenaline ?? "None"}
+            {limit}
+          </InfoboxColumn>
+        )}
       </InfoboxRow>
       <InfoboxRow>
-        <InfoboxColumn title="Min. Adrenaline">
-          {attributes.minAdrenaline ?? "Unchanged"}
-        </InfoboxColumn>
-        <InfoboxColumn title="Speed Multipler">
-          {attributes.speedBoost ?? "None"}
-        </InfoboxColumn>
+        {attributes.minAdrenaline && (
+          <InfoboxColumn title="Min. Adrenaline">
+            {attributes.minAdrenaline ?? "Unchanged"}
+            {limit}
+          </InfoboxColumn>
+        )}
+        {attributes.speedBoost && (
+          <InfoboxColumn title="Speed Multipiler">
+            {attributes.speedBoost ?? "None"}
+            {limit}
+          </InfoboxColumn>
+        )}
       </InfoboxRow>
-      {"limit" in attributes && (
-        <InfoboxRow>
+      <InfoboxRow>
+        {"healthRestored" in attributes && (
           <InfoboxColumn
             title="Health Restored"
             abbr="Health restored when this condition is met"
           >
-            {attributes.healthRestored ?? "None"}
+            {attributes.healthRestored}
+            {limit}
           </InfoboxColumn>
-        </InfoboxRow>
-      )}
+        )}
+        {"adrenalineRestored" in attributes && (
+          <InfoboxColumn
+            title="Adrenaline Restored"
+            abbr="Adrenaline restored when this condition is met"
+          >
+            {attributes.adrenalineRestored}
+            {limit}
+          </InfoboxColumn>
+        )}
+      </InfoboxRow>
     </>
   );
 }
