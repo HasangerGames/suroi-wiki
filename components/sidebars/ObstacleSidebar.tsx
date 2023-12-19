@@ -9,6 +9,7 @@ import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import { ObstacleSpecialRoles } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
+import ExplosionRow from "./utils/ExplosionRow";
 
 export default function ObstacleSidebar({
   item,
@@ -101,6 +102,13 @@ export default function ObstacleSidebar({
               </InfoboxColumn>
             )}
           </InfoboxRow>
+        </>
+      )}
+
+      {item.explosion && (
+        <>
+          <InfoboxHeader>Explosion Properties</InfoboxHeader>
+          <ExplosionRow explosion={item.explosion} />
         </>
       )}
     </GenericSidebar>
