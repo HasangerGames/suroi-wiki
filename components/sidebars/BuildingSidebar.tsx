@@ -1,6 +1,7 @@
 import { BuildingDefinition } from "@/vendor/suroi/common/src/definitions/buildings";
 import GenericSidebar from "./utils/GenericSidebar";
 import {
+  buildingParents,
   buildingVariations,
   getSuroiBuilding,
   getSuroiImageLink,
@@ -16,6 +17,8 @@ export default function BuildingSidebar({
 }: {
   item: BuildingDefinition;
 }) {
+  const parents = buildingParents(item);
+
   return (
     <GenericSidebar
       title={item.name}
@@ -115,6 +118,35 @@ export default function BuildingSidebar({
           </div>
         </InfoboxColumn>
       </InfoboxRow>
+
+      {parents.length !== 0 && (
+        <>
+          <InfoboxHeader>Contained By</InfoboxHeader>
+          <InfoboxRow>
+            <InfoboxColumn title="Parent Buildings">
+              <div className="flex flex-col gap-2">
+                {(parents.length ?? 0) > 0 && (
+                  <div>
+                    <span>({parents.length} Buildings)</span>
+                  </div>
+                )}
+                <div className="flex flex-wrap justify-around gap-2">
+                  {parents.length > 0
+                    ? parents.map((parent) => (
+                        <Link
+                          href={`/buildings/${parent.idString}`}
+                          key={parent.idString.toString()}
+                        >
+                          {parent.name ?? parent.idString.toString()}
+                        </Link>
+                      ))
+                    : "None"}
+                </div>
+              </div>
+            </InfoboxColumn>
+          </InfoboxRow>
+        </>
+      )}
 
       <InfoboxHeader>Properties</InfoboxHeader>
       <InfoboxRow>
