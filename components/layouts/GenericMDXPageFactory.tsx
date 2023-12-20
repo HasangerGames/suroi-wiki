@@ -1,5 +1,5 @@
 import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import fs from "fs/promises";
 import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
@@ -28,6 +28,10 @@ export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
         ])
       )
     );
+
+    // Hardcoded redirect for dual guns
+    if (params.item.startsWith("dual_"))
+      return redirect(`/weapons/guns/${params.item.replace("dual_", "")}`);
 
     const article = articles[params.item + ".mdx"] ?? null;
 
@@ -71,9 +75,7 @@ export function GenericGenerateMetadataFactory<T extends ObjectDefinition>(
       title: item.name,
       openGraph: {
         type: "article",
-        images: [
-          `/api/og/${item.idString}`
-        ],
+        images: [`/api/og/${item.idString}`],
       },
     };
   };
