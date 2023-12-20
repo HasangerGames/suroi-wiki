@@ -8,14 +8,21 @@ import { range } from "@/lib/util/arrays";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import { ObstacleSpecialRoles } from "@/vendor/suroi/common/src/utils/objectDefinitions";
-import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
+import {
+  getSuroiImageLink,
+  getSuroiItem,
+  obstacleContainedBy,
+} from "@/lib/util/suroi";
 import ExplosionRow from "./utils/ExplosionRow";
+import Link from "../links/Link";
 
 export default function ObstacleSidebar({
   item,
 }: {
   item: ObstacleDefinition;
 }) {
+  const parents = obstacleContainedBy(item);
+
   return (
     <GenericSidebar
       noImage={item.invisible}
@@ -36,6 +43,30 @@ export default function ObstacleSidebar({
           <code>{item.material}</code>
         </InfoboxColumn>
       </InfoboxRow>
+
+      {parents.length !== 0 && (
+        <>
+          <InfoboxHeader>Contained By</InfoboxHeader>
+          <InfoboxRow>
+            <InfoboxColumn title="Buildings">
+              <div className="flex flex-col gap-2">
+                {(parents.length ?? 0) > 0 && (
+                  <div>
+                    <span>({parents.length} Buildings)</span>
+                  </div>
+                )}
+                <div className="flex flex-wrap justify-around gap-2">
+                  {parents.map((parent) => (
+                    <Link key={parent.idString} href={`/buildings/${parent.idString}`}>
+                      {parent.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </InfoboxColumn>
+          </InfoboxRow>
+        </>
+      )}
 
       <InfoboxHeader>Properties</InfoboxHeader>
       <InfoboxRow>
