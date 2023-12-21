@@ -17,7 +17,7 @@ export default function PageCard({
               width={100}
               height={100}
               alt={`${title} page image`}
-              className=""
+              className="w-24 h-24"
             />
           </div>
           <div className="flex-1">
