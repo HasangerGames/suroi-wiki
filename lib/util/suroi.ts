@@ -151,9 +151,7 @@ export function buildingVariations(building: BuildingDefinition) {
 export function buildingParents(building: BuildingDefinition) {
   const parents = [];
   for (const b of Buildings.definitions) {
-    if (
-      b.subBuildings?.some((sub) => sub.idString === building.idString)
-    ) {
+    if (b.subBuildings?.some((sub) => sub.idString === building.idString)) {
       parents.push(b);
     }
   }
@@ -165,7 +163,11 @@ export function obstacleContainedBy(obstacle: ObstacleDefinition) {
   const parents = [];
   for (const b of Buildings.definitions) {
     if (
-      b.obstacles?.some((sub) => sub.idString === obstacle.idString)
+      b.obstacles?.some(
+        (sub) =>
+          sub.idString === obstacle.idString ||
+          Object.keys(sub).some((key) => key === obstacle.idString)
+      )
     ) {
       parents.push(b);
     }
