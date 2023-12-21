@@ -1,7 +1,8 @@
-import Link from "@/components/links/Link";
 import Event from "@/components/articles/notices/Event";
 import TimeLink from "@/components/links/TimeLink";
-import Removed from "@/components/articles/notices/Removed"
+import Removed from "@/components/articles/notices/Removed";
+import CommitLink from "@/components/links/CommitLink";
+import DevWeapon from "@/components/articles/notices/DevWeapon";
 
 # Writing Articles
 
@@ -12,12 +13,13 @@ Articles are written in [MDX](https://mdxjs.com/docs/what-is-mdx/), an extension
 
 # Style Guide
 
-When writing an article for an object in the game, please follow the layout below. If in doubt, consult an existing 
+When writing an article for an object in the game, please follow the layout below. If in doubt, consult an existing
 article (e.g., [AK47](/weapons/guns/ak47)).
 
 ## Article Layout
 
 ## General Pointers
+
 - Articles should be written in American English (e.g. color rather than colo**u**r)
 
 # Syntax
@@ -25,10 +27,9 @@ article (e.g., [AK47](/weapons/guns/ak47)).
 See the [MDX](https://mdxjs.com/docs/what-is-mdx/) docs for a detailed overview of MDX. If you are new to Markdown, you can find a
 guide [here](https://www.markdownguide.org/basic-syntax/).
 
-There are a few special syntax rules.
+Also, make sure to adhere to the following grammar rules:
 
-1. Use `<Image src="https://example.com/image.png" height={128} width={128} alt="A placeholder image" />` when inserting images. This is because Next.js
-   (the software used to render the wiki) can optimise images for faster loading when using this special tag.
+1. Use American English (e.g. color rather than colo**u**r) for all articles on the wiki.
 
 ## Extensions
 
@@ -41,17 +42,15 @@ that this item is only available in a specific event. See below:
 
 <Event />
 
-### `<CommitLink sha="" />`
+### `<CommitLink sha="Git SHA Hash" />`
 
 Shows a link to a commit on the GitHub repo. Useful for linking to the commit that introduced a feature.
 
+<CommitLink sha="1da8f75e" />
+
 - **sha** The SHA1 hash of the commit. Can be shortened to 7 characters.
 
-```md
-This vest used to be called the "Bulletproof Vest" until it was updated in <CommitLink sha="1da8f75e"/>. **#bringbackbulletproofvest**
-```
-
-### `<TimeLink time={1699868632020} />`
+### `<TimeLink time={Unix Milliseconds} />`
 
 Shows a link to a specific time. Adjusts to the user's timezone. Clicking on it copies the ISO 8601 timestamp to the clipboard, and hovering shows it.
 See below:
@@ -60,10 +59,14 @@ See below:
 
 - **time** Unix milliseconds, UTC of course
 
-```md
-The example used above is: <TimeLink date={1699868632020}/>
-```
-
 ### `<RemovedItem />`
 
-<Removed/>
+Shows a small banner at the top of the page notifying readers the item has been removed from the game. See below:
+
+<Removed />
+
+### `<DevWeapon/>`
+
+Shows a small banner at the top of the page notifying readers the item is a developer weapon and unobtainable. See below:
+
+<DevWeapon />
