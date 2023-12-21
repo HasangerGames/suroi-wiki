@@ -1,8 +1,5 @@
-import FlexTable from "@/components/tables/FlexTable";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
-import Image from "next/image";
-import Link from "@/components/links/Link";
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import PageCard from "@/components/cards/PageCard";
 
