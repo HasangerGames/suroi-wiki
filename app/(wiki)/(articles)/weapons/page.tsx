@@ -15,6 +15,8 @@ export default function WeaponsPage() {
           There are currently {Guns.length} guns in the game, and{" "}
           {Melees.length} melee weapons in the game.
         </p>
+
+        <h2>Guns</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-4">
         {Guns.map((gun) => (
@@ -25,6 +27,9 @@ export default function WeaponsPage() {
             url={"/weapons/guns/" + gun.idString}
           />
         ))}
+      </div>
+      <div className="prose prose-invert">
+        <h2>Melees</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-4">
         {Melees.map((melee) => (
