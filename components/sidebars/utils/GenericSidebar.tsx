@@ -19,7 +19,7 @@ export default function GenericSidebar({
           <h2 className="text-xl font-bold text-center">{title}</h2>
         </div>
         <div className="flex flex-col items-center justify-center gap-2 p-2">
-          {imageVariations?.length && (
+          {imageVariations?.length !== undefined && imageVariations.length !== 0 && (
             <div className="flex w-full justify-around gap-4 items-center pb-1">
               {imageVariations.map((image, i) => (
                 <button
@@ -34,14 +34,14 @@ export default function GenericSidebar({
               ))}
             </div>
           )}
-          {noImage ? (
+          {noImage || !image.length ? (
             <div className="m-4 flex justify-center">
               <span>(No image available)</span>
             </div>
           ) : (
             <Image
               priority
-              src={imageVariations ? imageVariations[imageNum] : image}
+              src={imageVariations && imageVariations.length !== 0 ? imageVariations[imageNum] : image}
               width={128}
               height={128}
               alt={`Image of ${title}`}
