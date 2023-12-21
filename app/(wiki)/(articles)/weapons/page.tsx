@@ -4,6 +4,7 @@ import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import Image from "next/image";
 import Link from "@/components/links/Link";
 import { getSuroiImageLink } from "@/lib/util/suroi";
+import PageCard from "@/components/cards/PageCard";
 
 export default function WeaponsPage() {
   return (
@@ -15,44 +16,26 @@ export default function WeaponsPage() {
           {Melees.length} melee weapons in the game.
         </p>
       </div>
-      <FlexTable>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-4">
         {Guns.map((gun) => (
-          <div key={gun.idString} className="flex divide-x divide-border">
-            <div className="flex justify-center items-center p-2">
-              <Image
-                src={getSuroiImageLink(gun)}
-                width={128}
-                height={128}
-                alt={`Image of ${gun.name}`}
-              />
-            </div>
-            <div className="flex flex-1 items-center p-2">
-              <Link href={`/weapons/guns/${gun.idString}`}>
-                <h2 className="text-lg font-bold">{gun.name}</h2>
-              </Link>
-            </div>
-          </div>
+          // eslint-disable-next-line react/jsx-key
+          <PageCard
+            title={gun.name}
+            image={getSuroiImageLink(gun)}
+            url={"/weapons/guns/" + gun.idString}
+          />
         ))}
-      </FlexTable>
-      <FlexTable>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-4">
         {Melees.map((melee) => (
-          <div key={melee.idString} className="flex divide-x divide-border">
-            <div className="flex justify-center items-center p-2">
-              <Image
-                src={getSuroiImageLink(melee)}
-                width={128}
-                height={128}
-                alt={`Image of ${melee.name}`}
-              />
-            </div>
-            <div className="flex flex-1 items-center p-2">
-              <Link href={`/weapons/melee/${melee.idString}`}>
-                <h2 className="text-lg font-bold">{melee.name}</h2>
-              </Link>
-            </div>
-          </div>
+          // eslint-disable-next-line react/jsx-key
+          <PageCard
+            title={melee.name}
+            image={getSuroiImageLink(melee)}
+            url={"/weapons/melee/" + melee.idString}
+          />
         ))}
-      </FlexTable>
+      </div>
     </main>
   );
 }
