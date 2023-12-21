@@ -21,6 +21,7 @@ export function ObjectCard({ obj, path }: ObjectCardProps) {
             alt={`Image of ${obj.name}`}
             width={100}
             height={100}
+            className="w-24 h-24"
             priority
           />
         )}
