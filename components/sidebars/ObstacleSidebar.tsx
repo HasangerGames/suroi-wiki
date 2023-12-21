@@ -46,7 +46,7 @@ export default function ObstacleSidebar({
 
       {parents.length !== 0 && (
         <>
-          <InfoboxHeader>Contained By</InfoboxHeader>
+          <InfoboxHeader>Location</InfoboxHeader>
           <InfoboxRow>
             <InfoboxColumn title="Buildings">
               <div className="flex flex-col gap-2">
