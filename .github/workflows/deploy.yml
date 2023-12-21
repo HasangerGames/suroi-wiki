@@ -39,7 +39,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
@@ -51,7 +51,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload dist repository
-          path: './dist'
+          path: './.next'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
