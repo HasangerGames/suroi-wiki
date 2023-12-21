@@ -166,7 +166,7 @@ export function obstacleContainedBy(obstacle: ObstacleDefinition) {
       b.obstacles?.some(
         (sub) =>
           sub.idString === obstacle.idString ||
-          Object.keys(sub).some((key) => key === obstacle.idString)
+          Object.keys(sub.idString).some((key) => key === obstacle.idString)
       )
     ) {
       parents.push(b);
