@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import MenuItem from "./MenuItem";
 import Searchbar from "./Searchbar";
 import { X } from "lucide-react";
+import { SearchItem, wikiPages } from "@/lib/util/search";
 
 export default function NavigationMenu({ open, setOpen }: NavigationMenuProps) {
   function close() {
@@ -22,11 +23,10 @@ export default function NavigationMenu({ open, setOpen }: NavigationMenuProps) {
             <X size={36} />
           </button>
         </div>
-        <MenuItem title="Weapons" href="/weapons" onClick={close} />
-        <MenuItem title="Healing Items" href="/healing" onClick={close} />
-        <MenuItem title="Loot Tables" href="/loot" onClick={close} />
-        <MenuItem title="Armor" href="/equipment/armor" onClick={close} />
-        <MenuItem title="Obstacles" href="/obstacles" onClick={close} />
+        {wikiPages.map((item) => (
+          // eslint-disable-next-line react/jsx-key
+          <MenuItem title={item.name} href={item.url} onClick={close} />
+        ))}
         <div className="flex items-center lg:ml-auto">
           <Searchbar />
         </div>
