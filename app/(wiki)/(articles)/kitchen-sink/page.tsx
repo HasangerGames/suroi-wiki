@@ -6,6 +6,8 @@ import Empty from "@/components/articles/notices/Empty";
 import Event from "@/components/articles/notices/Event";
 import Removed from "@/components/articles/notices/Removed";
 import Stub from "@/components/articles/notices/Stub";
+import { getSuroiImageLink } from "@/lib/util/suroi";
+import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 
 export default async function Kitchen() {
   return (
@@ -17,6 +19,11 @@ export default async function Kitchen() {
       <Stub />
       <Gallery
         images={[
+          ...Guns.map((gun) => ({
+            url: getSuroiImageLink(gun),
+            caption: gun.name,
+            author: gun.idString
+          })),
           {
             url: "https://images.unsplash.com/photo-1702928153872-5754d411b0f7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             caption: "test",
