@@ -19,6 +19,8 @@ export default function Gallery({ images }: GalleryProps) {
   const [currentImage, setCurrentImage] = useState(0);
   const firstImage = images[0];
 
+  console.log(images[currentImage]);
+
   return (
     <div className="not-prose">
       {fullscreen && (
@@ -92,15 +94,19 @@ export default function Gallery({ images }: GalleryProps) {
             {images.map((image, i) => (
               // eslint-disable-next-line react/jsx-key
               <button onClick={() => setCurrentImage(i)} className="group">
-                <Image
-                  src={image.url}
-                  alt={image.url}
-                  width={50}
-                  height={50}
-                  className={`${
-                    currentImage === i && "ring-primary ring"
-                  } rounded-md grow min-w-[6rem] h-24 group-hover:ring-primary group-hover:ring`}
-                />
+                {image.type === "youtube" ? (
+                  <span>Youtube test</span>
+                ) : (
+                  <Image
+                    src={image.url}
+                    alt={image.url}
+                    width={50}
+                    height={50}
+                    className={`${
+                      currentImage === i && "ring-primary ring"
+                    } rounded-md grow min-w-[6rem] h-24 group-hover:ring-primary group-hover:ring`}
+                  />
+                )}
               </button>
             ))}
           </div>
