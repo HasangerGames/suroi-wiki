@@ -19,8 +19,6 @@ export default function Gallery({ images }: GalleryProps) {
   const [currentImage, setCurrentImage] = useState(0);
   const firstImage = images[0];
 
-  console.log(images[currentImage]);
-
   return (
     <div className="not-prose">
       {fullscreen && (
@@ -67,7 +65,11 @@ export default function Gallery({ images }: GalleryProps) {
             )}
             {images[currentImage].type === "youtube" ? (
               <iframe
-                width={window.innerWidth < 500 ? window.innerWidth : window.innerWidth - 300}
+                width={
+                  window.innerWidth < 500
+                    ? window.innerWidth
+                    : window.innerWidth - 300
+                }
                 height={window.innerHeight - 300}
                 src={`https://www.youtube-nocookie.com/embed/${images[currentImage].url}`}
                 title="YouTube video player"
@@ -98,7 +100,11 @@ export default function Gallery({ images }: GalleryProps) {
               // eslint-disable-next-line react/jsx-key
               <button onClick={() => setCurrentImage(i)} className="group">
                 <Image
-                  src={image.type === "youtube" ? `https://invidious.projectsegfau.lt/vi/${image.url}/hqdefault.jpg` : image.url}
+                  src={
+                    image.type === "youtube"
+                      ? `https://invidious.projectsegfau.lt/vi/${image.url}/hqdefault.jpg`
+                      : image.url
+                  }
                   alt={image.url}
                   width={100}
                   height={100}
@@ -117,10 +123,27 @@ export default function Gallery({ images }: GalleryProps) {
       >
         {/* Stupid hack lol */}
         <div
-          style={{ backgroundImage: `url(${firstImage.type === "youtube" ? `https://invidious.projectsegfau.lt/vi/${firstImage.url}/hqdefault.jpg` : firstImage.url})` }}
           className="bg-cover bg-center w-full h-full rounded-md"
+          style={
+            firstImage.type === "youtube"
+              ? {
+                  backgroundImage: `url(https://invidious.projectsegfau.lt/vi/${firstImage.url}/hqdefault.jpg)`,
+                }
+              : {}
+          }
         >
           <div className="relative transition-all group-hover:backdrop-brightness-50 w-full h-full rounded-md">
+            {firstImage.type !== "youtube" && (
+              <div className="-z-10">
+                <Image
+                  src={firstImage.url}
+                  alt="Gallery featured image"
+                  fill
+                  className="w-full h-full"
+                />
+              </div>
+            )}
+
             <Maximize2 className="transition-transform absolute flex group-hover:visible invisible w-12 h-12 scale-0 group-hover:scale-100 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]" />
             <span className="absolute flex flex-row gap-1 right-2 bottom-2">
               <ImageIcon className="w-6 h-6" />
