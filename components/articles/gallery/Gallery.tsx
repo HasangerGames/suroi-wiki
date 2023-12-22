@@ -1,5 +1,6 @@
 "use client";
 
+import { GalleryImage } from "@/lib/util/types";
 import {
   ChevronRight,
   ChevronLeft,
@@ -10,19 +11,8 @@ import {
   User2,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
-
-export enum GalleryImageType {
-  Image,
-  YouTubeVideo,
-}
-
-export type GalleryImage = {
-  type?: GalleryImageType;
-  url: string;
-  caption?: string;
-  author?: string;
-};
 
 export default function Gallery({ images }: GalleryProps) {
   const [fullscreen, setFullscreen] = useState(false);
@@ -72,23 +62,36 @@ export default function Gallery({ images }: GalleryProps) {
             </span>
             {images[currentImage].caption && (
               <span className="absolute left-[50%] translate-x-[-50%] bottom-4 w-full p-4 h-16 overflow-y-auto z-10 text-center">
-                {images[currentImage].caption}</span>
+                {images[currentImage].caption}
+              </span>
             )}
-            <a href={images[currentImage].url} className="cursor-zoom-in">
-              <Image
-                src={images[currentImage].url}
-                alt={
-                  (images[currentImage].caption &&
-                    images[currentImage].caption) ||
-                  "Image with no caption"
-                }
-                width={500}
-                height={500}
-                className="absolute object-scale-down h-full w-full left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
-              />
-            </a>
+            {images[currentImage].type === "youtube" ? (
+              <iframe
+                width="560"
+                height="315"
+                src={`https://www.youtube-nocookie.com/embed/${images[currentImage].url}`}
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            ) : (
+              <Link href={images[currentImage].url} className="cursor-zoom-in">
+                <Image
+                  src={images[currentImage].url}
+                  alt={
+                    (images[currentImage].caption &&
+                      images[currentImage].caption) ||
+                    "Image with no caption"
+                  }
+                  width={500}
+                  height={500}
+                  className="absolute object-scale-down h-full w-full left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+                />
+              </Link>
+            )}
           </div>
-          <div className="flex flex-row justify-center gap-4 overflow-x-auto h-36">
+          <div className="flex flex-row justify-center gap-4 overflow-x-scroll w-full h-36">
             {images.map((image, i) => (
               // eslint-disable-next-line react/jsx-key
               <button onClick={() => setCurrentImage(i)} className="group">
@@ -99,7 +102,7 @@ export default function Gallery({ images }: GalleryProps) {
                   height={50}
                   className={`${
                     currentImage === i && "ring-primary ring"
-                  } rounded-md min-w-[6rem] h-24 group-hover:ring-primary group-hover:ring`}
+                  } rounded-md grow min-w-[6rem] h-24 group-hover:ring-primary group-hover:ring`}
                 />
               </button>
             ))}
