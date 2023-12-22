@@ -7,6 +7,7 @@ import {
   Maximize2,
   X,
   Youtube,
+  User2,
 } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
@@ -31,30 +32,48 @@ export default function Gallery({ images }: GalleryProps) {
   const firstImage = images[0];
 
   return (
-    <>
+    <div className="not-prose">
       {fullscreen && (
         <div className="flex flex-col gap-8 fixed z-50 inset-0 w-full h-full bg-black/80 p-4">
-          <button className="flex flex-row gap-8" onClick={() => setFullscreen(false)}>
+          <button
+            className="flex flex-row gap-8"
+            onClick={() => setFullscreen(false)}
+          >
             <X className="w-12 h-12" />
-            <span className="text-xl my-auto">Gallery</span>
+            <span className="text-xl my-auto">
+              Gallery of {images.length} images
+            </span>
           </button>
           <div className="relative w-full h-full">
             <button
-              className="absolute left-0 top-[50%] translate-y-[-50%] rounded-full p-8 hover:bg-muted"
+              className="absolute hidden z-10 md:block left-0 top-[50%] translate-y-[-50%] rounded-full p-8 hover:bg-muted"
               onClick={() =>
-                setCurrentImage((currentImage - 1) < 0 ? images.length - 1 : currentImage - 1)
+                setCurrentImage(
+                  currentImage - 1 < 0 ? images.length - 1 : currentImage - 1
+                )
               }
             >
               <ChevronLeft className="w-16 h-16" />
             </button>
             <button
-              className="absolute right-0 top-[50%] translate-y-[-50%] rounded-full p-8 hover:bg-muted"
+              className="absolute hidden z-10 md:block right-0 top-[50%] translate-y-[-50%] rounded-full p-8 hover:bg-muted"
               onClick={() =>
                 setCurrentImage((currentImage + 1) % images.length)
               }
             >
               <ChevronRight className="w-16 h-16" />
             </button>
+            <span className="flex flex-row gap-4 top-4 left-4">
+              {images[currentImage].author && (
+                <span className="flex flex-row gap-2 z-10">
+                  <User2 /> {images[currentImage].author}
+                </span>
+              )}
+            </span>
+            {images[currentImage].caption && (
+              <span className="absolute left-[50%] translate-x-[-50%] bottom-4 w-full p-4 h-16 overflow-y-auto z-10 text-center">
+                {images[currentImage].caption}</span>
+            )}
             <a href={images[currentImage].url} className="cursor-zoom-in">
               <Image
                 src={images[currentImage].url}
@@ -65,20 +84,22 @@ export default function Gallery({ images }: GalleryProps) {
                 }
                 width={500}
                 height={500}
-                className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+                className="absolute object-scale-down h-full w-full left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
               />
             </a>
           </div>
-          <div className="flex flex-row justify-center gap-8">
+          <div className="flex flex-row justify-center gap-4 overflow-x-auto h-36">
             {images.map((image, i) => (
               // eslint-disable-next-line react/jsx-key
-              <button onClick={() => setCurrentImage(i)} className="">
+              <button onClick={() => setCurrentImage(i)} className="group">
                 <Image
                   src={image.url}
                   alt={image.url}
                   width={50}
                   height={50}
-                  className={`${currentImage === i && "ring-primary ring"} rounded-md`}
+                  className={`${
+                    currentImage === i && "ring-primary ring"
+                  } rounded-md min-w-[6rem] h-24 group-hover:ring-primary group-hover:ring`}
                 />
               </button>
             ))}
@@ -106,7 +127,7 @@ export default function Gallery({ images }: GalleryProps) {
           </div>
         </div>
       </button>
-    </>
+    </div>
   );
 }
 
