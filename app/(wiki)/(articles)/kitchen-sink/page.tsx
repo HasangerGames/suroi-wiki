@@ -1,6 +1,6 @@
 // A component testing page
 
-import Gallery, { GalleryImageType } from "@/components/articles/gallery/Gallery";
+import Gallery from "@/components/articles/gallery/Gallery";
 import DevWeapon from "@/components/articles/notices/DevWeapon";
 import Empty from "@/components/articles/notices/Empty";
 import Event from "@/components/articles/notices/Event";
