@@ -18,8 +18,8 @@ const nextConfig = {
         hostname: "raw.githubusercontent.com",
       },
       {
-        hostname: "images.unsplash.com" //!REMOVE WHEN DONE GALLERY
-      }
+        hostname: "invidious.projectsegfau.lt"
+      },
     ],
   },
 
