@@ -9,7 +9,7 @@ import Stub from "@/components/articles/notices/Stub";
 
 export default async function Kitchen() {
   return (
-    <div className="block w-full">
+    <div className="block col-span-full">
       <DevWeapon />
       <Empty />
       <Event />
