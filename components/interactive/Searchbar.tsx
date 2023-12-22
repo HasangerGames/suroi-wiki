@@ -54,7 +54,7 @@ export default function Searchbar() {
                           width={64}
                           className="w-16 h-16"
                         /> ||
-                        <BookOpenText className="w-24 h-24" />
+                        <BookOpenText className="w-16 h-16" />
                       }
                     </div>
                     <div>
