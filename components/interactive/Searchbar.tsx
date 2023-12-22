@@ -1,6 +1,6 @@
 "use client";
 
-import { BookOpenText, Search } from "lucide-react";
+import { HashIcon, Search } from "lucide-react";
 import Image from "next/image";
 import Link from "@/components/links/Link";
 import { useState } from "react";
@@ -25,6 +25,7 @@ export default function Searchbar() {
         <input
           type="text"
           value={query}
+          size={40}
           onChange={(e) => setQuery(e.target.value)}
           className="z-10 p-2 w-full rounded-r-md bg-muted"
           placeholder="Search..."
@@ -54,7 +55,7 @@ export default function Searchbar() {
                           width={64}
                           className="w-16 h-16"
                         /> ||
-                        <BookOpenText className="w-16 h-16" />
+                        <HashIcon className="w-16 h-16" />
                       }
                     </div>
                     <div>

@@ -2,6 +2,7 @@ import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { getSuroiImageLink } from "./suroi";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import { Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
+import { LootTables, LootTiers } from "@/vendor/suroi/server/src/data/lootTables";
 
 export type SearchItem = {
   name: string;
@@ -34,4 +35,12 @@ export const SearchItems: SearchItem[] = [
   ...generateItemsFromDefinitions(Guns, "/weapons/guns/"),
   ...generateItemsFromDefinitions(Melees, "/weapons/melee/"),
   ...generateItemsFromDefinitions(Obstacles.definitions, "/obstacles/"),
+  ...Object.entries(LootTables).map(([k, v]) => ({
+    name: `Loot Table ${k}`,
+    url: `/loot#${k}`
+  })),
+  ...Object.entries(LootTiers).map(([k, v]) => ({
+    name: `Loot Tier ${k}`,
+    url: `/loot#${k}`
+  })),
 ];

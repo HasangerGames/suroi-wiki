@@ -23,9 +23,9 @@ export default function LootPage() {
       </div>
       <div>
         {Object.entries(LootTiers).map(([name, tiers]) => (
-          <div key={name} className="mt-4">
+          <div key={name} id={name} className="mt-4 target:bg-yellow-700">
             <div className="prose prose-invert">
-              <h3 id={name}>
+              <h3>
                 Tier <span className="font-mono">{name}</span>
               </h3>
             </div>
@@ -87,9 +87,9 @@ export default function LootPage() {
         </div>
       </div>
       {Object.entries(LootTables).map(([name, tables]) => (
-        <div key={name} className="mt-4">
+        <div key={name} id={name} className="mt-4 target:bg-yellow-700">
           <div className="prose prose-invert">
-            <h3 id={name}>
+            <h3>
               Table <span className="font-mono">{name}</span>
             </h3>
           </div>
