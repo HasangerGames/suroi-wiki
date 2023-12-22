@@ -36,6 +36,7 @@ export default function Gallery({ images }: GalleryProps) {
           onClick={() => setFullscreen(true)}
           className="group block cursor-zoom-in overflow-hidden bg-muted rounded-md p-2 aspect-video w-full md:w-64 h-auto"
         >
+          {/* Stupid hack lol */}
           <div
             style={{ "background-image": `url(${firstImage.url})` }}
             className="bg-cover bg-center w-full h-full rounded-md"
