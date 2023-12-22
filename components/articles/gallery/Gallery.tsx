@@ -67,13 +67,15 @@ export default function Gallery({ images }: GalleryProps) {
             )}
             {images[currentImage].type === "youtube" ? (
               <iframe
-                width="560"
-                height="315"
+                width={window.innerWidth < 500 ? window.innerWidth : window.innerWidth - 300}
+                height={window.innerHeight - 300}
                 src={`https://www.youtube-nocookie.com/embed/${images[currentImage].url}`}
                 title="YouTube video player"
+                // @ts-ignore
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
+                className="absolute object-scale-down left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
               ></iframe>
             ) : (
               <Link href={images[currentImage].url} className="cursor-zoom-in">
@@ -96,10 +98,10 @@ export default function Gallery({ images }: GalleryProps) {
               // eslint-disable-next-line react/jsx-key
               <button onClick={() => setCurrentImage(i)} className="group">
                 <Image
-                  src={image.url}
+                  src={image.type === "youtube" ? `https://invidious.projectsegfau.lt/vi/${image.url}/hqdefault.jpg` : image.url}
                   alt={image.url}
-                  width={50}
-                  height={50}
+                  width={100}
+                  height={100}
                   className={`${
                     currentImage === i && "ring-primary ring"
                   } rounded-md grow min-w-[6rem] h-24 group-hover:ring-primary group-hover:ring`}
@@ -115,7 +117,7 @@ export default function Gallery({ images }: GalleryProps) {
       >
         {/* Stupid hack lol */}
         <div
-          style={{ backgroundImage: `url(${firstImage.url})` }}
+          style={{ backgroundImage: `url(${firstImage.type === "youtube" ? `https://invidious.projectsegfau.lt/vi/${firstImage.url}/hqdefault.jpg` : firstImage.url})` }}
           className="bg-cover bg-center w-full h-full rounded-md"
         >
           <div className="relative transition-all group-hover:backdrop-brightness-50 w-full h-full rounded-md">
