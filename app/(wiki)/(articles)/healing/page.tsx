@@ -23,6 +23,7 @@ export default function HealingPage() {
             title={item.name}
             image={getSuroiImageLink(item)}
             url={`/healing/${item.idString}`}
+            description={item.idString}
           />
         ))}
       </GridTable>

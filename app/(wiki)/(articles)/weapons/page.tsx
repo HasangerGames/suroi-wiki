@@ -23,6 +23,7 @@ export default function WeaponsPage() {
             title={gun.name}
             image={getSuroiImageLink(gun)}
             url={"/weapons/guns/" + gun.idString}
+            description={gun.idString}
             key={gun.idString}
           />
         ))}
@@ -37,6 +38,7 @@ export default function WeaponsPage() {
             title={melee.name}
             image={getSuroiImageLink(melee)}
             url={"/weapons/melee/" + melee.idString}
+            description={melee.idString}
             key={melee.idString}
           />
         ))}
