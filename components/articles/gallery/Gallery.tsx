@@ -18,9 +18,7 @@ export type GalleryImage = {
 
 export default function Gallery({ images }: GalleryProps) {
   const [fullscreen, setFullscreen] = useState(false);
-
   const [currentImage, setCurrentImage] = useState(0);
-
   const firstImage = images[0];
 
   return (
@@ -39,7 +37,7 @@ export default function Gallery({ images }: GalleryProps) {
       >
         {/* Stupid hack lol */}
         <div
-          style={{ "background-image": `url(${firstImage.url})` }}
+          style={{ "backgroundImage": `url(${firstImage.url})` }}
           className="bg-cover bg-center w-full h-full rounded-md"
         >
           <div className="relative transition-all group-hover:backdrop-brightness-50 w-full h-full rounded-md">
