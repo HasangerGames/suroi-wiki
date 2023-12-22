@@ -3,6 +3,8 @@ import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems
 import Image from "next/image";
 import Link from "@/components/links/Link";
 import { getSuroiImageLink } from "@/lib/util/suroi";
+import GridTable from "@/components/tables/GridTable";
+import PageCard from "@/components/cards/PageCard";
 
 export default function HealingPage() {
   return (
@@ -14,25 +16,16 @@ export default function HealingPage() {
           the game.
         </p>
       </div>
-      <FlexTable>
+      <GridTable>
         {HealingItems.definitions.map((item) => (
-          <div key={item.idString} className="flex divide-x divide-border">
-            <div className="flex justify-center items-center p-4">
-              <Image
-                src={getSuroiImageLink(item)}
-                width={64}
-                height={64}
-                alt={`Image of ${item.name}`}
-              />
-            </div>
-            <div className="flex flex-1 items-center p-2">
-              <Link href={`/healing/${item.idString}`}>
-                <h2 className="text-lg font-bold">{item.name}</h2>
-              </Link>
-            </div>
-          </div>
+          // eslint-disable-next-line react/jsx-key
+          <PageCard
+            title={item.name}
+            image={getSuroiImageLink(item)}
+            url={`/healing/${item.idString}`}
+          />
         ))}
-      </FlexTable>
+      </GridTable>
     </main>
   );
 }

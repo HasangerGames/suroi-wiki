@@ -2,6 +2,7 @@ import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import PageCard from "@/components/cards/PageCard";
+import GridTable from "@/components/tables/GridTable";
 
 export default function WeaponsPage() {
   return (
@@ -15,7 +16,7 @@ export default function WeaponsPage() {
 
         <h2>Guns</h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-4">
+      <GridTable>
         {Guns.map((gun) => (
           // eslint-disable-next-line react/jsx-key
           <PageCard
@@ -25,11 +26,11 @@ export default function WeaponsPage() {
             key={gun.idString}
           />
         ))}
-      </div>
+      </GridTable>
       <div className="prose prose-invert">
         <h2>Melees</h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-4">
+      <GridTable>
         {Melees.map((melee) => (
           // eslint-disable-next-line react/jsx-key
           <PageCard
@@ -39,7 +40,7 @@ export default function WeaponsPage() {
             key={melee.idString}
           />
         ))}
-      </div>
+      </GridTable>
     </main>
   );
 }
