@@ -53,9 +53,9 @@ export default function Searchbar() {
                           alt={`Image of ${item.item.name}`}
                           height={64}
                           width={64}
-                          className="w-16 h-16"
+                          className="w-12 h-12"
                         /> ||
-                        <HashIcon className="w-16 h-16" />
+                        <HashIcon className="w-12 h-12" />
                       }
                     </div>
                     <div>
