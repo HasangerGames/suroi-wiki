@@ -20,9 +20,6 @@ const nextConfig = {
       {
         hostname: "invidious.projectsegfau.lt"
       },
-      {
-        hostname: "images.unsplash.com" //!REMOVE WHEN DONE GALLERY
-      }
     ],
   },
 
