@@ -10,6 +10,14 @@ export type SearchItem = {
   description?: string;
 };
 
+export const wikiPages: SearchItem[] = [
+  { name: "Weapons", url: "/weapons" },
+  { name: "Healing Items", url: "/healing" },
+  { name: "Loot Tables", url: "/loot" },
+  { name: "Armor", url: "/equipment/armor" },
+  { name: "Obstacles", url: "/obstacles" },
+];
+
 export function generateItemsFromDefinitions(
   definitions: any,
   baseURL: string
@@ -22,6 +30,7 @@ export function generateItemsFromDefinitions(
 }
 
 export const SearchItems: SearchItem[] = [
+  ...wikiPages,
   ...generateItemsFromDefinitions(Guns, "/weapons/guns/"),
   ...generateItemsFromDefinitions(Melees, "/weapons/melee/"),
   ...generateItemsFromDefinitions(Obstacles.definitions, "/obstacles/"),
