@@ -139,7 +139,8 @@ export default function Gallery({ images }: GalleryProps) {
                   src={firstImage.url}
                   alt="Gallery featured image"
                   fill
-                  className="w-full h-full"
+                  objectFit="cover"
+                  // className="w-full h-full"
                 />
               </div>
             )}
