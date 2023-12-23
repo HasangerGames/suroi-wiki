@@ -17,6 +17,9 @@ const nextConfig = {
       {
         hostname: "raw.githubusercontent.com",
       },
+      {
+        hostname: "invidious.projectsegfau.lt"
+      },
     ],
   },
 
