@@ -24,8 +24,7 @@ export default function NavigationMenu({ open, setOpen }: NavigationMenuProps) {
           </button>
         </div>
         {wikiPages.map((item) => (
-          // eslint-disable-next-line react/jsx-key
-          <MenuItem title={item.name} href={item.url} onClick={close} />
+          <MenuItem key={item.url} title={item.name} href={item.url} onClick={close} />
         ))}
         <div className="flex items-center lg:ml-auto">
           <Searchbar />

@@ -50,11 +50,11 @@ export default async function Home() {
       </div>
       <GridTable>
         {wikiPages.map((page) => (
-          // eslint-disable-next-line react/jsx-key
           <PageCard
+            key={page.url}
             title={page.name}
             url={page.url}
-            image={page.image}
+            image={page.image ?? ""}
             description={page.description}
           />
         ))}
