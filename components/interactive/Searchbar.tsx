@@ -25,7 +25,7 @@ export default function Searchbar() {
         <input
           type="text"
           value={query}
-          size={40}
+          size={20}
           onChange={(e) => setQuery(e.target.value)}
           className="z-10 p-2 w-full rounded-r-md bg-muted"
           placeholder="Search..."

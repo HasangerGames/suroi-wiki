@@ -17,6 +17,8 @@ export const wikiPages: SearchItem[] = [
   { name: "Loot Tables", url: "/loot" },
   { name: "Armor", url: "/equipment/armor" },
   { name: "Obstacles", url: "/obstacles" },
+  { name: "Buildings", url: "/buildings"},
+  { name: "Skins", url: "/skins"}
 ];
 
 export function generateItemsFromDefinitions(
