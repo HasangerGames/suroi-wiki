@@ -16,18 +16,54 @@ export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {
     <>
       <img ref={gunImage} src={getSuroiImageLink(gun, undefined, "world")} />
       <svg>
+        {(gun.fists.leftZIndex ?? 0) < 1 && (
+          <image
+            href={getSuroiImageLink(skin, undefined, "fist")}
+            width={34}
+            height={34}
+            x={gun.isDual ? 0 : gun.fists.left.x + 34}
+            y={gun.isDual ? 0 : gun.fists.left.y + 45 - fistOrigin}
+          />
+        )}
+        {(gun.fists.rightZIndex ?? 0) < 1 && (
+          <image
+            href={getSuroiImageLink(skin, undefined, "fist")}
+            width={34}
+            height={34}
+            x={gun.isDual ? 0 : gun.fists.right.x + 34}
+            y={gun.isDual ? 0 : gun.fists.right.y + 45 - fistOrigin}
+          />
+        )}
         <image
           href={getSuroiImageLink(gun, undefined, "world")}
           width={gunLength}
           height={gunWidth}
-          x={2}
-          y={45 - (gunWidth / 2)}
+          x={gun.isDual ? 0 : gun.image.position.x}
+          y={45 - gunWidth / 2 + (gun.isDual ? 0 : gun.image.position.y)}
         />
         <image
           width={90}
           height={90}
           href={getSuroiImageLink(skin, undefined, "base")}
         />
+        {(gun.fists.leftZIndex ?? 0) > 1 && (
+          <image
+            href={getSuroiImageLink(skin, undefined, "fist")}
+            width={34}
+            height={34}
+            x={gun.isDual ? 0 : gun.fists.left.x + 34}
+            y={gun.isDual ? 0 : gun.fists.left.y + 45 - fistOrigin}
+          />
+        )}
+        {(gun.fists.rightZIndex ?? 0) > 1 && (
+          <image
+            href={getSuroiImageLink(skin, undefined, "fist")}
+            width={34}
+            height={34}
+            x={gun.isDual ? 0 : gun.fists.right.x + 34}
+            y={gun.isDual ? 0 : gun.fists.right.y + 45 - fistOrigin}
+          />
+        )}
       </svg>
     </>
   );

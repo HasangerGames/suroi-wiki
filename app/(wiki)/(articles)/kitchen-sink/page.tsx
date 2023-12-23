@@ -19,7 +19,7 @@ export default async function Kitchen() {
       <Event />
       <Removed />
       <Stub />
-      <PlayerHoldingGun gun={Guns[0]} skin={Skins.definitions[0]} />
+      <PlayerHoldingGun gun={Guns[0]} skin={Skins.definitions[9]} />
       <Gallery
         images={[
           ...Guns.map((gun) => ({
