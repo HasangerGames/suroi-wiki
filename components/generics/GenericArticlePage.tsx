@@ -65,6 +65,9 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
     const combinedArticle = args.combinedArticles?.find(
       (combined) => combined.fileName === params.item
     );
+    const parentCombinedArticle = args.combinedArticles?.find((combined) =>
+      combined.items.find((item) => item === params.item)
+    );
     const combinedArticleItems = combinedArticle?.items.map(
       (item) => args.items.find((i) => i.idString === item)!
     );
@@ -75,6 +78,11 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
     if (!item) {
       // Lookup combined articles
       if (!combinedArticle) return notFound();
+    }
+
+    if (item && parentCombinedArticle) {
+      // Redirect to combined article
+      return redirect(`/${args.path}/${parentCombinedArticle.fileName}`);
     }
 
     return (
