@@ -22,7 +22,14 @@ export default function Gallery({ images }: GalleryProps) {
   return (
     <div className="not-prose">
       {fullscreen && (
-        <div className="flex flex-col gap-8 fixed z-50 inset-0 w-full h-full bg-black/80 p-4">
+        <div
+          className="flex flex-col gap-8 fixed z-50 inset-0 w-full h-full bg-black/80 p-4"
+          onClick={(e) => {
+            e.preventDefault();
+            // only close when clicking on itself and not a child
+            if (e.target === e.currentTarget) return setFullscreen(false);
+          }}
+        >
           <button
             className="flex flex-row gap-8"
             onClick={() => setFullscreen(false)}
@@ -32,7 +39,14 @@ export default function Gallery({ images }: GalleryProps) {
               Gallery of {images.length} images
             </span>
           </button>
-          <div className="relative w-full h-full">
+          <div
+            className="relative w-full h-full"
+            onClick={(e) => {
+              e.preventDefault();
+              // only close when clicking on itself and not a child
+              if (e.target === e.currentTarget) return setFullscreen(false);
+            }}
+          >
             <button
               className="absolute hidden z-10 md:block left-0 top-[50%] translate-y-[-50%] rounded-full p-8 hover:bg-muted"
               onClick={() =>
@@ -80,7 +94,7 @@ export default function Gallery({ images }: GalleryProps) {
                 className="absolute object-scale-down left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
               ></iframe>
             ) : (
-              <Link href={images[currentImage].url} className="cursor-zoom-in">
+              <Link href={images[currentImage].url} className="">
                 <Image
                   src={images[currentImage].url}
                   alt={
@@ -90,7 +104,7 @@ export default function Gallery({ images }: GalleryProps) {
                   }
                   width={500}
                   height={500}
-                  className="absolute object-scale-down h-full w-full left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+                  className="absolute w-min h-min object-scale-down left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
                 />
               </Link>
             )}
@@ -139,8 +153,7 @@ export default function Gallery({ images }: GalleryProps) {
                   src={firstImage.url}
                   alt="Gallery featured image"
                   fill
-                  objectFit="cover"
-                  // className="w-full h-full"
+                  className="object-cover"
                 />
               </div>
             )}
