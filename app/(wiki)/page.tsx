@@ -4,6 +4,8 @@ import fs from "fs/promises";
 import Image from "next/image";
 import Link from "@/components/links/Link";
 import TagLink from "@/components/links/TagLink";
+import GridTable from "@/components/tables/GridTable";
+import { wikiPages } from "@/lib/util/search";
 
 export default async function Home() {
   const HEAD = await fs.readFile(".git/modules/vendor/suroi/HEAD", "utf8");

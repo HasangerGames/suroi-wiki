@@ -10,6 +10,7 @@ import DevWeapon from "../articles/notices/DevWeapon";
 import Stub from "../articles/notices/Stub";
 import { HTMLProps } from "react";
 import Removed from "../articles/notices/Removed";
+import Gallery from "../articles/gallery/Gallery";
 
 const components = {
   Link,
@@ -20,6 +21,7 @@ const components = {
   Removed,
   DevWeapon,
   Stub,
+  Gallery,
   a: (props: HTMLProps<HTMLAnchorElement>) => (
     <Link href={props.href!}>
       {props.children}
