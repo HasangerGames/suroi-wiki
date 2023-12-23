@@ -9,7 +9,7 @@ import Fuse from "fuse.js";
 
 export default function Searchbar() {
   const fuse = new Fuse(SearchItems, {
-    keys: ["name", "url"],
+    keys: ["name", "url", "description"],
   });
 
   const [query, setQuery] = useState("");
@@ -46,20 +46,19 @@ export default function Searchbar() {
                 >
                   <div className="p-2 rounded-md hover:bg-neutral-600/80 cursor-pointer flex gap-2 transition-colors">
                     <div className="p-1">
-                      {
-                        item.item.image && 
+                      {(item.item.image && (
                         <Image
                           src={item.item.image}
                           alt={`Image of ${item.item.name}`}
                           height={64}
                           width={64}
                           className="w-12 h-12"
-                        /> ||
-                        <HashIcon className="w-12 h-12" />
-                      }
+                        />
+                      )) || <HashIcon className="w-12 h-12" />}
                     </div>
                     <div>
-                      <h3 className="p-2 font-bold">{item.item.name}</h3>
+                      <h3 className="px-2 font-bold">{item.item.name}</h3>
+                      {item.item.description && <p className="px-2">{item.item.description}</p>}
                     </div>
                   </div>
                 </Link>
