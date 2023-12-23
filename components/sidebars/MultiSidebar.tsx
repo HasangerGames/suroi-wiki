@@ -1,40 +1,47 @@
 "use client";
 
-import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
-import { ComponentType, useEffect, useState } from "react";
+import {
+  ObjectDefinition,
+  ReferenceTo,
+} from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import { Children, useState } from "react";
 
 /**
  * Allows the user to switch between different sidebars
  * for the same types of Objects
+ *
+ * Children must be passed in the SAME order as items because
+ * Nextjs and React goofy
  */
 export default function MultiSidebar<T extends ObjectDefinition>({
-  Sidebar,
-  items,
+  children,
+  itemNames,
 }: MultiSidebarProps<T>) {
+  const childrenArray = Children.toArray(children);
   const [index, setIndex] = useState(0);
-  const selected = items[index];
+  const selected = childrenArray[index];
 
   return (
     <div className="col-span-2 flex flex-col gap-2">
       <div className="flex flex-row flex-wrap w-full justify-around gap-2 items-center p-1">
-        {items.map((item, i) => (
+        {childrenArray.map((_, i) => (
           <button
-            key={item.idString}
+            key={itemNames[i]}
             className={`flex justify-center grow rounded-md min-w-[7ch] hover:bg-muted/50 cursor-pointer text-muted-foreground hover:text-white ${
               index === i ? "!text-white bg-muted ring-primary ring" : ""
             } p-2`}
             onClick={() => setIndex(i)}
           >
-            {item.name}
+            {itemNames[i]}
           </button>
         ))}
       </div>
-      <Sidebar item={selected} />
+      {selected}
     </div>
   );
 }
 
-export interface MultiSidebarProps<T extends ObjectDefinition> {
-  items: T[];
-  Sidebar: ComponentType<{ item: T }>;
+export interface MultiSidebarProps<T extends ObjectDefinition>
+  extends React.PropsWithChildren {
+  itemNames: ReferenceTo<T>[];
 }

@@ -10,7 +10,6 @@ import { notFound, redirect } from "next/navigation";
 import MDXClient from "../client/MDXClient";
 import Empty from "../articles/notices/Empty";
 import MultiSidebar from "../sidebars/MultiSidebar";
-import { getSuroiItem } from "@/lib/util/suroi";
 
 /**
  * Handles rendering, layouts and metadata for article pages. Simple fill out the
@@ -97,7 +96,11 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
         {item ? (
           <args.Sidebar item={item} />
         ) : (
-          <MultiSidebar Sidebar={args.Sidebar} items={combinedArticleItems!} />
+          <MultiSidebar itemNames={combinedArticleItems?.map((a) => a.name)!}>
+            {combinedArticleItems!.map((item) => (
+              <args.Sidebar key={item.idString} item={item} />
+            ))}
+          </MultiSidebar>
         )}
         {/* here because reverse flex-col */}
         <div className="prose prose-invert sm:hidden">
@@ -122,7 +125,7 @@ export interface GenericArticlePageArgs<T extends ObjectDefinition> {
 }
 
 export interface CombinedArticle<T extends ObjectDefinition> {
-  items: ReferenceTo<ObjectDefinition>[];
+  items: ReferenceTo<T>[];
   fileName: string;
   title: string;
 }
