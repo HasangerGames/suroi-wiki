@@ -73,7 +73,7 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
     );
 
     const article =
-      articles[params.item ?? combinedArticle?.fileName + ".mdx"] ?? null;
+      articles[(params.item ?? combinedArticle?.fileName) + ".mdx"] ?? null;
 
     if (!item) {
       // Lookup combined articles
