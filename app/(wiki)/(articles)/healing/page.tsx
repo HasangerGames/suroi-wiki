@@ -18,12 +18,12 @@ export default function HealingPage() {
       </div>
       <GridTable>
         {HealingItems.definitions.map((item) => (
-          // eslint-disable-next-line react/jsx-key
           <PageCard
             title={item.name}
             image={getSuroiImageLink(item)}
             url={`/healing/${item.idString}`}
             description={item.idString}
+            key={item.idString}
           />
         ))}
       </GridTable>
