@@ -7,13 +7,13 @@ export default function SkinsPage() {
     <main className="col-span-8 text-white">
       <article className="prose prose-invert">
         <h1>Skins</h1>
-        There are {Skins.definitions.length} skins with{" "}
+        There are {Skins.definitions.length} skins. {" "}
         {
           Skins.definitions.filter((value) => {
             return !value.notInLoadout;
           }).length
         }{" "}
-        skins are in the loadout
+        skins are available in the loadout.
       </article>
       <GridTable>
         {Skins.definitions.map((skin) => (
