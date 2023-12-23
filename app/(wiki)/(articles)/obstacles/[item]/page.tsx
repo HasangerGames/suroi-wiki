@@ -11,7 +11,9 @@ const toExport = GenericArticlePage({
       title: "Crates",
       items: [
         "aegis_crate",
-        "flint_crate"
+        "flint_crate",
+        "regular_crate",
+        "melee_crate"
       ],
       fileName: "crates"
     }
