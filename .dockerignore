@@ -1,5 +1,4 @@
 .gitignore
-.gitmodules
 node_modules
 .eslintrc.json
 shell.nix
