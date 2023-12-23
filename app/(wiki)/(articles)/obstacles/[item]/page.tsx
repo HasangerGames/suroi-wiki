@@ -16,6 +16,15 @@ const toExport = GenericArticlePage({
         "melee_crate"
       ],
       fileName: "crates"
+    },
+    {
+      title: "Trees",
+      items: [
+        "oak_tree",
+        "birch_tree",
+        "pine_tree"
+      ],
+      fileName: "trees"
     }
   ]
 });
