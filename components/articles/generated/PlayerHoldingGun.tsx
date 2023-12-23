@@ -14,7 +14,7 @@ export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {
   const gunWidth = gunImageDimensions?.height;
   return (
     <>
-      <img ref={gunImage} src={getSuroiImageLink(gun, undefined, "world")} />
+      <img ref={gunImage} src={getSuroiImageLink(gun, undefined, "world")} className="invisible" />
       <svg>
         {(gun.fists.leftZIndex ?? 0) < 1 && (
           <image

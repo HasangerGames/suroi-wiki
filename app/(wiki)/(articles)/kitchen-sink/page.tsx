@@ -19,7 +19,10 @@ export default async function Kitchen() {
       <Event />
       <Removed />
       <Stub />
-      <PlayerHoldingGun gun={Guns[0]} skin={Skins.definitions[9]} />
+      <PlayerHoldingGun gun={Guns.find((gun) => {return gun.idString === "stoner_63"})} skin={Skins.definitions[9]} />
+      <PlayerHoldingGun gun={Guns.find((gun) => {return gun.idString === "m1895"})} skin={Skins.definitions[9]} />
+      <PlayerHoldingGun gun={Guns.find((gun) => {return gun.idString === "barrett"})} skin={Skins.definitions[9]} />
+      <PlayerHoldingGun gun={Guns.find((gun) => {return gun.idString === "deathray"})} skin={Skins.definitions[9]} />
       <Gallery
         images={[
           ...Guns.map((gun) => ({
