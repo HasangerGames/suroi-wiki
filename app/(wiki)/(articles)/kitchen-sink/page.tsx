@@ -14,7 +14,7 @@ import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 export default async function Kitchen() {
   return (
     <div className="block col-span-full">
-      <GunGraph gun={Guns[0]} />
+      <GunGraph gun={Guns.find((gun) => {return gun.idString === "aug"}) ?? Guns[0]} />
       <DevWeapon />
       <Empty />
       <Event />
