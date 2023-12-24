@@ -31,7 +31,7 @@ export default function Searchbar() {
           placeholder="Search..."
         />
         {query.length > 0 && (
-          <div className="top-[95%] max-h-[50vh] overflow-y-auto absolute flex flex-col gap-2 p-2 pt-4 w-full rounded-b-md bg-muted border-x border-b border-border">
+          <div className="bottom-[95%] md:top-[95%] md:bottom-auto max-h-[50vh] overflow-y-auto absolute flex flex-col gap-2 p-2 pt-4 w-full rounded-md bg-muted border border-border">
             {!searchQuery.length && (
               <div className="flex justify-center items-center">
                 <span>No items found</span>
