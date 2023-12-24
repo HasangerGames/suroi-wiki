@@ -1,3 +1,4 @@
+import GunGraphButton from "@/components/interactive/GunGraphButton";
 import GunSidebar from "@/components/sidebars/GunSidebar";
 import { Explosions } from "@/vendor/suroi/common/src/definitions/explosions";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
@@ -23,6 +24,7 @@ export default function GunLayout({
       <div className="col-span-4 lg:col-span-6 prose prose-invert">
         <h1 className="hidden sm:block">{gun.name}</h1>
         {children}
+        <GunGraphButton gun={gun} />
       </div>
       <GunSidebar gun={gun} explosion={explosion} />
       {/* here because reverse flex-col */}
