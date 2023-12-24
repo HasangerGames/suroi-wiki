@@ -78,6 +78,7 @@ export default function GunGraph({ gun }: GunGraphProps) {
           }}
           options={{
             color: "#FFFFFF",
+            aspectRatio: 1,
             scales: {
               x: {
                 title: {
@@ -96,6 +97,11 @@ export default function GunGraph({ gun }: GunGraphProps) {
               title: {
                 text: `Simulated damages of ${gun.name}`,
                 display: true,
+              },
+              tooltip: {
+                filter: (item, i) => {
+                  return i === 0;
+                },
               },
             },
           }}
