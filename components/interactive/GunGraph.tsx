@@ -82,10 +82,11 @@ export default function GunGraph({ gun }: GunGraphProps) {
             scales: {
               x: {
                 grid: {
-                  color: "#888",
+                  color: ["#444", "#888"],
                 },
                 ticks: {
                   color: "white",
+                  stepSize: 10,
                 },
                 title: {
                   text: "Distance between target center and muzzle in game units",
@@ -95,7 +96,7 @@ export default function GunGraph({ gun }: GunGraphProps) {
               },
               y: {
                 grid: {
-                  color: "#888",
+                  color: ["#444", "#888"],
                 },
                 ticks: {
                   color: "white",
