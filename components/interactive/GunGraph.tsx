@@ -114,6 +114,11 @@ export default function GunGraph({ gun }: GunGraphProps) {
                 display: true,
                 color: "white",
               },
+              legend: {
+                labels: {
+                  color: "white",
+                },
+              },
               tooltip: {
                 filter: (item, i) => {
                   return i === 0;
