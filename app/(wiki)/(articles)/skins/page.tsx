@@ -17,8 +17,7 @@ export default function SkinsPage() {
       </article>
       <GridTable>
         {Skins.definitions.map((skin) => (
-          // eslint-disable-next-line react/jsx-key
-          <SkinCard skin={skin} />
+          <SkinCard skin={skin} key={skin.idString} />
         ))}
       </GridTable>
     </main>
