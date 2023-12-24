@@ -57,10 +57,10 @@ export default function GunGraph({ gun }: GunGraphProps) {
   return (
     <div className="prose prose-invert">
       <p>
-        This test assumes that the target isn't moving and the gun is aiming
+        This test assumes that the target isn{"'"}t moving and the gun is aiming
         dead center on the target.
       </p>
-      <Suspense fallback={<div>silly</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Scatter
           data={{
             datasets: [
@@ -78,7 +78,7 @@ export default function GunGraph({ gun }: GunGraphProps) {
           }}
           options={{
             color: "#FFFFFF",
-            aspectRatio: 1,
+            aspectRatio: 1.3,
             scales: {
               x: {
                 title: {
