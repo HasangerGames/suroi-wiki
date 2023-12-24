@@ -24,6 +24,7 @@ export default function GunGraph({ gun }: GunGraphProps) {
     Tooltip,
     Title
   );
+
   const graphCanvas = useRef(null);
 
   function calculate(gun: GunDefinition) {
@@ -77,19 +78,32 @@ export default function GunGraph({ gun }: GunGraphProps) {
             ],
           }}
           options={{
-            color: "#FFFFFF",
             aspectRatio: 1.3,
             scales: {
               x: {
+                grid: {
+                  color: "#888",
+                },
+                ticks: {
+                  color: "white",
+                },
                 title: {
                   text: "Distance between target center and muzzle in game units",
                   display: true,
+                  color: "white",
                 },
               },
               y: {
+                grid: {
+                  color: "#888",
+                },
+                ticks: {
+                  color: "white",
+                },
                 title: {
                   text: "Damage value",
                   display: true,
+                  color: "white",
                 },
               },
             },
@@ -97,6 +111,7 @@ export default function GunGraph({ gun }: GunGraphProps) {
               title: {
                 text: `Simulated damages of ${gun.name}`,
                 display: true,
+                color: "white",
               },
               tooltip: {
                 filter: (item, i) => {
