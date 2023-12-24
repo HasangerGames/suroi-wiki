@@ -17,7 +17,9 @@ export default function WeaponsPage() {
         <h2>Guns</h2>
       </div>
       <GridTable>
-        {Guns.map((gun) => (
+        {Guns.filter((gun) => {
+          return !gun.idString.includes("dual_");
+        }).map((gun) => (
           // eslint-disable-next-line react/jsx-key
           <PageCard
             title={gun.name}
