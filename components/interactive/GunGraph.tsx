@@ -129,17 +129,23 @@ export default function GunGraph({ gun }: GunGraphProps) {
         />
         <p>CSV for damage</p>
         <span className="not-prose select-all p-4 rounded-md flex flex-col h-16 bg-muted overflow-y-auto">
+          Distance between target center and muzzle in game units, Damage
+          <br></br>
           {damages.map((damage, i) => (
             <span key={i}>
               {damage.x.toFixed(2)}, {damage.y.toFixed(2)}
+              <br></br>
             </span>
           ))}
         </span>
         <p>CSV for DPS</p>
         <span className="not-prose select-all p-4 rounded-md flex flex-col h-16 bg-muted overflow-y-auto">
+          Distance between target center and muzzle in game units, DPS
+          <br></br>
           {dps.map((damage, i) => (
             <span key={i}>
               {damage.x.toFixed(2)}, {damage.y.toFixed(2)}
+              <br></br>
             </span>
           ))}
         </span>
