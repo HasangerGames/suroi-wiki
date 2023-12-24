@@ -15,7 +15,6 @@ export default async function Home() {
       <div className="prose prose-invert">
         <h1>Official Suroi Wiki</h1>
         <div className="flex justify-center">
-         <Link href="https://suroi.io" target="_blank">
           <Image
             src="/img/suroi.svg"
             alt="Suroi Battle Royale"
@@ -23,7 +22,6 @@ export default async function Home() {
             height={450 / 1.5}
             priority
           />
-          </Link>
         </div>
         <p>
           Welcome to the official Suroi wiki! Suroi is an open-source 2D battle
@@ -53,9 +51,10 @@ export default async function Home() {
       <GridTable>
         {wikiPages.map((page) => (
           <PageCard
+            key={page.url}
             title={page.name}
             url={page.url}
-            image={page.image!}
+            image={page.image ?? ""}
             description={page.description}
             key={page.url}
           />
