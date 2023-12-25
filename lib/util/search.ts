@@ -21,6 +21,12 @@ export type SearchItem = {
 
 export const wikiPages: SearchItem[] = [
   {
+    name: "Home",
+    url: "/",
+    description: "Home Page",
+    image: "/img/logo.svg",
+  },
+  {
     name: "Weapons",
     url: "/weapons",
     description: "List of weapons",
@@ -61,6 +67,13 @@ export const wikiPages: SearchItem[] = [
     url: "/skins",
     description: "List of skins",
     image: getSuroiImageLink(getSuroiItem("leia"), undefined, "base"),
+  },
+  {
+    name: "Writing Guide",
+    url: "/meta/writingarticles",
+    description: "Guidelines for writing articles",
+    image:
+      "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/emotes/monocle_face.svg",
   },
 ];
 
