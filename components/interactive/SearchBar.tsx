@@ -40,12 +40,13 @@ export default function SearchBar() {
           }}
           onKeyDown={(e) => {
             if (e.key === "Enter" && searchQuery.length > 0) {
+              setOpen(false);
               document.location.href = searchQuery[0].item.url;
             }
           }}
           className="fixed z-10 top-0 left-0 w-screen h-screen bg-black/70"
         >
-          <div className="flex flex-col md:mt-36 mx-auto max-w-screen-lg md:max-h-96 p-2 md:p-4 bg-background rounded-md overflow-y-scroll">
+          <div className="flex flex-col md:mt-36 mx-auto max-w-screen-lg p-2 md:p-4 bg-background rounded-md">
             <div className="flex flex-row gap-4">
               <SearchIcon />
               <input
@@ -56,11 +57,17 @@ export default function SearchBar() {
                 className="z-10 p-2 w-full rounded-md bg-muted mb-4"
                 placeholder="Search..."
               />
+              <button onClick={() => setOpen(false)}>ESC</button>
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 md:max-h-96 overflow-y-scroll">
               {searchQuery.map((item) => (
                 <SearchItem key={item.item.url} item={item.item} />
               ))}
+            </div>
+            <div>
+              <p>
+                Powered by <Link href="https://www.fusejs.io">fuse.js</Link>
+              </p>
             </div>
           </div>
         </div>
