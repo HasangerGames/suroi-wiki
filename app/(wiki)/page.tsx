@@ -47,7 +47,7 @@ export default async function Home() {
           Stats are based off Suroi commit <CommitLink sha={HEAD} /> @{" "}
           <TagLink sha={HEAD} />
         </p>
-        <h2>Notable Pages</h2>
+        <h2>Pages</h2>
       </div>
       <GridTable>
         {wikiPages.map((page) => (
