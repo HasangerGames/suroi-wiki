@@ -9,25 +9,16 @@ const toExport = GenericArticlePage({
   combinedArticles: [
     {
       title: "Crates",
-      items: [
-        "aegis_crate",
-        "flint_crate",
-        "regular_crate",
-        "melee_crate"
-      ],
-      fileName: "crates"
+      items: ["aegis_crate", "flint_crate", "regular_crate", "melee_crate"],
+      fileName: "crates",
     },
     {
       title: "Trees",
-      items: [
-        "oak_tree",
-        "birch_tree",
-        "pine_tree"
-      ],
-      fileName: "trees"
-    }
-  ]
+      items: ["oak_tree", "birch_tree", "pine_tree"],
+      fileName: "trees",
+    },
+  ],
 });
 
-exports = toExport;
+export const { generateMetadata, generateStaticParams } = toExport;
 export default toExport.default;
