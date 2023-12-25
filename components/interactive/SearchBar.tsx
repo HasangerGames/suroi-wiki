@@ -24,6 +24,10 @@ export default function SearchBar() {
       if (e.key === "/" && e.ctrlKey) {
         setOpen(true);
       }
+
+      if (e.key === "Escape") {
+        setOpen(false);
+      }
     });
   }, []);
 
