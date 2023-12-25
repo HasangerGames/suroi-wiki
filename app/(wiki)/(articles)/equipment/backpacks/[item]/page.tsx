@@ -1,12 +1,9 @@
-import GenericMDXPageFactory, {
-  GenericGenerateMetadataFactory,
-  GenericGenerateStaticParamsFactory,
-} from "@/components/layouts/GenericMDXPageFactory";
+import GenericArticlePage from "@/components/generics/GenericArticlePage";
+import BackpackSidebar from "@/components/sidebars/BackpackSidebar";
 import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
 
-export const generateMetadata = GenericGenerateMetadataFactory(Backpacks.definitions);
-export const generateStaticParams = GenericGenerateStaticParamsFactory(Backpacks.definitions);
-
-export default GenericMDXPageFactory({
+const toExport = GenericArticlePage({
+  items: Backpacks.definitions,
   path: "equipment/backpacks",
-});
+  Sidebar: BackpackSidebar,
+})
