@@ -2,6 +2,12 @@ import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefiniti
 import { notFound } from "next/navigation";
 import React, { ComponentType } from "react";
 
+/**
+ * GenericLayoutFactory HOC
+ * @deprecated Use {@link GenericArticlePage} instead
+ * @param args Pass in sidebar and items
+ * @returns Is a HOC that returns a layout to export to Next,js
+ */
 export default function GenericLayoutFactory<T extends ObjectDefinition>(
   args: GenericLayoutFactoryArgs<T>
 ) {

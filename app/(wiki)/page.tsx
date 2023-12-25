@@ -56,6 +56,7 @@ export default async function Home() {
             url={page.url}
             image={page.image ?? ""}
             description={page.description}
+            key={page.url}
           />
         ))}
       </GridTable>

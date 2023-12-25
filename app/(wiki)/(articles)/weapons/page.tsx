@@ -20,7 +20,6 @@ export default function WeaponsPage() {
         {Guns.filter((gun) => {
           return !gun.idString.includes("dual_");
         }).map((gun) => (
-          // eslint-disable-next-line react/jsx-key
           <PageCard
             title={gun.name}
             image={getSuroiImageLink(gun)}
@@ -35,7 +34,6 @@ export default function WeaponsPage() {
       </div>
       <GridTable>
         {Melees.map((melee) => (
-          // eslint-disable-next-line react/jsx-key
           <PageCard
             title={melee.name}
             image={getSuroiImageLink(melee)}
