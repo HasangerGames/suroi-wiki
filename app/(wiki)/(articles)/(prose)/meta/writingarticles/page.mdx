@@ -3,6 +3,7 @@ import TimeLink from "@/components/links/TimeLink";
 import Removed from "@/components/articles/notices/Removed";
 import CommitLink from "@/components/links/CommitLink";
 import DevWeapon from "@/components/articles/notices/DevWeapon";
+import Gallery from "@/components/articles/gallery/Gallery.tsx";
 
 # Writing Articles
 
@@ -70,3 +71,61 @@ Shows a small banner at the top of the page notifying readers the item has been 
 Shows a small banner at the top of the page notifying readers the item is a developer weapon and unobtainable. See below:
 
 <DevWeapon />
+
+### `<Gallery images={[array of GalleryImage]}/>`
+
+A gallery of images.
+
+<Gallery
+  images={[
+    {
+      url: "/img/suroi.svg",
+      author: "John Doe",
+      caption: "Suroi Logo"
+    },
+    {
+      url: "/img/logo.svg",
+      author: "Jane Doe",
+      caption: "Suroi Wiki Logo"
+    },
+    {
+      type: "youtube",
+      url: "67Rs86gc1Ds",
+      author: "Jon Doe",
+      caption: "Suroi Menu Music"
+    }
+  ]}
+/>
+
+This is a bit more complicated to use, as it involves [Javascript objects](https://www.w3schools.com/js/js_objects.asp)
+
+We use an array of `GalleryImage`s, as seen in `src/lib/types.ts`,
+
+```jsx
+<Gallery images={[GalleryImages]} />
+```
+
+This is the code for the gallery example above,
+
+```jsx
+<Gallery
+  images={[
+    {
+      url: "/img/suroi.svg",
+      author: "John Doe",
+      caption: "Suroi Logo"
+    },
+    {
+      url: "/img/logo.svg",
+      author: "Jane Doe",
+      caption: "Suroi Wiki Logo"
+    },
+    {
+      type: "youtube",
+      url: "67Rs86gc1Ds",
+      author: "Jon Doe",
+      caption: "Suroi Menu Music"
+    }
+  ]}
+/>
+```
