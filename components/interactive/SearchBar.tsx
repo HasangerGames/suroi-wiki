@@ -35,7 +35,7 @@ export default function SearchBar() {
     <div className="not-prose">
       <button
         onClick={() => setOpen(true)}
-        className="flex flex-row my-auto md:bg-muted md:rounded-md p-2 text-sm gap-2"
+        className="flex items-center flex-row my-auto md:bg-muted md:rounded-md p-2 text-sm gap-2"
       >
         <SearchIcon className="w-8 h-8 my-auto md:w-4 md:h-4" />
         <span className="hidden md:block gap-2 my-auto">
@@ -63,8 +63,8 @@ export default function SearchBar() {
           }}
           className="fixed z-[100] w-screen inset-0 h-screen justify-center items-center duration-700 bg-background md:bg-black/50 md:backdrop-blur-md"
         >
-          <div className="flex flex-col gap-4 md:mt-36 mx-auto max-w-screen-lg p-2 md:p-4 bg-background rounded-md">
-            <div className="flex flex-row justify-center align-middle gap-4">
+          <div className="flex flex-col gap-4 md:mt-36 mx-auto max-w-screen-lg p-2 md:p-4 items-center bg-background rounded-md">
+            <div className="flex flex-row justify-center align-middle items-center gap-4">
               <SearchIcon className="w-8 h-8 my-auto" />
               <input
                 type="text"
