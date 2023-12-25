@@ -6,6 +6,7 @@ import Link from "@/components/links/Link";
 import TagLink from "@/components/links/TagLink";
 import GridTable from "@/components/tables/GridTable";
 import { wikiPages } from "@/lib/util/search";
+import SearchBar from "@/components/interactive/SearchBar";
 
 export default async function Home() {
   const HEAD = await fs.readFile(".git/modules/vendor/suroi/HEAD", "utf8");
@@ -46,7 +47,7 @@ export default async function Home() {
           Stats are based off Suroi commit <CommitLink sha={HEAD} /> @{" "}
           <TagLink sha={HEAD} />
         </p>
-        <h2>Notable Pages</h2>
+        <h2>Pages</h2>
       </div>
       <GridTable>
         {wikiPages.map((page) => (
