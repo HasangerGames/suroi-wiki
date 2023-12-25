@@ -68,6 +68,13 @@ export const wikiPages: SearchItem[] = [
     description: "List of skins",
     image: getSuroiImageLink(getSuroiItem("leia"), undefined, "base"),
   },
+  {
+    name: "Writing Guide",
+    url: "/meta/writingarticles",
+    description: "Guidelines for writing articles",
+    image:
+      "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/emotes/monocle_face.svg",
+  },
 ];
 
 export function generateItemsFromDefinitions(
