@@ -24,7 +24,7 @@ export const wikiPages: SearchItem[] = [
     name: "Home",
     url: "/",
     description: "Home Page",
-    image: "/img/suroi.svg",
+    image: "/img/logo.svg",
   },
   {
     name: "Weapons",

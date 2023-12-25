@@ -30,7 +30,7 @@ export default function SearchBar() {
         onClick={() => setOpen(true)}
         className="flex flex-row gap-2"
       >
-        <SearchIcon />
+        <SearchIcon className="w-8 h-8" />
         <span className="hidden md:block">Search (Ctrl-/)</span>
       </button>
       {open && (
@@ -49,7 +49,7 @@ export default function SearchBar() {
               setOpen(false);
             }
           }}
-          className="fixed z-[100] w-screen inset-0 h-screen justify-center items-center duration-700 bg-black/50 backdrop-blur-md"
+          className="fixed z-[100] w-screen inset-0 h-screen justify-center items-center duration-700 bg-background md:bg-black/50 md:backdrop-blur-md"
         >
           <div className="flex flex-col gap-4 md:mt-36 mx-auto max-w-screen-lg p-2 md:p-4 bg-background rounded-md">
             <div className="flex flex-row justify-center align-middle gap-4">
@@ -84,58 +84,4 @@ export default function SearchBar() {
       )}
     </div>
   );
-
-  /*return (
-    <>
-      <div className="flex relative justify-end w-full">
-        <div className="flex z-10 items-center p-2 rounded-l-md border-l border-y border-border bg-muted">
-          <Search className="w-4 h-4" />
-        </div>
-        <input
-          type="text"
-          value={query}
-          size={20}
-          onChange={(e) => setQuery(e.target.value)}
-          className="z-10 p-2 w-full rounded-r-md bg-muted"
-          placeholder="Search..."
-        />
-        {query.length > 0 && (
-          <div className="bottom-[95%] md:top-[95%] md:bottom-auto max-h-[50vh] overflow-y-auto absolute flex flex-col gap-2 p-2 pt-4 w-full rounded-md bg-muted border border-border">
-            {!searchQuery.length && (
-              <div className="flex justify-center items-center">
-                <span>No items found</span>
-              </div>
-            )}
-            {searchQuery.map((item) => (
-              <div key={item.item.name}>
-                <Link
-                  href={item.item.url}
-                  // Clear query on click
-                  onClick={() => setQuery("")}
-                >
-                  <div className="p-2 rounded-md hover:bg-neutral-600/80 cursor-pointer flex gap-2 transition-colors">
-                    <div className="p-1">
-                      {(item.item.image && (
-                        <Image
-                          src={item.item.image}
-                          alt={`Image of ${item.item.name}`}
-                          height={64}
-                          width={64}
-                          className="w-12 h-12"
-                        />
-                      )) || <HashIcon className="w-12 h-12" />}
-                    </div>
-                    <div>
-                      <h3 className="px-2 font-bold">{item.item.name}</h3>
-                      {item.item.description && <p className="px-2">{item.item.description}</p>}
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    </>
-  );*/
 }

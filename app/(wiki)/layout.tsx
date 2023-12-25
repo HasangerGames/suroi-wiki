@@ -1,4 +1,3 @@
-import NavContainer from "@/components/interactive/NavContainer";
 import NavigationBar from "@/components/interactive/NavigationBar";
 
 export default function WikiLayout({ children }: React.PropsWithChildren) {
