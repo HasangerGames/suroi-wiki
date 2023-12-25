@@ -32,14 +32,7 @@ export default function SearchBar() {
   }, []);
 
   return (
-    <div
-      className="not-prose"
-      onKeyDown={(e) => {
-        if (e.key === "/" && e.ctrlKey) {
-          setOpen(true);
-        }
-      }}
-    >
+    <div className="not-prose">
       <button
         onClick={() => setOpen(true)}
         className="flex flex-row my-auto md:bg-muted md:rounded-md p-2 text-sm gap-2"
