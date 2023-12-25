@@ -21,6 +21,12 @@ export type SearchItem = {
 
 export const wikiPages: SearchItem[] = [
   {
+    name: "Home",
+    url: "/",
+    description: "Home Page",
+    image: "/img/suroi.svg",
+  },
+  {
     name: "Weapons",
     url: "/weapons",
     description: "List of weapons",

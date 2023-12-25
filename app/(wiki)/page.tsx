@@ -60,7 +60,6 @@ export default async function Home() {
           />
         ))}
       </GridTable>
-      <SearchBar/>
     </main>
   );
 }
