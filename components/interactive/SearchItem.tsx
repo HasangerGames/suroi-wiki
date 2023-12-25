@@ -1,10 +1,11 @@
 import { SearchItem } from "@/lib/util/search";
 import { HashIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SearchItem({ item }: SearchItemProps) {
   return (
-    <a
+    <Link
       href={item.url}
       className="group transition-colors flex flex-row rounded-md p-4 gap-4 bg-muted text-muted-foreground hover:bg-suroi focus:bg-suroi hover:text-black focus:text-black focus:outline-none"
     >
@@ -22,7 +23,7 @@ export default function SearchItem({ item }: SearchItemProps) {
         <p>{item.description}</p>
         <p className="font-thin">{item.url}</p>
       </span>
-    </a>
+    </Link>
   );
 }
 
