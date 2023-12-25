@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import MenuItem from "./MenuItem";
-import Searchbar from "./Searchbar";
+import SearchBar from "./SearchBar";
 import { X } from "lucide-react";
 import { SearchItem, wikiPages } from "@/lib/util/search";
 
@@ -24,12 +24,15 @@ export default function NavigationMenu({ open, setOpen }: NavigationMenuProps) {
           </button>
         </div>
         {wikiPages.map((item) => (
-          <MenuItem key={item.url} title={item.name} href={item.url} onClick={close} />
+          <MenuItem
+            key={item.url}
+            title={item.name}
+            href={item.url}
+            onClick={close}
+          />
         ))}
-        <div className="flex items-center lg:ml-auto">
-          <Searchbar />
-        </div>
       </div>
+      <SearchBar />
     </div>
   );
 }
