@@ -47,7 +47,7 @@ export default function SearchBar() {
               setOpen(false);
             }
           }}
-          className="fixed z-10 m-0 top-0 left-0 w-screen h-screen bg-black/50 backdrop-blur-md"
+          className="fixed z-90 w-screen inset-0 h-screen flex justify-center items-center duration-700 bg-black/50 backdrop-blur-md"
         >
           <div className="flex flex-col gap-4 md:mt-36 mx-auto max-w-screen-lg p-2 md:p-4 bg-background rounded-md">
             <div className="flex flex-row gap-4">
