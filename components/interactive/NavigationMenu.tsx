@@ -9,7 +9,7 @@ export default function NavigationMenu() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <button onClick={() => setOpen(true)}>
+      <button onClick={() => setOpen(true)} className="hover:text-primary">
         <MenuIcon className="w-8 h-8" />
       </button>
       {open && (
@@ -17,12 +17,12 @@ export default function NavigationMenu() {
           <button onClick={() => setOpen(false)}>
             <X className="w-8 h-8" />
           </button>
-          <div className="flex flex-col">
+          <div className="flex flex-col ml-1">
             {wikiPages.map((item) => (
               <Link
                 key={item.url}
                 href={item.url}
-                className="text-lg hover:text-primary py-4"
+                className="transition-colors text-lg hover:text-primary py-4"
                 onClick={() => setOpen(false)}
               >
                 {item.name}
