@@ -21,13 +21,27 @@ export default function SearchBar() {
 
   return (
     <div>
-      <button onClick={() => setOpen(true)}>Silly</button>
+      <button
+        onKeyDown={(e) => {
+          if (e.key === "/" && e.ctrlKey) {
+            setOpen(true);
+          }
+        }}
+        onClick={() => setOpen(true)}
+      >
+        Silly
+      </button>
       {open && (
         <div
           onClick={(e) => {
             e.preventDefault();
             // only close when clicking on itself and not a child
             if (e.target === e.currentTarget) return setOpen(false);
+          }}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && searchQuery.length > 0) {
+              document.location.href = searchQuery[0].item.url;
+            }
           }}
           className="fixed z-10 top-0 left-0 w-screen h-screen bg-black/70"
         >
