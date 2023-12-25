@@ -1,12 +1,12 @@
 import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
-import GenericMDXPageFactory, {
-  GenericGenerateMetadataFactory,
-  GenericGenerateStaticParamsFactory,
-} from "@/components/layouts/GenericMDXPageFactory";
+import GenericArticlePage from "@/components/generics/GenericArticlePage";
+import ArmorSidebar from "@/components/sidebars/ArmorSidebar";
 
-export const generateMetadata = GenericGenerateMetadataFactory(Armors.definitions);
-export const generateStaticParams = GenericGenerateStaticParamsFactory(Armors.definitions);
-
-export default GenericMDXPageFactory({
+const toExport = GenericArticlePage({
+  items: Armors.definitions,
   path: "equipment/armor",
-});
+  Sidebar: ArmorSidebar,
+})
+
+exports = toExport;
+export default toExport.default;
