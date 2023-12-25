@@ -1,9 +1,12 @@
-import GenericMDXPageFactory, { GenericGenerateMetadataFactory, GenericGenerateStaticParamsFactory } from "@/components/layouts/GenericMDXPageFactory";
+import GenericArticlePage from "@/components/generics/GenericArticlePage";
+import BuildingSidebar from "@/components/sidebars/BuildingSidebar";
 import { Buildings } from "@/vendor/suroi/common/src/definitions/buildings";
 
-export const generateMetadata = GenericGenerateMetadataFactory(Buildings.definitions);
-export const generateStaticParams = GenericGenerateStaticParamsFactory(Buildings.definitions)
-
-export default GenericMDXPageFactory({
-  path: "buildings"
+const toExport = GenericArticlePage({
+  items: Buildings.definitions,
+  path: "buildings",
+  Sidebar: BuildingSidebar,
 })
+
+export const { generateMetadata, generateStaticParams } = toExport;
+export default toExport.default;

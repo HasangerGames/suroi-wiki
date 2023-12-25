@@ -1,9 +1,24 @@
-import GenericMDXPageFactory, { GenericGenerateMetadataFactory, GenericGenerateStaticParamsFactory } from "@/components/layouts/GenericMDXPageFactory";
+import GenericArticlePage from "@/components/generics/GenericArticlePage";
+import ObstacleSidebar from "@/components/sidebars/ObstacleSidebar";
 import { Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
 
-export const generateMetadata = GenericGenerateMetadataFactory(Obstacles.definitions);
-export const generateStaticParams = GenericGenerateStaticParamsFactory(Obstacles.definitions)
+const toExport = GenericArticlePage({
+  items: Obstacles.definitions,
+  path: "obstacles",
+  Sidebar: ObstacleSidebar,
+  combinedArticles: [
+    {
+      title: "Crates",
+      items: ["aegis_crate", "flint_crate", "regular_crate", "melee_crate"],
+      fileName: "crates",
+    },
+    {
+      title: "Trees",
+      items: ["oak_tree", "birch_tree", "pine_tree"],
+      fileName: "trees",
+    },
+  ],
+});
 
-export default GenericMDXPageFactory({
-  path: "obstacles"
-})
+export const { generateMetadata, generateStaticParams } = toExport;
+export default toExport.default;

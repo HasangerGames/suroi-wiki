@@ -1,12 +1,12 @@
-import GenericMDXPageFactory, {
-  GenericGenerateMetadataFactory,
-  GenericGenerateStaticParamsFactory,
-} from "@/components/layouts/GenericMDXPageFactory";
+import GenericArticlePage from "@/components/generics/GenericArticlePage";
+import HealingSidebar from "@/components/sidebars/HealingSidebar";
 import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems";
 
-export const generateMetadata = GenericGenerateMetadataFactory(HealingItems.definitions);
-export const generateStaticParams = GenericGenerateStaticParamsFactory(HealingItems.definitions);
+const toExport = GenericArticlePage({
+  items: HealingItems.definitions,
+  path: "healing",
+  Sidebar: HealingSidebar
+})
 
-export default GenericMDXPageFactory({
-  path: "healing"
-});
+export const { generateMetadata, generateStaticParams } = toExport;
+export default toExport.default;
