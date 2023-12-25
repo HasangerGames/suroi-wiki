@@ -32,12 +32,22 @@ export default function SearchBar() {
   }, []);
 
   return (
-    <div className="not-prose">
-      <button onClick={() => setOpen(true)} className="flex flex-row gap-2">
-        <SearchIcon className="w-8 h-8" />
+    <div
+      className="not-prose"
+      onKeyDown={(e) => {
+        if (e.key === "/" && e.ctrlKey) {
+          setOpen(true);
+        }
+      }}
+    >
+      <button
+        onClick={() => setOpen(true)}
+        className="flex flex-row my-auto md:bg-muted md:rounded-md p-2 text-sm gap-2"
+      >
+        <SearchIcon className="w-8 h-8 my-auto md:w-4 md:h-4" />
         <span className="hidden md:block gap-2 my-auto">
           Search
-          <span className="ml-4 p-2 outline outline-border rounded-md">
+          <span className="ml-4 p-1 border border-border rounded-md text-xs">
             Ctrl + /
           </span>
         </span>
@@ -72,7 +82,7 @@ export default function SearchBar() {
                 placeholder="Search..."
               />
               <button
-                className="rounded-md outline-border outline p-2 text-xs"
+                className="rounded-md border-border border p-2 text-xs"
                 onClick={() => setOpen(false)}
               >
                 ESC
