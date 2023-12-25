@@ -133,7 +133,7 @@ export default function Gallery({ images }: GalleryProps) {
       )}
       <button
         onClick={() => setFullscreen(true)}
-        className="group block cursor-zoom-in overflow-hidden bg-muted rounded-md p-2 aspect-video w-full md:w-64 h-auto"
+        className="group block cursor-zoom-in overflow-hidden bg-muted rounded-md p-2 mb-4 aspect-video w-full md:w-64 h-auto"
       >
         {/* Stupid hack lol */}
         <div
@@ -153,7 +153,7 @@ export default function Gallery({ images }: GalleryProps) {
                   src={firstImage.url}
                   alt="Gallery featured image"
                   fill
-                  className="object-cover"
+                  className="transition-all object-cover group-hover:brightness-50"
                 />
               </div>
             )}
