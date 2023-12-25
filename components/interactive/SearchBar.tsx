@@ -47,20 +47,25 @@ export default function SearchBar() {
               setOpen(false);
             }
           }}
-          className="fixed z-90 w-screen inset-0 h-screen flex justify-center items-center duration-700 bg-black/50 backdrop-blur-md"
+          className="fixed z-[100] w-screen inset-0 h-screen justify-center items-center duration-700 bg-black/50 backdrop-blur-md"
         >
           <div className="flex flex-col gap-4 md:mt-36 mx-auto max-w-screen-lg p-2 md:p-4 bg-background rounded-md">
-            <div className="flex flex-row gap-4">
-              <SearchIcon />
+            <div className="flex flex-row justify-center align-middle gap-4">
+              <SearchIcon className="w-8 h-8 my-auto" />
               <input
                 type="text"
                 value={query}
                 size={20}
                 onChange={(e) => setQuery(e.target.value)}
-                className="z-10 p-2 w-full rounded-md bg-muted mb-4"
+                className="z-10 p-2 w-full rounded-md bg-muted"
                 placeholder="Search..."
               />
-              <button onClick={() => setOpen(false)}>ESC</button>
+              <button
+                className="rounded-md outline-border outline p-2 text-xs"
+                onClick={() => setOpen(false)}
+              >
+                ESC
+              </button>
             </div>
             <div className="flex flex-col gap-4 md:max-h-96 overflow-y-scroll">
               {searchQuery.map((item) => (
