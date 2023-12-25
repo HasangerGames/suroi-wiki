@@ -3,7 +3,7 @@
 import { HashIcon, Search, SearchIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "@/components/links/Link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SearchItems } from "@/lib/util/search";
 import Fuse from "fuse.js";
 import SearchItem from "./SearchItem";
@@ -19,11 +19,13 @@ export default function SearchBar() {
 
   const searchQuery = fuse.search(query).slice(0, 7);
 
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "/" && e.ctrlKey) {
-      setOpen(true);
-    }
-  });
+  useEffect(() => {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "/" && e.ctrlKey) {
+        setOpen(true);
+      }
+    });
+  }, []);
 
   return (
     <div className="not-prose">
