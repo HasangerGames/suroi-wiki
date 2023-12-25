@@ -19,21 +19,20 @@ export default function SearchBar() {
 
   const searchQuery = fuse.search(query).slice(0, 7);
 
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "/" && e.ctrlKey) {
+      setOpen(true);
+    }
+  });
+
   return (
-    <div
-      className="not-prose"
-      onKeyDown={(e) => {
-        if (e.key === "/" && e.ctrlKey) {
-          setOpen(true);
-        }
-      }}
-    >
+    <div className="not-prose">
       <button onClick={() => setOpen(true)} className="flex flex-row gap-2">
         <SearchIcon className="w-8 h-8" />
         <span className="hidden md:block gap-2 my-auto">
           Search
           <span className="ml-4 p-2 outline outline-border rounded-md">
-            Ctrl - /
+            Ctrl + /
           </span>
         </span>
       </button>
