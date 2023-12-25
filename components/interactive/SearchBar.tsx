@@ -20,7 +20,7 @@ export default function SearchBar() {
   const searchQuery = fuse.search(query).slice(0, 7);
 
   return (
-    <div>
+    <div className="not-prose">
       <button
         onKeyDown={(e) => {
           if (e.key === "/" && e.ctrlKey) {
@@ -43,10 +43,13 @@ export default function SearchBar() {
               setOpen(false);
               document.location.href = searchQuery[0].item.url;
             }
+            if (e.key === "Escape") {
+              setOpen(false);
+            }
           }}
-          className="fixed z-10 top-0 left-0 w-screen h-screen bg-black/70"
+          className="fixed z-10 m-0 top-0 left-0 w-screen h-screen bg-black/50 backdrop-blur-md"
         >
-          <div className="flex flex-col md:mt-36 mx-auto max-w-screen-lg p-2 md:p-4 bg-background rounded-md">
+          <div className="flex flex-col gap-4 md:mt-36 mx-auto max-w-screen-lg p-2 md:p-4 bg-background rounded-md">
             <div className="flex flex-row gap-4">
               <SearchIcon />
               <input
