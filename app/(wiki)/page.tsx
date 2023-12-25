@@ -18,8 +18,8 @@ export default async function Home() {
           <Image
             src="/img/suroi.svg"
             alt="Suroi Battle Royale"
-            width={1350 / 1.5}
-            height={450 / 1.5}
+            width={1350 / 3}
+            height={450 / 3}
             priority
           />
         </div>
