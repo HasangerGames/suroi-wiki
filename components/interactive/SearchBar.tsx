@@ -28,8 +28,10 @@ export default function SearchBar() {
           }
         }}
         onClick={() => setOpen(true)}
+        className="flex flex-row gap-2"
       >
-        Silly
+        <SearchIcon />
+        <span className="hidden md:block">Search (Ctrl-/)</span>
       </button>
       {open && (
         <div

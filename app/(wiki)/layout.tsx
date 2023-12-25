@@ -1,12 +1,11 @@
 import NavContainer from "@/components/interactive/NavContainer";
+import NavigationBar from "@/components/interactive/NavigationBar";
 
 export default function WikiLayout({ children }: React.PropsWithChildren) {
   return (
     <div>
-      <nav className="mb-4 py-4 border-b border-b-[gray] bg-background top-0 z-50 sticky">
-        <NavContainer />
-      </nav>
-      <div className="container my-8">
+      <NavigationBar />
+      <div className="container my-32">
         <div>{children}</div>
       </div>
     </div>
