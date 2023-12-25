@@ -22,16 +22,19 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
 ) {
   const generateMetadata = ({ params }: { params: { item: string } }) => {
     const item = args.items.find((item) => item.idString === params.item);
+    const combinedArticle = args.combinedArticles?.find(
+      (combined) => combined.fileName === params.item
+    );
 
-    // If no item found, return no metadata
+    // If no item or combined article found, return no metadata
     // Don't throw notFound - thats the page's responsbility
-    if (!item) return {};
+    if (!item && !combinedArticle) return {};
 
     return {
-      title: item.name,
+      title: item?.name ?? combinedArticle?.title,
       openGraph: {
         type: "article",
-        images: [`/api/og/${item.idString}`],
+        images: [`/api/og/${item?.idString}`],
       },
     };
   };

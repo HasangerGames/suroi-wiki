@@ -8,5 +8,5 @@ const toExport = GenericArticlePage({
   Sidebar: ArmorSidebar,
 })
 
-exports = toExport;
+export const { generateMetadata, generateStaticParams } = toExport;
 export default toExport.default;
