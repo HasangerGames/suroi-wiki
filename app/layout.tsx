@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`min-h-screen bg-background font-sans antialiased text-white box-border dark ${font.className}`}
+        className={`min-h-screen bg-background font-sans antialiased text-white box-border dark ${font.variable}`}
       >
         <TanstackQuery>{children}</TanstackQuery>
       </body>
