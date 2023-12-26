@@ -10,3 +10,13 @@ export type ImageTab = {
   alt?: string;
   title?: string;
 };
+
+export type CalculatorMenu = {
+  title: string;
+  items: CalculatorMenuItem[];
+};
+
+export type CalculatorMenuItem = {
+  name: string;
+  item: any;
+};
