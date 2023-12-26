@@ -26,12 +26,16 @@ export default function ObstacleSidebar({
   return (
     <GenericSidebar
       title={item.name}
-      image={getSuroiImageLink(item, item.variations ? 1 : undefined)}
       imageVariations={
-        item.variations &&
-        range(item.variations).map((i) => ({
-          url: getSuroiImageLink(item, i + 1),
-        }))
+        item.variations
+          ? range(item.variations).map((i) => ({
+              url: getSuroiImageLink(item, i + 1),
+            }))
+          : [
+              {
+                url: getSuroiImageLink(item),
+              },
+            ]
       }
     >
       <InfoboxRow>
