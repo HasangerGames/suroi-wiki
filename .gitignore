@@ -18,6 +18,9 @@
 
 # misc
 .idea
+.vscode/*
+!.vscode/tasks.json
+!.vscode/extensions.json
 .DS_Store
 *.pem
 
