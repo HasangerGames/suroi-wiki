@@ -9,6 +9,7 @@ import InfoboxRow from "./utils/InfoboxRow";
 import InfoboxAudioGroup from "./utils/InfoboxAudioGroup";
 import InfoboxAudio from "./utils/InfoboxAudio";
 import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
+import { getSuroiImageLink } from "@/lib/util/suroi";
 
 export default function HealingSidebar({
   item,
@@ -16,10 +17,7 @@ export default function HealingSidebar({
   item: HealingItemDefinition;
 }) {
   return (
-    <GenericSidebar
-      title={item.name}
-      image={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${item.idString}.svg`}
-    >
+    <GenericSidebar title={item.name} image={getSuroiImageLink(item)}>
       <InfoboxRow>
         <InfoboxColumn title="Restores">
           {item.restoreAmount}
