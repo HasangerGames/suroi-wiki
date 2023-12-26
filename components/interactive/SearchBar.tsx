@@ -83,7 +83,7 @@ export default function SearchBar() {
             </div>
             <div className="flex flex-col gap-4 md:max-h-96 overflow-y-scroll">
               {searchQuery.map((item) => (
-                <SearchItem key={item.item.url} item={item.item} />
+                <SearchItem onClick={() => setOpen(false)} key={item.item.url} item={item.item} />
               ))}
             </div>
             <div>
