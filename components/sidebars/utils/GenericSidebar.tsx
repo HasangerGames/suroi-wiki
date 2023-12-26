@@ -19,16 +19,10 @@ export default function GenericSidebar({
         <div className="p-2 border-b bg-primary border-primary">
           <h2 className="text-xl font-bold text-center">{title}</h2>
         </div>
-        {(imageVariations && <ImageTabs images={imageVariations} />) ||
-          (image && (
-            <Image
-              width={128}
-              height={128}
-              className="w-32 h-32"
-              src={image}
-              alt={`${title} image`}
-            />
-          ))}
+        {(imageVariations && (
+          <ImageTabs images={imageVariations ?? [{ url: image }]} />
+        )) ||
+          (image && <ImageTabs images={[{ url: image }]} />)}
         {children}
       </div>
     </div>
