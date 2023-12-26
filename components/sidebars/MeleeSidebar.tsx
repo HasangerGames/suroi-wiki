@@ -3,7 +3,8 @@ import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxRow from "./utils/InfoboxRow";
 import Image from "next/image";
 import InfoboxHeader from "./utils/InfoboxHeader";
-import { getSuroiImageLink } from "@/lib/util/suroi";
+import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
+import ImageTabs from "../interactive/ImageTabs";
 
 export default function MeleeSidebar({ item }: MeleeSidebarProps) {
   return (
@@ -12,23 +13,25 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
         <div className="p-2 border-b bg-primary border-primary">
           <h2 className="text-xl font-bold text-center">{item.name}</h2>
         </div>
-        <div className="flex justify-center p-2">
-          <Image
-            src={getSuroiImageLink(item)}
-            width={128}
-            height={128}
-            alt={`Image of ${item.name}`}
-          />
-        </div>
-
+        <ImageTabs
+          images={[
+            {
+              url: getSuroiImageLink(item),
+              title: "Loot",
+            },
+            {
+              url: getSuroiKillfeedImageLink(item),
+              title: "Killfeed",
+            },
+          ]}
+        />
         <InfoboxRow>
           <InfoboxColumn title="Damage">{item.damage}</InfoboxColumn>
           <InfoboxColumn title="Cooldown" abbr="Cooldown between hits">
             {item.cooldown}ms
           </InfoboxColumn>
           <InfoboxColumn title="Obstacle Damage">
-            x{item.obstacleMultiplier} (
-            {item.obstacleMultiplier * item.damage})
+            x{item.obstacleMultiplier} ({item.obstacleMultiplier * item.damage})
           </InfoboxColumn>
         </InfoboxRow>
         <InfoboxRow>

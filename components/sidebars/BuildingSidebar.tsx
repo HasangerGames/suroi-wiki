@@ -23,7 +23,9 @@ export default function BuildingSidebar({
     <GenericSidebar
       title={item.name}
       image={getSuroiImageLink(item)}
-      imageVariations={buildingVariations(item)}
+      imageVariations={buildingVariations(item).map((variation) => ({
+        url: variation,
+      }))}
     >
       <InfoboxHeader>Contains</InfoboxHeader>
       <InfoboxRow>
