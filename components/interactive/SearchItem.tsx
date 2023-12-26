@@ -22,7 +22,7 @@ export default function SearchItem({ item, onClick }: SearchItemProps) {
       <span className="flex flex-col gap-1">
         <h3 className="font-bold">{item.name}</h3>
         <p>{item.description}</p>
-        <p className="font-thin">{item.url}</p>
+        <p className="font-light">{item.url}</p>
       </span>
     </Link>
   );
@@ -30,5 +30,5 @@ export default function SearchItem({ item, onClick }: SearchItemProps) {
 
 export interface SearchItemProps extends React.PropsWithChildren {
   item: SearchItem;
-  onClick?: () => unknown
+  onClick?: () => unknown;
 }
