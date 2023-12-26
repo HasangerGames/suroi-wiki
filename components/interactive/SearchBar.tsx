@@ -3,7 +3,7 @@
 import { HashIcon, Search, SearchIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "@/components/links/Link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { SearchItems } from "@/lib/util/search";
 import Fuse from "fuse.js";
 import SearchItem from "./SearchItem";
@@ -63,7 +63,7 @@ export default function SearchBar() {
           }}
           className="fixed z-[100] w-screen inset-0 h-screen justify-center items-center duration-700 bg-background md:bg-black/50 md:backdrop-blur-md"
         >
-          <div className="flex flex-col gap-4 md:mt-36 mx-auto max-w-screen-lg p-2 md:p-4 items-center bg-background rounded-md">
+          <div className="flex flex-col gap-4 md:mt-36 mx-auto max-w-screen-lg p-2 md:p-4 bg-background rounded-md">
             <div className="flex flex-row justify-center align-middle items-center gap-4">
               <SearchIcon className="w-8 h-8 my-auto" />
               <input
