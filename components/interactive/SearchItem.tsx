@@ -3,11 +3,12 @@ import { HashIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function SearchItem({ item }: SearchItemProps) {
+export default function SearchItem({ item, onClick }: SearchItemProps) {
   return (
     <Link
       href={item.url}
       className="group transition-colors flex flex-row rounded-md p-4 gap-4 bg-muted text-muted-foreground hover:bg-suroi focus:bg-suroi hover:text-black focus:text-black focus:outline-none"
+      onClick={onClick}
     >
       {(item.image && (
         <Image
@@ -29,4 +30,5 @@ export default function SearchItem({ item }: SearchItemProps) {
 
 export interface SearchItemProps extends React.PropsWithChildren {
   item: SearchItem;
+  onClick?: () => unknown
 }
