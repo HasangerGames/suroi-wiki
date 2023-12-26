@@ -6,7 +6,7 @@ import {
 } from "@/vendor/suroi/common/src/definitions/guns";
 import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
 import GenericSidebar from "./utils/GenericSidebar";
-import { getSuroiImageLink } from "@/lib/util/suroi";
+import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
 import GunDetails from "./GunDetails";
 import { useState } from "react";
 
@@ -17,7 +17,12 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
     <div className="col-span-2">
       {dualGun && (
         <div className="mb-2 flex gap-2 text-lg">
-          <button onClick={() => setDual(false)} className={`${!dual && "text-primary underline"} transition-colors`}>Single</button>
+          <button
+            onClick={() => setDual(false)}
+            className={`${!dual && "text-primary underline"} transition-colors`}
+          >
+            Single
+          </button>
           <button
             onClick={() => setDual(true)}
             className={`${dual && "text-primary underline"} transition-colors`}
@@ -34,6 +39,25 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           undefined,
           true
         )}
+        imageVariations={[
+          {
+            url: getSuroiImageLink(
+              dual ? dualGun! : gun,
+              undefined,
+              undefined,
+              true
+            ),
+            title: "Loot",
+          },
+          {
+            url: getSuroiImageLink(gun, undefined, "world"),
+            title: "World",
+          },
+          {
+            url: getSuroiKillfeedImageLink(dual ? dualGun! : gun),
+            title: "Killfeed",
+          },
+        ]}
       >
         <GunDetails gun={dual ? dualGun! : gun} explosion={explosion} />
       </GenericSidebar>

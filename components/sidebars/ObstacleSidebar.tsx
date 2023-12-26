@@ -25,12 +25,13 @@ export default function ObstacleSidebar({
 
   return (
     <GenericSidebar
-      noImage={item.invisible}
       title={item.name}
       image={getSuroiImageLink(item, item.variations ? 1 : undefined)}
       imageVariations={
         item.variations &&
-        range(item.variations).map((i) => getSuroiImageLink(item, i + 1))
+        range(item.variations).map((i) => ({
+          url: getSuroiImageLink(item, i + 1),
+        }))
       }
     >
       <InfoboxRow>
@@ -57,7 +58,10 @@ export default function ObstacleSidebar({
                 )}
                 <div className="flex flex-wrap justify-around gap-2">
                   {parents.map((parent) => (
-                    <Link key={parent.idString} href={`/buildings/${parent.idString}`}>
+                    <Link
+                      key={parent.idString}
+                      href={`/buildings/${parent.idString}`}
+                    >
                       {parent.name}
                     </Link>
                   ))}

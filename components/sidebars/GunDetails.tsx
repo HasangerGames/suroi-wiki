@@ -24,30 +24,6 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
   return (
     <>
       <InfoboxRow>
-        <InfoboxColumn title="World Image">
-          <div className="flex items-center">
-            <Image
-              width={128}
-              height={128}
-              alt={`World image of ${gun.name}`}
-              src={getSuroiImageLink(
-                gun.isDual ? getSuroiItem(gun.singleVariant)! : gun,
-                undefined,
-                "world"
-              )}
-            />
-          </div>
-        </InfoboxColumn>
-        <InfoboxColumn title="Killfeed Icon">
-          <Image
-            width={128}
-            height={128}
-            alt={`Killfeed icon of ${gun.name}`}
-            src={getSuroiKillfeedImageLink(gun)}
-          />
-        </InfoboxColumn>
-      </InfoboxRow>
-      <InfoboxRow>
         <InfoboxColumn title="Fire Mode">
           {FireMode[gun.fireMode]}
         </InfoboxColumn>

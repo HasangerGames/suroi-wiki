@@ -4,3 +4,9 @@ export type GalleryImage = {
   caption?: string;
   author?: string;
 };
+
+export type ImageTab = {
+  url: string;
+  alt?: string;
+  title?: string;
+};

@@ -11,6 +11,7 @@ import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
 import {
   LootDefinition,
   Loots,
+  WeaponDefinition,
 } from "@/vendor/suroi/common/src/definitions/loots";
 import {
   ObstacleDefinition,
@@ -99,8 +100,8 @@ export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
   return `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
 }
 
-export function getSuroiKillfeedImageLink(gun: GunDefinition) {
-  return `${IMAGE_BASE_URL}/killfeed/${gun.idString}_killfeed.svg`;
+export function getSuroiKillfeedImageLink(weapon: WeaponDefinition) {
+  return `${IMAGE_BASE_URL}/killfeed/${weapon.idString}_killfeed.svg`;
 }
 
 function _itemImageLink(
