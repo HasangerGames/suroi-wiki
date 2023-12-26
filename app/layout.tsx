@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import TanstackQuery from "@/components/providers/TanstackQuery";
 
-const font = Inter({ subsets: ["latin"] });
+const font = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wiki.suroi.io"),
