@@ -16,12 +16,42 @@ export default async function Kitchen() {
   return (
     <div className="block col-span-full">
       <SVGRenderer
+        viewbox="-60 -60 120 120"
+        className="w-96"
+        objects={[
+          {
+            type: "image",
+            url: getSuroiImageLink(getSuroiItem("leia"), undefined, "base"),
+            x: 0,
+            y: 0,
+            rotation: 90,
+            zIndex: 3,
+          },
+          {
+            type: "image",
+            url: getSuroiImageLink(getSuroiItem("leia"), undefined, "fist"),
+            x: 35,
+            y: 35,
+            rotation: 90,
+            zIndex: 4,
+          },
+          {
+            type: "image",
+            url: getSuroiImageLink(getSuroiItem("leia"), undefined, "fist"),
+            x: -35,
+            y: 35,
+            rotation: 90,
+            zIndex: 4,
+          },
+        ]}
+      />
+      <SVGRenderer
         objects={[
           {
             type: "image",
             url: getSuroiImageLink(getSuroiItem("aug"), undefined, "world"),
-            x: 10,
-            y: 10,
+            x: 100,
+            y: 100,
             zIndex: 0,
           },
           {
@@ -29,6 +59,7 @@ export default async function Kitchen() {
             url: getSuroiImageLink(getSuroiItem("aug")),
             x: 0,
             y: 0,
+            scaleX: 2.5,
             zIndex: 1,
           },
           {
