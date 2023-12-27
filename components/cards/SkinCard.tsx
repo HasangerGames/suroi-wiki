@@ -3,11 +3,6 @@ import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
 import SVGRenderer from "../interactive/SVGRenderer";
 
 export default function SkinCard({ skin }: SkinCardProps) {
-  const size = 130;
-  const center = size / 2;
-  const fistDistance = 52;
-  const fistOffset = 22;
-
   return (
     <div className="flex-1 p-4 gap-4 not-prose rounded-md ring ring-border hover:ring-primary">
       <SVGRenderer
