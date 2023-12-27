@@ -7,19 +7,31 @@ import Event from "@/components/articles/notices/Event";
 import Removed from "@/components/articles/notices/Removed";
 import Stub from "@/components/articles/notices/Stub";
 import GunGraph from "@/components/interactive/GunGraph";
-import { getSuroiImageLink } from "@/lib/util/suroi";
+import SVGRenderer from "@/components/interactive/SVGRenderer";
+import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 
 export default async function Kitchen() {
   return (
     <div className="block col-span-full">
-      <GunGraph
-        gun={
-          Guns.find((gun) => {
-            return gun.idString === "aug";
-          }) ?? Guns[0]
-        }
+      <SVGRenderer
+        objects={[
+          {
+            type: "image",
+            url: getSuroiImageLink(getSuroiItem("aug"), undefined, "world"),
+            x: 10,
+            y: 10,
+            zIndex: 0,
+          },
+          {
+            type: "image",
+            url: getSuroiImageLink(getSuroiItem("aug")),
+            x: 10,
+            y: -50,
+            zIndex: 1,
+          },
+        ]}
       />
       <DevWeapon />
       <Empty />
