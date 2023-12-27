@@ -27,11 +27,19 @@ export default async function Kitchen() {
           {
             type: "image",
             url: getSuroiImageLink(getSuroiItem("aug")),
-            x: 10,
-            y: -50,
+            x: 0,
+            y: 0,
             zIndex: 1,
           },
+          {
+            type: "image",
+            url: getSuroiImageLink(getSuroiItem("medikit")),
+            x: 30,
+            y: 0,
+            zIndex: -1,
+          },
         ]}
+        viewbox="0 0 800 400"
       />
       <DevWeapon />
       <Empty />

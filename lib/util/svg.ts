@@ -5,6 +5,9 @@ export type SVGObject =
   | {
       x: number;
       y: number;
+      scaleX?: number;
+      scaleY?: number;
+      rotation?: number;
       zIndex: number;
     } & (
       | {
@@ -33,8 +36,8 @@ export async function getImageDimensions(
   return new Promise((resolve) => {
     image.onload = () => {
       resolve({
-        width: image.width,
-        height: image.height,
+        width: image.naturalWidth,
+        height: image.naturalHeight,
       });
     };
   });
