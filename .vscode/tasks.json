@@ -4,24 +4,28 @@
     {
       "type": "shell",
       "label": "Development Server",
-      "command": ["pnpm", "dev"]
+      "command": ["pnpm", "dev", "--open"],
+      "problemMatcher": []
     },
     {
       "type": "shell",
       "label": "Lint",
-      "command": ["pnpm", "lint"]
+      "command": ["pnpm", "lint"],
+      "problemMatcher": []
     },
     {
       "type": "shell",
       "label": "Build",
       "command": ["pnpm", "build"],
-      "group": "build"
+      "group": "build",
+      "problemMatcher": []
     },
     {
       "type": "shell",
       "label": "Production Server",
       "command": ["pnpm", "start"],
-      "group": "build"
+      "group": "build",
+      "problemMatcher": []
     }
   ]
 }
