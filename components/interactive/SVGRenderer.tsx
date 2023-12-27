@@ -20,9 +20,10 @@ export default function SVGRenderer({
             key={i.toString()}
             style={{
               transformBox: "fill-box",
-              translate: `${object.x}px ${object.y}px`,
+              translate: `calc(${object.x}px - 50%) calc(${object.y}px - 50%)`,
               scale: `${object.scaleX ?? 1} ${object.scaleY ?? 1}`,
               rotate: `${object.rotation ?? 0}deg`,
+              transformOrigin: "center",
             }}
           >
             {(object.type === "circle" && (
@@ -36,15 +37,7 @@ export default function SVGRenderer({
                   height={object.height}
                 />
               )) ||
-              (object.type === "image" && (
-                <image
-                  x={getImageDimensions(object.url).finally((v) => v.width)}
-                  y={getImageDimensions(object.url).then((v) => v.height / -2)}
-                  width={getImageDimensions(object.url).then((v) => v.width)}
-                  height={getImageDimensions(object.url).then((v) => v.height)}
-                  href={object.url}
-                />
-              ))}
+              (object.type === "image" && <image href={object.url} />)}
           </g>
         ))}
     </svg>
