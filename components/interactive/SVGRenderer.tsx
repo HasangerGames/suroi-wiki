@@ -1,4 +1,4 @@
-import { SVGObject, getImageDimensions } from "@/lib/util/svg";
+import { SVGObject } from "@/lib/util/svg";
 
 export default function SVGRenderer({
   objects,

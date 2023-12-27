@@ -26,19 +26,3 @@ export type SVGObject =
           fill: string;
         }
     );
-
-export async function getImageDimensions(
-  src: string
-): Promise<{ width: number; height: number }> {
-  const image = new Image();
-  image.src = src;
-
-  return new Promise((resolve) => {
-    image.onload = () => {
-      resolve({
-        width: image.naturalWidth,
-        height: image.naturalHeight,
-      });
-    };
-  });
-}
