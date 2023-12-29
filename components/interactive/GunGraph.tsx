@@ -37,7 +37,7 @@ export default function GunGraph({ gun }: GunGraphProps) {
     ) {
       data.push({
         x: range,
-        y: shootGun(gun, 500, range),
+        y: shootGun(gun, 500 / (gun.bulletCount ?? 1), range),
       });
     }
     return data;
