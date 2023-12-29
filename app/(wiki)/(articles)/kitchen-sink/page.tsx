@@ -7,7 +7,7 @@ import Event from "@/components/articles/notices/Event";
 import Removed from "@/components/articles/notices/Removed";
 import Stub from "@/components/articles/notices/Stub";
 import GunGraph from "@/components/interactive/GunGraph";
-import SVGRenderer from "@/components/svg/SVGRenderer";
+import SVGObject from "@/components/svg/SVGObject";
 import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
@@ -15,7 +15,7 @@ import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 export default async function Kitchen() {
   return (
     <div className="block col-span-full">
-      <SVGRenderer
+      <SVGObject
         viewbox="-60 -60 120 120"
         className="w-96"
         objects={[
@@ -45,7 +45,7 @@ export default async function Kitchen() {
           },
         ]}
       />
-      <SVGRenderer
+      <SVGObject
         objects={[
           {
             type: "image",

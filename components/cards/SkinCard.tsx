@@ -1,11 +1,11 @@
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
-import SVGRenderer from "../svg/SVGObject";
+import SVGObject from "../svg/SVGObject";
 
 export default function SkinCard({ skin }: SkinCardProps) {
   return (
     <div className="flex-1 p-4 gap-4 not-prose rounded-md ring ring-border hover:ring-primary">
-      <SVGRenderer
+      <SVGObject
         viewbox="-60 -60 120 120"
         className="m-auto max-w-[10rem]"
         objects={[
