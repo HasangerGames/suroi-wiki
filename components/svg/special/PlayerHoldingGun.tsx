@@ -84,7 +84,7 @@ export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {
     );
   }
   return (
-    <svg viewBox="-45 -45 300 90">
+    <svg viewBox="-45 -45 250 90" className="p-4">
       <SVGObjectRenderer objects={image} />
     </svg>
   );
