@@ -1,4 +1,4 @@
-import { SVGObject } from "@/lib/util/svg";
+import { SVGObject } from "@/lib/util/types";
 
 export default function SVGRenderer({
   objects,

@@ -7,7 +7,7 @@ import Event from "@/components/articles/notices/Event";
 import Removed from "@/components/articles/notices/Removed";
 import Stub from "@/components/articles/notices/Stub";
 import GunGraph from "@/components/interactive/GunGraph";
-import SVGRenderer from "@/components/interactive/SVGRenderer";
+import SVGRenderer from "@/components/svg/SVGRenderer";
 import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
