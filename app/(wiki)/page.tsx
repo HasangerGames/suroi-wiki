@@ -58,7 +58,8 @@ export default async function Home() {
           <Link href="/meta/developing">code</Link>
         </Card>
         <Card title="Elegant">
-          We aim to make the user experience smooth and fast
+          We aim to make the user experience smooth and fast while providing
+          advanced features
         </Card>
         <Card title="Generated Information">
           Wiki information is a combination of game definitions and written
