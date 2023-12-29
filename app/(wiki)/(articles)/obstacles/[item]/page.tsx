@@ -17,6 +17,11 @@ const toExport = GenericArticlePage({
       items: ["oak_tree", "birch_tree", "pine_tree"],
       fileName: "trees",
     },
+    {
+      title: "Airdrops",
+      items: ["airdrop_crate_locked", "airdrop_crate", "gold_airdrop_crate"],
+      fileName: "airdrops"
+    }
   ],
 });
 
