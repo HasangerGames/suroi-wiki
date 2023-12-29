@@ -21,31 +21,35 @@ export type CalculatorMenuItem = {
   item: any;
 };
 
-/**
- * Units are in PX!
- */
-export type SVGObject =
-  | {
-      x: number;
-      y: number;
-      scaleX?: number;
-      scaleY?: number;
-      rotation?: number;
-      zIndex: number;
-    } & (
-      | {
-          type: "image";
-          url: string;
-        }
-      | {
-          type: "rect";
-          width: number;
-          height: number;
-          fill: string;
-        }
-      | {
-          type: "circle";
-          radius: number;
-          fill: string;
-        }
-    );
+export type SVGObject = SVGItem &
+  (
+    | {
+        type: "image";
+        url: string;
+      }
+    | {
+        type: "rect";
+        width: number;
+        height: number;
+        fill: string;
+      }
+    | {
+        type: "circle";
+        radius: number;
+        fill: string;
+      }
+  );
+
+export type SVGGroup = {
+  objects: SVGObject[];
+} & SVGItem;
+
+export type SVGItem = {
+  x?: number;
+  y?: number;
+  scaleX?: number;
+  scaleY?: number;
+  rotation?: number;
+  origin?: string;
+  zIndex: number;
+};
