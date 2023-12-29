@@ -1,4 +1,3 @@
-
 import ImageTabs from "@/components/interactive/ImageTabs";
 import { ImageTab } from "@/lib/util/types";
 
