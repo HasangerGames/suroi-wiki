@@ -1,6 +1,6 @@
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
-import SVGRenderer from "../interactive/SVGRenderer";
+import SVGRenderer from "../svg/SVGObject";
 
 export default function SkinCard({ skin }: SkinCardProps) {
   return (
