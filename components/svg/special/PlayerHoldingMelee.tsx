@@ -6,6 +6,7 @@ import SVGObjectRenderer from "../SVGObjectRenderer";
 import { SVGObject } from "@/lib/util/types";
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import anime from "animejs";
+import { useEffect } from "react";
 
 export default function PlayerHoldingMelee({
   melee,
@@ -13,28 +14,51 @@ export default function PlayerHoldingMelee({
   use,
 }: PlayerHoldingMeleeProps) {
   const modes = ["normal", "used", "animated"];
-  const weapon: SVGObject = {
+  let weapon: SVGObject = {
     type: "image",
     url: getSuroiImageLink(melee),
-    x:
-      (use ? melee.image?.usePosition.x : melee.image?.position.x) ??
-      0 + melee.offset.x,
-    y:
-      (use ? melee.image?.usePosition.y : melee.image?.position.y) ??
-      0 + melee.offset.y,
-    rotation: use ? melee.image?.useAngle : melee.image?.angle,
+    x: 0,
+    y: 0,
+    rotation: 0,
     zIndex: 1,
   };
 
-  const leftFist: SVGObject = {
+  const weaponAnimation = anime({
+    targets: weapon,
+    x: [
+      melee.image?.position.x ?? 0 + melee.offset.x,
+      melee.image?.usePosition.x ?? 0 + melee.offset.x,
+    ],
+    y: [
+      melee.image?.position.y ?? 0 + melee.offset.y,
+      melee.image?.usePosition.y ?? 0 + melee.offset.y,
+    ],
+    rotation: [melee.image?.angle, melee.image?.useAngle],
+    duration: melee.cooldown,
+    easing: "linear",
+    direction: "alternate",
+    loop: true,
+  });
+
+  let leftFist: SVGObject = {
     type: "image",
     url: getSuroiImageLink(skin, undefined, "fist"),
-    x: use ? melee.fists.useLeft.x : melee.fists.left.x,
-    y: use ? melee.fists.useLeft.y : melee.fists.left.y,
+    x: 0,
+    y: 0,
     zIndex: 4,
   };
 
-  const rightFist: SVGObject = {
+  const leftFistAnimation = anime({
+    targets: leftFist,
+    x: [melee.fists.left.x, melee.fists.useLeft.x],
+    y: [melee.fists.left.y, melee.fists.useLeft.y],
+    duration: melee.cooldown,
+    easing: "linear",
+    direction: "alternate",
+    loop: true,
+  });
+
+  let rightFist: SVGObject = {
     type: "image",
     url: getSuroiImageLink(skin, undefined, "fist"),
     x: use ? melee.fists.useRight.x : melee.fists.right.x,
@@ -42,10 +66,21 @@ export default function PlayerHoldingMelee({
     zIndex: 4,
   };
 
-  const weaponAnimation = anime({
-    targets: weapon,
+  const rightFistAnimation = anime({
+    targets: rightFist,
+    x: [melee.fists.right.x, melee.fists.useRight.x],
+    y: [melee.fists.right.y, melee.fists.useRight.y],
+    duration: melee.cooldown,
+    easing: "linear",
+    direction: "alternate",
+    loop: true,
   });
 
+  useEffect(() => {
+    weaponAnimation.seek(100);
+    leftFistAnimation.seek(100);
+    rightFistAnimation.seek(100);
+  });
   return (
     <div>
       <svg viewBox="-100 -100 300 200">
