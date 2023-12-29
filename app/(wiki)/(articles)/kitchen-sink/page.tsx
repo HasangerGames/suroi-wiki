@@ -8,6 +8,7 @@ import Removed from "@/components/articles/notices/Removed";
 import Stub from "@/components/articles/notices/Stub";
 import GunGraph from "@/components/interactive/GunGraph";
 import SVGObjectRenderer from "@/components/svg/SVGObjectRenderer";
+import PlayerHoldingGun from "@/components/svg/special/PlayerHoldingGun";
 import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
@@ -15,6 +16,12 @@ import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 export default async function Kitchen() {
   return (
     <div className="block col-span-full">
+      <PlayerHoldingGun
+        gun={Guns.find((gun) => {
+          return gun.idString === "dual_cz75a";
+        })}
+        skin={Skins.definitions[10]}
+      />
       <svg>
         <SVGObjectRenderer
           objects={[
