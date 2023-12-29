@@ -71,6 +71,8 @@ type ObjectCategoryMapping<Category extends ObjectCategory> =
     ? LootDefinition
     : never;
 
+export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
+
 export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
   obj: T,
   variation?: number,
@@ -97,7 +99,7 @@ export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
   if (isLoot(obj)) return _otherImageLink(obj, ObjectCategory.Loot, variation);
 
   // Return missing texture
-  return `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
+  return MISSING_TEXTURE;
 }
 
 export function getSuroiKillfeedImageLink(weapon: WeaponDefinition) {

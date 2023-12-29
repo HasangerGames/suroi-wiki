@@ -5,6 +5,8 @@ import Image from "next/image";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
 import ImageTabs from "../interactive/ImageTabs";
+import PlayerHoldingMelee from "../svg/special/PlayerHoldingMelee";
+import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 
 export default function MeleeSidebar({ item }: MeleeSidebarProps) {
   return (
@@ -25,6 +27,30 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
             },
           ]}
         />
+        <InfoboxRow>
+          <InfoboxColumn title="Player Unused">
+            <PlayerHoldingMelee
+              melee={item}
+              skin={
+                Skins.definitions.find((skin) => {
+                  return skin.idString === "hazel_jumpsuit";
+                }) ?? Skins.definitions[0]
+              }
+              use={false}
+            />
+          </InfoboxColumn>
+          <InfoboxColumn title="Player Used">
+            <PlayerHoldingMelee
+              melee={item}
+              skin={
+                Skins.definitions.find((skin) => {
+                  return skin.idString === "hazel_jumpsuit";
+                }) ?? Skins.definitions[0]
+              }
+              use={true}
+            />
+          </InfoboxColumn>
+        </InfoboxRow>
         <InfoboxRow>
           <InfoboxColumn title="Damage">{item.damage}</InfoboxColumn>
           <InfoboxColumn title="Cooldown" abbr="Cooldown between hits">
