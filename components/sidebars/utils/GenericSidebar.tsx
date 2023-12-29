@@ -1,9 +1,6 @@
-"use client";
 
 import ImageTabs from "@/components/interactive/ImageTabs";
 import { ImageTab } from "@/lib/util/types";
-import Image from "next/image";
-import { useState } from "react";
 
 export default function GenericSidebar({
   children,
@@ -11,8 +8,6 @@ export default function GenericSidebar({
   image,
   imageVariations,
 }: GenericSidebarProps) {
-  const [imageNum, setImageNum] = useState(0);
-
   return (
     <div className="col-span-2">
       <div className="flex flex-col border border-primary">
