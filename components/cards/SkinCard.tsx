@@ -1,40 +1,40 @@
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
-import SVGObject from "../svg/SVGObject";
+import SVGObjectRenderer from "../svg/SVGObjectRenderer";
 
 export default function SkinCard({ skin }: SkinCardProps) {
   return (
     <div className="flex-1 p-4 gap-4 not-prose rounded-md ring ring-border hover:ring-primary">
-      <SVGObject
-        viewbox="-60 -60 120 120"
-        className="m-auto max-w-[10rem]"
-        objects={[
-          {
-            type: "image",
-            url: getSuroiImageLink(skin, undefined, "base"),
-            x: 0,
-            y: 0,
-            rotation: 90,
-            zIndex: 3,
-          },
-          {
-            type: "image",
-            url: getSuroiImageLink(skin, undefined, "fist"),
-            x: -35,
-            y: 35,
-            rotation: 90,
-            zIndex: 4,
-          },
-          {
-            type: "image",
-            url: getSuroiImageLink(skin, undefined, "fist"),
-            x: 35,
-            y: 35,
-            rotation: 90,
-            zIndex: 4,
-          },
-        ]}
-      />
+      <svg viewBox="-60 -60 120 120" className="m-auto max-w-[10rem]">
+        <SVGObjectRenderer
+          objects={[
+            {
+              type: "image",
+              url: getSuroiImageLink(skin, undefined, "base"),
+              x: 0,
+              y: 0,
+              rotation: 90,
+              zIndex: 3,
+            },
+            {
+              type: "image",
+              url: getSuroiImageLink(skin, undefined, "fist"),
+              x: -35,
+              y: 35,
+              rotation: 90,
+              zIndex: 4,
+            },
+            {
+              type: "image",
+              url: getSuroiImageLink(skin, undefined, "fist"),
+              x: 35,
+              y: 35,
+              rotation: 90,
+              zIndex: 4,
+            },
+          ]}
+        />
+      </svg>
       <div className="flex-1">
         <h3 className="text-lg font-bold break-normal leading-loose underline transition-colors">
           {skin.name}
