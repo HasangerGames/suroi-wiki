@@ -16,16 +16,20 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
   return (
     <div className="col-span-2">
       {dualGun && (
-        <div className="mb-2 flex gap-2 text-lg">
+        <div className="flex flex-row flex-wrap w-full justify-around gap-2 mb-2 items-center p-1">
           <button
             onClick={() => setDual(false)}
-            className={`${!dual && "text-primary underline"} transition-colors`}
+            className={`flex justify-center grow rounded-md min-w-[7ch] hover:bg-muted/50 cursor-pointer text-muted-foreground hover:text-white p-2 ${
+              !dual ? "!text-white bg-muted ring-primary ring" : ""
+            }`}
           >
             Single
           </button>
           <button
             onClick={() => setDual(true)}
-            className={`${dual && "text-primary underline"} transition-colors`}
+            className={`flex justify-center grow rounded-md min-w-[7ch] hover:bg-muted/50 cursor-pointer text-muted-foreground hover:text-white p-2 ${
+              dual ? "!text-white bg-muted ring-primary ring" : ""
+            }`}
           >
             Dual
           </button>
