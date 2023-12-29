@@ -20,10 +20,12 @@ export default function SVGRenderer({
             key={i.toString()}
             style={{
               transformBox: "fill-box",
-              translate: `calc(${object.x}px - 50%) calc(${object.y}px - 50%)`,
+              translate: `calc(${object.x ?? 0}px - 50%) calc(${
+                object.y ?? 0
+              }px - 50%)`,
               scale: `${object.scaleX ?? 1} ${object.scaleY ?? 1}`,
               rotate: `${object.rotation ?? 0}deg`,
-              transformOrigin: "center",
+              transformOrigin: object.origin ?? "center",
             }}
           >
             {(object.type === "circle" && (
