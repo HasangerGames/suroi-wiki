@@ -66,7 +66,7 @@ export default async function Home() {
           articles
         </Card>
         <Card title="Auto Updated">
-          Information is based on <CommitLink sha={HEAD} />
+          Information is based on commit <CommitLink sha={HEAD} />
         </Card>
       </div>
       <div>
