@@ -5,12 +5,6 @@ export default function SVGRenderer({
   viewbox,
   className,
 }: SVGRendererProps) {
-  /*
-  x={getImageDimensions(object.url).then((v) => v.width / -2)}
-  y={getImageDimensions(object.url).then((v) => v.height / -2)}
-  width={getImageDimensions(object.url).then((v) => v.width)}
-  height={getImageDimensions(object.url).then((v) => v.height)}
-  */
   return (
     <svg viewBox={viewbox} className={className ?? ""}>
       {[...objects]
