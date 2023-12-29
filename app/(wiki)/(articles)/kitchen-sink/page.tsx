@@ -9,8 +9,10 @@ import Stub from "@/components/articles/notices/Stub";
 import GunGraph from "@/components/interactive/GunGraph";
 import SVGObjectRenderer from "@/components/svg/SVGObjectRenderer";
 import PlayerHoldingGun from "@/components/svg/special/PlayerHoldingGun";
+import PlayerHoldingMelee from "@/components/svg/special/PlayerHoldingMelee";
 import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 
 export default async function Kitchen() {
@@ -21,6 +23,20 @@ export default async function Kitchen() {
           return gun.idString === "dual_cz75a";
         })}
         skin={Skins.definitions[10]}
+      />
+      <PlayerHoldingMelee
+        melee={Melees.find((melee) => {
+          return melee.idString === "kbar";
+        })}
+        skin={Skins.definitions[10]}
+        use={false}
+      />
+      <PlayerHoldingMelee
+        melee={Melees.find((melee) => {
+          return melee.idString === "kbar";
+        })}
+        skin={Skins.definitions[10]}
+        use={true}
       />
       <svg>
         <SVGObjectRenderer
