@@ -33,6 +33,6 @@ export default function SVGGroupRenderer({
 
 export interface SVGGroupRendererProps extends React.PropsWithChildren {
   viewBox: string;
-  className: string;
+  className?: string;
   groups: SVGGroup[];
 }
