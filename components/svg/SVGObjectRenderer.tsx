@@ -1,12 +1,8 @@
 import { SVGObject } from "@/lib/util/types";
 
-export default function SVGRenderer({
-  objects,
-  viewbox,
-  className,
-}: SVGRendererProps) {
+export default function SVGObjectRenderer({ objects }: SVGObjectRenderer) {
   return (
-    <svg viewBox={viewbox} className={className ?? ""}>
+    <>
       {[...objects]
         .sort((a, b) => a.zIndex - b.zIndex)
         .map((object, i) => (
@@ -36,12 +32,10 @@ export default function SVGRenderer({
               (object.type === "image" && <image href={object.url} />)}
           </g>
         ))}
-    </svg>
+    </>
   );
 }
 
-export interface SVGRendererProps extends React.PropsWithChildren {
+export interface SVGObjectRenderer extends React.PropsWithChildren {
   objects: SVGObject[];
-  viewbox: string;
-  className?: string;
 }
