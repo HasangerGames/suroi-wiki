@@ -4,7 +4,7 @@
     {
       "type": "shell",
       "label": "Development Server",
-      "command": ["pnpm", "dev"],
+      "command": ["pnpm", "dev", "--turbo"],
       "problemMatcher": []
     },
     {
