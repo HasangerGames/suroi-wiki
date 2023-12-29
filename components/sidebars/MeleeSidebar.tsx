@@ -28,7 +28,7 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
           ]}
         />
         <InfoboxRow>
-          <InfoboxColumn title="Player Unused">
+          <InfoboxColumn title="Player Preview">
             <PlayerHoldingMelee
               melee={item}
               skin={
@@ -37,17 +37,6 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
                 }) ?? Skins.definitions[0]
               }
               use={false}
-            />
-          </InfoboxColumn>
-          <InfoboxColumn title="Player Used">
-            <PlayerHoldingMelee
-              melee={item}
-              skin={
-                Skins.definitions.find((skin) => {
-                  return skin.idString === "hazel_jumpsuit";
-                }) ?? Skins.definitions[0]
-              }
-              use={true}
             />
           </InfoboxColumn>
         </InfoboxRow>
