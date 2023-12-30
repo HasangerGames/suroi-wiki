@@ -9,7 +9,7 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
-  
+
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 
   images: {
@@ -18,7 +18,10 @@ const nextConfig = {
         hostname: "raw.githubusercontent.com",
       },
       {
-        hostname: "invidious.projectsegfau.lt"
+        hostname: "avatars.githubusercontent.com",
+      },
+      {
+        hostname: "invidious.projectsegfau.lt",
       },
     ],
   },
