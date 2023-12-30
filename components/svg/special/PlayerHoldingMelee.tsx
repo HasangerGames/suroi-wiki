@@ -6,7 +6,7 @@ import SVGObjectRenderer from "../SVGObjectRenderer";
 import { SVGObject } from "@/lib/util/types";
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import anime from "animejs";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function PlayerHoldingMelee({
   melee,
@@ -14,14 +14,14 @@ export default function PlayerHoldingMelee({
   use,
 }: PlayerHoldingMeleeProps) {
   const modes = ["normal", "used", "animated"];
-  let weapon: SVGObject = {
+  const [weapon, setWeapon] = useState<SVGObject>({
     type: "image",
     url: getSuroiImageLink(melee),
     x: 0,
     y: 0,
     rotation: 0,
     zIndex: 1,
-  };
+  });
 
   const weaponAnimation = anime({
     targets: weapon,
@@ -37,16 +37,19 @@ export default function PlayerHoldingMelee({
     duration: melee.cooldown,
     easing: "linear",
     direction: "alternate",
+    update: () => {
+      setWeapon(weapon);
+    },
     loop: true,
   });
 
-  let leftFist: SVGObject = {
+  const [leftFist, setLeftFist] = useState<SVGObject>({
     type: "image",
     url: getSuroiImageLink(skin, undefined, "fist"),
     x: 0,
     y: 0,
     zIndex: 4,
-  };
+  });
 
   const leftFistAnimation = anime({
     targets: leftFist,
@@ -58,13 +61,13 @@ export default function PlayerHoldingMelee({
     loop: true,
   });
 
-  let rightFist: SVGObject = {
+  const [rightFist, setRightFist] = useState<SVGObject>({
     type: "image",
     url: getSuroiImageLink(skin, undefined, "fist"),
     x: use ? melee.fists.useRight.x : melee.fists.right.x,
     y: use ? melee.fists.useRight.y : melee.fists.right.y,
     zIndex: 4,
-  };
+  });
 
   const rightFistAnimation = anime({
     targets: rightFist,
@@ -77,9 +80,9 @@ export default function PlayerHoldingMelee({
   });
 
   useEffect(() => {
-    weaponAnimation.seek(100);
-    leftFistAnimation.seek(100);
-    rightFistAnimation.seek(100);
+    weaponAnimation.play();
+    leftFistAnimation.seek(0);
+    rightFistAnimation.seek(0);
   });
   return (
     <div>
