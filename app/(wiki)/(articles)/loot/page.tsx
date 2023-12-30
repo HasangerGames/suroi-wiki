@@ -4,6 +4,7 @@ import {
 } from "@/vendor/suroi/server/src/data/lootTables";
 import { Loots } from "@/vendor/suroi/common/src/definitions/loots";
 import LootCalc from "@/components/interactive/LootCalc";
+import TableWithHeader from "@/components/tables/TableWithHeader";
 
 export default function LootPage() {
   return (
@@ -23,58 +24,22 @@ export default function LootPage() {
       </div>
       <div>
         {Object.entries(LootTiers).map(([name, tiers]) => (
-          <div key={name} id={name} className="mt-4 target:bg-yellow-700">
-            <div className="prose prose-invert">
-              <h3>
-                Tier <span className="font-mono">{name}</span>
-              </h3>
-            </div>
-            <div className="flex justify-center p-8">
-              <table className="flex-1 border border-collapse table-fixed border-border">
-                <thead className="border-b border-border">
-                  <tr className="bg-primary">
-                    <th className="p-4 border-r border-border">Item</th>
-                    <th className="p-4 border-r border-border">Weight</th>
-                    <th className="p-4">
-                      <abbr title="Relative to other items in this loot tier (approx)">
-                        % Chance
-                      </abbr>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {tiers.map(
-                    (tier) =>
-                      "item" in tier && (
-                        <tr
-                          key={tier.item}
-                          className="border-b border-border even:bg-blue-400/20"
-                        >
-                          <td className="p-4 w-24 border-r border-border">
-                            {Loots.definitions.find(
-                              (item) => item.idString === tier.item
-                            )?.name ?? tier.item}
-                          </td>
-                          <td className="p-4 w-24 border-r border-border">
-                            {tier.weight}
-                          </td>
-                          <td className="p-4 w-24">
-                            {(
-                              (tier.weight /
-                                tiers.reduce(
-                                  (acc, tier) => acc + tier.weight,
-                                  0
-                                )) *
-                              100
-                            ).toFixed(2)}
-                            %
-                          </td>
-                        </tr>
-                      )
-                  )}
-                </tbody>
-              </table>
-            </div>
+          <div key={name} id={name}>
+            <TableWithHeader
+              key={name}
+              title={`Tier ${name}`}
+              header={["Item", "Weight", "% Chance"]}
+              content={tiers.map((tier) => [
+                Loots.definitions.find((item) => item.idString === tier.item)
+                  ?.name ?? tier.item,
+                tier.weight,
+                (
+                  (tier.weight /
+                    tiers.reduce((acc, tier) => acc + tier.weight, 0)) *
+                  100
+                ).toFixed(2) + "%",
+              ])}
+            />
           </div>
         ))}
       </div>
@@ -87,81 +52,25 @@ export default function LootPage() {
         </div>
       </div>
       {Object.entries(LootTables).map(([name, tables]) => (
-        <div key={name} id={name} className="mt-4 target:bg-yellow-700">
-          <div className="prose prose-invert">
-            <h3>
-              Table <span className="font-mono">{name}</span>
-            </h3>
-          </div>
-          <div className="flex justify-center p-8">
-            <table className="flex-1 border border-collapse table-fixed border-border">
-              <thead className="border-b border-border">
-                <tr className="bg-primary">
-                  <th className="p-4 border-r border-border">Tier / Item</th>
-                  <th className="p-4 border-r border-border">Weight</th>
-                  <th className="p-4">
-                    <abbr title="Relative to other tiers in this loot table (approx)">
-                      % Chance
-                    </abbr>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {tables.loot.flat().map((tier) =>
-                  "tier" in tier ? (
-                    <tr
-                      key={tier.tier}
-                      className="border-b border-border even:bg-blue-400/20"
-                    >
-                      <td className="p-4 w-24 border-r border-border">
-                        Tier {tier.tier}
-                      </td>
-                      <td className="p-4 w-24 border-r border-border">
-                        {tier.weight}
-                      </td>
-                      <td className="p-4 w-24">
-                        {(
-                          (tier.weight /
-                            tables.loot
-                              .flat()
-                              .reduce((acc, tier) => acc + tier.weight, 0)) *
-                          100
-                        ).toFixed(2)}
-                        %
-                      </td>
-                    </tr>
-                  ) : (
-                    "item" in tier && (
-                      <tr
-                        key={tier.item}
-                        className="border-b border-border even:bg-blue-400/20"
-                      >
-                        <td className="p-4 w-24 border-r border-border">
-                          Item{" "}
-                          {Loots.definitions.find(
-                            (item) => item.idString === tier.item
-                          )?.name ?? tier.item}
-                        </td>
-                        <td className="p-4 w-24 border-r border-border">
-                          {tier.weight}
-                        </td>
-                        <td className="p-4 w-24">
-                          {(
-                            (tier.weight /
-                              tables.loot
-                                .flat()
-                                .reduce((acc, tier) => acc + tier.weight, 0)) *
-                            100
-                          ).toFixed(2)}
-                          %
-                        </td>
-                      </tr>
-                    )
-                  )
-                )}
-              </tbody>
-            </table>
-          </div>
+        <div key={name} id={name}>
+          <TableWithHeader
+            title={`Table ${name}`}
+            header={["Tier/Item", "Weight", "% Chance"]}
+            content={tables.loot
+              .flat()
+              .map((tier) => [
+                `Tier ${tier.tier}`,
+                tier.weight.toString(),
+
+                (
+                  (tier.weight /
+                    tables.loot
+                      .flat()
+                      .reduce((acc, tier) => acc + tier.weight, 0)) *
+                  100
+                ).toFixed(2) + "%",
+              ])}
+          />
         </div>
       ))}
       <div className="mt-8">
