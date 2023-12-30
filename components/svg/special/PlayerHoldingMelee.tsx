@@ -85,7 +85,8 @@ export default function PlayerHoldingMelee({
     rightFistAnimation.seek(0);
   });
   return (
-    <div>
+    <div className="saturate-0 cursor-not-allowed">
+      <b>NOTE: Unfinished</b>
       <svg viewBox="-100 -100 300 200">
         <SVGObjectRenderer
           objects={[
