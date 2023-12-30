@@ -9,8 +9,8 @@ export default function GenericSidebar({
 }: GenericSidebarProps) {
   return (
     <div className="col-span-2">
-      <div className="flex flex-col border border-primary">
-        <div className="p-2 border-b bg-primary border-primary">
+      <div className="flex flex-col gap-2 p-2 bg-muted rounded-md">
+        <div className="p-2 bg-white/10 rounded-md">
           <h2 className="text-xl font-bold text-center">{title}</h2>
         </div>
         {(imageVariations && (
