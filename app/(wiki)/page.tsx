@@ -20,7 +20,7 @@ export default async function Home() {
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-suroi to-primary">
               SUROI
             </span>{" "}
-            wiki
+            Wiki
           </h1>
           <p className="text-lg">
             The official wiki for the open source 2D battle royale game{" "}
