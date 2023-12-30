@@ -7,11 +7,11 @@ export default function InfoboxRow({ columns, children }: InfoboxRowProps) {
   );
 
   // Make infoboxrow empty if there are no children
-  if(childrenCount === 0) return <></>
-  
+  if (childrenCount === 0) return <></>;
+
   return (
     <div
-      className={`border-t-primary border-t text-center divide-x divide-primary grid text-sm`}
+      className={`text-center divide-x-4 divide-muted bg-white/5 p-2 rounded-md grid text-sm`}
       style={{
         gridTemplateColumns: `repeat(${
           columns ?? childrenCount

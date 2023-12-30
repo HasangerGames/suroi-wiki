@@ -22,9 +22,7 @@ export default function InfoboxAudioGroup({
         </div>
       </div>
       <Collapse isOpened={isOpened}>
-        <div className="flex flex-col text-sm border-t divide-y divide-primary border-t-primary">
-          {children}
-        </div>
+        <div className="flex flex-col text-sm">{children}</div>
       </Collapse>
     </>
   );
