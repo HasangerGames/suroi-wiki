@@ -6,12 +6,14 @@ import Empty from "@/components/articles/notices/Empty";
 import Event from "@/components/articles/notices/Event";
 import Removed from "@/components/articles/notices/Removed";
 import Stub from "@/components/articles/notices/Stub";
+import PlayerWearingEquipment from "@/components/svg/special/PlayerWearingEquipment";
 import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 
 export default async function Kitchen() {
   return (
     <div className="block col-span-full">
+      <PlayerWearingEquipment />
       <DevWeapon />
       <Empty />
       <Event />
