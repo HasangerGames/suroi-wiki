@@ -8,7 +8,7 @@ export default function ImageTabs({ images }: ImageTabsProps) {
   const [currentTab, setCurrentTab] = useState(0);
   const currentImage = images[currentTab];
   return (
-    <div className="flex flex-col items-center justify-start gap-2 p-2">
+    <div className="flex flex-col items-center justify-start gap-2">
       {images.length > 1 && (
         <div className="flex flex-row flex-wrap w-full justify-around gap-2 items-center p-1">
           {images.map((image, index) => (
