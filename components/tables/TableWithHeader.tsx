@@ -4,36 +4,40 @@ export default function TableWithHeader({
   title,
 }: TableWithHeaderProps) {
   return (
-    <div className="flex flex-col gap-4 p-2 my-4 bg-muted rounded-md">
+    <div className="flex flex-col gap-2 p-2 my-4 bg-muted rounded-md">
       {title && <h3 className="text-xl font-bold">{title}</h3>}
-      <table className="w-full divide-y-4 divide-muted">
-        <thead>
-          <tr className="bg-white/20 p-2 divide-x-4 divide-muted">
-            {header.map((cell, i) => (
-              <th
-                key={i.toString()}
-                className="first:rounded-l-md last:rounded-r-md p-2"
-              >
-                {cell}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody className="p-2 bg-white/5 divide-y-4 divide-muted">
-          {content.map((row, i) => (
-            <tr
+      <div
+        className="grid p-2 gap-2 divide-x-4 divide-muted bg-white/20 rounded-md text-center font-bold"
+        style={{
+          gridTemplateColumns: `repeat(${header.length}, minmax(0, 1fr))`,
+        }}
+      >
+        {header.map((cell, i) => (
+          <span key={i.toString()} className="px-2">
+            {cell}
+          </span>
+        ))}
+      </div>
+      <div className="flex flex-col p-2 divide-muted bg-white/5 rounded-md">
+        {content.map((row, i) => (
+          <>
+            <div
               key={i.toString()}
-              className="transition-colors divide-x-4 divide-muted first:rounded-t-md last:rounded-b-md hover:bg-white/5"
+              className="grid gap-2 divide-x-4 py-2 divide-muted rounded-md hover:bg-white/5"
+              style={{
+                gridTemplateColumns: `repeat(${header.length}, minmax(0, 1fr))`,
+              }}
             >
               {row.map((cell, j) => (
-                <td key={`${i}.${j}`} className="p-2">
+                <span key={`${i}-${j}`} className="px-2">
                   {cell}
-                </td>
+                </span>
               ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+            </div>
+            <span className="w-full h-1 bg-muted rounded-full my-1 last:hidden"></span>
+          </>
+        ))}
+      </div>
     </div>
   );
 }
