@@ -69,9 +69,9 @@ const config: Config = {
         DEFAULT: {
           css: {
             "max-width": "100%",
-            "h1, h2": {
+            /*"h1, h2": {
               "border-bottom": "1px solid gray",
-            },
+            },*/
           },
         },
       },
