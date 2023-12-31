@@ -3,6 +3,7 @@ import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import PageCard from "@/components/cards/PageCard";
 import GridTable from "@/components/tables/GridTable";
+import { Throwables } from "@/vendor/suroi/common/src/definitions/throwables";
 
 export default function WeaponsPage() {
   return (
@@ -10,8 +11,8 @@ export default function WeaponsPage() {
       <div className="prose prose-invert">
         <h1>Weapons</h1>
         <p>
-          There are currently {Guns.length} guns in the game, and{" "}
-          {Melees.length} melee weapons in the game.
+          There are currently {Guns.length} guns in the game, {Melees.length}{" "}
+          melee weapons, and {Throwables.length} throwables in the game.
         </p>
 
         <h2>Guns</h2>
@@ -40,6 +41,19 @@ export default function WeaponsPage() {
             url={"/weapons/melee/" + melee.idString}
             description={melee.idString}
             key={melee.idString}
+          />
+        ))}
+      </GridTable>
+      <div className="prose prose-invert">
+        <h2>Throwables</h2>
+      </div>
+      <GridTable>
+        {Throwables.map((throwable) => (
+          <PageCard
+            key={throwable.idString}
+            title={throwable.name}
+            url={"/weapons/throwables/" + throwable.idString}
+            image={getSuroiImageLink(throwable)}
           />
         ))}
       </GridTable>

@@ -41,6 +41,7 @@ export const IMAGE_BASE_URLS = {
   Gun: "game/weapons",
   Ammo: "game/loot",
   Melee: "game/weapons",
+  Throwable: "game/weapons",
   Healing: "game/loot",
   Armor: "game/loot",
   Backpack: "game/loot",
