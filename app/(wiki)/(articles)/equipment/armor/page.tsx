@@ -8,6 +8,9 @@ import {
 } from "@/vendor/suroi/common/src/definitions/armors";
 import { ArmorDefinition } from "@/vendor/suroi/common/src/definitions/armors";
 import { getSuroiImageLink } from "@/lib/util/suroi";
+import TableWithHeader from "@/components/tables/TableWithHeader";
+import { Table } from "lucide-react";
+import MatrixTable from "@/components/tables/MatrixTable";
 
 const Helmets = Armors.definitions.filter(
   (armor) => armor.armorType === ArmorType.Helmet
@@ -47,123 +50,99 @@ export default function ArmorPage() {
         </p>
       </div>
 
-      <div className="prose prose-invert mt-8">
-        <table className="table-fixed">
-          <caption>
-            <h3>Armor Statistics</h3>
-          </caption>
-          <thead>
-            <tr>
-              <th>Armor</th>
-              <th>Level</th>
-              <th>Damage Reduction</th>
-            </tr>
-          </thead>
-          <tbody>
-            {Vests.concat(...Helmets).map((armor) => (
-              <tr key={armor.idString} className="">
-                <td>
-                  <Image
-                    src={getSuroiImageLink(armor)}
-                    width={32}
-                    height={32}
-                    alt={`${armor.name} image`}
-                    className="h-min inline-block m-0 mr-2"
-                  />
-                  <Link href={`/equipment/armor/${armor.idString}`}>
-                    {armor.name}
-                  </Link>
-                </td>
-                <td>{armor.level}</td>
-                <td>{armor.damageReduction * 100}%</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div className="mt-8">
+        <TableWithHeader
+          title="Armor Statistics"
+          header={["Armor", "Level", "Damage Reduction"]}
+          content={[...Vests, ...Helmets].map((armor) => [
+            <>
+              <Image
+                src={getSuroiImageLink(armor)}
+                width={32}
+                height={32}
+                alt={`${armor.name} image`}
+                className="h-min inline-block m-0 mr-2"
+              />
+              <Link href={`/equipment/armor/${armor.idString}`}>
+                {armor.name}
+              </Link>
+            </>,
+            armor.level,
+            armor.damageReduction * 100 + "%",
+          ])}
+        />
       </div>
-
-      <div className="prose prose-invert mt-8">
-        <table className="table-fixed">
-          <caption>
-            <h3>Effective Health</h3>
-          </caption>
-          <tbody>
-            <tr>
-              <td></td>
-              {[
-                {
-                  idString: "",
-                  name: "(None)",
-                  damageReduction: 0,
-                } as ArmorDefinition,
-                ...Vests,
-              ].map((vest) => (
-                <td key={vest.idString}>
-                  {vest.idString ? (
-                    <>
-                      <Image
-                        src={getSuroiImageLink(vest)}
-                        width={32}
-                        height={32}
-                        alt={`${vest.name} image`}
-                        className="h-min inline-block m-0 mr-2"
-                      />
-                      <Link href={`/equipment/armor/${vest.idString}`}>
-                        {vest.name}
-                      </Link>
-                    </>
-                  ) : (
-                    <p>{vest.name}</p>
-                  )}
-                </td>
-              ))}
-            </tr>
-            {[
+      <div className="mt-8">
+        <MatrixTable
+          tHeader={[
+            "None",
+            ...Vests.map((vest) => (
+              <>
+                <Image
+                  src={getSuroiImageLink(vest)}
+                  width={32}
+                  height={32}
+                  alt={`${vest.name} image`}
+                  className="h-min inline-block m-0 mr-2"
+                />
+                <Link href={`/equipment/armor/${vest.idString}`}>
+                  {vest.name}
+                </Link>
+              </>
+            )),
+          ]}
+          lHeader={[
+            "None",
+            ...Helmets.map((helmet) => (
+              <>
+                <Image
+                  src={getSuroiImageLink(helmet)}
+                  width={32}
+                  height={32}
+                  alt={`${helmet.name} image`}
+                  className="h-min inline-block m-0 mr-2"
+                />
+                <Link href={`/equipment/armor/${helmet.idString}`}>
+                  {helmet.name}
+                </Link>
+              </>
+            )),
+          ]}
+          content={[
+            {
+              idString: "",
+              name: "(None)",
+              damageReduction: 0,
+            } as ArmorDefinition,
+            ...Helmets,
+          ].map((helmet) =>
+            [
               {
                 idString: "",
                 name: "(None)",
                 damageReduction: 0,
               } as ArmorDefinition,
-              ...Helmets,
-            ].map((helmet, i) => (
-              <tr key={i}>
-                <td>
-                  {helmet.idString ? (
-                    <>
-                      <Image
-                        src={getSuroiImageLink(helmet)}
-                        width={32}
-                        height={32}
-                        alt={`${helmet.name} image`}
-                        className="h-min inline-block m-0 mr-2"
-                      />
-                      <Link href={`/equipment/armor/${helmet.idString}`}>
-                        {helmet.name}
-                      </Link>
-                    </>
-                  ) : (
-                    <p>{helmet.name}</p>
-                  )}
-                </td>
-                {[
-                  {
-                    idString: "none",
-                    name: "(None)",
-                    damageReduction: 0,
-                  } as ArmorDefinition,
-                  ...Vests,
-                ].map((vest, j) => (
-                  <td key={`${i}${j}`}>
-                    {(
-                      100 /
-                      (1 - helmet.damageReduction - vest.damageReduction)
-                    ).toFixed(2)}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+              ...Vests,
+            ].map((vest) => (
+              <div key="" className="flex flex-col gap-1">
+                <div>
+                  <b>DR:</b>{" "}
+                  {(
+                    (helmet.damageReduction + vest.damageReduction) *
+                    100
+                  ).toFixed(0) + "%"}
+                </div>
+                <div>
+                  <b>EHP:</b>{" "}
+                  {(
+                    100 /
+                    (1 - helmet.damageReduction - vest.damageReduction)
+                  ).toFixed(2)}
+                </div>
+              </div>
+            ))
+          )}
+        />
       </div>
 
       <div className="mt-8">
