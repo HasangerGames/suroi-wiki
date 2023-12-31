@@ -15,6 +15,14 @@ import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 export default async function Kitchen() {
   return (
     <div className="block col-span-full">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/0tOXxuLcaog"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
       <TableWithHeader
         header={["silly", "cat", "bleh"]}
         content={[
