@@ -1,22 +1,26 @@
+import { ReactNode } from "react";
+
 export default function TableWithHeader({
   header,
   content,
   title,
 }: TableWithHeaderProps) {
   return (
-    <div className="flex flex-col gap-2 p-2 my-4 bg-muted rounded-md">
-      {title && <h3 className="text-xl font-bold">{title}</h3>}
-      <div
-        className="grid p-2 gap-2 divide-x-4 divide-muted bg-white/20 rounded-md text-center font-bold"
-        style={{
-          gridTemplateColumns: `repeat(${header.length}, minmax(0, 1fr))`,
-        }}
-      >
-        {header.map((cell, i) => (
-          <span key={i.toString()} className="px-2">
-            {cell}
-          </span>
-        ))}
+    <div className="flex flex-col gap-2 p-4 pt-0 bg-muted rounded-md not-prose max-h-screen overflow-y-auto">
+      <div className="flex flex-col gap-2 bg-muted sticky pt-4 top-0">
+        {title && <h3 className="text-xl font-bold">{title}</h3>}
+        <div
+          className="grid p-2 gap-2 divide-x-4 divide-muted bg-white/20 rounded-md text-center font-bold"
+          style={{
+            gridTemplateColumns: `repeat(${header.length}, minmax(0, 1fr))`,
+          }}
+        >
+          {header.map((cell, i) => (
+            <span key={i.toString()} className="p-2">
+              {cell}
+            </span>
+          ))}
+        </div>
       </div>
       <div className="flex flex-col p-2 divide-muted bg-white/5 rounded-md">
         {content.map((row, i) => (
@@ -43,7 +47,7 @@ export default function TableWithHeader({
 }
 
 export interface TableWithHeaderProps extends React.PropsWithChildren {
-  header: string[];
-  content: string[][];
+  header: ReactNode[];
+  content: ReactNode[][];
   title?: string;
 }
