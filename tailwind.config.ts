@@ -60,6 +60,9 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      backgroundImage: {
+        checker: "url(/img/tiny-checkers.svg)", // From https://heropatterns.com/
+      },
 
       // Typography
       typography: {
