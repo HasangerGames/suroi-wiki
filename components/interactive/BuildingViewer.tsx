@@ -13,6 +13,7 @@ import { clamp } from "@/lib/ts/utility";
 
 export default function BuildingViewer({ building }: BuildingViewerProps) {
   const dragSpeed = 0.0005;
+  const scrollSpeed = 0.001;
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   const [mouseDown, setMouseDown] = useState(false);
@@ -45,9 +46,15 @@ export default function BuildingViewer({ building }: BuildingViewerProps) {
         },
       ];
 
-  /*const groundGraphics: SVGObject[] | undefined = building.groundGraphics ? building.groundGraphics.map((a) => ({
-    type: a.hitbox.type
-  })) : undefined */
+  const groundGraphics: SVGObject[] | undefined = building.groundGraphics
+    ? building.groundGraphics.map((a) => ({
+        type: "rect",
+        width: 100,
+        height: 100,
+        fill: `${a.color.toString().slice(2)}`,
+        zIndex: 0,
+      }))
+    : undefined;
   return (
     <div
       onMouseDown={(e) => {
@@ -63,7 +70,7 @@ export default function BuildingViewer({ building }: BuildingViewerProps) {
         }
       }}
       onWheel={(e) => {
-        setScale(clamp(scale - e.deltaY, 5, 20000));
+        setScale(clamp(scale - e.deltaY * scale * scrollSpeed, 5, 20000));
       }}
       className="w-screen h-screen fixed inset-0 bg-background z-50"
     >
@@ -76,9 +83,11 @@ export default function BuildingViewer({ building }: BuildingViewerProps) {
           },
           {
             zIndex: 1,
-            x: -25,
-            y: -75,
             objects: [...obstacles],
+          },
+          {
+            zIndex: -1,
+            objects: [...groundGraphics],
           },
         ]}
       />
