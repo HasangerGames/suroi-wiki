@@ -8,7 +8,7 @@ export default function SVGGroupRenderer({
   groups,
 }: SVGGroupRendererProps) {
   return (
-    <svg viewBox={viewBox} className={className ?? ""}>
+    <svg viewBox={viewBox} className={`${className ?? ""} select-none`}>
       {[...groups]
         .sort((a, b) => a.zIndex - b.zIndex)
         .map((group, i) => (

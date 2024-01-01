@@ -4,9 +4,15 @@ import { BuildingDefinition } from "@/vendor/suroi/common/src/definitions/buildi
 import SVGGroupRenderer from "../svg/SVGGroupRenderer";
 import { useState } from "react";
 import { SVGObject } from "@/lib/util/types";
-import { IMAGE_BASE_URL, getSuroiImageLink } from "@/lib/util/suroi";
+import {
+  IMAGE_BASE_URL,
+  getSuroiImageLink,
+  getSuroiObstacle,
+} from "@/lib/util/suroi";
+import { clamp } from "@/lib/ts/utility";
 
 export default function BuildingViewer({ building }: BuildingViewerProps) {
+  const dragSpeed = 0.0005;
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   const [mouseDown, setMouseDown] = useState(false);
@@ -38,6 +44,10 @@ export default function BuildingViewer({ building }: BuildingViewerProps) {
           zIndex: 0,
         },
       ];
+
+  /*const groundGraphics: SVGObject[] | undefined = building.groundGraphics ? building.groundGraphics.map((a) => ({
+    type: a.hitbox.type
+  })) : undefined */
   return (
     <div
       onMouseDown={(e) => {
@@ -48,17 +58,17 @@ export default function BuildingViewer({ building }: BuildingViewerProps) {
       }}
       onMouseMove={(e) => {
         if (mouseDown) {
-          setX(x - e.movementX);
-          setY(y - e.movementY);
+          setX(x - e.movementX * scale * dragSpeed);
+          setY(y - e.movementY * scale * dragSpeed);
         }
       }}
       onWheel={(e) => {
-        setScale(scale - e.deltaY);
+        setScale(clamp(scale - e.deltaY, 5, 20000));
       }}
-      className="w-full h-screen"
+      className="w-screen h-screen fixed inset-0 bg-background z-50"
     >
       <SVGGroupRenderer
-        viewBox={`${x} ${y} ${scale} ${scale}`}
+        viewBox={`${x - scale / 2} ${y - scale / 2} ${scale} ${scale}`}
         groups={[
           {
             zIndex: 0,
@@ -66,6 +76,8 @@ export default function BuildingViewer({ building }: BuildingViewerProps) {
           },
           {
             zIndex: 1,
+            x: -25,
+            y: -75,
             objects: [...obstacles],
           },
         ]}

@@ -17,7 +17,7 @@ import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 export default async function Kitchen() {
   return (
     <div className="block col-span-full">
-      <BuildingViewer building={Buildings.definitions[1]} />
+      <BuildingViewer building={Buildings.definitions[6]} />
       <iframe
         width="560"
         height="315"
