@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST="{\n  \"pages\": {},\n  \"app\": {},\n  \"appUsingSizeAdjust\": false,\n  \"pagesUsingSizeAdjust\": false\n}"

@@ -1,8 +1,0 @@
-{
-  "/(wiki)/page": "app/(wiki)/page.js",
-  "/(wiki)/(articles)/weapons/page": "app/(wiki)/(articles)/weapons/page.js",
-  "/(wiki)/(articles)/weapons/guns/[item]/page": "app/(wiki)/(articles)/weapons/guns/[item]/page.js",
-  "/(wiki)/(articles)/weapons/melee/[item]/page": "app/(wiki)/(articles)/weapons/melee/[item]/page.js",
-  "/(wiki)/(articles)/obstacles/page": "app/(wiki)/(articles)/obstacles/page.js",
-  "/(wiki)/(articles)/kitchen-sink/page": "app/(wiki)/(articles)/kitchen-sink/page.js"
-}
