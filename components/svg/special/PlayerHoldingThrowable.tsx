@@ -69,23 +69,23 @@ export default function PlayerHoldingThrowable({
   ];
 
   if (state === "cook" || state === "throw") {
-    image.push(
-      {
-        type: "image",
-        url: `${IMAGE_BASE_URL}game/projectiles/throwables/${item.animation.liveImage}.svg`,
-        x: rightFist.x,
-        y: rightFist.y,
-        rotation: item.image.angle ?? 0,
-        zIndex: 5,
-      },
-      {
-        type: "image",
-        url: `${IMAGE_BASE_URL}game/projectiles/throwables/${item.animation.pinImage}.svg`,
-        x: leftFist.x + 20,
-        y: leftFist.y,
-        zIndex: 3,
-      }
-    );
+    image.push({
+      type: "image",
+      url: `${IMAGE_BASE_URL}game/projectiles/throwables/${item.animation.liveImage}.svg`,
+      x: rightFist.x,
+      y: rightFist.y,
+      rotation: item.image.angle ?? 0,
+      zIndex: 5,
+    });
+  }
+  if (state === "cook") {
+    image.push({
+      type: "image",
+      url: `${IMAGE_BASE_URL}game/projectiles/throwables/${item.animation.pinImage}.svg`,
+      x: leftFist.x + 20,
+      y: leftFist.y,
+      zIndex: 3,
+    });
   }
   if (state === "hold") {
     image.push({
