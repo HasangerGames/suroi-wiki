@@ -23,10 +23,9 @@ export default function SVGObjectRenderer({ objects }: SVGObjectRenderer) {
             )) ||
               (object.type === "rect" && (
                 <rect
-                  x={object.width / -2}
-                  y={object.height / -2}
                   width={object.width}
                   height={object.height}
+                  fill={object.fill}
                 />
               )) ||
               (object.type === "image" && <image href={object.url} />)}

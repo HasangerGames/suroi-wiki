@@ -6,15 +6,18 @@ import Empty from "@/components/articles/notices/Empty";
 import Event from "@/components/articles/notices/Event";
 import Removed from "@/components/articles/notices/Removed";
 import Stub from "@/components/articles/notices/Stub";
+import BuildingViewer from "@/components/interactive/BuildingViewer";
 import PlayerWearingEquipment from "@/components/svg/special/PlayerWearingEquipment";
 import MatrixTable from "@/components/tables/MatrixTable";
 import TableWithHeader from "@/components/tables/TableWithHeader";
 import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
+import { Buildings } from "@/vendor/suroi/common/src/definitions/buildings";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 
 export default async function Kitchen() {
   return (
     <div className="block col-span-full">
+      <BuildingViewer building={Buildings.definitions[1]} />
       <iframe
         width="560"
         height="315"
