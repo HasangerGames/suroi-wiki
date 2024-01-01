@@ -10,6 +10,7 @@ import {
   getSuroiObstacle,
 } from "@/lib/util/suroi";
 import { clamp } from "@/lib/ts/utility";
+import { HitboxType } from "@/vendor/suroi/common/src/utils/hitbox";
 
 export default function BuildingViewer({ building }: BuildingViewerProps) {
   const dragSpeed = 0.0005;
@@ -17,7 +18,7 @@ export default function BuildingViewer({ building }: BuildingViewerProps) {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   const [mouseDown, setMouseDown] = useState(false);
-  const [scale, setScale] = useState(1000);
+  const [scale, setScale] = useState(5000);
 
   const obstacles: SVGObject[] = building.obstacles
     ? building.obstacles.map((obstacle) => ({
@@ -45,16 +46,6 @@ export default function BuildingViewer({ building }: BuildingViewerProps) {
           zIndex: 0,
         },
       ];
-
-  const groundGraphics: SVGObject[] | undefined = building.groundGraphics
-    ? building.groundGraphics.map((a) => ({
-        type: "rect",
-        width: 100,
-        height: 100,
-        fill: `${a.color.toString().slice(2)}`,
-        zIndex: 0,
-      }))
-    : undefined;
   return (
     <div
       onMouseDown={(e) => {
@@ -70,7 +61,7 @@ export default function BuildingViewer({ building }: BuildingViewerProps) {
         }
       }}
       onWheel={(e) => {
-        setScale(clamp(scale - e.deltaY * scale * scrollSpeed, 5, 20000));
+        setScale(clamp(scale - e.deltaY * scale * scrollSpeed, 1000, 20000));
       }}
       className="w-screen h-screen fixed inset-0 bg-background z-50"
     >
@@ -84,10 +75,6 @@ export default function BuildingViewer({ building }: BuildingViewerProps) {
           {
             zIndex: 1,
             objects: [...obstacles],
-          },
-          {
-            zIndex: -1,
-            objects: [...groundGraphics],
           },
         ]}
       />
