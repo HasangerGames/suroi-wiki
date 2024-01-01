@@ -59,9 +59,12 @@ export const IMAGE_BASE_URLS = {
   Parachute: "game/airdrop",
 } satisfies Record<keyof typeof ItemType | keyof typeof ObjectCategory, string>;
 
-export const IMAGE_BASE_URL =
-  //! CHANGE WHEN THROWABLES ARE MERGED WITH SUROI MASTER
-  "https://raw.githubusercontent.com/HasangerGames/suroi/throwables-dev/client/public/img/";
+//! CHANGE WHEN THROWABLES ARE MERGED WITH SUROI MASTER
+export const BRANCH = "throwables-dev";
+
+export const BASE_URL = `https://raw.githubusercontent.com/HasangerGames/suroi/${BRANCH}/`;
+
+export const IMAGE_BASE_URL = `${BASE_URL}client/public/img/`;
 
 type ObjectCategoryMapping<Category extends ObjectCategory> =
   Category extends ObjectCategory.Obstacle
