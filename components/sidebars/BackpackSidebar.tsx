@@ -5,6 +5,7 @@ import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import AmmoIcon from "../icons/AmmoIcon";
 import HealingIcon from "../icons/HealingIcon";
+import { IMAGE_BASE_URL } from "@/lib/util/suroi";
 
 export default function BackpackSidebar({
   item,
@@ -14,7 +15,7 @@ export default function BackpackSidebar({
   return (
     <GenericSidebar
       title={item.name}
-      image={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${item.idString}.svg`}
+      image={`${IMAGE_BASE_URL}game/loot/${item.idString}.svg`}
     >
       <InfoboxHeader>Healing Capacity</InfoboxHeader>
       <InfoboxRow>
