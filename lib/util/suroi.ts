@@ -18,6 +18,7 @@ import {
   Obstacles,
 } from "@/vendor/suroi/common/src/definitions/obstacles";
 import {
+  InventoryItemDefinition,
   ItemDefinition,
   ItemType,
   ObjectDefinition,
@@ -59,7 +60,8 @@ export const IMAGE_BASE_URLS = {
 } satisfies Record<keyof typeof ItemType | keyof typeof ObjectCategory, string>;
 
 export const IMAGE_BASE_URL =
-  "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/";
+  //! CHANGE WHEN THROWABLES ARE MERGED WITH SUROI MASTER
+  "https://raw.githubusercontent.com/HasangerGames/suroi/throwables-dev/client/public/img/";
 
 type ObjectCategoryMapping<Category extends ObjectCategory> =
   Category extends ObjectCategory.Obstacle
@@ -74,12 +76,9 @@ type ObjectCategoryMapping<Category extends ObjectCategory> =
 
 export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
 
-export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
-  obj: T,
-  variation?: number,
-  append?: string | string[],
-  dual?: boolean
-) {
+export function getSuroiImageLink<
+  T extends ObjectDefinition | ItemDefinition | InventoryItemDefinition
+>(obj: T, variation?: number, append?: string | string[], dual?: boolean) {
   // Is obj an item?
   if ("itemType" in obj)
     return _itemImageLink(obj.idString, obj.itemType, variation, append, dual);
