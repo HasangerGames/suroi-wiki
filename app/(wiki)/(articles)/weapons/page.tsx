@@ -1,6 +1,6 @@
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
-import { getSuroiImageLink } from "@/lib/util/suroi";
+import { IMAGE_BASE_URL, getSuroiImageLink } from "@/lib/util/suroi";
 import PageCard from "@/components/cards/PageCard";
 import GridTable from "@/components/tables/GridTable";
 import { Throwables } from "@/vendor/suroi/common/src/definitions/throwables";
@@ -53,7 +53,11 @@ export default function WeaponsPage() {
             key={throwable.idString}
             title={throwable.name}
             url={"/weapons/throwables/" + throwable.idString}
-            image={getSuroiImageLink(throwable)}
+            image={
+              //IMAGE_BASE_URL + "game/weapons/" + throwable.idString + ".svg"
+              getSuroiImageLink(throwable)
+            }
+            description={throwable.idString}
           />
         ))}
       </GridTable>
