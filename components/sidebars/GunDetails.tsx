@@ -61,6 +61,17 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
         </InfoboxColumn>
       </InfoboxRow>
 
+      {gun.fireMode === FireMode.Burst && (
+        <InfoboxRow>
+          <InfoboxColumn title="Burst Cooldown">
+            {gun.burstProperties.burstCooldown}ms
+          </InfoboxColumn>
+          <InfoboxColumn title="Shots per Burst">
+            {gun.burstProperties.shotsPerBurst} shots
+          </InfoboxColumn>
+        </InfoboxRow>
+      )}
+
       <InfoboxRow>
         <InfoboxColumn
           title="Spread"
