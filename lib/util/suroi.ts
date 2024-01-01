@@ -73,7 +73,7 @@ type ObjectCategoryMapping<Category extends ObjectCategory> =
 
 export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
 
-export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
+export function getSuroiImageLink<T extends Definition | ItemDefinition>(
   obj: T,
   variation?: number,
   append?: string | string[],
@@ -183,26 +183,28 @@ export function obstacleContainedBy(obstacle: ObstacleDefinition) {
  * Type Assertions
  */
 
-function isBuilding(obj: ObjectDefinition): obj is BuildingDefinition {
+function isBuilding(obj: Definition): obj is BuildingDefinition {
   return Boolean(
     Buildings.definitions.find((building) => building.idString === obj.idString)
   );
 }
 
-function isObstacle(obj: ObjectDefinition): obj is ObstacleDefinition {
+function isObstacle(obj: Definition): obj is ObstacleDefinition {
   return Boolean(
     Obstacles.definitions.find((obstacle) => obstacle.idString === obj.idString)
   );
 }
 
-function isDecal(obj: ObjectDefinition): obj is DecalDefinition {
+function isDecal(obj: Definition): obj is DecalDefinition {
   return Boolean(
     Decals.definitions.find((decal) => decal.idString === obj.idString)
   );
 }
 
-function isLoot(obj: ObjectDefinition): obj is LootDefinition {
+function isLoot(obj: Definition): obj is LootDefinition {
   return Boolean(
     Loots.definitions.find((loot) => loot.idString === obj.idString)
   );
 }
+
+type Definition = { idString: string };
