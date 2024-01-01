@@ -64,6 +64,8 @@ export const BRANCH = "throwables-dev";
 
 export const BASE_URL = `https://raw.githubusercontent.com/HasangerGames/suroi/${BRANCH}/`;
 
+export const REPO_URL = `https://github.com/HasangerGames/suroi/blob/${BRANCH}/`;
+
 export const IMAGE_BASE_URL = `${BASE_URL}client/public/img/`;
 
 type ObjectCategoryMapping<Category extends ObjectCategory> =
