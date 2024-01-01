@@ -5,9 +5,14 @@ import InfoboxRow from "./utils/InfoboxRow";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import ExplosionRow from "./utils/ExplosionRow";
 import InfoboxHeader from "./utils/InfoboxHeader";
-import InfoboxSection from "./utils/InfoboxSection";
+import SVGObjectRenderer from "../svg/SVGObjectRenderer";
+import PlayerHoldingThrowable from "../svg/special/PlayerHoldingThrowable";
+import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 
 export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
+  const skin =
+    Skins.definitions.find((s) => s.idString === "hazel_jumpsuit") ??
+    Skins.definitions[0];
   return (
     <GenericSidebar
       title={item.name}
@@ -24,6 +29,17 @@ export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
         },
       ]}
     >
+      <InfoboxRow>
+        <InfoboxColumn title="Holding">
+          <PlayerHoldingThrowable item={item} skin={skin} state="hold" />
+        </InfoboxColumn>
+        <InfoboxColumn title="Cooking">
+          <PlayerHoldingThrowable item={item} skin={skin} state="cook" />
+        </InfoboxColumn>
+        <InfoboxColumn title="Throwing">
+          <PlayerHoldingThrowable item={item} skin={skin} state="throw" />
+        </InfoboxColumn>
+      </InfoboxRow>
       <InfoboxRow>
         <InfoboxColumn title="Speed Multiplier">
           {item.speedMultiplier}
