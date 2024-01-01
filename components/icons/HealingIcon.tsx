@@ -1,3 +1,4 @@
+import { IMAGE_BASE_URL } from "@/lib/util/suroi";
 import Image from "next/image";
 
 // TODO: I have no idea what this was for?
@@ -8,7 +9,7 @@ export default function HealingIcon({
 }: HealingIconProps) {
   return (
     <Image
-      src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/loot/${ammo}.svg`}
+      src={`${IMAGE_BASE_URL}game/loot/${ammo}.svg`}
       width={50 * scale}
       height={50 * scale}
       alt={`Healing icon for ${ammo}`}
