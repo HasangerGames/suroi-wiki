@@ -1,3 +1,4 @@
+import ThrowableSidebar from "@/components/sidebars/ThrowableSidebar";
 import { Throwables } from "@/vendor/suroi/common/src/definitions/throwables";
 import { notFound } from "next/navigation";
 
@@ -20,6 +21,7 @@ export default function ThrowableLayout({
         {children}
       </div>
       {/* here because reverse flex-col */}
+      <ThrowableSidebar item={throwable} />
       <div className="prose prose-invert sm:hidden">
         <h1>{throwable.name}</h1>
       </div>
