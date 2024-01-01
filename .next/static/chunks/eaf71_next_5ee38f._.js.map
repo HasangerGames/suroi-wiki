@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/node_modules/.pnpm/next@14.0.3_react-dom@18.2.0_react@18.2.0/node_modules/next/link.js"],"sourcesContent":["module.exports = require('./dist/client/link')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO,GAAG"}},
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 9, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/node_modules/.pnpm/next@14.0.3_react-dom@18.2.0_react@18.2.0/node_modules/next/image.js"],"sourcesContent":["module.exports = require('./dist/shared/lib/image-external')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO,GAAG"}},
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

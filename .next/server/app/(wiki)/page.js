@@ -1,0 +1,11 @@
+const CHUNK_PUBLIC_PATH = "server/app/(wiki)/page.js";
+const runtime = require("../../chunks/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/[root of the server]__947747._.js");
+runtime.loadChunk("server/chunks/eaf71_next_4e98d0._.js");
+runtime.loadChunk("server/chunks/e0911_lucide-react_dist_esm_icons_index_f0e735.js");
+runtime.loadChunk("server/chunks/e0911_lucide-react_dist_esm_icons_4bc237._.js");
+runtime.loadChunk("server/chunks/e0911_lucide-react_dist_esm_lucide-react_aa91d6.js");
+runtime.loadChunk("server/chunks/e0911_lucide-react_dist_esm_9820a3._.js");
+runtime.loadChunk("server/chunks/fc315_@swc_helpers_65201a._.js");
+runtime.getOrInstantiateRuntimeModule("[node]/.next/server/app/(wiki)/page/actions.js (ecmascript)", CHUNK_PUBLIC_PATH);
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/.pnpm/next@14.0.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/esm/build/templates/app-page.js/(COMPONENT_0)/[project]/app/(wiki)/page.tsx [rsc] (ecmascript, Next.js server component)/(COMPONENT_1)/[project]/app/(wiki)/layout.tsx [rsc] (ecmascript, Next.js server component)/(COMPONENT_2)/[project]/app/layout.tsx [rsc] (ecmascript, Next.js server component)/(COMPONENT_3)/[project]/node_modules/.pnpm/next@14.0.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/not-found-error.js [rsc] (ecmascript, Next.js server component) (ecmascript)", CHUNK_PUBLIC_PATH).exports;

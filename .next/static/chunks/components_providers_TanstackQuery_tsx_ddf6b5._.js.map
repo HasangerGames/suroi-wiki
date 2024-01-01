@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/components/providers/TanstackQuery.tsx"],"sourcesContent":["\"use client\";\n\nimport {\n  QueryClient,\n  QueryClientProvider,\n} from \"@tanstack/react-query\";\n\nexport default function TanstackQuery(props: React.PropsWithChildren) {\n  const client = new QueryClient();\n\n  return <QueryClientProvider client={client} {...props} />;\n}\n"],"names":[],"mappings":";;;;;;AAAA;;;AAOe,SAAS,cAAc,KAA8B;IAClE,MAAM,SAAS;IAEf,qBAAO;QAAqB,QAAQ;QAAS,GAAG,KAAK;;;;;;AACvD;KAJwB"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

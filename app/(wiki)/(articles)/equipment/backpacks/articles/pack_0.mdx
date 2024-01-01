@@ -1,1 +1,0 @@
-The Level 0 Pack isn't a real pack in the game. It is a placeholder in the code for what the player can hold with no backpack on. Hence, there is no image provided of this pack.
