@@ -3,5 +3,10 @@ import UnocssVitePlugin from 'unocss/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-	plugins: [UnocssVitePlugin(), sveltekit()]
+	plugins: [UnocssVitePlugin(), sveltekit()],
+	server: {
+		fs: {
+			allow: ['vendor']
+		}
+	}
 });
