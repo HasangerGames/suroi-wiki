@@ -1,4 +1,6 @@
 import { error } from '@sveltejs/kit';
+import { compile } from 'mdsvex';
+import fs from 'fs';
 import type { InventoryItemDefinition } from 'suroi/common/src/utils/objectDefinitions';
 
 export async function getPageAndArticle(
@@ -9,7 +11,7 @@ export async function getPageAndArticle(
 	const item = items.find((i) => {
 		return id === i.idString;
 	});
-	const article = await import(`${path}/${id}.md`).catch(() => {
+	const article = await compile(fs.readFileSync(`${path}/${id}.md`).toString()).catch(() => {
 		return undefined;
 	});
 	if (!item) {
@@ -17,6 +19,6 @@ export async function getPageAndArticle(
 	}
 	return {
 		item: item,
-		article: article ? article.default : undefined
+		article: article ? article : undefined
 	};
 }
