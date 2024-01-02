@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import TanstackQuery from "@/components/providers/TanstackQuery";
+import NavigationBar from "@/components/interactive/NavigationBar";
+import Footer from "@/components/layouts/Footer";
 
 const font = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -48,7 +50,13 @@ export default function RootLayout({
       <body
         className={`min-h-screen bg-background font-sans antialiased text-white box-border dark ${font.variable}`}
       >
-        <TanstackQuery>{children}</TanstackQuery>
+        <TanstackQuery>
+          <NavigationBar />
+          <div className="container mb-32 sm:mt-32 mt-8">
+            <div>{children}</div>
+          </div>
+          <Footer />
+        </TanstackQuery>
       </body>
     </html>
   );

@@ -1,14 +1,7 @@
-import NavigationBar from "@/components/interactive/NavigationBar";
-import Footer from "@/components/layouts/Footer";
-
-export default function WikiLayout({ children }: React.PropsWithChildren) {
+export default function ArticleLayout({ children }: React.PropsWithChildren) {
   return (
-    <div>
-      <NavigationBar />
-      <div className="container mb-32 sm:mt-32 mt-8">
-        <div>{children}</div>
-      </div>
-      <Footer />
-    </div>
+    <main className="flex flex-col-reverse gap-4 sm:grid sm:grid-cols-6 lg:grid-cols-8">
+      {children}
+    </main>
   );
 }
