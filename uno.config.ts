@@ -24,9 +24,20 @@ export default defineConfig({
 			'destructive-foreground': 'hsl(60 9.1% 97.8%)',
 			border: 'hsl(0 0% 50%)',
 			input: 'hsl(12 6.5% 15.1%)',
-			ring: 'hsl(209, 97%, 51%)'
+			ring: 'hsl(209, 97%, 51%)',
+			suroi: 'hsl(27, 100%, 50%)'
 		}
 	},
-	presets: [presetUno(), presetTypography(), presetWind()],
+	presets: [
+		presetUno(),
+		presetTypography({
+			cssExtend: {
+				a: {
+					color: 'hsl(27, 100%, 50%)'
+				}
+			}
+		}),
+		presetWind()
+	],
 	transformers: []
 });

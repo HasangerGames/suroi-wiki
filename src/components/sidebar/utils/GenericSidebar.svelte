@@ -7,7 +7,7 @@
 	export let images: ImageTab[] | undefined = undefined;
 </script>
 
-<div class="col-span-2 not-prose">
+<div class="min-w-[20rem] not-prose">
 	<div class="flex flex-col gap-2 p-2 bg-muted rounded-md">
 		<div class="p-2 bg-white/20 rounded-md">
 			<h2 class="text-xl font-bold text-center">{title}</h2>

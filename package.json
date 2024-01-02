@@ -31,6 +31,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-static": "^3.0.1",
 		"@unocss/reset": "^0.58.2",
 		"mdsvex": "^0.11.0",
 		"unocss": "^0.58.2"

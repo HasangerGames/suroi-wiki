@@ -51,6 +51,10 @@ export const IMAGE_BASE_URLS = {
 export const IMAGE_BASE_URL =
 	'https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/';
 
+export function getSuroiEmote(emote: string) {
+	return `${IMAGE_BASE_URL}game/emotes/${emote}.svg`;
+}
+
 type ObjectCategoryMapping<Category extends ObjectCategory> =
 	Category extends ObjectCategory.Obstacle
 		? ObstacleDefinition
