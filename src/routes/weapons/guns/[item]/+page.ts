@@ -3,10 +3,14 @@ import type { PageLoad } from './$types';
 import { error } from '@sveltejs/kit';
 
 export const load = (async ({ params }) => {
+	const gun = Guns.find((gun) => {
+		return gun.idString === params.item;
+	});
+
+	const article = await import(`../articles/${params.item}.md`);
 	return {
-		item: Guns.find((gun) => {
-			return gun.idString === params.item;
-		})
+		item: gun,
+		article: article.default ?? undefined
 	};
 	error(404, 'Not Found');
 }) satisfies PageLoad;
