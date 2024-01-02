@@ -16,7 +16,7 @@ export default function ImageTabs({ images }: ImageTabsProps) {
       className={`flex flex-col items-center justify-start gap-2 bg-white/5 rounded-md`}
     >
       {images.length > 1 && (
-        <div className="flex flex-row flex-wrap w-full justify-around gap-2 items-center p-1">
+        <div className="flex flex-row flex-wrap w-full justify-around gap-2 items-center p-2">
           {images.map((image, index) => (
             <button
               key={index}
