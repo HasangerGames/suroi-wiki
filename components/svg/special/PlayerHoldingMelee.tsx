@@ -3,91 +3,114 @@
 import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/melees";
 import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
 import SVGObjectRenderer from "../SVGObjectRenderer";
-import { SVGObject } from "@/lib/util/types";
+import { Position, SVGObject } from "@/lib/util/types";
 import { getSuroiImageLink } from "@/lib/util/suroi";
-import anime from "animejs";
+import anime, { random } from "animejs";
 import { useEffect, useState } from "react";
+import { easeLinear } from "@/lib/util/animation";
 
 export default function PlayerHoldingMelee({
   melee,
   skin,
   use,
 }: PlayerHoldingMeleeProps) {
-  const modes = ["normal", "used", "animated"];
-  const [weapon, setWeapon] = useState<SVGObject>({
+  const fps = 60;
+  const modes: ("Hold" | "Used" | "Animate" | "Pause")[] = [
+    "Hold",
+    "Used",
+    "Animate",
+    "Pause",
+  ];
+  const [currentMode, setCurrentMode] = useState<
+    "Hold" | "Used" | "Animate" | "Pause"
+  >("Hold");
+  const [progress, setProgress] = useState(0);
+  const [direction, setDirection] = useState(1);
+  /**
+   * true = left
+   * false = right
+   */
+  const [fist, setFist] = useState(true);
+  const randomFist = melee.fists.randomFist ? 0 : 1;
+  const duration = melee.fists.animationDuration;
+  const weapon: SVGObject = {
     type: "image",
     url: getSuroiImageLink(melee),
-    x: 0,
-    y: 0,
-    rotation: 0,
+    x: easeLinear(
+      melee.image?.position.x ?? 0,
+      melee.image?.usePosition.x ?? 0,
+      progress
+    ),
+    y: easeLinear(
+      melee.image?.position.y ?? 0,
+      melee.image?.usePosition.y ?? 0,
+      progress
+    ),
+    rotation: easeLinear(
+      melee.image?.angle ?? 0,
+      melee.image?.useAngle ?? 0,
+      progress
+    ),
     zIndex: 1,
-  });
+  };
 
-  const weaponAnimation = anime({
-    targets: weapon,
-    x: [
-      melee.image?.position.x ?? 0 + melee.offset.x,
-      melee.image?.usePosition.x ?? 0 + melee.offset.x,
-    ],
-    y: [
-      melee.image?.position.y ?? 0 + melee.offset.y,
-      melee.image?.usePosition.y ?? 0 + melee.offset.y,
-    ],
-    rotation: [melee.image?.angle, melee.image?.useAngle],
-    duration: melee.cooldown,
-    easing: "linear",
-    direction: "alternate",
-    update: () => {
-      setWeapon(weapon);
-    },
-    loop: true,
-  });
-
-  const [leftFist, setLeftFist] = useState<SVGObject>({
+  const leftFist: SVGObject = {
     type: "image",
     url: getSuroiImageLink(skin, undefined, "fist"),
-    x: 0,
-    y: 0,
+    x: easeLinear(
+      melee.fists.left.x,
+      melee.fists.useLeft.x,
+      progress * (!fist ? 1 : randomFist)
+    ),
+    y: easeLinear(
+      melee.fists.left.y,
+      melee.fists.useLeft.y,
+      progress * (!fist ? 1 : randomFist)
+    ),
     zIndex: 4,
-  });
+  };
 
-  const leftFistAnimation = anime({
-    targets: leftFist,
-    x: [melee.fists.left.x, melee.fists.useLeft.x],
-    y: [melee.fists.left.y, melee.fists.useLeft.y],
-    duration: melee.cooldown,
-    easing: "linear",
-    direction: "alternate",
-    loop: true,
-  });
-
-  const [rightFist, setRightFist] = useState<SVGObject>({
+  const rightFist: SVGObject = {
     type: "image",
     url: getSuroiImageLink(skin, undefined, "fist"),
-    x: use ? melee.fists.useRight.x : melee.fists.right.x,
-    y: use ? melee.fists.useRight.y : melee.fists.right.y,
+    x: easeLinear(
+      melee.fists.right.x,
+      melee.fists.useRight.x,
+      progress * (fist ? 1 : randomFist)
+    ),
+    y: easeLinear(
+      melee.fists.right.y,
+      melee.fists.useRight.y,
+      progress * (fist ? 1 : randomFist)
+    ),
     zIndex: 4,
-  });
-
-  const rightFistAnimation = anime({
-    targets: rightFist,
-    x: [melee.fists.right.x, melee.fists.useRight.x],
-    y: [melee.fists.right.y, melee.fists.useRight.y],
-    duration: melee.cooldown,
-    easing: "linear",
-    direction: "alternate",
-    loop: true,
-  });
+  };
 
   useEffect(() => {
-    weaponAnimation.play();
-    leftFistAnimation.seek(0);
-    rightFistAnimation.seek(0);
-  });
+    const animation = setInterval(() => {
+      switch (currentMode) {
+        case "Hold":
+          setProgress(0);
+          break;
+        case "Used":
+          setProgress(1);
+          break;
+        case "Animate":
+          if (progress >= 1) {
+            setDirection(-1);
+          } else if (progress <= 0) {
+            setDirection(1);
+            setFist(!fist);
+          }
+          setProgress(progress + (1 / fps) * (1000 / duration) * direction);
+      }
+    }, 1000 / fps);
+    return () => clearInterval(animation);
+  }, [progress, direction, duration, currentMode, fist]);
+
   return (
-    <div className="saturate-0 cursor-not-allowed">
-      <b>NOTE: Unfinished</b>
-      <svg viewBox="-100 -100 300 200">
+    <div className="">
+      <svg viewBox="-100 -150 300 300">
         <SVGObjectRenderer
           objects={[
             {
@@ -102,8 +125,16 @@ export default function PlayerHoldingMelee({
         />
       </svg>
       <div className="w-full flex flex-row flex-wrap gap-2">
-        {modes.map((mode) => (
-          <button key={mode}>{mode}</button>
+        {modes.map((mode, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrentMode(mode)}
+            className={`p-2 ${
+              currentMode === mode ? "border-primary" : "border-border"
+            } border rounded-md`}
+          >
+            {mode}
+          </button>
         ))}
       </div>
     </div>
