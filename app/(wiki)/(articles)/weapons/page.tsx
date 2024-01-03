@@ -25,10 +25,11 @@ export default function WeaponsPage() {
             <h2 id="guns">Guns</h2>
           </div>
         }
+        className="my-4"
       >
         <GridTable>
           {Guns.filter((gun) => {
-            return !gun.idString.includes("dual_");
+            return !gun.isDual;
           }).map((gun) => (
             <PageCard
               title={gun.name}
@@ -46,6 +47,7 @@ export default function WeaponsPage() {
             <h2 id="melees">Melees</h2>
           </div>
         }
+        className="my-4"
       >
         <GridTable>
           {Melees.map((melee) => (
@@ -65,6 +67,7 @@ export default function WeaponsPage() {
             <h2 id="throwables">Throwables</h2>
           </div>
         }
+        className="my-4"
       >
         <GridTable>
           {Throwables.map((throwable) => (
