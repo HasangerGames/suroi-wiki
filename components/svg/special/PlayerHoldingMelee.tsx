@@ -3,10 +3,11 @@
 import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/melees";
 import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
 import SVGObjectRenderer from "../SVGObjectRenderer";
-import { SVGObject } from "@/lib/util/types";
+import { Position, SVGObject } from "@/lib/util/types";
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import anime from "animejs";
 import { useEffect, useState } from "react";
+import { easeLinear } from "@/lib/util/animation";
 
 export default function PlayerHoldingMelee({
   melee,
@@ -14,6 +15,7 @@ export default function PlayerHoldingMelee({
   use,
 }: PlayerHoldingMeleeProps) {
   const modes = ["normal", "used", "animated"];
+  const [progress, setProgress] = useState(0);
   const [weapon, setWeapon] = useState<SVGObject>({
     type: "image",
     url: getSuroiImageLink(melee),
@@ -21,26 +23,6 @@ export default function PlayerHoldingMelee({
     y: 0,
     rotation: 0,
     zIndex: 1,
-  });
-
-  const weaponAnimation = anime({
-    targets: weapon,
-    x: [
-      melee.image?.position.x ?? 0 + melee.offset.x,
-      melee.image?.usePosition.x ?? 0 + melee.offset.x,
-    ],
-    y: [
-      melee.image?.position.y ?? 0 + melee.offset.y,
-      melee.image?.usePosition.y ?? 0 + melee.offset.y,
-    ],
-    rotation: [melee.image?.angle, melee.image?.useAngle],
-    duration: melee.cooldown,
-    easing: "linear",
-    direction: "alternate",
-    update: () => {
-      setWeapon(weapon);
-    },
-    loop: true,
   });
 
   const [leftFist, setLeftFist] = useState<SVGObject>({
@@ -51,16 +33,6 @@ export default function PlayerHoldingMelee({
     zIndex: 4,
   });
 
-  const leftFistAnimation = anime({
-    targets: leftFist,
-    x: [melee.fists.left.x, melee.fists.useLeft.x],
-    y: [melee.fists.left.y, melee.fists.useLeft.y],
-    duration: melee.cooldown,
-    easing: "linear",
-    direction: "alternate",
-    loop: true,
-  });
-
   const [rightFist, setRightFist] = useState<SVGObject>({
     type: "image",
     url: getSuroiImageLink(skin, undefined, "fist"),
@@ -69,23 +41,65 @@ export default function PlayerHoldingMelee({
     zIndex: 4,
   });
 
-  const rightFistAnimation = anime({
-    targets: rightFist,
-    x: [melee.fists.right.x, melee.fists.useRight.x],
-    y: [melee.fists.right.y, melee.fists.useRight.y],
-    duration: melee.cooldown,
-    easing: "linear",
-    direction: "alternate",
-    loop: true,
-  });
-
   useEffect(() => {
-    weaponAnimation.play();
-    leftFistAnimation.seek(0);
-    rightFistAnimation.seek(0);
-  });
+    setInterval(() => {
+      setProgress(progress + 0.01);
+      const left = leftFist;
+      left.x = easeLinear(melee.fists.left.x, melee.fists.useLeft.x, progress);
+      left.y = easeLinear(melee.fists.left.y, melee.fists.useLeft.y, progress);
+      setLeftFist(left);
+      const right = rightFist;
+      right.x = easeLinear(
+        melee.fists.right.x,
+        melee.fists.useRight.x,
+        progress
+      );
+      right.y = easeLinear(
+        melee.fists.right.y,
+        melee.fists.useRight.y,
+        progress
+      );
+      const w = weapon;
+      weapon.x = easeLinear(
+        melee.image?.position.x ?? 0,
+        melee.image?.usePosition.x ?? 0,
+        progress
+      );
+      weapon.y = easeLinear(
+        melee.image?.position.y ?? 0,
+        melee.image?.usePosition.y ?? 0,
+        progress
+      );
+      weapon.rotation = easeLinear(
+        melee.image?.angle ?? 0,
+        melee.image?.useAngle ?? 0,
+        progress
+      );
+    }, 1000 / 30);
+  }, [
+    leftFist,
+    melee.fists.left.x,
+    melee.fists.left.y,
+    melee.fists.right.x,
+    melee.fists.right.y,
+    melee.fists.useLeft.x,
+    melee.fists.useLeft.y,
+    melee.fists.useRight.x,
+    melee.fists.useRight.y,
+    melee.cooldown,
+    progress,
+    rightFist,
+    melee.image?.position.x,
+    melee.image?.position.y,
+    melee.image?.usePosition.x,
+    melee.image?.usePosition.y,
+    weapon,
+    melee.image?.angle,
+    melee.image?.useAngle,
+  ]);
+
   return (
-    <div className="saturate-0 cursor-not-allowed">
+    <div className="cursor-not-allowed">
       <b>NOTE: Unfinished</b>
       <svg viewBox="-100 -100 300 200">
         <SVGObjectRenderer
