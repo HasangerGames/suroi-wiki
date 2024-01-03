@@ -1,3 +1,4 @@
+import { IMAGE_BASE_URL } from "@/lib/util/suroi";
 import Image from "next/image";
 
 export default function Emote({
@@ -13,8 +14,8 @@ export default function Emote({
     <Image
       height={w}
       width={h}
-      src={`https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/emotes/${emote}.svg`}
-      alt={`Emote: ${emote}`}      
+      src={`${IMAGE_BASE_URL}game/emotes/${emote}.svg`}
+      alt={`Emote: ${emote}`}
     />
   );
 }

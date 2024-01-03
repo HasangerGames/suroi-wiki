@@ -39,7 +39,6 @@ export default function Footer() {
           <Link href="https://nextjs.org">NextJS by Vercel</Link>
           <Link href="https://tailwindcss.org">TailwindCSS</Link>
           <Link href="https://fusejs.io">Fuse.js</Link>
-          <Link href="https://animejs.com">Anime.js</Link>
         </div>
       </div>
     </footer>
