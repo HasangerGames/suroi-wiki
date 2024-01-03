@@ -7,6 +7,8 @@ import TagLink from "@/components/links/TagLink";
 import GridTable from "@/components/tables/GridTable";
 import { wikiPages } from "@/lib/util/search";
 import { Grid } from "lucide-react";
+import BranchLink from "@/components/links/BranchLink";
+import { BRANCH } from "@/lib/util/suroi";
 
 export default async function Home() {
   const HEAD = await fs.readFile(".git/modules/vendor/suroi/HEAD", "utf8");
@@ -66,7 +68,8 @@ export default async function Home() {
           articles
         </Card>
         <Card title="Auto Updated">
-          Information is based on commit <CommitLink sha={HEAD} />
+          Information is based on commit <CommitLink sha={HEAD} /> and on branch{" "}
+          <BranchLink branch={BRANCH} />
         </Card>
       </div>
       <div>

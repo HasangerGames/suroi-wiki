@@ -1,5 +1,6 @@
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import {
+  IMAGE_BASE_URL,
   getSuroiBuilding,
   getSuroiImageLink,
   getSuroiItem,
@@ -72,8 +73,7 @@ export const wikiPages: SearchItem[] = [
     name: "Writing Guide",
     url: "/meta/writingarticles",
     description: "Guidelines for writing articles",
-    image:
-      "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/game/emotes/monocle_face.svg",
+    image: `${IMAGE_BASE_URL}game/emotes/monocle_face.svg`,
   },
 ];
 
