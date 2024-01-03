@@ -5,7 +5,6 @@ import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
 import SVGObjectRenderer from "../SVGObjectRenderer";
 import { Position, SVGObject } from "@/lib/util/types";
 import { getSuroiImageLink } from "@/lib/util/suroi";
-import anime, { random } from "animejs";
 import { useEffect, useState } from "react";
 import { easeLinear } from "@/lib/util/animation";
 
