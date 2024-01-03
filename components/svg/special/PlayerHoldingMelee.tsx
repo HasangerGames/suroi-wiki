@@ -16,87 +16,49 @@ export default function PlayerHoldingMelee({
 }: PlayerHoldingMeleeProps) {
   const modes = ["normal", "used", "animated"];
   const [progress, setProgress] = useState(0);
-  const [weapon, setWeapon] = useState<SVGObject>({
+  const weapon: SVGObject = {
     type: "image",
     url: getSuroiImageLink(melee),
-    x: 0,
-    y: 0,
-    rotation: 0,
+    x: easeLinear(
+      melee.image?.position.x ?? 0,
+      melee.image?.usePosition.x ?? 0,
+      progress
+    ),
+    y: easeLinear(
+      melee.image?.position.y ?? 0,
+      melee.image?.usePosition.y ?? 0,
+      progress
+    ),
+    rotation: easeLinear(
+      melee.image?.angle ?? 0,
+      melee.image?.useAngle ?? 0,
+      progress
+    ),
     zIndex: 1,
-  });
+  };
 
-  const [leftFist, setLeftFist] = useState<SVGObject>({
+  const leftFist: SVGObject = {
     type: "image",
     url: getSuroiImageLink(skin, undefined, "fist"),
-    x: 0,
-    y: 0,
+    x: easeLinear(melee.fists.left.x, melee.fists.useLeft.x, progress),
+    y: easeLinear(melee.fists.left.y, melee.fists.useLeft.y, progress),
     zIndex: 4,
-  });
+  };
 
-  const [rightFist, setRightFist] = useState<SVGObject>({
+  const rightFist: SVGObject = {
     type: "image",
     url: getSuroiImageLink(skin, undefined, "fist"),
-    x: use ? melee.fists.useRight.x : melee.fists.right.x,
-    y: use ? melee.fists.useRight.y : melee.fists.right.y,
+    x: easeLinear(melee.fists.right.x, melee.fists.useRight.x, progress),
+    y: easeLinear(melee.fists.right.y, melee.fists.useRight.y, progress),
     zIndex: 4,
-  });
+  };
 
   useEffect(() => {
     setInterval(() => {
       setProgress(progress + 0.01);
-      const left = leftFist;
-      left.x = easeLinear(melee.fists.left.x, melee.fists.useLeft.x, progress);
-      left.y = easeLinear(melee.fists.left.y, melee.fists.useLeft.y, progress);
-      setLeftFist(left);
-      const right = rightFist;
-      right.x = easeLinear(
-        melee.fists.right.x,
-        melee.fists.useRight.x,
-        progress
-      );
-      right.y = easeLinear(
-        melee.fists.right.y,
-        melee.fists.useRight.y,
-        progress
-      );
-      const w = weapon;
-      weapon.x = easeLinear(
-        melee.image?.position.x ?? 0,
-        melee.image?.usePosition.x ?? 0,
-        progress
-      );
-      weapon.y = easeLinear(
-        melee.image?.position.y ?? 0,
-        melee.image?.usePosition.y ?? 0,
-        progress
-      );
-      weapon.rotation = easeLinear(
-        melee.image?.angle ?? 0,
-        melee.image?.useAngle ?? 0,
-        progress
-      );
-    }, 1000 / 30);
-  }, [
-    leftFist,
-    melee.fists.left.x,
-    melee.fists.left.y,
-    melee.fists.right.x,
-    melee.fists.right.y,
-    melee.fists.useLeft.x,
-    melee.fists.useLeft.y,
-    melee.fists.useRight.x,
-    melee.fists.useRight.y,
-    melee.cooldown,
-    progress,
-    rightFist,
-    melee.image?.position.x,
-    melee.image?.position.y,
-    melee.image?.usePosition.x,
-    melee.image?.usePosition.y,
-    weapon,
-    melee.image?.angle,
-    melee.image?.useAngle,
-  ]);
+      console.log(progress);
+    }, 1000 / 60);
+  }, [progress]);
 
   return (
     <div className="cursor-not-allowed">
