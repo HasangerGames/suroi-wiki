@@ -14,7 +14,7 @@ export default function PlayerHoldingMelee({
   skin,
   use,
 }: PlayerHoldingMeleeProps) {
-  const fps = 30;
+  const fps = 60;
   const modes: ("Hold" | "Used" | "Animate" | "Pause")[] = [
     "Hold",
     "Used",
