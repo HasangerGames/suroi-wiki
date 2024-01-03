@@ -53,3 +53,8 @@ export type SVGItem = {
   origin?: string;
   zIndex: number;
 };
+
+export type Position = {
+  x: number;
+  y: number;
+};
