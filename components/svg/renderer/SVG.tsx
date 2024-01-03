@@ -1,6 +1,26 @@
-export default function SVGRenderer() {}
+import { Children, ReactElement } from "react";
 
-export interface SVGRendererProps extends React.PropsWithChildren {}
+export function Renderer({
+  children,
+  viewBox: viewbox,
+  className,
+}: SVGRendererProps) {
+  const sorted = Children.toArray(children).sort(
+    (a, b) =>
+      ((b as ReactElement).props.zIndex ?? 0) -
+      ((a as ReactElement).props.zIndex ?? 0)
+  );
+  return (
+    <svg viewBox={viewbox} className={className}>
+      {sorted}
+    </svg>
+  );
+}
+
+export interface SVGRendererProps extends React.PropsWithChildren {
+  viewBox?: `${number} ${number} ${number} ${number}`;
+  className?: string;
+}
 
 export function G({
   children,
@@ -24,20 +44,30 @@ export function G({
 }
 
 export function Image(object: SVGImageProps) {
-  return <image href={object.url} />;
+  return (
+    <G {...object}>
+      <image href={object.url} />
+    </G>
+  );
 }
 export function Rect(object: SVGRectProps) {
   return (
-    <rect
-      x={object.width / -2}
-      y={object.height / -2}
-      width={object.width}
-      height={object.height}
-    />
+    <G {...object}>
+      <rect
+        x={object.width / -2}
+        y={object.height / -2}
+        width={object.width}
+        height={object.height}
+      />
+    </G>
   );
 }
 export function Circle(object: SVGCircleProps) {
-  return <circle cx={0} cy={0} radius={object.radius} fill={object.fill} />;
+  return (
+    <G {...object}>
+      <circle cx={0} cy={0} radius={object.radius} fill={object.fill} />
+    </G>
+  );
 }
 
 export interface SVGComponentProps {
