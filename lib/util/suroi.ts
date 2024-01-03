@@ -18,6 +18,7 @@ import {
   Obstacles,
 } from "@/vendor/suroi/common/src/definitions/obstacles";
 import {
+  InventoryItemDefinition,
   ItemDefinition,
   ItemType,
   ObjectDefinition,
@@ -41,6 +42,7 @@ export const IMAGE_BASE_URLS = {
   Gun: "game/weapons",
   Ammo: "game/loot",
   Melee: "game/weapons",
+  Throwable: "game/weapons",
   Healing: "game/loot",
   Armor: "game/loot",
   Backpack: "game/loot",
@@ -57,8 +59,14 @@ export const IMAGE_BASE_URLS = {
   Parachute: "game/airdrop",
 } satisfies Record<keyof typeof ItemType | keyof typeof ObjectCategory, string>;
 
-export const IMAGE_BASE_URL =
-  "https://raw.githubusercontent.com/HasangerGames/suroi/master/client/public/img/";
+//! CHANGE WHEN THROWABLES ARE MERGED WITH SUROI MASTER
+export const BRANCH = "throwables-dev";
+
+export const BASE_URL = `https://raw.githubusercontent.com/HasangerGames/suroi/${BRANCH}/`;
+
+export const REPO_URL = `https://github.com/HasangerGames/suroi/blob/${BRANCH}/`;
+
+export const IMAGE_BASE_URL = `${BASE_URL}client/public/img/`;
 
 type ObjectCategoryMapping<Category extends ObjectCategory> =
   Category extends ObjectCategory.Obstacle
@@ -73,12 +81,9 @@ type ObjectCategoryMapping<Category extends ObjectCategory> =
 
 export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
 
-export function getSuroiImageLink<T extends ObjectDefinition | ItemDefinition>(
-  obj: T,
-  variation?: number,
-  append?: string | string[],
-  dual?: boolean
-) {
+export function getSuroiImageLink<
+  T extends ObjectDefinition | ItemDefinition | InventoryItemDefinition
+>(obj: T, variation?: number, append?: string | string[], dual?: boolean) {
   // Is obj an item?
   if ("itemType" in obj)
     return _itemImageLink(obj.idString, obj.itemType, variation, append, dual);
