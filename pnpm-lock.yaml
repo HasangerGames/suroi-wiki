@@ -64,9 +64,6 @@ dependencies:
     version: 5.23.0(react-dom@18.2.0)(react@18.2.0)
 
 devDependencies:
-  '@cspell/dict-ru_ru':
-    specifier: ^2.2.0
-    version: 2.2.0
   '@types/luxon':
     specifier: ^3.3.4
     version: 3.3.4
@@ -363,10 +360,6 @@ packages:
   /@cspell/dict-r@2.0.1:
     resolution: {integrity: sha512-KCmKaeYMLm2Ip79mlYPc8p+B2uzwBp4KMkzeLd5E6jUlCL93Y5Nvq68wV5fRLDRTf7N1LvofkVFWfDcednFOgA==}
     dev: false
-
-  /@cspell/dict-ru_ru@2.2.0:
-    resolution: {integrity: sha512-RpEYhY+GbD6TL26y1YC8sPdxpxuCFuzkqfILOtaflL0EFFZRODbvtXW7umjP6QjfxbLSbyMWCTnkZCZzFFFnTw==}
-    dev: true
 
   /@cspell/dict-ruby@5.0.2:
     resolution: {integrity: sha512-cIh8KTjpldzFzKGgrqUX4bFyav5lC52hXDKo4LbRuMVncs3zg4hcSf4HtURY+f2AfEZzN6ZKzXafQpThq3dl2g==}
