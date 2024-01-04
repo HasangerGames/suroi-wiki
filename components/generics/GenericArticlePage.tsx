@@ -47,7 +47,7 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
 
   const defaultExport = async ({ params }: { params: { item: string } }) => {
     const files = await fs.readdir(
-      path.join(process.cwd(), `/app/(wiki)/(articles)/${args.path}/articles`),
+      path.join(process.cwd(), `/app/(wiki)/${args.path}/articles`),
       { withFileTypes: true }
     );
 
