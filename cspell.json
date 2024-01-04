@@ -1,0 +1,98 @@
+{
+  "version": "0.2",
+  "language": "en_US,ru-ru",
+  "allowCompoundWords": true,
+  "words": [
+    // Internet-speak
+    "tldr",
+
+    // Suroi
+    "suroi",
+    "surians",
+    "surviv",
+    "survivrs",
+
+    // Game
+    "quickswitch",
+    "adren",
+    "ghillie",
+
+    // Buildings
+    "porta",
+
+    // Items
+    "medikit",
+    "medikits",
+
+    // Weapons
+    "glock",
+    "garand",
+    "usas",
+    "mosin",
+    "léon",
+    "nagant",
+    "steyr",
+    /* CZ-75A */
+    "františek",
+    "koucký",
+    "ČZUB",
+    "Česká",
+    "zbrojovka",
+    "uherský",
+    "brod",
+    /* --- */
+    "revitalizer",
+    "iver",
+    "kbar",
+    "makarov",
+    "Émile",
+    "stoeger",
+    "benelli",
+    "sauer",
+    "uziel",
+    "ruger",
+    "pederson",
+    /* VSS */
+    "tsNIITochMash",
+    "ЦНИИТОЧМАШ",
+    "spetsiálnaya",
+    "snáyperskaya",
+    "Vintóvka",
+    "Специа́льная",
+    "Сна́йперская",
+    "Винто́вка",
+    "Spetsnaz",
+    /* --- */
+    "daewoo",
+    "arma",
+    "armalite",
+    "FAMAE",
+    "revitalizers",
+    "Guglielmo",
+    "Vollmer",
+    "Maschinenpistole",
+
+    // People
+    "compositr",
+    "platonthek",
+    "slapdap",
+    "katloo",
+    "leia",
+    "asultra",
+    "hasanger",
+    "jchen",
+    "jass",
+    "redcoder",
+    "myka",
+    "zhew",
+    "kenos",
+    "sniperboi",
+    "Medeus",
+
+    // Random
+    "excipients", // Plural of excipient
+    "retextured"
+  ],
+
+  "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
+}
