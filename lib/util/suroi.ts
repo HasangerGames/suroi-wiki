@@ -59,8 +59,7 @@ export const IMAGE_BASE_URLS = {
   Parachute: "game/airdrop",
 } satisfies Record<keyof typeof ItemType | keyof typeof ObjectCategory, string>;
 
-//! CHANGE WHEN THROWABLES ARE MERGED WITH SUROI MASTER
-export const BRANCH = "throwables-dev";
+export const BRANCH = "master";
 
 export const BASE_URL = `https://raw.githubusercontent.com/HasangerGames/suroi/${BRANCH}/`;
 
