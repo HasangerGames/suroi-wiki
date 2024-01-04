@@ -1,6 +1,8 @@
 pipeline {
-  agent docker {
-    image 'node:20-slim'
+  agent {
+    docker {
+      image 'node:20-slim'
+    }
   }
 
   stages {
