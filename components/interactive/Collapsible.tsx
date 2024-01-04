@@ -1,15 +1,16 @@
 "use client";
 
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Collapse } from "react-collapse";
 
-export default function Dropdown({
+export default function Collapsible({
   label,
   defaultOpen = true,
   children,
   className = "",
-}: DropdownProps) {
+  chevronSize = 24,
+}: CollapsibleProps) {
   const [open, setOpen] = useState(defaultOpen);
 
   return (
@@ -18,11 +19,7 @@ export default function Dropdown({
         onClick={() => setOpen(!open)}
         className="flex flex-row gap-4 w-full"
       >
-        <ChevronRight
-          className={`transition-transform my-auto ${
-            open ? "rotate-90" : "rotate-0"
-          }`}
-        />
+        {open ? <ChevronDown /> : <ChevronRight />}
         {label}
       </button>
       <Collapse isOpened={open}>{children}</Collapse>
@@ -30,9 +27,10 @@ export default function Dropdown({
   );
 }
 
-export interface DropdownProps extends React.PropsWithChildren {
+export interface CollapsibleProps extends React.PropsWithChildren {
   label: React.ReactNode;
   defaultOpen?: boolean;
   children: React.ReactNode;
   className?: string;
+  chevronSize?: number;
 }
