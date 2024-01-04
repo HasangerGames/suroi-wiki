@@ -126,14 +126,16 @@ export default function ArmorPage() {
             ].map((vest) => (
               <div key="" className="flex flex-col gap-1">
                 <div>
-                  <b>DR:</b>{" "}
+                  <b>
+                    <abbr title="Damage Reduction">DR</abbr>:
+                  </b>{" "}
                   {(
                     (helmet.damageReduction + vest.damageReduction) *
                     100
                   ).toFixed(0) + "%"}
                 </div>
                 <div>
-                  <b>EHP:</b>{" "}
+                  <b><abbr title="Effective Health">EHP</abbr>:</b>{" "}
                   {(
                     100 /
                     (1 - helmet.damageReduction - vest.damageReduction)
