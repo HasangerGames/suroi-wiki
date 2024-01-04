@@ -15,24 +15,24 @@ export default function MatrixTable({
         gridTemplateRows: `repeat(${lHeader.length + 1}, minmax(0, 1fr))`,
       }}
     >
-      <div className="bg-primary sticky rounded-md font-bold min-w-[10ch]">
+      <div className="bg-primary sticky rounded-md font-bold min-w-[10ch] md:min-w-[5ch] z-10">
         {corner}
       </div>
       <div
-        className=" bg-white/20 sticky rounded-md grid divide-x-4 divide-muted font-bold"
+        className=" bg-white/20 sticky rounded-md grid divide-x-4 divide-muted font-bold z-10"
         style={{
           gridColumn: `span ${tHeader.length} / span ${tHeader.length}`,
           gridTemplateColumns: `repeat(${tHeader.length}, minmax(0, 1fr))`,
         }}
       >
         {tHeader.map((cell, i) => (
-          <div key={i} className="p-2 min-w-[10ch]">
+          <div key={i} className="p-2 min-w-[10ch] md:min-w-[5ch]">
             {cell}
           </div>
         ))}
       </div>
       <div
-        className=" bg-white/20 rounded-md grid sticky min-w-[10ch] divide-y-4 divide-muted font-bold"
+        className=" bg-white/20 rounded-md grid sticky min-w-[10ch] md:min-w-[5ch] divide-y-4 divide-muted font-bold z-10"
         style={{
           gridRow: `span ${lHeader.length} / span ${lHeader.length}`,
           gridTemplateRows: `repeat(${lHeader.length}, minmax(0, 1fr))`,
@@ -61,7 +61,7 @@ export default function MatrixTable({
             }}
           >
             {row.map((cell, j) => (
-              <div key={j} className="p-2 min-w-[10ch]">
+              <div key={j} className="p-2 min-w-[10ch] md:min-w-[5ch]">
                 {cell}
               </div>
             ))}
