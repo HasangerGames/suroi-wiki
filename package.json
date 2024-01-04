@@ -31,7 +31,6 @@
     "react-tooltip": "^5.23.0"
   },
   "devDependencies": {
-    "@cspell/dict-ru_ru": "^2.2.0",
     "@types/luxon": "^3.3.4",
     "@types/node": "^20.9.0",
     "@types/react": "^18.2.37",
