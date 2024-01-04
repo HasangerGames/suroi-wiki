@@ -1,3 +1,4 @@
+"use client";
 // A component testing page
 
 import Gallery from "@/components/articles/gallery/Gallery";
@@ -11,8 +12,9 @@ import MatrixTable from "@/components/tables/MatrixTable";
 import TableWithHeader from "@/components/tables/TableWithHeader";
 import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import Collapsible from "@/components/interactive/Collapsible";
 
-export default async function Kitchen() {
+export default function Kitchen() {
   return (
     <div className="block col-span-full">
       <iframe
@@ -54,6 +56,9 @@ export default async function Kitchen() {
           })),
         ]}
       />
+      <Collapsible label={"Collapsible block"}>
+        <p>Hello! You can show or hide me!</p>
+      </Collapsible>
     </div>
   );
 }
