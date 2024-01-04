@@ -61,9 +61,13 @@ export const IMAGE_BASE_URLS = {
 
 export const BRANCH = "master";
 
+export const WIKI_BRANCH = "main";
+
 export const BASE_URL = `https://raw.githubusercontent.com/HasangerGames/suroi/${BRANCH}/`;
 
 export const REPO_URL = `https://github.com/HasangerGames/suroi/blob/${BRANCH}/`;
+
+export const WIKI_URL = `https://github.com/HasangerGames/suroi-wiki/`;
 
 export const IMAGE_BASE_URL = `${BASE_URL}client/public/img/`;
 

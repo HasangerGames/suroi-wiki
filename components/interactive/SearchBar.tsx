@@ -73,6 +73,7 @@ export default function SearchBar() {
                 onChange={(e) => setQuery(e.target.value)}
                 className="z-10 p-2 w-full rounded-md bg-muted"
                 placeholder="Search..."
+                autoFocus
               />
               <button
                 className="rounded-md border-border border p-2 text-xs"
@@ -83,7 +84,11 @@ export default function SearchBar() {
             </div>
             <div className="flex flex-col gap-4 md:max-h-96 overflow-y-scroll">
               {searchQuery.map((item) => (
-                <SearchItem onClick={() => setOpen(false)} key={item.item.url} item={item.item} />
+                <SearchItem
+                  onClick={() => setOpen(false)}
+                  key={item.item.url}
+                  item={item.item}
+                />
               ))}
             </div>
             <div>
