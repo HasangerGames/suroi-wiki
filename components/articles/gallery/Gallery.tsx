@@ -88,9 +88,9 @@ export default function Gallery({ images }: GalleryProps) {
                 src={`https://www.youtube-nocookie.com/embed/${images[currentImage].url}`}
                 title="YouTube video player"
                 // @ts-ignore
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
                 className="absolute object-scale-down left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
               ></iframe>
             ) : (
@@ -124,7 +124,7 @@ export default function Gallery({ images }: GalleryProps) {
                   height={100}
                   className={`${
                     currentImage === i && "ring-primary ring"
-                  } rounded-md grow min-w-[6rem] h-24 group-hover:ring-primary group-hover:ring`}
+                  } rounded-md object-cover grow min-w-[6rem] h-24 group-hover:ring-primary group-hover:ring`}
                 />
               </button>
             ))}
