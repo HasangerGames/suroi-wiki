@@ -21,6 +21,11 @@ const toExport = GenericArticlePage({
       title: "Airdrops",
       items: ["airdrop_crate_locked", "airdrop_crate", "gold_airdrop_crate"],
       fileName: "airdrops"
+    },
+    {
+      title: "Gun Mounts",
+      items: ["gun_mount_mcx_spear", "gun_mount_stoner_63", "gun_mount_maul"],
+      fileName: "gun_mounts"
     }
   ],
 });
