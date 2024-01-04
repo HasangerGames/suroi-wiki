@@ -16,7 +16,7 @@ export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
     };
   }) {
     const files = await fs.readdir(
-      path.join(process.cwd(), `/app/(wiki)/(articles)/${args.path}/articles`),
+      path.join(process.cwd(), `/app/(wiki)/${args.path}/articles`),
       { withFileTypes: true }
     );
 
