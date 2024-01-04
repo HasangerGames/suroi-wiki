@@ -5,7 +5,7 @@ import PageCard from "@/components/cards/PageCard";
 import GridTable from "@/components/tables/GridTable";
 import { Throwables } from "@/vendor/suroi/common/src/definitions/throwables";
 import Link from "next/link";
-import Dropdown from "@/components/interactive/Dropdown";
+import Collapsible from "@/components/interactive/Collapsible";
 
 export default function WeaponsPage() {
   return (
@@ -19,7 +19,7 @@ export default function WeaponsPage() {
           the game.
         </p>
       </div>
-      <Dropdown
+      <Collapsible
         label={
           <div className="prose prose-invert">
             <h2 id="guns">Guns</h2>
@@ -40,8 +40,8 @@ export default function WeaponsPage() {
             />
           ))}
         </GridTable>
-      </Dropdown>
-      <Dropdown
+      </Collapsible>
+      <Collapsible
         label={
           <div className="prose prose-invert">
             <h2 id="melees">Melees</h2>
@@ -60,8 +60,8 @@ export default function WeaponsPage() {
             />
           ))}
         </GridTable>
-      </Dropdown>
-      <Dropdown
+      </Collapsible>
+      <Collapsible
         label={
           <div className="prose prose-invert">
             <h2 id="throwables">Throwables</h2>
@@ -83,7 +83,7 @@ export default function WeaponsPage() {
             />
           ))}
         </GridTable>
-      </Dropdown>
+      </Collapsible>
     </main>
   );
 }
