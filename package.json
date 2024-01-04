@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "spellcheck": "cspell '**/*.mdx'"
+    "spellcheck": "cspell '**/*.mdx --show-context --show-suggestions'"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.0",
