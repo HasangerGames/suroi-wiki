@@ -1,0 +1,36 @@
+{
+  "version": "0.2",
+  "language": "en_US",
+  "allowCompoundWords": true,
+  "words": [
+    // Suroi
+    "suroi",
+    "surviv",
+
+    // Game
+    "quickswitch",
+    "adren",
+
+    // Guns
+    "glock",
+    "garand",
+    "usas",
+    "mosin",
+    "nagant",
+
+    // People
+    "compositr",
+    "platonthek",
+    "slapdap",
+    "katloo",
+    "leia",
+    "asultra",
+    "hasanger",
+    "jchen",
+    "jass",
+    "redcoder",
+    "myka",
+    "zhew",
+    "kenos"
+  ]
+}
