@@ -39,7 +39,7 @@ const toExport = GenericArticlePage({
     },
     {
       title: "Doors",
-      items: ["door", "vault_door"],
+      items: ["door", "vault_door", "garage_door"],
       fileName: "doors"
     }
   ],
