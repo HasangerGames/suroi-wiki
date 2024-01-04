@@ -1,22 +1,76 @@
 {
   "version": "0.2",
-  "language": "en_US",
+  "language": "en_US,ru_RU,de_DE",
   "allowCompoundWords": true,
   "words": [
+    // Internet-speak
+    "tldr",
+
     // Suroi
     "suroi",
+    "surians",
     "surviv",
+    "survivrs",
 
     // Game
     "quickswitch",
     "adren",
+    "ghillie",
 
-    // Guns
+    // Buildings
+    "porta",
+
+    // Items
+    "medikit",
+    "medikits",
+
+    // Weapons
     "glock",
     "garand",
     "usas",
     "mosin",
+    "léon",
     "nagant",
+    "steyr",
+    /* CZ-75A */
+    "františek",
+    "koucký",
+    "ČZUB",
+    "Česká",
+    "zbrojovka",
+    "uherský",
+    "brod",
+    /* --- */
+    "revitalizer",
+    "iver",
+    "kbar",
+    "makarov",
+    "Émile",
+    "stoeger",
+    "benelli",
+    "sauer",
+    "uziel",
+    "ruger",
+    "pederson",
+    /* VSS */
+    "tsNIITochMash",
+    "ЦНИИТОЧМАШ",
+    "spetsiálnaya",
+    "snáyperskaya",
+    "Vintóvka",
+    "Специа́льная",
+    "Сна́йперская",
+    "Винто́вка",
+    "Spetsnaz",
+    /* --- */
+    "daewoo",
+    "arma",
+    "armalite",
+    "FAMAE",
+    "revitalizers",
+    "Guglielmo",
+    "Vollmer",
+    "Maschinenpistole",
 
     // People
     "compositr",
@@ -31,6 +85,12 @@
     "redcoder",
     "myka",
     "zhew",
-    "kenos"
+    "kenos",
+    "sniperboi",
+    "Medeus",
+
+    // Random
+    "excipients", // Plural of excipient
+    "retextured"
   ]
 }
