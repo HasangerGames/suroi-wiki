@@ -1,6 +1,6 @@
 {
   "version": "0.2",
-  "language": "en_US,ru",
+  "language": "en_US,ru-ru",
   "allowCompoundWords": true,
   "words": [
     // Internet-speak
@@ -92,5 +92,7 @@
     // Random
     "excipients", // Plural of excipient
     "retextured"
-  ]
+  ],
+
+  "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
 }
