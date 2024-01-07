@@ -7,3 +7,6 @@ const toExport = GenericArticlePage({
   path: "equipment/backpacks",
   Sidebar: BackpackSidebar,
 })
+
+export const { generateMetadata, generateStaticParams } = toExport;
+export default toExport.default;
