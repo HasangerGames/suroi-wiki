@@ -1,5 +1,4 @@
 import { wikiPages } from "@/lib/util/search";
-import { Heart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -36,6 +35,7 @@ export default function Footer() {
         <div className="flex flex-col gap-2">
           <b>Credits</b>
           <span>Made with love by Compositr and Kenos</span>
+					<Link href="/credits">Game and Wiki Credits</Link>
           <Link href="https://nextjs.org">NextJS by Vercel</Link>
           <Link href="https://tailwindcss.org">TailwindCSS</Link>
           <Link href="https://fusejs.io">Fuse.js</Link>
