@@ -11,12 +11,7 @@ export default function InfoboxRow({ columns, children }: InfoboxRowProps) {
 
   return (
     <div
-      className={`text-center divide-x-4 divide-muted bg-white/5 rounded-md grid text-sm`}
-      style={{
-        gridTemplateColumns: `repeat(${
-          columns ?? childrenCount
-        }, minmax(0, 1fr))`,
-      }}
+      className={`text-center divide-x-4 divide-muted bg-white/5 rounded-md text-sm flex flex-row`}
     >
       {children}
     </div>
