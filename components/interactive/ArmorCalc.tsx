@@ -1,20 +1,30 @@
 "use client";
 
-import { ArmorDefinition, ArmorType } from "@/vendor/suroi/common/src/definitions/armors";
-import { GunDefinition, Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import {
+  ArmorDefinition,
+  ArmorType,
+} from "@/vendor/suroi/common/src/definitions/armors";
+import {
+  GunDefinition,
+  Guns,
+} from "@/vendor/suroi/common/src/definitions/guns";
 import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
 import { useState } from "react";
 
-const Helmets = Armors.definitions.filter((armor) => armor.armorType === ArmorType.Helmet);
-const Vests = Armors.definitions.filter((armor) => armor.armorType === ArmorType.Vest);
+const Helmets = Armors.definitions.filter(
+  (armor) => armor.armorType === ArmorType.Helmet,
+);
+const Vests = Armors.definitions.filter(
+  (armor) => armor.armorType === ArmorType.Vest,
+);
 
 export default function ArmorCalc() {
   const [selectedGun, setSelectedGun] = useState<null | GunDefinition>(null);
   const [selectedHelmet, setSelectedHelmet] = useState<null | ArmorDefinition>(
-    null
+    null,
   );
   const [selectedVest, setSelectedVest] = useState<null | ArmorDefinition>(
-    null
+    null,
   );
 
   return (
@@ -24,11 +34,11 @@ export default function ArmorCalc() {
         <select
           id="gun"
           className="flex-1 rounded bg-muted"
-          onChange={e => {
+          onChange={(e) => {
             if (e.target.value === "") setSelectedGun(null);
             else
               setSelectedGun(
-                Guns.find((gun) => gun.idString === e.target.value) ?? null
+                Guns.find((gun) => gun.idString === e.target.value) ?? null,
               );
           }}
         >
@@ -48,7 +58,11 @@ export default function ArmorCalc() {
           className="flex-1 rounded bg-muted"
           onChange={(e) => {
             if (e.target.value === "") setSelectedHelmet(null);
-            else setSelectedHelmet(Helmets.find((helmet) => helmet.idString === e.target.value) ?? null);
+            else
+              setSelectedHelmet(
+                Helmets.find((helmet) => helmet.idString === e.target.value) ??
+                  null,
+              );
           }}
         >
           <option value="">None</option>
@@ -65,9 +79,12 @@ export default function ArmorCalc() {
         <select
           id="vest"
           className="flex-1 rounded bg-muted"
-          onChange={e => {
+          onChange={(e) => {
             if (e.target.value === "") setSelectedVest(null);
-            else setSelectedVest(Vests.find((vest) => vest.idString === e.target.value) ?? null);
+            else
+              setSelectedVest(
+                Vests.find((vest) => vest.idString === e.target.value) ?? null,
+              );
           }}
         >
           <option value="">None</option>
@@ -96,21 +113,27 @@ export default function ArmorCalc() {
             </span>
             <span>
               <span className="font-bold">Damage Reduction:</span>{" "}
-              {(((selectedHelmet?.damageReduction ?? 0) +
-                (selectedVest?.damageReduction ?? 0)) *
-                100).toFixed(2)}
+              {(
+                ((selectedHelmet?.damageReduction ?? 0) +
+                  (selectedVest?.damageReduction ?? 0)) *
+                100
+              ).toFixed(2)}
               %
             </span>
             <span>
               <span className="font-bold">Resulting Damage:</span>{" "}
               {(
                 selectedGun.ballistics.damage *
-                (1 - ((selectedHelmet?.damageReduction ?? 0) + (selectedVest?.damageReduction ?? 0)))
+                (1 -
+                  ((selectedHelmet?.damageReduction ?? 0) +
+                    (selectedVest?.damageReduction ?? 0)))
               ).toFixed(2)}{" "}
               (
               {(
                 selectedGun.ballistics.damage *
-                  (1 - ((selectedHelmet?.damageReduction ?? 0) + (selectedVest?.damageReduction ?? 0))) -
+                  (1 -
+                    ((selectedHelmet?.damageReduction ?? 0) +
+                      (selectedVest?.damageReduction ?? 0))) -
                 selectedGun.ballistics.damage
               ).toFixed(2)}
               )
@@ -122,14 +145,23 @@ export default function ArmorCalc() {
                 </abbr>
               </span>{" "}
               {Math.ceil(
-                100 / (selectedGun.ballistics.damage * (1 - ((selectedHelmet?.damageReduction ?? 0) + (selectedVest?.damageReduction ?? 0))))
+                100 /
+                  (selectedGun.ballistics.damage *
+                    (1 -
+                      ((selectedHelmet?.damageReduction ?? 0) +
+                        (selectedVest?.damageReduction ?? 0)))),
               )}
               {selectedGun.bulletCount && selectedGun.bulletCount > 1 && (
                 <span>
                   {" "}
                   (
                   {Math.ceil(
-                    100 / (selectedGun.ballistics.damage * (1 - ((selectedHelmet?.damageReduction ?? 0) + (selectedVest?.damageReduction ?? 0)))) / selectedGun.bulletCount
+                    100 /
+                      (selectedGun.ballistics.damage *
+                        (1 -
+                          ((selectedHelmet?.damageReduction ?? 0) +
+                            (selectedVest?.damageReduction ?? 0)))) /
+                      selectedGun.bulletCount,
                   )}{" "}
                   shot(s) with {selectedGun.bulletCount} bullets)
                 </span>

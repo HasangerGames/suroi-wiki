@@ -6,10 +6,10 @@ export default function URLLink(
       target?: string;
       className?: string;
       unstyled?: boolean;
-    }
+    },
 ) {
   const { unstyled, ...passProps } = props;
-  
+
   return (
     <Link
       {...passProps}

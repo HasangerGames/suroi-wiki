@@ -39,7 +39,7 @@ export default function ImageTabs({ images }: ImageTabsProps) {
           width={128}
           height={128}
           className={`w-40 h-40 my-4 p-4 ${getColor(
-            backgroundMode
+            backgroundMode,
           )} bg-repeat bg-[length:1rem]`}
         />
       )) || <h1>(No image available)</h1>}
@@ -62,12 +62,12 @@ function getColor(color: string) {
   return color === "transparent"
     ? "bg-transparent"
     : color === "white"
-    ? "bg-white"
-    : color === "black"
-    ? "bg-black"
-    : color === "checker"
-    ? "bg-checker bg-white"
-    : "";
+      ? "bg-white"
+      : color === "black"
+        ? "bg-black"
+        : color === "checker"
+          ? "bg-checker bg-white"
+          : "";
 }
 
 export interface ImageTabsProps extends React.PropsWithChildren {

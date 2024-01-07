@@ -80,7 +80,7 @@ export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {
         x: gun.fists.left.x,
         y: gun.fists.left.y,
         zIndex: gun.fists.leftZIndex ?? 1,
-      }
+      },
     );
   }
   return (

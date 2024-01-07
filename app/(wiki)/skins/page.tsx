@@ -7,7 +7,7 @@ export default function SkinsPage() {
     <main className="col-span-8 text-white">
       <article className="prose prose-invert">
         <h1>Skins</h1>
-        There are {Skins.definitions.length} skins. {" "}
+        There are {Skins.definitions.length} skins.{" "}
         {
           Skins.definitions.filter((value) => {
             return !value.notInLoadout;

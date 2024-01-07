@@ -18,12 +18,12 @@ import MultiSidebar from "../sidebars/MultiSidebar";
  * @returns Export this from the page.tsx
  */
 export default function GenericArticlePage<T extends ObjectDefinition>(
-  args: GenericArticlePageArgs<T>
+  args: GenericArticlePageArgs<T>,
 ) {
   const generateMetadata = ({ params }: { params: { item: string } }) => {
     const item = args.items.find((item) => item.idString === params.item);
     const combinedArticle = args.combinedArticles?.find(
-      (combined) => combined.fileName === params.item
+      (combined) => combined.fileName === params.item,
     );
 
     // If no item or combined article found, return no metadata
@@ -48,7 +48,7 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
   const defaultExport = async ({ params }: { params: { item: string } }) => {
     const files = await fs.readdir(
       path.join(process.cwd(), `/app/(wiki)/${args.path}/articles`),
-      { withFileTypes: true }
+      { withFileTypes: true },
     );
 
     const articles = Object.fromEntries(
@@ -56,8 +56,8 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
         files.map(async (file) => [
           file.name,
           await serialize(await fs.readFile(path.join(file.path, file.name))),
-        ])
-      )
+        ]),
+      ),
     );
 
     // Hardcoded redirect for dual guns
@@ -66,13 +66,13 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
 
     const item = args.items.find((item) => item.idString === params.item);
     const combinedArticle = args.combinedArticles?.find(
-      (combined) => combined.fileName === params.item
+      (combined) => combined.fileName === params.item,
     );
     const parentCombinedArticle = args.combinedArticles?.find((combined) =>
-      combined.items.find((item) => item === params.item)
+      combined.items.find((item) => item === params.item),
     );
     const combinedArticleItems = combinedArticle?.items.map(
-      (item) => args.items.find((i) => i.idString === item)!
+      (item) => args.items.find((i) => i.idString === item)!,
     );
 
     const article =

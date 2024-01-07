@@ -6,7 +6,7 @@ const toExport = GenericArticlePage({
   items: Buildings.definitions,
   path: "buildings",
   Sidebar: BuildingSidebar,
-})
+});
 
 export const { generateMetadata, generateStaticParams } = toExport;
 export default toExport.default;

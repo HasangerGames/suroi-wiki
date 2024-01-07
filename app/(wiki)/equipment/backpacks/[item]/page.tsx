@@ -6,4 +6,4 @@ const toExport = GenericArticlePage({
   items: Backpacks.definitions,
   path: "equipment/backpacks",
   Sidebar: BackpackSidebar,
-})
+});

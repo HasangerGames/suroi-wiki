@@ -4,7 +4,7 @@ import InfoboxColumn from "./InfoboxColumn";
 
 export default function ExplosionRow({ explosion }: ExplosionRowProps) {
   const explosionData = Explosions.definitions.find(
-    (e) => e.idString === explosion
+    (e) => e.idString === explosion,
   );
   // Return empty if no explosion data
   if (!explosionData) return <></>;

@@ -3,7 +3,7 @@ import { Children } from "react";
 export default function InfoboxRow({ columns, children }: InfoboxRowProps) {
   let childrenCount = 0;
   Children.forEach(children, (child) =>
-    Boolean(child) ? childrenCount++ : null
+    Boolean(child) ? childrenCount++ : null,
   );
 
   // Make infoboxrow empty if there are no children

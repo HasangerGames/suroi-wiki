@@ -56,8 +56,8 @@ export default function BuildingSidebar({
                         self.findIndex(
                           (t) =>
                             t.idString.toString() ===
-                            obstacle.idString.toString()
-                        )
+                            obstacle.idString.toString(),
+                        ),
                     )
                     .map((obstacle) => (
                       <Link
@@ -90,7 +90,7 @@ export default function BuildingSidebar({
                           (key) => ({
                             ...subBuildings,
                             idString: key,
-                          })
+                          }),
                         );
                       return subBuildings;
                     })
@@ -103,8 +103,8 @@ export default function BuildingSidebar({
                         self.findIndex(
                           (t) =>
                             t.idString.toString() ===
-                            subBuildings.idString.toString()
-                        )
+                            subBuildings.idString.toString(),
+                        ),
                     )
                     .map((subBuildings) => (
                       <Link

@@ -14,7 +14,10 @@ export default function InfoboxSection({
 
   return (
     <>
-      <div onClick={() => setIsOpened(!isOpened)} className="relative cursor-pointer">
+      <div
+        onClick={() => setIsOpened(!isOpened)}
+        className="relative cursor-pointer"
+      >
         <div className="p-2 bg-primary">
           <h3 className="font-bold text-center">
             {abbr ? <abbr title={abbr}>{title}</abbr> : title}
