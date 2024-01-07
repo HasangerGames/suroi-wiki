@@ -84,85 +84,6 @@ export default async function Home() {
           ))}
         </GridTable>
       </div>
-      <div>
-        <h1 className="text-xl font-bold text-center mb-4">Wiki Team</h1>
-        <GridTable>
-          <Person
-            name="Compositr"
-            description="Main Wiki Developer"
-            avatar="https://avatars.githubusercontent.com/u/43405050"
-            website="https://compositr.dev"
-          />
-          <Person
-            name="Kenos"
-            description="Wiki Developer, advanced features"
-            avatar="https://avatars.githubusercontent.com/u/75338427"
-            website="https://kenos.codeberg.page"
-          />
-          <Person
-            name="Katloo"
-            description="Wiki Content Manager"
-            avatar="https://avatars.githubusercontent.com/u/132523318"
-          />
-          <Person
-            name="1092384"
-            description="Wiki Content Manager"
-            avatar="https://avatars.githubusercontent.com/u/66282302"
-          />
-        </GridTable>
-      </div>
-      <div>
-        <h1 className="text-xl font-bold text-center mb-4">
-          Game Development Team
-        </h1>
-        <GridTable>
-          <Person
-            name="Hasanger"
-            description="Owner of Suroi"
-            avatar="https://avatars.githubusercontent.com/u/20248785"
-          />
-          <Person
-            name="Leia"
-            description="Developer"
-            avatar="https://avatars.githubusercontent.com/u/69596237"
-          />
-          <Person
-            name="Katloo"
-            description="Game Balancing and Planning"
-            avatar="https://avatars.githubusercontent.com/u/132523318"
-          />
-          <Person
-            name="Damien"
-            description="Chores and Suroi Discord bot"
-            avatar="https://avatars.githubusercontent.com/u/34838468"
-          />
-          <Person
-            name="eiπ"
-            description="Developer"
-            avatar="https://avatars.githubusercontent.com/u/91853103"
-          />
-          <Person
-            name="Chpsterz"
-            description="Developer"
-            avatar="https://avatars.githubusercontent.com/u/72819276"
-          />
-          <Person
-            name="Limenade"
-            description="Developer"
-            avatar="https://avatars.githubusercontent.com/u/88803242"
-          />
-          <Person
-            name="Radians"
-            description="Developer"
-            avatar="https://avatars.githubusercontent.com/u/61424950"
-          />
-          <Person
-            name="Milocat"
-            description="Developer"
-            avatar="https://avatars.githubusercontent.com/u/119687855"
-          />
-        </GridTable>
-      </div>
     </main>
   );
 }
@@ -195,28 +116,4 @@ function Card({ title, children }: CardProps) {
 
 interface CardProps extends React.PropsWithChildren {
   title: string;
-}
-
-function Person({ avatar, name, description, website }: PersonProps) {
-  return (
-    <div className="flex flex-col w-full gap-4 p-8 text-center rounded-md border-border border">
-      <Image
-        src={avatar}
-        width={100}
-        height={100}
-        className="mx-auto w-24 h-24 rounded-full"
-        alt={name}
-      />
-      <h1 className="text-2xl font-bold">{name}</h1>
-      <p>{description}</p>
-      {website && <Link href={website}>{website}</Link>}
-    </div>
-  );
-}
-
-interface PersonProps extends React.PropsWithChildren {
-  avatar: string;
-  name: string;
-  description: string;
-  website?: string;
 }
