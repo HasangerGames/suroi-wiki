@@ -28,6 +28,8 @@
 
     // Weapons
     "glock",
+		"glocks",
+		"minimi",
     "garand",
     "usas",
     "mosin",
@@ -92,10 +94,13 @@
     "kenos",
     "sniperboi",
     "Medeus",
+		"eipi",
 
     // Random
     "excipients", // Plural of excipient
-    "retextured"
+    "retextured",
+		"misaligning",
+		"synergize"
   ],
 
   "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
