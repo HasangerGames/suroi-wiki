@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint && prettier '**/*.tsx' --write",
+    "lint": "next lint --fix && prettier '**/*.tsx' --write",
     "spellcheck": "cspell '**/*.mdx' --show-context --show-suggestions"
   },
   "dependencies": {
