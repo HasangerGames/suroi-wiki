@@ -24,7 +24,9 @@ export default function PageCard({
             <h3 className="text-lg font-bold leading-loose underline transition-colors group-hover:text-blue-500">
               {title}
             </h3>
-            <p className="transition-colors group-hover:text-blue-500">{description}</p>
+            <p className="transition-colors group-hover:text-blue-500">
+              {description}
+            </p>
           </div>
         </div>
       </Link>

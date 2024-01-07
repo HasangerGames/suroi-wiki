@@ -22,28 +22,28 @@ export default function PlayerHoldingThrowable({
       state === "cook"
         ? item.animation.cook.leftFist.x * 20
         : state === "throw"
-        ? item.animation.throw.leftFist.x * 20
-        : 38,
+          ? item.animation.throw.leftFist.x * 20
+          : 38,
     y:
       state === "cook"
         ? item.animation.cook.leftFist.y * 20
         : state === "throw"
-        ? item.animation.throw.leftFist.y * 20
-        : -35,
+          ? item.animation.throw.leftFist.y * 20
+          : -35,
   };
   const rightFist: Position = {
     x:
       state === "cook"
         ? item.animation.cook.rightFist.x * 20
         : state === "throw"
-        ? item.animation.throw.rightFist.x * 20
-        : 38,
+          ? item.animation.throw.rightFist.x * 20
+          : 38,
     y:
       state === "cook"
         ? item.animation.cook.rightFist.y * 20
         : state === "throw"
-        ? item.animation.throw.rightFist.y * 20
-        : 35,
+          ? item.animation.throw.rightFist.y * 20
+          : 35,
   };
 
   const image: SVGObject[] = [

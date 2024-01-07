@@ -26,7 +26,7 @@ export default function PlayerWearingEquipment() {
               url: getSuroiImageLink(
                 Skins.definitions[skinIndex],
                 undefined,
-                "base"
+                "base",
               ),
               zIndex: 1,
             },
@@ -35,7 +35,7 @@ export default function PlayerWearingEquipment() {
               url: getSuroiImageLink(
                 Skins.definitions[skinIndex],
                 undefined,
-                "fist"
+                "fist",
               ),
               x: 38,
               y: 35,
@@ -46,7 +46,7 @@ export default function PlayerWearingEquipment() {
               url: getSuroiImageLink(
                 Skins.definitions[skinIndex],
                 undefined,
-                "fist"
+                "fist",
               ),
               x: 38,
               y: -35,
@@ -84,7 +84,7 @@ export default function PlayerWearingEquipment() {
             setHelmet(
               Armors.definitions.find((armor) => {
                 return armor.idString === e.target.value;
-              })
+              }),
             );
           }
         }}
@@ -109,7 +109,7 @@ export default function PlayerWearingEquipment() {
             setVest(
               Armors.definitions.find((armor) => {
                 return armor.idString === e.target.value;
-              })
+              }),
             );
           }
         }}
@@ -134,7 +134,7 @@ export default function PlayerWearingEquipment() {
             setBackpack(
               Backpacks.definitions.find((backpack) => {
                 return backpack.idString === e.target.value;
-              })
+              }),
             );
           }
         }}
@@ -153,7 +153,7 @@ export default function PlayerWearingEquipment() {
             setSkinIndex(
               Skins.definitions.findIndex((skin) => {
                 return skin.idString === e.target.value;
-              })
+              }),
             );
           }
         }}

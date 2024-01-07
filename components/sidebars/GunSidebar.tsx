@@ -41,7 +41,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           dual ? dualGun! : gun,
           undefined,
           undefined,
-          true
+          true,
         )}
         imageVariations={[
           {
@@ -49,7 +49,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
               dual ? dualGun! : gun,
               undefined,
               undefined,
-              true
+              true,
             ),
             title: "Loot",
           },
