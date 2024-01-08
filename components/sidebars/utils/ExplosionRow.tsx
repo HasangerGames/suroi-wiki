@@ -24,13 +24,15 @@ export default function ExplosionRow({ explosion }: ExplosionRowProps) {
         <InfoboxColumn title="Shrapnel Count">
           {explosionData.shrapnelCount}
         </InfoboxColumn>
+      </InfoboxRow>
+			<InfoboxRow>
         <InfoboxColumn title="Minimum Radius">
           {explosionData.radius.min}
         </InfoboxColumn>
         <InfoboxColumn title="Maximum Radius">
           {explosionData.radius.max}
         </InfoboxColumn>
-      </InfoboxRow>
+			</InfoboxRow>
       <InfoboxRow>
         <InfoboxColumn title="Shrapnel Damage">
           {explosionData.ballistics.damage}

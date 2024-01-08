@@ -5,7 +5,8 @@ import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import AmmoIcon from "../icons/AmmoIcon";
 import HealingIcon from "../icons/HealingIcon";
-import { IMAGE_BASE_URL } from "@/lib/util/suroi";
+import { IMAGE_BASE_URL, getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
+import Image from "next/image";
 
 export default function BackpackSidebar({
   item,
@@ -15,7 +16,16 @@ export default function BackpackSidebar({
   return (
     <GenericSidebar
       title={item.name}
-      image={`${IMAGE_BASE_URL}game/loot/${item.idString}.svg`}
+			imageVariations={[
+				{
+					title: "Loot",
+					url: getSuroiImageLink(item)
+				},
+				{
+					title: "World",
+					url: `${IMAGE_BASE_URL}game/equipment/${item.idString}_world.svg`
+				},
+			]}
     >
       <InfoboxHeader>Healing Capacity</InfoboxHeader>
       <InfoboxRow>
@@ -48,20 +58,68 @@ export default function BackpackSidebar({
       </InfoboxRow>
 
       <InfoboxHeader>Ammo Capacity</InfoboxHeader>
-      <InfoboxRow>
-        {["12g", "556mm", "762mm", "9mm"].map((ammo) => (
-          <InfoboxColumn
-            key={ammo}
-            title={
+			<InfoboxRow>
+				{["12g", "556mm"].map((ammo) => (
+					<InfoboxColumn
+						key={ammo}
+						title={
               <div className="flex justify-center">
                 <AmmoIcon ammo={ammo} scale={0.55} />
               </div>
-            }
-          >
-            {item.maxCapacity[ammo]}
-          </InfoboxColumn>
-        ))}
-      </InfoboxRow>
+						}
+					>
+						{item.maxCapacity[ammo]}
+					</InfoboxColumn>
+				))}
+			</InfoboxRow>
+			<InfoboxRow>
+				{["762mm", "9mm"].map((ammo) => (
+					<InfoboxColumn
+						key={ammo}
+						title={
+              <div className="flex justify-center">
+                <AmmoIcon ammo={ammo} scale={0.55} />
+              </div>
+						}
+					>
+						{item.maxCapacity[ammo]}
+					</InfoboxColumn>
+				))}
+			</InfoboxRow>
+			<InfoboxRow>
+				{["127mm", "power_cell", "curadell"].map((ammo) => (
+					<InfoboxColumn
+						key={ammo}
+						title={
+              <div className="flex justify-center">
+                <AmmoIcon ammo={ammo} scale={0.55} />
+              </div>
+						}
+					>
+						{item.maxCapacity[ammo]}
+					</InfoboxColumn>
+				))}
+			</InfoboxRow>
+			<InfoboxHeader>Throwable Capacity</InfoboxHeader>
+			<InfoboxRow>
+				{["frag_grenade", "smoke_grenade"].map((throwable) => (
+					<InfoboxColumn
+						key={throwable}
+						title={
+							<div className="flex justify-center">
+								<Image
+									src={getSuroiImageLink(getSuroiItem(throwable))}
+									alt={throwable}
+									width={40}
+									height={40}
+								/>
+							</div>
+						}
+					>
+						{item.maxCapacity[throwable]}
+					</InfoboxColumn>
+				))}
+			</InfoboxRow>
     </GenericSidebar>
   );
 }

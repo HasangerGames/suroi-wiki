@@ -10,6 +10,7 @@ import { notFound, redirect } from "next/navigation";
 import MDXClient from "../client/MDXClient";
 import Empty from "../articles/notices/Empty";
 import MultiSidebar from "../sidebars/MultiSidebar";
+import EditButton from "../interactive/EditButton";
 
 /**
  * Handles rendering, layouts and metadata for article pages. Simple fill out the
@@ -93,6 +94,7 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
         <div className="col-span-4 lg:col-span-6 prose prose-invert">
           <h1 className="hidden sm:block">
             {item?.name ?? combinedArticle?.title}
+						<EditButton path={args.path} id={item?.idString ?? combinedArticle?.fileName ?? ""} />
           </h1>
           {
             // If there is an article, render it

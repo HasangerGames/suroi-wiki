@@ -21,7 +21,7 @@ export default function ImageTabs({ images }: ImageTabsProps) {
             <button
               key={index}
               onClick={() => setCurrentTab(index)}
-              className={`flex justify-center grow rounded-md min-w-[7ch] hover:bg-white/5 cursor-pointer text-muted-foreground hover:text-white ${
+              className={`flex basis-0 justify-center grow rounded-md min-w-[7ch] hover:bg-white/5 cursor-pointer text-muted-foreground hover:text-white ${
                 currentTab === index
                   ? "!text-white bg-white/10 ring-primary ring"
                   : ""
