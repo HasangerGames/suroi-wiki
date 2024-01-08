@@ -5,7 +5,7 @@ export default function GenericListingPageFactory(
   objects: ObjectDefinition[],
   name: string,
   path: string,
-  description?: string
+  description?: string,
 ) {
   return function GenericListingPage() {
     return (

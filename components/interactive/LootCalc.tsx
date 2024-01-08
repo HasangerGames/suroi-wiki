@@ -16,7 +16,7 @@ export default function LootCalc() {
     enabled: !!(debouncedTable && debouncedItem),
     queryFn: () =>
       fetch(
-        `/api/loot/chance?table=${debouncedTable}&item=${debouncedItem}`
+        `/api/loot/chance?table=${debouncedTable}&item=${debouncedItem}`,
       ).then((r) => r.json()),
   });
 

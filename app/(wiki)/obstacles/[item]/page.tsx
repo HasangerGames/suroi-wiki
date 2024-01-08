@@ -20,28 +20,33 @@ const toExport = GenericArticlePage({
     {
       title: "Airdrops",
       items: ["airdrop_crate_locked", "airdrop_crate", "gold_airdrop_crate"],
-      fileName: "airdrops"
+      fileName: "airdrops",
     },
     {
       title: "Gun Mounts",
       items: ["gun_mount_mcx_spear", "gun_mount_stoner_63", "gun_mount_maul"],
-      fileName: "gun_mounts"
+      fileName: "gun_mounts",
     },
     {
       title: "Toilets",
-      items: ["toilet", "used_toilet", "porta_potty_toilet_open", "porta_potty_toilet_closed"],
-      fileName: "toilets"
+      items: [
+        "toilet",
+        "used_toilet",
+        "porta_potty_toilet_open",
+        "porta_potty_toilet_closed",
+      ],
+      fileName: "toilets",
     },
     {
       title: "Drawers",
       items: ["small_drawer", "large_drawer"],
-      fileName: "drawers"
+      fileName: "drawers",
     },
     {
       title: "Doors",
       items: ["door", "vault_door", "garage_door"],
-      fileName: "doors"
-    }
+      fileName: "doors",
+    },
   ],
 });
 

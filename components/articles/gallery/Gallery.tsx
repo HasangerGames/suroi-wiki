@@ -51,7 +51,7 @@ export default function Gallery({ images }: GalleryProps) {
               className="absolute hidden z-10 md:block left-0 top-[50%] translate-y-[-50%] rounded-full p-8 hover:bg-muted"
               onClick={() =>
                 setCurrentImage(
-                  currentImage - 1 < 0 ? images.length - 1 : currentImage - 1
+                  currentImage - 1 < 0 ? images.length - 1 : currentImage - 1,
                 )
               }
             >

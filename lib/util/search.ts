@@ -81,6 +81,18 @@ export const wikiPages: SearchItem[] = [
     description: "Guidelines for writing articles",
     image: `${IMAGE_BASE_URL}game/emotes/monocle_face.svg`,
   },
+	{
+		name: "Developer Guide",
+		url: "/meta/developing",
+		description: "Guidelines for developing for the wiki",
+		image: `${IMAGE_BASE_URL}game/emotes/picasso_face.svg`
+	},
+	{
+		name: "Credits",
+		url: "/credits",
+		description: "Game and Wiki Credits",
+		image: `${IMAGE_BASE_URL}game/emotes/partying_face.svg`
+	}
 ];
 
 export function generateItemsFromDefinitions(

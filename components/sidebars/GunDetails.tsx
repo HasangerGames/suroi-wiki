@@ -213,14 +213,14 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
           name="Fire"
           src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/weapons/${gun.idString.replace(
             "dual_",
-            ""
+            "",
           )}_fire.mp3`}
         />
         <InfoboxAudio
           name="Switch"
           src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/weapons/${gun.idString.replace(
             "dual_",
-            ""
+            "",
           )}_switch.mp3`}
         />
         <InfoboxAudio

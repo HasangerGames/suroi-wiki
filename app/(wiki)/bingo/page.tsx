@@ -53,8 +53,8 @@ function BingoCard({ text }: BingoCardProps) {
         text.length > 20
           ? "text-xs"
           : text.length > 10
-          ? "text-base"
-          : "text-xl"
+            ? "text-base"
+            : "text-xl"
       }
       aspect-square border-border border p-2`}
       onClick={() => setToggled(!toggled)}
