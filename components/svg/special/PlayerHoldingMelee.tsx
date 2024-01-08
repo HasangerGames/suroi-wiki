@@ -130,7 +130,7 @@ export default function PlayerHoldingMelee({
             onClick={() => setCurrentMode(mode)}
             className={`p-2 ${
               currentMode === mode ? "border-primary" : "border-border"
-            } border rounded-md`}
+            } border rounded-md basis-0 grow`}
           >
             {mode}
           </button>
