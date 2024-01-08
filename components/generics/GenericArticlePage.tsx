@@ -3,7 +3,7 @@ import {
   ReferenceTo,
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import path from "path";
-import { ComponentType } from "react";
+import { ComponentType, ReactNode } from "react";
 import fs from "node:fs/promises";
 import { serialize } from "next-mdx-remote/serialize";
 import { notFound, redirect } from "next/navigation";
@@ -77,7 +77,7 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
     );
 
     const article =
-      articles[(params.item ?? combinedArticle?.fileName) + ".mdx"] ?? null;
+      articles[(params.item ?? combinedArticle?.fileName) + ".md"] ?? null;
 
     if (!item) {
       // Lookup combined articles
@@ -105,6 +105,9 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
               <Empty />
             )
           }
+					{
+						args.After && args.After
+					}
         </div>
         {item ? (
           <args.Sidebar item={item} />
@@ -135,6 +138,7 @@ export interface GenericArticlePageArgs<T extends ObjectDefinition> {
   items: T[];
   combinedArticles?: CombinedArticle<T>[];
   Sidebar: ComponentType<{ item: T }>;
+	After?: ReactNode
 }
 
 export interface CombinedArticle<T extends ObjectDefinition> {
