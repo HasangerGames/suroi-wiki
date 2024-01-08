@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function EditButton({ path, id }: EditButtonProps) {
   return (
     <Link
-      href={`${WIKI_URL}edit/${WIKI_BRANCH}/app/(wiki)/${path}/articles/${id}.mdx`}
+      href={`${WIKI_URL}edit/${WIKI_BRANCH}/app/(wiki)/${path}/articles/${id}.md`}
       className="inline-block not-prose"
     >
       <div className="transition-colors m-4 p-2 rounded-md bg-muted hover:bg-primary flex flex-row gap-2 text-lg font-normal">
