@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint && prettier **/*.{mdx,tsx,ts} --write",
-    "spellcheck": "cspell '**/*.mdx' --show-context --show-suggestions"
+    "spellcheck": "cspell '**/*.{md,mdx}' --show-context --show-suggestions"
   },
   "dependencies": {
     "@cspell/dict-ru_ru": "^2.2.0",

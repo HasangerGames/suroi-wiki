@@ -33,7 +33,7 @@ export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
     if (params.item.startsWith("dual_"))
       return redirect(`/weapons/guns/${params.item.replace("dual_", "")}`);
 
-    const article = articles[params.item + ".mdx"] ?? null;
+    const article = articles[params.item + ".md"] ?? null;
 
     if (article)
       return (
