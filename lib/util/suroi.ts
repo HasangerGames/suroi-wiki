@@ -75,17 +75,17 @@ type ObjectCategoryMapping<Category extends ObjectCategory> =
   Category extends ObjectCategory.Obstacle
     ? ObstacleDefinition
     : Category extends ObjectCategory.Building
-    ? BuildingDefinition
-    : Category extends ObjectCategory.Decal
-    ? DecalDefinition
-    : Category extends ObjectCategory.Loot
-    ? LootDefinition
-    : never;
+      ? BuildingDefinition
+      : Category extends ObjectCategory.Decal
+        ? DecalDefinition
+        : Category extends ObjectCategory.Loot
+          ? LootDefinition
+          : never;
 
 export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
 
 export function getSuroiImageLink<
-  T extends ObjectDefinition | ItemDefinition | InventoryItemDefinition
+  T extends ObjectDefinition | ItemDefinition | InventoryItemDefinition,
 >(obj: T, variation?: number, append?: string | string[], dual?: boolean) {
   // Is obj an item?
   if ("itemType" in obj)
@@ -119,7 +119,7 @@ function _itemImageLink(
   itemType: ItemType,
   variation?: number,
   append?: string | string[],
-  dual?: boolean
+  dual?: boolean,
 ) {
   return `${IMAGE_BASE_URL}${
     IMAGE_BASE_URLS[ItemType[itemType] as keyof typeof ItemType]
@@ -137,7 +137,7 @@ function _itemImageLink(
 function _otherImageLink<Category extends ObjectCategory>(
   obj: ObjectCategoryMapping<Category>,
   category: Category,
-  variation?: number
+  variation?: number,
 ) {
   const key = ObjectCategory[category] as keyof typeof ObjectCategory;
 
@@ -151,10 +151,12 @@ function _otherImageLink<Category extends ObjectCategory>(
 export function buildingVariations(building: BuildingDefinition) {
   return [
     ...(building?.ceilingImages?.map(
-      (image) => `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`
+      (image) =>
+        `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`,
     ) ?? []),
     ...(building?.floorImages?.map(
-      (image) => `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`
+      (image) =>
+        `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`,
     ) ?? []),
   ];
 }
@@ -177,7 +179,7 @@ export function obstacleContainedBy(obstacle: ObstacleDefinition) {
       b.obstacles?.some(
         (sub) =>
           sub.idString === obstacle.idString ||
-          Object.keys(sub.idString).some((key) => key === obstacle.idString)
+          Object.keys(sub.idString).some((key) => key === obstacle.idString),
       )
     ) {
       parents.push(b);
@@ -193,24 +195,28 @@ export function obstacleContainedBy(obstacle: ObstacleDefinition) {
 
 function isBuilding(obj: ObjectDefinition): obj is BuildingDefinition {
   return Boolean(
-    Buildings.definitions.find((building) => building.idString === obj.idString)
+    Buildings.definitions.find(
+      (building) => building.idString === obj.idString,
+    ),
   );
 }
 
 function isObstacle(obj: ObjectDefinition): obj is ObstacleDefinition {
   return Boolean(
-    Obstacles.definitions.find((obstacle) => obstacle.idString === obj.idString)
+    Obstacles.definitions.find(
+      (obstacle) => obstacle.idString === obj.idString,
+    ),
   );
 }
 
 function isDecal(obj: ObjectDefinition): obj is DecalDefinition {
   return Boolean(
-    Decals.definitions.find((decal) => decal.idString === obj.idString)
+    Decals.definitions.find((decal) => decal.idString === obj.idString),
   );
 }
 
 function isLoot(obj: ObjectDefinition): obj is LootDefinition {
   return Boolean(
-    Loots.definitions.find((loot) => loot.idString === obj.idString)
+    Loots.definitions.find((loot) => loot.idString === obj.idString),
   );
 }

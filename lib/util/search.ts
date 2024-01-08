@@ -51,12 +51,12 @@ export const wikiPages: SearchItem[] = [
     description: "List of armor, including helmet and vests",
     image: getSuroiImageLink(getSuroiItem("regular_vest")),
   },
-	{
-		name: "Backpacks",
-		url: "/equipment/backpacks/",
-		description: "List of backpacks",
-		image: getSuroiImageLink(getSuroiItem("tactical_pack"))
-	},
+  {
+    name: "Backpacks",
+    url: "/equipment/backpacks/",
+    description: "List of backpacks",
+    image: getSuroiImageLink(getSuroiItem("tactical_pack")),
+  },
   {
     name: "Obstacles",
     url: "/obstacles",
@@ -97,7 +97,7 @@ export const wikiPages: SearchItem[] = [
 
 export function generateItemsFromDefinitions(
   definitions: any,
-  baseURL: string
+  baseURL: string,
 ): SearchItem[] {
   return definitions.map((definition: any) => ({
     name: definition.name,

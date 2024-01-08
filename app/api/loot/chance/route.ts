@@ -20,7 +20,7 @@ export async function GET(req: NextRequest) {
       JSON.stringify({
         error: APIErrorCodes.ItemNotFound,
       }),
-      { status: 404 }
+      { status: 404 },
     );
 
   const lootTable = LootTables[tableSearch];
@@ -29,7 +29,7 @@ export async function GET(req: NextRequest) {
       JSON.stringify({
         error: APIErrorCodes.LootTableNotFound,
       }),
-      { status: 404 }
+      { status: 404 },
     );
 
   // Check for item in loot table itself
@@ -51,7 +51,7 @@ export async function GET(req: NextRequest) {
         total: tableTotal,
         chance: lootTableItem.weight / tableTotal,
         oneIn: Math.round(1 / (lootTableItem.weight / tableTotal)),
-      })
+      }),
     );
   }
 
@@ -65,7 +65,7 @@ export async function GET(req: NextRequest) {
     const tierItem = tier.find(
       // As of now there should always be `"item" in loot`
       // TODO: Make recursive function to expand loot tiers that reference other tiers in the future
-      (loot) => "item" in loot && loot.item === itemSearch
+      (loot) => "item" in loot && loot.item === itemSearch,
     );
 
     if (!tierItem) continue;
@@ -84,7 +84,7 @@ export async function GET(req: NextRequest) {
         tableTotal: tableTotal,
         chance,
         oneIn: Math.round(1 / chance),
-      })
+      }),
     );
   }
 
@@ -92,6 +92,6 @@ export async function GET(req: NextRequest) {
     JSON.stringify({
       error: APIErrorCodes.ItemNotInLootTable,
     }),
-    { status: 404 }
+    { status: 404 },
   );
 }
