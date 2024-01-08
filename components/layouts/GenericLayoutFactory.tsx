@@ -9,7 +9,7 @@ import React, { ComponentType } from "react";
  * @returns Is a HOC that returns a layout to export to Next,js
  */
 export default function GenericLayoutFactory<T extends ObjectDefinition>(
-  args: GenericLayoutFactoryArgs<T>
+  args: GenericLayoutFactoryArgs<T>,
 ) {
   return function GenericLayout({
     children,

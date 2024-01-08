@@ -1,5 +1,5 @@
 import { FileCode2 } from "lucide-react";
-import Link from "./Link"
+import Link from "./Link";
 
 export default function FileLink({
   file,

@@ -17,7 +17,7 @@ export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
   }) {
     const files = await fs.readdir(
       path.join(process.cwd(), `/app/(wiki)/${args.path}/articles`),
-      { withFileTypes: true }
+      { withFileTypes: true },
     );
 
     const articles = Object.fromEntries(
@@ -25,8 +25,8 @@ export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
         files.map(async (file) => [
           file.name,
           await serialize(await fs.readFile(path.join(file.path, file.name))),
-        ])
-      )
+        ]),
+      ),
     );
 
     // Hardcoded redirect for dual guns
@@ -55,7 +55,7 @@ export interface GenericMDXPageFactoryArgs {
 }
 
 export function GenericGenerateStaticParamsFactory<T extends ObjectDefinition>(
-  items: T[]
+  items: T[],
 ) {
   return function () {
     return items.map((item) => ({
@@ -65,7 +65,7 @@ export function GenericGenerateStaticParamsFactory<T extends ObjectDefinition>(
 }
 
 export function GenericGenerateMetadataFactory<T extends ObjectDefinition>(
-  items: T[]
+  items: T[],
 ) {
   return function ({ params }: { params: { item: string } }): Metadata {
     const item = items.find((item) => item.idString === params.item);

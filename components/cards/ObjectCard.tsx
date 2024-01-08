@@ -16,7 +16,7 @@ export function ObjectCard({ obj, path }: ObjectCardProps) {
           <Image
             src={getSuroiImageLink(
               obj,
-              "variations" in obj && obj.variations ? 1 : 0
+              "variations" in obj && obj.variations ? 1 : 0,
             )}
             alt={`Image of ${obj.name}`}
             width={100}

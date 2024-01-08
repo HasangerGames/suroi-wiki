@@ -17,7 +17,7 @@ export default function GunLayout({
   if (!gun) notFound();
 
   const explosion = Explosions.definitions.find(
-    (explosion) => explosion.idString === gun.ballistics.onHitExplosion
+    (explosion) => explosion.idString === gun.ballistics.onHitExplosion,
   );
 
   return (

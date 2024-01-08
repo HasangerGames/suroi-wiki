@@ -38,17 +38,17 @@ export default function PlayerHoldingMelee({
     x: easeLinear(
       melee.image?.position.x ?? 0,
       melee.image?.usePosition.x ?? 0,
-      progress
+      progress,
     ),
     y: easeLinear(
       melee.image?.position.y ?? 0,
       melee.image?.usePosition.y ?? 0,
-      progress
+      progress,
     ),
     rotation: easeLinear(
       melee.image?.angle ?? 0,
       melee.image?.useAngle ?? 0,
-      progress
+      progress,
     ),
     zIndex: 1,
   };
@@ -59,12 +59,12 @@ export default function PlayerHoldingMelee({
     x: easeLinear(
       melee.fists.left.x,
       melee.fists.useLeft.x,
-      progress * (!fist ? 1 : randomFist)
+      progress * (!fist ? 1 : randomFist),
     ),
     y: easeLinear(
       melee.fists.left.y,
       melee.fists.useLeft.y,
-      progress * (!fist ? 1 : randomFist)
+      progress * (!fist ? 1 : randomFist),
     ),
     zIndex: 4,
   };
@@ -75,12 +75,12 @@ export default function PlayerHoldingMelee({
     x: easeLinear(
       melee.fists.right.x,
       melee.fists.useRight.x,
-      progress * (fist ? 1 : randomFist)
+      progress * (fist ? 1 : randomFist),
     ),
     y: easeLinear(
       melee.fists.right.y,
       melee.fists.useRight.y,
-      progress * (fist ? 1 : randomFist)
+      progress * (fist ? 1 : randomFist),
     ),
     zIndex: 4,
   };

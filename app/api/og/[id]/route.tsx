@@ -17,17 +17,17 @@ export async function GET(req: NextRequest) {
   const image = getSuroiImageLink(item);
 
   const inter = await fetch(
-    new URL("../../../../public/font/Inter-Regular.ttf", import.meta.url)
+    new URL("../../../../public/font/Inter-Regular.ttf", import.meta.url),
   ).then((res) => res.arrayBuffer());
   const interBold = await fetch(
-    new URL("../../../../public/font/Inter-Bold.ttf", import.meta.url)
+    new URL("../../../../public/font/Inter-Bold.ttf", import.meta.url),
   ).then((res) => res.arrayBuffer());
   const spaceMono = await fetch(
-    new URL("../../../../public/font/SpaceMono-Regular.ttf", import.meta.url)
+    new URL("../../../../public/font/SpaceMono-Regular.ttf", import.meta.url),
   ).then((res) => res.arrayBuffer());
 
   const logoData = await fetch(
-    new URL("../../../../public/img/logo.png", import.meta.url)
+    new URL("../../../../public/img/logo.png", import.meta.url),
   ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
@@ -122,6 +122,6 @@ export async function GET(req: NextRequest) {
           weight: 400,
         },
       ],
-    }
+    },
   );
 }

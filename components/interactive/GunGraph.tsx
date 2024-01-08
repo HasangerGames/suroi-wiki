@@ -22,7 +22,7 @@ export default function GunGraph({ gun }: GunGraphProps) {
     PointElement,
     Legend,
     Tooltip,
-    Title
+    Title,
   );
 
   const graphCanvas = useRef(null);

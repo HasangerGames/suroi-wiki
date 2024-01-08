@@ -7,10 +7,7 @@ import { getSuroiImageLink } from "@/lib/util/suroi";
 
 export default function ArmorSidebar({ item }: { item: ArmorDefinition }) {
   return (
-    <GenericSidebar
-      title={item.name}
-      image={getSuroiImageLink(item)}
-    >
+    <GenericSidebar title={item.name} image={getSuroiImageLink(item)}>
       <InfoboxRow>
         <InfoboxColumn title="Level">{item.level}</InfoboxColumn>
         <InfoboxColumn title="Damage Reduction">
