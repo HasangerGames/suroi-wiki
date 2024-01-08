@@ -51,7 +51,7 @@ export default async function Home() {
           />
         </div>
       </div>
-			<GridTable>
+      <GridTable>
         <Card title="Open Source">
           This wiki is open source! You can help by contributing{" "}
           <Link href="/meta/writingarticles">writing</Link> or{" "}
@@ -69,7 +69,7 @@ export default async function Home() {
           Information is based on commit <CommitLink sha={HEAD} /> and on branch{" "}
           <BranchLink branch={BRANCH} />
         </Card>
-			</GridTable>
+      </GridTable>
       <div>
         <h1 className="text-xl font-bold text-center mb-4">Wiki Pages</h1>
         <GridTable>

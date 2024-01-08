@@ -9,6 +9,6 @@ export function easeLinear(min: number, max: number, progress: number) {
   return progress >= 1
     ? max
     : progress <= 0
-    ? min
-    : progress * (max - min) + min;
+      ? min
+      : progress * (max - min) + min;
 }

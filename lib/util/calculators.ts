@@ -1,8 +1,5 @@
 import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
-import {
-  Angle,
-  Collision,
-} from "@/vendor/suroi/common/src/utils/math";
+import { Angle, Collision } from "@/vendor/suroi/common/src/utils/math";
 import {
   randomFloat,
   randomPointInsideCircle,
@@ -29,12 +26,19 @@ export function shootGun(gun: GunDefinition, trials: number, range: number) {
           gun.consistentPatterning === true
             ? 2 * (i / limit - 0.5)
             : randomFloat(-1, 1) * spread,
-          gun.ballistics.range
+          gun.ballistics.range,
         ),
-        rayStart
+        rayStart,
       );
 
-      damage += Collision.lineIntersectsCircle(rayStart, ray, Vec.create(range, 0), PLAYERRADIUS) ? gun.ballistics.damage : 0;
+      damage += Collision.lineIntersectsCircle(
+        rayStart,
+        ray,
+        Vec.create(range, 0),
+        PLAYERRADIUS,
+      )
+        ? gun.ballistics.damage
+        : 0;
     }
   }
 
