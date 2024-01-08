@@ -10,7 +10,7 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
 
 - The Barrett only spawns with 20 rounds of 12.7mm ammunition, so conserve your ammo and don't waste your shots.
 - Try and get your opponent to slow themselves down in some way, because it makes hitting your shots easier.
-  - You can do this when your opponent is in water, shooting, or using a [Healing Item](/healing) (or any combonation).
+  - You can do this when your opponent is in water, shooting, or using a [Healing Item](/healing) (or any combination).
   - The best target is a player who is standing still (you may want to conserve your ammo though).
 - The Barrett works both close-range and long-range due to its high damage output.
   - Pair it with another high-damaging weapon such as another sniper or a shotgun to shred players.
@@ -24,7 +24,7 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
   - If the opponent is near a [Barrel](/obstacles/barrel) or [Super Barrel](/obstacles/super_barrel) that is low on health and smoking, you can shoot it to do extra damage (though probably not as much as actually hitting them with the Barrett).
 - Use LMGs such as the [Stoner 63](/weapons/guns/stoner_63) to destroy cover at long range, and then pick off players with Barrett.
   - You can also use assault rifles to weaken your opponent and then finish them off with Barrett.
-- By hiding in a [Bush](/obstacles/bush) and camping, you can suprise your opponents and kill them before they can react.
+- By hiding in a [Bush](/obstacles/bush) and camping, you can surprise your opponents and kill them before they can react.
 
 ## Countering
 
