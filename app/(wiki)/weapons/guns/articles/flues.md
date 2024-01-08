@@ -7,7 +7,6 @@ The Flues gets its name from designer Emil Flues, who worked for the Ithaca Gun 
 # Strategies
 
 ## Using
-
 - The Flues can only hold two rounds, so if you only have 1 loaded, make sure to reload as soon as you can.
   - Take cover if reloading in the middle of a fight.
 - If you hit both shots, it will kill or seriously weaken an opponent. Carry a secondary weapon to finish them off.
@@ -15,9 +14,9 @@ The Flues gets its name from designer Emil Flues, who worked for the Ithaca Gun 
 - Camp in entrances to [Buildings](/buildings) or in [Bushes](/obstacles/bush) to ambush enemies.
 - Be very careful with your shots, as the long reload time and 2 rounds make the Flues unforgiving.
 - The Flues is very dangerous when the safe zone is very small or in tight spaces such as Buildings.
+- You can use two Flues' as a makeshift [Vepr-12](/weapons/guns/vepr12).
 
 ## Countering
-
 - The Flues has the shortest range of any shotgun, tied with the [HP18](/weapons/guns/hp18), so don't get too close.
   - Use a longer-range weapon such as an assault rifle or DMR.
 - If the Flues user fires both of their shots, take advantage of the long reload time and attack while they are vulnerable.
