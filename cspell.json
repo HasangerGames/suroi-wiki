@@ -16,6 +16,8 @@
     "quickswitch",
     "adren",
     "ghillie",
+		"detonated",
+		"undetonated",
 
     // Buildings
     "porta",
@@ -26,12 +28,16 @@
 
     // Weapons
     "glock",
+		"glocks",
+		"minimi",
     "garand",
     "usas",
     "mosin",
     "léon",
     "nagant",
     "steyr",
+		"kriss",
+		"vepr",
     /* CZ-75A */
     "františek",
     "koucký",
@@ -88,10 +94,13 @@
     "kenos",
     "sniperboi",
     "Medeus",
+		"eipi",
 
     // Random
     "excipients", // Plural of excipient
-    "retextured"
+    "retextured",
+		"misaligning",
+		"synergize"
   ],
 
   "import": ["@cspell/dict-ru_ru/cspell-ext.json"]

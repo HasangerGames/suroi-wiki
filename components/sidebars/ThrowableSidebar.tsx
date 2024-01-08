@@ -47,6 +47,9 @@ export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
         <InfoboxColumn title="Cook Speed Multiplier">
           {item.cookSpeedMultiplier}
         </InfoboxColumn>
+        {item.fireDelay && (
+          <InfoboxColumn title="Fire Delay">{item.fireDelay} ms</InfoboxColumn>
+        )}
       </InfoboxRow>
       <InfoboxRow>
         <InfoboxColumn title="Maximum Throwing Distance">
@@ -69,9 +72,6 @@ export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
         <InfoboxColumn title="Fuse Time">{item.fuseTime} ms</InfoboxColumn>
         <InfoboxColumn title="Cook Time">{item.cookTime} ms</InfoboxColumn>
         <InfoboxColumn title="Throw Time">{item.throwTime} ms</InfoboxColumn>
-        {item.fireDelay && (
-          <InfoboxColumn title="Fire Delay">{item.fireDelay} ms</InfoboxColumn>
-        )}
       </InfoboxRow>
       {item.detonation.explosion && (
         <>

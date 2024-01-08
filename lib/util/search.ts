@@ -51,6 +51,12 @@ export const wikiPages: SearchItem[] = [
     description: "List of armor, including helmet and vests",
     image: getSuroiImageLink(getSuroiItem("regular_vest")),
   },
+	{
+		name: "Backpacks",
+		url: "/equipment/backpacks/",
+		description: "List of backpacks",
+		image: getSuroiImageLink(getSuroiItem("tactical_pack"))
+	},
   {
     name: "Obstacles",
     url: "/obstacles",

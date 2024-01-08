@@ -4,6 +4,7 @@ import Removed from "@/components/articles/notices/Removed";
 import CommitLink from "@/components/links/CommitLink";
 import DevWeapon from "@/components/articles/notices/DevWeapon";
 import Gallery from "@/components/articles/gallery/Gallery.tsx";
+import SuroiItemImage from "@/components/articles/SuroiItemImage.tsx"
 
 # Writing Articles
 
@@ -73,6 +74,21 @@ Shows a small banner at the top of the page notifying readers the item has been 
 Shows a small banner at the top of the page notifying readers the item is a developer weapon and unobtainable. See below:
 
 <DevWeapon />
+
+### `<SuroiItemImage itemID="item idString" width="optional" height="optional" rotation="optional" variation="optional" append="optional" dual="optional" />`
+
+A item image from the game. Requires the item idString.
+
+Options:
+
+- width: width in px
+- height: height in px
+- rotation: rotation in degrees
+- variation: for sprites with variations, a number
+- append: for sprites that have suffixes like "_world" at the end of their sprite file name
+- dual: for dual guns only
+
+<SuroiItemImage itemID="deathray" />
 
 ### `<Gallery images={[array of GalleryImage]}/>`
 
