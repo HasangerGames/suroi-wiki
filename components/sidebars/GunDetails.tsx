@@ -1,5 +1,6 @@
 import { Unpacked } from "@/lib/ts/utility";
 import {
+    SOUND_BASE_URL,
   getSuroiImageLink,
   getSuroiItem,
   getSuroiKillfeedImageLink,
@@ -211,21 +212,21 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
       <InfoboxAudioGroup>
         <InfoboxAudio
           name="Fire"
-          src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/weapons/${gun.idString.replace(
+          src={`${SOUND_BASE_URL}sfx/weapons/${gun.idString.replace(
             "dual_",
             "",
           )}_fire.mp3`}
         />
         <InfoboxAudio
           name="Switch"
-          src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/weapons/${gun.idString.replace(
+          src={`${SOUND_BASE_URL}sfx/weapons/${gun.idString.replace(
             "dual_",
             "",
           )}_switch.mp3`}
         />
         <InfoboxAudio
           name="Reload"
-          src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/weapons/${gun.idString}_reload.mp3`}
+          src={`${SOUND_BASE_URL}sfx/weapons/${gun.idString}_reload.mp3`}
         />
         {explosion && (
           <InfoboxAudio

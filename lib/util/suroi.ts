@@ -65,11 +65,15 @@ export const WIKI_BRANCH = "main";
 
 export const BASE_URL = `https://raw.githubusercontent.com/HasangerGames/suroi/${BRANCH}/`;
 
-export const REPO_URL = `https://github.com/HasangerGames/suroi/blob/${BRANCH}/`;
+export const REPO_URL = "https://github.com/HasangerGames/suroi/";
+
+export const REPO_BRANCH_URL = `${REPO_URL}blob/${BRANCH}/`;
 
 export const WIKI_URL = `https://github.com/HasangerGames/suroi-wiki/`;
 
 export const IMAGE_BASE_URL = `${BASE_URL}client/public/img/`;
+
+export const SOUND_BASE_URL = `${REPO_URL}raw/${BRANCH}/client/public/audio/`;
 
 type ObjectCategoryMapping<Category extends ObjectCategory> =
   Category extends ObjectCategory.Obstacle
