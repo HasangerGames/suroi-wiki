@@ -33,6 +33,7 @@ export default function Kitchen() {
         ]}
       />
       <MatrixTable
+        title="1092384 sucks at css"
         tHeader={["1", "2", "3"]}
         lHeader={["4", "5", "6"]}
         content={[
