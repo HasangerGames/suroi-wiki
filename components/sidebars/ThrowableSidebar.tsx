@@ -55,7 +55,6 @@ export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
         <InfoboxColumn title="Maximum Throwing Distance">
           {item.maxThrowDistance}
         </InfoboxColumn>
-        <InfoboxColumn title="Radius">{item.radius}</InfoboxColumn>
         {item.cookable && <InfoboxColumn title="Cookable" />}
       </InfoboxRow>
       {item.impactDamage && (
