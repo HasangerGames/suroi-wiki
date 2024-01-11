@@ -50,27 +50,27 @@ export default function BackpackPage() {
               (ammo) => <AmmoIcon ammo={ammo} key={ammo} scale={0.5} />
             ),
           ]}
-          content={[...Backpacks].map((backpacks) => [
+          content={[...Backpacks].map((backpack) => [
             <>
-              {backpacks.idString !== "bag" && (
+              {backpack.idString !== "bag" && (
                 <Image
-                  src={getSuroiImageLink(backpacks)}
+                  src={getSuroiImageLink(backpack)}
                   width={32}
                   height={32}
-                  alt={`${backpacks.name} image`}
+                  alt={`${backpack.name} image`}
                   className="h-min inline-block m-0 mr-2"
                 />
               )}
-              <Link href={`/equipment/backpacks/${backpacks.idString}`}>
-                {backpacks.name}
+              <Link href={`/equipment/backpacks/${backpack.idString}`}>
+                {backpack.name}
               </Link>
             </>,
-            backpacks.maxCapacity["12g"].toString(),
-            backpacks.maxCapacity["556mm"].toString(),
-            backpacks.maxCapacity["762mm"].toString(),
-            backpacks.maxCapacity["9mm"].toString(),
-            backpacks.maxCapacity["127mm"].toString(),
-            backpacks.maxCapacity.curadell.toString(),
+            backpack.maxCapacity["12g"].toString(),
+            backpack.maxCapacity["556mm"].toString(),
+            backpack.maxCapacity["762mm"].toString(),
+            backpack.maxCapacity["9mm"].toString(),
+            backpack.maxCapacity["127mm"].toString(),
+            backpack.maxCapacity.curadell.toString(),
           ])}
         />
         <br></br>
