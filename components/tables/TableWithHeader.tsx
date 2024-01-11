@@ -33,7 +33,7 @@ export default function TableWithHeader({
               }}
             >
               {row.map((cell, j) => (
-                <span key={`${i}-${j}`} className="px-2">
+                <span key={`${i}-${j}`} className="px-2 inline-flex items-center">
                   {cell}
                 </span>
               ))}
