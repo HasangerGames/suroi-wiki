@@ -5,6 +5,7 @@ import Link from "@/components/links/Link";
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
 import TableWithHeader from "@/components/tables/TableWithHeader";
+import AmmoIcon from "@/components/icons/AmmoIcon";
 export default function BackpackPage() {
   return (
     <div className="col-span-full">
@@ -45,22 +46,21 @@ export default function BackpackPage() {
           title="Backpack Ammunition Capacity Statistics"
           header={[
             "Backpack",
-            "12 gauge",
-            "5.56mm",
-            "7.62mm",
-            "9mm",
-            "12.7mm",
-            "Curadell",
+            ...["12g", "556mm", "762mm", "9mm", "127mm", "curadell"].map(
+              (ammo) => <AmmoIcon ammo={ammo} key={ammo} scale={0.5} />
+            ),
           ]}
           content={[...Backpacks].map((backpacks) => [
             <>
-              <Image
-                src={getSuroiImageLink(backpacks)}
-                width={32}
-                height={32}
-                alt={`${backpacks.name} image`}
-                className="h-min inline-block m-0 mr-2"
-              />
+              {backpacks.idString !== "bag" && (
+                <Image
+                  src={getSuroiImageLink(backpacks)}
+                  width={32}
+                  height={32}
+                  alt={`${backpacks.name} image`}
+                  className="h-min inline-block m-0 mr-2"
+                />
+              )}
               <Link href={`/equipment/backpacks/${backpacks.idString}`}>
                 {backpacks.name}
               </Link>
