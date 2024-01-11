@@ -16,7 +16,7 @@ export default function TableWithHeader({
           }}
         >
           {header.map((cell, i) => (
-            <span key={i.toString()} className="p-2">
+            <span key={i.toString()} className="p-2 inline-flex items-center">
               {cell}
             </span>
           ))}
