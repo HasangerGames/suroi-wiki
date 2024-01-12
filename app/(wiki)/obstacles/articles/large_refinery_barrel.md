@@ -2,7 +2,7 @@ The **Large Refinery Barrel** is an [Obstacle](/obstacles) added in the v0.10.0 
 
 # Location & Spawning
 
-Two Large Refinery Barrels spawns in the [Refinery](/buildings/refinery) next to each other in an enclosed space also containing two [Regular Crates]](/obstacles/regular_crate), two [AEGIS Crates](/obstacles/aegis_crate), one [Barrel](/obstacles/barrel), and one [Super Barrel](/obstacles/super_barrel).
+Two Large Refinery Barrels spawns in the [Refinery](/buildings/refinery) next to each other in an enclosed space also containing two [Regular Crates](/obstacles/regular_crate), two [AEGIS Crates](/obstacles/aegis_crate), one [Barrel](/obstacles/barrel), and one [Super Barrel](/obstacles/super_barrel).
 
 # Loot & More
 
