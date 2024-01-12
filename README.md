@@ -13,7 +13,8 @@ If you don't have `pnpm` installed, you can install it with `npm i -g pnpm`.
 git clone https://github.com/HasangerGames/suroi-wiki.git
 cd suroi-wiki
 git submodule init
-git submodule update --remote
+# Do not use --remote as it does not respect the selected commit
+git submodule update
 pnpm install
 ```
 
