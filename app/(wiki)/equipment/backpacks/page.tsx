@@ -6,6 +6,7 @@ import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
 import TableWithHeader from "@/components/tables/TableWithHeader";
 import AmmoIcon from "@/components/icons/AmmoIcon";
+import { Fragment } from "react";
 export default function BackpackPage() {
   return (
     <div className="col-span-full">
@@ -25,9 +26,9 @@ export default function BackpackPage() {
             "Backpack",
             ...["gauze", "medikit", "cola", "tablets"].map((healing) => (
               <Image
-                src={getSuroiImageLink(getSuroiItem(healing))}
+                src={getSuroiImageLink(getSuroiItem(healing)!)}
                 alt={healing}
-								key={healing}
+                key={healing}
                 width={20}
                 height={20}
                 className="w-10 h-10"
@@ -63,9 +64,9 @@ export default function BackpackPage() {
             ...["12g", "556mm", "762mm", "9mm", "127mm", "curadell"].map(
               (ammo) => (
                 <Image
-                  src={getSuroiImageLink(getSuroiItem(ammo))}
+                  src={getSuroiImageLink(getSuroiItem(ammo)!)}
                   alt={ammo}
-									key={ammo}
+                  key={ammo}
                   width={40}
                   height={40}
                   className="w-10 h-10"
@@ -74,7 +75,7 @@ export default function BackpackPage() {
             ),
           ]}
           content={[...Backpacks].map((backpack) => [
-            <>
+            <Fragment key={backpack.idString}>
               {backpack.idString !== "bag" && (
                 <Image
                   src={getSuroiImageLink(backpack)}
@@ -87,7 +88,7 @@ export default function BackpackPage() {
               <Link href={`/equipment/backpacks/${backpack.idString}`}>
                 {backpack.name}
               </Link>
-            </>,
+            </Fragment>,
             backpack.maxCapacity["12g"].toString(),
             backpack.maxCapacity["556mm"].toString(),
             backpack.maxCapacity["762mm"].toString(),
@@ -103,9 +104,9 @@ export default function BackpackPage() {
             "Backpack",
             ...["frag_grenade", "smoke_grenade"].map((throwable) => (
               <Image
-                src={getSuroiImageLink(getSuroiItem(throwable))}
+                src={getSuroiImageLink(getSuroiItem(throwable)!)}
                 alt={throwable}
-								key={throwable}
+                key={throwable}
                 width={40}
                 height={40}
                 className="w-10 h-10"
@@ -113,7 +114,7 @@ export default function BackpackPage() {
             )),
           ]}
           content={[...Backpacks].map((backpack) => [
-            <>
+            <Fragment key={backpack.idString}>
               {backpack.idString !== "bag" && (
                 <Image
                   src={getSuroiImageLink(backpack)}
@@ -126,7 +127,7 @@ export default function BackpackPage() {
               <Link href={`/equipment/backpacks/${backpack.idString}`}>
                 {backpack.name}
               </Link>
-            </>,
+            </Fragment>,
             backpack.maxCapacity.frag_grenade.toString(),
             backpack.maxCapacity.smoke_grenade.toString(),
           ])}
