@@ -4,6 +4,7 @@ import "./globals.css";
 import TanstackQuery from "@/components/providers/TanstackQuery";
 import NavigationBar from "@/components/interactive/NavigationBar";
 import Footer from "@/components/layouts/Footer";
+import { StrictMode } from "react";
 
 const font = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -50,13 +51,15 @@ export default function RootLayout({
       <body
         className={`min-h-screen bg-background font-sans antialiased text-white box-border dark ${font.variable}`}
       >
-        <TanstackQuery>
-          <NavigationBar />
-          <div className="container mb-32 sm:mt-32 mt-8">
-            <div>{children}</div>
-          </div>
-          <Footer />
-        </TanstackQuery>
+        <StrictMode>
+          <TanstackQuery>
+            <NavigationBar />
+            <div className="container mb-32 sm:mt-32 mt-8">
+              <div>{children}</div>
+            </div>
+            <Footer />
+          </TanstackQuery>
+        </StrictMode>
       </body>
     </html>
   );
