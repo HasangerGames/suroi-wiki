@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { Fragment, ReactNode } from "react";
 
 export default function TableWithHeader({
   header,
@@ -24,9 +24,8 @@ export default function TableWithHeader({
       </div>
       <div className="flex flex-col p-2 divide-muted bg-white/5 rounded-md">
         {content.map((row, i) => (
-          <>
+          <Fragment key={i}>
             <div
-              key={i.toString()}
               className="grid gap-2 divide-x-4 py-2 divide-muted rounded-md hover:bg-white/5"
               style={{
                 gridTemplateColumns: `repeat(${header.length}, minmax(0, 1fr))`,
@@ -39,7 +38,7 @@ export default function TableWithHeader({
               ))}
             </div>
             <span className="w-full h-1 bg-muted rounded-full my-1 last:hidden"></span>
-          </>
+          </Fragment>
         ))}
       </div>
     </div>
