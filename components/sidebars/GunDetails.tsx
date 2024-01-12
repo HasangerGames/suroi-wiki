@@ -1,6 +1,6 @@
 import { Unpacked } from "@/lib/ts/utility";
 import {
-    SOUND_BASE_URL,
+  SOUND_BASE_URL,
   getSuroiImageLink,
   getSuroiItem,
   getSuroiKillfeedImageLink,

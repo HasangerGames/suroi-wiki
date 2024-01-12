@@ -13,10 +13,10 @@ import { Table } from "lucide-react";
 import MatrixTable from "@/components/tables/MatrixTable";
 
 const Helmets = Armors.definitions.filter(
-  (armor) => armor.armorType === ArmorType.Helmet
+  (armor) => armor.armorType === ArmorType.Helmet,
 );
 const Vests = Armors.definitions.filter(
-  (armor) => armor.armorType === ArmorType.Vest
+  (armor) => armor.armorType === ArmorType.Vest,
 );
 
 const vest2 = Vests[2];
@@ -145,7 +145,7 @@ export default function ArmorPage() {
                   ).toFixed(2)}
                 </div>
               </div>
-            ))
+            )),
           )}
         />
       </div>

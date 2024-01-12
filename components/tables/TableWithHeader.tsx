@@ -16,7 +16,10 @@ export default function TableWithHeader({
           }}
         >
           {header.map((cell, i) => (
-            <span key={i.toString()} className="p-2 inline-flex justify-center items-center">
+            <span
+              key={i.toString()}
+              className="p-2 inline-flex justify-center items-center"
+            >
               {cell}
             </span>
           ))}
@@ -32,7 +35,10 @@ export default function TableWithHeader({
               }}
             >
               {row.map((cell, j) => (
-                <span key={`${i}-${j}`} className="px-2 inline-flex items-center">
+                <span
+                  key={`${i}-${j}`}
+                  className="px-2 inline-flex items-center"
+                >
                   {cell}
                 </span>
               ))}

@@ -71,7 +71,7 @@ export default function BackpackPage() {
                   height={40}
                   className="w-10 h-10"
                 />
-              )
+              ),
             ),
           ]}
           content={[...Backpacks].map((backpack) => [
