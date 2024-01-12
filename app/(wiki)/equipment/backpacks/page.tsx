@@ -2,7 +2,7 @@ import PageCard from "@/components/cards/PageCard";
 import GridTable from "@/components/tables/GridTable";
 import Image from "next/image";
 import Link from "@/components/links/Link";
-import { getSuroiImageLink } from "@/lib/util/suroi";
+import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
 import TableWithHeader from "@/components/tables/TableWithHeader";
 import AmmoIcon from "@/components/icons/AmmoIcon";
@@ -21,24 +21,37 @@ export default function BackpackPage() {
         </p>
         <TableWithHeader
           title="Backpack Healing Capacity Statistics"
-          header={["Backpack", "Gauze", "Medikit", "Cola", "Tablets"]}
-          content={[...Backpacks].map((backpacks) => [
-            <>
+          header={[
+            "Backpack",
+            ...["gauze", "medikit", "cola", "tablets"].map((healing) => (
               <Image
-                src={getSuroiImageLink(backpacks)}
-                width={32}
-                height={32}
-                alt={`${backpacks.name} image`}
-                className="h-min inline-block m-0 mr-2"
+                src={getSuroiImageLink(getSuroiItem(healing))}
+                alt={healing}
+                width={20}
+                height={20}
+                className="w-10 h-10"
               />
-              <Link href={`/equipment/backpacks/${backpacks.idString}`}>
-                {backpacks.name}
+            )),
+          ]}
+          content={[...Backpacks].map((backpack) => [
+            <>
+              {backpack.idString !== "bag" && (
+                <Image
+                  src={getSuroiImageLink(backpack)}
+                  width={32}
+                  height={32}
+                  alt={`${backpack.name} image`}
+                  className="h-min inline-block m-0 mr-2"
+                />
+              )}
+              <Link href={`/equipment/backpacks/${backpack.idString}`}>
+                {backpack.name}
               </Link>
             </>,
-            backpacks.maxCapacity.gauze.toString(),
-            backpacks.maxCapacity.medikit.toString(),
-            backpacks.maxCapacity.cola.toString(),
-            backpacks.maxCapacity.tablets.toString(),
+            backpack.maxCapacity.gauze.toString(),
+            backpack.maxCapacity.medikit.toString(),
+            backpack.maxCapacity.cola.toString(),
+            backpack.maxCapacity.tablets.toString(),
           ])}
         />
         <br></br>
@@ -47,7 +60,15 @@ export default function BackpackPage() {
           header={[
             "Backpack",
             ...["12g", "556mm", "762mm", "9mm", "127mm", "curadell"].map(
-              (ammo) => <AmmoIcon ammo={ammo} key={ammo} scale={0.5} />
+              (ammo) => (
+                <Image
+                  src={getSuroiImageLink(getSuroiItem(ammo))}
+                  alt={ammo}
+                  width={40}
+                  height={40}
+                  className="w-10 h-10"
+                />
+              )
             ),
           ]}
           content={[...Backpacks].map((backpack) => [
@@ -76,22 +97,35 @@ export default function BackpackPage() {
         <br></br>
         <TableWithHeader
           title="Backpack Throwable Capacity Statistics"
-          header={["Backpack", "Frag Grenade", "Smoke Grenade"]}
-          content={[...Backpacks].map((backpacks) => [
-            <>
+          header={[
+            "Backpack",
+            ...["frag_grenade", "smoke_grenade"].map((throwable) => (
               <Image
-                src={getSuroiImageLink(backpacks)}
-                width={32}
-                height={32}
-                alt={`${backpacks.name} image`}
-                className="h-min inline-block m-0 mr-2"
+                src={getSuroiImageLink(getSuroiItem(throwable))}
+                alt={throwable}
+                width={40}
+                height={40}
+                className="w-10 h-10"
               />
-              <Link href={`/equipment/backpacks/${backpacks.idString}`}>
-                {backpacks.name}
+            )),
+          ]}
+          content={[...Backpacks].map((backpack) => [
+            <>
+              {backpack.idString !== "bag" && (
+                <Image
+                  src={getSuroiImageLink(backpack)}
+                  width={32}
+                  height={32}
+                  alt={`${backpack.name} image`}
+                  className="h-min inline-block m-0 mr-2"
+                />
+              )}
+              <Link href={`/equipment/backpacks/${backpack.idString}`}>
+                {backpack.name}
               </Link>
             </>,
-            backpacks.maxCapacity.frag_grenade.toString(),
-            backpacks.maxCapacity.smoke_grenade.toString(),
+            backpack.maxCapacity.frag_grenade.toString(),
+            backpack.maxCapacity.smoke_grenade.toString(),
           ])}
         />
         <h2>List of Backpacks</h2>
