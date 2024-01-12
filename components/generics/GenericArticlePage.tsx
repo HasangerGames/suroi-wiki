@@ -94,7 +94,10 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
         <div className="grow prose prose-invert">
           <h1 className="hidden sm:block">
             {item?.name ?? combinedArticle?.title}
-						<EditButton path={args.path} id={item?.idString ?? combinedArticle?.fileName ?? ""} />
+            <EditButton
+              path={args.path}
+              id={item?.idString ?? combinedArticle?.fileName ?? ""}
+            />
           </h1>
           {
             // If there is an article, render it
@@ -105,9 +108,7 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
               <Empty />
             )
           }
-					{
-						args.After && args.After
-					}
+          {args.After && args.After}
         </div>
         {item ? (
           <args.Sidebar item={item} />
@@ -138,7 +139,7 @@ export interface GenericArticlePageArgs<T extends ObjectDefinition> {
   items: T[];
   combinedArticles?: CombinedArticle<T>[];
   Sidebar: ComponentType<{ item: T }>;
-	After?: ReactNode
+  After?: ReactNode;
 }
 
 export interface CombinedArticle<T extends ObjectDefinition> {

@@ -2,7 +2,7 @@
   "version": "0.2",
   "language": "en_US,ru-ru",
   "allowCompoundWords": true,
-	"ignorePaths": ["vendor/**", "node_modules/**"],
+  "ignorePaths": ["vendor/**", "node_modules/**"],
   "words": [
     // Internet-speak
     "tldr",
@@ -21,8 +21,8 @@
     "quickswitch",
     "adren",
     "ghillie",
-		"detonated",
-		"undetonated",
+    "detonated",
+    "undetonated",
     // Buildings
     "porta",
 
@@ -32,16 +32,16 @@
 
     // Weapons
     "glock",
-		"glocks",
-		"minimi",
+    "glocks",
+    "minimi",
     "garand",
     "usas",
     "mosin",
     "léon",
     "nagant",
     "steyr",
-		"kriss",
-		"vepr",
+    "kriss",
+    "vepr",
     /* CZ-75A */
     "františek",
     "koucký",
@@ -106,13 +106,13 @@
     "kenos",
     "sniperboi",
     "Medeus",
-		"eipi",
+    "eipi",
 
     // Random
     "excipients", // Plural of excipient
     "retextured",
-		"misaligning",
-		"synergize"
+    "misaligning",
+    "synergize"
   ],
 
   "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
