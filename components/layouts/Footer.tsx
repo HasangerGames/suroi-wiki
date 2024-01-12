@@ -1,6 +1,7 @@
 import { wikiPages } from "@/lib/util/search";
 import Image from "next/image";
-import Link from "next/link";
+import NextLink from "next/link";
+import React from "react";
 
 export default function Footer() {
   return (
@@ -18,29 +19,37 @@ export default function Footer() {
         <div className="flex flex-col gap-2">
           <b>Pages</b>
           {wikiPages.map((page) => (
-            <Link key={page.url} href={page.url}>
+            <FooterLink key={page.url} href={page.url}>
               {page.name}
-            </Link>
+            </FooterLink>
           ))}
         </div>
         <div className="flex flex-col gap-2">
           <b>Source code</b>
-          <Link href="https://github.com/hasangergames/suroi">
+          <FooterLink href="https://github.com/hasangergames/suroi">
             Suroi Github
-          </Link>
-          <Link href="https://github.com/hasangergames/suroi-wiki">
+          </FooterLink>
+          <FooterLink href="https://github.com/hasangergames/suroi-wiki">
             Wiki Github
-          </Link>
+          </FooterLink>
         </div>
         <div className="flex flex-col gap-2">
           <b>Credits</b>
           <span>Made with love by Compositr and Kenos</span>
-					<Link href="/credits">Game and Wiki Credits</Link>
-          <Link href="https://nextjs.org">NextJS by Vercel</Link>
-          <Link href="https://tailwindcss.org">TailwindCSS</Link>
-          <Link href="https://fusejs.io">Fuse.js</Link>
+          <FooterLink href="/credits">Game and Wiki Credits</FooterLink>
+          <FooterLink href="https://nextjs.org">NextJS by Vercel</FooterLink>
+          <FooterLink href="https://tailwindcss.org">TailwindCSS</FooterLink>
+          <FooterLink href="https://fusejs.io">Fuse.js</FooterLink>
         </div>
       </div>
     </footer>
+  );
+}
+
+function FooterLink({ href, children }: React.PropsWithChildren & { href: string }) {
+  return (
+    <NextLink href={href} className="w-fit hover:text-white transition-colors">
+      {children}
+    </NextLink>
   );
 }
