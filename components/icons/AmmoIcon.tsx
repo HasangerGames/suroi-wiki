@@ -1,6 +1,9 @@
 import { IMAGE_BASE_URL } from "@/lib/util/suroi";
 import Image from "next/image";
 
+/**
+ * @deprecated
+ */
 export default function AmmoIcon({ ammo, scale = 1 }: AmmoIconProps) {
   return (
     <Image
