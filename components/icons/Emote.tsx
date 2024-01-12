@@ -1,6 +1,9 @@
 import { IMAGE_BASE_URL } from "@/lib/util/suroi";
 import Image from "next/image";
 
+/**
+ * @deprecated Use getSuroiEmote()
+ */
 export default function Emote({
   emote,
   w = 64,
