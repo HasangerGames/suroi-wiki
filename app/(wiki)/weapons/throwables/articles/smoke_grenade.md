@@ -1,6 +1,6 @@
 <Stub />
 
-The **Smoke Grenade** is a [Throwable](/throwables) added in the v0.15.0 "Yoinky Sploinky" update on Jan 14th, 2024. Upon detonation, it releases clouds of smoke
+The **Smoke Grenade** is a [Throwable](/throwables) added in the v0.15.0 "Pulling the Pin" update on Jan 14th, 2024. Upon detonation, it releases clouds of smoke
 
 # Strategies
 

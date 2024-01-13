@@ -1,5 +1,5 @@
 <Stub />
-The **Gun Case** is an [Obstacle](/obstacles) added in the v0.15.0 "Yoinky sploinky" update on January 14th, 2024.
+The **Gun Case** is an [Obstacle](/obstacles) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024.
 
 # Location & Spawning
 

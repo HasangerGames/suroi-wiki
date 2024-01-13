@@ -1,4 +1,4 @@
-**Sandbags** are an indestructible obstacle added to the game in the v0.15.0 "Yoinky Sploinky" update.
+**Sandbags** are an indestructible obstacle added to the game in the v0.15.0 "Pulling the Pin" update.
 
 # Location and Spawning
 Sandbags can spawn around the [Armory](/buildings/armory) and [Port](/buildings/port). A limited number of sandbags also spawn on the [Oil Tanker](/obstacles/oil_tanker_ship).

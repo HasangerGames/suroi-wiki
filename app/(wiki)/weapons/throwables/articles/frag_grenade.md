@@ -1,4 +1,4 @@
-The **Frag Grenade** is an explosive [Throwable](/throwables) added in the v0.15.0 "Yoinky sploinky" update on January 14th, 2024. It can deal high damage, but has an extremely limited inventory capacity and can be risky to use as explosions can deal high damage to the user if the user isn't skilled.
+The **Frag Grenade** is an explosive [Throwable](/throwables) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024. It can deal high damage, but has an extremely limited inventory capacity and can be risky to use as explosions can deal high damage to the user if the user isn't skilled.
 
 # Strategies
 ## Using
