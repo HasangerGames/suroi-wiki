@@ -22,7 +22,7 @@ export default function GunLayout({
 
   return (
     <>
-      <div className="col-span-4 lg:col-span-6 prose prose-invert">
+      <div className="grow prose prose-invert">
         <h1 className="hidden sm:block">
           {gun.name} <EditButton path="weapons/guns" id={gun.idString} />
         </h1>
