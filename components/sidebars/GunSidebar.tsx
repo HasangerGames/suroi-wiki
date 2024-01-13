@@ -16,7 +16,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
   const [dual, setDual] = useState(false);
   const dualGun = Guns.find((g) => g.idString === `dual_${gun.idString}`);
   return (
-    <div className="col-span-2">
+    <div className="min-w-[20rem]">
       {dualGun && (
         <div className="flex flex-row flex-wrap w-full justify-around gap-2 mb-2 items-center p-1">
           <button

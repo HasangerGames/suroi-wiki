@@ -91,7 +91,7 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
 
     return (
       <>
-        <div className="grow prose prose-invert">
+        <div className="grow w-full prose prose-invert">
           <h1 className="hidden sm:block">
             {item?.name ?? combinedArticle?.title}
             <EditButton
