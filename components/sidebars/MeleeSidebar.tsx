@@ -15,10 +15,12 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
       title={item.name}
       imageVariations={[
         {
+          type: "image",
           url: getSuroiImageLink(item),
           title: "Loot",
         },
         {
+          type: "image",
           url: getSuroiKillfeedImageLink(item),
           title: "Killfeed",
         },

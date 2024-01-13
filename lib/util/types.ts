@@ -6,10 +6,19 @@ export type GalleryImage = {
 };
 
 export type ImageTab = {
-  url: string;
-  alt?: string;
   title?: string;
-};
+} & (
+  | {
+      type: "image";
+      url: string;
+      alt?: string;
+    }
+  | {
+      type: "svg";
+      objects: SVGObject[];
+      viewBox: string;
+    }
+);
 
 export type CalculatorMenu = {
   title: string;

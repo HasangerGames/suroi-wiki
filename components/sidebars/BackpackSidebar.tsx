@@ -22,10 +22,12 @@ export default function BackpackSidebar({
       title={item.name}
       imageVariations={[
         {
+          type: "image",
           title: "Loot",
           url: getSuroiImageLink(item),
         },
         {
+          type: "image",
           title: "World",
           url: `${IMAGE_BASE_URL}game/equipment/${item.idString}_world.svg`,
         },

@@ -45,6 +45,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
         )}
         imageVariations={[
           {
+            type: "image",
             url: getSuroiImageLink(
               dual ? dualGun! : gun,
               undefined,
@@ -54,10 +55,12 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
             title: "Loot",
           },
           {
+            type: "image",
             url: getSuroiImageLink(gun, undefined, "world"),
             title: "World",
           },
           {
+            type: "image",
             url: getSuroiKillfeedImageLink(dual ? dualGun! : gun),
             title: "Killfeed",
           },

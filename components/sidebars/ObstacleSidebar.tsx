@@ -29,10 +29,12 @@ export default function ObstacleSidebar({
       imageVariations={
         item.variations
           ? range(item.variations).map((i) => ({
+              type: "image",
               url: getSuroiImageLink(item, i + 1),
             }))
           : [
               {
+                type: "image",
                 url: getSuroiImageLink(item),
               },
             ]
