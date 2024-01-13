@@ -6,6 +6,7 @@ import NavigationBar from "@/components/interactive/NavigationBar";
 import Footer from "@/components/layouts/Footer";
 import { StrictMode } from "react";
 import DesktopSidebar from "@/components/navigation/DesktopSidebar";
+import MobileMenu from "@/components/navigation/MobileMenu";
 
 const font = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -56,6 +57,7 @@ export default function RootLayout({
           <TanstackQuery>
             <div className="flex flex-col lg:flex-row">
               <DesktopSidebar />
+              <MobileMenu />
               <div className="flex flex-col w-full">
                 <div className="container mb-32 sm:mt-32 mt-8">
                   <div>{children}</div>
