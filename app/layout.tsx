@@ -2,11 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import TanstackQuery from "@/components/providers/TanstackQuery";
-import NavigationBar from "@/components/interactive/NavigationBar";
 import Footer from "@/components/layouts/Footer";
 import { StrictMode } from "react";
 import DesktopSidebar from "@/components/navigation/DesktopSidebar";
-import MobileMenu from "@/components/navigation/MobileMenu";
+import MobileMenu from "@/components/navigation/MobileNavbar";
 
 const font = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
