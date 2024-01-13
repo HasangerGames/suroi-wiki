@@ -9,7 +9,7 @@ import Collapsible from "@/components/interactive/Collapsible";
 
 export default function WeaponsPage() {
   return (
-    <main className="col-span-8 text-white">
+    <main className="w-full text-white">
       <div className="prose prose-invert">
         <h1>Weapons</h1>
         <p>

@@ -9,7 +9,7 @@ import AmmoIcon from "@/components/icons/AmmoIcon";
 import { Fragment } from "react";
 export default function BackpackPage() {
   return (
-    <div className="col-span-full">
+    <div className="w-full">
       <div className="prose prose-invert">
         <h1>Backpacks</h1>
         <p>
@@ -71,7 +71,7 @@ export default function BackpackPage() {
                   height={40}
                   className="w-10 h-10"
                 />
-              )
+              ),
             ),
           ]}
           content={[...Backpacks].map((backpack) => [

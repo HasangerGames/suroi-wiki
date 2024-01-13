@@ -8,7 +8,7 @@ import TableWithHeader from "@/components/tables/TableWithHeader";
 
 export default function LootPage() {
   return (
-    <div className="col-span-8 text-white">
+    <div className="w-full">
       <div className="prose prose-invert">
         <h1>Loot Tables</h1>
         <p>

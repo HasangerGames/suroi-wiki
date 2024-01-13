@@ -46,7 +46,10 @@ export default function Footer() {
   );
 }
 
-function FooterLink({ href, children }: React.PropsWithChildren & { href: string }) {
+function FooterLink({
+  href,
+  children,
+}: React.PropsWithChildren & { href: string }) {
   return (
     <NextLink href={href} className="w-fit hover:text-white transition-colors">
       {children}

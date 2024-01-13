@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint && prettier **/*.{mdx,tsx,ts} --write",
-    "ci:lint": "next lint ; prettier **/*.{mdx,tsx,ts} --check",
+    "lint": "next lint && prettier ./ --write",
+    "ci:lint": "next lint ; prettier ./ --check",
     "spellcheck": "cspell '**/*.{md,mdx}' --show-context --show-suggestions"
   },
   "dependencies": {
