@@ -31,18 +31,24 @@ export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
         },
         {
           type: "react",
-          children: <PlayerHoldingThrowable item={item} skin={skin} state="hold" />,
-          title: "Holding"
+          children: (
+            <PlayerHoldingThrowable item={item} skin={skin} state="hold" />
+          ),
+          title: "Holding",
         },
         {
           type: "react",
-          children: <PlayerHoldingThrowable item={item} skin={skin} state="cook" />,
-          title: "Cooking"
+          children: (
+            <PlayerHoldingThrowable item={item} skin={skin} state="cook" />
+          ),
+          title: "Cooking",
         },
         {
           type: "react",
-          children: <PlayerHoldingThrowable item={item} skin={skin} state="throw" />,
-          title: "Throwing"
+          children: (
+            <PlayerHoldingThrowable item={item} skin={skin} state="throw" />
+          ),
+          title: "Throwing",
         },
       ]}
     >
