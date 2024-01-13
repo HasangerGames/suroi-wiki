@@ -27,18 +27,6 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
   return (
     <>
       <InfoboxRow>
-        <InfoboxColumn title="Player Display">
-          <PlayerHoldingGun
-            gun={gun}
-            skin={
-              Skins.definitions.find((skin) => {
-                return skin.idString === "hazel_jumpsuit";
-              }) ?? Skins.definitions[0]
-            }
-          />
-        </InfoboxColumn>
-      </InfoboxRow>
-      <InfoboxRow>
         <InfoboxColumn title="Fire Mode">
           {FireMode[gun.fireMode]}
         </InfoboxColumn>
