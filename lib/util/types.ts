@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export type GalleryImage = {
   type?: "image" | "youtube";
   url: string;
@@ -17,6 +19,10 @@ export type ImageTab = {
       type: "svg";
       objects: SVGObject[];
       viewBox: string;
+    }
+  | {
+      type: "react";
+      children: ReactNode;
     }
 );
 

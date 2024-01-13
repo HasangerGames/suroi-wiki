@@ -9,6 +9,8 @@ import GenericSidebar from "./utils/GenericSidebar";
 import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
 import GunDetails from "./GunDetails";
 import { useState } from "react";
+import PlayerHoldingGun from "../svg/special/PlayerHoldingGun";
+import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 
 export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
   const [dual, setDual] = useState(false);
@@ -63,6 +65,20 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
             type: "image",
             url: getSuroiKillfeedImageLink(dual ? dualGun! : gun),
             title: "Killfeed",
+          },
+          {
+            type: "react",
+            children: (
+              <PlayerHoldingGun
+                gun={gun}
+                skin={
+                  Skins.definitions.find((skin) => {
+                    return skin.idString === "hazel_jumpsuit";
+                  }) ?? Skins.definitions[0]
+                }
+              />
+            ),
+            title: "Player Preview",
           },
         ]}
       >
