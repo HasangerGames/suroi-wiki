@@ -8,7 +8,7 @@ export default function GenericSidebar({
   imageVariations,
 }: GenericSidebarProps) {
   return (
-    <div className="min-w-[16rem]">
+    <div className="min-w-[20rem]">
       <div className="flex flex-col gap-2 p-2 bg-muted rounded-md">
         <div className="p-2 bg-white/20 rounded-md">
           <h2 className="text-xl font-bold text-center">{title}</h2>
@@ -16,7 +16,7 @@ export default function GenericSidebar({
         {(imageVariations && (
           <ImageTabs images={imageVariations ?? [{ url: image }]} />
         )) ||
-          (image && <ImageTabs images={[{ url: image }]} />)}
+          (image && <ImageTabs images={[{ type: "image", url: image }]} />)}
         {children}
       </div>
     </div>
