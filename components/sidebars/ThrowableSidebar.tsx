@@ -29,19 +29,23 @@ export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
           alt: "Image of throwable killfeed",
           title: "Killfeed",
         },
+        {
+          type: "react",
+          children: <PlayerHoldingThrowable item={item} skin={skin} state="hold" />,
+          title: "Holding"
+        },
+        {
+          type: "react",
+          children: <PlayerHoldingThrowable item={item} skin={skin} state="cook" />,
+          title: "Cooking"
+        },
+        {
+          type: "react",
+          children: <PlayerHoldingThrowable item={item} skin={skin} state="throw" />,
+          title: "Throwing"
+        },
       ]}
     >
-      <InfoboxRow>
-        <InfoboxColumn title="Holding">
-          <PlayerHoldingThrowable item={item} skin={skin} state="hold" />
-        </InfoboxColumn>
-        <InfoboxColumn title="Cooking">
-          <PlayerHoldingThrowable item={item} skin={skin} state="cook" />
-        </InfoboxColumn>
-        <InfoboxColumn title="Throwing">
-          <PlayerHoldingThrowable item={item} skin={skin} state="throw" />
-        </InfoboxColumn>
-      </InfoboxRow>
       <InfoboxRow>
         <InfoboxColumn title="Speed Multiplier">
           {item.speedMultiplier}
