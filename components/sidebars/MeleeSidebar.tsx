@@ -10,15 +10,45 @@ import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 import GenericSidebar from "./utils/GenericSidebar";
 
 export default function MeleeSidebar({ item }: MeleeSidebarProps) {
+  const skin =
+    Skins.definitions.find((skin) => {
+      return skin.idString === "hazel_jumpsuit";
+    }) ?? Skins.definitions[0];
   return (
     <GenericSidebar
       title={item.name}
       imageVariations={[
+        item.idString === "fists"
+          ? {
+              type: "svg",
+              title: "Fists Image",
+              objects: [
+                {
+                  type: "image",
+                  url: getSuroiImageLink(skin, undefined, "fist"),
+                  scaleX: 32 / 34,
+                  scaleY: 32 / 34,
+                  x: 42.5 - 32 / 2,
+                  zIndex: 0,
+                },
+                {
+                  type: "image",
+                  url: getSuroiImageLink(skin, undefined, "fist"),
+                  scaleX: 32 / 34,
+                  scaleY: 32 / 34,
+                  x: -42.5 + 32 / 2,
+                  zIndex: 0,
+                },
+              ],
+              viewBox: "-42.5 -42.5 85 85",
+            }
+          : {
+              type: "image",
+              url: getSuroiImageLink(item),
+              title: "Loot",
+            },
         {
-          url: getSuroiImageLink(item),
-          title: "Loot",
-        },
-        {
+          type: "image",
           url: getSuroiKillfeedImageLink(item),
           title: "Killfeed",
         },
@@ -26,15 +56,7 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
     >
       <InfoboxRow>
         <InfoboxColumn title="Player Preview">
-          <PlayerHoldingMelee
-            melee={item}
-            skin={
-              Skins.definitions.find((skin) => {
-                return skin.idString === "hazel_jumpsuit";
-              }) ?? Skins.definitions[0]
-            }
-            use={false}
-          />
+          <PlayerHoldingMelee melee={item} skin={skin} use={false} />
         </InfoboxColumn>
       </InfoboxRow>
       <InfoboxRow>
@@ -63,6 +85,15 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
             (1000 / item.cooldown)
           ).toFixed(2)}
         </InfoboxColumn>
+        {(item?.piercingMultiplier ?? 0) > 0 && (
+          <InfoboxColumn
+            title="Piercing Damage"
+            abbr="Damage that is applied to impenetrable (but not indestructible) obstacles such as Flint Stones"
+          >
+            x{item.piercingMultiplier} (
+            {(item.piercingMultiplier ?? 0) * item.damage})
+          </InfoboxColumn>
+        )}
       </InfoboxRow>
 
       <InfoboxHeader>Advanced Stats</InfoboxHeader>

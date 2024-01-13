@@ -1,3 +1,5 @@
+import GenericNotice from "@/components/articles/notices/GenericNotice";
+
 # Developing
 
 Thank you for considering to contribute code to the wiki!
@@ -71,12 +73,25 @@ Or you will get publically shamed.
 
 If you are adding new libraries, please use tree shaking when possible, to keep bundle sizes minimal
 
-**Do use a formatter**
+**Do use a formatter and linter**
 
-You are not sane if you don't use one
+Run this command to run eslint and prettier
+
+```sh
+pnpm lint
+```
 
 **Do use a spellchecker**
 
-Just get [cspell](https://cspell.org/). We are planning to add a CI pipeline for spellcheck soon™
+Just run this command to spellcheck
+
+```sh
+pnpm spellcheck
+```
+
+<GenericNotice emote="bleh">
+  Note that we run GitHub CI jobs to check for linting, formatting and
+  spellchecking!
+</GenericNotice>
 
 **TLDR** it is best to ask the wiki maintainers (**Compositr** and **Kenos**) if you should contribute something to the wiki

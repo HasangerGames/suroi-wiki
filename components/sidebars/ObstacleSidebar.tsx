@@ -1,4 +1,5 @@
 import {
+  FlyoverPref,
   ObstacleDefinition,
   RotationMode,
 } from "@/vendor/suroi/common/src/definitions/obstacles";
@@ -29,10 +30,12 @@ export default function ObstacleSidebar({
       imageVariations={
         item.variations
           ? range(item.variations).map((i) => ({
+              type: "image",
               url: getSuroiImageLink(item, i + 1),
             }))
           : [
               {
+                type: "image",
                 url: getSuroiImageLink(item),
               },
             ]
@@ -85,6 +88,12 @@ export default function ObstacleSidebar({
           {RotationMode[item.rotationMode]}
         </InfoboxColumn>
         <InfoboxColumn title="Variations">{item.variations ?? 1}</InfoboxColumn>
+        <InfoboxColumn
+          title="Flyover"
+          abbr="Whether grenades can be thrown over the obstacle"
+        >
+          {FlyoverPref[item.allowFlyover ?? FlyoverPref.Sometimes]}
+        </InfoboxColumn>
       </InfoboxRow>
       <InfoboxRow>
         {(item.hasLoot || item.spawnWithLoot) && (
@@ -135,11 +144,12 @@ export default function ObstacleSidebar({
                 {item.interactText}
               </InfoboxColumn>
             )}
-            {item.interactDelay && (
+            {/* TODO: Idk what happened here but blame hazinger */}
+            {/* {item.interactDelay && (
               <InfoboxColumn title="Interaction Delay">
                 {item.interactDelay / 1000}s
               </InfoboxColumn>
-            )}
+            )} */}
           </InfoboxRow>
         </>
       )}

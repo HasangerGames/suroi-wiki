@@ -18,11 +18,13 @@ export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
       title={item.name}
       imageVariations={[
         {
+          type: "image",
           url: getSuroiImageLink(item),
           alt: "Image of throwable",
           title: "Loot",
         },
         {
+          type: "image",
           url: getSuroiKillfeedImageLink(item),
           alt: "Image of throwable killfeed",
           title: "Killfeed",
