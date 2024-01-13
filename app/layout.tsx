@@ -5,6 +5,7 @@ import TanstackQuery from "@/components/providers/TanstackQuery";
 import NavigationBar from "@/components/interactive/NavigationBar";
 import Footer from "@/components/layouts/Footer";
 import { StrictMode } from "react";
+import DesktopSidebar from "@/components/navigation/DesktopSidebar";
 
 const font = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -53,11 +54,15 @@ export default function RootLayout({
       >
         <StrictMode>
           <TanstackQuery>
-            <NavigationBar />
-            <div className="container mb-32 sm:mt-32 mt-8">
-              <div>{children}</div>
+            <div className="flex flex-col lg:flex-row">
+              <DesktopSidebar />
+              <div className="flex flex-col w-full">
+                <div className="container mb-32 sm:mt-32 mt-8">
+                  <div>{children}</div>
+                </div>
+                <Footer />
+              </div>
             </div>
-            <Footer />
           </TanstackQuery>
         </StrictMode>
       </body>
