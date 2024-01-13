@@ -12,12 +12,17 @@ import {
   LootTables,
   LootTiers,
 } from "@/vendor/suroi/server/src/data/lootTables";
+import { IFuseOptions } from "fuse.js";
 
 export type SearchItem = {
   name: string;
   image?: string;
   url: string;
   description?: string;
+};
+
+export const fuseSettings: IFuseOptions<SearchItem> = {
+  keys: ["name", "url", "description"],
 };
 
 export const wikiPages: SearchItem[] = [
