@@ -40,7 +40,7 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
                   zIndex: 0,
                 },
               ],
-              viewBox: "-50 -50 100 100",
+              viewBox: "-42.5 -42.5 85 85",
             }
           : {
               type: "image",
