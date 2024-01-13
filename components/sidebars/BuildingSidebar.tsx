@@ -24,6 +24,7 @@ export default function BuildingSidebar({
       title={item.name}
       image={getSuroiImageLink(item)}
       imageVariations={buildingVariations(item).map((variation) => ({
+        type: "image",
         url: variation,
       }))}
     >
