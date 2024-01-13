@@ -45,7 +45,12 @@ export default function ImageTabs({ images }: ImageTabsProps) {
             )} bg-repeat bg-[length:1rem]`}
           />
         ) : currentImage.type === "svg" ? (
-          <svg viewBox={currentImage.viewBox}>
+          <svg
+            viewBox={currentImage.viewBox}
+            className={`w-40 h-40 my-4 p-4 ${getColor(
+              backgroundMode,
+            )} bg-repeat bg-[length:1rem]`}
+          >
             <SVGObjectRenderer objects={currentImage.objects} />
           </svg>
         ) : (
