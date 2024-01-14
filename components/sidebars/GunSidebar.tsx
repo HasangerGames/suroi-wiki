@@ -70,7 +70,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
             type: "react",
             children: (
               <PlayerHoldingGun
-                gun={gun}
+                gun={dual ? dualGun ?? gun : gun}
                 skin={
                   Skins.definitions.find((skin) => {
                     return skin.idString === "hazel_jumpsuit";
