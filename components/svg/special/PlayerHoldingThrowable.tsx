@@ -98,7 +98,7 @@ export default function PlayerHoldingThrowable({
     });
   }
   return (
-    <svg viewBox="-120 -120 240 240">
+    <svg viewBox="-100 -100 220 200">
       <SVGObjectRenderer objects={image} />
     </svg>
   );
