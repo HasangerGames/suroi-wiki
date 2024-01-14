@@ -6,6 +6,7 @@
   "words": [
     // Internet-speak
     "tldr",
+    "wasd",
     "bleh",
 
     // Suroi
@@ -115,7 +116,9 @@
     "excipients", // Plural of excipient
     "retextured",
     "misaligning",
-    "synergize"
+    "synergize",
+    "zombsroyale",
+    "pubg"
   ],
 
   "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
