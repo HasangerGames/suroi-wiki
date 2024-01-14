@@ -23,6 +23,7 @@
     "chart.js": "^4.4.1",
     "cspell": "^8.3.2",
     "fuse.js": "^7.0.0",
+    "js-confetti": "^0.12.0",
     "lucide-react": "^0.292.0",
     "next": "14.0.3",
     "next-mdx-remote": "^4.4.1",

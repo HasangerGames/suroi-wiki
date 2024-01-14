@@ -3,6 +3,7 @@ import { User2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Confetti from "./confetti";
 
 type User = {
   name: string;
@@ -122,7 +123,10 @@ export const ARTISTS: string[] = [
 export default function CreditsPage() {
   return (
     <div className="prose prose-invert text-center w-full">
-      <h1>Credits</h1>
+      <h1 className="flex flex-row gap-4 justify-center">
+        Credits
+        <Confetti />
+      </h1>
 
       <h2>Wiki Team</h2>
       <div className="not-prose w-full">
