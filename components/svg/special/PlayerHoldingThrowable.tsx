@@ -82,7 +82,7 @@ export default function PlayerHoldingThrowable({
     image.push({
       type: "image",
       url: `${IMAGE_BASE_URL}game/projectiles/throwables/${item.animation.pinImage}.svg`,
-      x: leftFist.x + 20,
+      x: leftFist.x + 15,
       y: leftFist.y,
       zIndex: 3,
     });
