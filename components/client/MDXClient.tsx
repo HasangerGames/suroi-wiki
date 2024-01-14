@@ -12,6 +12,7 @@ import { HTMLProps } from "react";
 import Removed from "../articles/notices/Removed";
 import Gallery from "../articles/gallery/Gallery";
 import Spoiler from "../articles/Spoiler";
+import Empty from "../articles/notices/Empty";
 
 const components = {
   Link,
@@ -24,6 +25,7 @@ const components = {
   Stub,
   Spoiler,
   Gallery,
+  Empty,
   a: (props: HTMLProps<HTMLAnchorElement>) => (
     <Link href={props.href!}>{props.children}</Link>
   ),
