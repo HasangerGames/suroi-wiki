@@ -53,7 +53,7 @@ The Porta Potty spawns near the Vault.
 
 - Be careful as there are often many players at the Armory looking for loot.
   - Unless you spawn close to the Armory early game, don't bother heading for the Armory as it will likely already be looted by the time you arrive.
-- There is plenty of indestructable cover in the Armory, such as Sandbags and the M1117, so fights in this structure often last longer.
+- There is plenty of indestructible cover in the Armory, such as Sandbags and the M1117, so fights in this structure often last longer.
   - However, there are plenty of explosive obstacles in the Armory such as the Barrel, so don't get too comfortable.
 - If you want to avoid a fight, only go for the Center and Vault to get the valuable loot from the Armory, then leave immediately.
 
