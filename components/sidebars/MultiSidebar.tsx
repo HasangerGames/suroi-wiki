@@ -22,7 +22,7 @@ export default function MultiSidebar<T extends ObjectDefinition>({
   const selected = childrenArray[index];
 
   return (
-    <div className="min-w-[20rem] max-w-[20rem] flex flex-col gap-2">
+    <div className="md:min-w-[20rem] md:max-w-[20rem] flex flex-col gap-2">
       <div className="flex flex-row flex-wrap w-full justify-around gap-2 items-center p-1">
         {childrenArray.map((_, i) => (
           <button
