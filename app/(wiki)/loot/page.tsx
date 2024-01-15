@@ -59,7 +59,7 @@ export default function LootPage() {
             content={tables.loot
               .flat()
               .map((tier) => [
-                `Tier ${tier.tier}`,
+                "item" in tier ? `Item ${Loots.definitions.find(loot => loot.idString === tier.item)?.name}` : `Tier ${tier.tier}`,
                 tier.weight.toString(),
 
                 (
