@@ -9,7 +9,7 @@ Then known as Transformational Defense Industries, the Vector was designed by KR
 - You can use the Vector to ambush players by hiding in [Buildings](/buildings) or in [Bushes](/obstacles/bush) and attacking at close range.
 - Because of the very fast reload time, you can simply reload your Vector and keep pressing your opponent.
   - Keep an eye on your ammo reserves if you do this.
-  - To use this method, you must be very agressive.
+  - To use this method, you must be very aggressive.
 - The Vector pairs well with other CQC weapons such as shotguns, and can even serve as a replacement.
   - The Vector also pairs well with most weapons in general, as it provides accurate and high-DPS fire while using a common ammo type.
   - With LMGs, you can use the LMG to whittle down an opponent's health and then use a Vector to finish them off.
