@@ -9,13 +9,11 @@ Up to twelve Containers spawn in random positions on the map. Many Containers ca
 Containers always contains one ground loot item on its floor.
 
 # Tips
-
+- The outside or inside of the Container is great for cover because the Container has indestructible walls.
 - The Container, being made out of metal, reflects bullets.
   - You can use this to damage opponents behind cover.
-- The outside or inside of the Container is great for cover because the Container has indestructible walls.
-- You can also hide inside containers to heal up or kill unsuspecting players with a high-DPS weapon like the [Flues](/weapons/guns/flues). 
+- You can also hide inside containers and kill unsuspecting players with a high-DPS weapon like the [Flues](/weapons/guns/flues). 
   - Make sure your container doesn't have a hole at the top, as your opponent can see you through the hole.
-
 - If you see a player inside a Container with one exit, you can fire bullets into the Container with a high-DPS weapon. Your opponent won't be able to see you because they have their scopes disabled when inside a Container.
   - This usually kills your opponent because the interior of a Container also reflects bullets, making them harder to dodge.
   - However, don't get too close as your opponent could rush you.
@@ -23,7 +21,6 @@ Containers always contains one ground loot item on its floor.
 # Trivia
 
 - The Containers were designed by platonthek
-- In real life, containers are usually used to ship products overseas
 # History
 
 - v0.11.0
