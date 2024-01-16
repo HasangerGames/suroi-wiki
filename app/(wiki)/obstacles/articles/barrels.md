@@ -26,7 +26,7 @@ Barrels and Super Barrel drop no loot upon being broken, but they create an expl
 - v0.13.0
   - Fixed an issue with Barrel smoke not displaying
   - Decreased shrapnel damage from Normal Barrels to 2 (from 10)
-  - Decreased shrapenel damage from Super Barrels to 4 (from 10)
+  - Decreased shrapnel damage from Super Barrels to 4 (from 10)
 - v0.10.0
   - Added shrapnel to both Barrels
 - v0.1.0
