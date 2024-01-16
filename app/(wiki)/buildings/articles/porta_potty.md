@@ -2,7 +2,7 @@ The **Porta Potty** is a small building added in the v0.9.0 "Behind Closed Doors
 
 # Location & Spawning
 
-The Porta Potty is the most common building on the map, and can be found all over the island. Up to 15 spawn randomly in the open, but more can spawn as part of structures such as the [Port](/buildings/port) and [Refinery](/buildings/refinery).
+The Porta Potty is the most common building on the map, and can be found all over the island. Up to 15 spawn randomly in the open, but more can spawn as part of the [Port](/buildings/port), [Refinery](/buildings/refinery), and [Armory](/buildings/armory).
 
 # Loot & More
 

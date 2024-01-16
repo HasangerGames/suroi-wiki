@@ -2,7 +2,7 @@ The **Port Shed** is a sub-building of the [Port](/buildings/port). It was added
 
 # Location & Spawning
 
-One Port Shed spawns towards the center of every Port. It is near the [Barrier](/obstacles/barrier).
+One Port Shed spawns towards the center of every Port. It is near the [Barrier](/obstacles/barrier). A Port Shed also spawns in the lower right of the [Armory](/buildings/armory).
 
 # Loot & More
 

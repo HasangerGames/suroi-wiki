@@ -2,7 +2,7 @@ The **Fridge** is an [Obstacle](/obstacles) added in the v0.9.0 "Behind Closed D
 
 # Location & Spawning
 
-Fridges spawn in the Kitchens of both [Houses](/buildings/house) and [Small Houses](/buildings/small_house).
+Fridges spawn in the Kitchens of both [Houses](/buildings/house) and [Small Houses](/buildings/small_house). It also spawns in the Barracks of the [Armory](/buildings/armory).
 
 # Loot & More
 

@@ -40,6 +40,7 @@ The Shed spawns in the lower right of the Armory.
 
 Main article: [Porta Potty](/buildings/porta_potty)
 The Porta Potty spawns near the Vault.
+
 ## Other
 
 - There is a [M1117](/obstacles/m1117) in the top right of the Armory.

@@ -2,7 +2,7 @@ The **Barrier** is an [Obstacle](/obstacles) added in the v0.11.0 "Making Waves"
 
 # Location & Spawning
 
-The Barrier always spawns directly next to the [Port Shed](/buildings/port_shed) at the [Port](/buildings/port).
+A Barrier always spawns directly next to the [Port Shed](/buildings/port_shed) at the [Port](/buildings/port). Another Barrier always spawns at the bottom of the [Armory](/buildings/armory).
 
 # Loot & More
 

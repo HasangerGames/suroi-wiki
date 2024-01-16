@@ -2,7 +2,7 @@ The **Stove** is an [Obstacle](/obstacles) added in the v0.9.0 "Behind Closed Do
 
 # Location & Spawning
 
-Stoves spawn in the Kitchens of both [Houses](/buildings/house) and [Small Houses](/buildings/small_house).
+Stoves spawn in the Kitchens of both [Houses](/buildings/house) and [Small Houses](/buildings/small_house). One also spawns in the Barracks of the [Armory](/buildings/armory).
 
 # Loot & More
 

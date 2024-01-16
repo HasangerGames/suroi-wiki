@@ -6,7 +6,9 @@ The Forklift always spawns inside [Port Warehouses](/buildings/port_warehouse) a
 
 # Loot & More
 
-The Forklift is indestructible and drops no loot. - However, some Forklifts spawn with a pallet with some [Boxes](/obstacles/box) on them.
+The Forklift is indestructible and drops no loot. 
+
+Some Forklifts spawn with a pallet with [Boxes](/obstacles/box), a [Barrel](/obstacles/barrel), or a [Grenade Crate](/obstacles/grenade_crate) on top of it.
 
 # Tips
 
