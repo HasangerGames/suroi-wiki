@@ -13,6 +13,11 @@ const toExport = GenericArticlePage({
       fileName: "crates",
     },
     {
+      title: "Barrels",
+      items: ["barrel", "super_barrel"],
+      fileName: "barrels",
+    },
+    {
       title: "Trees",
       items: ["oak_tree", "birch_tree", "pine_tree"],
       fileName: "trees",
