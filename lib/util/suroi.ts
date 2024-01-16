@@ -38,7 +38,6 @@ export function getSuroiBuilding(idString: string) {
 
 export const IMAGE_BASE_URLS = {
   // Items
-  None: "",
   Gun: "game/weapons",
   Ammo: "game/loot",
   Melee: "game/weapons",
@@ -48,6 +47,7 @@ export const IMAGE_BASE_URLS = {
   Backpack: "game/loot",
   Scope: "game/loot",
   Skin: "game/skins",
+  ThrowableProjectile: "game/projectiles/throwables",
 
   // Objects
   Player: "",
@@ -57,6 +57,7 @@ export const IMAGE_BASE_URLS = {
   Building: "game/buildings",
   Decal: "game/decals",
   Parachute: "game/airdrop",
+  SyncedParticle: "game/particles"
 } satisfies Record<keyof typeof ItemType | keyof typeof ObjectCategory, string>;
 
 export const BRANCH = "master";
