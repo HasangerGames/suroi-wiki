@@ -4,13 +4,13 @@ Crates are a type of obstacle that spawn around the map randomly. They come in t
 
 Crates are generally very common and spawn frequently out in the open. Crates and their variants can also be found inside some buildings.
 
-The Regular Crate is the most common, while the AEGIS and Flint crates are rarer. Only six AEGIS crates and six Flint crates spawn per map outside of structures. A single melee crate always spawns per map.
+The Regular Crate is the most common type of crate. Grenade Crates are fairly common but less common compared to the Regular Crates. The AEGIS and Flint crates are rarer. Only five AEGIS crates and five Flint crates spawn per map outside of structures. A single melee crate always spawns per map.
 
 Regular Crates and the Melee Crate are visible on the minimap, but AEGIS and Flint crates are not.
 
 # Loot & More
 
-All crates drop some sort of loot. The Regular Crate drops the [lowest quality loot](/loot#regular_crate), while the [AEGIS](#aegis_crate) and [Flint](#flint_crate) crates drop better loot. [Melee crates](/loot#melee_crate) always drop two melee weapons per crate. It can drop either the [Baseball Bat](/weapons/melee/baseball_bat) or the [K-bar](/weapons/melee/kbar). The Baseball Bat is the more common drop.
+All crates drop some sort of loot. The Regular Crate drops the [lowest quality loot](/loot#regular_crate), while the [AEGIS](#aegis_crate) and [Flint](#flint_crate) crates drop better loot. [Grenade Crates](#grenade_crate) always drop 3-4 pairs of one of the two grenade types. [Melee crates](/loot#melee_crate) always drop two melee weapons per crate. It can drop either the [Baseball Bat](/weapons/melee/baseball_bat) or the [K-bar](/weapons/melee/kbar). The Baseball Bat is the more common drop.
 
 # Tips
 
@@ -24,7 +24,8 @@ All crates drop some sort of loot. The Regular Crate drops the [lowest quality l
 - Crates were amongst the first obstacles added to the game.
 
 # History
-
+- v0.15.0
+  - Added the Grenade Crate
 - v0.5.0
   - Added the AEGIS, Flint and Melee Crates
 - v0.4.0
