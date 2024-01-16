@@ -17,6 +17,25 @@ The **Frag Grenade** is an explosive [Throwable](/throwables) added in the v0.15
   - This is usually not a challenge but can be if you are in an enclosed space.
 - If your opponent utilizes "grenade spamming", you can try to rush forward and out-DPS them close range using a weapon such as the [Flues](/weapons/guns/flues).
 
+## Grenade Boosting (WIP)
+This is a special techique that abuses the behaviour of frag grenades pushing other frag grenades. It involves throwing two or more grenades next to each other to get more range than the normal maximum throw distance. (Discovered by Lava and Kenos)
+
+### The easy way, most consistent, but requires planning
+- While not moving both the player and mouse, throw two or more grenades near you, and then moving out to avoid the explosion
+- Each grenade will boost each other consistently
+- Point in the opposite direction you want to aim
+
+### The less consistent, but on the fly way
+- Cook a grenade for (0-2 seconds, longer cook time = more range), and throw it at 2.4 game grids range (about less than max throwing range)
+- Immediately after the first grenade, throw another in the same direction with a slightly longer throw distance
+- The first grenade will explode and boost the second
+- Point in the direction you want to aim at
+
+### The disadvantages
+- There is a large risk factor to grenade boosting, as interference from obstacles (ie. trees) and other explosions (ie. enemy frag grenades) can make grenade boosting inconsistent and may boost a grenade back to you, exploding you
+- Grenade boosts are well telegraphed and can be easily predicted, you can only really use this with scope advantage
+- It can waste a lot of frags
+
 # Obtaining
 Frag Grenades can sometimes be obtained from [Regular Crates](/obstacles/regular_crate), but are much more often dropped from (Grenade Crates)[/obstacles/grenade_crate].
 
