@@ -17,7 +17,7 @@ export default function Collapsible({
     <div className={className}>
       <button
         onClick={() => setOpen(!open)}
-        className="flex flex-row gap-4 w-full"
+        className="flex flex-row gap-4 w-full items-center"
       >
         {open ? <ChevronDown /> : <ChevronRight />}
         {label}
