@@ -18,7 +18,7 @@ The **Frag Grenade** is an explosive [Throwable](/throwables) added in the v0.15
 - If your opponent utilizes "grenade spamming", you can try to rush forward and out-DPS them close range using a weapon such as the [Flues](/weapons/guns/flues).
 
 ## Grenade Boosting (WIP)
-This is a special techique that abuses the behaviour of frag grenades pushing other frag grenades. It involves throwing two or more grenades next to each other to get more range than the normal maximum throw distance. (Discovered by Lava and Kenos)
+This is a special technique that abuses the behavior of frag grenades pushing other frag grenades. It involves throwing two or more grenades next to each other to get more range than the normal maximum throw distance. (Discovered by Lava and Kenos)
 
 ### The easy way, most consistent, but requires planning
 - While not moving both the player and mouse, throw two or more grenades near you, and then moving out to avoid the explosion
