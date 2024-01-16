@@ -9,7 +9,13 @@ const toExport = GenericArticlePage({
   combinedArticles: [
     {
       title: "Crates",
-      items: ["aegis_crate", "flint_crate", "regular_crate", "melee_crate"],
+      items: [
+        "aegis_crate",
+        "flint_crate",
+        "regular_crate",
+        "melee_crate",
+        "grenade_crate",
+      ],
       fileName: "crates",
     },
     {
