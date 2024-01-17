@@ -1,6 +1,6 @@
 import CommitLink from "@/components/links/CommitLink";
 
-The basic vest is the lowest tier of all the vests and will reduct 20% of the damage taken from attacks. 
+The basic vest is the lowest tier of all the vests and will reduce 20% of the damage taken from attacks. 
 
 # Trivia
 
