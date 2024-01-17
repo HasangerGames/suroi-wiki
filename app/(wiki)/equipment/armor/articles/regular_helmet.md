@@ -4,7 +4,7 @@ The regular helmet is the second best helmet in the game. The helmet reduces 15%
 
 # Trivia 
 
- - The "regular helmet" used to be calleed the "m1 helmet"
+ - The "regular helmet" used to be called the "m1 helmet"
  - The "m1 helmet" was changed to the "Lvl. 2 Helmet" in <CommitLink sha="1da8f75e"/>
  - It was later then changed to "regular helmet"
 
