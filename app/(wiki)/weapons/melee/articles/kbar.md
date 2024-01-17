@@ -14,7 +14,7 @@ The K-Bar is a combat knife designed by Union Cutlery, John M. Davis, and Howard
 
 ## Countering
 
-- If you see a player who has a K-Bar and is intrested in attacking you with it, stay at a distance and gun them down.
+- If you see a player who has a K-Bar and is interested in attacking you with it, stay at a distance and gun them down.
   - You can also attempt to rush in with a high-DPS close-range weapon or another melee weapon, although this is risky if the K-Bar user is skilled.
 
 # Obtaining
