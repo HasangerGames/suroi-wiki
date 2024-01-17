@@ -50,7 +50,7 @@ If you have been mad at GitHub's email spam telling you about failed CI runs, tr
 At the project root,
 
 ```sh
-echo "pnpm ci:lint; pnpm spellcheck" > .git/hooks/pre-commit
+echo "pnpm ci:lint\npnpm spellcheck" > .git/hooks/pre-commit
 chmod +x .git/hooks/pre-commit
 ```
 
