@@ -5,7 +5,7 @@ The tactical helmet is the best helmet in the game as of right now. It reduces 2
 # Trivia
 
  - The "tactical helmet" was changed to "Lvl. 3 Helmet" in <CommitLink sha="1da8f75e"/>
- - It wsa later changed back to "tactical helmet"
+ - It was later changed back to "tactical helmet"
 
 # History
 
