@@ -57,7 +57,7 @@ export const IMAGE_BASE_URLS = {
   Building: "game/buildings",
   Decal: "game/decals",
   Parachute: "game/airdrop",
-  SyncedParticle: "game/particles"
+  SyncedParticle: "game/particles",
 } satisfies Record<keyof typeof ItemType | keyof typeof ObjectCategory, string>;
 
 export const BRANCH = "master";
