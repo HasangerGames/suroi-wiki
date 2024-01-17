@@ -1,6 +1,6 @@
 import CommitLink from "@/components/links/CommitLink";
 
-The tactical vest is the best vest in the game right now.
+The tactical vest is the best vest in the game right now. It reduces 45% of the damage that the player takes from attacks.
 
 # Trivia 
 
