@@ -43,6 +43,19 @@ Note that we use `pnpm`, instead of `npm` (because it is just better)
 
 (We obviously don't care about what you use)
 
+### Setting up a git hook
+
+If you have been mad at GitHub's email spam telling you about failed CI runs, try out Git hooks!
+
+At the project root,
+
+```sh
+echo "pnpm ci:lint; pnpm spellcheck" > .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+Now Git will lint and spellcheck for you before you commit your changes!
+
 ## Do and Don't
 
 **Don't use `<a></a>` and `<img />`**
