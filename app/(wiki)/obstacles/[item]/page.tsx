@@ -58,6 +58,11 @@ const toExport = GenericArticlePage({
       items: ["door", "vault_door", "garage_door"],
       fileName: "doors",
     },
+    {
+      title: "Fences",
+      items: ["port_fence", "port_fence_side"],
+      fileName: "fences"
+    }
   ],
 });
 
