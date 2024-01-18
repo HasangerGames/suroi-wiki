@@ -1,4 +1,4 @@
-import ArmorCalc from "@/components/interactive/ArmorCalc";
+import ArmorCalc from "@/components/interactive/calculators/ArmorCalc";
 import FileLink from "@/components/links/FileLink";
 import Image from "next/image";
 import Link from "@/components/links/Link";

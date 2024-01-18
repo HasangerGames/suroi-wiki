@@ -18,6 +18,9 @@ const Vests = Armors.definitions.filter(
   (armor) => armor.armorType === ArmorType.Vest,
 );
 
+/**
+ * @deprecated Use the other ArmorCalc component
+ */
 export default function ArmorCalc() {
   const [selectedGun, setSelectedGun] = useState<null | GunDefinition>(null);
   const [selectedHelmet, setSelectedHelmet] = useState<null | ArmorDefinition>(
