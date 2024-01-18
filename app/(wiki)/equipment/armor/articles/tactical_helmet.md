@@ -1,16 +1,16 @@
-import CommitLink from "@/components/links/CommitLink";
+The **Tactical Vest** is a piece of [Equipment](/equipment) added the in the v0.7.0 "Geared Up" update on July 10, 2023. It is the third and final vest tier and reduces the most damage out of all types of equipment.
 
-The tactical helmet is the best helmet in the game as of right now. It reduces 20% of the damage taken from attacks.
+# Obtaining
 
-# Trivia
+The Tactical Vest can be obtained rarely from common loot sources such as [crates](/obstacles/crates), but it is most easily found from an [Airdrop](/obstacles/airdrops) because they have a guranteed chance to drop one piece of level 3 equipment. 
 
- - The "tactical helmet" was changed to "Lvl. 3 Helmet" in <CommitLink sha="1da8f75e"/>
- - It was later changed back to "tactical helmet"
+# Trivia 
+
+ - The Tactical Vest was designed by Slapdap and jc
 
 # History
 
  - v0.13.0
    - Unique pickup sound added
-
  - v0.7.0
    - Added
