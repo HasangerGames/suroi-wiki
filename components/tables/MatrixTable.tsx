@@ -9,7 +9,7 @@ export default function MatrixTable({
 }: MatrixTableProps) {
   return (
     <div className="flex flex-col gap-2 p-4 pt-0 bg-muted rounded-md not-prose max-h-screen overflow-y-auto">
-      <div className=" max-h-screen overflow-auto sticky bg-muted pt-4 top-0">
+      <div className="max-h-screen overflow-auto sticky bg-muted pt-4 top-0">
         <div>
           {title && <h3 className="text-xl font-bold pb-2">{title}</h3>}
         </div>
