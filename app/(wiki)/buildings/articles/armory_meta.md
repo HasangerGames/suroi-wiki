@@ -26,7 +26,7 @@ The outer area of the Vault contains four [Buttons](/obstacles/button), two [Gun
 
 The inner area of the Vault can only be accessed by entering a specific password into the four buttons in the outer vault. Once the correct password is entered, the [Vault Door](/obstacles/doors) opens, allowing access to the inner Vault.
 <Spoiler spoiler="Armory Vault puzzle solution">
-The password to the inner vault is ÖLGY, which is Finnish for "oil". The markings on the floor determine which buttons correspond to which letter.
+The password to the inner vault is ÖLJY, which is Finnish for "oil". The markings on the floor determine which buttons correspond to which letter.
 </Spoiler>
 
 The inner Vault contains a [Briefcase](/obstacles/briefcase), a [Barrel](/obstacles/barrel), an Ammo Crate, and a [Regular Crate](/obstacles/crates). 
