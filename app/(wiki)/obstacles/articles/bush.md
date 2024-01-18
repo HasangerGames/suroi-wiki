@@ -8,7 +8,7 @@ Both Bushes and Blueberry Bushes can found be randomly spawned around the map, w
 
 # Loot & More
 
-The Bush does not have any loot, but the Blueberry Bush actually has decent [loot](/loot#blueberry_bush). It spawns with Scopes, [Armor](equipment/armor), or [Backpacks](equipment/backpacks).
+The Bush does not have any loot, but the Blueberry Bush actually has decent [loot](/loot#blueberry_bush). It spawns with [Scopes](/loot#scopes), [Armor](equipment/armor), or [Backpacks](equipment/backpacks).
 
 # Tips
 
