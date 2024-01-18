@@ -19,7 +19,12 @@ export default function Collapsible({
         onClick={() => setOpen(!open)}
         className="flex flex-row gap-4 w-full items-center"
       >
-        <ChevronDown style={{ transform: `rotate(${open ? '0deg' : '-90deg'})`, transition: "transform 0.2s ease" }} />
+        <ChevronDown
+          style={{
+            transform: `rotate(${open ? "0deg" : "-90deg"})`,
+            transition: "transform 0.2s ease",
+          }}
+        />
         {label}
       </button>
       <Collapse isOpened={open}>{children}</Collapse>
