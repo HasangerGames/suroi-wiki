@@ -6,7 +6,7 @@ import { ReactNode } from "react";
 export default function GenericCalculator(args: GenericCalculatorArgs) {
   const defaultExport = () => {
     return (
-      <div className="flex flex-col gap-4 p-4 bg-muted rounded-md">
+      <div className="flex flex-col gap-4 p-4 border border-border rounded-md">
         {args.children}
         <div>{args.callback()}</div>
       </div>
