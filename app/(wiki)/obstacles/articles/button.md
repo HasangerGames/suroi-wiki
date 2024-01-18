@@ -1,17 +1,22 @@
-The **Button** is an [obstacle](/obstacles) that only spawns inside of the Armory Vault. It was added to the game in v0.15.0 "Pulling the Pin" update on 1/14/24. These Buttons can be pressed to enter a code to open the Armory Vault, which will give a weapon spawn of a Vector, Vepr-12, or a Arx-160.
+The **Button** is an interactive [obstacle](/obstacles) added to the game in the v0.15.0 "Pulling the Pin" update on January 14, 2024. 
 
 # Location & Spawning
 
-These only spawn in the Armory Vault so far. Only 4 Buttons spawn each game.
+Four Buttons spawn inside the [Armory](/buildings/armory) Vault. They are linked to a puzzle that unlocks the inner vault which contains a [Briefcase](/obstacles/briefcase). For the puzzle solution, go to the [Armory](/buildings/armory) article.
 
 # Loot & More
 
-The Buttons are usually linked to puzzles.
+Buttons are usually linked to puzzles. They can be pressed by interacting with them. They cannot be broken and can't drop loot.
+
+# Tips
+
+Buttons cannot be used as cover since their hitbox is too small.
+
+# Trivia
+
+- The Button was designed by Bear
 
 # History
 
  - v0.15.0
    - Added
-
-
-
