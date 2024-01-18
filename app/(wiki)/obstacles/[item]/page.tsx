@@ -55,14 +55,14 @@ const toExport = GenericArticlePage({
     },
     {
       title: "Doors",
-      items: ["door", "vault_door", "garage_door"],
+      items: ["door", "vault_door", "garage_door", "porta_potty_door"],
       fileName: "doors",
     },
     {
       title: "Fences",
       items: ["port_fence", "port_fence_side"],
-      fileName: "fences"
-    }
+      fileName: "fences",
+    },
   ],
 });
 
