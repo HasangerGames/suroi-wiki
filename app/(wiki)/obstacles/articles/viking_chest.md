@@ -1,12 +1,20 @@
-The **Viking Crate** is a crate that was added in v0.15.0 "Pulling the Pin" update on 1/14/24. The Viking Crate's loot table is similar to those of the [Flint](/obstacles/crate) & of the [AEGIS](/obstacles/crate). The Viking Crate always drops a [Seax](/weapons/melee/seax) along with the loot.
+The **Viking Chest** is an [Obstacle](/obstacles) that was added in the v0.15.0 "Pulling the Pin" update on January 14, 2024. 
 
 # Location & Spawning
 
-The Viking Crate typically spawns along the outer shore of the map. It is not visible on the player's map/minimap.
+A single Viking Chest typically spawns on the beach near the shore once per game. It is not visible on the player's minimap.
 
 # Loot & More
 
-The Viking Crate has decent [loot](/loot#viking_crate). It can drop a [Seax](/weapons/melee/seax), up to 3 [guns](/loot#viking_chest_guns), up to 2 [special equipment](/loot#special_equipment), & up to 2 [scopes](/loot#special_scopes).
+The Viking Chest has decent [loot](/loot#viking_crate). It drops a [Seax](/weapons/melee/seax), 2-3 [Guns](/loot#viking_chest_guns), up to two pieces of [Equipment](/loot#special_equipment), and up to two [Scopes](/loot#special_scopes).
+
+# Tips
+
+- THe Viking Chest can be used as cover in certain situations, but it is more worthwhile to break them for loot.
+
+# Trivia
+
+- THe Viking Chest was designed by 1092384 and croissant
 
 # History
 
