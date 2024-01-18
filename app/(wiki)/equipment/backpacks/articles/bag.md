@@ -1,15 +1,13 @@
-import CommitLink from "@/components/links/CommitLink";
-
-The bag is the bag you spawn with at the beginning which has no appearance difference on your avatar. Your bag can only fit a limited amount for ammo, healing items, and throwables. 
+The **Bag** is a piece of [Equipment](/equipment) added in the beta release of suroi on May 21st, 2023. The Bag allows players to store items such as [healing](/healing) in their inventory.
 
 # Obtaining 
 
-You spawn with the bag...There's not much more.
+All players have a Bag when they join the game, similar to [Fists](/weapons/melee/fists).
 
 # Trivia 
 
- - The "bag" was changed to "Lvl. 0 Pack" in <CommitLink sha="1da8f75e"/>
- - It was later changed back to "bag"
+- The Bag cannot be dropped in any way as it's not shown on the GUI.
+- When equipping a higher-tier backpack, the Bag simply disappears instead of being dropped.
 
 # History
 

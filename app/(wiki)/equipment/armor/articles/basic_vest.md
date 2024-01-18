@@ -1,19 +1,16 @@
-import CommitLink from "@/components/links/CommitLink";
+The **Basic Vest** is a piece of [Equipment](/equipment) added the in the v0.7.0 "Geared Up" update on July 10, 2023. It is the first vest tier and reduces the least damage out of all the vests.
 
-The basic vest is the lowest tier of all the vests and will reduce 20% of the damage taken from attacks. 
+# Obtaining
+
+The Basic Vest is easily obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). 
 
 # Trivia
 
- - This vest used to be called the "basic vest" until it was changed to "Lvl. 1 Vest" in <CommitLink sha="1da8f75e"/>.
- - It was then renamed back to "basic vest"
+- The Basic Vest was designed by Slapdap
 
 # History
 
  - v0.13.0
-   - Unique pickup sound added   
-
+   - Unique pickup sound added 
  - v0.7.0
-   - Added
- 
- 
-   
+   - Added 
