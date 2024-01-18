@@ -1,8 +1,17 @@
-import CommitLink from "@/components/links/CommitLink";
+The **Regular Vest** is a piece of [Equipment](/equipment) added the in the v0.7.0 "Geared Up" update on July 10, 2023. It is the second vest tier and reduces more damage compared to the [Basic Vest](/equipment/armor/basic_vest).
 
-The Regular Vest is the second best vest in the game.
+# Obtaining
+
+The Regular Vest can be obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). 
+However, it is rarer when compared to the Regular Vest.
 
 # Trivia
 
-- This vest used to be called the "Bulletproof Vest" until it was updated to "Lvl. 2 Vest" in <CommitLink sha="1da8f75e"/>.
-- It was then renamed "Regular Vest" in <CommitLink sha="025ccaa" /> which it is today
+- The Regular Vest was designed by Slapdap
+
+# History
+
+ - v0.13.0
+   - Unique pickup sound added 
+ - v0.7.0
+   - Added 
