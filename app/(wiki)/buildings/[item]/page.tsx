@@ -10,7 +10,7 @@ const toExport = GenericArticlePage({
   combinedArticles: [
     {
       title: "Oil Tanker",
-      items: ["oil_tanker_ship_tanks", "oil_tanker_ship"],
+      items: ["oil_tanker_ship"],
       fileName: "oil_tanker",
     },
     {
