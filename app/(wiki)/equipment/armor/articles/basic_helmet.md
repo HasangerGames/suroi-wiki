@@ -1,17 +1,16 @@
-import CommitLink from "@/components/links/CommitLink";
+The **Basic Helmet** is a piece of [Equipment](/equipment) added the in the v0.7.0 "Geared Up" update on July 10, 2023. It is the first helmet tier and reduces the least damage out of all the helmets.
 
-The basic vest is the lowest tier helmet in the game. It reduces 10% of the damage that the player takes from attacks.
+# Obtaining
+
+The Basic Helmet is easily obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). 
 
 # Trivia
 
- - The basic helmet used to be called the "hard hat"
- - The "hard hat" was changed to "Lvl. 1 Helmet" in <CommitLink sha="1da8f75e"/>
- - It was changed back to "basic helmet" after that
+- The Basic Helmet was designed by Slapdap
 
 # History
 
  - v0.13.0
    - Unique pickup sound added 
-
  - v0.7.0
    - Added 

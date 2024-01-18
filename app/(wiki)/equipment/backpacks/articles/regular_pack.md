@@ -1,20 +1,17 @@
-import CommitLink from "@/components/links/CommitLink";
-
-The regular pack is the second best pack in the game and it stores enough items to probably last a whole game. 
+The **Regular Pack** is a piece of [Equipment](/equipment) added the in the v0.7.0 "Geared Up" update on July 10, 2023. It is the second backpack tier (not including the [Bag](/equipment/backpacks/bag)) and can fit more amounts of ammo, healing items, and throwables compared to the [Basic Pack](/equipment/backpacks/basic_pack).
 
 # Obtaining
-
-You can obtain the regular pack from finding it in crates, the ground, airdrops, or in buildings
+ 
+The Regular Pack can be obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). However, it is rarer when compared to the Basic Pack.
 
 # Trivia 
 
- - The "regular pack" was changed to "Lvl. 2 Pack" in <CommitLink sha="1da8f75e"/>
- - It was then later changed back to "regular pack"
+ - The Regular Pack was designed by Slapdap
+ - The Regular Pack has a Flint logo on it
 
 # History
 
  - v0.13.0
    - Unique pickup sounds added
-
  - v0.7.0
    - Added

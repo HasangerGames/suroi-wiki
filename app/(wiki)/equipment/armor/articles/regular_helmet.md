@@ -1,17 +1,17 @@
-import CommitLink from "@/components/links/CommitLink";
+The **Regular Helmet** is a piece of [Equipment](/equipment) added the in the v0.7.0 "Geared Up" update on July 10, 2023. It is the second helmet tier and reduces more damage compared to the [Basic Helmet](/equipment/armor/basic_helmet).
 
-The regular helmet is the second best helmet in the game. The helmet reduces 15% of the damage taken from attacks.
+# Obtaining
 
-# Trivia 
+The Regular Helmet can be obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). 
+However, it is rarer when compared to the Regular Helmet.
 
- - The "regular helmet" used to be called the "m1 helmet"
- - The "m1 helmet" was changed to the "Lvl. 2 Helmet" in <CommitLink sha="1da8f75e"/>
- - It was later then changed to "regular helmet"
+# Trivia
+
+- The Regular Helmet was designed by Slapdap
 
 # History
 
  - v0.13.0
-   - Unique pickup sound added
-
+   - Unique pickup sound added 
  - v0.7.0
-   - Added
+   - Added 

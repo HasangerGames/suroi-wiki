@@ -1,23 +1,16 @@
-import CommitLink from "@/components/links/CommitLink";
-
-The basic pack is the lowest tier of the packs (not including bag) and can fit a bit more ammo, healing items, & throwables. But still, not that much. 
+The **Basic Pack** is a piece of [Equipment](/equipment) added the in the v0.7.0 "Geared Up" update on July 10, 2023. It is the first backpack tier (not including the [Bag](/equipment/backpacks/bag)) and can fit more amounts of ammo, healing items, and throwables compared to the Bag.
 
 # Obtaining
 
-You can obtain the basic pack by opening basic, AEGIS, or flint crates. You can also find them in bushes and floors in the map. 
+The Basic Pack is easily obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). 
 
 # Trivia 
 
- - The "basic pack" used to be called the "satchel"
- - The "satchel" was then changed into the "Lvl. 1 Pack" in <CommitLink sha="1da8f75e"/>
- - It was then later changed back to "basic pack"
+- The Basic Pack was designed by Slapdap
 
 # History
 
  - v0.13.0
    - Unique pickup sound added 
-
  - v0.7.0
    - Added
-  
-   
