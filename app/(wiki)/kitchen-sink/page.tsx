@@ -13,10 +13,13 @@ import TableWithHeader from "@/components/tables/TableWithHeader";
 import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import Collapsible from "@/components/interactive/Collapsible";
+import GenericCalculator from "@/components/interactive/calculators/utils/GenericCalculator";
+import TestCalc from "@/components/interactive/calculators/utils/TestCalc";
 
 export default function Kitchen() {
   return (
     <div className="block col-span-full">
+      <TestCalc />
       <iframe
         width="560"
         height="315"
