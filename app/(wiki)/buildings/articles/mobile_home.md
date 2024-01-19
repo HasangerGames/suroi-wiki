@@ -2,7 +2,7 @@ The **Mobile Home** is an obstacle added in v0.15.0 "Pulling the Pin" update on 
 
 # Location & Spawning
 
-The Mobile Home is a common structure that spawns throughout the whole map anywhere on land. Along with the Mobile Home, 2 [Boxex](/obstacles/box) will spawn behind the Mobile Home.
+The Mobile Home is a common structure that spawns throughout the whole map anywhere on land. Along with the Mobile Home, 2 [Boxes](/obstacles/box) will spawn behind the Mobile Home.
 
 # Tips
 
