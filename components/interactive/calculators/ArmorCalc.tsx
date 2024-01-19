@@ -62,10 +62,10 @@ export default function ArmorCalc() {
             <div className="flex gap-2 items-center mt-2">
               <label>Vest</label>
               <AutoComplete
-                items={Vests.map((helmet) => ({
-                  name: helmet.name,
+                items={Vests.map((vest) => ({
+                  name: vest.name,
                   specialDisplay: <div className="flex flex-row gap-2"><Image src={getSuroiImageLink(vest)} alt={vest.name} width={25} height={25} />{vest.name}</div>,
-                  item: helmet.idString,
+                  item: vest.idString,
                 }))}
                 setter={setSelectedVest}
               />
