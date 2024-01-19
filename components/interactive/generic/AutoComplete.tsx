@@ -46,7 +46,7 @@ export default function AutoComplete({ items, setter }: AutoCompleteProps) {
         className="form-input w-full h-full bg-muted rounded-md"
       />
       {input.length > 0 && !isSelected && (
-        <div className="absolute flex flex-col min-w-[20rem] gap-2 -bottom-2 left-0 translate-y-full bg-background border border-border p-2 rounded-md">
+        <div className="absolute z-10 flex flex-col min-w-[20rem] gap-2 -bottom-2 left-0 translate-y-full bg-background border border-border p-2 rounded-md">
           {results.length > 0 ? (
             results.map((result, i) => (
               <button
