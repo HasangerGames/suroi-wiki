@@ -2,6 +2,7 @@
 
 import { AutoCompleteItem } from "@/lib/util/types";
 import Fuse, { FuseResult } from "fuse.js";
+import { ChevronsUpDown } from "lucide-react";
 import { Dispatch, useState } from "react";
 
 export default function AutoComplete({ items, setter }: AutoCompleteProps) {
@@ -45,6 +46,7 @@ export default function AutoComplete({ items, setter }: AutoCompleteProps) {
         type="text"
         className="form-input w-full h-full bg-muted rounded-md"
       />
+      <ChevronsUpDown className="absolute top-0 right-2 bottom-0 my-auto" />
       {input.length > 0 && !isSelected && (
         <div className="absolute z-10 flex flex-col min-w-[20rem] gap-2 -bottom-2 left-0 translate-y-full bg-background border border-border p-2 rounded-md">
           {results.length > 0 ? (
