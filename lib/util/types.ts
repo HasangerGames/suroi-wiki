@@ -26,6 +26,12 @@ export type ImageTab = {
     }
 );
 
+export type AutoCompleteItem = {
+  name: string;
+  specialDisplay?: ReactNode;
+  item: string;
+};
+
 export type CalculatorMenu = {
   title: string;
   items: CalculatorMenuItem[];

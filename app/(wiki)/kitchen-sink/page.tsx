@@ -16,10 +16,35 @@ import Collapsible from "@/components/interactive/Collapsible";
 import GenericCalculator from "@/components/interactive/calculators/utils/GenericCalculator";
 import TestCalc from "@/components/interactive/calculators/utils/TestCalc";
 import ArmorCalc from "@/components/interactive/calculators/ArmorCalc";
+import AutoComplete from "@/components/interactive/generic/AutoComplete";
+import { useState } from "react";
 
 export default function Kitchen() {
+  const [selected, setSelected] = useState("");
   return (
     <div className="block col-span-full">
+      <AutoComplete
+        items={[
+          {
+            name: "hi",
+            item: "hi",
+          },
+          {
+            name: "help",
+            item: "help",
+          },
+          {
+            name: "aaaa",
+            item: "bbb",
+          },
+          {
+            name: "bleh",
+            item: "ccc",
+          },
+        ]}
+        setter={setSelected}
+      />
+      <p>You selected {selected}</p>
       <TestCalc />
       <ArmorCalc />
       <iframe
