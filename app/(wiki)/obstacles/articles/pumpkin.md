@@ -12,7 +12,7 @@ The pumpkin drops one of the following guns: - 95% chance for a [G17 (scoped)](/
 
 # Tips
 
-- The small size and low health of the Pumpkin makes it a poor choice for cover.
+- The small size and low health of the Pumpkin make it a poor choice for cover.
 - Try and break as many Pumpkins as you can early game to try and get the USAS-12.
 
 # Trivia
