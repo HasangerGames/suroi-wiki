@@ -10,11 +10,11 @@ The Viking Chest has decent [loot](/loot#viking_crate). It drops a [Seax](/weapo
 
 # Tips
 
-- THe Viking Chest can be used as cover in certain situations, but it is more worthwhile to break them for loot.
+- The Viking Chest can be used as cover in certain situations, but it is more worthwhile to break them for loot.
 
 # Trivia
 
-- THe Viking Chest was designed by 1092384 and croissant
+- The Viking Chest was designed by 1092384 and croissant
 
 # History
 
