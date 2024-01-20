@@ -10,9 +10,9 @@ The Gold Rock has a [100% chance](/loot#gold_rock) of dropping a Mosin-Nagant.
 
 # Tips
 
-- The Gold Rock is actually a very effective piece of cover, if you end up being in a situation that you use it as such.
-- If there's no other players around, immediately break the Gold Rock to get the Mosin-Nagant from it.
-- Unless you have a LMG, it's likely not worth it to try and destroy the Gold Rock if a player is hiding behind it, due to the large amount of health it has.
+- The Gold Rock is a very effective piece of cover if you end up being in a situation where you use it as such.
+- If there are no other players around, immediately break the Gold Rock to get the Mosin-Nagant from it.
+- Unless you have an LMG, it's likely not worth it to try and destroy the Gold Rock if a player is hiding behind it, due to the large amount of health it has.
 
 # Trivia
 
