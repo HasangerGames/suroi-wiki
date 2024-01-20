@@ -2,7 +2,7 @@ The **Smokestack** is an [Obstacle](/obstacles) added in the v0.10.0 "Back with 
 
 # Location & Spawning
 
-One Smokestack spawns in one of the corners in the [Refinery](/buildings/refinery).
+One Smokestack spawns in one of the corners of the [Refinery](/buildings/refinery).
 
 # Loot & More
 
@@ -10,7 +10,7 @@ Smokestacks are indestructible and reflect bullets.
 
 # Tips
 
-- The Smokestack in the refinery can be used as cover from enemies; however, it's usage very situational.
+- The Smokestack in the refinery can be used as cover from enemies; however, its usage very situational.
 
 # Trivia
 
