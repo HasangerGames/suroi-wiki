@@ -14,7 +14,7 @@ The Seax is a large single-edged blade with a tang in the centerline of the blad
 
 ## Countering
 
-- As with all melee weapons, the best way to avoid them entirely is to keep your distance and use a gun designed for mid or long range combat to kill them.
+- As with all melee weapons, the best way to avoid them entirely is to keep your distance and use a gun designed for mid or long-range combat to kill them.
  - Use a high-DPS weapon like the [Flues](/weapons/guns/flues) to shoot down the Seax user approaching you if you can't escape.
  
 
