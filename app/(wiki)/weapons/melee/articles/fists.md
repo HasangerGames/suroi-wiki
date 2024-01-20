@@ -9,9 +9,9 @@
 
 - Fists are usually used to break obstacles such as crates to get loot.
 - Fists are also the only weapon you spawn with.
-  - Fists are great for early game fights when both players do not own guns.
+  - Fists are great for early-game fights when both players do not own guns.
   - This requires skill as it can be tricky to land hits on your opponent without them hitting you.
-- Fists, or any other melee weapon can be used to damage your opponent in extreme close range situations during any phase of the game.
+- Fists or any other melee weapon can be used to damage your opponent in extremely close-range situations during any phase of the game.
   - Doing this usually surprises your opponent, allowing you to deal a decent amount of damage with good aim before they can react.
   - This is often effective if your opponent is already at low health.
   - Be careful if your opponent has a better melee weapon that they can switch to after you attack.
