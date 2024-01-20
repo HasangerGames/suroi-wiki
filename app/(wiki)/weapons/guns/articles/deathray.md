@@ -1,6 +1,6 @@
 <DevWeapon />
 
-The **Death Ray** is a dev-only weapon initially added in the v0.4.0 update, and majorly reworked in the v0.8.0 update. Capable of eliminating almost any object instantly, it also possesses the ability to sail right through cover and players without losing any damage nor velocity, making it extremely dangerous.
+The **Death Ray** is a dev-only weapon initially added in the v0.4.0 update, and majorly reworked in the v0.8.0 update. Capable of eliminating almost any object instantly, it also possesses the ability to sail right through cover and players without losing any damage or velocity, making it extremely dangerous.
 
 # Strategies
 
@@ -12,7 +12,7 @@ The **Death Ray** is a dev-only weapon initially added in the v0.4.0 update, and
 
 ## Countering
 
-- The Death Ray is a hopeless matchup if you yourself do not have a Death Ray, because it is impossible to stall against it. It completely bypasses cover, and has no range preference.
+- The Death Ray is a hopeless matchup if you do not have a Death Ray because it is impossible to stall against it. It completely bypasses the cover and has no range preference.
   - Your best hope for stalling out a Death Ray is to try and make its user miss, retaliating against them while they reload.
 
 # Obtaining
@@ -23,7 +23,7 @@ As a dev-only weapon, the Death Ray can only be obtained by developers, or on th
 
 - This weapon was completely reworked in the v0.8.0 update.
   - Previously, it was a weapon that fired 20 projectiles per shot for 200 damage per shot every 60ms (for 3333.333 DPS), had infinite ammo, 20º spread, no penetration, and a range comparable to the [Glock 19](/weapons/guns/g19).
-    - That iteration of the Death Ray was weaker, since it was possible to stall against it, and it was possible to outrange it.
+    - That iteration of the Death Ray was weaker since it was possible to stall against it, and it was possible to outrange it.
 - It is the first developer weapon (both in its original form and its rework, since the next developer weapon, the [Revitalizer](/weapons/guns/revitalizer) was added in v0.9.0)
 - Its switch sound contains an easter egg.
 - Like other developer weapons, its kill icon contains colors and gradients.
