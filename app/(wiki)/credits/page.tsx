@@ -14,13 +14,13 @@ type User = {
 export const WIKI_TEAM: User[] = [
   {
     name: "Compositr",
-    description: "Main Wiki Developer",
+    description: "Lead Wiki Developer",
     avatar: "https://avatars.githubusercontent.com/u/43405050",
     website: "https://compositr.dev",
   },
   {
     name: "Kenos",
-    description: "Wiki Developer, advanced features",
+    description: "Sr. Wiki Developer",
     avatar: "https://avatars.githubusercontent.com/u/75338427",
     website: "https://kenos.codeberg.page",
   },
@@ -52,12 +52,12 @@ export const WIKI_CONTRIB: string[] = [
 export const GAME_TEAM: User[] = [
   {
     name: "Hasanger",
-    description: "Owner of Suroi",
+    description: "Owner and Lead Developer of Suroi",
     avatar: "https://avatars.githubusercontent.com/u/20248785",
   },
   {
     name: "Leia",
-    description: "Developer",
+    description: "Sr. Developer",
     avatar: "https://avatars.githubusercontent.com/u/69596237",
   },
   {
@@ -72,13 +72,14 @@ export const GAME_TEAM: User[] = [
   },
   {
     name: "eiπ",
-    description: "Developer",
+    description: "Sr. Developer",
     avatar: "https://avatars.githubusercontent.com/u/91853103",
   },
   {
     name: "Chpsterz",
     description: "Developer",
     avatar: "https://avatars.githubusercontent.com/u/72819276",
+    website: "https://chpsscode.github.io",
   },
   {
     name: "Limenade",
@@ -92,7 +93,7 @@ export const GAME_TEAM: User[] = [
   },
   {
     name: "Milocat",
-    description: "Developer",
+    description: "Jr. Developer",
     avatar: "https://avatars.githubusercontent.com/u/119687855",
   },
 ];
