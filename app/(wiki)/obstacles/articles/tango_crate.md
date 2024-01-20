@@ -10,7 +10,7 @@ The Tango Crate always drops 1-5 [Tango 51s](/weapons/guns/tango_51) and either 
 
 # Tips
 
-- The guns and scope provided by the Tango Crate are are a great combo as the Tango 51 is a strong weapon when paired with a good scope.
+- The guns and scope provided by the Tango Crate are a great combo as the Tango 51 is a strong weapon when paired with a good scope.
 
 # Trivia
 
