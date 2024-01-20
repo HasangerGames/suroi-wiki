@@ -16,7 +16,7 @@ The Mini-14, as the name suggests, is based on the bigger 7.62x51mm NATO firing 
 ## Countering
 
 - Use high adrenaline and strafe the Mini-14 user, as the low spread makes it easier to dodge the bullets.
-- Despite the Mini-14 having very good obstacle DPS, you can still use cover like [Rocks](/obstacles/rock) and [Trees](/obstacles/tree) as a last resort to waste the opponent's ammo, and attack while they are reloading.
+- Despite the Mini-14 having very good obstacle DPS, you can still use cover like [Rocks](/obstacles/rock) and [Trees](/obstacles/tree) as a last resort to waste the opponent's ammo and attack while they are reloading.
 - High-DPS weapons such as SMGs and shotguns can beat the Mini-14 at close range.
   - Hide around indestructible obstacles such as [Oil Tanks](/obstacles/oil_tank) or in [Buildings](/buildings) to force the Mini-14 user into close-range combat.
   - Be careful, however, as they might have a shotgun or SMG of their own as a secondary weapon.
