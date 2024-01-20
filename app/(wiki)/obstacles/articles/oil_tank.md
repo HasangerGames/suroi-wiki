@@ -6,7 +6,7 @@ The **Oil Tank** is an [Obstacle](/obstacles) added to the game in the v0.5.0 "L
 
 # Loot & More
 
-The Oil Tank is indestructible, and therefore drops no loot.
+The Oil Tank is indestructible and therefore drops no loot.
 
 # Tips
 
