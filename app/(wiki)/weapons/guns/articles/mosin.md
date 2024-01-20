@@ -11,7 +11,7 @@ The Mosin-Nagant was designed in 1891 by Captain Sergei Mosin and Émile Nagant 
 - Don't judge the Mosin-Nagant by its low DPS number. The high damage and excellent range make it among the best weapons in the game.
 - As a sniper, the Mosin-Nagant works very well at long-range against weapons with less range and accuracy.
 - The Mosin-Nagant is best used when quickswitched with another sniper or a shotgun. This allows you to have high damage output at both close and long range.
-  - The [M3K](/weapons/guns/m3k) and [Model 37](/weapons/guns/model_37) are both good choices to pair with the Mosin-Nagant. The Model 37 packs more damage, but the M3K may be better if you have have an 8x or 15x scope and expect a lot of long-range engagements.
+  - The [M3K](/weapons/guns/m3k) and [Model 37](/weapons/guns/model_37) are both good choices to pair with the Mosin-Nagant. The Model 37 packs more damage, but the M3K may be better if you have an 8x or 15x scope and expect a lot of long-range engagements.
 - Always reload bullets when not actively engaging, as the Mosin-Nagant takes 850ms to load each bullet (4.25 seconds for a full reload) and this saved time could win you a fight.
 - If you're using the Mosin-Nagant at long range, make sure to lead your shots to ensure you hit your target.
 - A great strategy to use is to find cover such as a [Rock](/obstacles/rock) or an [Oil Tank](/obstacles/oil_tank) and "peek" your shots. This lessens the damage that you will take from your opponent while also wasting their ammo destroying your cover.
@@ -19,12 +19,12 @@ The Mosin-Nagant was designed in 1891 by Captain Sergei Mosin and Émile Nagant 
 
 ## Countering
 
-- The Mosin-Nagant's biggest weakness is against shotguns in close-range combat. The shotgun's higher damage output make it a better choice for close up fighting.
+- The Mosin-Nagant's biggest weakness is against shotguns in close-range combat. The shotgun's higher damage output makes it a better choice for close-up fighting.
   - Dual [Model 37s](/weapons/guns/model_37) are among the best for this.
-  - The Mosin-Nagant's long barrel can also get in the way in fights that occur in tight spaces.
+  - The Mosin-Nagant's long barrel can also get in the way of fights that occur in tight spaces.
 - Make sure to have high adrenaline and strafe the Mosin-Nagant user to try and get them to miss their shots.
-- If at medium or close-range, high DPS weapons other than shotguns such as the [MCX Spear](/weapons/guns/mcx_spear) or even [ARX-160](/weapons/guns/arx-160) might be able to beat the Mosin-Nagant due to its low overall DPS.
-  - This works best against less-skilled players that can't aim as well.
+- If at medium or close range, high DPS weapons other than shotguns such as the [MCX Spear](/weapons/guns/mcx_spear) or even [ARX-160](/weapons/guns/arx-160) might be able to beat the Mosin-Nagant due to its low overall DPS.
+  - This works best against less-skilled players who can't aim as well.
 - The [Tango 51](/weapons/guns/tango_51) is better than the Mosin-Nagant in almost every way, so it can be used as an effective counter.
 - SMGs can also work against an opponent with a Mosin-Nagant if you surprise them in an ambush.
 
