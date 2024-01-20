@@ -2,7 +2,7 @@ The **Tear Gas Crate** is an [Obstacle](/obstacles) added to the game in the v0.
 
 # Location and Spawning
 
-Two Tear Gas Crates spawn in the [Armory](/buildings/armory).
+Three Tear Gas Crates spawn in the [Armory](/buildings/armory).
 
 # Loot & More
 
@@ -11,7 +11,8 @@ Tear Gas Crates drop no loot when broken. When Tear Gas Crates are broken, they 
 # Tips
 
 - Tear Gas depletes adrenaline rapidly when a player is inside it. 
-- The Tear Gas released after Tear Gas Crates are broken can be used as a substitute for a Smoke Grenade. However, it is advised to just use Smoke Grenades since Tear Gas depletes adrenaline.
+- The Tear Gas released after Tear Gas Crates are broken can be used as a substitute for a Smoke Grenade. 
+  - However, it is advised to just use Smoke Grenades since Tear Gas depletes adrenaline.
 
 
 # Trivia
