@@ -6,11 +6,11 @@ The Bollard only spawns in between the edge of the [Port](/buildings/port) and t
 
 # Loot & More
 
-The Bollard is indestructible, and therefore drops no loot.
+The Bollard is indestructible and therefore drops no loot.
 
 # Tips
 
-- Since the Bollard is indestructible, it can be use to hide from players with guns if need be.
+- Since the Bollard is indestructible, it can be used to hide from players with guns if need be.
   - However, since the Cargo Ship is so close and having to stand in the water slows you down, the Bollard should only be used as cover in certain situations.
 
 # Trivia
