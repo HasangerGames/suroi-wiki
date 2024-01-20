@@ -16,7 +16,7 @@ The **Revitalizer** is a dev-only shotgun firing 12-gauge ammunition. It was sec
 ## Countering
 
 - Pick on low-boost players. Typically, they will play more defensively and will be moving at regular speed. Here, you'll have 4 times their health, so almost any weapon can take them down, even weapons traditionally countered by shotguns.
-- A boosted Revitalizer player is very, very hard to take down. The only thing capable of cleanly taking down a fully-boosted (whether single or double) player is the [Large Refinery Barrel](/obstacles/large_refinery_barrel). Thus, your best option is usually to try and disengage; a 1v1 fight with a boosted Revitalizer is extremely in favor of the Revitalizer player, and depending on how boosted they are, even 2 or 3 players might not be enough.
+- A boosted Revitalizer player is very, very hard to take down. The only thing capable of cleanly taking down a fully boosted (whether single or double) player is the [Large Refinery Barrel](/obstacles/large_refinery_barrel). Thus, your best option is usually to try and disengage; a 1v1 fight with a boosted Revitalizer is extremely in favor of the Revitalizer player, and depending on how boosted they are, even 2 or 3 players might not be enough.
   - That being said, the [Death Ray](/weapons/guns/deathray) wins against Revitalizer.
 - Stats-wise, it's the same as the Model 37, except for the health/adrenaline-altering things; this means that staying out of its range is a viable strategy. Just be careful, as a boosted player may be able to close the distance
 
@@ -27,7 +27,7 @@ As a dev-only weapon, the Revitalizer is only obtainable by Developers. However,
 # Trivia
 
 - It is a [Model 37](/weapons/guns/model_37) with a pistol grip, telescoping stock, and a custom pump.
-  - One can spot a device mounted similarly to a sight above the gun, with a red wire connecting it to an object
+  - One can spot a device mounted similarly to sight above the gun, with a red wire connecting it to an object
     fixed to the muzzle. Presumably, this device is the cause of the gun's unique properties.
 - The pellets fired from this weapon are always spread out in a uniformly distributed pattern.
 - The effects of the Revitalizer stack if one equips multiple; here's a table showing the various combinations.
