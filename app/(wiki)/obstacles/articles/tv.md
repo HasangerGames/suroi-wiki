@@ -10,7 +10,7 @@ TVs drop no loot when broken.
 
 # Tips
 
-- Since the TV has extremely low health, it cannot be used as cover.
+- Since the TV has extremely low health, it cannot be used as a cover.
 
 # Trivia
 
