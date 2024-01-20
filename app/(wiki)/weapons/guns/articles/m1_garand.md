@@ -10,14 +10,14 @@ The M1 Garand was designed by John Garand in the 1920s and 1930s, and production
 
 - Like most DMRs, the M1 Garand has very good accuracy and range, so make sure to get a good scope like an 8x or 15x to take advantage of this.
 - Unlike most DMRs however, the M1 Garand has a much smaller clip size of only 8 rounds. This makes missing a shot much more punishing, so prioritize aiming and hitting your shots over getting the max DPS.
-- The M1 Garand works well when paired with a LMG, as the LMG can be used to destroy cover and then the M1 Garand can deal lots of damage quickly.
+- The M1 Garand works well when paired with an LMG, as the LMG can be used to destroy cover and then the M1 Garand can deal lots of damage quickly.
   - Shotguns also pair well, as they cover the close-range combat that the M1 Garand is not as good at.
 - Be wary of ambushes by opponents with close-range, high-DPS weapons like shotguns and SMGs.
-- Don't use the M1 Garand to destroy cover, as you will waste most of your clip on it and not have enough left to do much damage to your opponent.
+- Don't use the M1 Garand to destroy the cover, as you will waste most of your clip on it and not have enough left to do much damage to your opponent.
 
 ## Countering
 
-- Like most DMRs, you can use a high-DPS weapon such as a shotgun or SMG at close-range against a M1 Garand user.
+- Like most DMRs, you can use a high-DPS weapon such as a shotgun or SMG at close range against an M1 Garand user.
   - Watch out, as they may have a secondary weapon of their own.
 - At long range, you may be able to use a sniper rifle to out-damage the M1 Garand user if you use cover and "peek" from out behind it.
 - Get as much adrenaline as you can, and use the increased speed to strafe your opponent and waste their bullets.
@@ -27,7 +27,7 @@ The M1 Garand was designed by John Garand in the 1920s and 1930s, and production
 
 # Obtaining
 
-- The only way to get the M1 Garand is to either find one in a [Gold Airdrop](/obstacles/gold_airdrop_crate) or from breaking a [Flint Stone](/obstacles/flint_stone).
+- The only way to get the M1 Garand is to either find one in a [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone).
 
 # Trivia
 
