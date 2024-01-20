@@ -12,14 +12,14 @@ The M3K is an affordable budget semi-automatic shotgun offered by Stoeger Indust
   - A good strategy is to find an obstacle such as a [Rock](/obstacles/rock) and "peek out" to fire a shot, and then keep hiding. This will avoid much of the damage from weapons such as assault rifles and DMRs.
 - Use the M3K with another shotgun such as the [Model 37](/weapons/guns/model_37). This will cover both long-range and short-range.
   - This works best with quickswitching.
-- If your opponent also has a M3K, use the aforementioned "peek" strategy and avoid being damaged while wasting their ammo.
+- If your opponent also has an M3K, use the aforementioned "peek" strategy and avoid being damaged while wasting their ammo.
 - The M3K's long-range also pairs well with a sniper like the [Mosin-Nagant](/weapons/guns/mosin), if you quickswitch both. This is great if you can't find another sniper.
 
 ## Countering
 
 - If you have high adrenaline, you can strafe the M3K user, as the tight spread makes it more punishing than other shotguns.
 - The M3K's long barrel makes it more difficult to use in very close combat, where weapons such as the [Flues](/weapons/guns/flues) are much better.
-  - This may also work with a SMG such as a [Micro Uzi](/weapons/guns/micro_uzi), but watch out if they try to melee you.
+  - This may also work with an SMG such as a [Micro Uzi](/weapons/guns/micro_uzi), but watch out if they try to melee you.
 
 # Obtaining
 
@@ -78,7 +78,7 @@ The M3K is uncommon in general world loot, but fairly common in rarer loot sourc
     {
       url: "/img/articles/weapons/guns/m3k/m3k_warehouse.png",
       author: "1092384",
-      caption: "A player finding a M3K inside a warehouse in v0.14.0",
+      caption: "A player finding an M3K inside a warehouse in v0.14.0",
     },
   ]}
 />
