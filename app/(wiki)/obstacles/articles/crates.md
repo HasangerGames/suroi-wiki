@@ -43,5 +43,10 @@ All crates drop some sort of loot. The Regular Crate drops the [lowest quality l
       caption:
         "A player getting a Tango 51 and a Stoner 63 from a Flint Crate in v0.14.0",
     },
+    {
+      url: "/img/articles/obstacles/grenade_crate/opened_grenade_crate.png",
+      author: "Kenos",
+      caption: "A player opening a grenade crate in v0.15.0"
+    }
   ]}
 />

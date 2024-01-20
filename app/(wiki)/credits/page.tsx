@@ -25,6 +25,11 @@ export const WIKI_TEAM: User[] = [
     website: "https://kenos.codeberg.page",
   },
   {
+    name: "Milocat",
+    description: "Wiki Developer",
+    avatar: "https://avatars.githubusercontent.com/u/119687855",
+  },
+  {
     name: "Katloo",
     description: "Content Manager",
     avatar: "https://avatars.githubusercontent.com/u/132523318",
@@ -34,6 +39,14 @@ export const WIKI_TEAM: User[] = [
     description: "Content Manager",
     avatar: "https://avatars.githubusercontent.com/u/66282302",
   },
+];
+
+export const WIKI_CONTRIB: string[] = [
+  "sawq375",
+  "brianzjk",
+  "Emeraldneo",
+  "HeheBoi420",
+  "Hugh Jass",
 ];
 
 export const GAME_TEAM: User[] = [
@@ -129,6 +142,20 @@ export default function CreditsPage() {
         <GridTable>
           {WIKI_TEAM.map((person, i) => (
             <Person person={person} key={i} />
+          ))}
+        </GridTable>
+      </div>
+      <h2>Wiki Contributors</h2>
+      <div className="not-prose w-full">
+        <GridTable>
+          {WIKI_CONTRIB.map((name, i) => (
+            <Person
+              person={{
+                name: name,
+              }}
+              displayAvatar={false}
+              key={i}
+            />
           ))}
         </GridTable>
       </div>
