@@ -6,7 +6,7 @@ Up to twelve Containers spawn in random positions on the map. Many Containers ca
 
 # Loot & More
 
-Containers always contains one ground loot item on its floor.
+Containers always contain one ground loot item on its floor.
 
 # Tips
 - The outside or inside of the Container is great for cover because the Container has indestructible walls.
