@@ -16,7 +16,7 @@ Gauze intended for use as a medical item is typically made of cotton. It is usef
 
 ## Countering
 
-- If you see a player out in the open using with healing particles, you should attack them. There's a good chance that they are low on health and will make for an easy kill.
+- If you see a player out in the open using healing particles, you should attack them. There's a good chance that they are low on health and will make for an easy kill.
   - Watch out though, as some players will "bait" and pretend to heal when they actually have high health.
 
 # Obtaining
