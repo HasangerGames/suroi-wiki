@@ -15,7 +15,7 @@ The Baseball Bat is a smooth wooden or metal club used in the sport of baseball 
 
 - As with other melee weapons, the best way to avoid them is to keep the distance between you and your opponent.
 - The [K-Bar](/weapons/melee/kbar) can out-DPS the Baseball Bat so it is an effective counter to it.
-  - [Fists](/weapons/melee/fists) actually also beat the baseball in terms of DPS and can be used as another counter. However, this requires much skill as fists have a much smaller swing range.
+  - [Fists](/weapons/melee/fists) also beat the baseball in terms of DPS and can be used as another counter. However, this requires much skill as fists have a much smaller swing range.
 
 # Obtaining
 
@@ -25,7 +25,7 @@ Baseball Bats have a high chance of spawning from the [Melee Crate](/obstacles/m
 
 - The Baseball Bat was designed by Radians
 - Baseball bats have been used for murder
-- During the early days, players would use scrap wood to create their own baseball bats
+- During the early days, players would use scrap wood to create their baseball bats
 
 # History
 
