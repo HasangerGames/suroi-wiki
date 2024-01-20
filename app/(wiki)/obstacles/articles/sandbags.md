@@ -12,7 +12,7 @@ Sandbags do not drop loot as they cannot be destroyed.
   - Likewise, you can hide behind Sandbags and throw grenades without the risk of getting shot
 
 # Trivia
-- The Sandbags were designed by Yeet120, 1092384 and eclair_is_tasty
+- The Sandbags were designed by Yeet120, 1092384, and eclair_is_tasty
 
 # History
 - v0.15.0
