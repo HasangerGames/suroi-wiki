@@ -1,7 +1,7 @@
 The **Вятско-Полянский машиностроительный завод Вепрь-12 (JSC Vyatskiye Polyany Molot Machine-Building Plant Vepr-12) is an automatic shotgun utilizing the 12-gauge ammunition. It was added to the game in the v0.15.0 "Pulling the Pin" update on January 14th, 2024. It has a very high damage output and is one of the best shotguns.
 
 # Background
-The Vepr-12 was originally designed by the Kalashnikov Group (then Izhmash) in the early 2000s. It was then redesigned by Molot Weapons and brought into production. In order to compete with the Saiga-12, new features were brought to the Vepr-12 such as an ambidextrous safety selector, a bolt hold-open mechanism, and a improved magazine feeding system.
+The Vepr-12 was originally designed by the Kalashnikov Group (then Izhmash) in the early 2000s. It was then redesigned by Molot Weapons and brought into production. To compete with the Saiga-12, new features were brought to the Vepr-12 such as an ambidextrous safety selector, a bolt hold-open mechanism, and an improved magazine feeding system.
 
 # Strategies
 ## Using
@@ -24,7 +24,7 @@ The Vepr-12 was originally designed by the Kalashnikov Group (then Izhmash) in t
 - The [Flues](/weapons/guns/flues) has higher DPS than the Vepr-12, but at the cost of a smaller mag size. You could use it against a Vepr-12 user, however.
 
 # Obtaining
-The Vepr-12 can be found rarely as world loot. It is more common in higher tier loot sources such as [Viking Chests](/obstacles/viking_chest), [Briefcases](/obstacles/briefcase), and others.
+The Vepr-12 can be found rarely as world loot. It is more common in higher-tier loot sources such as [Viking Chests](/obstacles/viking_chest), [Briefcases](/obstacles/briefcase), and others.
 
 # Trivia
 - In real life, the Vepr-12 is a direct competitor to the Saiga-12, which was in surviv.io
