@@ -10,7 +10,7 @@ Trees drop no loot upon being broken.
 
 # Tips
 
-- Trees make decent cover from enemies.
+- Trees make a decent cover from enemies.
   - Pine Trees have a larger hitbox, making it harder for your opponent to shoot you from behind your cover.
   - Birch Trees have higher health, allowing you to buy more time or force your opponent to waste additional ammo.
   - However, all 3 variants can be easily destroyed with any high-DPS weapon in a matter of seconds.
