@@ -1,4 +1,4 @@
-The **Warehouse** is a building added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It features plenty of early game loot perfect for getting geared up.
+The **Warehouse** is a building added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It features plenty of early-game loot perfect for getting geared up.
 
 # Location & Spawning
 
@@ -14,9 +14,9 @@ The Warehouse always spawns with 3 [Regular Crates](/obstacles/regular_crate), 6
 # Tips
 
 - You can stand close to the Warehouse and still be able to see with your scope.
-  - This is very useful for seeing enemies on the other side of the Warehouse if you have a 8x or 15x scope.
+  - This is very useful for seeing enemies on the other side of the Warehouse if you have an 8x or 15x scope.
 - Be careful of standing in corners, as reflected bullets can easily kill you.
-- The barrel in the one corner can be death trap.
+- The barrel in the one corner can be a death trap.
   - Likewise, use the barrel in the corner to try and kill other players.
 - If the Warehouse has a Flint Crate, loot it first, as it has the most valuable loot.
 
