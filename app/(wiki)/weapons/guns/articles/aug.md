@@ -15,7 +15,7 @@ The AUG was designed by Steyr Arms in 1977 entering service in the same year. Si
 
 ## Countering
 
-- While you can rush with a high DPS close-range weapon such as a [Micro Uzi](/weapons/guns/micro_uzi) to counter an AUG user, be mindful that the AUG can also be effective in close-range.
+- While you can rush with a high DPS close-range weapon such as a [Micro Uzi](/weapons/guns/micro_uzi) to counter an AUG user, be mindful that the AUG can also be effective in close range.
 - Outranging your opponent is a viable tactic due to the high moving spread of the AUG.
   - Snipers and DMRs can counter the AUG effectively.
   - Be sure to pick up a larger scope (e.g., 4x or 8x) for this strategy to work.
