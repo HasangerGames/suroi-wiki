@@ -6,11 +6,11 @@ Washing Machines spawn in the Garages of [Houses](/buildings/house).
 
 # Loot & More
 
-The Washing Machine reflects bullets, and drops either the "Verified or "no kil pls" skin as [loot](/loot#washing_machine).
+The Washing Machine reflects bullets and drops either the "Verified or "no kill pls" skin as [loot](/loot#washing_machine).
 
 # Tips
 
-- The Washing Machine doesn't make effective cover due to its positioning.
+- The Washing Machine doesn't make an effective cover due to its positioning.
 - If you want to loot the Washing Machine, do it last since it has the least important loot in the House.
 - This obstacle is currently unobtainable and can't be found on the map since the [House](/buildings/house) doesn't spawn on the map.
 
