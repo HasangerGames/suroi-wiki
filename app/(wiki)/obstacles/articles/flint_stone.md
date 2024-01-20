@@ -11,13 +11,13 @@ The Flint Stone has very good [loot](/loot#flint_stone), and always drops a [Gol
 
 # Tips
 
-- The Flint Stone makes for very good cover due to its indestructible nature
-- If you get a Radio, check the map to see if a Flint Stone is nearby that you can use it on
+- The Flint Stone makes for a very good cover due to its indestructible nature
+- If you get a Radio, check the map to see if a Flint Stone is nearby that you can use on
 
 # Trivia
 
 - The Flint Stone was designed by Hasanger, but the logo on it was designed by Katloo
-- Prior to v0.13.0, the Flint Stone didn't drop any loot
+- Before v0.13.0, the Flint Stone didn't drop any loot
   - If the code was edited to make it destructible, it still wouldn't drop any loot
 - The name "Flint Stone" is a play on words that references the animated sitcom _The Flintstones_
 - As of v0.14.0 the Flint Stone is the only obstacle the [Death Ray](/weapons/guns/deathray) does not penetrate through
