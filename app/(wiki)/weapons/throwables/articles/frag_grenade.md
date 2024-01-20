@@ -6,8 +6,8 @@ The **Frag Grenade** is an explosive [Throwable](/throwables) added in the v0.15
 - Hold down the fire button to start cooking the grenade. To throw it, put your mouse cursor over to the target and release the fire button. All throwables go to where the mouse cursor is to a limited range.
   - Don't cook the grenade for too long (see fuse time), as the grenade can explode in your hands.
 - A strategy known as "grenade spamming" is effective during the late game where the safe zone is very small and limiting.
-  - To do this, cover most of the safe zone with Grenades by rapidly spamming them. 
-  - This will force your opponents out of cover into the zone where you can finish them off using a long ranged weapon.
+  - To do this, cover most of the safe zones with Grenades by rapidly spamming them. 
+  - This will force your opponents out of cover into the zone where you can finish them off using a long-ranged weapon.
   - Grenade spamming can also be used to make a quick escape from a fight since it stops opponents from following you.
 - You can use the explosive power of the Grenade to launch other grenades, which can be used to damage opponents.
   - This also works on loot. Launching loot out of reach of your opponents can be effective in the end game.
@@ -17,7 +17,7 @@ The **Frag Grenade** is an explosive [Throwable](/throwables) added in the v0.15
 This is a special technique that abuses the behavior of frag grenades pushing other frag grenades. It involves throwing two or more grenades next to each other to get more range than the normal maximum throw distance. (Discovered by Lava and Kenos)
 
 - The easy way: more consistent, but requires planning
-  - While not moving both the player and mouse, throw two or more grenades near you, and then moving out to avoid the explosion.
+  - While not moving both the player and mouse, throw two or more grenades near you, and then move out to avoid the explosion.
   - Each grenade will boost each other consistently.
   - Point in the opposite direction you want to aim.
 
@@ -35,7 +35,7 @@ This is a special technique that abuses the behavior of frag grenades pushing ot
 ## Countering
 - Move away from the grenade to avoid as much damage as possible.
   - This is usually not a challenge but can be if you are in an enclosed space or your opponent times their grenade well.
-- If your opponent utilizes "grenade spamming", you can try to rush forward and out-DPS them close range using a weapon such as the [Flues](/weapons/guns/flues).
+- If your opponent utilizes "grenade spamming", you can try to rush forward and out-DPS them at close range using a weapon such as the [Flues](/weapons/guns/flues).
 
 
 # Obtaining
