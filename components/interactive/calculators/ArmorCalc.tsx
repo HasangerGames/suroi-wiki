@@ -23,12 +23,12 @@ const Vests = Armors.definitions.filter(
 );
 
 export default function ArmorCalc() {
-  const [selectedGun, setSelectedGun] = useState<null | string>(null);
-  const gun = Guns.find((gun) => gun.idString === selectedGun);
+  const [selectedGun, setSelectedGun] = useState<null | GunDefinition>(null);
+  const gun = selectedGun;
   const [selectedHelmet, setSelectedHelmet] = useState<null | string>(null);
   const helmet = Helmets.find((helmet) => helmet.idString === selectedHelmet);
   const [selectedVest, setSelectedVest] = useState<null | string>(null);
-  const vest = Vests.find((vest) => vest.idString === selectedVest) 
+  const vest = Vests.find((vest) => vest.idString === selectedVest)
 
   return (
     <>
@@ -37,39 +37,21 @@ export default function ArmorCalc() {
           <>
             <div className="flex gap-2 items-center mt-2">
               <label>Gun</label>
-              <AutoComplete
-                items={Guns.map((gun) => ({
+              {AutoComplete<GunDefinition>(
+                Guns.map((gun) => ({
                   name: gun.name,
-                  specialDisplay: <div className="flex flex-row gap-2"><Image src={getSuroiImageLink(gun)} alt={gun.name} width={25} height={25} />{gun.name}</div>,
-                  item: gun.idString,
-                }))}
-                setter={setSelectedGun}
-              />
+                  id: gun.idString,
+                  specialDisplay: (
+                    <div className="flex flex-row gap-2">
+                      <Image src={getSuroiImageLink(gun)} alt={gun.name} width={25} height={25} />
+                      {gun.name}
+                    </div>),
+                  item: gun,
+                })),
+                (value) => setSelectedGun(value)
+              )()}
             </div>
-
-            <div className="flex gap-2 items-center mt-2">
-              <label>Helmet</label>
-              <AutoComplete
-                items={Helmets.map((helmet) => ({
-                  name: helmet.name,
-                  specialDisplay: <div className="flex flex-row gap-2"><Image src={getSuroiImageLink(helmet)} alt={helmet.name} width={25} height={25} />{helmet.name}</div>,
-                  item: helmet.idString,
-                }))}
-                setter={setSelectedHelmet}
-              />
-            </div>
-
-            <div className="flex gap-2 items-center mt-2">
-              <label>Vest</label>
-              <AutoComplete
-                items={Vests.map((vest) => ({
-                  name: vest.name,
-                  specialDisplay: <div className="flex flex-row gap-2"><Image src={getSuroiImageLink(vest)} alt={vest.name} width={25} height={25} />{vest.name}</div>,
-                  item: vest.idString,
-                }))}
-                setter={setSelectedVest}
-              />
-            </div>
+            <div>a</div>
           </>
         ),
         callback: () => {
@@ -95,8 +77,8 @@ export default function ArmorCalc() {
                   <span>
                     <span className="font-bold">Damage Reduction:</span>{" "}
                     {(
-                      ((gun?.damageReduction ?? 0) +
-                        (gun?.damageReduction ?? 0)) *
+                      ((helmet?.damageReduction ?? 0) +
+                        (vest?.damageReduction ?? 0)) *
                       100
                     ).toFixed(2)}
                     %
@@ -112,9 +94,9 @@ export default function ArmorCalc() {
                     (
                     {(
                       gun.ballistics.damage *
-                        (1 -
-                          ((gun?.damageReduction ?? 0) +
-                            (gun?.damageReduction ?? 0))) -
+                      (1 -
+                        ((helmet?.damageReduction ?? 0) +
+                          (vest?.damageReduction ?? 0))) -
                       gun.ballistics.damage
                     ).toFixed(2)}
                     )
@@ -127,10 +109,10 @@ export default function ArmorCalc() {
                     </span>{" "}
                     {Math.ceil(
                       100 /
-                        (gun.ballistics.damage *
-                          (1 -
-                            ((gun?.damageReduction ?? 0) +
-                              (gun?.damageReduction ?? 0)))),
+                      (gun.ballistics.damage *
+                        (1 -
+                          ((helmet?.damageReduction ?? 0) +
+                            (vest?.damageReduction ?? 0)))),
                     )}
                     {gun.bulletCount && gun.bulletCount > 1 && (
                       <span>
@@ -138,11 +120,11 @@ export default function ArmorCalc() {
                         (
                         {Math.ceil(
                           100 /
-                            (gun.ballistics.damage *
-                              (1 -
-                                ((helmet?.damageReduction ?? 0) +
-                                  (vest?.damageReduction ?? 0)))) /
-                            gun.bulletCount,
+                          (gun.ballistics.damage *
+                            (1 -
+                              ((helmet?.damageReduction ?? 0) +
+                                (vest?.damageReduction ?? 0)))) /
+                          gun.bulletCount,
                         )}{" "}
                         shot(s) with {gun.bulletCount} bullets)
                       </span>
