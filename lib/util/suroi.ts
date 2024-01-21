@@ -7,12 +7,13 @@ import {
   DecalDefinition,
   Decals,
 } from "@/vendor/suroi/common/src/definitions/decals";
-import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
+import { GunDefinition, Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import {
   LootDefinition,
   Loots,
   WeaponDefinition,
 } from "@/vendor/suroi/common/src/definitions/loots";
+import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import {
   ObstacleDefinition,
   Obstacles,
@@ -198,7 +199,7 @@ export function obstacleContainedBy(obstacle: ObstacleDefinition) {
  * Type Assertions
  */
 
-function isBuilding(obj: ObjectDefinition): obj is BuildingDefinition {
+export function isBuilding(obj: ObjectDefinition): obj is BuildingDefinition {
   return Boolean(
     Buildings.definitions.find(
       (building) => building.idString === obj.idString,
@@ -206,7 +207,7 @@ function isBuilding(obj: ObjectDefinition): obj is BuildingDefinition {
   );
 }
 
-function isObstacle(obj: ObjectDefinition): obj is ObstacleDefinition {
+export function isObstacle(obj: ObjectDefinition): obj is ObstacleDefinition {
   return Boolean(
     Obstacles.definitions.find(
       (obstacle) => obstacle.idString === obj.idString,
@@ -214,14 +215,20 @@ function isObstacle(obj: ObjectDefinition): obj is ObstacleDefinition {
   );
 }
 
-function isDecal(obj: ObjectDefinition): obj is DecalDefinition {
+export function isDecal(obj: ObjectDefinition): obj is DecalDefinition {
   return Boolean(
     Decals.definitions.find((decal) => decal.idString === obj.idString),
   );
 }
 
-function isLoot(obj: ObjectDefinition): obj is LootDefinition {
+export function isLoot(obj: ObjectDefinition): obj is LootDefinition {
   return Boolean(
     Loots.definitions.find((loot) => loot.idString === obj.idString),
+  );
+}
+
+export function isWeapon(obj: ObjectDefinition): obj is WeaponDefinition {
+  return Boolean(
+    [...Guns, ...Melees].find((weapon) => weapon.idString === obj.idString),
   );
 }
