@@ -30,8 +30,11 @@ export default function LootPage() {
               title={`Tier ${name}`}
               header={["Item", "Weight", "% Chance"]}
               content={tiers.map((tier) => [
-                Loots.definitions.find((item) => item.idString === tier.item)
-                  ?.name ?? tier.item,
+                "item" in tier
+                ? `Item ${Loots.definitions.find(
+                    (loot) => loot.idString === tier.item,
+                  )?.name}`
+                : `Tier ${tier.tier}`,
                 tier.weight,
                 (
                   (tier.weight /
