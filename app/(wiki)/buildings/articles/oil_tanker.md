@@ -1,4 +1,5 @@
 The **oil tanker** is a sub-building of the [Port](/buildings/port). It was added in the v0.15.0 "Pulling the Pin
+
 " update on January 14, 2024. It features a big cargo area, on which rest three oil tanks and a control room, in which you can find the [vector] (/weapons/guns/vector) upon opening the door via the control pannel.
 
 # Location & Spawning
