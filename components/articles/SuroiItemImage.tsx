@@ -1,4 +1,8 @@
-import { getSuroiImageLink, getSuroiItem, getSuroiObstacle } from "@/lib/util/suroi";
+import {
+  getSuroiImageLink,
+  getSuroiItem,
+  getSuroiObstacle,
+} from "@/lib/util/suroi";
 import Image from "next/image";
 
 export default function SuroiItemImage({
@@ -10,14 +14,14 @@ export default function SuroiItemImage({
   append,
   dual,
 }: SuroiItemImageProps) {
-  const item = getSuroiItem(itemID)
-  if(!item) throw new Error(`SuroiItemImage > Item ${itemID} not found`)
-  const link =  getSuroiImageLink(
+  const item = getSuroiItem(itemID);
+  if (!item) throw new Error(`SuroiItemImage > Item ${itemID} not found`);
+  const link = getSuroiImageLink(
     item,
     variation ?? undefined,
     append ?? "",
     dual ?? false,
-  )
+  );
   return (
     <Image
       width={width ?? 100}
