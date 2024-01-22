@@ -2,7 +2,7 @@ The **Cargo Ship** is a sub-building of the [Port](/buildings/port). It was adde
 
 # Location & Spawning
 
-The Cargo Ship can be found always spawning offshore of the Port on the edge of the map.
+The Cargo Ship can be found spawning offshore of the Port on the edge of the map, 50% of games.
 
 # Areas
 
