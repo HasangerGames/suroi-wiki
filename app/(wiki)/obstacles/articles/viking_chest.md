@@ -14,7 +14,7 @@ The Viking Chest has decent [loot](/loot#viking_crate). It drops a [Seax](/weapo
 
 # Trivia
 
-- THe Viking Chest was designed by 1092384 and croissant
+- THe Viking Chest was designed by 1092384, cobby, and kenos
 
 # History
 
