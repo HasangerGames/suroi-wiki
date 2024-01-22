@@ -47,3 +47,14 @@ Frag Grenades can sometimes be obtained from [Regular Crates](/obstacles/regular
 # History
 - v0.15.0
   - Added
+
+<Gallery
+  images={[
+    {
+      type: 'youtube',
+      url: 'HrdFnRPYg-g',
+      author: 'Lava',
+      caption: 'A montage of a player using frag grenades in v0.15'
+    }
+  ]}
+/>
