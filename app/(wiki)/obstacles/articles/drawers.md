@@ -2,7 +2,7 @@
 
 # Location & Spawning
 
-Drawers of both sizes spawn throughout the [House](/buildings/house) and the [Small House](/buildings/small_house) as well as in some areas of the [Armory](/buildings/armory).
+Drawers of both sizes spawn throughout the [House](/buildings/house) and the [Small House](/buildings/small_house) as well as in some areas of the [Armory](/buildings/armory). a small drawer can also be found in the mobile home.
 
 # Loot & More
 
