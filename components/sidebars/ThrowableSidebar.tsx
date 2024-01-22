@@ -8,50 +8,54 @@ import InfoboxHeader from "./utils/InfoboxHeader";
 import SVGObjectRenderer from "../svg/SVGObjectRenderer";
 import PlayerHoldingThrowable from "../svg/special/PlayerHoldingThrowable";
 import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
+import { ImageTab } from "@/lib/util/types";
 
 export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
   const skin =
     Skins.definitions.find((s) => s.idString === "hazel_jumpsuit") ??
     Skins.definitions[0];
+  const imageVariations: ImageTab[] = [
+    {
+      type: "image",
+      url: getSuroiImageLink(item),
+      alt: "Image of throwable",
+      title: "Loot",
+    },
+    {
+      type: "image",
+      url: getSuroiKillfeedImageLink(item),
+      alt: "Image of throwable impact killfeed",
+      title: "Killfeed (Impact)",
+    },
+    {
+      type: "react",
+      children: <PlayerHoldingThrowable item={item} skin={skin} state="hold" />,
+      title: "Holding",
+    },
+    {
+      type: "react",
+      children: <PlayerHoldingThrowable item={item} skin={skin} state="cook" />,
+      title: "Cooking",
+    },
+    {
+      type: "react",
+      children: (
+        <PlayerHoldingThrowable item={item} skin={skin} state="throw" />
+      ),
+      title: "Throwing",
+    },
+  ];
+
+  if (item.detonation.explosion) {
+    imageVariations.splice(1, 0, {
+      type: "image",
+      url: getSuroiKillfeedImageLink(undefined, item.detonation.explosion),
+      alt: "Image of throwable explosion killfeed",
+      title: "Killfeed (Explosion)",
+    });
+  }
   return (
-    <GenericSidebar
-      title={item.name}
-      imageVariations={[
-        {
-          type: "image",
-          url: getSuroiImageLink(item),
-          alt: "Image of throwable",
-          title: "Loot",
-        },
-        {
-          type: "image",
-          url: getSuroiKillfeedImageLink(item),
-          alt: "Image of throwable killfeed",
-          title: "Killfeed",
-        },
-        {
-          type: "react",
-          children: (
-            <PlayerHoldingThrowable item={item} skin={skin} state="hold" />
-          ),
-          title: "Holding",
-        },
-        {
-          type: "react",
-          children: (
-            <PlayerHoldingThrowable item={item} skin={skin} state="cook" />
-          ),
-          title: "Cooking",
-        },
-        {
-          type: "react",
-          children: (
-            <PlayerHoldingThrowable item={item} skin={skin} state="throw" />
-          ),
-          title: "Throwing",
-        },
-      ]}
-    >
+    <GenericSidebar title={item.name} imageVariations={imageVariations}>
       <InfoboxRow>
         <InfoboxColumn title="Speed Multiplier">
           {item.speedMultiplier}

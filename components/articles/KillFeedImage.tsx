@@ -1,4 +1,8 @@
-import { getSuroiItem, getSuroiKillfeedImageLink, isWeapon } from "@/lib/util/suroi";
+import {
+  getSuroiItem,
+  getSuroiKillfeedImageLink,
+  isWeapon,
+} from "@/lib/util/suroi";
 import Image from "next/image";
 
 export default function KillFeedImage({
@@ -8,8 +12,9 @@ export default function KillFeedImage({
   rotation,
 }: KillFeedImageProps) {
   const item = getSuroiItem(weaponID);
-  if(!item) throw new Error(`KillFeedImage > Item ${weaponID} not found`);
-  if(!isWeapon(item)) throw new Error(`KillFeedImage > Item ${weaponID} is not a weapon`);
+  if (!item) throw new Error(`KillFeedImage > Item ${weaponID} not found`);
+  if (!isWeapon(item))
+    throw new Error(`KillFeedImage > Item ${weaponID} is not a weapon`);
   return (
     <Image
       width={width ?? 100}

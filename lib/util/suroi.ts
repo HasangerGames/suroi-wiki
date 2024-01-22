@@ -7,7 +7,11 @@ import {
   DecalDefinition,
   Decals,
 } from "@/vendor/suroi/common/src/definitions/decals";
-import { GunDefinition, Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
+import {
+  GunDefinition,
+  Guns,
+} from "@/vendor/suroi/common/src/definitions/guns";
 import {
   LootDefinition,
   Loots,
@@ -116,8 +120,13 @@ export function getSuroiImageLink<
   return MISSING_TEXTURE;
 }
 
-export function getSuroiKillfeedImageLink(weapon: WeaponDefinition) {
-  return `${IMAGE_BASE_URL}/killfeed/${weapon.idString}_killfeed.svg`;
+export function getSuroiKillfeedImageLink(
+  source?: WeaponDefinition,
+  explosionID?: string,
+) {
+  return `${IMAGE_BASE_URL}/killfeed/${
+    source?.idString ?? explosionID
+  }_killfeed.svg`;
 }
 
 function _itemImageLink(
