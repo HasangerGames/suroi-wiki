@@ -21,3 +21,15 @@ The Briefcase can drop a [Vector](/weapons/guns/vector), an [ARX-160](/weapons/g
 
 - v0.15.0
   - Added
+
+# Gallery
+
+<Gallery
+  images={[
+    {
+      url: "/img/articles/obstacles/briefcase/g19_briefcase.png",
+      author: "F̴̋̓S̶̾͋Q̸̂̈́",
+      caption: "A player received a G19 from a briefcase in v0.15.0",
+    },
+  ]}
+/>
