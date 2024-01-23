@@ -1,4 +1,4 @@
-The **Regular Vest** is a piece of [Equipment](/equipment) added the in the v0.7.0 "Geared Up" update on July 10, 2023. It is the second vest tier and reduces more damage compared to the [Basic Vest](/equipment/armor/basic_vest).
+The **Regular Vest** is a piece of [Equipment](/equipment) added in the v0.7.0 "Geared Up" update on July 10, 2023. It is the second vest tier and reduces more damage compared to the [Basic Vest](/equipment/armor/basic_vest).
 
 # Obtaining
 

@@ -1,4 +1,4 @@
-The **Basic Helmet** is a piece of [Equipment](/equipment) added the in the v0.7.0 "Geared Up" update on July 10, 2023. It is the first helmet tier and reduces the least damage out of all the helmets.
+The **Basic Helmet** is a piece of [Equipment](/equipment) added in the v0.7.0 "Geared Up" update on July 10, 2023. It is the first helmet tier and reduces the least damage out of all the helmets.
 
 # Obtaining
 
