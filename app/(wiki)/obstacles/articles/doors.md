@@ -2,7 +2,7 @@
 
 # Location & Spawning
 
-Doors spawn in between rooms of many structures such as the [Small House](/buildings/small_house). A Porta Potty Door spawns at the entrance of a [Porta Potty](/buildings/porta_potty). One Vault Door spawns each in the entrance to the Vault of the [Ship](/buildings/ship) in the [Port](/buildings/port) and the entrance to the vault in the [Armory](/buildings/armory). Garage Doors aren't interactive and must be broken to pass through. They only spawn in the Garage area of the [House](/buildings/house).
+Doors spawn in between rooms of many structures such as the [Small House](/buildings/small_house). A Porta Potty Door spawns at the entrance of a [Porta Potty](/buildings/porta_potty). One Vault Door spawns each in the entrance to the Vaults of the [Ship](/buildings/ship) or [Oil Tanker](/buildings/oil_tanker) in the [Port](/buildings/port) and the entrance to the vault in the [Armory](/buildings/armory). Garage Doors aren't interactive and must be broken to pass through. They only spawn in the Garage area of the [House](/buildings/house).
 
 # Loot & More
 
