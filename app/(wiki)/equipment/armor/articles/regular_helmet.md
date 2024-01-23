@@ -1,4 +1,4 @@
-The **Regular Helmet** is a piece of [Equipment](/equipment) added the in the v0.7.0 "Geared Up" update on July 10, 2023. It is the second helmet tier and reduces more damage compared to the [Basic Helmet](/equipment/armor/basic_helmet).
+The **Regular Helmet** is a piece of [Equipment](/equipment) added in the v0.7.0 "Geared Up" update on July 10, 2023. It is the second helmet tier and reduces more damage compared to the [Basic Helmet](/equipment/armor/basic_helmet).
 
 # Obtaining
 
