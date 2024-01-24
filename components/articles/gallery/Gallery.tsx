@@ -73,7 +73,7 @@ export default function Gallery({ images }: GalleryProps) {
               )}
             </span>
             {images[currentImage].caption && (
-              <span className="absolute left-[50%] translate-x-[-50%] bottom-4 w-full p-4 h-16 overflow-y-auto z-10 text-center">
+              <span className="absolute bg-black/20 left-[50%] translate-x-[-50%] bottom-0 rounded-md p-4 h-16 overflow-y-auto z-10 text-center">
                 {images[currentImage].caption}
               </span>
             )}
@@ -159,7 +159,7 @@ export default function Gallery({ images }: GalleryProps) {
             )}
 
             <Maximize2 className="transition-transform absolute flex group-hover:visible invisible w-12 h-12 scale-0 group-hover:scale-100 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]" />
-            <span className="absolute flex flex-row gap-1 right-2 bottom-2">
+            <span className="absolute flex flex-row gap-1 right-2 bottom-2 drop-shadow">
               <ImageIcon className="w-6 h-6" />
               {images.length.toFixed(0)}
             </span>

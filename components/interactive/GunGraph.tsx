@@ -79,6 +79,10 @@ export default function GunGraph({ gun }: GunGraphProps) {
           }}
           options={{
             aspectRatio: 1.3,
+            hover: {
+              axis: "x",
+              mode: "index",
+            },
             scales: {
               x: {
                 grid: {

@@ -12,55 +12,55 @@ A somewhat low level of detail (use existing pieces as a reference), colored ren
 ### Colors
 
 - Use the HSL color mode
-  - It’s way easier to synergize colors together with HSL, and for that reason, certain guidelines rely on HSL
-- Don’t use colors from a reference image
+  - It's way easier to synergize colors together with HSL, and for that reason, certain guidelines rely on HSL
+- Don't use colors from a reference image
   - Not only are these colors usually not uniform, they are also usually deformed by lighting conditions, shading, camera/compression artifacts and a host of other factors.
-- Don’t use gradients
+- Don't use gradients
   - The only time gradients are used are on developer weapons to hint at their special nature; regular weapons should use flat, uniform colors.
 - Each shape should get its own color
-  - If something is surrounded by a border (aka a shape), then that’s because it’s deemed important enough to be distinct from whatever it’s separated from. If that’s the case, then it should also have its own color.
-- Don’t use colors with or below 20% lightness
-  - This will be covered more in the border section, but a border’s color is always at 20% lightness; fills should therefore avoid this lightness so as to not conflict. Generally, a border should be at an extreme—it should either be the brightest thing or the darkest thing. This helps draw attention to the border, and symbolically cements the border as being a "frontier".
-- Don’t do any lighting/shading
-  - The reason for this is simply that it’s beyond the level of detail this artstyle calls for. The definition of “shading” is a little ambiguous, and some could argue that certain elements present on the current set of guns are shading, but what is generally meant by shading is going out of one’s way to simulate the way light interacts with a weapon. In the most extreme case, that means gradients (which are already off-limits), but a more subtle example could be making one part of the gun generally lighter than another because it’s “closer” to some imaginary light source.
+  - If something is surrounded by a border (aka a shape), then that's because it's deemed important enough to be distinct from whatever it's separated from. If that's the case, then it should also have its own color.
+- Don't use colors with or below 20% lightness
+  - This will be covered more in the border section, but a border's color is always at 20% lightness; fills should therefore avoid this lightness so as to not conflict. Generally, a border should be at an extreme—it should either be the brightest thing or the darkest thing. This helps draw attention to the border, and symbolically cements the border as being a "frontier".
+- Don't do any lighting/shading
+  - The reason for this is simply that it's beyond the level of detail this artstyle calls for. The definition of “shading” is a little ambiguous, and some could argue that certain elements present on the current set of guns are shading, but what is generally meant by shading is going out of one's way to simulate the way light interacts with a weapon. In the most extreme case, that means gradients (which are already off-limits), but a more subtle example could be making one part of the gun generally lighter than another because it's “closer” to some imaginary light source.
 
 ### Borders
 
 For all borders to be correctly sized, the artwork must be sized such that its length in pixels matches its real-life length in millimeters. Pay attention to the variant of the gun being drawn, as well as its configuration (suppressor, stock, etc). For example, if one was to draw an AKS-47 (a variant of the AK-47 with a folding stock), they would have to resize the drawing to be 875px long if the stock is extended, or 645px long if the stock is folded.
 
 - Borders inherit the hue and saturation of the color of the shape they enclose, but the lightness is always 20%.
-  - Colloquially known as the "20% border rule", this keeps borders consistent between guns. To give an example, if a shape has a fill of hsl(20º, 60%, 40%), then its border’s color should be hsl(20º, 60%, 20%); the hue and saturation are inherited, but the lightness is always 20%.
+  - Colloquially known as the "20% border rule", this keeps borders consistent between guns. To give an example, if a shape has a fill of hsl(20º, 60%, 40%), then its border's color should be hsl(20º, 60%, 20%); the hue and saturation are inherited, but the lightness is always 20%.
 - Do not use borders on the outside or on the inside of shapes. Some programs might not give you the choice, but borders are centered.
   - This is also somewhat arbitrary, but is maintained for the sake of consistency.
 - Use full-width borders for exterior details and use half-width borders for interior ones
-  - Borders are usually very big and take up space; for this reason, interior details’ borders are half the width of the exterior ones. For small details on the exterior of a gun, such as a sling attachment point, a front/rear sight, a rail or charging handle, a half-width stroke can be used.
+  - Borders are usually very big and take up space; for this reason, interior details' borders are half the width of the exterior ones. For small details on the exterior of a gun, such as a sling attachment point, a front/rear sight, a rail or charging handle, a half-width stroke can be used.
 - "Full-width" is defined as 8px and "half-width" as 4px.
-  - A half-width stroke can be omitted if its inclusion would add too much noise. This doesn’t happen often, as a detail too minute to warrant a stroke is usually too minute to warrant inclusion, but that’s not to say it’s impossible.
+  - A half-width stroke can be omitted if its inclusion would add too much noise. This doesn't happen often, as a detail too minute to warrant a stroke is usually too minute to warrant inclusion, but that's not to say it's impossible.
 - Borders use miter joints, with a miter angle of 29º.
-  - For the sake of consistency between pieces. As for the choice of miter as opposed to rounded or bevel, the answer is simple: the first loot images were all drawn by the same person, and said person’s art program had set miter joints as the default.
+  - For the sake of consistency between pieces. As for the choice of miter as opposed to rounded or bevel, the answer is simple: the first loot images were all drawn by the same person, and said person's art program had set miter joints as the default.
 
 ### Geometry
 
-- Some guns’ triggers are uncomfortably close to their trigger guards (examples are the HP18 and Model 37); there’s not much to do about this, so just recreate it faithfully and that’ll do.
+- Some guns' triggers are uncomfortably close to their trigger guards (examples are the HP18 and Model 37); there's not much to do about this, so just recreate it faithfully and that'll do.
 - Bipods should always be folded, sights should never be folded.
 - Draw the weapon such that it is ready to fire. A non-exhaustive list of things to look out for are: hammers should be cocked, safeties should be disengaged, fire selectors should be on the correct setting and magazines should be topped-off. The general rule is to draw the weapon as it would be if someone fired a single shot through it, reloaded it and then set it down on a table without doing anything else to it—draw what the gun would look like on that table. To be more specific:
-  - **Safeties**: For the purpose of this guideline, safeties fall into two categories: “set it and forget it” and “active”. The former refers to things like buttons and switches that, once set to a certain position, stay in that position until moved again. Most safeties are like this, such as the Kalashnikov-style and AR-15–style ones. The latter category refers to safeties that can be disabled, but will re-enable themselves automatically; examples of these include grip safeties (e.g. M1911) and trigger safeties (e.g. most Glocks). “Set it and forget it” safeties should be drawn as disengaged, whereas “active” safeties should be drawn as engaged. For example, if there were to be a Kalashnikov-pattern rifle with a trigger safety (for whatever reason), then its fire selector would be depicted anywhere but on safe, and its trigger safety would be depicted as engaged (since there’s no one there to press it down).
+  - **Safeties**: For the purpose of this guideline, safeties fall into two categories: “set it and forget it” and “active”. The former refers to things like buttons and switches that, once set to a certain position, stay in that position until moved again. Most safeties are like this, such as the Kalashnikov-style and AR-15–style ones. The latter category refers to safeties that can be disabled, but will re-enable themselves automatically; examples of these include grip safeties (e.g. M1911) and trigger safeties (e.g. most Glocks). “Set it and forget it” safeties should be drawn as disengaged, whereas “active” safeties should be drawn as engaged. For example, if there were to be a Kalashnikov-pattern rifle with a trigger safety (for whatever reason), then its fire selector would be depicted anywhere but on safe, and its trigger safety would be depicted as engaged (since there's no one there to press it down).
   - **Fire selectors**: Some select-fire weapons have fire selectors which are visible from their right-hand side (the side of interest to the artist). The most prominent example of this is the Kalashnikov family, which features a very obvious lever that unambiguously communicates what mode of fire the weapon is currently in. The AR-15 family also tends to show the state of its fire selector on the right hand side, and some weapons like the MCX Spear have fire selectors on both sides. Whatever the case, this fire selector should depict the correct setting; for most select-fire weapons, this will be the “automatic” position, but in case of doubt, asking around will surely yield the correct answer.
   - **AR-15 dust covers**: A special note is made of AR-15–style dust covers—shown on the right-hand side of the weapon, these are usually automatically opened when the weapon fires a round, and can be closed manually. These should be drawn as open, exposing the bolt beneath.
-  - **Hammers**: A sizable amount of pistols and most revolvers have exposed hammers: these hammers are part of the mechanism that allow the weapon to fire when the trigger is pulled—they should thus be drawn back, or cocked. Even if most modern pistols and some revolvers allow the weapon to fire when the hammer is down (thus operating them in double-action, since pulling the trigger performs both the action of cocking the hammer and releasing it), it’s been decided (somewhat arbitrarily) to nevertheless depict these weapons with their hammers cocked. A notable exception to this rule are double-action only pistols, or DOA pistols for short—as their name implies, the only way to cock the hammer is through the previously-explained double-action trigger pull. For these weapons, the hammer should thus obviously be drawn as down.
-  - **Open bolt weapons**: While most weapons—such as most members of the Kalashnikov and AR-15 families, the overwhelming majority of pistols and non–self-loading firearms—fire from what’s called a closed bolt, some fire from the opposite: an open bolt. Things like machine guns and submachine guns are the most common candidates for open bolts (e.g. FN Minimi, Ingram MAC-11, M1928 “Thompson”, MG42), but no matter the gun, the bolt should be depicted as open: usually, this is as simple as drawing the ejection port as darker (to give the illusion of peering into the weapon) and drawing the charging handle in a rearward position. For most open bolt weapons (like the M1928 or MAC-10) but one must exercise caution, for not all open bolt weapons are this way. For example, the FN Minimi—more commonly known by its military designation, the M249—is an open bolt weapon, but it features a non-reciprocating charging handle that sits in the forward position by default. As a general rule, open-bolt submachine guns will fall into the former category of having exposed ejection ports and locked back, reciprocating charging handles; whereas machine guns will fall into the latter category of having a non-reciprocating charging handle.
+  - **Hammers**: A sizable amount of pistols and most revolvers have exposed hammers: these hammers are part of the mechanism that allow the weapon to fire when the trigger is pulled—they should thus be drawn back, or cocked. Even if most modern pistols and some revolvers allow the weapon to fire when the hammer is down (thus operating them in double-action, since pulling the trigger performs both the action of cocking the hammer and releasing it), it's been decided (somewhat arbitrarily) to nevertheless depict these weapons with their hammers cocked. A notable exception to this rule are double-action only pistols, or DOA pistols for short—as their name implies, the only way to cock the hammer is through the previously-explained double-action trigger pull. For these weapons, the hammer should thus obviously be drawn as down.
+  - **Open bolt weapons**: While most weapons—such as most members of the Kalashnikov and AR-15 families, the overwhelming majority of pistols and non–self-loading firearms—fire from what's called a closed bolt, some fire from the opposite: an open bolt. Things like machine guns and submachine guns are the most common candidates for open bolts (e.g. FN Minimi, Ingram MAC-11, M1928 “Thompson”, MG42), but no matter the gun, the bolt should be depicted as open: usually, this is as simple as drawing the ejection port as darker (to give the illusion of peering into the weapon) and drawing the charging handle in a rearward position. For most open bolt weapons (like the M1928 or MAC-10) but one must exercise caution, for not all open bolt weapons are this way. For example, the FN Minimi—more commonly known by its military designation, the M249—is an open bolt weapon, but it features a non-reciprocating charging handle that sits in the forward position by default. As a general rule, open-bolt submachine guns will fall into the former category of having exposed ejection ports and locked back, reciprocating charging handles; whereas machine guns will fall into the latter category of having a non-reciprocating charging handle.
 
 ### Miscellaneous tips
 
-_All of these are the opinions of this document’s author._
+_All of these are the opinions of this document's author._
 
-- Draw without borders first. Borders add clutter to a piece, and even if they help make it sharper and more distinct, when one starts drawing, their focus is copying their reference. Without borders, one can focus on doing that better, and it’ll help with the next tip;
-- Don’t use borders to fill holes or as geometry. Borders are arguably decoration, and using them for what they aren’t leaves one open to misaligning pieces of geometry. (Also, it makes killfeed icons more annoying to produce because holes in geometry have to be patched.) Not only that, a border that acts as geometry ends up looking "thin", because it has no border, whereas everything else does.
-- Don’t draw the gun as one big shape and cut it up later. It reduces color variety, and as stated earlier, if something is significant enough to warrant its own shape, it should have its own shape and its own color.
-- Use multiple reference images. This decreases the chance that an oddity of one reference makes it into the final product. Ideally, there’ll be a primary reference—this is the one that’ll be traced on, and should be the best of all available ones. The other references are for clarifying ambiguities; sometimes, things can be obscured or too pixelated to make out, and that’s where a second perspective can help. It can also be useful to take things a step further and use a 3D model or a YouTube video, if available.
-- While the outside of trigger guards can have either a full-width or half-width stroke, their insides should have half-width strokes, since there usually isn’t a whole lot of space to play with. For the same reason, triggers should use half-width strokes.
+- Draw without borders first. Borders add clutter to a piece, and even if they help make it sharper and more distinct, when one starts drawing, their focus is copying their reference. Without borders, one can focus on doing that better, and it'll help with the next tip;
+- Don't use borders to fill holes or as geometry. Borders are arguably decoration, and using them for what they aren't leaves one open to misaligning pieces of geometry. (Also, it makes killfeed icons more annoying to produce because holes in geometry have to be patched.) Not only that, a border that acts as geometry ends up looking "thin", because it has no border, whereas everything else does.
+- Don't draw the gun as one big shape and cut it up later. It reduces color variety, and as stated earlier, if something is significant enough to warrant its own shape, it should have its own shape and its own color.
+- Use multiple reference images. This decreases the chance that an oddity of one reference makes it into the final product. Ideally, there'll be a primary reference—this is the one that'll be traced on, and should be the best of all available ones. The other references are for clarifying ambiguities; sometimes, things can be obscured or too pixelated to make out, and that's where a second perspective can help. It can also be useful to take things a step further and use a 3D model or a YouTube video, if available.
+- While the outside of trigger guards can have either a full-width or half-width stroke, their insides should have half-width strokes, since there usually isn't a whole lot of space to play with. For the same reason, triggers should use half-width strokes.
 - Not every gun has to be fifty shades of gray. Sometimes, artificially introducing a subtle tint across a weapon helps make it look less bland.
-- Knowledge of the firearm being drawn goes a long way. Not only is it usually fun trivia, but even a surface-level understanding of a weapon’s function can help clear up ambiguities. For example, knowing that the AUG has a progressive trigger will prevent one from fruitlessly searching for its fire selector (or thinking that its safety is the fire selector). In the context of the “ready to fire” guideline described above, knowledge of the weapon depicted is especially valuable; even if finding most of the information will require a very short search on the internet, that’s still slower than just knowing it to begin with.
+- Knowledge of the firearm being drawn goes a long way. Not only is it usually fun trivia, but even a surface-level understanding of a weapon's function can help clear up ambiguities. For example, knowing that the AUG has a progressive trigger will prevent one from fruitlessly searching for its fire selector (or thinking that its safety is the fire selector). In the context of the “ready to fire” guideline described above, knowledge of the weapon depicted is especially valuable; even if finding most of the information will require a very short search on the internet, that's still slower than just knowing it to begin with.
 
 ### Case studies
 
@@ -70,9 +70,9 @@ _Made by eipi_
 
 <SuroiItemImage width="400" rotation="30" itemID="m3k" />
 
-This shotgun would normally be many shades of gray, but its distinct and immediately noticeable blue bits prompted the rest of the gun to be tinted with the same shade of blue, which gives the whole palette a better synergy. As for the tint’s saturation, it’s kept low, and mostly the same throughout the weapon. This has the side-effect of making all the borders have the same color, which helps keep things nice and tidy.
+This shotgun would normally be many shades of gray, but its distinct and immediately noticeable blue bits prompted the rest of the gun to be tinted with the same shade of blue, which gives the whole palette a better synergy. As for the tint's saturation, it's kept low, and mostly the same throughout the weapon. This has the side-effect of making all the borders have the same color, which helps keep things nice and tidy.
 
-One notable trick to pay attention to would be how the receiver and trigger guard area were stroked: the two shapes were merged and were given one big full-width stroke; then, the trigger guard was separated from the receiver with a half-width stroke, and its inside was given a half-width stroke. The lesson is to be creative with how you do your borders—in this case, both the receiver and trigger guard needed a full-width stroke, but the border between them would’ve looked awkward at full-width, so some trickery was used to circumvent the problem.
+One notable trick to pay attention to would be how the receiver and trigger guard area were stroked: the two shapes were merged and were given one big full-width stroke; then, the trigger guard was separated from the receiver with a half-width stroke, and its inside was given a half-width stroke. The lesson is to be creative with how you do your borders—in this case, both the receiver and trigger guard needed a full-width stroke, but the border between them would've looked awkward at full-width, so some trickery was used to circumvent the problem.
 
 #### MP40
 
@@ -80,7 +80,7 @@ _Made by jc_
 
 <SuroiItemImage width="400" rotation="30" itemID="mp40" />
 
-This SMG has a couple special things about it. Firstly, its wood color is a bit out of step with the other wooden weapons, but this really isn’t a big deal. The trigger, trigger guard and part of the stock are all made with borders pretending to be geometry—they’re border-coloured, and because they don’t have borders, they look thin. Above the magazine, on the magazine well, there are pale markings. This is a very good example of an interior detail that is worth including but not worth stroking, since adding a half-width stroke to those details would just add tons of noise to that area. The strategy of drawing a big shape and cutting it up was used for the wooden bit, which is a shame, because those three sections could’ve benefitted from some color variety—for example, the pistol grip could’ve received a darker shade of brown. The gun’s metallic bits tend to be quite dark apart from the magazine well; this has the effect of drawing attention to that part of the gun, although the wooden bit does that better.
+This SMG has a couple special things about it. Firstly, its wood color is a bit out of step with the other wooden weapons, but this really isn't a big deal. The trigger, trigger guard and part of the stock are all made with borders pretending to be geometry—they're border-coloured, and because they don't have borders, they look thin. Above the magazine, on the magazine well, there are pale markings. This is a very good example of an interior detail that is worth including but not worth stroking, since adding a half-width stroke to those details would just add tons of noise to that area. The strategy of drawing a big shape and cutting it up was used for the wooden bit, which is a shame, because those three sections could've benefitted from some color variety—for example, the pistol grip could've received a darker shade of brown. The gun's metallic bits tend to be quite dark apart from the magazine well; this has the effect of drawing attention to that part of the gun, although the wooden bit does that better.
 
 ### CZ-75A
 
@@ -88,7 +88,7 @@ _Made by jc_
 
 <SuroiItemImage width="400" rotation="30" itemID="cz75a" />
 
-While the trigger guard, trigger, hammer, sights and magazine plate, are all stroke-coloured geometry, which makes them look thin, this piece does a very good job of managing space, in that it keeps full-width strokes on the outside (except for the inside of the trigger guard) and keeps the rest at half-width. There’s a bit of a blob where the spare magazine meets the frame, which might be unavoidable. The coloring is also consistent, with lighter colors helping to draw attention to important parts.
+While the trigger guard, trigger, hammer, sights and magazine plate, are all stroke-coloured geometry, which makes them look thin, this piece does a very good job of managing space, in that it keeps full-width strokes on the outside (except for the inside of the trigger guard) and keeps the rest at half-width. There's a bit of a blob where the spare magazine meets the frame, which might be unavoidable. The coloring is also consistent, with lighter colors helping to draw attention to important parts.
 
 ### SAF-200
 
@@ -96,13 +96,13 @@ _Made by eipi_
 
 <SuroiItemImage width="400" rotation="30" itemID="saf_200" />
 
-This SMG could’ve also been many shades of gray, but a slight blue tint helps differentiate it from the other guns, giving it a bit of character; there isn’t really a reason to do this other than it looks nice. Like the CZ-75, light colors help draw attention to important parts by popping out compared to the otherwise dark palette. The rails and sights on this gun use a half-width stroke—even if they’re technically exterior details, using a full-width stroke would just be way too noisy and bulky.
+This SMG could've also been many shades of gray, but a slight blue tint helps differentiate it from the other guns, giving it a bit of character; there isn't really a reason to do this other than it looks nice. Like the CZ-75, light colors help draw attention to important parts by popping out compared to the otherwise dark palette. The rails and sights on this gun use a half-width stroke—even if they're technically exterior details, using a full-width stroke would just be way too noisy and bulky.
 
 ## Part 2: World Images
 
 ### General
 
-A depiction of the weapon from the top looking downwards. They are referred to as “world images” because they’re shown as being held by the player in the game world.
+A depiction of the weapon from the top looking downwards. They are referred to as “world images” because they're shown as being held by the player in the game world.
 
 ### Colors
 
@@ -112,29 +112,29 @@ A depiction of the weapon from the top looking downwards. They are referred to a
 
 ### Borders
 
-In the same way that loot image borders required correct sizing of the weapon in question, correct sizing of world image borders requires the world image’s length in px to be the same as the real world gun’s length in mm. Since the loot image is usually available when making a world image, simply making the world image the same length as the loot image should do the trick.
+In the same way that loot image borders required correct sizing of the weapon in question, correct sizing of world image borders requires the world image's length in px to be the same as the real world gun's length in mm. Since the loot image is usually available when making a world image, simply making the world image the same length as the loot image should do the trick.
 
-- Like in loot images, borders inherit the hue and saturation from the shape they’re bordering, but unlike loot images, the lightness is locked at 9% instead of 20%.
+- Like in loot images, borders inherit the hue and saturation from the shape they're bordering, but unlike loot images, the lightness is locked at 9% instead of 20%.
 - Borders should be centered, not on the inside nor on the outside.
 - The concept of full-width and half-width borders still applies, and so do their use cases. However, for world images, “full-width” is defined as 3px and “half-width” is defined as 1.5px.
 - Geometry should never appear over a border
 
 ### Geometry
 
-- Picatinny rails are made by evenly spreading out many small rectangles in the direction perpendicular to the weapon’s overall direction, all of them atop a larger rectangle.
-  - The spacing isn’t too important so long as it “looks right”—the number of rails needn’t match the real weapon.
+- Picatinny rails are made by evenly spreading out many small rectangles in the direction perpendicular to the weapon's overall direction, all of them atop a larger rectangle.
+  - The spacing isn't too important so long as it “looks right”—the number of rails needn't match the real weapon.
 - As a whole, the weapon should be about 16px thick, with a margin of ±4px.
 
 ### Miscellaneous tips
 
-- Seeing as how world images are partially hidden by the player model and are generally more sensitive than loot images, it’s recommended to work alongside the existing ones to make sure it fits it better.
-  - The player model is a circle with a radius of 45px. The hand has a radius of 17px. These can be used to make a mock-up of what the gun would look like in a player’s hands.
-- More often than not, drawing a world image with a “correct” length will give awkward proportions. It’s thus usually necessary to artificially shorten it by shortening parts.
-- Seeing as how top-down views of firearms tend to be way harder to come across than side views (and their quality tends to be worse too), it’s usually okay to use one’s judgment and make an educated guess about what a gun should look like—that is, as long as the artist in question knows the weapon well.
+- Seeing as how world images are partially hidden by the player model and are generally more sensitive than loot images, it's recommended to work alongside the existing ones to make sure it fits it better.
+  - The player model is a circle with a radius of 45px. The hand has a radius of 17px. These can be used to make a mock-up of what the gun would look like in a player's hands.
+- More often than not, drawing a world image with a “correct” length will give awkward proportions. It's thus usually necessary to artificially shorten it by shortening parts.
+- Seeing as how top-down views of firearms tend to be way harder to come across than side views (and their quality tends to be worse too), it's usually okay to use one's judgment and make an educated guess about what a gun should look like—that is, as long as the artist in question knows the weapon well.
 
 ## Part 3: Killfeed icons
 
-A silhouette single-colored version of an item used in the killfeed. It has no borders and the entirety of the icon has the color #D9D9D9 (hsl(0, 0, 85%)); the exception is developer weapons, which can use gradients and other colored decorations. All kill icons either have a muzzle flash for firearms or a cartoon-y impact decoration for melee weapons. The silhouette is broken up by gaps (called “splits”) at key points; examples of these could be the stock, the pistol grip, the magazine and barrel; ultimately, it’s up to the artist to see what looks best.
+A silhouette single-colored version of an item used in the killfeed. It has no borders and the entirety of the icon has the color #D9D9D9 (hsl(0, 0, 85%)); the exception is developer weapons, which can use gradients and other colored decorations. All kill icons either have a muzzle flash for firearms or a cartoon-y impact decoration for melee weapons. The silhouette is broken up by gaps (called “splits”) at key points; examples of these could be the stock, the pistol grip, the magazine and barrel; ultimately, it's up to the artist to see what looks best.
 
 The preferred way to make them is to take the loot image, remove all its borders, (patch all the geometry) make every piece #D9D9D9, do splits and draw the muzzle flash. The split size is as follows: scale the gun so that its length in px is the same as its real-life length in millimeters; at this scale, all splits correspond to 4px lines. When it comes to the muzzle flash, more artistic liberties are granted; while muzzle flashes generally look the same, their size and position can vary to whatever the artist thinks looks right, while maintaining visual consistency with the other pieces.
 
@@ -154,7 +154,7 @@ _Made by eipi (original loot image by jchen)_
 
 <KillFeedImage weaponID="tango_51" width="400" />
 
-Another relatively simple icon, albeit with more detailed splits around the bolt handle area, showing that it’s possible to get creative with how one places their splits. The muzzle flash is also considerably longer than it is high, which is a theme amongst sniper rifles.
+Another relatively simple icon, albeit with more detailed splits around the bolt handle area, showing that it's possible to get creative with how one places their splits. The muzzle flash is also considerably longer than it is high, which is a theme amongst sniper rifles.
 
 #### Death Ray
 

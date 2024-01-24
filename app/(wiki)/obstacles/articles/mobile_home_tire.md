@@ -1,14 +1,24 @@
-The **Mobile Home Tire** is an [Obstacle](/obstacles) that was added in the v0.15.0 "Pulling the Pin" update on January 1st, 2024 and does not drop any loot.
+The **Mobile Home Tire** is an [Obstacle](/obstacles) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024.
 
 # Location & Spawning
 
-The Mobile Home Tire is located outside and it is near the [Mobile Home](/buildings/mobile_home). Each mobile home spawns a single mobile home tire.
+A single Mobile Home Tire spawns in every [Mobile Home](/buildings/mobile_home) on the exterior.
 
 # Loot & More
 
-It's used as a decoy and doesn't drop anything once destroyed.
+The Mobile Home Tire doesn't drop loot.
+
+# Tips
+
+- The Mobile Home Tire has decent health, but it can only be used as cover in certain situations.
+
+# Trivia
+
+- The Mobile Home Tire was designed by platonthek
+- Despite Tires being made out of rubber, the Mobile Home Tire uses stone sound effects
+- The Mobile Home Tire is similar to the tires found on the [Truck](/obstacles/truck)
 
 # History
 
 - v0.15.0
-  - Added Mobile Home
+  - Added

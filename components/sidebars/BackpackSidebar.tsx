@@ -114,7 +114,7 @@ export default function BackpackSidebar({
             title={
               <div className="flex justify-center">
                 <Image
-                  src={getSuroiImageLink(getSuroiItem(throwable))}
+                  src={getSuroiImageLink(getSuroiItem(throwable)!)}
                   alt={throwable}
                   width={40}
                   height={40}
