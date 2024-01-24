@@ -10,7 +10,7 @@ Tables drop no loot when broken. Tables have no hitbox, so players and bullets c
 
 # Tips
 
-- Since the Table has no hitbox, it cannot be used as cover.
+- Since the Table has no hitbox, it cannot be used as a cover.
 - You can hide under Tables to avoid players or to set up an ambush on another player approaching the building.
   - This is best done with a close-range weapon with high DPS such as the [Flues](/weapons/guns/flues) or [Micro Uzi](/weapons/guns/micro_uzi).
 

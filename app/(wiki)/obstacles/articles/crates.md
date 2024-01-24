@@ -1,10 +1,10 @@
-Crates are a type of obstacle that spawn around the map randomly. They come in three distinct variants with different loot. Regular crates were first added to the game in the v0.1.0 "We're back, baby" update on May 20th, 2023. Later, update v0.5.0 "Locked & Loaded" brought the other crate variants.
+Crates are a type of obstacle that spawns around the map randomly. They come in three distinct variants with different loot. Regular crates were first added to the game in the v0.1.0 "We're back, baby" update on May 20th, 2023. Later, update v0.5.0 "Locked & Loaded" brought the other crate variants.
 
 # Location and Spawning
 
 Crates are generally very common and spawn frequently out in the open. Crates and their variants can also be found inside some buildings.
 
-The Regular Crate is the most common type of crate. Grenade Crates are fairly common but less common compared to the Regular Crates. The AEGIS and Flint crates are rarer. Only five AEGIS crates and five Flint crates spawn per map outside of structures. A single melee crate always spawns per map.
+The Regular Crate is the most common type of crate. Grenade Crates are fairly common but less common compared to Regular Crates. The AEGIS and Flint crates are rarer. Only five AEGIS crates and five Flint crates spawn per map outside of structures. A single melee crate always spawns per map.
 
 Regular Crates and the Melee Crate are visible on the minimap, but AEGIS and Flint crates are not.
 

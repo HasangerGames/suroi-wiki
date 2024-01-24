@@ -2,14 +2,14 @@ The **USMC Mark 2 combat knife or Knife, Fighting Utility**, known in-game as th
 
 # Background
 
-The K-Bar is a combat knife designed by Union Cutlery, John M. Davis, and Howard E. America in 1942. It was adopted by the United States Marine Corps in 1942 and the US Navy in 1943. The knife has a 7-inch 1095 carbon steel clip point blade paired with a leather washer handle. The K-bar was used mainly by the U.S. Marines during World War II but it still sees use today as a general purpose knife.
+The K-Bar is a combat knife designed by Union Cutlery, John M. Davis, and Howard E. America in 1942. It was adopted by the United States Marine Corps in 1942 and the US Navy in 1943. The knife has a 7-inch 1095 carbon steel clip-point blade paired with a leather washer handle. The K-bar was used mainly by the U.S. Marines during World War II but it still sees use today as a general purpose knife.
 
 # Strategies
 
 ## Using
 
 - Try to get up close to your opponent without losing too much health, then spam left click when you are close enough to your opponent.
-  - Beware if they have a gun designed for close range combat, such as the [Flues](/weapons/guns/flues).
+  - Beware if they have a gun designed for close-range combat, such as the [Flues](/weapons/guns/flues).
 - Using any melee weapon requires good reaction time, as your opponent can escape your attack if they suddenly change directions.
 
 ## Countering

@@ -6,11 +6,11 @@ The Generator always spawns near the front of the [Ship](/buildings/ship) next t
 
 # Loot & More
 
-The Generator is indestructible and therefore drops no loot. When interacted with a [Gas Can](/weapons/melee/gas_can), it opens the vault, allowing access to the loot inside.
+The Generator is indestructible and therefore drops no loot. When interacting with a [Gas Can](/weapons/melee/gas_can), it opens the vault, allowing access to the loot inside.
 
 # Tips
 
-- The Generator doesn't make effective cover due to its positioning.
+- The Generator doesn't make an effective cover due to its positioning.
 
 # Trivia
 

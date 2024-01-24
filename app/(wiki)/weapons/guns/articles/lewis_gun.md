@@ -1,8 +1,8 @@
-The Lewis gun (aka Lewis automatic machine gun or Lewis automatic rifle), known in-game as the Lewis Gun, is a LMG utilizing 7.62mm ammunition.
+The Lewis gun (aka Lewis automatic machine gun or Lewis automatic rifle), known in-game as the Lewis Gun, is an LMG utilizing 7.62mm ammunition.
 
 # Background
 
-The Lewis gun was invented in 1911 by Isaac Newton Lewis, an U.S. Army colonel. It was widely used by the United Kingdom during the First World War. During the Second World War, old stores of Lewis guns supplemented the arsenal of the Allies. It saw use both as a LMG and a mounted weapon for boats, airplanes, and vehicles. It was withdrawn from service in the UK in 1946.
+The Lewis gun was invented in 1911 by Isaac Newton Lewis, a U.S. Army colonel. It was widely used by the United Kingdom during the First World War. During the Second World War, old stores of Lewis guns supplemented the arsenal of the Allies. It saw use both as a LMG and a mounted weapon for boats, airplanes, and vehicles. It was withdrawn from service in the UK in 1946.
 
 # Strategies
 
@@ -19,7 +19,7 @@ The Lewis gun was invented in 1911 by Isaac Newton Lewis, an U.S. Army colonel. 
 
 - Make sure to have a short-range, high DPS weapon ready as the Lewis Gun performs poorly in close quarters.
   - Good choices include the [Micro Uzi](/weapons/guns/micro_uzi), [Flues](/weapons/guns/flues) or [HP18](/weapons/guns/hp18)
-- As the Lewis Gun can easily shred basic cover such as [Trees](/obstacles/tree) or [Rocks](/obstacles/rock), take cover behind indestructible objects such as Buildings or cContainers.
+- As the Lewis Gun can easily shred basic cover such as [Trees](/obstacles/tree) or [Rocks](/obstacles/rock), take cover behind indestructible objects such as Buildings or Containers.
   - Keep in mind, however, that the bullets spent on destroying your cover are bullets that aren't hitting you, so these forms of cover are still useful.
 - Stay away from explosive [Barrels](/obstacles/barrel) as the Lewis Gun can pop them extremely quickly and without warning.
 - Try to lure the player closer to you as the Lewis Gun is not very effective at close range.

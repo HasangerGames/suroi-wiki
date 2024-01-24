@@ -2,7 +2,7 @@
 
 # Background
 
-Cola is a type of carbonted drink typically flavored with citrus oils, vanilla, and other flavorings. They usually have a large amount of sugar and some have caffeine as well.
+Cola is a type of carbonated drink typically flavored with citrus oils, vanilla, and other flavorings. They usually have a large amount of sugar and some have caffeine as well.
 
 # Strategies
 
@@ -10,7 +10,7 @@ Cola is a type of carbonted drink typically flavored with citrus oils, vanilla, 
 
 - The speed boost for adrenaline is linear, so if you have a lot of Colas and Tablets, make sure to use them to get the maximum speed boost possible.
 - The health regeneration, however, is not linear. Make sure to keep your adrenaline above 50 to take advantage of it.
-- You might be able to "bait" your opponent into attacking by pretending to use a Cola, even though you don't actually need it.
+- You might be able to "bait" your opponent into attacking by pretending to use a Cola, even though you don't need it.
 - Make sure you are in a safe and/or easily defensible location when using Cola, as the slowdown makes you vulnerable.
   - If someone starts attacking you, cancel the Cola and start fighting the (default keybind is X).
 - If you only have 1 or 2 Colas, it may be worth saving them until you can find another Cola or a Tablet, as then you can get the full health boost.
@@ -23,7 +23,7 @@ Cola is a type of carbonted drink typically flavored with citrus oils, vanilla, 
 
 # Obtaining
 
-Cola is most readily obtained by breaking toilets in buildings, as well as the Porta-Potty. However, the best way to get Cola is to break the fridge, which always drops 2-3 Cola. Cola can also be found from crates and even world loot.
+Cola is most readily obtained by breaking toilets in buildings, as well as the Porta-Potty. However, the best way to get Cola is to break the fridge, which always drops 2-3 Cola. Cola can also be found in crates and even world loot.
 
 # Trivia
 

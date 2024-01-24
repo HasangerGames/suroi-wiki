@@ -1,6 +1,6 @@
 <Removed />
 
-The **House** is a building added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It was later removed in the v0.11.0 "Making Waves" update on October 22nd, 2023. It has a decent amount of loot for early game.
+The **House** is a building added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It was later removed in the v0.11.0 "Making Waves" update on October 22nd, 2023. It has a decent amount of loot for early games.
 
 # Areas
 
@@ -26,7 +26,7 @@ The Bathroom contains a singular [Toilet](/obstacles/toilet).
 
 ## Garage
 
-The Garage contains a Bookshelf, [Regular Crate](/obstacles/regular_crate), [Barrel](/obstacles/barrel) and a [Washing Machine](/obstacles/washing_machine). - The door to the Garage can be punched until broken. - The washing machine has a 1/3 chance to drop the "no kil pls" skin and a 2/3 chance to drop the "Verified" skin (see [loot table](/loot#washing_machine)).
+The Garage contains a Bookshelf, [Regular Crate](/obstacles/regular_crate), [Barrel](/obstacles/barrel) and a [Washing Machine](/obstacles/washing_machine). - The door to the Garage can be punched until broken. - The washing machine has a 1/3 chance to drop the "no kill pls" skin and a 2/3 chance to drop the "Verified" skin (see [loot table](/loot#washing_machine)).
 
 # Tips
 
@@ -37,7 +37,7 @@ The Garage contains a Bookshelf, [Regular Crate](/obstacles/regular_crate), [Bar
 
 - The House was designed by platonthek
 - The Garage has an oil stain on the floor, possibly suggesting a car or other vehicle had been there before
-  = The code for the House still exists so it's possible to make it to spawn on a self-hosted server
+  = The code for the House still exists so it's possible to make it spawn on a self-hosted server
 
 # History
 

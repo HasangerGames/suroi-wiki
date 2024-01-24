@@ -8,11 +8,11 @@ One Armory attempts to spawn per map in a random position and rotation.
 
 ## Barracks
 
-The Barracks spawn in the lower left of the Armory. It contains five [Bunk Beds](/obstacles/bunk_bed), two [Cabinets](/obstacles/cabinet), two small [Drawers](/obstacles/drawers), a [Stove](/obstacles/stove), and a [Fridge](/obstacles/fridge).
+The Barracks spawns in the lower left of the Armory. It contains five [Bunk Beds](/obstacles/bunk_bed), two [Cabinets](/obstacles/cabinet), two small [Drawers](/obstacles/drawers), a [Stove](/obstacles/stove), and a [Fridge](/obstacles/fridge).
 
 ## Center
 
-The Center spawns in the right side of the Armory. It contains two [Chairs](/obstacles/chair), a [Table](/obstacles/table), a Cabinet, a small drawer, and a [Gun Mount](/obstacles/gun_mounts) always containing a Maul.
+The Center spawns on the right side of the Armory. It contains two [Chairs](/obstacles/chair), a [Table](/obstacles/table), a Cabinet, a small drawer, and a [Gun Mount](/obstacles/gun_mounts) always containing a Maul.
 
 ## Vault
 
@@ -45,7 +45,7 @@ The Porta Potty spawns near the Vault.
 
 - There is a [M1117](/obstacles/m1117) in the top right of the Armory.
   - Near it is a [Flint Crate](/obstacles/crates) and two Gun Cases that can drop you weapons and other loot.
-  - THe M1117 reflects bullets and is indestructible.
+  - The M1117 reflects bullets and is indestructible.
 - Many Regular Crates, Barrels, [Super Barrels](/obstacles/super_barrel), [Sandbags](/obstacles/sandbags), Grenade Crates, as well as several Tear Gas Crates, Gun Cases and Ammo Crates. 
 - A [Barrier](/obstacles/barrier) spawns behind two sandbags at the bottom of the Armory.
 - Most of the structure is surrounded by [Port Fences](/obstacles/port_fence).

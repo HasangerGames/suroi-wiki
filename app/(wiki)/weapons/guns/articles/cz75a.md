@@ -1,4 +1,4 @@
-The **CZ 75 Automatic**, known in-game as the **CZ-75A**, is an automatic pistol utilizing 9mm ammunition. It was added to the game in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It shoots very fast but has high spread and low damage.
+The **CZ 75 Automatic**, known in-game as the **CZ-75A**, is an automatic pistol utilizing 9mm ammunition. It was added to the game in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It shoots very fast but has a high spread and low damage.
 
 # Background
 
@@ -13,7 +13,7 @@ The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil 
 - The CZ-75A is most effective in CQC combat such as [Buildings](/buildings).
 - Most weapons are better than the CZ-75A, so replace it as soon as you can.
 - Dual CZ-75As can work well early-game if you can't find a [Micro Uzi](/weapons/guns/micro_uzi) or a shotgun.
-  - They can actually work later well in a round, but aren't as effective against stronger armor due to the high spread and low damage and range.
+  - They can work later well in a round but aren't as effective against stronger armor due to the high spread and low damage and range.
 - The best way to use Dual CZ-75As is to surprise your opponent when they don't expect an attack.
 
 ## Countering

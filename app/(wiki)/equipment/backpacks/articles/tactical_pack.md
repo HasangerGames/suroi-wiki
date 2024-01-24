@@ -1,8 +1,8 @@
-The **Tactical Pack** is a piece of [Equipment](/equipment) added the in the v0.7.0 "Geared Up" update on July 10, 2023. It is the third and final backpack tier (not including the [Bag](/equipment/backpacks/bag)) and can fit much more amounts of ammo, healing items, and throwables compared to the other backpacks.
+The **Tactical Pack** is a piece of [Equipment](/equipment) added in the v0.7.0 "Geared Up" update on July 10, 2023. It is the third and final backpack tier (not including the [Bag](/equipment/backpacks/bag)) and can fit much more amounts of ammo, healing items, and throwables compared to the other backpacks.
 
 # Obtaining
 
-The Tactical Pack can be obtained rarely from common loot sources such as [crates](/obstacles/crates), but it is most easily found from an [Airdrop](/obstacles/airdrops) because they have a guranteed chance to drop one piece of level 3 equipment. 
+The Tactical Pack can be obtained rarely from common loot sources such as [crates](/obstacles/crates), but it is most easily found from an [Airdrop](/obstacles/airdrops) because they have a guaranteed chance to drop one piece of level 3 equipment. 
 
 # Trivia 
 

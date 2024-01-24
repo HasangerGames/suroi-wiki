@@ -12,27 +12,27 @@ The Cargo Area of the Cargo Ship, located in the center, has many Containers. Yo
 
 ## Control Room
 
-Located towards the stern of the Cargo Ship, Control Room doesn't contain much loot, and it has some explosive panels near the windows. However, it does contain the very important [Gas Can](/weapons/melee/gas_can).
+Located towards the stern of the Cargo Ship, the Control Room doesn't contain much loot, and it has some explosive panels near the windows. However, it does contain the very important [Gas Can](/weapons/melee/gas_can).
 
 ## Vault
 
 The Vault, located in the bow of the Cargo Ship, is the most valuable area of the Cargo Ship. It contains a secret room with a chance of a Tango 51 inside. To get past the [Vault Door](/obstacles/door), you need to solve the puzzle.
 
 <Spoiler spoiler="Ship puzzle solution">
-  In order to solve the puzzle, grab the [Gas Can](/weapons/melee/gas_can) from
+  To solve the puzzle, grab the [Gas Can](/weapons/melee/gas_can) from
   the Control Room. Then, walk to the front of the ship and go to the generator.
   Use the Gas Can to activate the generator and the door to the Vault will open.
 </Spoiler>
 
 # Tips
 
-- You can walk on the sides of the Cargo Ship (you don't need to go through Control Room to get to the back).
+- You can walk on the sides of the Cargo Ship (you don't need to go through the Control Room to get to the back).
 - Get a decent gun as soon as you can before entering the Cargo Ship, so you can defend yourself.
   - If you're the first one there, you may be able to unlock the Vault before anyone gets there.
 
 # Trivia
 
-- Despite clearly having stairs into the Control Room, the stairs don't actually lead to another layer
+- Despite clearly having stairs into the Control Room, the stairs don't lead to another layer
   - The Control Room is treated as an indoor area on the map
 
 # History

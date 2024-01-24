@@ -2,9 +2,9 @@
 
 # Location & Spawning
 
-Normal Barrels are gray in color can be found spawned randomly around the map. Additionally, they can also be found in [Buildings](/buildings) such as the [Warehouse](/buildings/warehouse) and the [Port](/buildings/port). 80 spawn per map outside of structures.
+Normal Barrels are gray and can be found spawned randomly around the map. Additionally, they can also be found in [Buildings](/buildings) such as the [Warehouse](/buildings/warehouse) and the [Port](/buildings/port). 80 spawn per map outside of structures.
 
-Super Barrels are red in color and can also be found spawned randomly around the map, but less frequently than normal Barrels. Only 30 spawn per map outside of structures.
+Super Barrels are red and can also be found spawned randomly around the map, but less frequently than normal Barrels. Only 30 spawn per map outside of structures.
 
 # Loot & More
 
