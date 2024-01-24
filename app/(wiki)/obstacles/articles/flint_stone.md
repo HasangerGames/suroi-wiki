@@ -1,4 +1,4 @@
-The **Flint Stone** is an indestructible [Obstacle](/obstacles) added to the game in the v0.10.0 "Back with a Bang" update on September 14th, 2023. It is only destroyable with an airdrop, but drops good loot.
+The **Flint Stone** is an indestructible [Obstacle](/obstacles) added to the game in the v0.10.0 "Back with a Bang" update on September 14th, 2023. It is destroyable with an airdrop or a weapon with piercing damage, but the flint stone drops good loot.
 
 # Location & Spawning
 
