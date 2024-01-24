@@ -1,4 +1,4 @@
-The **Port** is a very large structure added in the v0.11.0 "Making Waves" update on October 22nd, 2023. It has a large number of buildings and containers, and is also the home of the [Cargo Ship](/buildings/ship).
+The **Port** is a very large structure added in the v0.11.0 "Making Waves" update on October 22nd, 2023. It has a large number of buildings and containers and is also the home of the [Cargo Ship](/buildings/ship).
 
 # Location & Spawning
 
@@ -23,12 +23,12 @@ A Port Shed spawns towards the center of the Port, alongside a lowered [Barrier]
 ## Crane
 
 Main article: [Crane](/buildings/crane)
-A crane always spawns parallel to the Cargo Ship, and contains a large amount of loot underneath it.
+A crane always spawns parallel to the Cargo Ship and contains a large amount of loot underneath it.
 
 ## Other
 
 - The Port contains a large number of Containers in various locations. They are useful for getting some basic weapons, armor, and healing items to engage other players.
-- In one of the corners opposite the Port Warehouses, their are multiple [Trucks](/obstacles/truck) and [Trailers](/obstacles/trailer), which make for effective cover.
+- In one of the corners opposite the Port Warehouses, there are multiple [Trucks](/obstacles/truck) and [Trailers](/obstacles/trailer), which make for effective cover.
 - [Bollards](/obstacles/bollard) spawn along the border with the ocean.
 - A line of [Porta Potties](/buildings/porta_potty) spawns near the trucks.
   - These are great for getting tons of healing items early in a game.

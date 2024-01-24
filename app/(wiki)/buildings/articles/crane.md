@@ -10,7 +10,7 @@ The Crane itself does not have any loot, but it does have a large number of [AEG
 
 # Tips
 
-- The parts of the base of the crane are indestructible, and can be used to take cover from opponents.
+- The parts of the base of the crane are indestructible and can be used to take cover from opponents.
   - If you get caught fighting around the crane, it is best to have a shotgun or SMG.
 - The ends of the parts of the base of the crane have a gap that is just wide enough for players.
   - Use this gap to your advantage when fighting opponents at close range.

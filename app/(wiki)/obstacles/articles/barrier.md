@@ -10,7 +10,7 @@ The Barrier is indestructible and drops no loot.
 
 # Tips
 
-- Being indestructible, the Barrier is actually a pretty decent source of cover.
+- Being indestructible, the Barrier is a pretty decent source of cover.
 - Move around it to frustrate your opponents.
 
 # Trivia

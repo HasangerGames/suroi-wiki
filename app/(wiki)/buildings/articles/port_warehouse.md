@@ -1,4 +1,4 @@
-The **Port Warehouse** is a medium-sized sub-buildings of the [Port](/buildings/port). It was added in the v0.11.0 "Making Waves" update on October 22nd, 2023. Crane Warehouses contain a decent amount of loot for the early game from crates and boxes.
+The **Port Warehouse** is a medium-sized sub-building of the [Port](/buildings/port). It was added in the v0.11.0 "Making Waves" update on October 22nd, 2023. Crane Warehouses contain a decent amount of loot for the early game from crates and boxes.
 
 # Location & Spawning
 

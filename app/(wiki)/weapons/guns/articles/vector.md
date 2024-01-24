@@ -1,7 +1,7 @@
 The **KRISS Vector**, known in-game as the **Vector** is a SMG utilizing the 9mm ammunition. It features a high rate of fire and high DPS, as well as using very common ammo.
 
 # Background
-Then known as Transformational Defense Industries, the Vector was designed by KRISS USA in 2006. It has been officially produced since 2009. The standout feature of the Vector is a novel delayed blowback system that redirects the recoil to improve muzzle climb and reduce felt recoil. This lends to the Vector being very accurate compared to other weapons when fired automatically. The Vector has seen limited use worldwide, namely by the armies and national police of Bangladesh and Thailand and the national police of Panama.
+Then known as Transformational Defense Industries, the Vector was designed by KRISS USA in 2006. It has been officially produced since 2009. The standout feature of the Vector is a novel delayed blowback system that redirects the recoil to improve muzzle climb and reduce felt recoil. This leads to the Vector being very accurate compared to other weapons when fired automatically. The Vector has seen limited use worldwide, namely by the armies and national police of Bangladesh and Thailand and the national police of Panama.
 
 # Strategies
 ## Usage
@@ -22,7 +22,7 @@ Then known as Transformational Defense Industries, the Vector was designed by KR
 - The Vector has a very short reload time, so don't try and rush a Vector user while they are reloading as it will backfire on you.
 - Try and keep your distance if you have a weapon that you know has a longer range than the Vector such as an assault rifle.
 - While very powerful, the Vector does have a few counters:
-  - At long range, weapons like snipers and DMRs can deal with an opponent because the Vector has short range.
+  - At long range, weapons like snipers and DMRs can deal with an opponent because the Vector has a short range.
   - The [MCX Spear](/weapons/guns/mcx_spear) and the [ACR](/weapons/guns/acr) have both high DPS and greater range than the Vector.
   - Up close, shotguns like the [Vepr-12](/weapons/guns/vepr12), [Flues](/weapons/guns/flues), and [Model 37](/weapons/guns/model_37) can overpower a Vector user.
 

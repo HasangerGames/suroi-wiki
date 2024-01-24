@@ -11,7 +11,7 @@ Small Refinery Barrels drop no loot and explode when broken. It can also reflect
 # Tips
 
 - The Small Refinery Barrel can be useful for killing any players entering the refinery from the entrance near it.
-  - It must first be damaged down to low health then shot at from a distance or else the player will have time to escape the area.
+  - It must first be damaged down to low health and then shot at from a distance or else the player will have time to escape the area.
 - The 200 damage is usually enough to kill any player close by or leave them at extremely low health.
 
 # Trivia

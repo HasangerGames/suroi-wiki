@@ -8,7 +8,7 @@ One Christmas Tree spawns per game, and can be anywhere in the open map. The Chr
 
 # Loot & More
 
-The Christmas Tree drops decent [loot](/loot#christmas_tree), and takes a large number of hits to destroy.
+The Christmas Tree drops decent [loot](/loot#christmas_tree) and takes a large number of hits to destroy.
 
 # Tips
 

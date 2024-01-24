@@ -19,11 +19,11 @@ The VSS was developed beginning in 1983 by TsNIITochMash, a then-Soviet industri
 
 - If you are at long-range, use a weapon like a sniper or a different DMR to beat the VSS user. The suppressed bullets are harder to aim at long range.
   - The [Mini-14](/weapons/guns/mini14) is a good counter to the VSS as it has higher DPS and more range.
-- If you are at close-range use a high-DPS weapon such as a SMG or shotgun to overpower the VSS user. Be careful against the also-high DPS of the VSS, however.
+- If you are at close range use a high-DPS weapon such as an SMG or shotgun to overpower the VSS user. Be careful against the also-high DPS of the VSS, however.
 - Use adrenaline to help you strafe your opponent and make them miss their shots.
 - Assault rifles can also counter the VSS at medium range. High-DPS assault rifles like the [MCX Spear](/weapons/guns/mcx_spear) and [AUG](/weapons/guns/aug) work best for this.
 - One of the best defenses against a VSS user is indestructible cover such as [Oil Tanks](/obstacles/oil_tank), Containers, and [Buildings](/buildings).
-  - Don't try and hide behind cover such as [Rocks](/obstacles/rock) and [Trees](/obstacles/tree). However, if there is no other cover, you can waste much of your opponents magazine destroying said cover.
+  - Don't try and hide behind cover such as [Rocks](/obstacles/rock) and [Trees](/obstacles/tree). However, if there is no other cover, you can waste much of your opponent's magazine destroying said cover.
 
 # Obtaining
 
@@ -38,8 +38,8 @@ The VSS is most easily found in special loot such as [AEGIS](/obstacles/aegis_cr
 - In Russian, TsNIITochMash is written as ЦНИИТОЧМАШ
   - The name is an initialism for "Центральный научно-исследовательский институт точного машиностроения", or "Central Scientific - Research Institute for Precision Machine Engineering"
 - This is the first and only 9mm weapon that doesn't utilize the 9x19mm Parabellum round
-- The VSS in-game most likely fire the armor piercing SP6 variant of the 9x39mm cartridge
-  - It is also using the 20 round magazines from the AS VAL, as the real-life VSS comes with 10 round magazines
+- The VSS in-game most likely fires the armor-piercing SP6 variant of the 9x39mm cartridge
+  - It is also using the 20-round magazines from the AS VAL, as the real-life VSS comes with 10-round magazines
 - The VSS is the first DMR and the first suppressed weapon in Suroi
 - Out of all 9mm weapons, the VSS has the highest damage per bullet
 
