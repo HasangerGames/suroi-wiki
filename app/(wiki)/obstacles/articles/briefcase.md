@@ -1,14 +1,35 @@
-**Briefcase** is an [Obstacle](/obstacles) that was added in the v0.15.0 "Pulling the Pin" update.
+The **Briefcase** is an [Obstacle](/obstacles) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024.
 
-# Location and Spawning
+# Location & Spawning
 
-The Briefcase spawns naturally in [Armory](/buildings/armory_meta) and [Oil Tanker](/buildings/oil_tanker)
+A Briefcase always spawns in the Vaults of the [Armory](/buildings/armory) and the [Oil Tanker](/buildings/oil_tanker).
 
 # Loot & More
 
-Briefcase drops 2 newly added guns in v0.15.0 which are [Vector](/weapons/guns/vector) and [Vepr-12](/weapons/guns/vepr12). It also drops [ARX-160](/weapons/guns/arx160). If you are extremely unlucky, you will get [G19](/weapons/guns/g19) as a troll from developers. More about it at https://wiki.suroi.io/loot#briefcase
+The Briefcase can drop a [Vector](/weapons/guns/vector), an [ARX-160](/weapons/guns/arx160), a [Vepr-12](/weapons/guns/vepr12), or extremely rarely, a [G19](/weapons/guns/g19).
+
+# Tips
+
+- The Briefcase almost always drops a decent weapon so it should be the first obstacle to head to in the buildings containing it.
+- The Briefcase can't be used as cover due to its positioning.
+
+# Trivia
+
+- The Briefcase was designed by 1092384
 
 # History
 
 - v0.15.0
   - Added
+
+# Gallery
+
+<Gallery
+  images={[
+    {
+      url: "/img/articles/obstacles/briefcase/g19_briefcase.png",
+      author: "F̴̋̓S̶̾͋Q̸̂̈́",
+      caption: "A player received a G19 from a briefcase in v0.15.0",
+    },
+  ]}
+/>

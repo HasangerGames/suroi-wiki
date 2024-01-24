@@ -11,7 +11,7 @@ type User = {
   website?: string;
 };
 
-export const WIKI_TEAM: User[] = [
+const WIKI_TEAM: User[] = [
   {
     name: "Compositr",
     description: "Main Wiki Developer",
@@ -41,7 +41,7 @@ export const WIKI_TEAM: User[] = [
   },
 ];
 
-export const WIKI_CONTRIB: string[] = [
+const WIKI_CONTRIB: string[] = [
   "sawq375",
   "brianzjk",
   "Emeraldneo",
@@ -49,7 +49,7 @@ export const WIKI_CONTRIB: string[] = [
   "Hugh Jass",
 ];
 
-export const GAME_TEAM: User[] = [
+const GAME_TEAM: User[] = [
   {
     name: "Hasanger",
     description: "Owner of Suroi",
@@ -79,6 +79,7 @@ export const GAME_TEAM: User[] = [
     name: "Chpsterz",
     description: "Developer",
     avatar: "https://avatars.githubusercontent.com/u/72819276",
+    website: "https://chpsscode.github.io",
   },
   {
     name: "Limenade",
@@ -97,8 +98,8 @@ export const GAME_TEAM: User[] = [
   },
 ];
 
-// To many names lol
-export const ARTISTS: string[] = [
+// Too many names lol
+const ARTISTS: string[] = [
   "Avocado",
   "Silverviolet",
   "Meower",
@@ -185,7 +186,7 @@ export default function CreditsPage() {
   );
 }
 
-export function Person({ person, displayAvatar = true }: PersonProps) {
+function Person({ person, displayAvatar = true }: PersonProps) {
   return (
     <div className="flex flex-col gap-4 w-full not-prose p-4 border-border border rounded-md">
       {displayAvatar && (
