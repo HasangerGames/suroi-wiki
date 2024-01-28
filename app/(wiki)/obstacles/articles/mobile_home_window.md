@@ -13,6 +13,7 @@ Unlike every other window, Mobile Home Window, once broken, you can pass through
 # Tips
 
 - If you are ambushed inside the mobile home, you can destroy the window and escape.
+   - Since many people know this trick, you can aim at the window to ambush players inside the [Mobile Home](/buildings/mobile_home), not just the door.
 
  # Trivia
 
