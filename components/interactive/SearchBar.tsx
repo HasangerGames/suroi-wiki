@@ -1,11 +1,10 @@
 "use client";
 
-import { HashIcon, Search, SearchIcon } from "lucide-react";
-import Image from "next/image";
 import Link from "@/components/links/Link";
-import { useEffect, useRef, useState } from "react";
 import { SearchItems } from "@/lib/util/search";
 import Fuse from "fuse.js";
+import { SearchIcon } from "lucide-react";
+import { useEffect, useState } from "react";
 import SearchItem from "./SearchItem";
 
 export default function SearchBar() {

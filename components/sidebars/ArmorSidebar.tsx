@@ -1,9 +1,9 @@
+import { getSuroiImageLink } from "@/lib/util/suroi";
 import { ArmorDefinition } from "@/vendor/suroi/common/src/definitions/armors";
 import GenericSidebar from "./utils/GenericSidebar";
-import InfoboxRow from "./utils/InfoboxRow";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
-import { getSuroiImageLink } from "@/lib/util/suroi";
+import InfoboxRow from "./utils/InfoboxRow";
 
 export default function ArmorSidebar({ item }: { item: ArmorDefinition }) {
   return (

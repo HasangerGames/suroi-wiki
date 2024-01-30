@@ -1,15 +1,11 @@
+import { getSuroiImageLink } from "@/lib/util/suroi";
+import { SVGObject } from "@/lib/util/types";
 import {
   GunDefinition,
   Guns,
 } from "@/vendor/suroi/common/src/definitions/guns";
-import SVGGroupRenderer from "../SVGGroupRenderer";
+import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
 import SVGObjectRenderer from "../SVGObjectRenderer";
-import {
-  SkinDefinition,
-  Skins,
-} from "@/vendor/suroi/common/src/definitions/skins";
-import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
-import { SVGObject } from "@/lib/util/types";
 
 export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {
   const image: SVGObject[] = [

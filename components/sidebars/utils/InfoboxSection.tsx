@@ -1,8 +1,8 @@
 "use client";
 
+import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 import { Collapse } from "react-collapse";
-import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function InfoboxSection({
   grid = "grid-cols-3",

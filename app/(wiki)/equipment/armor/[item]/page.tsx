@@ -1,6 +1,6 @@
-import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
 import GenericArticlePage from "@/components/generics/GenericArticlePage";
 import ArmorSidebar from "@/components/sidebars/ArmorSidebar";
+import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
 
 const toExport = GenericArticlePage({
   items: Armors.definitions,

@@ -1,14 +1,13 @@
-import { ThrowableDefinition } from "@/vendor/suroi/common/src/definitions/throwables";
-import GenericSidebar from "./utils/GenericSidebar";
 import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
-import InfoboxRow from "./utils/InfoboxRow";
-import InfoboxColumn from "./utils/InfoboxColumn";
-import ExplosionRow from "./utils/ExplosionRow";
-import InfoboxHeader from "./utils/InfoboxHeader";
-import SVGObjectRenderer from "../svg/SVGObjectRenderer";
-import PlayerHoldingThrowable from "../svg/special/PlayerHoldingThrowable";
-import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 import { ImageTab } from "@/lib/util/types";
+import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
+import { ThrowableDefinition } from "@/vendor/suroi/common/src/definitions/throwables";
+import PlayerHoldingThrowable from "../svg/special/PlayerHoldingThrowable";
+import ExplosionRow from "./utils/ExplosionRow";
+import GenericSidebar from "./utils/GenericSidebar";
+import InfoboxColumn from "./utils/InfoboxColumn";
+import InfoboxHeader from "./utils/InfoboxHeader";
+import InfoboxRow from "./utils/InfoboxRow";
 
 export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
   const skin =

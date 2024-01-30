@@ -1,11 +1,11 @@
+import PageCard from "@/components/cards/PageCard";
+import Collapsible from "@/components/interactive/Collapsible";
+import GridTable from "@/components/tables/GridTable";
+import { getSuroiImageLink } from "@/lib/util/suroi";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
-import { IMAGE_BASE_URL, getSuroiImageLink } from "@/lib/util/suroi";
-import PageCard from "@/components/cards/PageCard";
-import GridTable from "@/components/tables/GridTable";
 import { Throwables } from "@/vendor/suroi/common/src/definitions/throwables";
 import Link from "next/link";
-import Collapsible from "@/components/interactive/Collapsible";
 
 export default function WeaponsPage() {
   return (

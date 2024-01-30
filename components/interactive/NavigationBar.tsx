@@ -1,7 +1,7 @@
 import Image from "next/image";
-import SearchBar from "./SearchBar";
 import Link from "next/link";
 import NavigationMenu from "./NavigationMenu";
+import SearchBar from "./SearchBar";
 
 export default function NavigationBar() {
   return (

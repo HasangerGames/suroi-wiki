@@ -1,11 +1,10 @@
 import PageCard from "@/components/cards/PageCard";
-import GridTable from "@/components/tables/GridTable";
-import Image from "next/image";
 import Link from "@/components/links/Link";
+import GridTable from "@/components/tables/GridTable";
+import TableWithHeader from "@/components/tables/TableWithHeader";
 import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
-import TableWithHeader from "@/components/tables/TableWithHeader";
-import AmmoIcon from "@/components/icons/AmmoIcon";
+import Image from "next/image";
 import { Fragment } from "react";
 export default function BackpackPage() {
   return (

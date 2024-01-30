@@ -1,6 +1,6 @@
 import { SVGGroup } from "@/lib/util/types";
-import SVGObjectRenderer from "./SVGObjectRenderer";
 import React from "react";
+import SVGObjectRenderer from "./SVGObjectRenderer";
 
 export default function SVGGroupRenderer({
   viewBox,

@@ -1,16 +1,11 @@
 import { Unpacked } from "@/lib/ts/utility";
-import {
-  SOUND_BASE_URL,
-  getSuroiImageLink,
-  getSuroiItem,
-  getSuroiKillfeedImageLink,
-} from "@/lib/util/suroi";
+import { SOUND_BASE_URL } from "@/lib/util/suroi";
 import { FireMode } from "@/vendor/suroi/common/src/constants";
 import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
 import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
 import {
-  WearerAttributes,
   ItemDefinition,
+  WearerAttributes,
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { WithRequired } from "@tanstack/react-query";
 import AmmoIcon from "../icons/AmmoIcon";
@@ -19,9 +14,6 @@ import InfoboxAudioGroup from "./utils/InfoboxAudioGroup";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
-import Image from "next/image";
-import PlayerHoldingGun from "../svg/special/PlayerHoldingGun";
-import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 
 export default function GunDetails({ gun, explosion }: GunDetailsProps) {
   return (

@@ -1,18 +1,18 @@
 "use client";
 
-import { MDXRemote, MDXRemoteProps } from "next-mdx-remote";
 import Link from "@/components/links/Link";
+import { MDXRemote, MDXRemoteProps } from "next-mdx-remote";
+import { HTMLProps } from "react";
+import Spoiler from "../articles/Spoiler";
+import Gallery from "../articles/gallery/Gallery";
+import DevWeapon from "../articles/notices/DevWeapon";
+import Empty from "../articles/notices/Empty";
 import EventItem from "../articles/notices/Event";
-import TimeLink from "../links/TimeLink";
+import Removed from "../articles/notices/Removed";
+import Stub from "../articles/notices/Stub";
 import CommitLink from "../links/CommitLink";
 import FileLink from "../links/FileLink";
-import DevWeapon from "../articles/notices/DevWeapon";
-import Stub from "../articles/notices/Stub";
-import { HTMLProps } from "react";
-import Removed from "../articles/notices/Removed";
-import Gallery from "../articles/gallery/Gallery";
-import Spoiler from "../articles/Spoiler";
-import Empty from "../articles/notices/Empty";
+import TimeLink from "../links/TimeLink";
 
 const components = {
   Link,

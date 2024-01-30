@@ -1,19 +1,19 @@
 "use client";
 
 import { shootGun } from "@/lib/util/calculators";
+import { FireMode } from "@/vendor/suroi/common/src/constants";
 import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
-import { Suspense, useRef } from "react";
 import {
   Chart,
-  ScatterController,
+  Legend,
   LinearScale,
   PointElement,
-  Legend,
-  Tooltip,
+  ScatterController,
   Title,
+  Tooltip,
 } from "chart.js";
+import { Suspense, useRef } from "react";
 import { Scatter } from "react-chartjs-2";
-import { FireMode } from "@/vendor/suroi/common/src/constants";
 
 export default function GunGraph({ gun }: GunGraphProps) {
   Chart.register(

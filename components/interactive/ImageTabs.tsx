@@ -1,10 +1,9 @@
 "use client";
 
+import SVGObjectRenderer from "@/components/svg/SVGObjectRenderer";
 import { ImageTab } from "@/lib/util/types";
-import { cp } from "fs";
 import Image from "next/image";
 import { useState } from "react";
-import SVGObjectRenderer from "@/components/svg/SVGObjectRenderer";
 
 const BackgroundMode = ["transparent", "white", "black", "checker"];
 

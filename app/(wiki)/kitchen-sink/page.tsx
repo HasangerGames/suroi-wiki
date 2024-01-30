@@ -7,12 +7,12 @@ import Empty from "@/components/articles/notices/Empty";
 import Event from "@/components/articles/notices/Event";
 import Removed from "@/components/articles/notices/Removed";
 import Stub from "@/components/articles/notices/Stub";
+import Collapsible from "@/components/interactive/Collapsible";
 import PlayerWearingEquipment from "@/components/svg/special/PlayerWearingEquipment";
 import MatrixTable from "@/components/tables/MatrixTable";
 import TableWithHeader from "@/components/tables/TableWithHeader";
-import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
+import { getSuroiImageLink } from "@/lib/util/suroi";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
-import Collapsible from "@/components/interactive/Collapsible";
 
 export default function Kitchen() {
   return (

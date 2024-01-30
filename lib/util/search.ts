@@ -1,4 +1,10 @@
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
+import { Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
+import {
+  LootTables,
+  LootTiers,
+} from "@/vendor/suroi/server/src/data/lootTables";
 import {
   IMAGE_BASE_URL,
   getSuroiBuilding,
@@ -6,12 +12,6 @@ import {
   getSuroiItem,
   getSuroiObstacle,
 } from "./suroi";
-import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
-import { Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
-import {
-  LootTables,
-  LootTiers,
-} from "@/vendor/suroi/server/src/data/lootTables";
 
 export type SearchItem = {
   name: string;

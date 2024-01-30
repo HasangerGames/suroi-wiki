@@ -1,16 +1,16 @@
 "use client";
 
+import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
+import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
 import {
   GunDefinition,
   Guns,
 } from "@/vendor/suroi/common/src/definitions/guns";
-import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
-import GenericSidebar from "./utils/GenericSidebar";
-import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
-import GunDetails from "./GunDetails";
+import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 import { useState } from "react";
 import PlayerHoldingGun from "../svg/special/PlayerHoldingGun";
-import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
+import GunDetails from "./GunDetails";
+import GenericSidebar from "./utils/GenericSidebar";
 
 export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
   const [dual, setDual] = useState(false);

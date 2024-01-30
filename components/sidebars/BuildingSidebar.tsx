@@ -1,5 +1,3 @@
-import { BuildingDefinition } from "@/vendor/suroi/common/src/definitions/buildings";
-import GenericSidebar from "./utils/GenericSidebar";
 import {
   buildingParents,
   buildingVariations,
@@ -7,10 +5,12 @@ import {
   getSuroiImageLink,
   getSuroiObstacle,
 } from "@/lib/util/suroi";
+import { BuildingDefinition } from "@/vendor/suroi/common/src/definitions/buildings";
+import Link from "../links/Link";
+import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
-import Link from "../links/Link";
 
 export default function BuildingSidebar({
   item,

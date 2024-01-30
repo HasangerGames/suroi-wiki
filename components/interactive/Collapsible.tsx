@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronRight, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Collapse } from "react-collapse";
 
