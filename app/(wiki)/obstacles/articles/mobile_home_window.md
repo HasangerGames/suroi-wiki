@@ -1,19 +1,17 @@
-**Mobile Home Window**, along with [Mobile Home](/buildings/mobile_home), was added in the v0.15.0 "Pulling the Pins" update.
-
+The **Mobile Home Window** is an [Obstacle](/obstacles) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024.
 # Location and Spawning
 
-Each [Mobile Home](/buildings/mobile_home) comes with a Mobile Home Window that is attached to it.
+A single Mobile Home Window spawns in every [Mobile Home](/buildings/mobile_home) on the exterior.
 
 # Loot & More
 
-Being just a decorative object, Mobile Home Window doesn't drop any loot upon destroying it.
-
-Unlike every other window, Mobile Home Window, once broken, you can pass through it
+The Mobile Home Window doesn't drop loot. 
 
 # Tips
 
-- If you are ambushed inside the mobile home, you can destroy the window and escape.
-   - Since many people know this trick, you can aim at the window to ambush players inside the [Mobile Home](/buildings/mobile_home), not just the door.
+- If you are ambushed inside the mobile home, you can destroy the window and escape as the space that the window occupies has no hitbox once the window is destroyed.
+   - Since many people know this trick, you can aim at the window to ambush players inside the Mobile Home, not just the door.
+- Don't use the Mobile Home Window as cover since it is easily destroyed.
 
  # Trivia
 
