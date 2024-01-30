@@ -3,12 +3,12 @@
 import {
   ArmorDefinition,
   ArmorType,
+  Armors,
 } from "@/vendor/suroi/common/src/definitions/armors";
 import {
   GunDefinition,
   Guns,
 } from "@/vendor/suroi/common/src/definitions/guns";
-import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
 import { useState } from "react";
 
 const Helmets = Armors.definitions.filter(

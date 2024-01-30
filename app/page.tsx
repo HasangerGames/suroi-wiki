@@ -1,12 +1,12 @@
 import PageCard from "@/components/cards/PageCard";
+import BranchLink from "@/components/links/BranchLink";
 import CommitLink from "@/components/links/CommitLink";
-import fs from "fs/promises";
-import Image from "next/image";
 import Link from "@/components/links/Link";
 import GridTable from "@/components/tables/GridTable";
 import { wikiPages } from "@/lib/util/search";
-import BranchLink from "@/components/links/BranchLink";
 import { BRANCH } from "@/lib/util/suroi";
+import fs from "fs/promises";
+import Image from "next/image";
 
 export default async function Home() {
   const HEAD = await fs.readFile(".git/modules/vendor/suroi/HEAD", "utf8");

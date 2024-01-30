@@ -1,21 +1,21 @@
-import {
-  FlyoverPref,
-  ObstacleDefinition,
-  RotationMode,
-} from "@/vendor/suroi/common/src/definitions/obstacles";
-import GenericSidebar from "./utils/GenericSidebar";
-import InfoboxRow from "./utils/InfoboxRow";
 import { range } from "@/lib/util/arrays";
-import InfoboxColumn from "./utils/InfoboxColumn";
-import InfoboxHeader from "./utils/InfoboxHeader";
-import { ObstacleSpecialRoles } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import {
   getSuroiImageLink,
   getSuroiItem,
   obstacleContainedBy,
 } from "@/lib/util/suroi";
-import ExplosionRow from "./utils/ExplosionRow";
+import {
+  FlyoverPref,
+  ObstacleDefinition,
+  RotationMode,
+} from "@/vendor/suroi/common/src/definitions/obstacles";
+import { ObstacleSpecialRoles } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import Link from "../links/Link";
+import ExplosionRow from "./utils/ExplosionRow";
+import GenericSidebar from "./utils/GenericSidebar";
+import InfoboxColumn from "./utils/InfoboxColumn";
+import InfoboxHeader from "./utils/InfoboxHeader";
+import InfoboxRow from "./utils/InfoboxRow";
 
 export default function ObstacleSidebar({
   item,

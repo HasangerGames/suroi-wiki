@@ -1,6 +1,6 @@
 import { Explosions } from "@/vendor/suroi/common/src/definitions/explosions";
-import InfoboxRow from "./InfoboxRow";
 import InfoboxColumn from "./InfoboxColumn";
+import InfoboxRow from "./InfoboxRow";
 
 export default function ExplosionRow({ explosion }: ExplosionRowProps) {
   const explosionData = Explosions.definitions.find(

@@ -1,13 +1,11 @@
-import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/melees";
-import InfoboxColumn from "./utils/InfoboxColumn";
-import InfoboxRow from "./utils/InfoboxRow";
-import Image from "next/image";
-import InfoboxHeader from "./utils/InfoboxHeader";
 import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
-import ImageTabs from "../interactive/ImageTabs";
-import PlayerHoldingMelee from "../svg/special/PlayerHoldingMelee";
+import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/melees";
 import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
+import PlayerHoldingMelee from "../svg/special/PlayerHoldingMelee";
 import GenericSidebar from "./utils/GenericSidebar";
+import InfoboxColumn from "./utils/InfoboxColumn";
+import InfoboxHeader from "./utils/InfoboxHeader";
+import InfoboxRow from "./utils/InfoboxRow";
 
 export default function MeleeSidebar({ item }: MeleeSidebarProps) {
   const skin =

@@ -1,6 +1,5 @@
-import { BASE_URL } from "@/lib/util/suroi";
-import Link from "./Link";
 import { GitBranchIcon } from "lucide-react";
+import Link from "./Link";
 
 export default function BranchLink({ branch, children }: BranchLinkProps) {
   return (

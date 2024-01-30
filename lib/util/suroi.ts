@@ -7,11 +7,7 @@ import {
   DecalDefinition,
   Decals,
 } from "@/vendor/suroi/common/src/definitions/decals";
-import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
-import {
-  GunDefinition,
-  Guns,
-} from "@/vendor/suroi/common/src/definitions/guns";
+import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import {
   LootDefinition,
   Loots,

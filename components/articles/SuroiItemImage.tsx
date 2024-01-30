@@ -1,8 +1,4 @@
-import {
-  getSuroiImageLink,
-  getSuroiItem,
-  getSuroiObstacle,
-} from "@/lib/util/suroi";
+import { getSuroiImageLink, getSuroiItem } from "@/lib/util/suroi";
 import Image from "next/image";
 
 export default function SuroiItemImage({

@@ -1,15 +1,15 @@
+import { getSuroiImageLink } from "@/lib/util/suroi";
+import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
 import {
   HealType,
   HealingItemDefinition,
 } from "@/vendor/suroi/common/src/definitions/healingItems";
 import GenericSidebar from "./utils/GenericSidebar";
+import InfoboxAudio from "./utils/InfoboxAudio";
+import InfoboxAudioGroup from "./utils/InfoboxAudioGroup";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
-import InfoboxAudioGroup from "./utils/InfoboxAudioGroup";
-import InfoboxAudio from "./utils/InfoboxAudio";
-import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
-import { getSuroiImageLink } from "@/lib/util/suroi";
 
 export default function HealingSidebar({
   item,

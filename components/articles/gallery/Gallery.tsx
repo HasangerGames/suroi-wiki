@@ -2,13 +2,12 @@
 
 import { GalleryImage } from "@/lib/util/types";
 import {
-  ChevronRight,
   ChevronLeft,
+  ChevronRight,
   ImageIcon,
   Maximize2,
-  X,
-  Youtube,
   User2,
+  X,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";

@@ -1,16 +1,15 @@
 import ArmorCalc from "@/components/interactive/ArmorCalc";
 import FileLink from "@/components/links/FileLink";
-import Image from "next/image";
 import Link from "@/components/links/Link";
+import MatrixTable from "@/components/tables/MatrixTable";
+import TableWithHeader from "@/components/tables/TableWithHeader";
+import { getSuroiImageLink } from "@/lib/util/suroi";
 import {
+  ArmorDefinition,
   ArmorType,
   Armors,
 } from "@/vendor/suroi/common/src/definitions/armors";
-import { ArmorDefinition } from "@/vendor/suroi/common/src/definitions/armors";
-import { getSuroiImageLink } from "@/lib/util/suroi";
-import TableWithHeader from "@/components/tables/TableWithHeader";
-import { Table } from "lucide-react";
-import MatrixTable from "@/components/tables/MatrixTable";
+import Image from "next/image";
 
 const Helmets = Armors.definitions.filter(
   (armor) => armor.armorType === ArmorType.Helmet,

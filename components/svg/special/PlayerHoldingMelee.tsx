@@ -1,12 +1,12 @@
 "use client";
 
+import { easeLinear } from "@/lib/util/animation";
+import { getSuroiImageLink } from "@/lib/util/suroi";
+import { SVGObject } from "@/lib/util/types";
 import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/melees";
 import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
-import SVGObjectRenderer from "../SVGObjectRenderer";
-import { Position, SVGObject } from "@/lib/util/types";
-import { getSuroiImageLink } from "@/lib/util/suroi";
 import { useEffect, useState } from "react";
-import { easeLinear } from "@/lib/util/animation";
+import SVGObjectRenderer from "../SVGObjectRenderer";
 
 export default function PlayerHoldingMelee({
   melee,

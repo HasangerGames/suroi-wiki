@@ -2,15 +2,15 @@ import {
   ObjectDefinition,
   ReferenceTo,
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
-import path from "path";
-import { ComponentType, ReactNode } from "react";
-import fs from "node:fs/promises";
 import { serialize } from "next-mdx-remote/serialize";
 import { notFound, redirect } from "next/navigation";
-import MDXClient from "../client/MDXClient";
+import fs from "node:fs/promises";
+import path from "path";
+import { ComponentType, ReactNode } from "react";
 import Empty from "../articles/notices/Empty";
-import MultiSidebar from "../sidebars/MultiSidebar";
+import MDXClient from "../client/MDXClient";
 import EditButton from "../interactive/EditButton";
+import MultiSidebar from "../sidebars/MultiSidebar";
 
 /**
  * Handles rendering, layouts and metadata for article pages. Simple fill out the

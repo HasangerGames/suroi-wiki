@@ -1,11 +1,11 @@
 import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
-import { notFound, redirect } from "next/navigation";
 import fs from "fs/promises";
-import { serialize } from "next-mdx-remote/serialize";
-import path from "path";
-import MDXClient from "../client/MDXClient";
 import { Metadata } from "next";
+import { serialize } from "next-mdx-remote/serialize";
+import { notFound, redirect } from "next/navigation";
+import path from "path";
 import Empty from "../articles/notices/Empty";
+import MDXClient from "../client/MDXClient";
 
 export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
   return async function GenericMDXPage({

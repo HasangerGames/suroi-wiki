@@ -1,16 +1,16 @@
-import { BackpackDefinition } from "@/vendor/suroi/common/src/definitions/backpacks";
-import GenericSidebar from "./utils/GenericSidebar";
-import InfoboxRow from "./utils/InfoboxRow";
-import InfoboxHeader from "./utils/InfoboxHeader";
-import InfoboxColumn from "./utils/InfoboxColumn";
-import AmmoIcon from "../icons/AmmoIcon";
-import HealingIcon from "../icons/HealingIcon";
 import {
   IMAGE_BASE_URL,
   getSuroiImageLink,
   getSuroiItem,
 } from "@/lib/util/suroi";
+import { BackpackDefinition } from "@/vendor/suroi/common/src/definitions/backpacks";
 import Image from "next/image";
+import AmmoIcon from "../icons/AmmoIcon";
+import HealingIcon from "../icons/HealingIcon";
+import GenericSidebar from "./utils/GenericSidebar";
+import InfoboxColumn from "./utils/InfoboxColumn";
+import InfoboxHeader from "./utils/InfoboxHeader";
+import InfoboxRow from "./utils/InfoboxRow";
 
 export default function BackpackSidebar({
   item,

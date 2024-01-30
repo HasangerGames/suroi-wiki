@@ -1,14 +1,14 @@
 "use client";
 
-import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
-import SVGObjectRenderer from "../SVGObjectRenderer";
-import { useState } from "react";
 import { IMAGE_BASE_URL, getSuroiImageLink } from "@/lib/util/suroi";
 import {
   ArmorType,
   Armors,
 } from "@/vendor/suroi/common/src/definitions/armors";
 import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
+import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
+import { useState } from "react";
+import SVGObjectRenderer from "../SVGObjectRenderer";
 
 export default function PlayerWearingEquipment() {
   const [skinIndex, setSkinIndex] = useState(0);

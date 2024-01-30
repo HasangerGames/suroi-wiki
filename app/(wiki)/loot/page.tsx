@@ -1,10 +1,10 @@
-import {
-  LootTiers,
-  LootTables,
-} from "@/vendor/suroi/server/src/data/lootTables";
-import { Loots } from "@/vendor/suroi/common/src/definitions/loots";
 import LootCalc from "@/components/interactive/LootCalc";
 import TableWithHeader from "@/components/tables/TableWithHeader";
+import { Loots } from "@/vendor/suroi/common/src/definitions/loots";
+import {
+  LootTables,
+  LootTiers,
+} from "@/vendor/suroi/server/src/data/lootTables";
 
 export default function LootPage() {
   return (

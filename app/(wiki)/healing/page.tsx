@@ -1,10 +1,7 @@
-import FlexTable from "@/components/tables/FlexTable";
-import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems";
-import Image from "next/image";
-import Link from "@/components/links/Link";
-import { getSuroiImageLink } from "@/lib/util/suroi";
-import GridTable from "@/components/tables/GridTable";
 import PageCard from "@/components/cards/PageCard";
+import GridTable from "@/components/tables/GridTable";
+import { getSuroiImageLink } from "@/lib/util/suroi";
+import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems";
 
 export default function HealingPage() {
   return (

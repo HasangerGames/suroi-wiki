@@ -1,8 +1,8 @@
+import { IMAGE_BASE_URL, getSuroiImageLink } from "@/lib/util/suroi";
+import { SVGObject } from "@/lib/util/types";
 import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
 import { ThrowableDefinition } from "@/vendor/suroi/common/src/definitions/throwables";
 import SVGObjectRenderer from "../SVGObjectRenderer";
-import { IMAGE_BASE_URL, getSuroiImageLink } from "@/lib/util/suroi";
-import { SVGObject } from "@/lib/util/types";
 
 type Position = {
   x: number;
