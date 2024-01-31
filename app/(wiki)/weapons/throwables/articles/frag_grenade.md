@@ -39,7 +39,7 @@ This is a special technique that abuses the behavior of frag grenades pushing ot
 
 
 # Obtaining
-Frag Grenades can sometimes be obtained from [Regular Crates](/obstacles/regular_crate), but are much more often dropped from (Grenade Crates)[/obstacles/grenade_crate].
+Frag Grenades can sometimes be obtained from [Regular Crates](/obstacles/regular_crate), but are much more often dropped from [Grenade Crates](/obstacles/grenade_crate).
 
 # Trivia
 - The Frag Grenade is based on the real-life M67 grenade used by the U.S. military
