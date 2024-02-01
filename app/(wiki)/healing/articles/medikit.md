@@ -29,9 +29,9 @@ Medikits are most commonly found in Toilets and the Porta-Potty. They can also b
 
 # Trivia
 
-- Before Medikits and other consumables were added, the only way to heal yourself was to break a Health Crate
-  - Health Crates have now been removed from the game
-- "Medikit" is a reference to the first aid kits that appear in many Doom games
+- Before Medikits and other consumables were added, the only way to heal yourself was to break a Health Crate.
+  - Health Crates have now been removed from the game.
+- "Medikit" is a reference to the first aid kits that appear in many Doom games.
 
 # History
 
