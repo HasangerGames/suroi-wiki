@@ -28,7 +28,7 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
     );
 
     // If no item or combined article found, return no metadata
-    // Don't throw notFound - thats the page's responsbility
+    // Don't throw notFound - thats the page's responsibility
     if (!item && !combinedArticle) return {};
 
     return {
