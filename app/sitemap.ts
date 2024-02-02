@@ -52,11 +52,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     {
       url: url("/loot"),
-      priority: 0.5
+      priority: 0.5,
     },
     {
       url: url("/skins"),
-      priority: 0.5
+      priority: 0.5,
     },
     {
       url: url("/credits"),
