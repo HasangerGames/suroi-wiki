@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "@/components/links/Link";
 import Obtaining from "@/components/articles/Obtaining";
+import Link from "@/components/links/Link";
 import { MDXRemote, MDXRemoteProps } from "next-mdx-remote";
 import { HTMLProps } from "react";
 import Spoiler from "../articles/Spoiler";
