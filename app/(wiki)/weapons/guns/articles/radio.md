@@ -15,6 +15,8 @@ Radios are a type of communication device that utilizes electromagnetic radio wa
 
 - Radios can be found rarely from common loot sources.
 
+<Obtaining item="radio" />
+
 ## Trivia
 
 - The radio uses the same sound effects as the [Deathray](/weapons/guns/deathray) except for the firing sound

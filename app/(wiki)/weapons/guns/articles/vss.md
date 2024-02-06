@@ -29,6 +29,8 @@ The VSS was developed beginning in 1983 by TsNIITochMash, a then-Soviet industri
 
 The VSS is most easily found in special loot such as [AEGIS](/obstacles/aegis_crate) and [Flint Crates](/obstacles/flint_crate). It can also be rarely found from [Regular Crates](/obstacles/regular_crate) or as ground loot.
 
+<Obtaining item="vss" />
+
 # Trivia
 
 - The VSS is one of 6 guns that were in surviv.io, the others being the [AK-47](/weapons/guns/ak47), [M1 Garand](/weapons/guns/m1_garand), [USAS-12](/weapons/guns/usas12), and [Mosin-Nagant](/weapons/guns/mosin)

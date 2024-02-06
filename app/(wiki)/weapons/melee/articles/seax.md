@@ -20,6 +20,8 @@ The Seax is a large single-edged blade with a tang in the centerline of the blad
 
 The Seax can only be obtained from the [Viking Chest](/obstacles/viking_chest), which always spawns once per game and is located along the shore in the map. 
 
+<Obtaining item="seax" />
+
 # Trivia
 
 - The Seax was designed by cobby and 1092384

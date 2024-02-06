@@ -29,6 +29,8 @@ The Stoner 63 was developed by Eugene Stoner after he left ArmaLite in 1961. Sto
 
 The Stoner 63 is rarely found in [Flint](/obstacles/flint_crate) and [AEGIS Crates](/obstacles/aegis_crate) and uncommonly in [Airdrops](/obstacles/airdrop_crate). It can also be found extremely rarely as world loot. The Stoner 63 also has a 1% chance to spawn in the [Refinery](/buildings/refinery) in place of the [MCX Spear](/weapons/guns/mcx_spear).
 
+<Obtaining item="stoner_63" />
+
 # Trivia
 
 - The Stoner 63 is the second LMG added to the game, after the [Lewis Gun](/weapons/guns/lewis_gun)

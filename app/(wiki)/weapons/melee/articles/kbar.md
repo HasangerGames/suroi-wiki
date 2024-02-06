@@ -19,7 +19,9 @@ The K-Bar is a combat knife designed by Union Cutlery, John M. Davis, and Howard
 
 # Obtaining
 
-The K-Bar can be obtained rarely from crates or other common loot sources. Additionally, it has a 75% chance of spawning in the melee crate that spawns once per map.
+The K-Bar can be obtained rarely from crates or other common loot sources.
+
+<Obtaining item="kbar" />
 
 # Trivia
 

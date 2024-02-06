@@ -25,6 +25,8 @@ The M3K is an affordable budget semi-automatic shotgun offered by Stoeger Indust
 
 The M3K is uncommon in general world loot, but fairly common in rarer loot sources such as [AEGIS Crates](/obstacles/aegis_crate).
 
+<Obtaining item="m3k" />
+
 # Trivia
 
 - The M3K was one of the first guns to be added to the game, alongside the [AK-47](/weapons/guns/ak47)

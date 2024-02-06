@@ -32,6 +32,8 @@ The Mosin-Nagant was designed in 1891 by Captain Sergei Mosin and Émile Nagant 
 
 The Mosin-Nagant is an uncommon drop from higher-tier crates such as the [AEGIS Crate](/obstacles/aegis_crate) and [Airdrops](/obstacles/airdrop_crate). It can also be found rarely as world loot. It has a guaranteed drop chance from the [Gold Rock](/obstacles/gold_rock), which always spawns once per map.
 
+<Obtaining item="mosin" />
+
 # Trivia
 
 - Émile Nagant's brother, Léon Nagant, designed the [M1895](/weapons/guns/m1895) revolver

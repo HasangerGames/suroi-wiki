@@ -25,6 +25,8 @@ Tablets, also known as pills, are a solid form of oral medicine. They usually in
 
 Tablets are most readily obtained by breaking toilets in buildings, as well as the Porta-Potty. Tablets can also be rarely found in crates and even world loot.
 
+<Obtaining item="tablets" />
+
 # Trivia
 
 - Presumably, the Tablets are some kind of painkiller

@@ -40,6 +40,8 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
 
 - The only way to get the Barrett is to either find one in a [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone).
 
+<Obtaining item="barrett" />
+
 # Trivia
 
 - The Barrett is the second bullpup weapon to be added to Suroi, after the [AUG](/weapons/guns/aug)

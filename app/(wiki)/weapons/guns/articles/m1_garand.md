@@ -29,6 +29,8 @@ The M1 Garand was designed by John Garand in the 1920s and 1930s, and production
 
 - The only way to get the M1 Garand is to either find one in a [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone).
 
+<Obtaining item="m1_garand" />
+
 # Trivia
 
 - The "ping" sound after the last round is the sound of the en bloc clip being ejected

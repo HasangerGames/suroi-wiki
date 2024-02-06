@@ -26,6 +26,8 @@ The Vepr-12 was originally designed by the Kalashnikov Group (then Izhmash) in t
 # Obtaining
 The Vepr-12 can be found rarely as world loot. It is more common in higher-tier loot sources such as [Viking Chests](/obstacles/viking_chest), [Briefcases](/obstacles/briefcase), and others.
 
+<Obtaining item="vepr12" />
+
 # Trivia
 - In real life, the Vepr-12 is a direct competitor to the Saiga-12, which was in surviv.io
 - This is the second automatic shotgun to be added to Suroi, after the [USAS-12](/weapons/guns/usas12).

@@ -29,6 +29,8 @@ The Lewis gun was invented in 1911 by Isaac Newton Lewis, a U.S. Army colonel. I
 
 The Lewis Gun can be rarely found as world loot, but it is more common in higher-tier places such as [Flint](/obstacles/flint_crate) and [AEGIS Crates](/obstacles/aegis_crate).
 
+<Obtaining item="lewis_gun" />
+
 # Trivia
 
 - Most Lewis Guns in real life were chambered for .303 British or .30-06 Springfield

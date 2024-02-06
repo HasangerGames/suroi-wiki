@@ -31,6 +31,8 @@ The USAS-12 has currently been obtainable in only two events.
 - On the Halloween 2023 map, it had a 5% chance to drop from a [Pumpkins](/obstacles/pumpkin).
 - The USAS-12 was also rarely acquired during the Suroi Weapon Swap Event upon killing another player with any gun.
 
+<Obtaining item="usas12" />
+
 # Trivia
 
 - USAS-12 stands for "Universal Sporting Automatic Shotgun 12 gauge"

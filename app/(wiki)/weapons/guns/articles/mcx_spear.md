@@ -28,7 +28,9 @@ The MCX Spear is the civilian version of the XM7, which was selected by the US m
 
 The MCX Spear is found rarely as world loot in locations such as [Regular Crates](/obstacles/regular_crate). It is a more common drop from special locations such as [AEGIS](/obstacles/aegis_crate) and [Flint Crate](/obstacles/flint_crate).
 
-- The MCX Spear has a 99% chance to be found in the Office at the [Refinery](/buildings/refinery).
+- A MCX Spear mount has a 99% chance to be found in the Office at the [Refinery](/buildings/refinery), with the other 1% being a [Stoner 63](/weapons/guns/stoner_63).
+
+<Obtaining item="mcx_spear" />
 
 # Trivia
 

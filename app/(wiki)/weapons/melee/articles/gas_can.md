@@ -19,6 +19,8 @@ The only way to obtain the Gas Can in normal mode is to head to the ship in the 
 
 - In the Suroi Weapon Swap Event, it could be acquired from swapping after getting a melee kill. This was the only time more than one Gas Can at a time was in a game.
 
+<Obtaining item="gas_can" />
+
 # Trivia
 
 - The Gas was designed by 1092384

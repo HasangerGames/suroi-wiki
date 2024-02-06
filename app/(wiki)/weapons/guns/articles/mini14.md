@@ -27,6 +27,8 @@ The Mini-14, as the name suggests, is based on the bigger 7.62x51mm NATO firing 
 
 The Mini-14 can be found rarely as world loot but is more common in rare drops such as from [AEGIS](/obstacles/aegis_crate) and [Flint Crates](/obstacles/flint_crate), [Airdrops](/obstacles/airdrop_crate), or from the center of a [Warehouse](/buildings/warehouse).
 
+<Obtaining item="mini14" />
+
 # Trivia
 
 - The reference image for the Mini-14 is one of the developer's own Mini-14

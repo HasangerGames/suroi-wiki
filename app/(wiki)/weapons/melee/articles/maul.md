@@ -23,6 +23,8 @@ The maul is a long-handled hammer with a heavy head of wood, lead, iron, or stee
 
 The Maul can only be obtained from the [Maul Mount](/obstacles/gun_mounts) in the [Armory Center](/buildings/armory_meta).
 
+<Obtaining item="maul" />
+
 # Trivia
 
 - The Maul was designed by Radians

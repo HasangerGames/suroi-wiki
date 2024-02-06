@@ -15,6 +15,10 @@ The **Smoke Grenade** is a [Throwable](/throwables) added in the v0.15.0 "Pullin
 - If the enemy is using the smoke grenade offensively, you can also hide in the smoke when it is safe to do so
   - Avoid this if the enemy has powerful close-range weapons like shotguns and the [Micro Uzi](/weapons/guns/micro_uzi)
 
+# Obtaining
+
+<Obtaining item="smoke_grenade" />
+
 <Gallery
   images={[
     {

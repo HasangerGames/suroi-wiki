@@ -4,6 +4,8 @@ The **Basic Vest** is a piece of [Equipment](/equipment) added in the v0.7.0 "Ge
 
 The Basic Vest is easily obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). 
 
+<Obtaining item="basic_vest" />
+
 # Trivia
 
 - The Basic Vest was designed by Slapdap
