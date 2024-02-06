@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "@/components/links/Link";
+import Obtaining from "@/components/articles/Obtaining";
 import { MDXRemote, MDXRemoteProps } from "next-mdx-remote";
 import { HTMLProps } from "react";
 import Spoiler from "../articles/Spoiler";
@@ -16,6 +17,7 @@ import TimeLink from "../links/TimeLink";
 
 const components = {
   Link,
+  Obtaining,
   Event: EventItem,
   TimeLink,
   FileLink,
