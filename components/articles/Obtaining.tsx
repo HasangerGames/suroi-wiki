@@ -25,34 +25,41 @@ export default function Obtaining(props: ObtainingProps) {
       fetch(`/api/loot/locations?item=${props.item}`).then((r) => r.json()),
   });
 
-  if (results.isPending) return "Loading...";
-  if (results.error) return `Error: ${results.error.message}`;
-  if ("error" in results.data)
-    return `Error: ${ErrorMessages[results.data.error]}`;
-  if (!results.data.length) return "This item cannot be found in any location.";
+  let info = "";
+  if (results.isPending) {
+    info = "Loading Template...";
+  } else if (results.error) {
+    info = `Error: ${results.error.message}`;
+  } else if ("error" in results.data) {
+    info = `Error: ${ErrorMessages[results.data.error]}`;
+  } else if (!results.data.length) {
+    info = "This item cannot be found in any location.";
+  } else {
+    return (
+      <div className="mb-8">
+        <TableWithHeader
+          key={props.item}
+          header={["Location", "% Chance"]}
+          content={results.data.map(({ tableName, chance }) => {
+            const chanceString = getChanceString(chance);
+            const name = Obstacles.definitions.find(
+              (obs) => obs.idString == tableName,
+            )?.name;
+            return [
+              name ? (
+                <Link href={`/obstacles/${tableName}`}>{name}</Link>
+              ) : (
+                tableName
+              ),
+              chanceString,
+            ];
+          })}
+        />
+      </div>
+    );
+  }
 
-  return (
-    <div className="mb-8">
-      <TableWithHeader
-        key={props.item}
-        header={["Location", "% Chance"]}
-        content={results.data.map(({ tableName, chance }) => {
-          const chanceString = getChanceString(chance);
-          const name = Obstacles.definitions.find(
-            (obs) => obs.idString == tableName,
-          )?.name;
-          return [
-            name ? (
-              <Link href={`/obstacles/${tableName}`}>{name}</Link>
-            ) : (
-              tableName
-            ),
-            chanceString,
-          ];
-        })}
-      />
-    </div>
-  );
+  return <div className="mb-8">{info}</div>;
 }
 
 export interface ObtainingProps extends React.PropsWithChildren {
