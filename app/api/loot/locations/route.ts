@@ -15,7 +15,10 @@ const LootTierItemChances: Record<string, ChanceCollection> = {};
 // let's assume all loot tier chains does not form a loop
 // or the game may enter an infinite loop when generating loots
 // which breaks both the game and this function
-function registerItemChances(tier: string, items: WeightedItem[]): ChanceCollection {
+function registerItemChances(
+  tier: string,
+  items: WeightedItem[],
+): ChanceCollection {
   if (tier in LootTierItemChances) return LootTierItemChances[tier];
 
   const result: ChanceCollection = {};
@@ -26,13 +29,16 @@ function registerItemChances(tier: string, items: WeightedItem[]): ChanceCollect
     else result[item] = chance;
   }
 
-  items.forEach(item => {
-    if ('item' in item && item.item != null) {
+  items.forEach((item) => {
+    if ("item" in item && item.item != null) {
       addEntry(item.item, item.weight / totalWeight);
     }
-    if ('tier' in item) {
+    if ("tier" in item) {
       const factor = item.weight / totalWeight;
-      const subTierChances = registerItemChances(item.tier, LootTiers[item.tier]);
+      const subTierChances = registerItemChances(
+        item.tier,
+        LootTiers[item.tier],
+      );
       for (const it in subTierChances) {
         addEntry(it, subTierChances[it] * factor);
       }
@@ -56,17 +62,18 @@ function calcChance(table: LootTable, item: string): number {
   let singleRollChance = 0;
 
   const lootPacks = is2dArray(table.loot) ? table.loot : [table.loot];
-  lootPacks.forEach(pack => {
+  lootPacks.forEach((pack) => {
     const totalWeight = pack.reduce((acc, cur) => acc + cur.weight, 0);
 
-    pack.forEach(loot => {
+    pack.forEach((loot) => {
       const chance = loot.weight / totalWeight;
       let singlePackChance = 0;
-      if ('item' in loot && loot.item == item) {
+      if ("item" in loot && loot.item == item) {
         singlePackChance += chance;
       }
-      if ('tier' in loot) {
-        singlePackChance += (LootTierItemChances[loot.tier][item] ?? 0) * chance;
+      if ("tier" in loot) {
+        singlePackChance +=
+          (LootTierItemChances[loot.tier][item] ?? 0) * chance;
       }
 
       singleRollChance = 1 - (1 - singleRollChance) * (1 - singlePackChance);
@@ -79,7 +86,7 @@ function calcChance(table: LootTable, item: string): number {
   let chance = 0;
   for (let i = table.min; i <= table.max; i++) {
     chance += 1 - acc;
-    acc *= (1 - singleRollChance);
+    acc *= 1 - singleRollChance;
   }
 
   return chance / (table.max - table.min + 1);
@@ -109,9 +116,11 @@ export async function GET(req: NextRequest) {
   return new NextResponse(JSON.stringify(result));
 }
 
-export type LootLocationsResponse = {
-  tableName: string;
-  chance: number;
-}[] | {
-  error: APIErrorCodes
-};
+export type LootLocationsResponse =
+  | {
+      tableName: string;
+      chance: number;
+    }[]
+  | {
+      error: APIErrorCodes;
+    };
