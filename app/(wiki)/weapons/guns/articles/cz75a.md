@@ -27,8 +27,6 @@ The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil 
 
 - The CZ-75A is one of the most common weapons in the game. It can be readily found as ground loot or in Crates (most commonly the [Regular Crate](/obstacles/regular_crate)).
 
-<Obtaining item="cz75a" />
-
 # Trivia
 
 - Before 0.9.0, the [G19](/weapons/guns/g19) was fully automatic. After the CZ-75A was added, it was switched to semi-automatic

@@ -23,8 +23,6 @@ Gauze intended for use as a medical item is typically made of cotton. It is usef
 
 Gauze is a very common drop from crates, toilets, and the toilet in a Porta Potty. It can also be readily found as ground loot.
 
-<Obtaining item="gauze" />
-
 # Trivia
 
 - Before Gauze and other consumables were added, the only way to heal yourself was to break a Health Crate

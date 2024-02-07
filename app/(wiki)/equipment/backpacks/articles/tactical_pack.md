@@ -4,8 +4,6 @@ The **Tactical Pack** is a piece of [Equipment](/equipment) added in the v0.7.0 
 
 The Tactical Pack can be obtained rarely from common loot sources such as [crates](/obstacles/crates), but it is most easily found from an [Airdrop](/obstacles/airdrops) because they have a guaranteed chance to drop one piece of level 3 equipment. 
 
-<Obtaining item="tactical_pack" />
-
 # Trivia 
 
  - The Tactical Pack was designed by Slapdap

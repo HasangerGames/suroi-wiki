@@ -27,8 +27,6 @@ The Flues gets its name from designer Emil Flues, who worked for the Ithaca Gun 
 
 The Flues is currently the second-rarest shotgun in the game. It is about 5 times as rare as the [M3K](/weapons/guns/m3k) and the same level rarity as the [ARX-160](/weapons/guns/arx160) in normal mode.
 
-<Obtaining item="flues" />
-
 # Trivia
 
 - The real-life Flues was offered in both double and single-barrel variants

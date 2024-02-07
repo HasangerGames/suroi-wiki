@@ -21,8 +21,6 @@ The K-Bar is a combat knife designed by Union Cutlery, John M. Davis, and Howard
 
 The K-Bar can be obtained rarely from crates or other common loot sources.
 
-<Obtaining item="kbar" />
-
 # Trivia
 
 - The K-Bar was designed by Radians

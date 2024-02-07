@@ -30,8 +30,6 @@ The MCX Spear is found rarely as world loot in locations such as [Regular Crates
 
 - A MCX Spear mount has a 99% chance to be found in the Office at the [Refinery](/buildings/refinery), with the other 1% being a [Stoner 63](/weapons/guns/stoner_63).
 
-<Obtaining item="mcx_spear" />
-
 # Trivia
 
 - The MCX Spear in-game uses a barrel change to 7.62x51mm NATO

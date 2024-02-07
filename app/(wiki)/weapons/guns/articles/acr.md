@@ -25,8 +25,6 @@ The ACR was designed by Magpul Industries in the early 2000s and was essentially
 
 The only way to get the ACR is to either find one in a [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone).
 
-<Obtaining item="acr" />
-
 # Trivia
 
 - The ACR in Suroi is a 10.5" carbine variant with an attached suppressor

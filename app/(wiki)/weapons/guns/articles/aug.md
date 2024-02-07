@@ -24,8 +24,6 @@ The AUG was designed by Steyr Arms in 1977 entering service in the same year. Si
 
 The AUG is a very common gun, being more common than the [AK-47](weapons/guns/ak47). It can be found in many Crates such as the [Regular Crate](/obstacles/regular_crate) and [Flint](/obstacles/flint_crate)/[AEGIS Crates](/obstacles/aegis_crate), as well as ground loot.
 
-<Obtaining item="aug" />
-
 # History
 
 - v0.13.0

@@ -4,8 +4,6 @@ The **Basic Pack** is a piece of [Equipment](/equipment) added in the v0.7.0 "Ge
 
 The Basic Pack is easily obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). 
 
-<Obtaining item="basic_pack" />
-
 # Trivia 
 
 - The Basic Pack was designed by Slapdap

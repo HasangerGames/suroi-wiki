@@ -21,8 +21,6 @@ The Baseball Bat is a smooth wooden or metal club used in the sport of baseball 
 
 Baseball Bats have a high chance of spawning from the [Melee Crate](/obstacles/melee_crate). They can also be found rarely from [Regular Crates](/obstacles/regular_crate).
 
-<Obtaining item="baseball_bat" />
-
 # Trivia
 
 - The Baseball Bat was designed by Radians

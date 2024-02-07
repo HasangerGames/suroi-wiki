@@ -5,8 +5,6 @@ The **Regular Helmet** is a piece of [Equipment](/equipment) added in the v0.7.0
 The Regular Helmet can be obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). 
 However, it is rarer when compared to the Basic Helmet.
 
-<Obtaining item="regular_helmet" />
-
 # Trivia
 
 - The Regular Helmet was designed by Slapdap

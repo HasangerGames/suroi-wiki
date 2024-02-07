@@ -29,8 +29,6 @@ The original Uzi is an open-bolt, blowback-operated design, very similar to the 
 
 The Micro Uzi is a very common gun, and can be found from [Regular Crates](/obstacles/regular_crate), as ground loot, and readily found from [AEGIS](/obstacles/aegis_crate) and [Flint Crates](/obstacles/flint_crate).
 
-<Obtaining item="micro_uzi" />
-
 # Trivia
 
 - The Micro Uzi was the second SMG to be added to the game, after the [SAF-200](weapons/guns/saf200)

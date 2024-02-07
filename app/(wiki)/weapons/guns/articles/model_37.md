@@ -24,8 +24,6 @@ After the shotgun was proven an effective weapon in WW1, demand for them skyrock
 
 The Model 37 is fairly common as both ground loot as well as in places such as [Regular Crates](/obstacles/regular_crate).
 
-<Obtaining item="model37" />
-
 # Trivia
 
 - The reference image for the in-game Model 37 is based on a "Trench" variant of the Model 37, complete with a bayonet mount

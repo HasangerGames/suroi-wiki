@@ -25,8 +25,6 @@ Cola is a type of carbonated drink typically flavored with citrus oils, vanilla,
 
 Cola is most readily obtained by breaking toilets in buildings, as well as the Porta-Potty. However, the best way to get Cola is to break the fridge, which always drops 2-3 Cola. Cola can also be found in crates and even world loot.
 
-<Obtaining item="cola" />
-
 # Trivia
 
 - The caffeine in Colas may help the Surian run faster and regenerate health

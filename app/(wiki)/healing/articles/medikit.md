@@ -27,8 +27,6 @@ Medical kits, also known as first aid kits, contain a variety of different suppl
 
 Medikits are most commonly found in Toilets and the Porta-Potty. They can also be found rarely in crates or as ground loot.
 
-<Obtaining item="medikit" />
-
 # Trivia
 
 - Before Medikits and other consumables were added, the only way to heal yourself was to break a Health Crate

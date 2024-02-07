@@ -17,8 +17,6 @@ The **Smoke Grenade** is a [Throwable](/throwables) added in the v0.15.0 "Pullin
 
 # Obtaining
 
-<Obtaining item="smoke_grenade" />
-
 <Gallery
   images={[
     {

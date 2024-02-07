@@ -5,8 +5,6 @@ The **Regular Vest** is a piece of [Equipment](/equipment) added in the v0.7.0 "
 The Regular Vest can be obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). 
 However, it is rarer when compared to the Basic Vest.
 
-<Obtaining item="regular_vest" />
-
 # Trivia
 
 - The Regular Vest was designed by Slapdap

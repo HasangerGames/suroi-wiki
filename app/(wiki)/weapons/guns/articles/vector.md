@@ -29,8 +29,6 @@ Then known as Transformational Defense Industries, the Vector was designed by KR
 # Obtaining
 The Vector can be found very rarely as world loot. However, the easiest way to acquire a Vector is to find one from a [Briefcase](/obstacles/briefcase) at either the Oil Tanker or the Armory. It can also be found the in the [Viking Chest](/obstacles/viking_chest).
 
-<Obtaining item="vector" />
-
 # Trivia
 - The Vector is one of 6 guns that were in surviv.io, the others being the [M1 Garand](/weapons/guns/m1_garand), [VSS](/weapons/guns/vss), [USAS-12](/weapons/guns/usas12), [AK-47](/weapons/guns/ak47), and [Mosin-Nagant](/weapons/guns/mosin)
 - The in-game Vector is the first and so far only gun that is colored white

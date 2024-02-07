@@ -4,8 +4,6 @@ The **Regular Pack** is a piece of [Equipment](/equipment) added in the v0.7.0 "
  
 The Regular Pack can be obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). However, it is rarer when compared to the Basic Pack.
 
-<Obtaining item="regular_pack" />
-
 # Trivia 
 
  - The Regular Pack was designed by Slapdap
