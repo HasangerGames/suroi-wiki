@@ -194,7 +194,7 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
 
       {obstacles[0] && (
         <>
-          <InfoboxHeader>Location</InfoboxHeader>
+          <InfoboxHeader>Found In</InfoboxHeader>
           <InfoboxRow>
             <InfoboxColumn title="Obstacles">
               <div className="flex flex-col gap-2">
