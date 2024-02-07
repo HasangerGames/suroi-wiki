@@ -1,7 +1,12 @@
-import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
+import {
+  getSuroiImageLink,
+  getSuroiKillfeedImageLink,
+  lootDroppedBy,
+} from "@/lib/util/suroi";
 import { ImageTab } from "@/lib/util/types";
 import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 import { ThrowableDefinition } from "@/vendor/suroi/common/src/definitions/throwables";
+import Link from "../links/Link";
 import PlayerHoldingThrowable from "../svg/special/PlayerHoldingThrowable";
 import ExplosionRow from "./utils/ExplosionRow";
 import GenericSidebar from "./utils/GenericSidebar";
@@ -44,6 +49,7 @@ export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
       title: "Throwing",
     },
   ];
+  const obstacles = lootDroppedBy(item);
 
   if (item.detonation.explosion) {
     imageVariations.splice(1, 0, {
@@ -95,6 +101,34 @@ export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
           <ExplosionRow explosion={item.detonation.explosion} />
         </>
       )}
+
+      {obstacles[0] && (
+        <>
+          <InfoboxHeader>Location</InfoboxHeader>
+          <InfoboxRow>
+            <InfoboxColumn title="Obstacles">
+              <div className="flex flex-col gap-2">
+                {(obstacles.length ?? 0) > 0 && (
+                  <div>
+                    <span>({obstacles.length} Obstacles)</span>
+                  </div>
+                )}
+                <div className="flex flex-wrap justify-around gap-2">
+                  {obstacles.map((obstacle) => (
+                    <Link
+                      key={obstacle.idString}
+                      href={`/obstacles/${obstacle.idString}`}
+                    >
+                      {obstacle.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </InfoboxColumn>
+          </InfoboxRow>
+        </>
+      )}
+
       <InfoboxHeader>Advanced Statistics</InfoboxHeader>
       <InfoboxRow>
         <InfoboxColumn title="Internal ID">

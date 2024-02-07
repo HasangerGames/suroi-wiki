@@ -1,6 +1,11 @@
-import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
+import {
+  getSuroiImageLink,
+  getSuroiKillfeedImageLink,
+  lootDroppedBy,
+} from "@/lib/util/suroi";
 import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/melees";
 import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
+import Link from "../links/Link";
 import PlayerHoldingMelee from "../svg/special/PlayerHoldingMelee";
 import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";
@@ -12,6 +17,7 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
     Skins.definitions.find((skin) => {
       return skin.idString === "hazel_jumpsuit";
     }) ?? Skins.definitions[0];
+  const obstacles = lootDroppedBy(item);
   return (
     <GenericSidebar
       title={item.name}
@@ -93,6 +99,33 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
           </InfoboxColumn>
         )}
       </InfoboxRow>
+
+      {obstacles[0] && (
+        <>
+          <InfoboxHeader>Location</InfoboxHeader>
+          <InfoboxRow>
+            <InfoboxColumn title="Obstacles">
+              <div className="flex flex-col gap-2">
+                {(obstacles.length ?? 0) > 0 && (
+                  <div>
+                    <span>({obstacles.length} Obstacles)</span>
+                  </div>
+                )}
+                <div className="flex flex-wrap justify-around gap-2">
+                  {obstacles.map((obstacle) => (
+                    <Link
+                      key={obstacle.idString}
+                      href={`/obstacles/${obstacle.idString}`}
+                    >
+                      {obstacle.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </InfoboxColumn>
+          </InfoboxRow>
+        </>
+      )}
 
       <InfoboxHeader>Advanced Stats</InfoboxHeader>
       <InfoboxRow>
