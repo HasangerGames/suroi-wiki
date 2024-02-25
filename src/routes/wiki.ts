@@ -1,6 +1,6 @@
 import { Hono } from "hono"
-import { GunPages } from "./weapons/guns"
-import { MeleePages } from "./weapons/melees"
+import { GunPages } from "./definitions/guns"
+import { MeleePages } from "./definitions/melees"
 
 export const WikiPages = new Hono()
 
