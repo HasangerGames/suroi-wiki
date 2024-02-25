@@ -1,0 +1,23 @@
+{
+  "name": "suroi-wiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:server": "tsx watch src/index.ts",
+    "server": "tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.8.1",
+    "hono": "^4.0.6"
+  }
+}
