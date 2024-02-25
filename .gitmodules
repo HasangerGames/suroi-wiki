@@ -1,5 +1,0 @@
-[submodule "vendor/suroi"]
-	path = vendor/suroi
-	url = https://github.com/HasangerGames/suroi
-	branch = master
-
