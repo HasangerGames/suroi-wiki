@@ -27,11 +27,11 @@ router.use(
   serveStatic({ path: "/node_modules/@unocss/reset/tailwind.css" })
 );
 router.use(
-  "/gameimg/*",
+  "/img/*",
   serveStatic({ root: "/vendor/suroi/client/public/img" })
 );
 router.use(
-  "/gameaudio/*",
+  "/audio/*",
   serveStatic({ root: "/vendor/suroi/client/public/audio" })
 );
 
