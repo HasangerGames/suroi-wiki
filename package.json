@@ -11,13 +11,21 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@unocss/cli": "^0.58.5",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
     "tsx": "^4.7.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "unocss": "^0.58.5"
   },
   "dependencies": {
     "@hono/node-server": "^1.8.1",
-    "hono": "^4.0.6"
+    "@types/markdown-it": "^13.0.7",
+    "@types/node": "^20.11.20",
+    "@unocss/reset": "^0.58.5",
+    "gray-matter": "^4.0.3",
+    "hono": "^4.0.7",
+    "markdown-it": "^14.0.0",
+    "vfile": "^6.0.1"
   }
 }
