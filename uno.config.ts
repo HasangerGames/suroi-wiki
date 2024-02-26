@@ -1,8 +1,14 @@
-import {defineConfig, presetTypography, presetUno} from "unocss"
+import {defineConfig, presetTypography, presetUno, presetWebFonts} from "unocss"
 
 export default defineConfig({
   presets: [
     presetUno(),
-    presetTypography()
+    presetTypography(),
+    presetWebFonts({
+      provider: "bunny",
+      fonts: {
+        "sans": "IBM Plex Sans"
+      }
+    })
   ],
 })

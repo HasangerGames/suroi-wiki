@@ -29,7 +29,7 @@ export namespace SidebarUtils {
     children,
   }: PropsWithChildren<{ title: string }>) {
     return (
-      <div class="flex flex-col gap-1 grow basis-0 p-2 bg-slate-700 rounded-md">
+      <div class="flex flex-col gap-1 grow basis-0 p-2 justify-center bg-slate-700 rounded-md">
         <span class="font-bold text-center">{title}</span>
         <span class="mx-auto text-center">{children}</span>
       </div>

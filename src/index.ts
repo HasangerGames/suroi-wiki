@@ -10,7 +10,7 @@ import { exec } from "child_process";
 import { ChangelogPages } from "./routes/changelog";
 
 exec("unocss **/*.tsx -o public/uno.css", (error, stdout, stderr) => {
-  console.log(stdout)
+  console.log(stdout);
 });
 
 const router = new Hono({ strict: false });
@@ -25,6 +25,14 @@ router.use("/*", serveStatic({ root: "/public" }));
 router.use(
   "/reset.css",
   serveStatic({ path: "/node_modules/@unocss/reset/tailwind.css" })
+);
+router.use(
+  "/gameimg/*",
+  serveStatic({ root: "/vendor/suroi/client/public/img" })
+);
+router.use(
+  "/gameaudio/*",
+  serveStatic({ root: "/vendor/suroi/client/public/audio" })
 );
 
 serve({
