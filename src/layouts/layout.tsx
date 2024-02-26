@@ -10,7 +10,7 @@ export default function Layout({
 			<div class="max-w-screen max-h-screen h-screen font-sans">
 				<nav class="bg-slate-800 p-4">
 					<ul class="flex flex-row gap-4">
-						<li class="mr-auto">Suroi Wiki</li>
+						<li class="mr-auto"><a href="/" class={"underline-none"}>Suroi Wiki</a></li>
 						<li>Wiki Pages</li>
 						<li>Special Pages</li>
 						<li>

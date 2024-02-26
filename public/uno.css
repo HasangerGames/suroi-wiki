@@ -98,6 +98,7 @@
 .text-white{--un-text-opacity:1;color:rgb(255 255 255 / var(--un-text-opacity));}
 .font-bold{font-weight:700;}
 .font-sans{font-family:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";}
+.underline-none{text-decoration-thickness:0;}
 @media (min-width: 1024px){
 .lg\:flex-row{flex-direction:row;}
 }
