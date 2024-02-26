@@ -1,8 +1,11 @@
 import { html } from "hono/html";
 import { PropsWithChildren } from "hono/jsx";
 
-export default function HTML({title, children}: PropsWithChildren<{title: string}>) {
-  return html`
+export default function HTML({
+	title,
+	children,
+}: PropsWithChildren<{ title: string }>) {
+	return html`
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -16,5 +19,5 @@ export default function HTML({title, children}: PropsWithChildren<{title: string
       ${children}
     </body>
     </html>
-  `
+  `;
 }

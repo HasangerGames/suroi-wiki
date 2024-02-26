@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch:server": "tsx watch src/index.ts",
-    "server": "tsx src/index.ts"
+    "server": "tsx src/index.ts",
+    "lint": "biome check --apply src/** content/**"
   },
   "keywords": [],
   "author": "",

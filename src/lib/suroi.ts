@@ -7,5 +7,11 @@ import { Obstacles } from "@suroi/common/src/definitions/obstacles";
 import { Throwables } from "@suroi/common/src/definitions/throwables";
 
 export const AllDefinitions = [
-  ...Guns, ...Melees, ...Throwables, ...Obstacles, ...Buildings, ...Armors, ...Backpacks
-]
+	...Guns,
+	...Melees,
+	...Throwables,
+	...Obstacles,
+	...Buildings,
+	...Armors,
+	...Backpacks,
+];

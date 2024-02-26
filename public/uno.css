@@ -68,6 +68,7 @@
 /* layer: default */
 .mx-auto{margin-left:auto;margin-right:auto;}
 .mr-auto{margin-right:auto;}
+.ms{margin-inline-start:1rem;}
 .h-screen{height:100vh;}
 .max-h-screen{max-height:100vh;}
 .max-w-96{max-width:24rem;}

@@ -4,7 +4,7 @@ import { Hono } from "hono";
 export const MeleePages = new Hono();
 
 Melees.forEach((m) => {
-  MeleePages.get(`/${m.idString}`, (c) => {
-    return c.json(m);
-  });
+	MeleePages.get(`/${m.idString}`, (c) => {
+		return c.json(m);
+	});
 });
