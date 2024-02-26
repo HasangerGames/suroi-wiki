@@ -26,6 +26,7 @@ router.use(
 	"/reset.css",
 	serveStatic({ path: "/node_modules/@unocss/reset/tailwind.css" }),
 );
+router.use("/img/game/loot/762mm.svg", serveStatic({ path: "/vendor/suroi/client/public/img/game/loot/762mm.svg" }));
 router.use("/img/*", serveStatic({ root: "/vendor/suroi/client/public/img" }));
 router.use(
 	"/audio/*",

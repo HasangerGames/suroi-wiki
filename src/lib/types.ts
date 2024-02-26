@@ -1,0 +1,1 @@
+export type ComponentType<T extends {}> = (props: T) => JSX.Element;

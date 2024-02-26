@@ -29,7 +29,7 @@ export namespace SidebarUtils {
 		);
 	}
 
-	export function Row({ children }: PropsWithChildren<{}>) {
+	export function Row({ children }: PropsWithChildren) {
 		return <div class="flex flex-row gap-2">{children}</div>;
 	}
 

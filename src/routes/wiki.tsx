@@ -1,8 +1,10 @@
 import { Hono } from "hono";
 import { AllDefinitions } from "src/lib/suroi";
 import Layout from "../layouts/layout";
-import { GunPages } from "./definitions/guns";
 import { MeleePages } from "./definitions/melees";
+import makePages from "src/components/generics/makePages";
+import { Guns } from "@suroi/common/src/definitions/guns";
+import GunSidebar from "./sidebars/GunSidebar";
 
 export const WikiPages = new Hono();
 
@@ -28,5 +30,5 @@ WikiPages.get("/", (c) => {
 	);
 });
 
-WikiPages.route("/", GunPages);
+WikiPages.route("/", makePages(Guns, { Sidebar: GunSidebar }));
 WikiPages.route("/", MeleePages);
