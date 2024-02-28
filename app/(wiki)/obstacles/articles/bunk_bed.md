@@ -14,7 +14,7 @@ Bunk Beds cannot be destroyed and reflect bullets.
 
 # Trivia
 
-- The Bunk Bed was designed by Bear
+- The Bunk Bed was designed by Yeet120
 
 # History
 
