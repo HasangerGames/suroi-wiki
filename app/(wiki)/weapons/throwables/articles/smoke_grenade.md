@@ -20,8 +20,6 @@ Smoke Grenades can sometimes be obtained from [Regular Crates](/obstacles/regula
   - Smoke now forces a 1x scope for players in it
 - v0.15.0
   - Added
-- v0.16.0
-  - Added scope reduction to smoke clouds
 
 <Gallery
   images={[
