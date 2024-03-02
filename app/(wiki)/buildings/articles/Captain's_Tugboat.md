@@ -1,5 +1,5 @@
 < Stub/>
-The **Captain's Tugboat** is a medium sized structure added in the v0.16.0 "A Sailor's Dream" update on Febuary 25, 2024. It contains the [Lux Crate](/obstacles/lux_crate) and several other unique obstacles.
+The **Captain's Tugboat** is a medium sized structure added in the v0.16.0 "A Sailor's Dream" update on February 25, 2024. It contains the [Lux Crate](/obstacles/lux_crate) and several other unique obstacles.
 
 # Location & Spawning 
 
