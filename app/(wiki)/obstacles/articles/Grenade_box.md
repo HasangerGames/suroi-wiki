@@ -1,5 +1,5 @@
 < Stub/>
-The **Grenade Box** is an [Obstacle](/obstacles) added in v0.16.0 "A Sailor's Dream" update on Febuary 25, 2024
+The **Grenade Box** is an [Obstacle](/obstacles) added in v0.16.0 "A Sailor's Dream" update on February 25, 2024
 
 # Location & Spawning
 
