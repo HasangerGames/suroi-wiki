@@ -1,5 +1,5 @@
 < Stub/>
-The **Tugboat**, not to be confused with the [Captain's Tugboat](/buildings/tugboat_red), is a medium structure added in v0.16.0 "A Sailor's Dream" update on Febuary 25, 2024. In the Tugboat everything is the same to the Captain's Tugboat except for instead of the [Lux Crate](/obstacles/lux_crate) there is a [Gun Case](/obstacles/gun_case) in its place.
+The **Tugboat**, not to be confused with the [Captain's Tugboat](/buildings/tugboat_red), is a medium structure added in v0.16.0 "A Sailor's Dream" update on February 25, 2024. In the Tugboat everything is the same to the Captain's Tugboat except for instead of the [Lux Crate](/obstacles/lux_crate) there is a [Gun Case](/obstacles/gun_case) in its place.
 
 # Location & Spawning
 
