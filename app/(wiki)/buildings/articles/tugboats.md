@@ -8,7 +8,7 @@ Five White Tugboats and one Red Tugboat spawn in the water bordering the map. Th
 
 # Exterior
 
-All tugboats contain one [Grenade Crate](/obstacles/grenade_crate), one [Barrel](/obstacles/barrel), and two [Regular Crates](/obstacles/crates) in the exterior portion of the boat.
+All tugboats contain one [Grenade Crate](/obstacles/grenade_crate), one [Barrel](/obstacles/barrel), two [Regular Crates](/obstacles/crates), and six [Tires](/obstacles/tire) in the exterior portion of the boat.
 
 # Cabin
 
