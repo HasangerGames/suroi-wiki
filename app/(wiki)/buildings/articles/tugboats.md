@@ -12,7 +12,7 @@ All tugboats contain one [Grenade Crate](/obstacles/grenade_crate), one [Barrel]
 
 # Cabin
 
-The Cabin can be acessed through a [Door](/obstacles/doors) in the center of the boat.
+The Cabin can be accessed through a [Door](/obstacles/doors) in the center of the boat.
 
 All tugboat cabins contain one [Tugboat Control Panel](/obstacles/tugboat_control_panel), one [Office Chair](/obstacles/office_chair), one [Large Drawer](/obstacles/drawers) and one [Life Preserver](/obstacles/life_preserver). Additionally, White Tugboats contain a [Gun Case](/obstacles/gun_case) and Red Tugboats contain a [Lux Crate](/obstacles/lux_crate) inside the cabin. The Lux Crate drops a guranteed [CZ-600](/weapons/guns/cz600) and a scope.
 
@@ -20,7 +20,7 @@ All tugboat cabins contain one [Tugboat Control Panel](/obstacles/tugboat_contro
 
 - The water near Tugboats are not good places to fight as the water can slow you down, making you an easy target for a player who out-scopes you. 
 - Prioritize looting the structure with maximum efficiency and leaving as quickly as possible to minimize the chance to run into another player.
-- If you do happen to end up in a fight, the metal fences on the side of the Tigboat provide indestructible cover and also reflects bullets.
+- If you do happen to end up in a fight, the metal fences on the side of the Togboat provide indestructible cover and also reflects bullets.
 - Do not go for the Red Tugboat if you spawn late into the game as it will likely already be looted.
 
 # Trivia
