@@ -28,7 +28,7 @@ Control Panels don't drop loot when destroyed, but it will create an explosion t
 
 # Trivia
 
-- There are techinally five variants of the control panel, but the fifth variant replaces a Control Panel 1 after it has been interacted with.
+- There are technically five variants of the control panel, but the fifth variant replaces a Control Panel 1 after it has been interacted with.
 
 # History
 
