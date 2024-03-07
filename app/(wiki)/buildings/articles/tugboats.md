@@ -29,5 +29,7 @@ All tugboat cabins contain one [Tugboat Control Panel](/obstacles/tugboat_contro
 
 # History
 
+- v0.16.1
+  - Fixed an issue with the hitboxes of the metal stairs
 - v0.16.0
   - Added
