@@ -43,10 +43,7 @@ const toExport = GenericArticlePage({
     },
     {
       title: "Tugboats",
-      items: [
-        "tugboat_white",
-        "tugboat_red",
-      ],
+      items: ["tugboat_white", "tugboat_red"],
       fileName: "tugboats",
     },
   ],
