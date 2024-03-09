@@ -38,3 +38,5 @@ The M1 Garand was designed by John Garand in the 1920s and 1930s, and production
 
 - v0.13.0
   - Added
+- v0.16.0
+  - Added strap to loot image

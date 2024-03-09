@@ -63,6 +63,17 @@ const toExport = GenericArticlePage({
       items: ["port_fence", "port_fence_side"],
       fileName: "fences",
     },
+    {
+      title: "Control Panels",
+      items: [
+        "control_panel",
+        "control_panel_activated",
+        "control_panel_2",
+        "control_panel_small",
+        "tugboat_control_panel",
+      ],
+      fileName: "control_panels",
+    },
   ],
 });
 

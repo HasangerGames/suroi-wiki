@@ -35,7 +35,7 @@ As a dev-only weapon, the Revitalizer is only obtainable by Developers. However,
 <table>
   <thead>
     <tr>
-      <th colSpan="5" style={{ "text-align": "center" }}>
+      <th colSpan="5" style={{ "textAlign": "center" }}>
         1 Revitalizer
       </th>
     </tr>
@@ -96,7 +96,7 @@ As a dev-only weapon, the Revitalizer is only obtainable by Developers. However,
 <table>
   <thead>
     <tr>
-      <th colSpan="5" style={{ "text-align": "center" }}>
+      <th colSpan="5" style={{ "textAlign": "center" }}>
         2 Revitalizers
       </th>
     </tr>

@@ -41,6 +41,11 @@ const toExport = GenericArticlePage({
       ],
       fileName: "armory_meta", // Same as port
     },
+    {
+      title: "Tugboats",
+      items: ["tugboat_white", "tugboat_red"],
+      fileName: "tugboats",
+    },
   ],
 });
 
