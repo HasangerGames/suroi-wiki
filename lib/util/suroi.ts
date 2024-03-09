@@ -24,6 +24,10 @@ import {
   ItemType,
   ObjectDefinition,
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import {
+  LootTables,
+  LootTiers,
+} from "@/vendor/suroi/server/src/data/lootTables";
 
 export function getSuroiItem(idString: string) {
   return Loots.definitions.find((item) => item.idString === idString);
@@ -198,6 +202,45 @@ export function obstacleContainedBy(obstacle: ObstacleDefinition) {
   }
 
   return parents;
+}
+
+export function lootDroppedBy(loot: LootDefinition): ObjectDefinition[] {
+  const tiers: string[] = [];
+  for (const tierName in LootTiers) {
+    if (_lootDroppedByTier(loot.idString, tierName)) {
+      tiers.push(tierName);
+    }
+  }
+
+  const result: ObjectDefinition[] = [];
+  for (const tableName in LootTables) {
+    const loots = LootTables[tableName].loot.flat();
+    for (const entry of loots) {
+      if (
+        ("item" in entry && entry.item === loot.idString) ||
+        ("tier" in entry && tiers.includes(entry.tier))
+      ) {
+        const obstacle = Obstacles.definitions.find(
+          (obstacle) => obstacle.idString === tableName,
+        );
+        if (obstacle) {
+          result.push(obstacle);
+        }
+        break;
+      }
+    }
+  }
+  return result;
+}
+
+function _lootDroppedByTier(loot: string, tier: string): boolean {
+  const items = LootTiers[tier];
+  if (!items) return false;
+
+  return items.some((item) => {
+    if ("item" in item) return item.item == loot;
+    if ("tier" in item) return _lootDroppedByTier(loot, item.tier);
+  });
 }
 
 /**
