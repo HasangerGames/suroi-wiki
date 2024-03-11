@@ -15,5 +15,7 @@ Nine Mobile Homes spawn across the map in random positions. All mobile homes con
 
  # History 
 
-  - v0.15.0
-    - Added
+- v0.16.0
+  - Improved hitboxes
+- v0.15.0
+  - Added
