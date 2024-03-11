@@ -26,6 +26,8 @@ The Porta Potty also has a roll of toilet paper and a small sink with hand sanit
 
 # History
 
+- v0.16.0
+  - Improved hitboxes
 - v0.12.0
   - Fixed silent Porta Potty doors
 - v0.10.0
