@@ -28,13 +28,14 @@ export default function LootPage() {
             <TableWithHeader
               key={name}
               title={`Tier ${name}`}
-              header={["Item", "Weight", "% Chance"]}
+              header={["Item", "Count", "Weight", "% Chance"]}
               content={tiers.map((tier) => [
                 "item" in tier
                   ? `Item ${Loots.definitions.find(
                       (loot) => loot.idString === tier.item,
                     )?.name}`
                   : `Tier ${tier.tier}`,
+                tier.count ? tier.count.toString() : "1",
                 tier.weight,
                 (
                   (tier.weight /
@@ -58,7 +59,7 @@ export default function LootPage() {
         <div key={name} id={name}>
           <TableWithHeader
             title={`Table ${name}`}
-            header={["Tier/Item", "Weight", "% Chance"]}
+            header={["Tier/Item", "Count", "Weight", "% Chance"]}
             content={tables.loot
               .flat()
               .map((tier) => [
@@ -67,6 +68,7 @@ export default function LootPage() {
                       (loot) => loot.idString === tier.item,
                     )?.name}`
                   : `Tier ${tier.tier}`,
+                tier.count ? tier.count.toString() : "1",
                 tier.weight.toString(),
 
                 (
