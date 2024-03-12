@@ -33,3 +33,6 @@ The Vepr-12 can be found rarely as world loot. It is more common in higher-tier 
 # History
 - v0.15.0
   - Added
+
+# Gallery
+<Gallery images={[ { url: "/img/articles/weapons/guns/vepr12/dual_vepr12.png", author: "EagleEye2010", caption: "A player holding two Vepr-12s.", }, ]} />
