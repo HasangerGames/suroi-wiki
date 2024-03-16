@@ -41,6 +41,26 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
           {gun.switchDelay}ms
         </InfoboxColumn>
       </InfoboxRow>
+      <InfoboxRow>
+        <InfoboxColumn
+          title="Speed Multiplier"
+          abbr="How much the gun slows/speeds you up when holding"
+        >
+          x{gun.speedMultiplier}
+        </InfoboxColumn>
+        <InfoboxColumn
+          title="Recoil Speed Multiplier"
+          abbr="How much the gun slows/speeds you up after firing"
+        >
+          x{gun.recoilMultiplier}
+        </InfoboxColumn>
+        <InfoboxColumn
+          title="Recoil Duration"
+          abbr="How long the recoil speed multiplier lasts"
+        >
+          {gun.recoilDuration}ms
+        </InfoboxColumn>
+      </InfoboxRow>
 
       {gun.fireMode === FireMode.Burst && (
         <InfoboxRow>
