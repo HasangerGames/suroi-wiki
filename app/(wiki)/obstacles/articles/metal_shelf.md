@@ -2,7 +2,7 @@ The **Metal Shelf** is an [Obstacle](/obstacles) added in the v0.9.0 "Behind Clo
 
 # Location & Spawning
 
-Two Metal Shelves spawn across from each other in the [Warehouse](/buildings/warehouse) in suroi versions before v0.15.0. It is currently an unused structure as the Warehouse has been redesigned.
+Two Metal Shelves spawn across from each other in the [Warehouse](/buildings/warehouse) in suroi versions before v0.15.0. It is currently an unused obstacle as the Warehouse has been redesigned.
 
 # Loot & More
 

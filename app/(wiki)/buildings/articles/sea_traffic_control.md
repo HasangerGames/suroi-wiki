@@ -29,6 +29,8 @@ A [Radio](/weapons/guns/radio) spawns on the floor in the interior of every Sea 
 
 # Trivia
 
+- The Tugboats were designed by Platonthek and Emeraldneo
+
 # History
 
 - v0.16.0

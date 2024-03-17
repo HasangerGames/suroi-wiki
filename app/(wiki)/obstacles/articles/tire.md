@@ -20,5 +20,8 @@ The Tire doesn't drop loot.
 
 # History
 
+- v0.16.0
+  - Added to Tugboats
+  - ID changed from "mobile_home_tire" to "tire"
 - v0.15.0
   - Added

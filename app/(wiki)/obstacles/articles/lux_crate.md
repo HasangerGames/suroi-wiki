@@ -15,6 +15,8 @@ The Lux Crate always drops a scope and the [CZ-600](/weapons/guns/cz600).
 
 # Trivia
 
+- The Lux Crate was designed by Platonthek and Emeraldneo
+
 # History
 - v0.16.0
   - Added
