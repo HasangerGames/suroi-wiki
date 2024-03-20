@@ -8,7 +8,7 @@ The Mosin-Nagant was designed in 1891 by Captain Sergei Mosin and Émile Nagant 
 
 ## Using
 
-- Don't judge the Mosin-Nagant by its low DPS number. The high damage and excellent range make it among the best weapons in the game.
+- Don't judge the Mosin-Nagant by its low DPS. The high damage and excellent range make it among the best weapons in the game.
 - As a sniper, the Mosin-Nagant works very well at long-range against weapons with less range and accuracy.
 - The Mosin-Nagant is best used when quickswitched with another sniper or a shotgun. This allows you to have high damage output at both close and long range.
   - The [M3K](/weapons/guns/m3k) and [Model 37](/weapons/guns/model_37) are both good choices to pair with the Mosin-Nagant. The Model 37 packs more damage, but the M3K may be better if you have an 8x or 15x scope and expect a lot of long-range engagements.
