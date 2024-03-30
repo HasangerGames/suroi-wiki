@@ -2,7 +2,7 @@ The **Cargo Ship** is a sub-building of the [Port](/buildings/port). It was adde
 
 # Location & Spawning
 
-The Cargo Ship can be found spawning offshore of the Port on the edge of the map, 50% of games.
+The Cargo Ship can be found spawning offshore of the Port on the edge of the map in 50% of games.
 
 # Areas
 
@@ -16,12 +16,14 @@ Located towards the stern of the Cargo Ship, the Control Room doesn't contain mu
 
 ## Vault
 
-The Vault, located in the bow of the Cargo Ship, is the most valuable area of the Cargo Ship. It contains a secret room with a chance of a Tango 51 inside. To get past the [Vault Door](/obstacles/door), you need to solve the puzzle.
+The Vault, located in the bow of the Cargo Ship, is the most valuable area of the Cargo Ship. It contains a secret room with a [Tango 51 Crate](/obstacles/tango_crate) inside. To get past the [Vault Door](/obstacles/door), you need to solve the puzzle.
 
 <Spoiler spoiler="Ship puzzle solution">
   To solve the puzzle, grab the [Gas Can](/weapons/melee/gas_can) from
   the Control Room. Then, walk to the front of the ship and go to the generator.
-  Use the Gas Can to activate the generator and the door to the Vault will open.
+  Use the Gas Can to activate the generator and the door to the Vault will open.<br></br><br></br>
+  If you don't want to use the Tango 51(s) inside the vault, you can take the Gas Can and
+  leave. That way, no other players will be able to unlock the vault unless they kill you.
 </Spoiler>
 
 # Tips
@@ -33,10 +35,11 @@ The Vault, located in the bow of the Cargo Ship, is the most valuable area of th
 # Trivia
 
 - Despite clearly having stairs into the Control Room, the stairs don't lead to another layer
-  - The Control Room is treated as an indoor area on the map
+  - The Control Room is treated as an indoor area on the map, similar to [Small Houses](/buildings/small_house)
 
 # History
-
+- v0.15.0
+  - There is no longer a 50% chance for the Tango Crate to be replaced with an AEGIS crate
 - v0.14.0
   - Fixed a bug that allowed players to see into the Vault without opening the door
 - v0.12.0

@@ -12,7 +12,7 @@ The Rock drops no loot upon being destroyed.
 
 - If you're low on health and have nowhere else to go, you can try hiding behind a Rock to heal and avoid bullets.
 - You can hide behind this with a gun that has little range or a melee weapon to force an opponent to approach where you can get a hit on them.
-- Remember that these are breakable and aren't fool-proof barriers.
+- Remember that Rocks are breakable and aren't fool-proof barriers.
 - If there is a river rock that an enemy is hiding behind, you can destroy it to avoid getting close to them or to stop them from healing.
 - Players trying to hide behind these are often low on health and can make for easy kills.
 
