@@ -6,13 +6,13 @@ Doors spawn in between rooms of many structures such as the [Small House](/build
 
 # Loot & More
 
-"Wooden" and Porta Potty Doors can be interacted with to change their position, which can allow players to enter another area without breaking the Door. Punching a "Wooden" Door using fists or a melee weapon causes it to open in the direction of the swing. Vault Doors can only be opened by solving a puzzle nearby. All Doors drop nothing upon being broken.
+Wooden and Porta Potty Doors can be interacted with to change their position, which can allow players to enter another area without breaking the Door. Punching a Wooden Door using fists or a melee weapon causes it to open in the direction of the swing. Vault Doors can only be opened by solving a puzzle nearby. All breakable Doors drop nothing upon being broken.
 
 # Tips
 
-- "Wooden" and Porta Potty Doors are useful as cover as they can have their position manipulated to fit a player's needs or to annoy an opponent.
+- Wooden and Porta Potty Doors are useful as cover as they can have their position manipulated to fit a player's needs or to annoy an opponent.
   - However, both have low health and can't withstand many bullets without getting destroyed.
-- Vault Doors can only be opened once by solving a puzzle, but they can be used as indestructible cover in specific situations.
+- Vault Doors can be used as indestructible cover once opened.
 - Garage Doors can be used as an alternative exit to the House.
 
 # Trivia

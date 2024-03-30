@@ -2,7 +2,7 @@ The **Tango Crate** is an [Obstacle](/obstacles) added in the v0.11.0 "Making Wa
 
 # Location & Spawning
 
-The Tango Crate has a 50% chance of spawning instead of the [AEGIS Crate](/obstacles/aegis_crate) in the vault of the [Ship](/buildings/ship).
+The Tango Crate always spawns in the vault of the [Ship](/buildings/ship).
 
 # Loot & More
 
@@ -15,7 +15,7 @@ The Tango Crate always drops 1-5 [Tango 51s](/weapons/guns/tango_51) and either 
 # Trivia
 
 - The Tango Crate was designed by myka
-- The chance of a Tango Crate dropping 5 Tango 51s is roughly 1 in 936,000,000
+- The chance of a Tango Crate dropping five Tango 51s is roughly 1 in 936,000,000
 
 # History
 
