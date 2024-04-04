@@ -21,6 +21,8 @@ The only way to obtain the Gas Can in normal mode is to head to the ship in the 
 
 # Trivia
 
+- v0.17.0
+  - New world image
 - The Gas was designed by 1092384
 - The Gas Can is red, which indicates it contains gasoline. The generator, however, has a Diesel engine.
 

@@ -17,10 +17,14 @@ Radios are a type of communication device that utilizes electromagnetic radio wa
 
 ## Trivia
 
-- The radio uses the same sound effects as the [Deathray](/weapons/guns/deathray) except for the firing sound
+- The radio used the same sound effects as the [Deathray](/weapons/guns/deathray) except for the firing sound until v0.16.0
 
 # History
 
+- 0.17.0
+  - New texture
+- 0.16.0
+  - Added unique reloading and switching sound effects
 - v0.14.0
   - Range increased to 50 (from 0)
   - Bullet speed decreased to 0.01 (from 1)

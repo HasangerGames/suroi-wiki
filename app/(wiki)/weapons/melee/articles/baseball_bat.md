@@ -29,6 +29,8 @@ Baseball Bats have a high chance of spawning from the [Melee Crate](/obstacles/m
 
 # History
 
+- v0.17.0
+  - New texture
 - v0.11.0
   - Swing Radius increased to 3.8 (from 3)
 - v0.9.0

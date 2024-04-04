@@ -17,6 +17,8 @@ Ammo Crates drop either 60 rounds of 5.56mm, 7.62mm, or 9mm or 10 rounds of 12 g
 
 # History
 
+- v0.17.0
+  - Now drops 10 rounds of 12.7 instead of 1
 - v0.16.0
   - Added 12.7 and curadell ammo types to loot table
 - v0.15.0

@@ -26,5 +26,7 @@ The Seax can only be obtained from the [Viking Chest](/obstacles/viking_chest), 
 
 # History
 
+- v0.17.0
+  - New texture
 - v0.15.0
   - Added

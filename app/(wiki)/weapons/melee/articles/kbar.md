@@ -30,6 +30,8 @@ The K-Bar can be obtained rarely from crates or other common loot sources. Addit
 
 # History
 
+- v0.17.0
+  - New texture
 - v0.8.0
   - Animation speed decreased to 100 (from 125)
 - v0.5.0
