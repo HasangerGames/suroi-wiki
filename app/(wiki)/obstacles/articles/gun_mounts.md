@@ -18,5 +18,7 @@ Gun Mounts have low health and are easily destroyed. They always drop the weapon
 
 # History
 
+- v0.17.0
+  - Fixed gun mount loot phasing through walls
 - v0.10.0
   - Added

@@ -40,6 +40,9 @@ The Dining Area has a [Table](/obstacles/table) with two [Chairs](/obstacles/cha
 
 # History
 
+- v0.17.0
+  - Redesigned roof and floor
+  - Added ground loot on the floor
 - v0.13.0
   - A bug has been fixed that prevented used toilets from spawning in the Small House
   - Adjusted viewing hitboxes for all buildings, including the Small House
