@@ -156,7 +156,7 @@ function _otherImageLink<Category extends ObjectCategory>(
 
   return `${IMAGE_BASE_URL}${IMAGE_BASE_URLS[key]}/${
     isBuilding(obj)
-      ? obj.ceilingImages?.[0].key || obj.floorImages?.[0].key
+      ? obj.ceilingImages?.[0]?.key || obj.floorImages?.[0]?.key
       : obj.idString
   }${variation ? `_${variation}` : ""}.svg`;
 }
