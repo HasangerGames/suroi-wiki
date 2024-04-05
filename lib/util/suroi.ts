@@ -18,6 +18,7 @@ import {
   ObstacleDefinition,
   Obstacles,
 } from "@/vendor/suroi/common/src/definitions/obstacles";
+import { SyncedParticleDefinition } from "@/vendor/suroi/common/src/definitions/syncedParticles";
 import {
   InventoryItemDefinition,
   ItemDefinition,
@@ -77,16 +78,17 @@ export const IMAGE_BASE_URL = `${BASE_URL}client/public/img/`;
 
 export const SOUND_BASE_URL = `${REPO_URL}raw/${BRANCH}/client/public/audio/`;
 
-type ObjectCategoryMapping<Category extends ObjectCategory> =
-  Category extends ObjectCategory.Obstacle
-    ? ObstacleDefinition
-    : Category extends ObjectCategory.Building
-      ? BuildingDefinition
-      : Category extends ObjectCategory.Decal
-        ? DecalDefinition
-        : Category extends ObjectCategory.Loot
-          ? LootDefinition
-          : never;
+type ObjectCategoryMapping<Category extends ObjectCategory> = {
+  readonly [ObjectCategory.Player]: never
+  readonly [ObjectCategory.Obstacle]: ObstacleDefinition
+  readonly [ObjectCategory.DeathMarker]: never
+  readonly [ObjectCategory.Loot]: LootDefinition
+  readonly [ObjectCategory.Building]: BuildingDefinition
+  readonly [ObjectCategory.Decal]: DecalDefinition
+  readonly [ObjectCategory.Parachute]: never
+  readonly [ObjectCategory.ThrowableProjectile]: never
+  readonly [ObjectCategory.SyncedParticle]: SyncedParticleDefinition
+}[Category];
 
 export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
 
