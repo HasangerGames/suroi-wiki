@@ -1,4 +1,4 @@
-import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import { GunDefinition, Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import { Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
 import {
@@ -12,6 +12,7 @@ import {
   getSuroiItem,
   getSuroiObstacle,
 } from "./suroi";
+import { ObjectDefinition, ObjectDefinitions } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 
 export type SearchItem = {
   name: string;
@@ -67,7 +68,7 @@ export const wikiPages: SearchItem[] = [
     name: "Buildings",
     url: "/buildings",
     description: "List of buildings",
-    image: getSuroiImageLink(getSuroiBuilding("house")),
+    image: getSuroiImageLink(getSuroiBuilding("red_house")),
   },
   {
     name: "Skins",
@@ -96,12 +97,12 @@ export const wikiPages: SearchItem[] = [
 ];
 
 export function generateItemsFromDefinitions(
-  definitions: any,
-  baseURL: string,
+  definitions: ObjectDefinitions,
+  baseURL: string
 ): SearchItem[] {
-  return definitions.map((definition: any) => ({
+  return definitions.definitions.map((definition: ObjectDefinition) => ({
     name: definition.name,
-    image: getSuroiImageLink(definition, definition.variations ? 1 : 0),
+    image: getSuroiImageLink(definition, "variations" in definition ? 1 : 0),
     url: baseURL + definition.idString,
   }));
 }
@@ -110,12 +111,12 @@ export const SearchItems: SearchItem[] = [
   ...wikiPages,
   ...generateItemsFromDefinitions(Guns, "/weapons/guns/"),
   ...generateItemsFromDefinitions(Melees, "/weapons/melee/"),
-  ...generateItemsFromDefinitions(Obstacles.definitions, "/obstacles/"),
-  ...Object.entries(LootTables).map(([k, v]) => ({
+  ...generateItemsFromDefinitions(Obstacles, "/obstacles/"),
+  ...Object.entries(LootTables).map(([k, ]) => ({
     name: `Loot Table ${k}`,
     url: `/loot#${k}`,
   })),
-  ...Object.entries(LootTiers).map(([k, v]) => ({
+  ...Object.entries(LootTiers).map(([k, ]) => ({
     name: `Loot Tier ${k}`,
     url: `/loot#${k}`,
   })),
