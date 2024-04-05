@@ -27,7 +27,7 @@ The VSS was developed beginning in 1983 by TsNIITochMash, a then-Soviet industri
 
 # Obtaining
 
-The VSS is most easily found in special loot such as [AEGIS](/obstacles/aegis_crate) and [Flint Crates](/obstacles/flint_crate). It can also be rarely found from [Regular Crates](/obstacles/regular_crate) or as ground loot.
+The VSS is most easily found in special loot such as [AEGIS](/obstacles/aegis_crate) and [Flint Crates](/obstacles/flint_crate). It also spawns in regular [Airdrops](/obstacles/airdrop_crate). The VSS can also be rarely found from [Regular Crates](/obstacles/regular_crate) or as ground loot. 
 
 # Trivia
 
