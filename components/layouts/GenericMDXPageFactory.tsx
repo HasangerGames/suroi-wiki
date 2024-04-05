@@ -1,4 +1,4 @@
-import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import { ObjectDefinitions } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import fs from "fs/promises";
 import { Metadata } from "next";
 import { serialize } from "next-mdx-remote/serialize";
@@ -54,21 +54,13 @@ export interface GenericMDXPageFactoryArgs {
   path: string;
 }
 
-export function GenericGenerateStaticParamsFactory<T extends ObjectDefinition>(
-  items: T[],
-) {
-  return function () {
-    return items.map((item) => ({
-      item: item.idString,
-    }));
-  };
+export function GenericGenerateStaticParamsFactory(items: ObjectDefinitions) {
+  return () => items.definitions.map((item) => ({ item: item.idString }));
 }
 
-export function GenericGenerateMetadataFactory<T extends ObjectDefinition>(
-  items: T[],
-) {
+export function GenericGenerateMetadataFactory(items: ObjectDefinitions) {
   return function ({ params }: { params: { item: string } }): Metadata {
-    const item = items.find((item) => item.idString === params.item);
+    const item = items.definitions.find((item) => item.idString === params.item);
     if (!item) notFound();
 
     return {
