@@ -14,7 +14,7 @@ import GenericSidebar from "./utils/GenericSidebar";
 
 export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
   const [dual, setDual] = useState(false);
-  const dualGun = Guns.find((g) => g.idString === `dual_${gun.idString}`);
+  const dualGun = Guns.definitions.find((g) => g.idString === `dual_${gun.idString}`);
   return (
     <div className="min-w-[20rem]">
       {dualGun && (
