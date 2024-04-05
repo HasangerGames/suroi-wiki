@@ -1,4 +1,4 @@
-import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import { ObjectDefinition, ObjectDefinitions } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { notFound } from "next/navigation";
 import React, { ComponentType } from "react";
 
@@ -19,7 +19,7 @@ export default function GenericLayoutFactory<T extends ObjectDefinition>(
       item: string;
     };
   } & React.PropsWithChildren) {
-    const item = args.items.find((item) => item.idString === params.item);
+    const item = args.items.definitions.find((item) => item.idString === params.item);
     if (!item) notFound();
 
     return (
@@ -40,5 +40,5 @@ export default function GenericLayoutFactory<T extends ObjectDefinition>(
 
 export interface GenericLayoutFactoryArgs<T extends ObjectDefinition> {
   Sidebar: ComponentType<{ item: T }>;
-  items: T[];
+  items: ObjectDefinitions<T>;
 }
