@@ -18,5 +18,7 @@ The Couch drops no loot upon being broken.
 
 # History
 
+- v0.17.0
+  - New texture
 - v0.9.0
   - Added
