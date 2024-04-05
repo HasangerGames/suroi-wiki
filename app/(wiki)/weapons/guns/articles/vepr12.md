@@ -24,7 +24,7 @@ The Vepr-12 was originally designed by the Kalashnikov Group (then Izhmash) in t
 - The [Flues](/weapons/guns/flues) has higher DPS than the Vepr-12, but at the cost of a smaller mag size. You could use it against a Vepr-12 user, however.
 
 # Obtaining
-The Vepr-12 can be found rarely as world loot. It is more common in higher-tier loot sources such as [Viking Chests](/obstacles/viking_chest), [Briefcases](/obstacles/briefcase), and others.
+The Vepr-12 can be found rarely as world loot. It is more common in higher-tier loot sources such as [Viking Chests](/obstacles/viking_chest), [Briefcases](/obstacles/briefcase), and regular [Airdrops](/obstacles/airdrop_crate).
 
 # Trivia
 - In real life, the Vepr-12 is a direct competitor to the Saiga-12, which was in surviv.io
