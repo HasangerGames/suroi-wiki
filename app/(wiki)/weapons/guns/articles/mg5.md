@@ -10,7 +10,7 @@ The MG5 is based on a similar design to that of the MG4 light machine gun that p
   - Not only will this give you a full magazine to work with, it also frees up more space in your pack for ammunition.
   - The MG5 has the 2nd longest reload of any weapon, so reload out of combat and avoid reloading in combat if possible.
   - If you find a MG5 but have no backpack, reload multiple times to carry as much ammo as possible, since you don't want to run out.
-- Because it is more accurate (albeit a slightly lower DPS) the Negev is more suited to close to long-range combat than its competitor the [Negev](/weapons/guns/negev).
+- Because it is more accurate (albeit a slightly lower DPS) the MG5 is more suited to close to long-range combat than its competitor the [Negev](/weapons/guns/negev).
 - If your enemy is far away, such as 8x range, move closer so you can kill them easier and not waste ammo.
 - The MG5 has a 2x obstacle multiplier, meaning it shreds through obstacles. If an opponent hides behind a destructible obstacle, don't hesitate to plow right through it.
 - Because the MG5 is so rare, it can be used to bait players by leaving it on the ground.
@@ -18,7 +18,7 @@ The MG5 is based on a similar design to that of the MG4 light machine gun that p
 - Don't openly hold the MG5 when not in combat. It has a large slowdown and makes you a prime target to others due to the distinctive world image.
 
 ## Countering
-- At close and mid-range range, the [Negev](/weapons/guns/negev) is a direct counter to the Negev due to its higher DPS.
+- At close and mid-range range, the [Negev](/weapons/guns/negev) is a direct counter to the MG5 due to its higher DPS.
 - If you see an enemy reloading, take advantage of their vulnerability by rushing them with a shotgun or other high-DPS weapon like a SMG.
 - Make sure to find indestructible cover such as a [Buildings](/buildings), Container, or [Oil Tank](/obstacles/oil_tank).
   - If you see or hear shots, try not to stay out in the open and find cover.
@@ -28,11 +28,11 @@ The MG5 is based on a similar design to that of the MG4 light machine gun that p
 - Waste your opponents ammunition by dodging and hiding behind cover.
 
 # Obtaining
-The most common way to find a Negev [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone). It can also spawn rarely as world loot.
+The most common way to find a MG5 [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone). It can also spawn rarely as world loot.
 
 # Trivia
-- In real life, the MG5 is classfied as a GPMG (General Purpose Machine Gun), but it is a LMG in Suroi for simplicity
-- The MG5 is one of two guns (the other being the [Negev](/weapons/guns/negev)) in Suroi that utilizes a belt feed system
+- In real life, the MG5 is classfied as a GPMG (General Purpose Machine Gun), but it is a LMG in Suroi for simplicity.
+- The MG5 is one of two guns (the other being the [Negev](/weapons/guns/negev)) in Suroi that utilizes a belt feed system.
 
 # History
 - v0.17.0
