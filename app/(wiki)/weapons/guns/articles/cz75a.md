@@ -36,6 +36,8 @@ The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil 
 
 # History
 
+- v0.17.0
+  - New reload sound
 - v0.14.0
   - Added dual-wielding
   - Bullet speed decreased to 0.16 (from 0.22)
