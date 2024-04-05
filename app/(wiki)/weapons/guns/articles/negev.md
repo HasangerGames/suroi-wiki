@@ -14,7 +14,9 @@ The Negev was designed in the late 1980s to replace the aging Galil ARM. Many va
 - If your enemy is far away, such as 8x range, move closer so you can kill them easier and not waste ammo.
 - The Negev has a 2x obstacle multiplier, meaning it shreds through obstacles. If an opponent hides behind a destructible obstacle, don't hesitate to plow right through it.
 - Because the Negev is so rare, it can be used to bait players by leaving it on the ground.
+  - Be wary of a Negev as a ground, as it might be bait
 - Don't openly hold the Negev when not in combat. It has a large slowdown and makes you a prime target to others due to the distinctive world image.
+
 
 ## Countering
 - At longer ranges the [MG5](/weapons/guns/mg5) is a direct counter to the Negev due to its higher accuracy.
