@@ -17,7 +17,6 @@ The Negev was designed in the late 1980s to replace the aging Galil ARM. Many va
   - Be wary of a Negev as a ground, as it might be bait
 - Don't openly hold the Negev when not in combat. It has a large slowdown and makes you a prime target to others due to the distinctive world image.
 
-
 ## Countering
 - At longer ranges the [MG5](/weapons/guns/mg5) is a direct counter to the Negev due to its higher accuracy.
   - It can also be used at other ranges as the DPS isn't much less than the Negev.
@@ -30,7 +29,7 @@ The Negev was designed in the late 1980s to replace the aging Galil ARM. Many va
 - Waste your opponents ammunition by dodging and hiding behind cover. Since the Negev burns through ammo, you may be able to force them to run low or even out altogether.
 
 # Obtaining
-The most common way to find a Negev [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone). It can also spawn rarely as world loot.
+The most common way to find a Negev is through a [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone). It can also spawn rarely as world loot.
 
 # Trivia
 - The Negev is one of two guns (the other being the [MG5](/weapons/guns/mg5)) in Suroi that utilizes a belt feed system
