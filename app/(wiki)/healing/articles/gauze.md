@@ -1,4 +1,4 @@
-**Gauze** is a consumable that heals 15 health, added in the v0.4.0 "Supplies received" update on June 17th, 2023. They spawn very commonly around the map in stacks of 5. To use gauze, either click on the icon in your inventory or press 5 on your keyboard. Gauze takes 3 seconds to use.
+**Gauze** is a consumable that heals 15 health, added in the v0.4.0 "Supplies received" update on June 17th, 2023. They spawn very commonly around the map in stacks of 5. To use gauze, either click on the icon in your inventory or press 7 on your keyboard. Gauze takes 3 seconds to use.
 
 # Background
 
@@ -8,7 +8,7 @@ Gauze intended for use as a medical item is typically made of cotton. It is usef
 
 ## Using
 
-- Use bandages if you either don't have a Medikit or your health isn't very low. You may want to use Gauze to conserve Medikits for later in the game.
+- Use Gauzes if you either don't have a Medikit or your health isn't very low. You may want to use Gauze to conserve Medikits for later in the game.
 - If you have a lot of time or aren't in an engagement, you can use 5 or 6 Gauze instead of a Medikit.
   - This works best when taking adrenaline such as Tablets or Cola first, as it will heal you while you use the Gauze.
 - Make sure you are in a safe and/or easily defensible location when using Gauze, as the slowdown makes you vulnerable.
