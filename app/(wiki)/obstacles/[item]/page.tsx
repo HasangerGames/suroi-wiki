@@ -74,6 +74,14 @@ const toExport = GenericArticlePage({
       ],
       fileName: "control_panels",
     },
+    {
+      title: "Bush",
+      items: [
+        "bush",
+        "blueberry_bush",
+      ],
+      fileName: "bush",
+    },
   ],
 });
 
