@@ -79,15 +79,15 @@ export const IMAGE_BASE_URL = `${BASE_URL}client/public/img/`;
 export const SOUND_BASE_URL = `${REPO_URL}raw/${BRANCH}/client/public/audio/`;
 
 type ObjectCategoryMapping<Category extends ObjectCategory> = {
-  readonly [ObjectCategory.Player]: never
-  readonly [ObjectCategory.Obstacle]: ObstacleDefinition
-  readonly [ObjectCategory.DeathMarker]: never
-  readonly [ObjectCategory.Loot]: LootDefinition
-  readonly [ObjectCategory.Building]: BuildingDefinition
-  readonly [ObjectCategory.Decal]: DecalDefinition
-  readonly [ObjectCategory.Parachute]: never
-  readonly [ObjectCategory.ThrowableProjectile]: never
-  readonly [ObjectCategory.SyncedParticle]: SyncedParticleDefinition
+  readonly [ObjectCategory.Player]: never;
+  readonly [ObjectCategory.Obstacle]: ObstacleDefinition;
+  readonly [ObjectCategory.DeathMarker]: never;
+  readonly [ObjectCategory.Loot]: LootDefinition;
+  readonly [ObjectCategory.Building]: BuildingDefinition;
+  readonly [ObjectCategory.Decal]: DecalDefinition;
+  readonly [ObjectCategory.Parachute]: never;
+  readonly [ObjectCategory.ThrowableProjectile]: never;
+  readonly [ObjectCategory.SyncedParticle]: SyncedParticleDefinition;
 }[Category];
 
 export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
@@ -98,7 +98,13 @@ export function getSuroiImageLink<
   switch (true) {
     // Is obj an item?
     case "itemType" in obj:
-      return _itemImageLink(obj.idString, obj.itemType, variation, append, dual);
+      return _itemImageLink(
+        obj.idString,
+        obj.itemType,
+        variation,
+        append,
+        dual,
+      );
 
     // Is a building?
     case isBuilding(obj):
@@ -120,7 +126,6 @@ export function getSuroiImageLink<
     default:
       return MISSING_TEXTURE;
   }
-
 }
 
 export function getSuroiKillfeedImageLink(
@@ -210,31 +215,21 @@ export function obstacleContainedBy(obstacle: ObstacleDefinition) {
 // #region Type Predicates
 
 export function isBuilding(obj: ObjectDefinition): obj is BuildingDefinition {
-  return Boolean(
-    Buildings.fromStringSafe(obj.idString)
-  );
+  return Boolean(Buildings.fromStringSafe(obj.idString));
 }
 
 export function isObstacle(obj: ObjectDefinition): obj is ObstacleDefinition {
-  return Boolean(
-    Obstacles.fromStringSafe(obj.idString)
-  );
+  return Boolean(Obstacles.fromStringSafe(obj.idString));
 }
 
 export function isDecal(obj: ObjectDefinition): obj is DecalDefinition {
-  return Boolean(
-    Decals.fromStringSafe(obj.idString)
-  );
+  return Boolean(Decals.fromStringSafe(obj.idString));
 }
 
 export function isLoot(obj: ObjectDefinition): obj is LootDefinition {
-  return Boolean(
-    Loots.fromStringSafe(obj.idString)
-  );
+  return Boolean(Loots.fromStringSafe(obj.idString));
 }
 
 export function isWeapon(obj: ObjectDefinition): obj is WeaponDefinition {
-  return Boolean(
-    [...Guns, ...Melees].find(weapon => weapon === obj),
-  );
+  return Boolean([...Guns, ...Melees].find((weapon) => weapon === obj));
 }

@@ -6,7 +6,12 @@ import { Vec, type Vector } from "@/vendor/suroi/common/src/utils/vector";
 export const PLAYER_RADIUS = 2.25;
 
 // optimized version of the normal lineIntersectsCircle fn
-const lineIntersectsCircle = (pos: Vector, rad: number, s0: Vector, s1: Vector): boolean => {
+const lineIntersectsCircle = (
+  pos: Vector,
+  rad: number,
+  s0: Vector,
+  s1: Vector,
+): boolean => {
   let d = Vec.sub(s1, s0);
   const len = Math.max(Vec.length(d), 0.000001);
   d = Vec.normalizeSafe(d);
@@ -34,17 +39,21 @@ function randomPointInsideCircle(maxRadius: number): Vector {
 
   return {
     x: Math.cos(angle) * length,
-    y: Math.sin(angle) * length
+    y: Math.sin(angle) * length,
   };
 }
 
-export function shootGun(gun: GunDefinition, trials: number, targetDistance: number) {
+export function shootGun(
+  gun: GunDefinition,
+  trials: number,
+  targetDistance: number,
+) {
   const {
     moveSpread,
     jitterRadius,
     bulletCount: limit,
     consistentPatterning,
-    ballistics: { damage, range }
+    ballistics: { damage, range },
   } = gun;
   const spread = Angle.degreesToRadians(moveSpread / 2);
   const lm1 = limit - 1;
@@ -67,18 +76,16 @@ export function shootGun(gun: GunDefinition, trials: number, targetDistance: num
         rayStart,
         Vec.add(
           Vec.fromPolar(
-            (
-              consistentPatterning === true
-                ? 8 * (i / lm1 - 0.5) ** 3
-                : randomFloat(-1, 1)
-            ) * spread,
-            range
+            (consistentPatterning === true
+              ? 8 * (i / lm1 - 0.5) ** 3
+              : randomFloat(-1, 1)) * spread,
+            range,
           ),
-          rayStart
-        )
+          rayStart,
+        ),
       );
     }
   }
 
-  return accumulated * damage / trials;
+  return (accumulated * damage) / trials;
 }

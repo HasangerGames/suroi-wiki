@@ -13,9 +13,14 @@ export default function WeaponsPage() {
       <div className="prose prose-invert">
         <h1>Weapons</h1>
         <p>
-          There are currently <Link href="#guns">{Guns.definitions.length} guns</Link>,{" "}
+          There are currently{" "}
+          <Link href="#guns">{Guns.definitions.length} guns</Link>,{" "}
           <Link href="#melees">{Melees.definitions.length} melee weapons</Link>,{" "}
-          and <Link href="#throwables">{Throwables.definitions.length} throwables</Link>{" "}in the game.
+          and{" "}
+          <Link href="#throwables">
+            {Throwables.definitions.length} throwables
+          </Link>{" "}
+          in the game.
         </p>
       </div>
       <Collapsible
@@ -27,17 +32,19 @@ export default function WeaponsPage() {
         className="my-4"
       >
         <GridTable>
-          {Guns.definitions.filter((gun) => {
-            return !gun.isDual;
-          }).map((gun) => (
-            <PageCard
-              title={gun.name}
-              image={getSuroiImageLink(gun)}
-              url={"/weapons/guns/" + gun.idString}
-              description={gun.idString}
-              key={gun.idString}
-            />
-          ))}
+          {Guns.definitions
+            .filter((gun) => {
+              return !gun.isDual;
+            })
+            .map((gun) => (
+              <PageCard
+                title={gun.name}
+                image={getSuroiImageLink(gun)}
+                url={"/weapons/guns/" + gun.idString}
+                description={gun.idString}
+                key={gun.idString}
+              />
+            ))}
         </GridTable>
       </Collapsible>
       <Collapsible

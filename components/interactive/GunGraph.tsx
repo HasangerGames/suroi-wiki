@@ -30,26 +30,33 @@ export default function GunGraph({ gun }: GunGraphProps) {
 
   const margin = 10;
   const stepCount = 751;
-  const steps = Array.from({ length: stepCount }, (_, i) => i / (stepCount - 1));
+  const steps = Array.from(
+    { length: stepCount },
+    (_, i) => i / (stepCount - 1),
+  );
   const lerp = (a: number, b: number) => (t: number) => a * (1 - t) + b * t;
 
   const {
     ballistics: { range },
     bulletCount = 1,
     fireDelay,
-    fireMode
+    fireMode,
   } = gun;
   const interp = lerp(-margin, range + margin);
   const trialCount = ~~(500 / bulletCount);
 
-  const damages = steps.map(interp).map(r => ({ x: r, y: shootGun(gun, trialCount, r) }));
+  const damages = steps
+    .map(interp)
+    .map((r) => ({ x: r, y: shootGun(gun, trialCount, r) }));
 
   const dps = damages.map(({ x: range, y: damage }) => ({
     x: range,
-    y: damage * 1000 / (fireMode === FireMode.Burst
-        ? (gun.burstProperties.burstCooldown + fireDelay * gun.burstProperties.shotsPerBurst)
-        : fireDelay
-      ),
+    y:
+      (damage * 1000) /
+      (fireMode === FireMode.Burst
+        ? gun.burstProperties.burstCooldown +
+          fireDelay * gun.burstProperties.shotsPerBurst
+        : fireDelay),
   }));
 
   return (
