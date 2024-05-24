@@ -15,6 +15,8 @@
   - Doing this usually surprises your opponent, allowing you to deal a decent amount of damage with good aim before they can react.
   - This is often effective if your opponent is already at low health.
   - Be careful if your opponent has a better melee weapon that they can switch to after you attack.
+  - If you are a mobile player, you will have a much better movement, so you can use this technique most effectively.
+  - If you are a computer or PC player and notice that your opponent does not move at 45° directions, you should refrain from attacking with your fists due to their better movement.
 
 ## Countering
 
@@ -22,8 +24,9 @@
 - Often most guns are short enough so that they can still deal damage in short range.
   - Use this to your advantage and deal some extra damage to increase your chances of winning the fight.
   - This may be tricky if your opponent is strafing to avoid shots.
-    - Shotguns can combat this with their large spread and number of pellets.
+    - Shotguns such as the [Flues](/weapons/guns/flues) can combat this with their large spread and number of pellets.
     - Weapons such as the [Micro Uzi](/weapons/guns/micro_uzi) can also work.
+    - If you are a mobile player, you will be able to outrun a computer or PC player easily.
 
 # Obtaining
 
