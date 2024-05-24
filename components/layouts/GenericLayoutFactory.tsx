@@ -1,4 +1,7 @@
-import { ObjectDefinition, ObjectDefinitions } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import {
+  ObjectDefinition,
+  ObjectDefinitions,
+} from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { notFound } from "next/navigation";
 import React, { ComponentType } from "react";
 
@@ -13,25 +16,25 @@ export default function GenericLayoutFactory<T extends ObjectDefinition>(
 ) {
   return function GenericLayout({
     children,
-    params,
+    params: { item },
   }: {
     params: {
       item: string;
     };
   } & React.PropsWithChildren) {
-    const item = args.items.definitions.find((item) => item.idString === params.item);
-    if (!item) notFound();
+    const def = args.items.fromStringSafe(item);
+    if (!def) notFound();
 
     return (
       <>
         <div className="grow prose prose-invert">
-          <h1 className="hidden sm:block">{item.name}</h1>
+          <h1 className="hidden sm:block">{def.name}</h1>
           {children}
         </div>
-        <args.Sidebar item={item} />
+        <args.Sidebar item={def} />
         {/* here because reverse flex-col */}
         <div className="prose prose-invert sm:hidden">
-          <h1>{item.name}</h1>
+          <h1>{def.name}</h1>
         </div>
       </>
     );

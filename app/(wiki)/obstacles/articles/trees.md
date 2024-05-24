@@ -15,7 +15,7 @@ Trees drop no loot upon being broken.
   - Birch Trees have higher health, allowing you to buy more time or force your opponent to waste additional ammo.
   - However, all 3 variants can be easily destroyed with any high-DPS weapon in a matter of seconds.
 - If your opponent is hiding behind a Tree to avoid shots or heal up, just shoot the Tree down. They have low health and are easy to destroy.
-- In the end game, campers may hide in the overlapping area of two Trees or a single Tree if they have a skin that helps camoflauge them. Shoot a bullet or two into these areas to chase any remaining players out.
+- In the end game, campers may hide in the overlapping area of two Trees or a single Tree if they have a skin that helps camouflage them. Shoot a bullet or two into these areas to chase any remaining players out.
 
 # Trivia
 

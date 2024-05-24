@@ -1,6 +1,10 @@
-import { GunDefinition, Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import { Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
+import {
+  ObjectDefinition,
+  ObjectDefinitions,
+} from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import {
   LootTables,
   LootTiers,
@@ -12,7 +16,6 @@ import {
   getSuroiItem,
   getSuroiObstacle,
 } from "./suroi";
-import { ObjectDefinition, ObjectDefinitions } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 
 export type SearchItem = {
   name: string;
@@ -96,11 +99,10 @@ export const wikiPages: SearchItem[] = [
   },
 ];
 
-export function generateItemsFromDefinitions<Def extends ObjectDefinition = ObjectDefinition>(
-  { definitions }: ObjectDefinitions<Def>,
-  baseURL: string
-): SearchItem[] {
-  return definitions.map(definition => ({
+export function generateItemsFromDefinitions<
+  Def extends ObjectDefinition = ObjectDefinition,
+>({ definitions }: ObjectDefinitions<Def>, baseURL: string): SearchItem[] {
+  return definitions.map((definition) => ({
     name: definition.name,
     image: getSuroiImageLink(definition, "variations" in definition ? 1 : 0),
     url: baseURL + definition.idString,
@@ -112,11 +114,11 @@ export const SearchItems: SearchItem[] = [
   ...generateItemsFromDefinitions(Guns, "/weapons/guns/"),
   ...generateItemsFromDefinitions(Melees, "/weapons/melee/"),
   ...generateItemsFromDefinitions(Obstacles, "/obstacles/"),
-  ...Object.entries(LootTables).map(([k, ]) => ({
+  ...Object.entries(LootTables).map(([k]) => ({
     name: `Loot Table ${k}`,
     url: `/loot#${k}`,
   })),
-  ...Object.entries(LootTiers).map(([k, ]) => ({
+  ...Object.entries(LootTiers).map(([k]) => ({
     name: `Loot Tier ${k}`,
     url: `/loot#${k}`,
   })),
