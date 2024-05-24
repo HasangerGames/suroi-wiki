@@ -97,7 +97,10 @@ export default function ObstacleSidebar({
       </InfoboxRow>
       <InfoboxRow>
         {(item.hasLoot || item.spawnWithLoot) && (
-          <InfoboxColumn title="Drops Loot" />
+          <InfoboxColumn title="Drops Loot">
+            See&nbsp;
+            <Link href={`/loot#${item.idString}`}>loot table</Link>
+          </InfoboxColumn>
         )}
         {item.noResidue && <InfoboxColumn title="No Residue" />}
         {item.invisible && <InfoboxColumn title="Invisible" />}

@@ -23,7 +23,7 @@ The ACR was designed by Magpul Industries in the early 2000s and was essentially
 
 # Obtaining
 
-- The only way to get the ACR is to either find one in a [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone).
+The only way to get the ACR is to either find one in a [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone).
 
 # Trivia
 

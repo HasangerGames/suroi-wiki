@@ -1,5 +1,5 @@
 import { Unpacked } from "@/lib/ts/utility";
-import { SOUND_BASE_URL } from "@/lib/util/suroi";
+import { SOUND_BASE_URL, isObstacle, lootDroppedBy } from "@/lib/util/suroi";
 import { FireMode } from "@/vendor/suroi/common/src/constants";
 import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
 import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
@@ -9,6 +9,7 @@ import {
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { WithRequired } from "@tanstack/react-query";
 import AmmoIcon from "../icons/AmmoIcon";
+import Link from "../links/Link";
 import InfoboxAudio from "./utils/InfoboxAudio";
 import InfoboxAudioGroup from "./utils/InfoboxAudioGroup";
 import InfoboxColumn from "./utils/InfoboxColumn";
@@ -16,6 +17,8 @@ import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
 
 export default function GunDetails({ gun, explosion }: GunDetailsProps) {
+  const obstacles = lootDroppedBy(gun).filter(isObstacle);
+
   return (
     <>
       <InfoboxRow>
@@ -204,6 +207,33 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
               abbr="Damage of all shrapnel pieces"
             >
               {explosion.shrapnelCount * explosion.ballistics.damage}
+            </InfoboxColumn>
+          </InfoboxRow>
+        </>
+      )}
+
+      {obstacles[0] && (
+        <>
+          <InfoboxHeader>Found In</InfoboxHeader>
+          <InfoboxRow>
+            <InfoboxColumn title="Obstacles">
+              <div className="flex flex-col gap-2">
+                {(obstacles.length ?? 0) > 0 && (
+                  <div>
+                    <span>({obstacles.length} Obstacles)</span>
+                  </div>
+                )}
+                <div className="flex flex-wrap justify-around gap-2">
+                  {obstacles.map((obstacle) => (
+                    <Link
+                      key={obstacle.idString}
+                      href={`/obstacles/${obstacle.idString}`}
+                    >
+                      {obstacle.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </InfoboxColumn>
           </InfoboxRow>
         </>
