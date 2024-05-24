@@ -96,11 +96,11 @@ export const wikiPages: SearchItem[] = [
   },
 ];
 
-export function generateItemsFromDefinitions(
-  definitions: ObjectDefinitions,
+export function generateItemsFromDefinitions<Def extends ObjectDefinition = ObjectDefinition>(
+  { definitions }: ObjectDefinitions<Def>,
   baseURL: string
 ): SearchItem[] {
-  return definitions.definitions.map((definition: ObjectDefinition) => ({
+  return definitions.map(definition => ({
     name: definition.name,
     image: getSuroiImageLink(definition, "variations" in definition ? 1 : 0),
     url: baseURL + definition.idString,
