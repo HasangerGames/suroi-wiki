@@ -36,7 +36,14 @@ The Flues is currently the second-rarest shotgun in the game. It is about 5 time
 
 # History
 
+- v0.15.0
+  - Casing velocity y-component set to ±[8, 15]
 - v0.13.0
   - Range increased to 48 (from 40)
+- v0.12.1
+  - Move speed penalty increased to 8% (from 5%)
+  - Left fist moved to (90, -8) (from (95, -2))
 - v0.12.0
+  - Casing count set to 2
+- v0.11.0
   - Added
