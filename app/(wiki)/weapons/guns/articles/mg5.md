@@ -23,7 +23,7 @@ The MG5 is based on a similar design to that of the MG4 light machine gun that p
 - Make sure to find indestructible cover such as a [Buildings](/buildings), Container, or [Oil Tank](/obstacles/oil_tank).
   - If you see or hear shots, try not to stay out in the open and find cover.
 - Use lots of adrenaline and strafe the opponent to dodge bullets.
-  - This is effective at wasting entire magazines and taking little damage if the opponent is fairly unskilled. 
+  - This is effective at wasting entire magazines and taking little damage if the opponent is fairly unskilled.
 - Another high-DPS weapon such as [MCX Spear](/weapons/guns/mcx_spear) or a [Mini-14](/weapons/guns/mini14) can catch a MG5 user off-guard if they are reloading or out in the open.
 - Waste your opponent's ammunition by dodging and hiding behind cover.
 
@@ -35,5 +35,6 @@ The most common way to find a MG5 is through a [Gold Airdrop](/obstacles/gold_ai
 - The MG5 is one of two guns (the other being the [Negev](/weapons/guns/negev)) in Suroi that utilizes a belt feed system
 
 # History
+
 - v0.17.0
   - Added

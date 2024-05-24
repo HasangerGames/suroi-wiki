@@ -37,27 +37,40 @@ The MCX Spear is found rarely as world loot in locations such as [Regular Crates
 
 # History
 
-- v0.12.2
+- v0.12.1
   - Firing speed penalty decreased to 25% (from 35%)
-  - Recoil duration decreased to 130ms (from 240)
+  - Recoil duration decreased to 130ms (from 240ms)
 - v0.11.0
   - Updated world image
+  - Length decreased to 7.7 (from 10.8)
+  - Left fist x-offset decreased to 105 (from 135)
+  - Right fist x-offset decreased to 40 (from 65)
+  - Right fist z-index set to 4
+  - Image decreased from 80 (from 110)
+  - Casing spawn x-offset increased to 5 (from 4)
+- v0.10.0
+  - Length increased to 10.8 (from 9)
+  - Added casing particles
 - v0.9.0
   - Standing spread increased to 2° (from 1.5°)
-  - Damage increased to 16 (from 14)
+  - Moving spread increased to 4.5° (from 4°)
+  - Hand positions swapped
+  - Damage increased to 16 (from 15)
   - Move speed penalty decreased to 8% (from 10%)
   - Obstacle multiplier decreased to 1.5 (from 1.6)
 - v0.8.0
   - Move speed penalty set to 10%
   - Range increased to 180 (from 128)
   - Bullet speed decreased to 0.3 (from 0.35)
-  - Reload time increased to 2.75 seconds (from 2.5)
+  - Reload time increased to 2.75s (from 2.5s)
   - Moving spread increased to 3.5° (from 2°)
   - Set standing spread to 1.5°
   - Obstacle multiplier decreased to 1.6 (from 2)
   - Damage increased to 15 (from 14)
-  - Fire delay decreased to 87.5ms (from 120)
-  - Ammo spawn amount increased to 80 (from 60)
+  - Fire delay decreased to 87.5ms (from 120ms)
+  - Length decreased to 9 (from 10)
+  - Ammo spawned with gun increased to 80 (from 60)
+  - Tracer length set to 1.4
 - v0.7.0
   - Damage increased to 14 (from 10)
 - v0.5.0
