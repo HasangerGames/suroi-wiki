@@ -27,15 +27,15 @@ import {
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 
 export function getSuroiItem(idString: string) {
-  return Loots.definitions.find((item) => item.idString === idString);
+  return Loots.fromString(idString);
 }
 
 export function getSuroiObstacle(idString: string) {
-  return Obstacles.definitions.find((item) => item.idString === idString);
+  return Obstacles.fromString(idString);
 }
 
 export function getSuroiBuilding(idString: string) {
-  return Buildings.definitions.find((item) => item.idString === idString);
+  return Buildings.fromString(idString);
 }
 
 export const IMAGE_BASE_URLS = {
@@ -95,27 +95,32 @@ export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
 export function getSuroiImageLink<
   T extends ObjectDefinition | ItemDefinition | InventoryItemDefinition,
 >(obj: T, variation?: number, append?: string | string[], dual?: boolean) {
-  // Is obj an item?
-  if ("itemType" in obj)
-    return _itemImageLink(obj.idString, obj.itemType, variation, append, dual);
+  switch (true) {
+    // Is obj an item?
+    case "itemType" in obj:
+      return _itemImageLink(obj.idString, obj.itemType, variation, append, dual);
 
-  // Is a building?
-  if (isBuilding(obj))
-    return _otherImageLink(obj, ObjectCategory.Building, variation);
+    // Is a building?
+    case isBuilding(obj):
+      return _otherImageLink(obj, ObjectCategory.Building, variation);
 
-  // Is an obstacle?
-  if (isObstacle(obj))
-    return _otherImageLink(obj, ObjectCategory.Obstacle, variation);
+    // Is an obstacle?
+    case isObstacle(obj):
+      return _otherImageLink(obj, ObjectCategory.Obstacle, variation);
 
-  // Is a decal?
-  if (isDecal(obj))
-    return _otherImageLink(obj, ObjectCategory.Decal, variation);
+    // Is a decal?
+    case isDecal(obj):
+      return _otherImageLink(obj, ObjectCategory.Decal, variation);
 
-  // Is loot? (should be covered by items already)
-  if (isLoot(obj)) return _otherImageLink(obj, ObjectCategory.Loot, variation);
+    // Is loot? (should be covered by items already)
+    case isLoot(obj):
+      return _otherImageLink(obj, ObjectCategory.Loot, variation);
 
-  // Return missing texture
-  return MISSING_TEXTURE;
+    // Return missing texture
+    default:
+      return MISSING_TEXTURE;
+  }
+
 }
 
 export function getSuroiKillfeedImageLink(
@@ -202,40 +207,34 @@ export function obstacleContainedBy(obstacle: ObstacleDefinition) {
   return parents;
 }
 
-/**
- * Type Assertions
- */
+// #region Type Predicates
 
 export function isBuilding(obj: ObjectDefinition): obj is BuildingDefinition {
   return Boolean(
-    Buildings.definitions.find(
-      (building) => building.idString === obj.idString,
-    ),
+    Buildings.fromStringSafe(obj.idString)
   );
 }
 
 export function isObstacle(obj: ObjectDefinition): obj is ObstacleDefinition {
   return Boolean(
-    Obstacles.definitions.find(
-      (obstacle) => obstacle.idString === obj.idString,
-    ),
+    Obstacles.fromStringSafe(obj.idString)
   );
 }
 
 export function isDecal(obj: ObjectDefinition): obj is DecalDefinition {
   return Boolean(
-    Decals.definitions.find((decal) => decal.idString === obj.idString),
+    Decals.fromStringSafe(obj.idString)
   );
 }
 
 export function isLoot(obj: ObjectDefinition): obj is LootDefinition {
   return Boolean(
-    Loots.definitions.find((loot) => loot.idString === obj.idString),
+    Loots.fromStringSafe(obj.idString)
   );
 }
 
 export function isWeapon(obj: ObjectDefinition): obj is WeaponDefinition {
   return Boolean(
-    [...Guns, ...Melees].find((weapon) => weapon.idString === obj.idString),
+    [...Guns, ...Melees].find(weapon => weapon === obj),
   );
 }

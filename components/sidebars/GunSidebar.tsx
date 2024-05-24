@@ -13,24 +13,25 @@ import GunDetails from "./GunDetails";
 import GenericSidebar from "./utils/GenericSidebar";
 
 export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
-  const [dual, setDual] = useState(false);
-  const dualGun = Guns.definitions.find((g) => g.idString === `dual_${gun.idString}`);
+  // ah yes, top 10 naming
+  const [showDual, showDual_] = useState(false);
+  const dualDef = Guns.fromStringSafe(`dual_${gun.idString}`);
   return (
     <div className="min-w-[20rem]">
-      {dualGun && (
+      {dualDef && (
         <div className="flex flex-row flex-wrap w-full justify-around gap-2 mb-2 items-center p-1">
           <button
-            onClick={() => setDual(false)}
+            onClick={() => showDual_(false)}
             className={`flex justify-center grow rounded-md min-w-[7ch] hover:bg-muted/50 cursor-pointer text-muted-foreground hover:text-white p-2 ${
-              !dual ? "!text-white bg-muted ring-primary ring" : ""
+              !showDual ? "!text-white bg-muted ring-primary ring" : ""
             }`}
           >
             Single
           </button>
           <button
-            onClick={() => setDual(true)}
+            onClick={() => showDual_(true)}
             className={`flex justify-center grow rounded-md min-w-[7ch] hover:bg-muted/50 cursor-pointer text-muted-foreground hover:text-white p-2 ${
-              dual ? "!text-white bg-muted ring-primary ring" : ""
+              showDual ? "!text-white bg-muted ring-primary ring" : ""
             }`}
           >
             Dual
@@ -38,9 +39,9 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
         </div>
       )}
       <GenericSidebar
-        title={dual ? dualGun?.name ?? gun.name : gun.name}
+        title={showDual ? dualDef?.name ?? gun.name : gun.name}
         image={getSuroiImageLink(
-          dual ? dualGun! : gun,
+          showDual ? dualDef! : gun,
           undefined,
           undefined,
           true,
@@ -49,7 +50,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           {
             type: "image",
             url: getSuroiImageLink(
-              dual ? dualGun! : gun,
+              showDual ? dualDef! : gun,
               undefined,
               undefined,
               true,
@@ -63,14 +64,14 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           },
           {
             type: "image",
-            url: getSuroiKillfeedImageLink(dual ? dualGun! : gun),
+            url: getSuroiKillfeedImageLink(showDual ? dualDef! : gun),
             title: "Killfeed",
           },
           {
             type: "react",
             children: (
               <PlayerHoldingGun
-                gun={dual ? dualGun ?? gun : gun}
+                gun={showDual ? dualDef ?? gun : gun}
                 skin={
                   Skins.definitions.find((skin) => {
                     return skin.idString === "hazel_jumpsuit";
@@ -82,7 +83,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           },
         ]}
       >
-        <GunDetails gun={dual ? dualGun! : gun} explosion={explosion} />
+        <GunDetails gun={showDual ? dualDef! : gun} explosion={explosion} />
       </GenericSidebar>
     </div>
   );

@@ -25,41 +25,38 @@ export default function GunGraph({ gun }: GunGraphProps) {
     Title,
   );
 
+  // what is this for
   const graphCanvas = useRef(null);
 
-  function calculate(gun: GunDefinition) {
-    let data = [];
+  const margin = 10;
+  const stepCount = 751;
+  const steps = Array.from({ length: stepCount }, (_, i) => i / (stepCount - 1));
+  const lerp = (a: number, b: number) => (t: number) => a * (1 - t) + b * t;
 
-    for (
-      let range = -10;
-      range < gun.ballistics.range + 10;
-      range += gun.ballistics.range / 750
-    ) {
-      data.push({
-        x: range,
-        y: shootGun(gun, 500 / (gun.bulletCount ?? 1), range),
-      });
-    }
-    return data;
-  }
+  const {
+    ballistics: { range },
+    bulletCount = 1,
+    fireDelay,
+    fireMode
+  } = gun;
+  const interp = lerp(-margin, range + margin);
+  const trialCount = ~~(500 / bulletCount);
 
-  const damages = calculate(gun);
-  const dps = damages.map((damage) => ({
-    x: damage.x,
-    y:
-      gun.fireMode === FireMode.Burst
-        ? damage.y *
-          (1000 /
-            (gun.burstProperties.burstCooldown +
-              gun.fireDelay * gun.burstProperties.shotsPerBurst))
-        : damage.y * (1000 / gun.fireDelay),
+  const damages = steps.map(interp).map(r => ({ x: r, y: shootGun(gun, trialCount, r) }));
+
+  const dps = damages.map(({ x: range, y: damage }) => ({
+    x: range,
+    y: damage * 1000 / (fireMode === FireMode.Burst
+        ? (gun.burstProperties.burstCooldown + fireDelay * gun.burstProperties.shotsPerBurst)
+        : fireDelay
+      ),
   }));
 
   return (
     <div className="prose prose-invert">
       <p>
-        This test assumes that the target isn{"'"}t moving and the gun is aiming
-        dead center on the target.
+        This test assumes that the target isn{"'"}t moving, that the shooter is,
+        and the gun is always aiming dead center on the target.
       </p>
       <Suspense fallback={<div>Loading...</div>}>
         <Scatter
@@ -135,9 +132,9 @@ export default function GunGraph({ gun }: GunGraphProps) {
         <span className="not-prose select-all p-4 rounded-md flex flex-col h-16 bg-muted overflow-y-auto">
           Distance between target center and muzzle in game units, Damage
           <br></br>
-          {damages.map((damage, i) => (
+          {damages.map(({ x: range, y: damage }, i) => (
             <span key={i}>
-              {damage.x.toFixed(2)}, {damage.y.toFixed(2)}
+              {range.toFixed(2)}, {damage.toFixed(2)}
               <br></br>
             </span>
           ))}
@@ -146,9 +143,9 @@ export default function GunGraph({ gun }: GunGraphProps) {
         <span className="not-prose select-all p-4 rounded-md flex flex-col h-16 bg-muted overflow-y-auto">
           Distance between target center and muzzle in game units, DPS
           <br></br>
-          {dps.map((damage, i) => (
+          {dps.map(({ x: range, y: damage }, i) => (
             <span key={i}>
-              {damage.x.toFixed(2)}, {damage.y.toFixed(2)}
+              {range.toFixed(2)}, {damage.toFixed(2)}
               <br></br>
             </span>
           ))}
