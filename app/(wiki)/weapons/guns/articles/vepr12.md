@@ -31,6 +31,9 @@ The Vepr-12 can be found rarely as world loot. It is more common in higher-tier 
 - This is the second automatic shotgun to be added to Suroi, after the [USAS-12](/weapons/guns/usas12).
 
 # History
+
+- v0.17.0
+  - Center jitter on muzzle implicitly enabled
 - v0.15.0
   - Added
 

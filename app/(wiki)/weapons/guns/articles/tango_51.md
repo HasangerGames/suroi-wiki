@@ -30,19 +30,31 @@ The most reliable way to get a Tango 51 is to head for the [Ship](/buildings/shi
 
 # History
 
+- v0.14.0
+  - Length increased to 8.9 (from 8.2)
 - v0.13.0
   - Move speed penalty decreased to 8% (from 10%)
+- v0.12.1
+  - Left hand x-offset decreased to 106 (from 110)
+  - Casing ejection delay set to 450ms
 - v0.11.0
   - World image updated
+  - Length decreased to 8.2 (from 13.9)
+  - Left fist x-offset decreased to 110 (from 145)
+  - Right fist x-offset decreased to 40 (from 75)
+  - Right fist z-index set to 4
+  - Image moved to (90, 5) (from (125, 4))
+  - Shoot-on-release enabled
+  - Damage increased to 79 (from 75)
 - v0.10.1
-  - Fire delay decreased to 900ms (from 1800)
-  - Switch delay increased to 900ms (from 750)
+  - Fire delay decreased to 900ms (from 1.8s)
+  - Switch delay increased to 900ms (from 750ms)
 - v0.10.0
-  - Length increased to 13.9
-  - Added casings
+  - Length increased to 13.9 (from 13)
+  - Added casing particles
 - v0.9.0
-  - Reload time set to 2.6 seconds (from 3)
-  - Switched right and left fists
+  - Reload time set to 2.6s (from 3s)
+  - Hand positions swapped
   - Damage decreased to 75 (from 80)
   - Obstacle multiplier decreased to 1 (from 1.5)
   - Bullet speed increased to 0.4 (from 0.35)
@@ -51,8 +63,11 @@ The most reliable way to get a Tango 51 is to head for the [Ship](/buildings/shi
   - Set standing spread to 0.3°
   - Moving spread increased to 0.6° (from 0.5°)
   - Move speed penalty set to 10%
+  - Quickswitch enabled
   - Obstacle damage multiplier decreased to 1.5 (from 2)
   - Range increased to 250 (from 150)
+  - Tracer width set to 1.6
+  - Tracer length set to 3.5
 - v0.5.0
   - Added
 

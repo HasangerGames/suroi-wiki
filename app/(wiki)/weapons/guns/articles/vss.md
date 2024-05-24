@@ -45,18 +45,34 @@ The VSS is most easily found in special loot such as [AEGIS](/obstacles/aegis_cr
 
 # History
 
+- v0.16.0
+  - Casing type set to 9x39mm
 - v0.12.1
   - Obstacle multiplier increased to 1.5 (from 1)
   - Damage decreased to 22 (from 24)
   - Recoil duration decreased to 140ms (from 500ms)
 - v0.11.0
   - World image updated
+  - Length decreased to 6.9 (from 11.4)
+  - Left fist moved to (110, -2) (from (130, -6))
+  - Right fist x-offset decreased to 40 (from 65)
+  - Right fist z-index set to 4
+  - Image x-offset decreased to 80 (from 100)
+  - Casing spawn x-offset decreased to 4 (from 5)
+  - Tracer length increased to 1.5 (from 1.3)
+- v0.10.1
   - Obstacle multiplier decreased to 1 (from 1.5)
+- v0.10.0
+  - Increased length to 11.4 (from 10)
+  - Muzzle flash disabled
+  - Added casing particles
+  - Tracer opacity set to 0.5
 - v0.9.0
+  - Hand positions swapped
   - Fire delay decreased to 140ms (from 175ms)
   - Move speed penalty increased to 8% (from 5%)
   - Standing spread increased to 2° (from 1°)
-  - Moving spread increased to 2.5° (from 2°)
+  - Moving spread increased to 3.5° (from 2°)
   - Damage increased to 24 (from 23)
   - Obstacle multiplier increased to 1.5 (from 1.3)
   - Bullet speed decreased to 0.22 (from 0.3)

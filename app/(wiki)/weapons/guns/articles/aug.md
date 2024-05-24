@@ -26,10 +26,20 @@ The AUG is a very common gun, being more common than the [AK-47](weapons/guns/ak
 
 # History
 
+- v0.16.0
+  - Casing spawn x-offset decreased to 2.5 (from 4)
 - v0.13.0
   - Damage decreased to 10.5 (from 11.25)
 - v0.11.0
   - New world image
+  - Length decreased to 6.7 (from 11.2)
+  - Left fist moved to (105, -2) (from (157, -4))
+  - Right fist x-offset decreased to 40 (from 100)
+  - Right fist z-index set to 4
+  - Image x-offset decreased to 75 (from 103)
+- v0.10.0
+  - Length increased to 11.2 (from 9.5)
+  - Added casing particles
 - v0.9.0
   - Added
 

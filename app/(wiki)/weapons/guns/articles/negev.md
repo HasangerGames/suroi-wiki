@@ -24,7 +24,7 @@ The Negev was designed in the late 1980s to replace the aging Galil ARM. Many va
 - Make sure to find indestructible cover such as a [Buildings](/buildings), Container, or [Oil Tank](/obstacles/oil_tank).
   - If you see or hear shots, try not to stay out in the open and find cover.
 - Use lots of adrenaline and strafe the opponent to dodge bullets.
-  - This is effective at wasting entire magazines and taking little damage if the opponent is fairly unskilled. 
+  - This is effective at wasting entire magazines and taking little damage if the opponent is fairly unskilled.
 - Another high-DPS weapon such as [MCX Spear](/weapons/guns/mcx_spear) or a [Mini-14](/weapons/guns/mini14) can catch a Negev user off-guard if they are reloading or out in the open.
 - Waste your opponents ammunition by dodging and hiding behind cover. Since the Negev burns through ammo, you may be able to force them to run low or even out altogether.
 
@@ -37,5 +37,6 @@ The most common way to find a Negev is through a [Gold Airdrop](/obstacles/gold_
   - This variant has been produced since 2012 and features many improvements such as a Picatinny rail
 
 # History
+
 - v0.17.0
   - Added
