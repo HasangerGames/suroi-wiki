@@ -50,7 +50,7 @@ export default function Kitchen() {
       <Stub />
       <Gallery
         images={[
-          ...Guns.definitions.map((gun) => ({
+          ...Guns.map((gun) => ({
             url: getSuroiImageLink(gun),
             caption: gun.name,
             author: gun.idString,

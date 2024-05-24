@@ -13,9 +13,9 @@ export default function WeaponsPage() {
       <div className="prose prose-invert">
         <h1>Weapons</h1>
         <p>
-          There are currently <Link href="#guns">{Guns.definitions.length} guns</Link>,{" "}
-          <Link href="#melees">{Melees.definitions.length} melee weapons</Link>,{" "}
-          and <Link href="#throwables">{Throwables.definitions.length} throwables</Link>{" "}in the game.
+          There are currently <Link href="#guns">{Guns.length} guns</Link>,{" "}
+          <Link href="#melees">{Melees.length} melee weapons</Link>,{" "}
+          and <Link href="#throwables">{Throwables.length} throwables</Link>{" "}in the game.
         </p>
       </div>
       <Collapsible
@@ -27,7 +27,7 @@ export default function WeaponsPage() {
         className="my-4"
       >
         <GridTable>
-          {Guns.definitions.filter((gun) => {
+          {Guns.filter(gun => {
             return !gun.isDual;
           }).map((gun) => (
             <PageCard
@@ -49,7 +49,7 @@ export default function WeaponsPage() {
         className="my-4"
       >
         <GridTable>
-          {Melees.definitions.map((melee) => (
+          {Melees.map(melee => (
             <PageCard
               title={melee.name}
               image={getSuroiImageLink(melee)}
@@ -69,7 +69,7 @@ export default function WeaponsPage() {
         className="my-4"
       >
         <GridTable>
-          {Throwables.definitions.map((throwable) => (
+          {Throwables.map(throwable => (
             <PageCard
               key={throwable.idString}
               title={throwable.name}

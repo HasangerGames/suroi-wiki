@@ -38,12 +38,12 @@ export default function ArmorCalc() {
             if (e.target.value === "") setSelectedGun(null);
             else
               setSelectedGun(
-                Guns.definitions.find((gun) => gun.idString === e.target.value) ?? null,
+                Guns.find((gun) => gun.idString === e.target.value) ?? null,
               );
           }}
         >
           <option value="">Select One</option>
-          {Guns.definitions.map((gun) => (
+          {Guns.map((gun) => (
             <option value={gun.idString} key={gun.idString}>
               {gun.name}
             </option>

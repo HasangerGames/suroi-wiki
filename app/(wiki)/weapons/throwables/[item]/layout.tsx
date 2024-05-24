@@ -10,7 +10,7 @@ export default function ThrowableLayout({
     item: string;
   };
 } & React.PropsWithChildren) {
-  const throwable = Throwables.definitions.find((item) => {
+  const throwable = Throwables.find((item) => {
     return item.idString === params.item;
   });
   if (!throwable) notFound();

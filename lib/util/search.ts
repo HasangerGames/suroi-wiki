@@ -68,7 +68,7 @@ export const wikiPages: SearchItem[] = [
     name: "Buildings",
     url: "/buildings",
     description: "List of buildings",
-    image: getSuroiImageLink(getSuroiBuilding("red_house")),
+    image: getSuroiImageLink(getSuroiBuilding("house")),
   },
   {
     name: "Skins",
@@ -97,10 +97,10 @@ export const wikiPages: SearchItem[] = [
 ];
 
 export function generateItemsFromDefinitions(
-  definitions: ObjectDefinitions,
+  definitions: readonly ObjectDefinition[],
   baseURL: string
 ): SearchItem[] {
-  return definitions.definitions.map((definition: ObjectDefinition) => ({
+  return definitions.map(definition => ({
     name: definition.name,
     image: getSuroiImageLink(definition, "variations" in definition ? 1 : 0),
     url: baseURL + definition.idString,
@@ -111,7 +111,7 @@ export const SearchItems: SearchItem[] = [
   ...wikiPages,
   ...generateItemsFromDefinitions(Guns, "/weapons/guns/"),
   ...generateItemsFromDefinitions(Melees, "/weapons/melee/"),
-  ...generateItemsFromDefinitions(Obstacles, "/obstacles/"),
+  ...generateItemsFromDefinitions(Obstacles.definitions, "/obstacles/"),
   ...Object.entries(LootTables).map(([k, ]) => ({
     name: `Loot Table ${k}`,
     url: `/loot#${k}`,
