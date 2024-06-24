@@ -38,11 +38,24 @@ The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil 
 
 - v0.17.0
   - New reload sound
+- v0.15.0
+  - Casing velocity y-component set to [2, 18]
 - v0.14.0
-  - Added dual-wielding
+  - Dual variant added
   - Bullet speed decreased to 0.16 (from 0.22)
+- v0.12.0
+  - Image y-offset decreased to -1 (from 0)
 - v0.11.0
   - Updated world image
+  - Length decreased to 5.1 (from 6.7)
+  - Left fist moved to (40, 0) (from (70 4))
+  - Right fist x-offset decreased to 40 (from 65)
+  - Left fist z-index set to 4
+  - Right fist z-index set to 4
+  - Image x-offset increased to 70 (from 58)
+- v0.10.0
+  - Length increased to 6.7 (from 6)
+  - Added casing particles
 - v0.9.0
   - Added
 

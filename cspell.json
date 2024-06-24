@@ -92,7 +92,16 @@
     /* PP-19 */
     "Vityaz",
     "Bizon",
+    /* M1 Garand */
+    "enbloc",
+    /* MG5 */
+    "Maschinengewehr", // add german when™
+    "GPMG",
+    /* Negev */
+    "Galil",
     /* --- */
+    // Generator
+    "Yanmar",
     // Armory puzzle
     "ÖLJY",
     // M1117

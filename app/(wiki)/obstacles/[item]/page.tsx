@@ -35,7 +35,12 @@ const toExport = GenericArticlePage({
     },
     {
       title: "Gun Mounts",
-      items: ["gun_mount_mcx_spear", "gun_mount_stoner_63", "gun_mount_maul"],
+      items: [
+        "gun_mount_mcx_spear",
+        "gun_mount_stoner_63",
+        "gun_mount_hp18",
+        "gun_mount_maul",
+      ],
       fileName: "gun_mounts",
     },
     {
@@ -73,6 +78,11 @@ const toExport = GenericArticlePage({
         "tugboat_control_panel",
       ],
       fileName: "control_panels",
+    },
+    {
+      title: "Bush",
+      items: ["bush", "blueberry_bush"],
+      fileName: "bush",
     },
   ],
 });

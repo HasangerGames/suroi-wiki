@@ -36,10 +36,25 @@ The Micro Uzi is a very common gun, and can be found from [Regular Crates](/obst
 
 # History
 
+- v0.12.0
+  - Length increased to 5.8 (from 5)
+  - Left fist moved to (85, -6) (from (40, 0))
+  - Left fist z-index reset
+  - Image x-offset increased to 80 (from 70)
 - v0.11.0
   - World image updated
+  - Length decreased to 5 (from 6.8)
+  - Left fist moved to (40, 0) (from (70, 4))
+  - Right fist x-offset decreased to 40 (from 65)
+  - Left fist z-index set to 4
+  - Right fist z-index set to 4
   - Damage decreased to 7.75 (from 9)
+  - Image x-offset decreased to 70 (from 88)
+- v0.10.0
+  - Length increased to 6.8 (from 6)
+  - Added casing particles
 - v0.9.0
+  - Hand positions swapped
   - Standing spread increased to 9° (from 8°)
   - Moving spread increased to 19° (from 12°)
   - Move speed penalty increased to 8% (from 2%)

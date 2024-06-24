@@ -23,5 +23,6 @@ The Model 89 is only found in Gold Airdrops and [Flint Stones](/obstacles/flint_
 - The Model 89 is one of the two weapons which use 12.7mm ammunition. The other weapon which uses 12.7mm rounds is the [M82 Barrett](/weapons/guns/barrett)
 
 ## History
+
 - v0.16.0
   - Added

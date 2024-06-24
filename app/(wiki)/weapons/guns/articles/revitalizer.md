@@ -29,7 +29,7 @@ As a dev-only weapon, the Revitalizer is only obtainable by Developers. However,
 - It is a [Model 37](/weapons/guns/model_37) with a pistol grip, telescoping stock, and a custom pump.
   - One can spot a device mounted similarly to sight above the gun, with a red wire connecting it to an object
     fixed to the muzzle. Presumably, this device is the cause of the gun's unique properties.
-- The pellets fired from this weapon are always spread out in a uniformly distributed pattern.
+- The pellets fired from this weapon are always spread out in a uniformly distributed pattern, with a bias towards sending pellets parallel to the aim line.
 - The effects of the Revitalizer stack if one equips multiple; here's a table showing the various combinations.
 
 <table>
@@ -191,10 +191,24 @@ As a dev-only weapon, the Revitalizer is only obtainable by Developers. However,
 
 # History
 
+- v0.17.0
+  - Consistent patterning buffed so that the pellet distribution is biased towards the center
+- v0.15.0
+  - Casing velocity y-component set to ±[2, 5]
+- v0.13.0
+  - Tracer length set to 0.7
 - v0.12.1
   - Move speed penalty increased to 8% (from 7%)
-  - Adjusted length
+  - Length decreased to 7.5 (from 10)
+  - Left fist moved to (120, -2) (from (150, -6))
+  - Right fist x-offset decreased to 45 (from 75)
+  - Right fist z-index set to 4
+  - Image x-offset decreased to 80 (from 90)
+  - Casing spawn delay set to 450ms
 - v0.10.0
+  - Length increased to 10 (from 8)
+  - Consistent patterning enabled
+  - Added casing particles
   - Kills now always restore 230 health and 30 adrenaline
   - Every pellet now restores 2 health (previously 1) and 1.5 adrenaline (previously 1)
 - v0.9.0
