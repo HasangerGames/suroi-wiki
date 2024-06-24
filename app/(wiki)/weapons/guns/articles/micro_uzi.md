@@ -12,13 +12,13 @@ The original Uzi is an open-bolt, blowback-operated design, very similar to the 
 - The high spread, while decreasing its overall effectiveness, make it a great weapon for beginners to gain better accuracy.
   - The high spread can actually be useful in confined spaces such as [Buildings](/buildings).
   - It also makes it impossible for an opponent to avoid the bullets if you fire at them while they are in a Container.
-- Pair the Micro Uzi with a more accurate gun such as DMR or an assault rifle to cover long range engagements that the Micro Uzi can't reach.
+- Pair the Micro Uzi with a more accurate gun such as DMR or an assault rifle, to cover long range engagements that the Micro Uzi can't reach.
 - Always pick up as much 9mm ammunition as you can, as the Micro Uzi burns through ammo extremely quickly.
-- If you are trying to pick off an enemy that is running away, try standing still. The Micro Uzi is over twice as accurate when standing still compared ot moving.
+- If you are trying to pick off an enemy that is running away, try standing still. The Micro Uzi is over twice as accurate when standing still compared to moving.
 
 ## Countering
 
-- Hide behind cover such as [Rocks](/obstacles/rock), or indestructible cover like [Oil Tanks](/obstacles/oil_tank). This will waste the Micro Uzi user's ammo, and if they don't have a good supply they might completely run out.
+- Hide behind cover such as [Rocks](/obstacles/rock), or indestructible cover, like [Oil Tanks](/obstacles/oil_tank). This will waste the Micro Uzi user's ammo, and if they don't have a good supply, they might completely run out.
   - Try peeking from cover with a weapon like a burst-fire gun or a shotgun while they are reloading.
 - Stay at medium or long range and use a more accurate weapon such as a DMR or assault rifle to take out your opponent. Avoid close-range encounters with the Micro Uzi, especially if you have lower tier armor.
   - The MP 40 also works well for this, as it is very accurate.

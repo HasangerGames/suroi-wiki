@@ -19,9 +19,9 @@ The Flues gets its name from designer Emil Flues, who worked for the Ithaca Gun 
 
 ## Countering
 - The Flues has the shortest range of any shotgun, tied with the [HP18](/weapons/guns/hp18), so don't get too close.
-  - Use a longer-range weapon such as an assault rifle or DMR.
+  - Use a longer-range weapon, such as an assault rifle or DMR.
 - If the Flues user fires both of their shots, take advantage of the long reload time and attack while they are vulnerable.
-- Depending on the opponent's skill, they may miss one or both of their shots. Strafe them and try and make them miss, then attack while they reload.
+- Depending on the opponent's skill, they may miss one or both of their shots. Strafe them and try to make them miss, then attack while they reload.
 - Be wary of Bushes and entrances to Buildings if you suspect someone is camping.
 
 # Rarity

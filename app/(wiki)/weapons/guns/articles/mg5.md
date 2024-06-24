@@ -5,7 +5,7 @@ The MG5 is based on a similar design to that of the MG4 light machine gun that p
 
 # Strategies
 ## Using
-- Try and find a good scope. The MG5 is more accurate than many weapons in Suroi, so make sure to take advantage of this.
+- Try to find a good scope. The MG5 is more accurate than many weapons in Suroi, so make sure to take advantage of this.
 - Reload whenever you're not in combat.
   - Not only will this give you a full magazine to work with, it also frees up more space in your pack for ammunition.
   - The MG5 has the second longest reload of any weapon, so reload out of combat and avoid reloading in combat if possible.
@@ -24,7 +24,7 @@ The MG5 is based on a similar design to that of the MG4 light machine gun that p
   - If you see or hear shots, try not to stay out in the open and find cover.
 - Use lots of adrenaline and strafe the opponent to dodge bullets.
   - This is effective at wasting entire magazines and taking little damage if the opponent is fairly unskilled.
-- Another high-DPS weapon such as [MCX Spear](/weapons/guns/mcx_spear) or a [Mini-14](/weapons/guns/mini14) can catch a MG5 user off-guard if they are reloading or out in the open.
+- Another high-DPS weapon such as, [MCX Spear](/weapons/guns/mcx_spear) or a [Mini-14](/weapons/guns/mini14) can catch a MG5 user off-guard if they are reloading or out in the open.
 - Waste your opponent's ammunition by dodging and hiding behind cover.
 
 # Obtaining

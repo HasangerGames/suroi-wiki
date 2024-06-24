@@ -4,8 +4,8 @@ The **Smoke Grenade** is a [Throwable](/throwables) added in the v0.15.0 "Pullin
 ## Using
 - The Smoke Grenade can be used as a way to quickly get a temporary place to hide.
   - This means that you can use it as a way to easily dodge bullets or to heal, as the enemy does not know where you are.
-  - You can also use it in offense as a way to hide yourself while attacking, making it harder for your enemy to find your exact location.
-  - However, while inside smoke, your scope is reduced to 1x, which can be make it hard to see enemies. 
+  - You can also use it on offense as a way to hide yourself while attacking, making it harder for your enemy to find your exact location.
+  - However, while inside the smoke, your scope is reduced to 1x, which can  make it hard to see enemies. 
 - Unlike the [Frag Grenade](/weapons/throwables/frag_grenade), Smoke Grenades can't be cooked.
 
 ## Countering

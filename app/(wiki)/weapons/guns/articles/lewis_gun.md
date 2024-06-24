@@ -9,20 +9,20 @@ The Lewis gun was invented in 1911 by Isaac Newton Lewis, a U.S. Army colonel. I
 ## Using
 
 - The Lewis Gun is a great weapon for clearing out obstacles, so don't be afraid to use it to destroy enemy cover.
-- Due to its long reload time, it is important to reload this weapon whenever you have the chance. You should also make sure to take cover when reloading as you are vulnerable.
+- Due to its long reload time, it is important to reload this weapon whenever you have the chance. You should also make sure to take cover when reloading, as you are vulnerable.
 - Make sure to pick up some additional ammunition for this weapon as it only spawns with 2 magazines' worth. This is especially important if you plan on using it to destroy obstacles.
 - Like other LMGs, it is important to pair this gun up with a secondary weapon that can be used in close quarters. The Lewis Gun is not very effective at close range and may leave you vulnerable if your opponent decides to rush you.
-  - Conversely, the Lewis Gun is fairly effective at long range so try to keep your distance from enemies.
-  - It is inadvisable to use this weapon within [Buildings](/buildings) and tight spaces where you can easily be rushed or ambushed.
+  - Conversely, the Lewis Gun is fairly effective at long range, so try to keep your distance from enemies.
+  - It is inadvisable to use this weapon within [Buildings](/buildings) and tight spaces, where you can easily be rushed or ambushed.
 
 ## Countering
 
-- Make sure to have a short-range, high DPS weapon ready as the Lewis Gun performs poorly in close quarters.
+- Make sure to have a short-range, high DPS weapon ready, as the Lewis Gun performs poorly in close quarters.
   - Good choices include the [Micro Uzi](/weapons/guns/micro_uzi), [Flues](/weapons/guns/flues) or [HP18](/weapons/guns/hp18)
 - As the Lewis Gun can easily shred basic cover such as [Trees](/obstacles/tree) or [Rocks](/obstacles/rock), take cover behind indestructible objects such as Buildings or Containers.
   - Keep in mind, however, that the bullets spent on destroying your cover are bullets that aren't hitting you, so these forms of cover are still useful.
 - Stay away from explosive [Barrels](/obstacles/barrel) as the Lewis Gun can pop them extremely quickly and without warning.
-- Try to lure the player closer to you as the Lewis Gun is not very effective at close range.
+- Try to lure the player closer to you, as the Lewis Gun is not very effective at close range.
 - If you decide to rush the enemy, keep in mind they might have a secondary high DPS weapon.
 
 # Obtaining

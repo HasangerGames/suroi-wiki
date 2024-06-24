@@ -15,7 +15,7 @@ The USAS-12 was designed in 1989 by John Trevor Jr. and was based on previous au
 - The explosion and shrapnel have a high obstacle multiplier. Use this to shred cover such as [Tree](/obstacles/tree) and [Rocks](/obstacles/rock).
   - Being splash damage, it can "go around" obstacles; in other words, you don't need to have a line of sight with your opponent to damage them. This is very powerful.
 - Be careful not to accidentally damage yourself when using the USAS-12 at close range.
-- The USAS-12 has a slow bullet speed so you will need to lead your shots when firing at moving targets.
+- The USAS-12 has a slow bullet speed, so you will need to lead your shots when firing at moving targets.
 
 ## Countering
 
