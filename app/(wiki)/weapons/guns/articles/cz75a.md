@@ -2,18 +2,18 @@ The **CZ 75 Automatic**, known in-game as the **CZ-75A**, is an automatic pistol
 
 # Background
 
-The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil system similar to the Browning Hi-Power pistol, but unlike most pistols the slide rides inside its frame rails rather than outside. The CZ 75 Automatic variant was introduced in 1992 and has found use in military and law enforcement settings. It features a longer barrel with a compensator and a spot to attach an extra magazine (which can also be used as a foregrip). The CZ 75 is used worldwide primarily by police.
+The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil system similar to the Browning Hi-Power pistol, but unlike most pistols, the slide rides inside its frame rails rather than outside. The CZ 75 Automatic variant was introduced in 1992 and has found use in military and law enforcement settings. It features a longer barrel with a compensator and a spot to attach an extra magazine (which can also be used as a foregrip). The CZ 75 is used worldwide, primarily by police.
 
 # Strategies
 
 ## Using
 
-- The CZ-75A is viable early-game in close-range against players with low-health armor. It loses its effectiveness against Level 2 and Level 3 [Armor](/equipment/armor) and is underpowered compared to other spray weapons such as the [Micro Uzi](/weapons/guns/micro_uzi).
+- The CZ-75A is viable early-game in close-range against players with low-health armor. It loses its effectiveness against Level 2 and Level 3 [Armor](/equipment/armor) and is underpowered compared to other spray weapons, such as the [Micro Uzi](/weapons/guns/micro_uzi).
 - Make sure to pick up as much 9mm ammunition as you can, as the CZ-75A uses a lot of it.
-- The CZ-75A is most effective in CQC combat such as [Buildings](/buildings).
+- The CZ-75A is most effective in CQC combat, such as [Buildings](/buildings).
 - Most weapons are better than the CZ-75A, so replace it as soon as you can.
 - Dual CZ-75As can work well early-game if you can't find a [Micro Uzi](/weapons/guns/micro_uzi) or a shotgun.
-  - They can work later well in a round but aren't as effective against stronger armor due to the high spread and low damage and range.
+  - They can work well later in a round, but they aren't as effective against stronger armor due to the high spread and low damage and range.
 - The best way to use Dual CZ-75As is to surprise your opponent when they don't expect an attack.
 
 ## Countering

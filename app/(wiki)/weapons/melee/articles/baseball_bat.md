@@ -2,7 +2,7 @@ The **Baseball Bat** is a melee weapon added in the v0.5.0 "Locked & Loaded" upd
 
 # Background
 
-The Baseball Bat is a smooth wooden or metal club used in the sport of baseball to hit a baseball after it has been thrown. By regulation, a baseball bat may not be larger than 2.75 inches in diameter and no more than 42 inches in length. A baseball bat can also be used in other ways such as bludgeoning people.
+The Baseball Bat is a smooth wooden or metal club used in the sport of baseball to hit a baseball after it has been thrown. By regulation, a baseball bat may not be larger than 2.75 inches in diameter and no more than 42 inches in length. A baseball bat can also be used in other ways, such as bludgeoning people.
 
 # Strategies
 
@@ -14,8 +14,8 @@ The Baseball Bat is a smooth wooden or metal club used in the sport of baseball 
 ## Countering
 
 - As with other melee weapons, the best way to avoid them is to keep the distance between you and your opponent.
-- The [K-Bar](/weapons/melee/kbar) can out-DPS the Baseball Bat so it is an effective counter to it.
-  - [Fists](/weapons/melee/fists) also beat the baseball in terms of DPS and can be used as another counter. However, this requires much skill as fists have a much smaller swing range.
+- The [K-Bar](/weapons/melee/kbar) can out-DPS the Baseball Bat, so it is an effective counter to it.
+  - [Fists](/weapons/melee/fists) also beat the baseball in terms of DPS and can be used as another counter. However, this requires much skill, as fists have a much smaller swing range.
 
 # Obtaining
 

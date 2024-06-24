@@ -2,7 +2,7 @@ The **Ruger Mini-14**, known in-game as the **Mini-14**, is a DMR utilizing 5.56
 
 # Background
 
-The Mini-14, as the name suggests, is based on the bigger 7.62x51mm NATO firing M14. It uses a custom gas design but fires the smaller 5.56x45mm NATO or .223 Remington cartridge. Variants chambered for other calibers such as 7.62x39mm also exist. The Mini-14 was popular with police forces in the United States for many years before being largely replaced by M4-style rifles. It is still in use in a variety of police and security forces worldwide.
+The Mini-14, as the name suggests, is based on the bigger 7.62x51mm NATO firing M14. It uses a custom gas design but fires the smaller 5.56x45mm NATO or .223 Remington cartridge. Variants chambered for other calibers such as 7.62x39mm also exist. The Mini-14 was popular with police forces in the United States for many years before being largely replaced by M4-style rifles. It is still in use by a variety of police and security forces worldwide.
 
 # Strategies
 

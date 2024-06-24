@@ -16,12 +16,12 @@ The Tango 51 is a tactical sniper rifle designed and manufactured by Tactical Op
 
 ## Countering
 
-- Don't rush your opponent directly if you plan on attacking close-range as it makes you an easy shot. Instead, strategically move around obstacles and strafe in open spaces to minimize the number of shots your opponent hits.
+- Don't rush your opponent directly if you plan on attacking close-range, as it makes you an easy shot. Instead, strategically move around obstacles and strafe in open spaces to minimize the number of shots your opponent hits.
 - If you have another sniper rifle such as the [Mosin-Nagant](/weapons/guns/mosin), it can be used for a long-range fight between you and your opponent. Be aware that the Tango deals a lot of damage, so hide behind [Obstacles](/obstacles) and strafe whenever possible.
 
 # Obtaining
 
-The most reliable way to get a Tango 51 is to head for the [Ship](/buildings/ship) at the [Port](/buildings/port) at the beginning of the game, and solve the puzzle. The Tango 51 can also be found extremely rarely from common sources of loot such as [Regular Crates](/obstacles/regular_crate). It also spawns in regular [Airdrops](/obstacles/airdrop_crate).
+The most reliable way to get a Tango 51 is to head for the [Ship](/buildings/ship) at the [Port](/buildings/port) at the beginning of the game, and solve the puzzle. The Tango 51 can also be found extremely rarely from common sources of loot, such as [Regular Crates](/obstacles/regular_crate). It also spawns in regular [Airdrops](/obstacles/airdrop_crate).
 
 # Trivia
 

@@ -9,7 +9,7 @@ The Gas Can is a type of storage container for fuels and is usually made out of 
 ## Using
 
 - The Gas Can has almost identical stats to the fists, only having 2 extra damage and a larger swing range.
-  - Thus it should be used as fists.
+  - Thus, it should be used as fists.
 - The generator is used for a puzzle on the ship.
 - Due to its similarity with fists, the same countering strategies for it also apply to the Gas Can.
 
