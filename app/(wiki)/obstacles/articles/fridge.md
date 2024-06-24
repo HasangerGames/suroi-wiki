@@ -6,7 +6,7 @@ Fridges spawn in the Kitchens of both [Houses](/buildings/house) and [Small Hous
 
 # Loot & More
 
-The Fridge reflects bullets and always drops 2-3 Colas upon being broken.
+The Fridge reflects bullets and always drops 2-3 [Colas](/healing/colas) upon being broken.
 
 # Tips
 

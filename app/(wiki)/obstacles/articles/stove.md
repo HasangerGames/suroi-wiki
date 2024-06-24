@@ -10,7 +10,7 @@ The Stove reflects bullets and always explodes upon being broken.
 
 # Tips
 
-- If another player is inside the Small House and is in the Kitchen, you can shoot at the Stove with an assault rifle or LMG to explode it and damage/kill them.
+- If another player is inside the Small House and is in the Kitchen, you can shoot at the Stove with an assault rifle or LMG to explode it and damage or kill them.
 - Be wary of the Stove when you're inside the Small House.
 
 # Trivia
