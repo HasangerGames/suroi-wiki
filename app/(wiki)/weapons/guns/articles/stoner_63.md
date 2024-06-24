@@ -12,7 +12,7 @@ The Stoner 63 was developed by Eugene Stoner after he left ArmaLite in 1961. Sto
   - The high moving accuracy can overpower other automatic weapons at long range.
 - The Stoner 63 chews through ammo if you're not careful. Make sure to pick up ammo and avoid wasting shots.
 - Due to its high obstacle multiplier and good DPS, the Stoner 63 is a great weapon for destroying obstacles. Use it to clear out enemy cover.
-- Make sure to take cover while reloading as this gun has a long reload time.
+- Make sure to take cover while reloading, as this gun has a long reload time.
   - It is useful to pair this weapon with a short-range weapon (e.g., a [Flues](/weapons/guns/flues) or [Model 37](/weapons/guns/model_37)) to cover its weakness at close range.
 
 ## Countering
