@@ -10,7 +10,7 @@ The maul is a long-handled hammer with a heavy head of wood, lead, iron, or stee
 ## Using 
 
 - Try getting close to your opponent without losing too much health, then use the one-tap clicking method when you're close enough. The Maul is also one of the melees with higher damage.
-  - It's not advised to rush someone with the Maul if they have a weapon as the Maul has a long cooldown.
+  - It's not advised to rush someone with the Maul if they have a weapon, as the Maul has a long cooldown.
 - Using the Maul to kill your opponent requires skill at dodging and good reaction time if your opponent changes the direction they move in often.
 
 ## Countering 

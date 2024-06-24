@@ -9,8 +9,8 @@ The M3K is an affordable budget semi-automatic shotgun offered by Stoeger Indust
 ## Using
 
 - The M3K has the longest range out of any shotgun, as well as great accuracy. Use this to avoid close confrontations with higher-DPS weapons.
-  - A good strategy is to find an obstacle such as a [Rock](/obstacles/rock) and "peek out" to fire a shot, and then keep hiding. This will avoid much of the damage from weapons such as assault rifles and DMRs.
-- Use the M3K with another shotgun such as the [Model 37](/weapons/guns/model_37). This will cover both long-range and short-range.
+  - A good strategy is to find an obstacle, such as a [Rock](/obstacles/rock) and "peek out" to fire a shot, and then keep hiding. This will avoid much of the damage from weapons, such as assault rifles and DMRs.
+- Use the M3K with another shotgun, such as the [Model 37](/weapons/guns/model_37). This will cover both long-range and short-range.
   - This works best with quickswitching.
 - If your opponent also has an M3K, use the aforementioned "peek" strategy and avoid being damaged while wasting their ammo.
 - The M3K's long-range also pairs well with a sniper like the [Mosin-Nagant](/weapons/guns/mosin), if you quickswitch both. This is great if you can't find another sniper.
@@ -18,8 +18,8 @@ The M3K is an affordable budget semi-automatic shotgun offered by Stoeger Indust
 ## Countering
 
 - If you have high adrenaline, you can strafe the M3K user, as the tight spread makes it more punishing than other shotguns.
-- The M3K's long barrel makes it more difficult to use in very close combat, where weapons such as the [Flues](/weapons/guns/flues) are much better.
-  - This may also work with an SMG such as a [Micro Uzi](/weapons/guns/micro_uzi), but watch out if they try to melee you.
+- The M3K's long barrel makes it more difficult to use in very close combat, where weapons, such as the [Flues](/weapons/guns/flues) are much better.
+  - This may also work with an SMG, such as a [Micro Uzi](/weapons/guns/micro_uzi), but watch out if they try to melee you.
 
 # Obtaining
 

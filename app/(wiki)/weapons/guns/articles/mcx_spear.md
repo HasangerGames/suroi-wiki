@@ -10,23 +10,23 @@ The MCX Spear is the civilian version of the XM7, which was selected by the US m
 
 - The MCX Spear has a higher DPS than comparable guns such as the [AK-47](/weapons/guns/ak47), [ARX-160](/weapons/guns/arx160) and [AUG](/weapons/guns/aug).
   - Use this to your advantage when facing an opponent using one of these guns.
-  - It is also more accurate which means a larger scope (4x or higher) will help you outrange your opponents.
+  - It is also more accurate, which means a larger scope (4x or higher) will help you outrange your opponents.
 - Keep in mind that the magazine capacity of the MCX Spear is on the lower side, being 20 instead of the standard 30 for similar weapons. It is also hampered by a longer reload time.
-  - Thus, it is important to reload often (behind cover of course) and to not miss your shots.
+  - Thus, it is important to reload often (behind cover, of course) and not miss your shots.
 - While the MCX Spear can be used as a CQC weapon due to its higher DPS, it is still advisable to carry a secondary, high-DPS weapon such as the [Micro Uzi](/weapons/guns/micro_uzi) or [Model 37](/weapons/guns/model_37) to deal with enemies at close range.
 
 ## Countering
 
 - Rushing an MCX Spear user is more risky than other similar assault rifles due to its higher DPS.
   - If you do decide to rush, make sure to have a high DPS weapon such as the [Micro Uzi](/weapons/guns/micro_uzi) or [Flues](/weapons/guns/flues).
-- If you have a higher scope and a sniper or DMR you could try to outrange them. Beware though, as the MCX Spear is still a powerful weapon at range.
+- If you have a higher scope and a sniper or DMR you could try to outrange them. Beware, though, as the MCX Spear is still a powerful weapon at range.
 - Generally, the MCX Spear is a potent weapon, especially in the hands of a skilled player.
 - Use cover, particularly indestructible cover (like an [Oil Tank](/obstacles/oil_tank) or Container) when possible, as being caught in the open against an MCX Spear user is a death sentence due to its high DPS.
 - Exploit the MCX Spear's low magazine capacity and long reload time by attacking when they are reloading.
 
 # Obtaining
 
-The MCX Spear is found rarely as world loot in locations such as [Regular Crates](/obstacles/regular_crate). It is a more common drop from special locations such as [AEGIS](/obstacles/aegis_crate) and [Flint Crate](/obstacles/flint_crate).
+The MCX Spear is rarely found as world loot in locations such as [Regular Crates](/obstacles/regular_crate). It is a more common drop from special locations such as [AEGIS](/obstacles/aegis_crate) and [Flint Crate](/obstacles/flint_crate).
 
 - The MCX Spear has a 99% chance to be found in the Office at the [Refinery](/buildings/refinery).
 

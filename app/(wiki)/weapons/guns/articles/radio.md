@@ -12,7 +12,7 @@ Radios are a type of communication device that utilizes electromagnetic radio wa
 - It deals no damage and cannot be used as a [Weapon](/weapons).
 
 # Obtaining
-- Radios can be found rarely from common loot sources and regular [Airdrops](/obstacles/airdrop_crate). The easiest way to find an Radio is to head to the [Sea Traffic Control](/buildings/sea_traffic_control), where there is a guaranteed drop.
+- Radios can be found rarely from common loot sources and regular [Airdrops](/obstacles/airdrop_crate). The easiest way to find a Radio is to head to the [Sea Traffic Control](/buildings/sea_traffic_control), where there is a guaranteed drop.
 
 ## Trivia
 
