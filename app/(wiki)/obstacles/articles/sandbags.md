@@ -7,7 +7,7 @@ Sandbags can spawn around the [Armory](/buildings/armory) and [Port](/buildings/
 Sandbags do not drop loot as they cannot be destroyed.
 
 # Tips
-- Since Sandbags are indestructible they can be used as a good source of cover.
+- Since Sandbags are indestructible, they can be used as a good source of cover.
 - Grenades can fly over Sandbags which can be used to flush out hiding opponents.
   - Likewise, you can hide behind Sandbags and throw grenades without the risk of getting shot.
 
