@@ -23,7 +23,7 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
   - This isn't a good idea though, because of the very rare ammo.
   - If the opponent is near a [Barrel](/obstacles/barrel) or [Super Barrel](/obstacles/super_barrel) that is low on health and smoking, you can shoot it to do extra damage (though probably not as much as actually hitting them with the Barrett).
 - Use LMGs such as the [Stoner 63](/weapons/guns/stoner_63) to destroy cover at long range, and then pick off players with Barrett.
-  - You can also use assault rifles to weaken your opponent and then finish them off with Barrett.
+  - You can also use assault rifles to weaken your opponent and then finish them off with the Barrett.
 - By hiding in a [Bush](/obstacles/bush) and camping, you can surprise your opponents and kill them before they can react.
 
 ## Countering
@@ -50,6 +50,8 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
 
 # History
 
+- v0.15.0
+  - Casing spawn x-offset decreased to 2 (from 4)
 - v0.13.0
   - Added
 

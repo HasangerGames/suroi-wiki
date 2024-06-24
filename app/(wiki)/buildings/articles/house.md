@@ -1,6 +1,5 @@
 <Removed />
-
-The **House** is a building added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It was later removed in the v0.11.0 "Making Waves" update on October 22nd, 2023. It has a decent amount of loot for early games.
+The **House** was a building added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It was later removed from spawning on the map in the v0.11.0 "Making Waves" update on October 22nd, 2023 and completely removed in the v0.17.0 "Just the Two of Us" update on April 1st, 2024. It had a decent amount of loot for early games.
 
 # Areas
 
@@ -41,8 +40,10 @@ The Garage contains a Bookshelf, [Regular Crate](/obstacles/regular_crate), [Bar
 
 # History
 
+- v0.17.0
+  - Completely removed from the game
 - v0.11.0
-  - Removed
+  - Removed from the map
 - v0.10.0
   - Added holes in the roof to improve visibility
 - v0.9.0

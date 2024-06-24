@@ -36,16 +36,13 @@ export default function ArmorCalc() {
           className="flex-1 rounded bg-muted"
           onChange={(e) => {
             if (e.target.value === "") setSelectedGun(null);
-            else
-              setSelectedGun(
-                Guns.definitions.find((gun) => gun.idString === e.target.value) ?? null,
-              );
+            else setSelectedGun(Guns.fromStringSafe(e.target.value) ?? null);
           }}
         >
           <option value="">Select One</option>
-          {Guns.definitions.map((gun) => (
-            <option value={gun.idString} key={gun.idString}>
-              {gun.name}
+          {Guns.definitions.map(({ idString, name }) => (
+            <option value={idString} key={idString}>
+              {name}
             </option>
           ))}
         </select>

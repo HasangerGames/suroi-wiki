@@ -55,19 +55,23 @@ export interface GenericMDXPageFactoryArgs {
 }
 
 export function GenericGenerateStaticParamsFactory(items: ObjectDefinitions) {
-  return () => items.definitions.map((item) => ({ item: item.idString }));
+  return () => items.definitions.map(({ idString }) => ({ item: idString }));
 }
 
 export function GenericGenerateMetadataFactory(items: ObjectDefinitions) {
-  return function ({ params }: { params: { item: string } }): Metadata {
-    const item = items.definitions.find((item) => item.idString === params.item);
-    if (!item) notFound();
+  return function ({
+    params: { item },
+  }: {
+    params: { item: string };
+  }): Metadata {
+    const def = items.fromStringSafe(item);
+    if (!def) notFound();
 
     return {
-      title: item.name,
+      title: def.name,
       openGraph: {
         type: "article",
-        images: [`/api/og/${item.idString}`],
+        images: [`/api/og/${def.idString}`],
       },
     };
   };
