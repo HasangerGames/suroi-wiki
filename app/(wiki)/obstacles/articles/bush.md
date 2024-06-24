@@ -1,4 +1,4 @@
-The **Bush** is an [Obstacle](/obstacles) that spawns frequently around the map. It was added to the game in the v0.1.0 "We're back, baby" update on May 20th, 2023. They are mostly opaque and can be moved through. The **Blueberry Bush** is a larger and opaque variation of the standard Bush and contains loot underneath.
+The **Bush** is an [Obstacle](/obstacles) that spawns frequently around the map. It was added to the game in the v0.1.0 "We're back, baby" update on May 20th, 2023. They are mostly opaque and can be moved through. The **Blueberry Bush** is a larger and more opaque variation of the standard Bush and contains loot underneath.
 
 # Location & Spawning
 
@@ -21,7 +21,7 @@ The Bush does not have any loot, but the Blueberry Bush has decent [loot](/loot#
   - Usually, players who are healing in a Bush are low on health, so this can be an easy kill.
   - Some newer players may not fully hide themselves in Bushes, and become easy targets.
 - If you aren't sure where players are during the final stages of the zone, they could be hiding in Bushes. Shoot at a couple and see if a player comes out.
-- Always try and pick up the loot in Blueberry Bushes, as they can have rare loot occasionally and are a good source of Healing Items.
+- Always try to pick up the loot in Blueberry Bushes, as they can have rare loot occasionally and are a good source of Healing Items.
 
 # Trivia
 
