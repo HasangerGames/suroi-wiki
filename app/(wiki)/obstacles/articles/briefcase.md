@@ -6,7 +6,7 @@ A Briefcase always spawns in the Vaults of the [Armory](/buildings/armory) and t
 
 # Loot & More
 
-The Briefcase can drop a [Vector](/weapons/guns/vector), an [ARX-160](/weapons/guns/arx160), a [Vepr-12](/weapons/guns/vepr12), or extremely rarely, a [G19](/weapons/guns/g19).
+The Briefcase can drop a [Vector](/weapons/guns/vector), an [ARX-160](/weapons/guns/arx160), a [Vepr-12](/weapons/guns/vepr12), or, extremely rarely, a [G19](/weapons/guns/g19).
 
 # Tips
 

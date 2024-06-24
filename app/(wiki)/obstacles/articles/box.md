@@ -11,7 +11,7 @@ The Box has similar [loot](/loot#box) to the [Regular Crate](/obstacles/regular_
 # Tips
 
 - Boxes are a compact and decent source of loot.
-- If you're trying to find a gun, opt to break Regular Crates first since they are more likely to drop guns.
+- If you're trying to find a gun, opt to break Regular Crates first, since they are more likely to drop guns.
 
 # Trivia
 

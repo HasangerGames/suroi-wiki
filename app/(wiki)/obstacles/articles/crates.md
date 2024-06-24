@@ -4,7 +4,7 @@ Crates are a type of obstacle that spawns around the map randomly. They come in 
 
 Crates are generally very common and spawn frequently out in the open. Crates and their variants can also be found inside some buildings.
 
-The Regular Crate is the most common type of crate. Grenade Crates are fairly common but less common compared to Regular Crates. The AEGIS and Flint crates are rarer. Only five AEGIS crates and five Flint crates spawn per map outside of structures. A single melee crate always spawns per map.
+The Regular Crate is the most common type of crate. Grenade Crates are fairly common, but less common compared to Regular Crates. The AEGIS and Flint crates are rarer. Only five AEGIS crates and five Flint crates spawn per map outside of structures. A single melee crate always spawns per map.
 
 Regular Crates and the Melee Crate are visible on the minimap, but AEGIS and Flint crates are not.
 
@@ -15,9 +15,9 @@ All crates drop some sort of loot. The Regular Crate drops the [lowest quality l
 # Tips
 
 - Regular Crates are very common, so you can usually find one if you need loot.
-- Try to go for the AEGIS and Flint crates first as they almost always drop better loot.
+- Try to go for the AEGIS and Flint crates first, as they almost always drop better loot.
   - However, AEGIS and Flint crates do not reveal their locations on the map.
-- Crates can provide limited cover in a pinch, however they are easily destroyed with any type of weapon.
+- Crates can provide limited cover in a pinch, however, they are easily destroyed with any type of weapon.
 
 # Trivia
 
