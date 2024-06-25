@@ -3,7 +3,7 @@ The **Sea Traffic Control** is a building added in the v0.16.0 update "A Sailor'
 
 # Location & Spawning
 
-The Sea Traffic Control structure is located in every game one the shore of the map in a random location.
+The Sea Traffic Control structure is located in every game on the shore of the map in a random location.
 
 ## Entrance
 The entrance to the sea traffic control is guarded by three [Sandbags](/obstacles/sandbags), two [Barrels](/obstacles/barrel), and a [Crate](/obstacles/crate).
@@ -19,7 +19,7 @@ A [Radio](/weapons/guns/radio) spawns on the floor in the interior of every Sea 
 # Tips
 
 - The Radio should be set off as soon as you get hold of it so you can get the Airdrop quicker.
-- This will likely draw the attention of nearby players as Airdrops give off a ping sound when they are deployed on the map.
+- This will likely draw the attention of nearby players, as Airdrops give off a ping sound when they are deployed on the map.
   - Be prepared to fight off other players trying to steal the Airdrop.
   - You can break the gun case in the Interior and use the gun provided to fight players.
   - The Sandbags can help with this as they provide indestructible cover.

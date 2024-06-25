@@ -16,7 +16,7 @@ The Center spawns on the right side of the Armory. It contains two [Chairs](/obs
 
 ## Vault
 
-The Vault spawns in the top left of the Armory. 
+The Vault spawns in the top left corner of the Armory. 
 
 ### Outer Vault
 
@@ -24,17 +24,17 @@ The outer area of the Vault contains four [Buttons](/obstacles/button), two [Gun
 
 ### Inner Vault
 
-The inner area of the Vault can only be accessed by entering a specific password into the four buttons in the outer vault. Once the correct password is entered, the [Vault Door](/obstacles/doors) opens, allowing access to the inner Vault.
+The inner area of the Vault can only be accessed by entering a specific password into the four buttons on the outer vault. Once the correct password is entered, the [Vault Door](/obstacles/doors) opens, allowing access to the inner Vault.
 <Spoiler spoiler="Armory Vault puzzle solution">
 The password to the inner vault is ÖLJY, which is Finnish for "oil". The markings on the floor determine which buttons correspond to which letter.
 </Spoiler>
 
-The inner Vault contains a [Briefcase](/obstacles/briefcase), a [Barrel](/obstacles/barrel), an Ammo Crate, and a [Regular Crate](/obstacles/crates). Due to a bug, the Barrel can be damaged using a [Maul](/weapons/melee/maul) from the outside of the vault.
+The inner Vault contains a [Briefcase](/obstacles/briefcase), a [Barrel](/obstacles/barrel), an Ammo Crate, and a [Regular Crate](/obstacles/crates). Due to a bug, the Barrel can be damaged using a [Maul](/weapons/melee/maul) from outside of the vault.
 
 ## Shed
 
 Main article: [Port Shed](/buildings/port_shed)
-The Shed spawns in the lower right of the Armory.
+The Shed spawns in the lower right corner of the Armory.
 
 ## Porta Potty
 
@@ -44,7 +44,7 @@ The Porta Potty spawns near the exterior of the Vault.
 ## Other
 
 - There is a [M1117](/obstacles/m1117) in the top right of the Armory.
-  - Near it is a [Flint Crate](/obstacles/crates) and two Gun Cases that can drop you weapons and other loot.
+  - Near it is a [Flint Crate](/obstacles/crates) and two Gun Cases that can drop your weapons and other loot.
   - The M1117 reflects bullets and is indestructible.
 - Many Regular Crates, [Barrels](/obstacles/barrel), [Super Barrels](/obstacles/super_barrel), [Sandbags](/obstacles/sandbags), Grenade Crates, as well as several Tear Gas Crates, Gun Cases and Ammo Crates spawn throughout the structure. 
   - These obstacles can be used for cover or loot.
@@ -57,7 +57,7 @@ The Porta Potty spawns near the exterior of the Vault.
   - Unless you spawn close to the Armory early game, don't bother heading for the Armory as it will likely already be looted by the time you arrive.
 - There is plenty of indestructible cover in the Armory, such as Sandbags and the M1117, so fights in this structure often last longer.
   - However, there are plenty of explosive obstacles in the Armory such as the Barrel, so don't get too comfortable.
-- If you want to avoid a fight, only go for the Center and Vault to get the valuable loot from the Armory, then leave immediately.
+- If you want to avoid a fight, only go to the center and Vault to get the valuable loot from the Armory, then leave immediately.
 
 # Trivia
 

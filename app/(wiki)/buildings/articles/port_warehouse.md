@@ -11,7 +11,7 @@ The Port Warehouse contains a bunch of [Regular Crates](/obstacles/regular_crate
 # Tips
 
 - Be careful of the Barrels inside the Port Warehouse, as an opponent could destroy them when you are distracted and kill you.
-- The most valuable loot of the Port Warehouse is arguably the Flint Crate in one of the corners, so aim for that first.
+- The most valuable loot in the Port Warehouse is arguably the Flint Crate in one of the corners, so aim for that first.
 - Use the Forklifts as cover against opponents.
 - If you spawn late in a game and are certain you won't be first to the [Ship](/buildings/ship), it may be wise to get geared up in a Port Warehouse and then confront the player(s) on the Ship.
 

@@ -32,7 +32,7 @@ The Office, located towards the back of the Refinery, contains a wall mount and 
 - Be careful of the entrances into the Refinery building, as it is often hard to tell if another player is inside.
 - The [Small Refinery Barrel](/obstacles/small_refinery_barrel) can be a good way to kill an opponent hiding inside the Refinery and catch them off guard.
 - If you're the first player there, either go for the MCX Spear in the Office or the AEGIS Crates in the Storage Area so you can be geared up.
-- Exercise caution around the barrels in the hallway of the Refinery, as opponents will try and explode them to kill you.
+- Exercise caution around the barrels in the hallway of the Refinery, as opponents will try to explode them to kill you.
 
 # Trivia
 

@@ -22,17 +22,17 @@ The Foyer contains a [Couch](/obstacles/couch), a large [Large Drawer](/obstacle
 
 ## Kitchen & Dining Area
 
-The Kitchen contains a [Stove](/obstacles/stove) and a [Fridge](/obstacles/fridge). - Many players don't realize that the Fridge drops [2-3 Colas](/loot#fridge) when broken. Even late game, you can often check Small Houses and still find some unbroken ones.
+The Kitchen contains a [Stove](/obstacles/stove) and a [Fridge](/obstacles/fridge). - Many players don't realize that the Fridge drops [2-3 Colas](/loot#fridge) when broken. Even late into game, you can often check Small Houses and still find some unbroken ones.
 
 The Dining Area has a [Table](/obstacles/table) with two [Chairs](/obstacles/chair) and a Small Drawer by the door. - Players can hide under the Table.
 
 # Tips
 
-- While the Colas from the Fridge are valuable, try and find a weapon to defend yourself with first in case another player enters the Small House.
+- While the Colas from the Fridge are valuable, try to find a weapon to defend yourself with first in case another player enters the Small House.
 - If you have a gun with good obstacle DPS like an assault rifle or DMR, you can blow up the Stove from outside through the window.
   - This will kill or severely damage opponents.
 - Use doors to block damage and frustrate your enemies.
-  - The door in the Bedroom is particularly effective at this and useful if you have no weapons.
+  - The door in the Bedroom is particularly effective at this, and useful if you have no weapons.
 
 # Trivia
 
