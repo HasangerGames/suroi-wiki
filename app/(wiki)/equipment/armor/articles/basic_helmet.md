@@ -2,7 +2,7 @@ The **Basic Helmet** is a piece of [Equipment](/equipment) added in the v0.7.0 "
 
 # Obtaining
 
-The Basic Helmet is easily obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). 
+The Basic Helmet is easily obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates).
 
 # Trivia
 
@@ -11,6 +11,6 @@ The Basic Helmet is easily obtained from common loot sources such as normal, AEG
 # History
 
  - v0.13.0
-   - Unique pickup sound added 
+   - Unique pickup sound added
  - v0.7.0
-   - Added 
+   - Added
