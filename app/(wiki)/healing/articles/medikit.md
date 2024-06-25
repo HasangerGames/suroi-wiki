@@ -8,11 +8,11 @@ Medical kits, also known as first aid kits, contain a variety of different suppl
 
 ## Using
 
-- Try and save the Medikit for an emergency when you need it. Medikits are rare and you might not be able to use another one.
+- Try and save the Medikit for an emergency when you need it. Medikits are rare, and you might not be able to use another one.
   - If you see a Medikit, it is worth grabbing since you may need it later on.
 - The Medikit is more efficient than Gauze, especially if you are low on health.
 - Make sure you are in a safe and/or easily defensible location when using a Medikit, as the slowdown and long usage time make you vulnerable.
-  - If someone starts attacking you, cancel the Medikit and start fighting the (default keybind is X).
+  - If someone starts attacking you, cancel the Medikit and start fighting (the default keybind is X).
   - However if you still have a little bit of health and are behind cover, you might be able to let the Medikit finish before fighting.
 - If you are caught in the gas towards the later stages of the game, use the Medikit as soon as you start taking damage, as you will need to out-heal the gas.
   - Use adrenaline to help regenerate more health.
@@ -20,8 +20,8 @@ Medical kits, also known as first aid kits, contain a variety of different suppl
 ## Countering
 
 - If you see a player out in the open using healing particles, you should attack them. There's a good chance that they are low on health and will make for an easy kill.
-  - Watch out though, as some players will "bait" and pretend to heal when they actually have high health.
-- If you're in a fight and you think your opponent is low enough that they are trying to use a Medikit, keep being aggressive and attack them. Don't give them the chance to use a Medikit.
+  - Watch out, though, as some players will "bait" and pretend to heal when they actually have high health.
+- If you're in a fight, and you think your opponent is low enough that they are trying to use a Medikit, keep being aggressive and attack them. Don't give them the chance to use a Medikit.
 
 ## Obtaining
 
