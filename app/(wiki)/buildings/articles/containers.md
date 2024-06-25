@@ -6,7 +6,7 @@ Up to twelve Containers spawn in random positions on the map. Many Containers ca
 
 # Loot & More
 
-Containers always contain one ground loot item on its floor.
+Containers always contain one ground loot item on it's floor.
 
 # Tips
 - The outside or inside of the Container is great for cover because the Container has indestructible walls.
@@ -16,7 +16,7 @@ Containers always contain one ground loot item on its floor.
   - Make sure your container doesn't have a hole at the top, as your opponent can see you through the hole.
 - If you see a player inside a Container with one exit, you can fire bullets into the Container with a high-DPS weapon. Your opponent won't be able to see you because they have their scopes disabled when inside a Container.
   - This usually kills your opponent because the interior of a Container also reflects bullets, making them harder to dodge.
-  - However, don't get too close as your opponent could rush you.
+  - However, don't get too close, as your opponent could rush you.
     - You can also be hit by your own bullets.
 # Trivia
 
