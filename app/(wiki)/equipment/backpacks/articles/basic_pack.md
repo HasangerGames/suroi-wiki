@@ -1,4 +1,4 @@
-The **Basic Pack** is a piece of [Equipment](/equipment) added in the v0.7.0 "Geared Up" update on July 10, 2023. It is the first backpack tier (not including the [Bag](/equipment/backpacks/bag)) and can fit more amounts of ammo, healing items, and throwables compared to the Bag.
+The **Basic Pack** is a piece of [Equipment](/equipment) added in the v0.7.0 "Geared Up" update on July 10, 2023. It is the first backpack tier (not including the [Bag](/equipment/backpacks/bag)) and can fit more  ammo, healing items, and throwables compared to the Bag.
 
 # Obtaining
 
