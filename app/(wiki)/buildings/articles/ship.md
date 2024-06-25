@@ -21,7 +21,7 @@ The Vault, located in the bow of the Cargo Ship, is the most valuable area of th
 <Spoiler spoiler="Ship puzzle solution">
   To solve the puzzle, grab the [Gas Can](/weapons/melee/gas_can) from
   the Control Room. Then, walk to the front of the ship and go to the generator.
-  Use the Gas Can to activate the generator and the door to the Vault will open.<br></br><br></br>
+  Use the Gas Can to activate the generator, and the door to the Vault will open.<br></br><br></br>
   If you don't want to use the Tango 51(s) inside the vault, you can take the Gas Can and
   leave. That way, no other players will be able to unlock the vault unless they kill you.
 </Spoiler>
