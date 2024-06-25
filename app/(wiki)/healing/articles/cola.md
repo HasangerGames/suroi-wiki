@@ -2,7 +2,7 @@
 
 # Background
 
-Cola is a type of carbonated drink typically flavored with citrus oils, vanilla, and other flavorings. They usually have a large amount of sugar and some have caffeine as well.
+Cola is a type of carbonated drink typically flavored with citrus oils, vanilla, and other flavorings. They usually have a large amount of sugar, and some have caffeine as well.
 
 # Strategies
 
@@ -12,18 +12,18 @@ Cola is a type of carbonated drink typically flavored with citrus oils, vanilla,
 - The health regeneration, however, is not linear. Make sure to keep your adrenaline above 50 to take advantage of it.
 - You might be able to "bait" your opponent into attacking by pretending to use a Cola, even though you don't need it.
 - Make sure you are in a safe and/or easily defensible location when using Cola, as the slowdown makes you vulnerable.
-  - If someone starts attacking you, cancel the Cola and start fighting the (default keybind is X).
+  - If someone starts attacking you, cancel the Cola and start fighting (the default keybind is X).
 - If you only have 1 or 2 Colas, it may be worth saving them until you can find another Cola or a Tablet, as then you can get the full health boost.
 - Colas are better used to "top off" your adrenaline bar, whereas Tablets are more efficient at actually filling up the bar.
 
 ## Countering
 
-- If you see someone out in the open with adrenaline particles, you can quickly attack them. This might take them off guard and take off a large chunk of their health.
+- If you see someone out in the open with adrenaline particles, you can quickly attack them. This might take them off guard and take away a large chunk of their health.
   - Just because someone is using adrenaline does not mean they have low health, as with Gauze and Medikits.
 
 # Obtaining
 
-Cola is most readily obtained by breaking toilets in buildings, as well as the Porta-Potty. However, the best way to get Cola is to break the fridge, which always drops 2-3 Cola. Cola can also be found in crates and even world loot.
+Cola is most readily obtained by breaking toilets in buildings, as well as the Porta-Potty. However, the best way to get Cola is to break the fridge, which always drops 2-3 Cola. Cola can also be found in crates and even in world loot.
 
 # Trivia
 

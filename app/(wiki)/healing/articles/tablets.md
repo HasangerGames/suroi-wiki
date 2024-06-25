@@ -1,8 +1,8 @@
-**Tablets** is are a consumable that restores 50 adrenaline, added in the v0.6.0 "Tablets & Tweaks" update on July 2nd, 2023. They spawn rarely around the map. To use Tablets, either click on the icon in your inventory or press 8 on your keyboard. Tablets take 5 seconds to use.
+**Tablets** is are a consumable that restores 50 adrenaline, added in the v0.6.0 "Tablets & Tweaks" update on July 2nd, 2023. They rarely spawn around the map. To use Tablets, either click on the icon in your inventory or press 8 on your keyboard. Tablets take 5 seconds to use.
 
 # Background
 
-Tablets, also known as pills, are a solid form of oral medicine. They usually include a variety of active substances and excipients in a powder form, which is then made into a tablet shape by either molding or compression.
+Tablets, also known as pills, are a solid form of oral medicine. They usually include a variety of active substances and excipients in powder form, which is then made into a tablet shape by either molding or compression.
 
 # Strategies
 
@@ -12,7 +12,7 @@ Tablets, also known as pills, are a solid form of oral medicine. They usually in
 - The health regeneration, however, is not linear. Make sure to keep your adrenaline above 50 to take advantage of it.
 - You might be able to "bait" your opponent into attacking by pretending to use a Tablet, even though you don't actually need it.
 - Make sure you are in a safe and/or easily defensible location when using Tablets, as the long slowdown makes you vulnerable.
-  - If someone starts attacking you, cancel the Tablets and start fighting the (default keybind is X).
+  - If someone starts attacking you, cancel the Tablets and start fighting (the default keybind is X).
 - If you only have 1 Tablet, it may be worth saving it until you can find another Tablet or a Cola, as then you can get the full health boost.
 - Tablets are better used to fill up the adrenaline bar, whereas Colas are ideal to "top off" your adrenaline.
 
@@ -23,12 +23,12 @@ Tablets, also known as pills, are a solid form of oral medicine. They usually in
 
 # Obtaining
 
-Tablets are most readily obtained by breaking toilets in buildings, as well as the Porta-Potty. Tablets can also be rarely found in crates and even world loot.
+Tablets are most readily obtained by breaking toilets in buildings, as well as the Porta-Potty. Tablets can also be rarely found in crates or even world loot.
 
 # Trivia
 
 - Presumably, the Tablets are some kind of painkiller
-- The Tablets in the texture for the item are the same color as the suroi logo
+- The Tablets in the texture for the item are the same color as the Suroi logo
 
 # History
 
