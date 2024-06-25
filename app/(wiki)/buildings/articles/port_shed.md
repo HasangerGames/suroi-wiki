@@ -12,7 +12,7 @@ The Port Shed has barely any loot (only a [Bookshelf](/obstacles/bookshelf) and 
 
 - While it doesn't have the best loot, the Port Shed's indestructible nature makes it a good refuge if you need to heal during a fight.
 - You can hide under the desk to ambush other players.
-  - This is generally not as nearly as effective as hiding under the desk in the [Refinery](/buildings/refinery), because few players bother to enter it.
+  - This is generally not as effective as hiding under the desk in the [Refinery](/buildings/refinery), because few players bother to enter it.
 
 # Trivia
 

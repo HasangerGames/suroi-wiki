@@ -6,7 +6,7 @@ The Crane always spawns parallel to the [Ship](/buildings/ship), and only one sp
 
 # Loot & More
 
-The Crane itself does not have any loot, but it does have a large number of [AEGIS](/obstacles/aegis_crate) and [Flint Crates](/obstacles/flint_crate) underneath it which are great sources of loot.
+The Crane itself does not have any loot, but it does have a large number of [AEGIS](/obstacles/aegis_crate) and [Flint Crates](/obstacles/flint_crate) underneath it, which are great sources of loot.
 
 # Tips
 
