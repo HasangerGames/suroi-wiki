@@ -25,6 +25,7 @@ The Maul can only be obtained from the [Maul Mount](/obstacles/gun_mounts) in th
 
 # Trivia
 
+- For a while, attacking people through walls with the Maul was a decent strategy due to its long range and high damage.
 - The Maul was designed by Radians
 
 # History
