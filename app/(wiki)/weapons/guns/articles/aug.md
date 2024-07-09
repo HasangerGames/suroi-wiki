@@ -1,4 +1,4 @@
-The **Steyr AUG**, known in-game as the **AUG**, is a bullpup assault rifle utilizing the 5.56mm ammunition. It was added to the game in the v0.9.0 "Behind Close Doors" update on July 30th, 2023.
+The **Steyr AUG (Armee-Universal-Gewehr)**, known in-game as the **AUG**, is a bullpup assault rifle utilizing the 5.56mm ammunition. It was added to the game in the v0.9.0 "Behind Close Doors" update on July 30th, 2023.
 
 # Background
 
