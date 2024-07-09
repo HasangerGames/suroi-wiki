@@ -22,11 +22,11 @@ The Flues gets its name from designer Emil Flues, who worked for the Ithaca Gun 
   - Use a longer-range weapon, such as an assault rifle or DMR.
 - If the Flues user fires both of their shots, take advantage of the long reload time and attack while they are vulnerable.
 - Depending on the opponent's skill, they may miss one or both of their shots. Strafe them and try to make them miss, then attack while they reload.
-- Be wary of Bushes and entrances to Buildings if you suspect someone is camping.
+- Be wary of [Bushes](/obstacles/bush) and entrances to Buildings if you suspect someone is camping.
 
 # Rarity
 
-The Flues is currently the second-rarest shotgun in the game. It is about 5 times as rare as the [M3K](/weapons/guns/m3k) and the same level rarity as the [ARX-160](/weapons/guns/arx160) in normal mode.
+The Flues is currently the second-rarest shotgun in the game. It is about 5 times as rare as the [M3K](/weapons/guns/m3k) and the same level of rarity as the [ARX-160](/weapons/guns/arx160) in normal mode.
 
 # Trivia
 
