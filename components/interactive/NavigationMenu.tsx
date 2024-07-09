@@ -15,7 +15,7 @@ export default function NavigationMenu() {
       <div
         className={`${
           open ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-out fixed top-0 left-0 w-screen h-screen md:w-72 flex flex-col gap-4 p-4 bg-background border-border md:border-r`}
+        } transition-transform duration-300 ease-out fixed top-0 left-0 w-screen h-screen md:w-72 flex flex-col gap-4 p-4 bg-background/80 backdrop-blur border-border md:border-r`}
       >
         <button onClick={() => setOpen(false)}>
           <X className="w-8 h-8" />
