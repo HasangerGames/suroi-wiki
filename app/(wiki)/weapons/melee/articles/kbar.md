@@ -26,7 +26,7 @@ The K-Bar can be obtained rarely from crates or other common loot sources. Addit
 - The K-Bar was designed by Radians
 - The K-Bar is also known as the Ka-bar
 - The name comes from a letter in 1923 received from a fur trapper who had used a knife he bought from Union Cutlery Co. to kill a wounded bear that was attacking him and his rifle was jammed. The partially legible letter had the phrase "ka bar" on it, as part of "kill a bear". The KA-BAR name was stamped onto many different knives, and Union Cutlery changed its name to Ka-Bar Cutlery Inc. in 1952
-- The steel used in the K-bar has a hardness of 56-58 HRC
+- The steel used in the K-bar has a hardness of 56-58 on the Hardness Rockwell C Scale
 
 # History
 
