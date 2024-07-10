@@ -2,7 +2,7 @@ The **Steyr AUG (Armee-Universal-Gewehr)**, known in-game as the **AUG**, is a b
 
 # Background
 
-The AUG was designed by Steyr Arms in 1977 entering service in the same year. Since then, it has been a popular choice for militaries worldwide, first exporting to the US in 1980 and other countries later. It and its variants are still in service in many modern armies.
+The AUG was designed by Steyr Arms in 1977 entering service in the same year. Since then, it has been a popular choice for militaries worldwide, first exporting to the US in 1980 and other countries later. It and its variants are still in service in many modern armies. Learn more about the AUG [here](https://en.wikipedia.org/wiki/Steyr_AUG).
 
 # Strategies
 
