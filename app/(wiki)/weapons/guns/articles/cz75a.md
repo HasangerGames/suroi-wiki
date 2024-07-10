@@ -2,7 +2,7 @@ The **CZ 75 Automatic**, known in-game as the **CZ-75A**, is an automatic pistol
 
 # Background
 
-The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil system similar to the Browning Hi-Power pistol, but unlike most pistols, the slide rides inside its frame rails rather than outside. The CZ 75 Automatic variant was introduced in 1992 and has found use in military and law enforcement settings. It features a longer barrel with a compensator and a spot to attach an extra magazine (which can also be used as a foregrip). The CZ 75 is used worldwide, primarily by police.
+The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil system similar to the Browning Hi-Power pistol, but unlike most pistols, the slide rides inside its frame rails rather than outside. The CZ 75 Automatic variant was introduced in 1992 and has found use in military and law enforcement settings. It features a longer barrel with a compensator and a spot to attach an extra magazine (which can also be used as a foregrip). The CZ 75 is used worldwide, primarily by police. Learn more about the CZ-75A [here](https://en.wikipedia.org/wiki/CZ_75).
 
 # Strategies
 
