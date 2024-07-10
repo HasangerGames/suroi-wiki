@@ -1,7 +1,7 @@
 The **IWI Negev NG-5**, known in-game as the **Negev** is a LMG utilizing the 5.56mm ammunition. It was added to the game in the v0.17.0 "Just the Two of Us" update on March 31st, 2024. The Negev features a high fire rate and DPS combined with a large magazine capacity.
 
 # Background
-The Negev was designed in the late 1980s to replace the aging Galil ARM. Many variants have been developed, in both 7.62x51mm and 5.56x45mm NATO. It has gained popularity among many agencies around the world for being reliable and packing many features.
+The Negev was designed in the late 1980s to replace the aging Galil ARM. Many variants have been developed, in both 7.62x51mm and 5.56x45mm NATO. It has gained popularity among many agencies around the world for being reliable and packing many features. Learn more about the Negev [here](https://en.wikipedia.org/wiki/IWI_Negev).
 
 # Strategies
 ## Using
