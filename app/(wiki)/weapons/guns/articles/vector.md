@@ -1,7 +1,7 @@
 The **KRISS Vector**, known in-game as the **Vector** is a SMG utilizing the 9mm ammunition. It features a high rate of fire and high DPS, as well as using very common ammo.
 
 # Background
-Then known as Transformational Defense Industries, the Vector was designed by KRISS USA in 2006. It has been officially produced since 2009. The standout feature of the Vector is a novel delayed blowback system that redirects the recoil to improve muzzle climb and reduce felt recoil. This leads to the Vector being very accurate compared to other weapons when fired automatically. The Vector has seen limited use worldwide, namely by the armies and national police of Bangladesh and Thailand and the national police of Panama.
+Then known as Transformational Defense Industries, the Vector was designed by KRISS USA in 2006. It has been officially produced since 2009. The standout feature of the Vector is a novel delayed blowback system that redirects the recoil to improve muzzle climb and reduce felt recoil. This leads to the Vector being very accurate compared to other weapons when fired automatically. The Vector has seen limited use worldwide, namely by the armies and national police of Bangladesh and Thailand and the national police of Panama. Learn more about the Vector [here](https://en.wikipedia.org/wiki/KRISS_Vector).
 
 # Strategies
 ## Using
