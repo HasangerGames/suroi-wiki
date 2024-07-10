@@ -2,7 +2,7 @@ The **IWI Micro Uzi**, known in-game as the **Micro Uzi** is a SMG utilizing 9mm
 
 # Background
 
-The original Uzi is an open-bolt, blowback-operated design, very similar to the CZ Sa 23 series of SMGs. The Uzi is made of stamped sheet metal, which keeps costs down and results in fewer moving parts for easier and less frequent maintenance. The pistol grip houses the magazine, making it easier to reload in dark or other low visibility conditions. The Uzi was designed in the 1940s by Major Uziel "Uzi" Gal, and accepted into military use in 1954. It has since been exported to many different countries, and over 10 million of it and its variants exist worldwide. The Micro Uzi is an extremely scaled down version of the original Uzi, sacrificing some muzzle velocity but having a much faster cyclic rate.
+The original Uzi is an open-bolt, blowback-operated design, very similar to the CZ Sa 23 series of SMGs. The Uzi is made of stamped sheet metal, which keeps costs down and results in fewer moving parts for easier and less frequent maintenance. The pistol grip houses the magazine, making it easier to reload in dark or other low visibility conditions. The Uzi was designed in the 1940s by Major Uziel "Uzi" Gal, and accepted into military use in 1954. It has since been exported to many different countries, and over 10 million of it and its variants exist worldwide. The Micro Uzi is an extremely scaled down version of the original Uzi, sacrificing some muzzle velocity but having a much faster cyclic rate. Learn more about the Micro Uzi [here](https://en.wikipedia.org/wiki/Uzi).
 
 # Strategies
 
