@@ -2,7 +2,7 @@ The **Gas Can** is a melee weapon added in the v0.11.0 "Making Waves" update on 
 
 # Background
 
-The Gas Can is a type of storage container for fuels and is usually made out of plastic or metal. They come in many sizes and shapes.
+The Gas Can is a type of storage container for fuels and is usually made out of plastic or metal. They come in many sizes and shapes. Learn more about the Gas Can [here](https://en.wikipedia.org/wiki/Fuel_container)
 
 # Strategies
 
