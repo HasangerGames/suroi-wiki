@@ -1,7 +1,7 @@
 The **Frag Grenade** is an explosive [Throwable](/throwables) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024. It can deal high damage, but has an extremely limited inventory capacity and can be risky to use as explosions can deal high damage to the user if the user isn't skilled.
 
 # Background
-The Frag Grenade, named by the US military as the M67 grenade, is an evolution of the M33 and M26-series grenades. It features a spheroidal steel body containing 6.5 oz of explosive and utilizes the M213 delay fuse. Weighing 14 oz with safety features like a clip and pin, it's nicknamed the "baseball" grenade due to its shape and is priced at approximately $45 each. It can be thrown up to 35 meters and has a detonation delay of 4 to 5 seconds, creating steel fragments with a lethal radius up to 5 meters and a dangerous reach of up to 230 meters. 
+The Frag Grenade, named by the US military as the M67 grenade, is an evolution of the M33 and M26-series grenades. It features a spheroidal steel body containing 6.5 oz of explosive and utilizes the M213 delay fuse. Weighing 14 oz with safety features like a clip and pin, it's nicknamed the "baseball" grenade due to its shape and is priced at approximately $45 each. It can be thrown up to 35 meters and has a detonation delay of 4 to 5 seconds, creating steel fragments with a lethal radius up to 5 meters and a dangerous reach of up to 230 meters. Learn more about the Frag Grenade [here](https://en.wikipedia.org/wiki/M67_grenade).
 
 
 
