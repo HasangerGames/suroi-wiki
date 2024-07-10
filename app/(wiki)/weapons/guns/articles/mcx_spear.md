@@ -13,7 +13,7 @@ The MCX Spear is the civilian version of the XM7, which was selected by the US m
   - It is also more accurate, which means a larger scope (4x or higher) will help you outrange your opponents.
 - Keep in mind that the magazine capacity of the MCX Spear is on the lower side, being 20 instead of the standard 30 for similar weapons. It is also hampered by a longer reload time.
   - Thus, it is important to reload often (behind cover, of course) and not miss your shots.
-- While the MCX Spear can be used as a CQC weapon due to its higher DPS, it is still advisable to carry a secondary, high-DPS weapon such as the [Micro Uzi](/weapons/guns/micro_uzi) or [Model 37](/weapons/guns/model_37) to deal with enemies at close range.
+- While the MCX Spear can be used as a CQC (Close Quarters Combat) weapon due to its higher DPS, it is still advisable to carry a secondary, high-DPS weapon such as the [Micro Uzi](/weapons/guns/micro_uzi) or [Model 37](/weapons/guns/model_37) to deal with enemies at close range.
 
 ## Countering
 

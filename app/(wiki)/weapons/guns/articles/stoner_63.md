@@ -20,7 +20,7 @@ The Stoner 63 was developed by Eugene Stoner after he left ArmaLite in 1961. Sto
 - If you see an enemy reloading, take advantage of their vulnerability by rushing them with a shotgun or other high-DPS weapon.
 - Make sure to find indestructible cover such as a [Buildings](/buildings), Container, or [Oil Tank](/obstacles/oil_tank).
   - If you see or hear shots, try not to stay out in the open and find cover.
-- The Stoner 63 has a long barrel. You can take advantage of this by rushing the opponent with a CQC weapon such as an SMG or a Shotgun.
+- The Stoner 63 has a long barrel. You can take advantage of this by rushing the opponent with a CQC (Close Quarters Combat) weapon such as an SMG or a Shotgun.
 - Use lots of adrenaline and strafe the opponent to dodge bullets.
   - This is effective at wasting entire magazines and taking little damage if the opponent is fairly unskilled.
 - Another high-DPS weapon such as [MCX Spear](/weapons/guns/mcx_spear) or a [Mini-14](/weapons/guns/mini14) can catch a Stoner 63 user off-guard if they are reloading or out in the open.
