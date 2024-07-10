@@ -2,7 +2,7 @@ The Lewis gun (aka Lewis automatic machine gun or Lewis automatic rifle), known 
 
 # Background
 
-The Lewis gun was invented in 1911 by Isaac Newton Lewis, a U.S. Army colonel. It was widely used by the United Kingdom during the First World War. During the Second World War, old stores of Lewis guns supplemented the arsenal of the Allies. It saw use both as a LMG and a mounted weapon for boats, airplanes, and vehicles. It was withdrawn from service in the UK in 1946.
+The Lewis gun was invented in 1911 by Isaac Newton Lewis, a U.S. Army colonel. It was widely used by the United Kingdom during the First World War. During the Second World War, old stores of Lewis guns supplemented the arsenal of the Allies. It saw use both as a LMG and a mounted weapon for boats, airplanes, and vehicles. It was withdrawn from service in the UK in 1946. Learn more about the Lewis Gun [here](https://en.wikipedia.org/wiki/Lewis_gun).
 
 # Strategies
 
@@ -10,7 +10,7 @@ The Lewis gun was invented in 1911 by Isaac Newton Lewis, a U.S. Army colonel. I
 
 - The Lewis Gun is a great weapon for clearing out obstacles, so don't be afraid to use it to destroy enemy cover.
 - Due to its long reload time, it is important to reload this weapon whenever you have the chance. You should also make sure to take cover when reloading, as you are vulnerable.
-- Make sure to pick up some additional ammunition for this weapon as it only spawns with 2 magazines' worth. This is especially important if you plan on using it to destroy obstacles.
+- Make sure to pick up some additional ammunition for this weapon, as it only spawns with 2 magazines' worth. This is especially important if you plan on using it to destroy obstacles.
 - Like other LMGs, it is important to pair this gun up with a secondary weapon that can be used in close quarters. The Lewis Gun is not very effective at close range and may leave you vulnerable if your opponent decides to rush you.
   - Conversely, the Lewis Gun is fairly effective at long range, so try to keep your distance from enemies.
   - It is inadvisable to use this weapon within [Buildings](/buildings) and tight spaces, where you can easily be rushed or ambushed.
