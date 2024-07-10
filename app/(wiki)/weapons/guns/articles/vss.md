@@ -21,7 +21,7 @@ The VSS was developed beginning in 1983 by TsNIITochMash, a then-Soviet industri
   - The [Mini-14](/weapons/guns/mini14) is a good counter to the VSS as it has higher DPS and more range.
 - If you are at close range use a high-DPS weapon such as an SMG or shotgun to overpower the VSS user. Be careful against the also-high DPS of the VSS, however.
 - Use adrenaline to help you strafe your opponent and make them miss their shots.
-- Assault rifles can also counter the VSS at medium range. High-DPS assault rifles like the [MCX Spear](/weapons/guns/mcx_spear) and [AUG](/weapons/guns/aug) work best for this.
+- Assault rifles like the [AK-47](/weapons/guns/ak47) can also counter the VSS at medium range. High-DPS assault rifles like the [MCX Spear](/weapons/guns/mcx_spear) and [AUG](/weapons/guns/aug) work best for this.
 - One of the best defenses against a VSS user is indestructible cover such as [Oil Tanks](/obstacles/oil_tank), Containers, and [Buildings](/buildings).
   - Don't try and hide behind cover such as [Rocks](/obstacles/rock) and [Trees](/obstacles/tree). However, if there is no other cover, you can waste much of your opponent's magazine destroying said cover.
 
