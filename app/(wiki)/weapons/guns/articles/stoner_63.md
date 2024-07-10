@@ -2,7 +2,7 @@ The **Stoner 63A Commando**, known in-game as the **Stoner 63**, is a 5.56mm LMG
 
 # Background
 
-The Stoner 63 was developed by Eugene Stoner after he left ArmaLite in 1961. Stoner also designed the AR-15/M-16 assault rifles and the AR-10 battle rifles. It was designed around the 5.56x45mm NATO cartridge and was a fully modular system. It could be configured as an assault rifle, carbine, top-fed light machine gun, belt-fed squad automatic weapon, or mounted to vehicles. The Stoner 63A was an improvement from the original design. The Stoner 63 saw limited use among U.S. special forces before being replaced by the M249 SAW.
+The Stoner 63 was developed by Eugene Stoner after he left ArmaLite in 1961. Stoner also designed the AR-15/M-16 assault rifles and the AR-10 battle rifles. It was designed around the 5.56x45mm NATO cartridge and was a fully modular system. It could be configured as an assault rifle, carbine, top-fed light machine gun, belt-fed squad automatic weapon, or mounted to vehicles. The Stoner 63A was an improvement from the original design. The Stoner 63 saw limited use among U.S. special forces before being replaced by the M249 SAW. Learn more about the Stoner 63 [here](https://en.wikipedia.org/wiki/Stoner_63).
 
 # Strategies
 
