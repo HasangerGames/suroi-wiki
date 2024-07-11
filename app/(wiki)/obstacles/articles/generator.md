@@ -15,7 +15,7 @@ The Generator is indestructible and therefore drops no loot. When interacting wi
 # Trivia
 
 - The Generator was designed by platonthek
-- In real life, Generators are machines that convert potential, kinetic, or chemical energy into electricity. The Generator in Suroi is a fuel-based generator since it requires gas to operate
+- In real life, Generators are machines that convert potential, kinetic, or chemical energy into electricity. The Generator in Suroi is a fuel-based generator since it requires gas to operate, learn more about generators [here](https://en.wikipedia.org/wiki/Gas_generator)
 - The sounds for the Generator came from a Yanmar 3TNA72UJ3 3-cylinder Diesel engine inside a John Deere 455 
 
 # History
