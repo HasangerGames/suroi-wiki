@@ -2,7 +2,7 @@
 
 # Background
 
-Tablets, also known as pills, are a solid form of oral medicine. They usually include a variety of active substances and excipients in powder form, which is then made into a tablet shape by either molding or compression.
+Tablets, also known as pills, are a solid form of oral medicine. They usually include a variety of active substances and excipients in powder form, which is then made into a tablet shape by either molding or compression. Learn more about Tablets [here](https://en.wikipedia.org/wiki/Tablet_(pharmacy))
 
 # Strategies
 
