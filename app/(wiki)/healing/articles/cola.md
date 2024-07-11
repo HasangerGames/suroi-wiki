@@ -2,7 +2,7 @@
 
 # Background
 
-Cola is a type of carbonated drink typically flavored with citrus oils, vanilla, and other flavorings. They usually have a large amount of sugar, and some have caffeine as well.
+Cola is a type of carbonated drink typically flavored with citrus oils, vanilla, and other flavorings. They usually have a large amount of sugar, and some have caffeine as well. Learn more about cola [here](https://en.wikipedia.org/wiki/Cola).
 
 # Strategies
 
