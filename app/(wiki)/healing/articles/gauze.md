@@ -2,7 +2,7 @@
 
 # Background
 
-Gauze intended for use as a medical item is typically made of cotton. It is useful for wounds where other fabrics might stick to the wound, such as burns.
+Gauze intended for use as a medical item is typically made of cotton. It is useful for wounds where other fabrics might stick to the wound, such as burns. Learn more about the gauze [here](https://en.wikipedia.org/wiki/Gauze_sponge).
 
 # Strategies
 
