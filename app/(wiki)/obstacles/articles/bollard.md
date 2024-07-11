@@ -1,4 +1,4 @@
-The **Bollard** is an [Obstacle](/obstacles) added to the game in the v0.11.0 "Making Waves" update on October 22nd, 2023. It is indestructible and a niche source of cover.
+The **Bollard** is an [Obstacle](/obstacles) added to the game in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023. It is indestructible and a niche source of cover.
 
 # Location and Spawning
 
@@ -19,5 +19,5 @@ The Bollard is indestructible and therefore drops no loot.
 
 # History
 
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Added
