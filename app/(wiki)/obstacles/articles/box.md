@@ -1,4 +1,4 @@
-The **Box** is an [Obstacle](/obstacles) added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It drops a variety of loot for its compact size.
+The **Box** is an [Obstacle](/obstacles) added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 30th, 2023. It drops a variety of loot for its compact size.
 
 # Location & Spawning
 
@@ -19,5 +19,5 @@ The Box has similar [loot](/loot#box) to the [Regular Crate](/obstacles/regular_
 
 # History
 
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Added
