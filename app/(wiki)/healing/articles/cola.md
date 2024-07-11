@@ -27,7 +27,7 @@ Cola is most readily obtained by breaking toilets in buildings, as well as the P
 
 # Trivia
 
-- The caffeine in Colas may help the Surian run faster and regenerate health
+- The caffeine in Colas helps the player run faster and regenerate health
 
 # History
 
