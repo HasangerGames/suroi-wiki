@@ -1,4 +1,4 @@
-The **Briefcase** is an [Obstacle](/obstacles) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024.
+The **Briefcase** is an [Obstacle](/obstacles) added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14th, 2024.
 
 # Location & Spawning
 
@@ -19,7 +19,7 @@ The Briefcase can drop a [Vector](/weapons/guns/vector), an [ARX-160](/weapons/g
 
 # History
 
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added
 
 # Gallery
