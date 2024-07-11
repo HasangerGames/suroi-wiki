@@ -2,7 +2,7 @@ The **Medikit** is a consumable that heals 100 health and was added in the v0.4.
 
 # Background
 
-Medical kits, also known as first aid kits, contain a variety of different supplies and equipment that both civilians and first responders can use to treat injuries or ailments.
+Medical kits, also known as first aid kits, contain a variety of different supplies and equipment that both civilians and first responders can use to treat injuries or ailments. Learn more about medikits [here](https://en.wikipedia.org/wiki/First_aid_kit).
 
 # Strategies
 
