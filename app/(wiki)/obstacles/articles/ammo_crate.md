@@ -1,5 +1,5 @@
 <Stub />
-The **Ammo Crate** is an impenetrable [Obstacle](/obstacles) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024. It can only be destroyed using Airdrops or weapons with piercing damage.
+The **Ammo Crate** is an impenetrable [Obstacle](/obstacles) added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14th, 2024. It can only be destroyed using Airdrops or weapons with piercing damage.
 
 # Location & Spawning
 
@@ -17,9 +17,9 @@ Ammo Crates drop either 60 rounds of 5.56mm, 7.62mm, or 9mm or 10 rounds of 12 g
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - Now drops 10 rounds of 12.7 instead of 1
-- v0.16.0
+- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added 12.7 and curadell ammo types to loot table
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Added
