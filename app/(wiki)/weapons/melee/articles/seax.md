@@ -3,7 +3,7 @@ The **Seax** is a melee weapon added in the v0.15.0 "Pulling the Pin" update on 
 
 # Background
 
-The Seax is a large single-edged blade with a tang in the centerline of the blade, inserted into an organic hilt either made of wood or horn. Its typical use is for hunting and fighting.
+The Seax is a large single-edged blade with a tang in the centerline of the blade, inserted into an organic hilt either made of wood or horn. Its typical use is for hunting and fighting. The Germanic peoples of the Migration Period and the Early Middle Ages, especially the Saxons used the Seax. The name comes from an Old English word for "knife". Learn more about the Seax [here](https://en.wikipedia.org/wiki/Seax).
 
 # Strategies
 

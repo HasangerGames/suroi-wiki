@@ -1,5 +1,9 @@
 The **Smoke Grenade** is a [Throwable](/throwables) added in the v0.15.0 "Pulling the Pin" update on Jan 14th, 2024. Upon detonation, it releases clouds of smoke that lasts for around twenty seconds.
 
+# Background
+A Smoke Grenade, designed as a canister-type device, serves various military purposes such as signaling, marking targets or landing zones, and screening unit movements. Unlike smoke bombs, which are simpler and ignited by an external fuse, smoke grenades are more intricate and emit a larger volume of smoke. They typically cost around $40 each, contrasting with smoke bombs that are considerably cheaper. The military's use of smoke grenades to obscure movement has influenced phrases like "to smoke" (to deceive) and "pop smoke" (to swiftly depart). Learn more about the Smoke Grenade [here](https://en.wikipedia.org/wiki/Smoke_grenade).
+
+
 # Strategies
 ## Using
 - The Smoke Grenade can be used as a way to quickly get a temporary place to hide.

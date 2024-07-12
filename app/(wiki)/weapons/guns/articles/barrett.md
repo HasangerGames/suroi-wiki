@@ -2,7 +2,7 @@ The **Barrett M95** also called the **Barrett**, is a powerful bolt-action snipe
 
 # Background
 
-The Barrett M95 is a redesigned version of the Barrett M90, which was itself a bullpup bolt-action version of the semi-automatic Barrett M82. Compared to the M90, the M95 is the adjustment of the pistol grip and trigger to gain better magazine clearance. Minor changes were also made, such as a chrome-plated barrel, a redesigned bolt handle, and a modified firing pin and trigger. The Barrett M82 was chosen over the M95 to become the US Army's new anti-materiel rifle, but it still sees usage in the hands of a variety of special forces worldwide.
+The Barrett M95 is a redesigned version of the Barrett M90, which was itself a bullpup bolt-action version of the semi-automatic Barrett M82. Compared to the M90, the M95 is the adjustment of the pistol grip and trigger to gain better magazine clearance. Minor changes were also made, such as a chrome-plated barrel, a redesigned bolt handle, and a modified firing pin and trigger. The Barrett M82 was chosen over the M95 to become the US Army's new anti-materiel rifle, but it still sees usage in the hands of a variety of special forces worldwide. Learn more about the Barret M95 [here](https://en.wikipedia.org/wiki/Barrett_M95).
 
 # Strategies
 
@@ -17,7 +17,7 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
 - Always quickswitch the Barrett, as it has a lot of recoils as well as a long recoil time.
 - Be careful, as the unique bullet trail of 12.7 ammunition will give away what gun you have and might lead players to target you.
   - This can be useful for getting high kills if you are skilled enough.
-- If you find a Barrett but have little to no ammunition, it probably isn't worth picking up since your chance of coming across more ammo is next to nothing.
+- If you find a Barrett but have little to no ammunition, it probably isn't worth picking up, since your chance of coming across more ammo is next to nothing.
   - You could, however, try and use it to bait other players into an ambush.
 - Despite having a 1x obstacle multiplier, the Barrett is still somewhat capable of destroying cover.
   - This isn't a good idea, though, because of the very rare ammo.
@@ -25,6 +25,7 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
 - Use LMGs such as the [Stoner 63](/weapons/guns/stoner_63) to destroy cover at long range, and then pick off players with Barrett.
   - You can also use assault rifles to weaken your opponent and then finish them off with the Barrett.
 - By hiding in a [Bush](/obstacles/bush) and camping, you can surprise your opponents and kill them before they can react.
+- If you ever run low on 12.7 ammo, you can break [Ammo Crates](/obstacles/ammo_crate) using a [Maul](/weapons/melee/maul) to get extra ammo.
 
 ## Countering
 
@@ -32,7 +33,7 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
 - You can use cover to pretend to move out and get your opponent to shoot, but then move back and have the shot miss you.
 - Although the Barrett does a lot of damage, it usually isn't an instant kill, especially in the late game when you likely have high-tier [Armor](/equipment/armor).
 - Watch out if you are at 8x or 15x range because the Barrett has a very fast bullet velocity.
-- The Barrett can be unwieldy in CQC combat due to its long barrel. Try using a high DPS weapon like a SMG or a shotgun. Weapons with short barrels, like the [Flues](/weapons/guns/flues) work best for this.
+- The Barrett can be unwieldy in CQC (Close Quarters Combat) due to its long barrel. Try using a high DPS weapon like a SMG or a shotgun. Weapons with short barrels, like the [Flues](/weapons/guns/flues) work best for this.
 - Other powerful snipers, like the [Tango 51](/weapons/guns/tango_51), while not as good as the Barrett, can still pack quite a punch against an opponent (especially in dual form).
 - Powerful shotgun combos like dual [Model 37s](/weapons/guns/model_37) can sometimes overpower the Barrett at close-range.
 
