@@ -3,7 +3,7 @@ The **Maul** is a weapon that was added in the v0.9.0 "Behind Closed Doors" upda
 
 # Background
 
-The maul is a long-handled hammer with a heavy head of wood, lead, iron, or steel. It functions and appears just like a sledgehammer. Sometimes a spear-like spike is on the fore-end of the head. The creator of the maul is not known. It was mainly known to appear in the late 14th century. In modern times, the maul is mostly used to split wood.
+The maul is a long-handled hammer with a heavy head of wood, lead, iron, or steel. It functions and appears just like a sledgehammer. Sometimes a spear-like spike is on the fore-end of the head. The creator of the maul is not known. It was mainly known to appear in the late 14th century. In modern times, the maul is mostly used to split wood. When being used, the maul could be held with either one or two hands. Learn more about the Maul [here](https://en.wikipedia.org/wiki/Sledgehammer#Post_maul).
 
 # Strategies
 

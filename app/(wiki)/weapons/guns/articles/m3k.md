@@ -2,7 +2,7 @@ The **Stoeger Industries M3K Freedom Series Defense Shotgun**, known in-game as 
 
 # Background
 
-The M3K is an affordable budget semi-automatic shotgun offered by Stoeger Industries. Instead of a gas system to chamber the next round, it uses an inertia system developed by Benelli (Stoeger is a subsidiary of Benelli). This equates to fewer parts, meaning the M3K is very reliable and requires low maintenance. The family of shotguns is well known for the abundance of aftermarket parts and add-ons.
+The M3K is an affordable budget semi-automatic shotgun offered by Stoeger Industries. Instead of a gas system to chamber the next round, it uses an inertia system developed by Benelli (Stoeger is a subsidiary of Benelli). This equates to fewer parts, meaning the M3K is very reliable and requires low maintenance. The family of shotguns is well known for the abundance of aftermarket parts and add-ons. 
 
 # Strategies
 
@@ -31,7 +31,7 @@ The M3K is uncommon in general world loot, but fairly common in rarer loot sourc
   - It is also the first shotgun in the game
 - The M3K presumably fires a lower powered load than the [Model 37](/weapons/guns/model_37) and [Flues](/weapons/guns/flues), which explains its lower damage
 - Despite also being semi-automatic, it cannot fire as fast as the [HP18](/weapons/guns/hp18)
-- In real life, the M3K has a magazine capacity of 10+1
+- In real life, the M3K has a magazine capacity of 10 (in barrel) + 1 (loaded)
   - Most likely, the M3K in-game uses an aftermarket magazine that only holds 9 rounds
 
 # History
