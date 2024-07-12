@@ -1,4 +1,4 @@
-The **Bush** is an [Obstacle](/obstacles) that spawns frequently around the map. It was added to the game in the v0.1.0 "We're back, baby" update on May 20th, 2023. They are mostly opaque and can be moved through. The **Blueberry Bush** is a larger and more opaque variation of the standard Bush and contains loot underneath.
+The **Bush** is an [Obstacle](/obstacles) that spawns frequently around the map. It was added to the game in the [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0) "We're back, baby" update on May 20th, 2023. They are mostly opaque and can be moved through. The **Blueberry Bush** is a larger and more opaque variation of the standard Bush and contains loot underneath.
 
 # Location & Spawning
 
@@ -29,15 +29,15 @@ The Bush does not have any loot, but the Blueberry Bush has decent [loot](/loot#
 
 # History
 
-- v0.12.0
+- [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
   - Added a reskinned version of Blueberry Bush for Halloween Map (red berries)
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Added Blueberry Bush
-- v0.3.0
+- [v0.3.0](https://github.com/HasangerGames/suroi/releases/tag/v0.3.0)
   - Bush texture updated
-- v0.2.0
+- [v0.2.0](https://github.com/HasangerGames/suroi/releases/tag/v0.2.0)
   - Bush texture updated
-- v0.1.0
+- [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
   - Added Bush
 
 <Gallery
