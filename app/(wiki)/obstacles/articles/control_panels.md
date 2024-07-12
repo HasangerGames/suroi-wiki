@@ -1,4 +1,4 @@
-**Control Panels** are a type of explosive obstacle first added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023, which introduced three variants of the Control Panel. A fourth variant of the Control Panel was later added in update v0.16.0 "A Sailor's Dream" on February 26th 2024. They come in four distinct variants. 
+**Control Panels** are a type of explosive obstacle first added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023, which introduced three variants of the Control Panel. A fourth variant of the Control Panel was later added in update [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0) "A Sailor's Dream" on February 26th 2024. They come in four distinct variants. 
 
 # Location & Spawning
 
