@@ -2,7 +2,7 @@ The **Baseball Bat** is a melee weapon added in the v0.5.0 "Locked & Loaded" upd
 
 # Background
 
-The Baseball Bat is a smooth wooden or metal club used in the sport of baseball to hit a baseball after it has been thrown. By regulation, a baseball bat may not be larger than 2.75 inches in diameter and no more than 42 inches in length. A baseball bat can also be used in other ways, such as bludgeoning people.
+The Baseball Bat is a smooth wooden or metal club used in the sport of baseball to hit a baseball after it has been thrown. By regulation, a baseball bat may not be larger than 2.75 inches in diameter and no more than 42 inches in length. A baseball bat can also be used in other ways, such as bludgeoning people. Learn more about Baseball Bats [here](https://en.wikipedia.org/wiki/Baseball_bat).
 
 # Strategies
 

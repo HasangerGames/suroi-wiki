@@ -2,7 +2,7 @@ The **SIG Sauer MCX Spear**, known in-game as the **MCX Spear**, is an assault r
 
 # Background
 
-The MCX Spear is the civilian version of the XM7, which was selected by the US military in early 2019 as a potential replacement for the M4 carbine and M249 SAW. It is normally chambered in the new .277 SIG FURY cartridge, which performs better against body armor than the old 5.56x45mm NATO. The MCX Spear was offered on the civilian market starting in 2022. That same year, the United States Army awarded SIG Sauer a 10-year contract to produce the XM7 and XM250 to replace the M4 and M249.
+The MCX Spear is the civilian version of the XM7, which was selected by the US military in early 2019 as a potential replacement for the M4 carbine and M249 SAW. It is normally chambered in the new .277 SIG FURY cartridge, which performs better against body armor than the old 5.56x45mm NATO. The MCX Spear was offered on the civilian market starting in 2022. That same year, the United States Army awarded SIG Sauer a 10-year contract to produce the XM7 and XM250 to replace the M4 and M249. Learn more about the MCX Spear [here](https://en.wikipedia.org/wiki/SIG_MCX_Spear).
 
 # Strategies
 
@@ -13,7 +13,7 @@ The MCX Spear is the civilian version of the XM7, which was selected by the US m
   - It is also more accurate, which means a larger scope (4x or higher) will help you outrange your opponents.
 - Keep in mind that the magazine capacity of the MCX Spear is on the lower side, being 20 instead of the standard 30 for similar weapons. It is also hampered by a longer reload time.
   - Thus, it is important to reload often (behind cover, of course) and not miss your shots.
-- While the MCX Spear can be used as a CQC weapon due to its higher DPS, it is still advisable to carry a secondary, high-DPS weapon such as the [Micro Uzi](/weapons/guns/micro_uzi) or [Model 37](/weapons/guns/model_37) to deal with enemies at close range.
+- While the MCX Spear can be used as a CQC (Close Quarters Combat) weapon due to its higher DPS, it is still advisable to carry a secondary, high-DPS weapon such as the [Micro Uzi](/weapons/guns/micro_uzi) or [Model 37](/weapons/guns/model_37) to deal with enemies at close range.
 
 ## Countering
 

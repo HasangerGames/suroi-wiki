@@ -2,7 +2,7 @@ The **Stoner 63A Commando**, known in-game as the **Stoner 63**, is a 5.56mm LMG
 
 # Background
 
-The Stoner 63 was developed by Eugene Stoner after he left ArmaLite in 1961. Stoner also designed the AR-15/M-16 assault rifles and the AR-10 battle rifles. It was designed around the 5.56x45mm NATO cartridge and was a fully modular system. It could be configured as an assault rifle, carbine, top-fed light machine gun, belt-fed squad automatic weapon, or mounted to vehicles. The Stoner 63A was an improvement from the original design. The Stoner 63 saw limited use among U.S. special forces before being replaced by the M249 SAW.
+The Stoner 63 was developed by Eugene Stoner after he left ArmaLite in 1961. Stoner also designed the AR-15/M-16 assault rifles and the AR-10 battle rifles. It was designed around the 5.56x45mm NATO cartridge and was a fully modular system. It could be configured as an assault rifle, carbine, top-fed light machine gun, belt-fed squad automatic weapon, or mounted to vehicles. The Stoner 63A was an improvement from the original design. The Stoner 63 saw limited use among U.S. special forces before being replaced by the M249 SAW. Learn more about the Stoner 63 [here](https://en.wikipedia.org/wiki/Stoner_63).
 
 # Strategies
 
@@ -20,7 +20,7 @@ The Stoner 63 was developed by Eugene Stoner after he left ArmaLite in 1961. Sto
 - If you see an enemy reloading, take advantage of their vulnerability by rushing them with a shotgun or other high-DPS weapon.
 - Make sure to find indestructible cover such as a [Buildings](/buildings), Container, or [Oil Tank](/obstacles/oil_tank).
   - If you see or hear shots, try not to stay out in the open and find cover.
-- The Stoner 63 has a long barrel. You can take advantage of this by rushing the opponent with a CQC weapon such as an SMG or a Shotgun.
+- The Stoner 63 has a long barrel. You can take advantage of this by rushing the opponent with a CQC (Close Quarters Combat) weapon such as an SMG or a Shotgun.
 - Use lots of adrenaline and strafe the opponent to dodge bullets.
   - This is effective at wasting entire magazines and taking little damage if the opponent is fairly unskilled.
 - Another high-DPS weapon such as [MCX Spear](/weapons/guns/mcx_spear) or a [Mini-14](/weapons/guns/mini14) can catch a Stoner 63 user off-guard if they are reloading or out in the open.

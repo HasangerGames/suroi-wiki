@@ -39,14 +39,44 @@ const WIKI_TEAM: User[] = [
     description: "Content Manager",
     avatar: "https://avatars.githubusercontent.com/u/66282302",
   },
+  {
+    name: "Fridge",
+    description: "Wiki Developer",
+    avatar: "https://avatars.githubusercontent.com/u/152137521",
+  },
+  {
+    name: "zedaes",
+    description: "Wiki Developer",
+    avatar: "https://avatars.githubusercontent.com/u/147769903",
+  },
+  {
+    name: "sawq375",
+    description: "Wiki Developer",
+    avatar: "https://avatars.githubusercontent.com/u/97305445",
+  },
 ];
 
 const WIKI_CONTRIB: string[] = [
-  "sawq375",
   "brianzjk",
   "Emeraldneo",
   "HeheBoi420",
   "Hugh Jass",
+  "ei-pi",
+  "CroissantEdit",
+  "blazingyoda",
+  "atk-r",
+  "EagleEye2010",
+  "Viswas-Programs",
+  "valdiboi",
+  "failingapbio",
+  "emeraldn30",
+  "DamienVesper",
+  "elvin-ntk",
+  "BearHey",
+  "geodic",
+  "AnnihilatingFox",
+  "Zollo757347",
+  "yestice"
 ];
 
 const GAME_TEAM: User[] = [

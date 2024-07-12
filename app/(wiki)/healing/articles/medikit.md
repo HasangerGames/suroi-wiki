@@ -1,8 +1,8 @@
-The **Medikit** is a consumable that heals 100 health and was added in the v0.4.0 "Supplies received" update on June 17th, 2023. They spawn rarely around the map. To use a Medikit, either click on the icon in your inventory or press 6 on your keyboard. A Medikit takes 6 seconds to use.
+The **Medikit** is a consumable that heals 100 health and was added in the [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0) "Supplies received" update on June 17th, 2023. They spawn rarely around the map. To use a Medikit, either click on the icon in your inventory or press 6 on your keyboard. A Medikit takes 6 seconds to use.
 
 # Background
 
-Medical kits, also known as first aid kits, contain a variety of different supplies and equipment that both civilians and first responders can use to treat injuries or ailments.
+Medical kits, also known as first aid kits, contain a variety of different supplies and equipment that both civilians and first responders can use to treat injuries or ailments. Learn more about medikits [here](https://en.wikipedia.org/wiki/First_aid_kit).
 
 # Strategies
 
@@ -35,10 +35,10 @@ Medikits are most commonly found in Toilets and the Porta-Potty. They can also b
 
 # History
 
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Heal amount increased to 100 (from 75)
   - Usage time increased to 6s (from 5s)
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Medikits can now be added to a Player's inventory
-- v0.4.0
+- [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
   - Added

@@ -2,7 +2,7 @@ The **Ruger Mini-14**, known in-game as the **Mini-14**, is a DMR utilizing 5.56
 
 # Background
 
-The Mini-14, as the name suggests, is based on the bigger 7.62x51mm NATO firing M14. It uses a custom gas design but fires the smaller 5.56x45mm NATO or .223 Remington cartridge. Variants chambered for other calibers such as 7.62x39mm also exist. The Mini-14 was popular with police forces in the United States for many years before being largely replaced by M4-style rifles. It is still in use by a variety of police and security forces worldwide.
+The Mini-14, as the name suggests, is based on the bigger 7.62x51mm NATO firing M14. It uses a custom gas design but fires the smaller 5.56x45mm NATO or .223 Remington cartridge. Variants chambered for other calibers such as 7.62x39mm also exist. The Mini-14 was popular with police forces in the United States for many years before being largely replaced by M4-style rifles. It is still in use by a variety of police and security forces worldwide. Learn more about the Mini-14 [here](https://en.wikipedia.org/wiki/Ruger_Mini-14).
 
 # Strategies
 
@@ -10,7 +10,7 @@ The Mini-14, as the name suggests, is based on the bigger 7.62x51mm NATO firing 
 
 - The Mini-14 is best used at long-range, but its high DPS makes it effective against many weapons at mid-range as well.
 - Stay at long range, as the high accuracy and fast bullet speed make the Mini-14 very powerful against other long-range weapons like snipers and the [MCX Spear.](weapons/guns/mcx_spear)
-- The SR-25 has more damage than the Mini-14 albeit at the cost of a slightly lower DPS.
+- The [SR-25](weapons/guns/sr25) has more damage than the Mini-14 albeit at the cost of a slightly lower DPS.
 - Pair the Mini-14 with a high-DPS shotgun or SMG for close-range combat.
 
 ## Countering

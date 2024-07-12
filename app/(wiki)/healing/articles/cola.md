@@ -1,8 +1,8 @@
-**Cola** is a consumable that restores 25 adrenaline, added in the v0.4.0 "Supplies received" update on June 17th, 2023. They spawn uncommonly around the map. To use Cola, either click on the icon in your inventory or press 7 on your keyboard. Cola takes 3 seconds to use.
+**Cola** is a consumable that restores 25 adrenaline, added in the [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0) "Supplies received" update on June 17th, 2023. They spawn uncommonly around the map. To use Cola, either click on the icon in your inventory or press 7 on your keyboard. Cola takes 3 seconds to use.
 
 # Background
 
-Cola is a type of carbonated drink typically flavored with citrus oils, vanilla, and other flavorings. They usually have a large amount of sugar, and some have caffeine as well.
+Cola is a type of carbonated drink typically flavored with citrus oils, vanilla, and other flavorings. They usually have a large amount of sugar, and some have caffeine as well. Learn more about cola [here](https://en.wikipedia.org/wiki/Cola).
 
 # Strategies
 
@@ -27,17 +27,17 @@ Cola is most readily obtained by breaking toilets in buildings, as well as the P
 
 # Trivia
 
-- The caffeine in Colas may help the Surian run faster and regenerate health
+- The caffeine in Colas helps the player run faster and regenerate health
 
 # History
 
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Adrenaline now does not follow a flat linear rate for healing. Previously, regeneration was calculated by multiplying the adrenaline number by 0.00039. This gave a max regeneration rate of 1.2987 health/second. Now:
     - Above 87.5 adrenaline now heals 2.75 health/second
     - Above 50 adrenaline now heals 2.125 health/second
     - Above 25 adrenaline now heals 1.125 health/second
     - Above 0 adrenaline now heals 0.625 health/second
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Cola can now be added to a Player's inventory
-- v0.4.0
+- [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
   - Added
