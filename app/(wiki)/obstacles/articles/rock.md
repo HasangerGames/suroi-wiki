@@ -1,4 +1,4 @@
-The **Rock** is an [Obstacle](/obstacles) that spawns frequently around the map. It was added to the game in the v0.1.0 "We're back, baby" update on May 20th, 2023. The Mossy Rock and the Cracked Rock are variations of the Rock but are functionally the same.
+The **Rock** is an [Obstacle](/obstacles) that spawns frequently around the map. It was added to the game in the [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0) "We're back, baby" update on May 20th, 2023. The Mossy Rock and the Cracked Rock are variations of the Rock but are functionally the same.
 
 # Location & Spawning
 
@@ -23,11 +23,11 @@ The Rock drops no loot upon being destroyed.
 
 # History
 
--v0.15.0
+-[v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added river rock variant
-- v0.12.5
+- [v0.12.5](https://github.com/HasangerGames/suroi/releases/tag/v0.12.5)
   - Art updated for Mossy and Cracked variants
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Added Moss and Cracked variants
-- v0.1.0
+- [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
   - Added Rock

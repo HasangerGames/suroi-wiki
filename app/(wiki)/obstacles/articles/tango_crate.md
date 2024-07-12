@@ -1,4 +1,4 @@
-The **Tango Crate** is an [Obstacle](/obstacles) added in the v0.11.0 "Making Waves" update on October 22nd, 2023.
+The **Tango Crate** is an [Obstacle](/obstacles) added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023.
 
 # Location & Spawning
 
@@ -19,5 +19,5 @@ The Tango Crate always drops 1-5 [Tango 51s](/weapons/guns/tango_51) and either 
 
 # History
 
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Added
