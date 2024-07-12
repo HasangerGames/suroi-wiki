@@ -43,15 +43,15 @@ The Bush does not have any loot, but the Blueberry Bush has decent [loot](/loot#
 <Gallery
   images={[
     {
-      url: "/img/articles/obstacles/bush/bugged_blueberry_bush_v0.8.0.png",
+      url: "/img/articles/obstacles/bush/bugged_blueberry_bush_[v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0).png",
       author: "Katloo",
       caption:
-        "A fellow Surian trying to hide in a bugged Blueberry Bush in v0.8.0",
+        "A fellow Surian trying to hide in a bugged Blueberry Bush in [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)",
     },
     {
-      url: "/img/articles/obstacles/bush/bush_v0.1.0",
+      url: "/img/articles/obstacles/bush/bush_[v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)",
       author: "Katloo",
-      caption: "A bush in v0.1.0",
+      caption: "A bush in [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)",
     },
   ]}
 />

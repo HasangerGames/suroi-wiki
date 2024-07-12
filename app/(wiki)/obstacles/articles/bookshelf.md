@@ -1,4 +1,4 @@
-The **Bookshelf** is an [Obstacle](/obstacles) added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Behind Closed Doors" update on July 30th, 2023.
+The **Bookshelf** is an [Obstacle](/obstacles) added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 30th, 2023.
 
 # Location & Spawning
 

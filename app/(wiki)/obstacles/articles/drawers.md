@@ -1,4 +1,4 @@
-**Drawers** are a type of [Obstacle](/obstacles) added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023.
+**Drawers** are a type of [Obstacle](/obstacles) added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 30th, 2023.
 
 # Location & Spawning
 
@@ -18,5 +18,5 @@ Small Drawers drop either healing items or ammo while Large Drawers drop guns, s
 
 # History
 
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Added

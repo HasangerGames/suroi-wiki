@@ -1,4 +1,4 @@
-**Distillation Equipment** is an [Obstacle](/obstacles) added in the v0.10.0 "Back with a Bang" update on September 14th, 2023.
+**Distillation Equipment** is an [Obstacle](/obstacles) added in the [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0) "Back with a Bang" update on September 14th, 2023.
 
 # Location & Spawning
 
@@ -19,5 +19,5 @@ Distillation Equipments are indestructible and reflect bullets.
 
 # History
 
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Added
