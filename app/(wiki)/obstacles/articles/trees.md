@@ -1,4 +1,4 @@
-Trees are a type of obstacle that spawn frequently on the map. They were added to the game in the v0.1.0 "We're back, baby" update on May 20th, 2023, and come in three variants.
+Trees are a type of obstacle that spawn frequently on the map. They were added to the game in the [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0) "We're back, baby" update on May 20th, 2023, and come in three variants.
 
 # Location & Spawning
 
@@ -23,8 +23,8 @@ Trees drop no loot upon being broken.
 
 # History
 
-- v0.9.1
+- [v0.9.1](https://github.com/HasangerGames/suroi/releases/tag/v0.9.1)
   - Increased oak & birch tree trunk radius by 2.5 (from 3)
   - Decreased random size scaling maximum by 0.1 (from 1.1)
-- v0.1.0
+- [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
   - Added
