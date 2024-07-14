@@ -1,4 +1,4 @@
-The **River Rock** is an [Obstacle](/obstacles) that spawn frequently in the rivers. It was added to the game in the v0.15.0 "Pulling the pin" update on January 15th, 2023. This is functionally the same as the other rock variants, just bigger than them.
+The **River Rock** is an [Obstacle](/obstacles) that spawn frequently in the rivers. It was added to the game in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the pin" update on January 15th, 2023. This is functionally the same as the other rock variants, just bigger than them.
 
 # Location & Spawning
 
@@ -24,11 +24,11 @@ The River Rock drops no loot upon being destroyed.
 
 # History
 
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added river rock variant
-- v0.12.5
+- [v0.12.5](https://github.com/HasangerGames/suroi/releases/tag/v0.12.5)
   - Art updated for Mossy and Cracked variants
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Added Moss and Cracked variants
-- v0.1.0
+- [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
   - Added Rock

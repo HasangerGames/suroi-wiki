@@ -1,4 +1,4 @@
-The **Mobile Home Stove** is an [Obstacle](/obstacles) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024.
+The **Mobile Home Stove** is an [Obstacle](/obstacles) added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14th, 2024.
 
 # Location & Spawning
 
@@ -19,5 +19,5 @@ The Mobile Home Stove doesn't drop loot and explodes when broken.
 
 # History
 
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added
