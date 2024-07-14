@@ -1,4 +1,4 @@
-The **Washing Machine** is an [Obstacle](/obstacles) added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It always drops one random skin.
+The **Washing Machine** is an [Obstacle](/obstacles) added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 30th, 2023. It always drops one random skin.
 
 # Location & Spawning
 
@@ -20,7 +20,7 @@ The Washing Machine reflects bullets and drops either the "Verified or "no kill 
 
 # History
 
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Made unobtainable
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Added

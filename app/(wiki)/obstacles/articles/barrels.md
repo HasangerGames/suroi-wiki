@@ -37,9 +37,9 @@ Barrels and Super Barrel drop no loot upon being broken, but they create an expl
 <Gallery
   images={[
     {
-      url: "/img/articles/obstacles/barrel/barrel_v0.4.0.png",
+      url: "/img/articles/obstacles/barrel/barrel_[v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0).png",
       author: "Katloo",
-      caption: "A player next to a Barrel in v0.4.0",
+      caption: "A player next to a Barrel in [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)",
     },
   ]}
 />
