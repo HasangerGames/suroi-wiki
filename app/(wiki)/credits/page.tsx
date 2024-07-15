@@ -253,7 +253,7 @@ export default function CreditsPage() {
       <h2>Game Contributors</h2>
       <div className="not-prose w-full">
         <GridTable>
-          {ARTISTS.map((name, i) => (
+          {GAME_CONTRIB.map((name, i) => (
             <Person
               person={{
                 name: name,
