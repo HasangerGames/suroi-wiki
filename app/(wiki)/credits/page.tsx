@@ -92,7 +92,7 @@ const GAME_TEAM: User[] = [
   },
   {
     name: "Katloo",
-    description: "Game Balancing and Planning",
+    description: "Project Management",
     avatar: "https://avatars.githubusercontent.com/u/132523318",
   },
   {
@@ -133,7 +133,7 @@ const GAME_TEAM: User[] = [
   },
   {
     name: "Error",
-    description: "Backend Developer",
+    description: "Backend Developer & Game Manager",
     avatar: "https://avatars.githubusercontent.com/u/119903110",
   },
   {
