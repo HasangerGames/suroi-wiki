@@ -13,7 +13,7 @@ export default function SkinsPage() {
             return !value.notInLoadout;
           }).length
         }{" "}
-        skins are available in the loadout.
+        skins are available in the game.
       </article>
       <GridTable>
         {Skins.definitions.map((skin) => (
