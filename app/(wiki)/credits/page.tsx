@@ -115,6 +115,7 @@ const GAME_TEAM: User[] = [
     name: "Limenade",
     description: "Developer",
     avatar: "https://avatars.githubusercontent.com/u/88803242",
+    website: "https://limenade.me",
   },
   {
     name: "Radians",
@@ -130,11 +131,13 @@ const GAME_TEAM: User[] = [
     name: "Albie",
     description: "Developer",
     avatar: "https://avatars.githubusercontent.com/u/78765172",
+    website: "https://www.linkedin.com/in/albie-morrison-7928b6299/",
   },
   {
     name: "Error",
     description: "Backend Developer & Game Manager",
     avatar: "https://avatars.githubusercontent.com/u/119903110",
+    website: "https://error430.dev",
   },
   {
     name: "pap",
