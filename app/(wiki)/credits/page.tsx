@@ -151,6 +151,35 @@ const GAME_TEAM: User[] = [
   },
 ];
 
+const GAME_CONTRIB: string[] = [
+  "Compositr",
+  "1092384",
+  "rsgtree",
+  "Domincog",
+  "atk-r",
+  "lmssiehdev",
+  "kaklikOf13",
+  "xluin",
+  "CroissantEdit",
+  "dedl0x",
+  "alany08",
+  "ariesninjadev",
+  "jcproject5678",
+  "MartinTintin3",
+  "bien-star",
+  "AriesPowv",
+  "xluin",
+  "ScaredPenguinXXL",
+  "Viswas-Programs",
+  "GatoVuelta",
+  "zspybr",
+  "jakweg",
+  "Yeet120",
+  "J0m1ty",
+  "emecdelam",
+  "Lightningeek",
+];
+
 // Too many names lol
 const ARTISTS: string[] = [
   "Avocado",
@@ -218,6 +247,20 @@ export default function CreditsPage() {
         <GridTable>
           {GAME_TEAM.map((person, i) => (
             <Person person={person} key={i} />
+          ))}
+        </GridTable>
+      </div>
+      <h2>Game Contributors</h2>
+      <div className="not-prose w-full">
+        <GridTable>
+          {ARTISTS.map((name, i) => (
+            <Person
+              person={{
+                name: name,
+              }}
+              displayAvatar={false}
+              key={i}
+            />
           ))}
         </GridTable>
       </div>
