@@ -131,6 +131,11 @@ const GAME_TEAM: User[] = [
     description: "Backend Developer",
     avatar: "https://avatars.githubusercontent.com/u/119903110",
   },
+  {
+    name: "pap",
+    description: "Developer",
+    avatar: "https://avatars.githubusercontent.com/u/71824952",
+  },
 ];
 
 // Too many names lol
