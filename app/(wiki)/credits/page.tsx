@@ -97,7 +97,7 @@ const GAME_TEAM: User[] = [
   },
   {
     name: "Damien",
-    description: "Developer",
+    description: "Chores and Bot",
     avatar: "https://avatars.githubusercontent.com/u/34838468",
   },
   {
