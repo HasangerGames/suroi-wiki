@@ -11,11 +11,11 @@ Nine Mobile Homes spawn across the map in random positions. All mobile homes con
 
  # Trivia
 
-- The Mobile Home was designed by platonthek
+- The Mobile Home was designed by platonthek.
 
- # History 
+ # History
 
 - v0.16.0
-  - Improved hitboxes
+  - Improved hitboxes.
 - v0.15.0
-  - Added
+  - Added.

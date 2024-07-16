@@ -17,10 +17,10 @@ The Port Warehouse contains a bunch of [Regular Crates](/obstacles/regular_crate
 
 # Trivia
 
-- The Port Warehouse was designed by platonthek
-- As of the latest version, there is a small hole in the hitbox of the Port Warehouse that allows you to see inside from the outside wall
+- The Port Warehouse was designed by platonthek.
+- As of the latest version, there is a small hole in the hitbox of the Port Warehouse that allows you to see inside from the outside wall.
 
 # History
 
 - v0.11.0
-  - Added
+  - Added.

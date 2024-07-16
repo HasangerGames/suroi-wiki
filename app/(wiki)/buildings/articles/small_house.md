@@ -36,15 +36,15 @@ The Dining Area has a [Table](/obstacles/table) with two [Chairs](/obstacles/cha
 
 # Trivia
 
-- The Small House was designed by platonthek
+- The Small House was designed by platonthek.
 
 # History
 
 - v0.17.0
-  - Redesigned roof and floor
-  - Added ground loot on the floor
+  - Redesigned roof and floor.
+  - Added ground loot on the floor.
 - v0.13.0
-  - A bug has been fixed that prevented used toilets from spawning in the Small House
-  - Adjusted viewing hitboxes for all buildings, including the Small House
+  - A bug has been fixed that prevented used toilets from spawning in the Small House.
+  - Adjusted viewing hitboxes for all buildings, including the Small House.
 - v0.11.0
-  - Added
+  - Added.

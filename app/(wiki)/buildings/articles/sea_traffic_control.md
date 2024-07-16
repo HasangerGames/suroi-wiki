@@ -14,7 +14,7 @@ Inside, there will be a [Table](/obstacles/table) with an [Office Chair](/obstac
 
 # Loot & More
 
-A [Radio](/weapons/guns/radio) spawns on the floor in the interior of every Sea Traffic Control. It can be used to call an [Airdrop](/obstacles/airdrops). 
+A [Radio](/weapons/guns/radio) spawns on the floor in the interior of every Sea Traffic Control. It can be used to call an [Airdrop](/obstacles/airdrops).
 
 # Tips
 
@@ -29,7 +29,7 @@ A [Radio](/weapons/guns/radio) spawns on the floor in the interior of every Sea 
 
 # Trivia
 
-- The Tugboats were designed by Platonthek and Emeraldneo
+- The Tugboats were designed by Platonthek and Emeraldneo.
 
 # History
 

@@ -22,12 +22,12 @@ The Warehouse always spawns with 3 [Regular Crates](/obstacles/regular_crate), 6
 
 # Trivia
 
-- The Warehouse was designed by Leia and 1092384
+- The Warehouse was designed by Leia and 1092384.
 - Originally, the Warehouse was going to be a smaller, squarer building, but this was scrapped
 
 # History
 
 - v0.10.0
-  - Improved visibility around the Warehouse
+  - Improved visibility around the Warehouse.
 - v0.9.0
-  - Added
+  - Added.
