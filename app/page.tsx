@@ -30,12 +30,12 @@ export default async function Home() {
             <Pill href="https://suroi.io" text="Play Suroi" color="suroi" />
             <Pill
               href="https://github.com/hasangergames/suroi"
-              text="Suroi Github"
+              text="Suroi GitHub"
               color="primary"
             />
             <Pill
               href="https://github.com/hasangergames/suroi-wiki"
-              text="Wiki Github"
+              text="Wiki GitHub"
               color="muted"
             />
           </div>

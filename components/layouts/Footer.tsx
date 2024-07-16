@@ -25,19 +25,19 @@ export default function Footer() {
           ))}
         </div>
         <div className="flex flex-col gap-2">
-          <b>Source code</b>
+          <b>Source Code</b>
           <FooterLink href="https://github.com/hasangergames/suroi">
-            Suroi Github
+            Suroi GitHub
           </FooterLink>
           <FooterLink href="https://github.com/hasangergames/suroi-wiki">
-            Wiki Github
+            Wiki GitHub
           </FooterLink>
         </div>
         <div className="flex flex-col gap-2">
           <b>Credits</b>
           <span>Made with love by Compositr and Kenos</span>
           <FooterLink href="/credits">Game and Wiki Credits</FooterLink>
-          <FooterLink href="https://nextjs.org">NextJS by Vercel</FooterLink>
+          <FooterLink href="https://nextjs.org">Next.JS by Vercel</FooterLink>
           <FooterLink href="https://tailwindcss.org">TailwindCSS</FooterLink>
           <FooterLink href="https://fusejs.io">Fuse.js</FooterLink>
         </div>
