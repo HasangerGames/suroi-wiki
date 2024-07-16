@@ -20,7 +20,7 @@ All tugboat cabins contain one [Tugboat Control Panel](/obstacles/tugboat_contro
 
 - The water near Tugboats are not good places to fight as the water can slow you down, making you an easy target for a player who out-scopes you.
 - Prioritize looting the structure with maximum efficiency and leaving as quickly as possible to minimize the chance to run into another player.
-- If you do happen to end up in a fight, the metal fences on the side of the Togboat provide indestructible cover and also reflects bullets.
+- If you do happen to end up in a fight, the metal fences on the side of the Tugboat provide indestructible cover and also reflects bullets.
 - Do not go for the Red Tugboat if you spawn late into the game, as it will likely already be looted.
 
 # Trivia
