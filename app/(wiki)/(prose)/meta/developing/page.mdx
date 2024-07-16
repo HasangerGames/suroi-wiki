@@ -2,23 +2,23 @@ import GenericNotice from "@/components/articles/notices/GenericNotice";
 
 # Developing
 
-Thank you for considering to contribute code to the wiki!
+Thank you for considering to contribute code to the Suroi wiki!
 
-We use the following tech stack for the wiki,
+We use the following tech stack:
 
-- NextJS
-- React
-- TailwindCSS
-- Typescript
+- [Next.js](https://nextjs.org)
+- [React](https://react.dev)
+- [TailwindCSS](https://tailwindcss.com)
+- [TypeScript](https://www.typescriptlang.org)
 
-Please refer to the documentation of each framework/library for more information
+Please refer to the documentation of each framework / library for more information.
 
-## Getting started
+## Getting Started
 
-We use git submodules, so first time setup for a development environment is slightly different from normal,
+This wiki utilizes [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules), so first-time setup for a development environment is slightly different from normal:
 
 ```sh
-git clone https://github.com/hasangergames/suroi-wiki.git
+git clone https://github.com/HasangerGames/suroi-wiki.git
 git submodule init
 git submodule update --remote
 cd suroi-wiki
@@ -27,84 +27,84 @@ pnpm i
 pnpm dev
 ```
 
-Note that we use `pnpm`, instead of `npm` (because it is just better)
+Note that we use [pnpm](https://pnpm.io), a high-performance alternative to [npm](https://npmjs.com).
 
-## Recommended setup
+## Recommended Setup
 
-- Visual Studio Code/VSCodium
+- [Visual Studio Code](https://code.visualstudio.com) / [VSCodium](https://vscodium.com)
 - VSCode Extensions (VSCode should automatically recommend you workspace extensions)
-  - Typescript
+  - TypeScript
   - ESLint
   - Prettier
   - Code Spell Checker
   - Tailwind CSS IntelliSense
-- PNPM
-- Git with SSH (optional)
+- [pnpm](https://pnpm.io)
+- [git](https://git-scm.com)
 
-(We obviously don't care about what you use)
+**NOTE:** These are just recommendations. Feel free to use whatever tools suit you best.
 
-### Setting up a git hook
+### Pre-Commit Hooks
 
-If you have been mad at GitHub's email spam telling you about failed CI runs, try out Git hooks!
+If you have been plagued by GitHub spamming your email about failed CI runs, try out [Git Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)!
 
-At the project root,
+At the project root:
 
 ```sh
-echo "pnpm ci:lint\npnpm spellcheck" > .git/hooks/pre-commit
+echo "pnpm lint; pnpm spellcheck" > .git/hooks/pre-commit
 chmod +x .git/hooks/pre-commit
 ```
 
-Now Git will lint and spellcheck for you before you commit your changes!
+Now Git will **automatically** lint and spellcheck for you on each commit!
 
-## Do and Don't
+## DO's and DON'Ts
 
-**Don't use `<a></a>` and `<img />`**
+**DON'T use `<a></a>` and `<img />`**
 
-We use the NextJS component equivalents, `<Link></Link>` and `<Image />`
+We use the NextJS component equivalents, `<Link></Link>` and `<Image />`.
 
-**Don't push large amounts of changes to the wiki code**
+**DON'T push large amounts of changes to the wiki code**
 
-Make a branch/fork and create a pull request please. Also have at **least one** maintainer review your code. Small changes are fine and don't need review (though it is best to get approval)
+Please make a branch / fork and create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request). Also have at **least one** maintainer review your code.<br/>
+Small changes are an exception to this and don't need review (though it is best to get approval).
 
-**Don't ignore the JSX key error**
+**DON'T ignore the JSX key error**
 
-It's super annoying, but add a `key` prop anyways
+It's super annoying, but add a `key` prop anyways.
 
-**Don't push hacky solutions**
+**DON'T push hacky solutions**
 
-The only exception is if it will get refactored soon after anyway or if another person is willing to refactor it.
+The only exception is if it will be refactored soon, or if another person is willing to refactor it.
 
-**Don't use external images**
+**DON'T use external images**
 
-Only exception (currently) is GitHub for game assets and Invidious for YouTube thumbnails, please put your images in `/public`
+Currently, the only exceptions to this rule are [GitHub](https://github.com) for game assets and [Invidious](https://invidious.io) for YouTube thumbnails.<br/>Please upload any other assets in `/public`.
 
-**Don't use emojis in commit messages**
+**DON'T use emojis in commit messages**
 
-Or you will get publically shamed.
+You **will** be publicly shamed.
 
-**Do use tree shaking**
+**DO use tree shaking**
 
-If you are adding new libraries, please use tree shaking when possible, to keep bundle sizes minimal
+If you are adding new libraries, please use tree shaking whenever possible, to minimize bundle sizes.
 
-**Do use a formatter and linter**
+**DO use a formatter and linter**
 
-Run this command to run ESLint and Prettier
+Execute this command to run ESLint over the codebase:
 
 ```sh
 pnpm lint
 ```
 
-**Do use a spellchecker**
+**DO use a spellchecker**
 
-Just run this command to spellcheck
+Run this command to spellcheck:
 
 ```sh
 pnpm spellcheck
 ```
 
 <GenericNotice emote="bleh">
-  Note that we run GitHub CI jobs to check for linting, formatting and
-  spellchecking!
+  Note that we run GitHub Actions to check for build errors, linting, and spellchecking!
 </GenericNotice>
 
-**TLDR**: It is best to ask the wiki maintainers (**Compositr** and **Kenos**) if you should contribute something to the wiki
+**TLDR**: It is best to ask the wiki maintainers (**Compositr** and **Kenos**) if you should contribute something to the wiki.
