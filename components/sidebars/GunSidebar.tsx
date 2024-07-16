@@ -39,7 +39,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
         </div>
       )}
       <GenericSidebar
-        title={showDual ? dualDef?.name ?? gun.name : gun.name}
+        title={showDual ? (dualDef?.name ?? gun.name) : gun.name}
         image={getSuroiImageLink(
           showDual ? dualDef! : gun,
           undefined,
@@ -71,7 +71,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
             type: "react",
             children: (
               <PlayerHoldingGun
-                gun={showDual ? dualDef ?? gun : gun}
+                gun={showDual ? (dualDef ?? gun) : gun}
                 skin={
                   Skins.definitions.find((skin) => {
                     return skin.idString === "hazel_jumpsuit";
