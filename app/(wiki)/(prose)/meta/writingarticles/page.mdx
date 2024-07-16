@@ -8,7 +8,7 @@ import SuroiItemImage from "@/components/articles/SuroiItemImage.tsx";
 
 # Writing Articles
 
-First of all, thanks for helping out with the documentation! Since this wiki is community-run, we need all the help we can get.
+First of all, thanks for helping out with the documentation! We need all the help we can get.<br/>
 Since this wiki is a custom coded solution, creating articles is a bit different to what you might be used to over on Fandom.
 
 Articles are written in [MDX](https://mdxjs.com/docs/what-is-mdx/), an extension of the typical Markdown you may be used to.
@@ -20,20 +20,20 @@ article (e.g., [AK47](/weapons/guns/ak47)).
 
 ## Article Layout
 
-## General Pointers
+### General Pointers
 
 - Articles should be written in American English (e.g. color rather than colo**u**r).
 - We read your article submissions to check if they are high quality and relevant.
   - We automatically spell check your submissions.
 
-# Syntax
+## Syntax
 
 See the [MDX](https://mdxjs.com/docs/what-is-mdx/) docs for a detailed overview of MDX. If you are new to Markdown, you can find a
 guide [here](https://www.markdownguide.org/basic-syntax/).
 
 ## Extensions
 
-There are a couple MDX/JSX tags you can use to make your articles more interactive. They are listed below for your reference.
+There are a couple MDX / JSX tags you can use to make your articles more interactive. They are listed below for your reference.
 
 ### `<Event />`
 
@@ -57,7 +57,7 @@ See below:
 
 <TimeLink time={1699868632020} />
 
-- **time** Unix milliseconds, UTC of course
+- `time`: Unix milliseconds, UTC timezone
 
 ### `<RemovedItem />`
 
@@ -77,12 +77,12 @@ A item image from the game. Requires the item idString.
 
 Options:
 
-- width: width in px
-- height: height in px
-- rotation: rotation in degrees
-- variation: for sprites with variations, a number
-- append: for sprites that have suffixes like "\_world" at the end of their sprite file name
-- dual: for dual guns only
+- `width`: width in px
+- `height`: height in px
+- `rotation`: rotation in degrees
+- `variation`: for sprites with variations, a number
+- `append`: for sprites that have suffixes like "\_world" at the end of their sprite file name
+- `dual`: for dual guns only
 
 <SuroiItemImage itemID="deathray" />
 
