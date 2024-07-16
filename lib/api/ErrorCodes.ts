@@ -3,14 +3,14 @@ enum APIErrorCodes {
   Unknown,
   ItemNotFound,
   LootTableNotFound,
-  ItemNotInLootTable,
+  ItemNotInLootTable
 }
 
 export const ErrorMessages: Record<APIErrorCodes, string> = {
-  "0": "Unknown error",
-  "1": "Item not found",
-  "2": "Invalid loot table",
-  "3": "Item cannot be obtained from this loot table",
+  0: "Unknown error",
+  1: "Item not found",
+  2: "Invalid loot table",
+  3: "Item cannot be obtained from this loot table"
 };
 
 export default APIErrorCodes;

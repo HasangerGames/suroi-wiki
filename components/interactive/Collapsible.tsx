@@ -9,7 +9,7 @@ export default function Collapsible({
   defaultOpen = true,
   children,
   className = "",
-  chevronSize = 24,
+  chevronSize = 24
 }: CollapsibleProps) {
   const [open, setOpen] = useState(defaultOpen);
 
@@ -22,7 +22,7 @@ export default function Collapsible({
         <ChevronDown
           style={{
             transform: `rotate(${open ? "0deg" : "-90deg"})`,
-            transition: "transform 0.2s ease",
+            transition: "transform 0.2s ease"
           }}
         />
         {label}
@@ -33,9 +33,9 @@ export default function Collapsible({
 }
 
 export interface CollapsibleProps extends React.PropsWithChildren {
-  label: React.ReactNode;
-  defaultOpen?: boolean;
-  children: React.ReactNode;
-  className?: string;
-  chevronSize?: number;
+  label: React.ReactNode
+  defaultOpen?: boolean
+  children: React.ReactNode
+  className?: string
+  chevronSize?: number
 }

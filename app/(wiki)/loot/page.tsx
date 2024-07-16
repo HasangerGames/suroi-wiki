@@ -3,7 +3,7 @@ import TableWithHeader from "@/components/tables/TableWithHeader";
 import { Loots } from "@/vendor/suroi/common/src/definitions/loots";
 import {
   LootTables,
-  LootTiers,
+  LootTiers
 } from "@/vendor/suroi/server/src/data/lootTables";
 
 export default function LootPage() {
@@ -29,21 +29,21 @@ export default function LootPage() {
               key={name}
               title={`Tier ${name}`}
               header={["Item", "Count", "Weight", "% Chance"]}
-              content={tiers.map((tier) => [
+              content={tiers.map(tier => [
                 "item" in tier
                   ? `Item ${
-                      Loots.definitions.find(
-                        (loot) => loot.idString === tier.item,
-                      )?.name
-                    }`
+                    Loots.definitions.find(
+                      loot => loot.idString === tier.item
+                    )?.name
+                  }`
                   : `Tier ${tier.tier}`,
                 tier.count ? tier.count.toString() : "1",
                 tier.weight,
-                (
-                  (tier.weight /
-                    tiers.reduce((acc, tier) => acc + tier.weight, 0)) *
-                  100
-                ).toFixed(2) + "%",
+                `${(
+                  (tier.weight
+                  / tiers.reduce((acc, tier) => acc + tier.weight, 0))
+                  * 100
+                ).toFixed(2)}%`
               ])}
             />
           </div>
@@ -64,24 +64,24 @@ export default function LootPage() {
             header={["Tier/Item", "Count", "Weight", "% Chance"]}
             content={tables.loot
               .flat()
-              .map((tier) => [
+              .map(tier => [
                 "item" in tier
                   ? `Item ${
-                      Loots.definitions.find(
-                        (loot) => loot.idString === tier.item,
-                      )?.name
-                    }`
+                    Loots.definitions.find(
+                      loot => loot.idString === tier.item
+                    )?.name
+                  }`
                   : `Tier ${tier.tier}`,
                 tier.count ? tier.count.toString() : "1",
                 tier.weight.toString(),
 
-                (
-                  (tier.weight /
-                    tables.loot
-                      .flat()
-                      .reduce((acc, tier) => acc + tier.weight, 0)) *
-                  100
-                ).toFixed(2) + "%",
+                `${(
+                  (tier.weight
+                  / tables.loot
+                    .flat()
+                    .reduce((acc, tier) => acc + tier.weight, 0))
+                    * 100
+                ).toFixed(2)}%`
               ])}
           />
         </div>

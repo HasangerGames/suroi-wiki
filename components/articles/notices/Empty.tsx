@@ -6,7 +6,7 @@ export default function Empty() {
     <GenericNotice emote="question_mark">
       This article is empty. Visit the{" "}
       <URLLink
-        href={"https://github.com/HasangerGames/suroi-wiki"}
+        href="https://github.com/HasangerGames/suroi-wiki"
         target="_blank"
       >
         GitHub

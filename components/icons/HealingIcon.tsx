@@ -8,7 +8,7 @@ import Image from "next/image";
  */
 export default function HealingIcon({
   item: ammo,
-  scale = 1,
+  scale = 1
 }: HealingIconProps) {
   return (
     <Image
@@ -21,6 +21,6 @@ export default function HealingIcon({
 }
 
 export interface HealingIconProps {
-  item: string;
-  scale?: number;
+  item: string
+  scale?: number
 }

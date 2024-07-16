@@ -22,10 +22,10 @@ export interface EditButtonProps extends React.PropsWithChildren {
    * Exclude /articles
    * eg: weapons/guns
    */
-  path: string;
+  path: string
   /**
    * The item ID string (or markdown document filename without extension)
    * eg: model_37
    */
-  id: string;
+  id: string
 }

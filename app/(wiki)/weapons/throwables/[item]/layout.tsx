@@ -4,13 +4,13 @@ import { notFound } from "next/navigation";
 
 export default function ThrowableLayout({
   children,
-  params,
+  params
 }: {
   params: {
-    item: string;
-  };
+    item: string
+  }
 } & React.PropsWithChildren) {
-  const throwable = Throwables.definitions.find((item) => {
+  const throwable = Throwables.definitions.find(item => {
     return item.idString === params.item;
   });
   if (!throwable) notFound();

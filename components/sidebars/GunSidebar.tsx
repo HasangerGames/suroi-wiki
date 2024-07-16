@@ -4,7 +4,7 @@ import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
 import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
 import {
   GunDefinition,
-  Guns,
+  Guns
 } from "@/vendor/suroi/common/src/definitions/guns";
 import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 import { useState } from "react";
@@ -44,7 +44,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           showDual ? dualDef! : gun,
           undefined,
           undefined,
-          true,
+          true
         )}
         imageVariations={[
           {
@@ -53,19 +53,19 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
               showDual ? dualDef! : gun,
               undefined,
               undefined,
-              true,
+              true
             ),
-            title: "Loot",
+            title: "Loot"
           },
           {
             type: "image",
             url: getSuroiImageLink(gun, undefined, "world"),
-            title: "World",
+            title: "World"
           },
           {
             type: "image",
             url: getSuroiKillfeedImageLink(showDual ? dualDef! : gun),
-            title: "Killfeed",
+            title: "Killfeed"
           },
           {
             type: "react",
@@ -73,14 +73,14 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
               <PlayerHoldingGun
                 gun={showDual ? (dualDef ?? gun) : gun}
                 skin={
-                  Skins.definitions.find((skin) => {
+                  Skins.definitions.find(skin => {
                     return skin.idString === "hazel_jumpsuit";
                   }) ?? Skins.definitions[0]
                 }
               />
             ),
-            title: "Player Preview",
-          },
+            title: "Player Preview"
+          }
         ]}
       >
         <GunDetails gun={showDual ? dualDef! : gun} explosion={explosion} />
@@ -90,6 +90,6 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
 }
 
 export interface GunSidebarProps {
-  gun: GunDefinition;
-  explosion?: ExplosionDefinition;
+  gun: GunDefinition
+  explosion?: ExplosionDefinition
 }

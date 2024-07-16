@@ -5,7 +5,7 @@ export default function GenericListingPageFactory(
   objects: ObjectDefinition[],
   name: string,
   path: string,
-  description?: string,
+  description?: string
 ) {
   return function GenericListingPage() {
     return (
@@ -15,7 +15,7 @@ export default function GenericListingPageFactory(
           {description && <p>{description}</p>}
         </div>
         <div className="flex flex-col gap-4 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4">
-          {objects.map((obj) => (
+          {objects.map(obj => (
             <ObjectCard obj={obj} path={path} key={obj.idString} />
           ))}
         </div>

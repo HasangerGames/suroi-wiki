@@ -5,7 +5,7 @@ import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
 const toExport = GenericArticlePage({
   items: Armors.definitions,
   path: "equipment/armor",
-  Sidebar: ArmorSidebar,
+  Sidebar: ArmorSidebar
 });
 
 export const { generateMetadata, generateStaticParams } = toExport;

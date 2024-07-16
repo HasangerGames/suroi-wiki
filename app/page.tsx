@@ -73,7 +73,7 @@ export default async function Home() {
       <div>
         <h1 className="text-xl font-bold text-center mb-4">Wiki Pages</h1>
         <GridTable>
-          {wikiPages.map((page) => (
+          {wikiPages.map(page => (
             <PageCard
               key={page.url}
               title={page.name}
@@ -100,9 +100,9 @@ function Pill({ text, href, color }: PillProps) {
 }
 
 interface PillProps extends React.PropsWithChildren {
-  text: string;
-  href: string;
-  color: string;
+  text: string
+  href: string
+  color: string
 }
 
 function Card({ title, children }: CardProps) {
@@ -115,5 +115,5 @@ function Card({ title, children }: CardProps) {
 }
 
 interface CardProps extends React.PropsWithChildren {
-  title: string;
+  title: string
 }

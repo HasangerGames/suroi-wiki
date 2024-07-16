@@ -13,5 +13,5 @@ export default function BranchLink({ branch, children }: BranchLinkProps) {
 }
 
 export interface BranchLinkProps extends React.PropsWithChildren {
-  branch: string;
+  branch: string
 }

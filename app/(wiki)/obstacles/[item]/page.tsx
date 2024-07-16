@@ -14,24 +14,24 @@ const toExport = GenericArticlePage({
         "flint_crate",
         "regular_crate",
         "melee_crate",
-        "grenade_crate",
+        "grenade_crate"
       ],
-      fileName: "crates",
+      fileName: "crates"
     },
     {
       title: "Barrels",
       items: ["barrel", "super_barrel"],
-      fileName: "barrels",
+      fileName: "barrels"
     },
     {
       title: "Trees",
       items: ["oak_tree", "birch_tree", "pine_tree"],
-      fileName: "trees",
+      fileName: "trees"
     },
     {
       title: "Airdrops",
       items: ["airdrop_crate_locked", "airdrop_crate", "gold_airdrop_crate"],
-      fileName: "airdrops",
+      fileName: "airdrops"
     },
     {
       title: "Gun Mounts",
@@ -39,9 +39,9 @@ const toExport = GenericArticlePage({
         "gun_mount_mcx_spear",
         "gun_mount_stoner_63",
         "gun_mount_hp18",
-        "gun_mount_maul",
+        "gun_mount_maul"
       ],
-      fileName: "gun_mounts",
+      fileName: "gun_mounts"
     },
     {
       title: "Toilets",
@@ -49,24 +49,24 @@ const toExport = GenericArticlePage({
         "toilet",
         "used_toilet",
         "porta_potty_toilet_open",
-        "porta_potty_toilet_closed",
+        "porta_potty_toilet_closed"
       ],
-      fileName: "toilets",
+      fileName: "toilets"
     },
     {
       title: "Drawers",
       items: ["small_drawer", "large_drawer"],
-      fileName: "drawers",
+      fileName: "drawers"
     },
     {
       title: "Doors",
       items: ["door", "vault_door", "garage_door", "porta_potty_door"],
-      fileName: "doors",
+      fileName: "doors"
     },
     {
       title: "Fences",
       items: ["port_fence", "port_fence_side"],
-      fileName: "fences",
+      fileName: "fences"
     },
     {
       title: "Control Panels",
@@ -75,16 +75,16 @@ const toExport = GenericArticlePage({
         "control_panel_activated",
         "control_panel_2",
         "control_panel_small",
-        "tugboat_control_panel",
+        "tugboat_control_panel"
       ],
-      fileName: "control_panels",
+      fileName: "control_panels"
     },
     {
       title: "Bush",
       items: ["bush", "blueberry_bush"],
-      fileName: "bush",
-    },
-  ],
+      fileName: "bush"
+    }
+  ]
 });
 
 export const { generateMetadata, generateStaticParams } = toExport;

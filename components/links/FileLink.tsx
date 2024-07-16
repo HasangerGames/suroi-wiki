@@ -4,10 +4,10 @@ import Link from "./Link";
 export default function FileLink({
   file,
   lines,
-  children,
+  children
 }: {
-  file: string;
-  lines?: number | [number, number];
+  file: string
+  lines?: number | [number, number]
 } & Required<React.PropsWithChildren>) {
   return (
     <Link

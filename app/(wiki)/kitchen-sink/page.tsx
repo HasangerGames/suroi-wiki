@@ -24,12 +24,13 @@ export default function Kitchen() {
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
-      ></iframe>
+      >
+      </iframe>
       <TableWithHeader
         header={["silly", "cat", "bleh"]}
         content={[
           ["milly", "cat", "uwu"],
-          ["bleh", ":3", "silly"],
+          ["bleh", ":3", "silly"]
         ]}
       />
       <MatrixTable
@@ -39,7 +40,7 @@ export default function Kitchen() {
         content={[
           ["1", "2", "3"],
           ["1", "2", "3"],
-          ["1", "2", "3"],
+          ["1", "2", "3"]
         ]}
       />
       <PlayerWearingEquipment />
@@ -50,14 +51,14 @@ export default function Kitchen() {
       <Stub />
       <Gallery
         images={[
-          ...Guns.definitions.map((gun) => ({
+          ...Guns.definitions.map(gun => ({
             url: getSuroiImageLink(gun),
             caption: gun.name,
-            author: gun.idString,
-          })),
+            author: gun.idString
+          }))
         ]}
       />
-      <Collapsible label={"Collapsible block"}>
+      <Collapsible label="Collapsible block">
         <p>Hello! You can show or hide me!</p>
       </Collapsible>
     </div>

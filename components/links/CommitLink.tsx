@@ -17,5 +17,5 @@ export default function CommitLink({ sha, children }: CommitLinkProps) {
 }
 
 export interface CommitLinkProps extends React.PropsWithChildren {
-  sha: string;
+  sha: string
 }

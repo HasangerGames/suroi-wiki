@@ -9,38 +9,38 @@ import MDXClient from "../client/MDXClient";
 
 export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
   return async function GenericMDXPage({
-    params,
+    params
   }: {
     params: {
-      item: string;
-    };
+      item: string
+    }
   }) {
     const files = await fs.readdir(
       path.join(process.cwd(), `/app/(wiki)/${args.path}/articles`),
-      { withFileTypes: true },
+      { withFileTypes: true }
     );
 
     const articles = Object.fromEntries(
       await Promise.all(
-        files.map(async (file) => [
+        files.map(async file => [
           file.name,
-          await serialize(await fs.readFile(path.join(file.path, file.name))),
-        ]),
-      ),
+          await serialize(await fs.readFile(path.join(file.path, file.name)))
+        ])
+      )
     );
 
     // Hardcoded redirect for dual guns
-    if (params.item.startsWith("dual_"))
-      return redirect(`/weapons/guns/${params.item.replace("dual_", "")}`);
+    if (params.item.startsWith("dual_")) { return redirect(`/weapons/guns/${params.item.replace("dual_", "")}`); }
 
-    const article = articles[params.item + ".md"] ?? null;
+    const article = articles[`${params.item}.md`] ?? null;
 
-    if (article)
+    if (article) {
       return (
         <>
           <MDXClient {...article} />
         </>
       );
+    }
 
     return (
       <>
@@ -51,7 +51,7 @@ export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
 }
 
 export interface GenericMDXPageFactoryArgs {
-  path: string;
+  path: string
 }
 
 export function GenericGenerateStaticParamsFactory(items: ObjectDefinitions) {
@@ -59,10 +59,10 @@ export function GenericGenerateStaticParamsFactory(items: ObjectDefinitions) {
 }
 
 export function GenericGenerateMetadataFactory(items: ObjectDefinitions) {
-  return function ({
-    params: { item },
+  return function({
+    params: { item }
   }: {
-    params: { item: string };
+    params: { item: string }
   }): Metadata {
     const def = items.fromStringSafe(item);
     if (!def) notFound();
@@ -71,8 +71,8 @@ export function GenericGenerateMetadataFactory(items: ObjectDefinitions) {
       title: def.name,
       openGraph: {
         type: "article",
-        images: [`/api/og/${def.idString}`],
-      },
+        images: [`/api/og/${def.idString}`]
+      }
     };
   };
 }

@@ -1,6 +1,6 @@
 import {
   ObjectDefinition,
-  ObjectDefinitions,
+  ObjectDefinitions
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { notFound } from "next/navigation";
 import React, { ComponentType } from "react";
@@ -12,15 +12,15 @@ import React, { ComponentType } from "react";
  * @returns Is a HOC that returns a layout to export to Next,js
  */
 export default function GenericLayoutFactory<T extends ObjectDefinition>(
-  args: GenericLayoutFactoryArgs<T>,
+  args: GenericLayoutFactoryArgs<T>
 ) {
   return function GenericLayout({
     children,
-    params: { item },
+    params: { item }
   }: {
     params: {
-      item: string;
-    };
+      item: string
+    }
   } & React.PropsWithChildren) {
     const def = args.items.fromStringSafe(item);
     if (!def) notFound();
@@ -42,6 +42,6 @@ export default function GenericLayoutFactory<T extends ObjectDefinition>(
 }
 
 export interface GenericLayoutFactoryArgs<T extends ObjectDefinition> {
-  Sidebar: ComponentType<{ item: T }>;
-  items: ObjectDefinitions<T>;
+  Sidebar: ComponentType<{ item: T }>
+  items: ObjectDefinitions<T>
 }

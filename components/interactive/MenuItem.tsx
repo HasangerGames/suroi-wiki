@@ -13,7 +13,7 @@ export default function MenuItem({ title, href, onClick }: MenuItemProps) {
 }
 
 export interface MenuItemProps extends React.PropsWithChildren {
-  title: string;
-  href: string;
-  onClick?: () => unknown;
+  title: string
+  href: string
+  onClick?: () => unknown
 }

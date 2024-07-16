@@ -6,7 +6,7 @@ export default function TimeLink({ time }: TimeLinkProps) {
   const date = new Date(time);
   const formatter = new Intl.DateTimeFormat(undefined, {
     timeStyle: "medium",
-    dateStyle: "medium",
+    dateStyle: "medium"
   });
   return (
     <>
@@ -24,5 +24,5 @@ export default function TimeLink({ time }: TimeLinkProps) {
 }
 
 export interface TimeLinkProps {
-  time: number;
+  time: number
 }
