@@ -76,7 +76,7 @@ const WIKI_CONTRIB: string[] = [
   "geodic",
   "AnnihilatingFox",
   "Zollo757347",
-  "yestice"
+  "yestice",
 ];
 
 const GAME_TEAM: User[] = [
