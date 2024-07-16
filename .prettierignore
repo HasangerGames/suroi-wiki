@@ -1,9 +1,0 @@
-vendor
-.git
-.github
-.next
-.vscode
-node_modules
-*.md
-package.json
-pnpm-lock.yaml

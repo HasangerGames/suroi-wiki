@@ -1,10 +1,8 @@
-const withMDX = require("@next/mdx")({
-  options: {},
-});
+import nextMDX from "@next/mdx";
+import NextBundleAnalyzer from "@next/bundle-analyzer";
 
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
-});
+const withMDX = nextMDX();
+const withBundleAnalyzer = NextBundleAnalyzer({ enabled: process.env.ANALYZE === "true" });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -36,4 +34,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withBundleAnalyzer(withMDX(nextConfig));
+export default withBundleAnalyzer(withMDX(nextConfig));
