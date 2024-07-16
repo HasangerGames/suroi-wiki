@@ -38,7 +38,7 @@ The Shed spawns in the lower right corner of the Armory.
 
 ## Porta Potty
 
-Main article: [Porta Potty](/buildings/porta_potty)
+Main article: [Porta Potty](/buildings/porta_potty).
 The Porta Potty spawns near the exterior of the Vault.
 
 ## Other
@@ -46,7 +46,7 @@ The Porta Potty spawns near the exterior of the Vault.
 - There is a [M1117](/obstacles/m1117) in the top right of the Armory.
   - Near it is a [Flint Crate](/obstacles/crates) and two Gun Cases that can drop your weapons and other loot.
   - The M1117 reflects bullets and is indestructible.
-- Many Regular Crates, [Barrels](/obstacles/barrel), [Super Barrels](/obstacles/super_barrel), [Sandbags](/obstacles/sandbags), Grenade Crates, as well as several Tear Gas Crates, Gun Cases and Ammo Crates spawn throughout the structure. 
+- Many Regular Crates, [Barrels](/obstacles/barrel), [Super Barrels](/obstacles/super_barrel), [Sandbags](/obstacles/sandbags), Grenade Crates, as well as several Tear Gas Crates, Gun Cases and Ammo Crates spawn throughout the structure.
   - These obstacles can be used for cover or loot.
 - A [Barrier](/obstacles/barrier) spawns behind two sandbags at the bottom of the Armory. It can be used as an indestructible cover from enemies.
 - Most of the structure is surrounded by [Port Fences](/obstacles/port_fence).
@@ -61,10 +61,10 @@ The Porta Potty spawns near the exterior of the Vault.
 
 # Trivia
 
-- The Armory was designed by Bear
-- In real life, an armory is a place for a military to store weapons
+- The Armory was designed by Bear.
+- In real life, an armory is a place for a military to store weapons.
 
 # History
 
 - v0.15.0
-  - Added
+  - Added.

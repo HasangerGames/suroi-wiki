@@ -9,7 +9,7 @@ The Foyer contains no loot, but it does have a [Table](/obstacles/table) and two
 
 ## Kitchen
 
-The Kitchen, directly next to the entrance, contains a [Stove](/obstacles/stove) and a [Fridge](/obstacles/fridge). - Many players don't realize that the fridge drops [2-3 Colas](/loot#fridge) when broken. Even in late game, you can often check Houses and still find some unbroken ones.
+The Kitchen, directly next to the entrance, contains a [Stove](/obstacles/stove) and a [Fridge](/obstacles/fridge). Many players don't realize that the fridge drops [2-3 Colas](/loot#fridge) when broken. Even in late game, you can often check Houses and still find some unbroken ones.
 
 ## Bedroom
 
@@ -34,17 +34,16 @@ The Garage contains a Bookshelf, [Regular Crate](/obstacles/regular_crate), [Bar
 
 # Trivia
 
-- The House was designed by platonthek
-- The Garage has an oil stain on the floor, possibly suggesting a car or other vehicle had been there before
-  = The code for the House still exists, so it's possible to make it spawn on a self-hosted server
+- The House was designed by platonthek.
+- The Garage has an oil stain on the floor, possibly suggesting a car or other vehicle had been there before.
 
 # History
 
 - v0.17.0
-  - Completely removed from the game
+  - Completely removed from the game.
 - v0.11.0
-  - Removed from the map
+  - Removed from the map.
 - v0.10.0
-  - Added holes in the roof to improve visibility
+  - Added holes in the roof to improve visibility.
 - v0.9.0
-  - Added
+  - Added.

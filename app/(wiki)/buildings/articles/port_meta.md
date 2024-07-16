@@ -13,16 +13,16 @@ On the outer edge of the Port, the Cargo Ship spawns in the water.
 
 ## Port Warehouses
 
-Main article: [Port Warehouse](/buildings/port_warehouse)
+Main article: [Port Warehouse](/buildings/port_warehouse).
 
 ## Port Shed
 
-Main article: [Port Shed](/buildings/port_shed)
+Main article: [Port Shed](/buildings/port_shed).
 A Port Shed spawns towards the center of the Port, alongside a lowered [Barrier](/obstacles/barrier).
 
 ## Crane
 
-Main article: [Crane](/buildings/crane)
+Main article: [Crane](/buildings/crane).
 A crane always spawns parallel to the Cargo Ship and contains a large amount of loot underneath it.
 
 ## Other
@@ -40,9 +40,9 @@ A crane always spawns parallel to the Cargo Ship and contains a large amount of 
 
 # Trivia
 
-- The Port was designed by platonthek
+- The Port was designed by platonthek.
 
 # History
 
 - v0.11.0
-  - Added
+  - Added.
