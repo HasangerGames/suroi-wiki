@@ -148,8 +148,7 @@ export default function PlayerWearingEquipment() {
       </select>
       <select
         onChange={e => {
-          if (e.target.value === "none" || e.target.value === "") {
-          } else {
+          if (e.target.value !== "none" && e.target.value !== "") {
             setSkinIndex(
               Skins.definitions.findIndex(skin => {
                 return skin.idString === e.target.value;

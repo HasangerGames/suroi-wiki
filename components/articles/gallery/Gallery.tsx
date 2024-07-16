@@ -74,38 +74,39 @@ export default function Gallery({ images }: GalleryProps) {
                 {images[currentImage].caption}
               </span>
             )}
-            {images[currentImage].type === "youtube" ? (
-              <iframe
-                width={
-                  window.innerWidth < 500
-                    ? window.innerWidth
-                    : window.innerWidth - 300
-                }
-                height={window.innerHeight - 300}
-                src={`https://www.youtube-nocookie.com/embed/${images[currentImage].url}`}
-                title="YouTube video player"
-                // @ts-ignore
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="absolute object-scale-down left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
-              >
-              </iframe>
-            ) : (
-              <Link href={images[currentImage].url} className="">
-                <Image
-                  src={images[currentImage].url}
-                  alt={
-                    (images[currentImage].caption
-                    && images[currentImage].caption)
-                    || "Image with no caption"
+            {images[currentImage].type === "youtube"
+              ? (
+                <iframe
+                  width={
+                    window.innerWidth < 500
+                      ? window.innerWidth
+                      : window.innerWidth - 300
                   }
-                  width={500}
-                  height={500}
-                  className="absolute w-min h-min object-scale-down left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
-                />
-              </Link>
-            )}
+                  height={window.innerHeight - 300}
+                  src={`https://www.youtube-nocookie.com/embed/${images[currentImage].url}`}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute object-scale-down left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+                >
+                </iframe>
+              )
+              : (
+                <Link href={images[currentImage].url} className="">
+                  <Image
+                    src={images[currentImage].url}
+                    alt={
+                      (images[currentImage].caption
+                      && images[currentImage].caption)
+                      || "Image with no caption"
+                    }
+                    width={500}
+                    height={500}
+                    className="absolute w-min h-min object-scale-down left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+                  />
+                </Link>
+              )}
           </div>
           <div className="flex flex-row justify-center gap-4 overflow-x-scroll w-full h-36">
             {images.map((image, i) => (

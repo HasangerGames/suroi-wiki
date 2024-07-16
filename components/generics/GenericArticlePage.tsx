@@ -100,12 +100,12 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
           </h1>
           {
             // If there is an article, render it
-            article ? (
-              <MDXClient {...article} />
-            ) : (
+            article
+              ? (<MDXClient {...article} />)
+              : (
               // Otherwise, render an empty notice
-              <Empty />
-            )
+                <Empty />
+              )
           }
           {args.After && args.After}
         </div>

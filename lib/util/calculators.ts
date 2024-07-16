@@ -69,7 +69,8 @@ export function shootGun(
         : origin;
 
       // benchmarked and optimized for speed™
-      // @ts-expect-error
+      // @ts-expect-error This works.
+      // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
       accumulated += lineIntersectsCircle(
         toTarget,
         PLAYER_RADIUS,

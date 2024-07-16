@@ -26,6 +26,7 @@ export default function GunGraph({ gun }: GunGraphProps) {
   );
 
   // what is this for
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const graphCanvas = useRef(null);
 
   const margin = 10;
