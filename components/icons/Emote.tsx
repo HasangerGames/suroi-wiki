@@ -7,11 +7,11 @@ import Image from "next/image";
 export default function Emote({
   emote,
   w = 64,
-  h = 64,
+  h = 64
 }: {
-  emote: string;
-  w?: number;
-  h?: number;
+  emote: string
+  w?: number
+  h?: number
 }) {
   return (
     <Image

@@ -24,23 +24,23 @@ export default function WeaponsPage() {
         </p>
       </div>
       <Collapsible
-        label={
+        label={(
           <div className="prose prose-invert">
             <h2 id="guns">Guns</h2>
           </div>
-        }
+        )}
         className="my-4"
       >
         <GridTable>
           {Guns.definitions
-            .filter((gun) => {
+            .filter(gun => {
               return !gun.isDual;
             })
-            .map((gun) => (
+            .map(gun => (
               <PageCard
                 title={gun.name}
                 image={getSuroiImageLink(gun)}
-                url={"/weapons/guns/" + gun.idString}
+                url={`/weapons/guns/${gun.idString}`}
                 description={gun.idString}
                 key={gun.idString}
               />
@@ -48,19 +48,19 @@ export default function WeaponsPage() {
         </GridTable>
       </Collapsible>
       <Collapsible
-        label={
+        label={(
           <div className="prose prose-invert">
             <h2 id="melees">Melees</h2>
           </div>
-        }
+        )}
         className="my-4"
       >
         <GridTable>
-          {Melees.definitions.map((melee) => (
+          {Melees.definitions.map(melee => (
             <PageCard
               title={melee.name}
               image={getSuroiImageLink(melee)}
-              url={"/weapons/melee/" + melee.idString}
+              url={`/weapons/melee/${melee.idString}`}
               description={melee.idString}
               key={melee.idString}
             />
@@ -68,21 +68,21 @@ export default function WeaponsPage() {
         </GridTable>
       </Collapsible>
       <Collapsible
-        label={
+        label={(
           <div className="prose prose-invert">
             <h2 id="throwables">Throwables</h2>
           </div>
-        }
+        )}
         className="my-4"
       >
         <GridTable>
-          {Throwables.definitions.map((throwable) => (
+          {Throwables.definitions.map(throwable => (
             <PageCard
               key={throwable.idString}
               title={throwable.name}
-              url={"/weapons/throwables/" + throwable.idString}
+              url={`/weapons/throwables/${throwable.idString}`}
               image={
-                //IMAGE_BASE_URL + "game/weapons/" + throwable.idString + ".svg"
+                // IMAGE_BASE_URL + "game/weapons/" + throwable.idString + ".svg"
                 getSuroiImageLink(throwable)
               }
               description={throwable.idString}

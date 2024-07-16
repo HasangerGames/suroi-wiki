@@ -10,7 +10,7 @@ import SearchItem from "./SearchItem";
 export default function SearchBar() {
   const fuse = new Fuse(SearchItems, {
     keys: ["name", "url", "description"],
-    threshold: 0.4,
+    threshold: 0.4
   });
 
   const [query, setQuery] = useState("");
@@ -19,7 +19,7 @@ export default function SearchBar() {
   const searchQuery = fuse.search(query).slice(0, 7);
 
   useEffect(() => {
-    document.addEventListener("keydown", (e) => {
+    document.addEventListener("keydown", e => {
       if (e.key === "/" && e.ctrlKey) {
         setOpen(true);
       }
@@ -46,12 +46,12 @@ export default function SearchBar() {
       </button>
       {open && (
         <div
-          onClick={(e) => {
+          onClick={e => {
             e.preventDefault();
             // only close when clicking on itself and not a child
             if (e.target === e.currentTarget) return setOpen(false);
           }}
-          onKeyDown={(e) => {
+          onKeyDown={e => {
             if (e.key === "Enter" && searchQuery.length > 0) {
               setOpen(false);
               document.location.href = searchQuery[0].item.url;
@@ -69,7 +69,7 @@ export default function SearchBar() {
                 type="text"
                 value={query}
                 size={20}
-                onChange={(e) => setQuery(e.target.value)}
+                onChange={e => setQuery(e.target.value)}
                 className="z-10 p-2 w-full rounded-md bg-muted"
                 placeholder="Search..."
                 autoFocus
@@ -82,7 +82,7 @@ export default function SearchBar() {
               </button>
             </div>
             <div className="flex flex-col gap-4 md:max-h-96 overflow-y-scroll">
-              {searchQuery.map((item) => (
+              {searchQuery.map(item => (
                 <SearchItem
                   onClick={() => setOpen(false)}
                   key={item.item.url}

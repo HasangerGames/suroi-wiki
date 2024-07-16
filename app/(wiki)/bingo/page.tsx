@@ -28,7 +28,7 @@ export default function Bingo() {
     "Complaining about balance, teamers, or lag in #general while the topic is unrelated",
     "Obviously underage",
     "Please add (surviv feature)",
-    "Communicates exclusively with gifs, emojis, and videos",
+    "Communicates exclusively with gifs, emojis, and videos"
   ];
   return (
     <div className="grid grid-cols-5 col-span-full max-w-[60vh] max-h-[60vh]">
@@ -50,12 +50,12 @@ function BingoCard({ text }: BingoCardProps) {
     <button
       className={`${toggled ? "bg-suroi" : ""}
       ${
-        text.length > 20
-          ? "text-xs"
-          : text.length > 10
-            ? "text-base"
-            : "text-xl"
-      }
+    text.length > 20
+      ? "text-xs"
+      : text.length > 10
+        ? "text-base"
+        : "text-xl"
+    }
       aspect-square border-border border p-2`}
       onClick={() => setToggled(!toggled)}
     >
@@ -65,5 +65,5 @@ function BingoCard({ text }: BingoCardProps) {
 }
 
 interface BingoCardProps extends React.PropsWithChildren {
-  text: string;
+  text: string
 }

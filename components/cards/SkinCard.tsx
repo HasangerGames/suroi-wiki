@@ -14,7 +14,7 @@ export default function SkinCard({ skin }: SkinCardProps) {
               x: 0,
               y: 0,
               rotation: 90,
-              zIndex: 3,
+              zIndex: 3
             },
             {
               type: "image",
@@ -22,7 +22,7 @@ export default function SkinCard({ skin }: SkinCardProps) {
               x: -35,
               y: 38,
               rotation: 90,
-              zIndex: 4,
+              zIndex: 4
             },
             {
               type: "image",
@@ -30,8 +30,8 @@ export default function SkinCard({ skin }: SkinCardProps) {
               x: 35,
               y: 38,
               rotation: 90,
-              zIndex: 4,
-            },
+              zIndex: 4
+            }
           ]}
         />
       </svg>
@@ -56,5 +56,5 @@ export default function SkinCard({ skin }: SkinCardProps) {
 }
 
 export interface SkinCardProps extends React.PropsWithChildren {
-  skin: SkinDefinition;
+  skin: SkinDefinition
 }

@@ -2,7 +2,7 @@
 
 import {
   ObjectDefinition,
-  ReferenceTo,
+  ReferenceTo
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { Children, useState } from "react";
 
@@ -15,7 +15,7 @@ import { Children, useState } from "react";
  */
 export default function MultiSidebar<T extends ObjectDefinition>({
   children,
-  itemNames,
+  itemNames
 }: MultiSidebarProps<T>) {
   const childrenArray = Children.toArray(children);
   const [index, setIndex] = useState(0);
@@ -43,5 +43,5 @@ export default function MultiSidebar<T extends ObjectDefinition>({
 
 export interface MultiSidebarProps<T extends ObjectDefinition>
   extends React.PropsWithChildren {
-  itemNames: ReferenceTo<T>[];
+  itemNames: Array<ReferenceTo<T>>
 }

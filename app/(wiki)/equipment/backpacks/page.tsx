@@ -23,18 +23,18 @@ export default function BackpackPage() {
           title="Backpack Healing Capacity Statistics"
           header={[
             "Backpack",
-            ...["gauze", "medikit", "cola", "tablets"].map((healing) => (
+            ...["gauze", "medikit", "cola", "tablets"].map(healing => (
               <Image
-                src={getSuroiImageLink(getSuroiItem(healing)!)}
+                src={getSuroiImageLink(getSuroiItem(healing))}
                 alt={healing}
                 key={healing}
                 width={20}
                 height={20}
                 className="w-10 h-10"
               />
-            )),
+            ))
           ]}
-          content={[...Backpacks].map((backpack) => [
+          content={[...Backpacks].map(backpack => [
             <>
               {backpack.idString !== "bag" && (
                 <Image
@@ -52,7 +52,7 @@ export default function BackpackPage() {
             backpack.maxCapacity.gauze.toString(),
             backpack.maxCapacity.medikit.toString(),
             backpack.maxCapacity.cola.toString(),
-            backpack.maxCapacity.tablets.toString(),
+            backpack.maxCapacity.tablets.toString()
           ])}
         />
         <br></br>
@@ -61,19 +61,19 @@ export default function BackpackPage() {
           header={[
             "Backpack",
             ...["12g", "556mm", "762mm", "9mm", "127mm", "curadell"].map(
-              (ammo) => (
+              ammo => (
                 <Image
-                  src={getSuroiImageLink(getSuroiItem(ammo)!)}
+                  src={getSuroiImageLink(getSuroiItem(ammo))}
                   alt={ammo}
                   key={ammo}
                   width={40}
                   height={40}
                   className="w-10 h-10"
                 />
-              ),
-            ),
+              )
+            )
           ]}
-          content={[...Backpacks].map((backpack) => [
+          content={[...Backpacks].map(backpack => [
             <Fragment key={backpack.idString}>
               {backpack.idString !== "bag" && (
                 <Image
@@ -93,7 +93,7 @@ export default function BackpackPage() {
             backpack.maxCapacity["762mm"].toString(),
             backpack.maxCapacity["9mm"].toString(),
             backpack.maxCapacity["127mm"].toString(),
-            backpack.maxCapacity.curadell.toString(),
+            backpack.maxCapacity.curadell.toString()
           ])}
         />
         <br></br>
@@ -101,18 +101,18 @@ export default function BackpackPage() {
           title="Backpack Throwable Capacity Statistics"
           header={[
             "Backpack",
-            ...["frag_grenade", "smoke_grenade"].map((throwable) => (
+            ...["frag_grenade", "smoke_grenade"].map(throwable => (
               <Image
-                src={getSuroiImageLink(getSuroiItem(throwable)!)}
+                src={getSuroiImageLink(getSuroiItem(throwable))}
                 alt={throwable}
                 key={throwable}
                 width={40}
                 height={40}
                 className="w-10 h-10"
               />
-            )),
+            ))
           ]}
-          content={[...Backpacks].map((backpack) => [
+          content={[...Backpacks].map(backpack => [
             <Fragment key={backpack.idString}>
               {backpack.idString !== "bag" && (
                 <Image
@@ -128,7 +128,7 @@ export default function BackpackPage() {
               </Link>
             </Fragment>,
             backpack.maxCapacity.frag_grenade.toString(),
-            backpack.maxCapacity.smoke_grenade.toString(),
+            backpack.maxCapacity.smoke_grenade.toString()
           ])}
         />
         <h2>List of Backpacks</h2>

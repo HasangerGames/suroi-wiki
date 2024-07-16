@@ -5,7 +5,7 @@ import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explo
 import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
 import {
   ItemDefinition,
-  WearerAttributes,
+  WearerAttributes
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { WithRequired } from "@tanstack/react-query";
 import AmmoIcon from "../icons/AmmoIcon";
@@ -108,40 +108,40 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
           title="Max. DPS"
           abbr="Hypothetical maximum damage per second (DPS)"
         >
-          {gun.fireMode === FireMode.Burst &&
-            (
-              (1000 /
-                (gun.burstProperties.burstCooldown +
-                  gun.fireDelay * gun.burstProperties.shotsPerBurst)) *
-              (gun.ballistics.damage * gun.burstProperties.shotsPerBurst)
-            ).toFixed(2)}
-          {gun.fireMode !== FireMode.Burst &&
-            (
-              gun.ballistics.damage *
-              (gun.bulletCount ?? 1) *
-              (1000 / gun.fireDelay)
-            ).toFixed(2)}
+          {gun.fireMode === FireMode.Burst
+          && (
+            (1000
+            / (gun.burstProperties.burstCooldown
+            + gun.fireDelay * gun.burstProperties.shotsPerBurst))
+            * (gun.ballistics.damage * gun.burstProperties.shotsPerBurst)
+          ).toFixed(2)}
+          {gun.fireMode !== FireMode.Burst
+          && (
+            gun.ballistics.damage
+            * (gun.bulletCount ?? 1)
+            * (1000 / gun.fireDelay)
+          ).toFixed(2)}
         </InfoboxColumn>
         <InfoboxColumn
           title="Max. Obstacle DPS"
           abbr="Hypothetical maximum damage per second (DPS) on obstacles"
         >
-          {gun.fireMode === FireMode.Burst &&
-            (
-              (1000 /
-                (gun.burstProperties.burstCooldown +
-                  gun.fireDelay * gun.burstProperties.shotsPerBurst)) *
-              (gun.ballistics.damage *
-                gun.ballistics.obstacleMultiplier *
-                gun.burstProperties.shotsPerBurst)
-            ).toFixed(2)}
-          {gun.fireMode !== FireMode.Burst &&
-            (
-              gun.ballistics.damage *
-              gun.ballistics.obstacleMultiplier *
-              (gun.bulletCount ?? 1) *
-              (1000 / gun.fireDelay)
-            ).toFixed(2)}
+          {gun.fireMode === FireMode.Burst
+          && (
+            (1000
+            / (gun.burstProperties.burstCooldown
+            + gun.fireDelay * gun.burstProperties.shotsPerBurst))
+            * (gun.ballistics.damage
+            * gun.ballistics.obstacleMultiplier
+            * gun.burstProperties.shotsPerBurst)
+          ).toFixed(2)}
+          {gun.fireMode !== FireMode.Burst
+          && (
+            gun.ballistics.damage
+            * gun.ballistics.obstacleMultiplier
+            * (gun.bulletCount ?? 1)
+            * (1000 / gun.fireDelay)
+          ).toFixed(2)}
         </InfoboxColumn>
       </InfoboxRow>
 
@@ -214,14 +214,14 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
           name="Fire"
           src={`${SOUND_BASE_URL}sfx/weapons/${gun.idString.replace(
             "dual_",
-            "",
+            ""
           )}_fire.mp3`}
         />
         <InfoboxAudio
           name="Switch"
           src={`${SOUND_BASE_URL}sfx/weapons/${gun.idString.replace(
             "dual_",
-            "",
+            ""
           )}_switch.mp3`}
         />
         <InfoboxAudio
@@ -248,14 +248,14 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
 }
 
 export interface GunDetailsProps {
-  gun: GunDefinition;
-  explosion?: ExplosionDefinition;
+  gun: GunDefinition
+  explosion?: ExplosionDefinition
 }
 
 function Effects({
-  gun,
+  gun
 }: {
-  gun: WithRequired<GunDefinition, "wearerAttributes">;
+  gun: WithRequired<GunDefinition, "wearerAttributes">
 }) {
   return (
     <>
@@ -302,45 +302,47 @@ function Effects({
 
 function Attributes({
   attributes,
-  n,
+  n
 }: {
   attributes:
     | WearerAttributes
     | NonNullable<
-        Unpacked<
+      Unpacked<
+        WithRequired<
           WithRequired<
-            WithRequired<
-              ItemDefinition,
-              "wearerAttributes"
-            >["wearerAttributes"],
-            "on"
-          >["on"]["kill"]
-        >
-      >;
-  n?: number;
+            ItemDefinition,
+            "wearerAttributes"
+          >["wearerAttributes"],
+          "on"
+        >["on"]["kill"]
+      >
+    >
+  n?: number
 }) {
-  const limit =
-    "limit" in attributes ? (
-      <>
-        {" "}
-        <abbr
-          title={`This effect can be applied up to a maximum of ${attributes.limit} times`}
-          className="inline-block ml-[1ch]"
-        >
-          ({attributes.limit} limit)
-        </abbr>
-      </>
-    ) : (
-      <>
-        {" "}
-        <abbr
-          title={`This effect can be applied an infinite amount of times`}
-          className="inline-block ml-[1ch]"
-        >
-          (No limit)
-        </abbr>
-      </>
-    );
+  const limit
+    = "limit" in attributes
+      ? (
+        <>
+          {" "}
+          <abbr
+            title={`This effect can be applied up to a maximum of ${attributes.limit} times`}
+            className="inline-block ml-[1ch]"
+          >
+            ({attributes.limit} limit)
+          </abbr>
+        </>
+      )
+      : (
+        <>
+          {" "}
+          <abbr
+            title="This effect can be applied an infinite amount of times"
+            className="inline-block ml-[1ch]"
+          >
+            (No limit)
+          </abbr>
+        </>
+      );
 
   return (
     <>

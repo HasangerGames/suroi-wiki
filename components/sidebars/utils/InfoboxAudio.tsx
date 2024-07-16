@@ -11,6 +11,6 @@ export default function InfoboxAudio({ name, src }: InfoboxAudioProps) {
 }
 
 export interface InfoboxAudioProps {
-  name: string;
-  src: string;
+  name: string
+  src: string
 }

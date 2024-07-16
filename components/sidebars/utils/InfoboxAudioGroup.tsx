@@ -6,7 +6,7 @@ import { Collapse } from "react-collapse";
 import InfoboxHeader from "./InfoboxHeader";
 
 export default function InfoboxAudioGroup({
-  children,
+  children
 }: InfoboxAudioGroupProps) {
   const [isOpened, setIsOpened] = useState(true);
 
@@ -28,4 +28,4 @@ export default function InfoboxAudioGroup({
   );
 }
 
-export interface InfoboxAudioGroupProps extends React.PropsWithChildren {}
+export type InfoboxAudioGroupProps = React.PropsWithChildren;

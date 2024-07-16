@@ -2,12 +2,12 @@ import { range } from "@/lib/util/arrays";
 import {
   getSuroiImageLink,
   getSuroiItem,
-  obstacleContainedBy,
+  obstacleContainedBy
 } from "@/lib/util/suroi";
 import {
   FlyoverPref,
   ObstacleDefinition,
-  RotationMode,
+  RotationMode
 } from "@/vendor/suroi/common/src/definitions/obstacles";
 import { ObstacleSpecialRoles } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import Link from "../links/Link";
@@ -18,9 +18,9 @@ import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
 
 export default function ObstacleSidebar({
-  item,
+  item
 }: {
-  item: ObstacleDefinition;
+  item: ObstacleDefinition
 }) {
   const parents = obstacleContainedBy(item);
 
@@ -29,16 +29,16 @@ export default function ObstacleSidebar({
       title={item.name}
       imageVariations={
         item.variations
-          ? range(item.variations).map((i) => ({
-              type: "image",
-              url: getSuroiImageLink(item, i + 1),
-            }))
+          ? range(item.variations).map(i => ({
+            type: "image",
+            url: getSuroiImageLink(item, i + 1)
+          }))
           : [
-              {
-                type: "image",
-                url: getSuroiImageLink(item),
-              },
-            ]
+            {
+              type: "image",
+              url: getSuroiImageLink(item)
+            }
+          ]
       }
     >
       <InfoboxRow>
@@ -64,7 +64,7 @@ export default function ObstacleSidebar({
                   </div>
                 )}
                 <div className="flex flex-wrap justify-around gap-2">
-                  {parents.map((parent) => (
+                  {parents.map(parent => (
                     <Link
                       key={parent.idString}
                       href={`/buildings/${parent.idString}`}

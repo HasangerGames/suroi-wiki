@@ -9,14 +9,14 @@ export default function SkinsPage() {
         <h1>Skins</h1>
         There are {Skins.definitions.length} skins.{" "}
         {
-          Skins.definitions.filter((value) => {
+          Skins.definitions.filter(value => {
             return !value.notInLoadout;
           }).length
         }{" "}
         skins are available in the game.
       </article>
       <GridTable>
-        {Skins.definitions.map((skin) => (
+        {Skins.definitions.map(skin => (
           <SkinCard skin={skin} key={skin.idString} />
         ))}
       </GridTable>

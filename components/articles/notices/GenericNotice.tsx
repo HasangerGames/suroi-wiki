@@ -14,5 +14,5 @@ export default function GenericNotice({ emote, children }: GenericNoticeProps) {
 }
 
 export interface GenericNoticeProps extends React.PropsWithChildren {
-  emote: string;
+  emote: string
 }

@@ -14,7 +14,7 @@ export default function HealingPage() {
         </p>
       </div>
       <GridTable>
-        {HealingItems.definitions.map((item) => (
+        {HealingItems.definitions.map(item => (
           <PageCard
             title={item.name}
             image={getSuroiImageLink(item)}

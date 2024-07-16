@@ -4,5 +4,5 @@ import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 
 export default GenericLayoutFactory({
   items: Melees,
-  Sidebar: MeleeSidebar,
+  Sidebar: MeleeSidebar
 });

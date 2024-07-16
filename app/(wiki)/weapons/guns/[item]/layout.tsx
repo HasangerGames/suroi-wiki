@@ -7,17 +7,17 @@ import { notFound } from "next/navigation";
 
 export default function GunLayout({
   children,
-  params,
+  params
 }: {
   params: {
-    item: string;
-  };
+    item: string
+  }
 } & React.PropsWithChildren) {
-  const gun = Guns.definitions.find((gun) => gun.idString === params.item);
+  const gun = Guns.definitions.find(gun => gun.idString === params.item);
   if (!gun) notFound();
 
   const explosion = Explosions.definitions.find(
-    (explosion) => explosion.idString === gun.ballistics.onHitExplosion,
+    explosion => explosion.idString === gun.ballistics.onHitExplosion
   );
 
   return (

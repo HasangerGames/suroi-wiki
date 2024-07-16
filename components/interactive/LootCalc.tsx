@@ -16,8 +16,8 @@ export default function LootCalc() {
     enabled: !!(debouncedTable && debouncedItem),
     queryFn: () =>
       fetch(
-        `/api/loot/chance?table=${debouncedTable}&item=${debouncedItem}`,
-      ).then((r) => r.json()),
+        `/api/loot/chance?table=${debouncedTable}&item=${debouncedItem}`
+      ).then(r => r.json())
   });
 
   return (
@@ -32,7 +32,7 @@ export default function LootCalc() {
               <input
                 type="text"
                 value={lootTable}
-                onChange={(e) => setLootTable(e.target.value)}
+                onChange={e => setLootTable(e.target.value)}
                 className="w-full rounded-md bg-muted"
               />
             </div>
@@ -47,7 +47,7 @@ export default function LootCalc() {
               <input
                 type="text"
                 value={item}
-                onChange={(e) => setItem(e.target.value)}
+                onChange={e => setItem(e.target.value)}
                 className="w-full rounded-md bg-muted"
               />
             </div>
@@ -58,13 +58,15 @@ export default function LootCalc() {
         {results.data?.error && (
           <p>Error: {ErrorMessages[results.data.error as APIErrorCodes]}</p>
         )}
-        {results.data && !results.data.error ? (
-          <p>
-            <b>{results.data.itemName}</b> has a{" "}
-            <code>{(results.data.chance * 100).toPrecision(2)}%</code> or{" "}
-            <b>1 in {results.data.oneIn}</b> chance of dropping.
-          </p>
-        ) : null}
+        {results.data && !results.data.error
+          ? (
+            <p>
+              <b>{results.data.itemName}</b> has a{" "}
+              <code>{(results.data.chance * 100).toPrecision(2)}%</code> or{" "}
+              <b>1 in {results.data.oneIn}</b> chance of dropping.
+            </p>
+          )
+          : null}
       </div>
     </div>
   );

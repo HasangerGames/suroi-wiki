@@ -13,15 +13,15 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "raw.githubusercontent.com",
+        hostname: "raw.githubusercontent.com"
       },
       {
-        hostname: "avatars.githubusercontent.com",
+        hostname: "avatars.githubusercontent.com"
       },
       {
-        hostname: "invidious.projectsegfau.lt",
-      },
-    ],
+        hostname: "invidious.projectsegfau.lt"
+      }
+    ]
   },
 
   typescript: {
@@ -30,8 +30,8 @@ const nextConfig = {
     // your project has type errors.
     // !! WARN !!
     // HACK: Webpack doesn't want to comply.
-    ignoreBuildErrors: true,
-  },
+    ignoreBuildErrors: true
+  }
 };
 
 export default withBundleAnalyzer(withMDX(nextConfig));

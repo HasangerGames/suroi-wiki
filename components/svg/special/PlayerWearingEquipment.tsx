@@ -3,7 +3,7 @@
 import { IMAGE_BASE_URL, getSuroiImageLink } from "@/lib/util/suroi";
 import {
   ArmorType,
-  Armors,
+  Armors
 } from "@/vendor/suroi/common/src/definitions/armors";
 import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
 import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
@@ -26,31 +26,31 @@ export default function PlayerWearingEquipment() {
               url: getSuroiImageLink(
                 Skins.definitions[skinIndex],
                 undefined,
-                "base",
+                "base"
               ),
-              zIndex: 1,
+              zIndex: 1
             },
             {
               type: "image",
               url: getSuroiImageLink(
                 Skins.definitions[skinIndex],
                 undefined,
-                "fist",
+                "fist"
               ),
               x: 38,
               y: 35,
-              zIndex: 4,
+              zIndex: 4
             },
             {
               type: "image",
               url: getSuroiImageLink(
                 Skins.definitions[skinIndex],
                 undefined,
-                "fist",
+                "fist"
               ),
               x: 38,
               y: -35,
-              zIndex: 4,
+              zIndex: 4
             },
             {
               type: "image",
@@ -58,33 +58,33 @@ export default function PlayerWearingEquipment() {
                 helmet.idString ?? ""
               }_world.svg`,
               x: -8,
-              zIndex: 6,
+              zIndex: 6
             },
             {
               type: "image",
               url: `${IMAGE_BASE_URL}/game/equipment/${
                 vest.idString ?? ""
               }_world.svg`,
-              zIndex: 0,
+              zIndex: 0
             },
             {
               type: "image",
               url: `${IMAGE_BASE_URL}/game/equipment/${backpack.idString}_world.svg`,
               x: -55,
-              zIndex: 5,
-            },
+              zIndex: 5
+            }
           ]}
         />
       </svg>
       <select
-        onChange={(e) => {
+        onChange={e => {
           if (e.target.value === "none" || e.target.value === "") {
             setHelmet(Armors.definitions[0]);
           } else {
             setHelmet(
-              Armors.definitions.find((armor) => {
+              Armors.definitions.find(armor => {
                 return armor.idString === e.target.value;
-              }),
+              })
             );
           }
         }}
@@ -92,24 +92,24 @@ export default function PlayerWearingEquipment() {
         <option value="">Select a helmet</option>
         <option value="none">None</option>
         {[...Armors]
-          .filter((armor) => {
+          .filter(armor => {
             return armor.armorType === ArmorType.Helmet;
           })
-          .map((armor) => (
+          .map(armor => (
             <option key={armor.idString} value={armor.idString}>
               {armor.name}
             </option>
           ))}
       </select>
       <select
-        onChange={(e) => {
+        onChange={e => {
           if (e.target.value === "none" || e.target.value === "") {
             setVest(Armors.definitions[0]);
           } else {
             setVest(
-              Armors.definitions.find((armor) => {
+              Armors.definitions.find(armor => {
                 return armor.idString === e.target.value;
-              }),
+              })
             );
           }
         }}
@@ -117,49 +117,49 @@ export default function PlayerWearingEquipment() {
         <option value="">Select a vest</option>
         <option value="none">None</option>
         {[...Armors]
-          .filter((armor) => {
+          .filter(armor => {
             return armor.armorType === ArmorType.Vest;
           })
-          .map((armor) => (
+          .map(armor => (
             <option key={armor.idString} value={armor.idString}>
               {armor.name}
             </option>
           ))}
       </select>
       <select
-        onChange={(e) => {
+        onChange={e => {
           if (e.target.value === "none" || e.target.value === "") {
             setBackpack(Backpacks.definitions[0]);
           } else {
             setBackpack(
-              Backpacks.definitions.find((backpack) => {
+              Backpacks.definitions.find(backpack => {
                 return backpack.idString === e.target.value;
-              }),
+              })
             );
           }
         }}
       >
         <option value="">Select a backpack</option>
-        {Backpacks.definitions.map((armor) => (
+        {Backpacks.definitions.map(armor => (
           <option key={armor.idString} value={armor.idString}>
             {armor.name}
           </option>
         ))}
       </select>
       <select
-        onChange={(e) => {
+        onChange={e => {
           if (e.target.value === "none" || e.target.value === "") {
           } else {
             setSkinIndex(
-              Skins.definitions.findIndex((skin) => {
+              Skins.definitions.findIndex(skin => {
                 return skin.idString === e.target.value;
-              }),
+              })
             );
           }
         }}
       >
         <option value="">Select a skin</option>
-        {Skins.definitions.map((skin) => (
+        {Skins.definitions.map(skin => (
           <option key={skin.idString} value={skin.idString}>
             {skin.name}
           </option>

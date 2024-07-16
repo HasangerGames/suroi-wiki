@@ -10,7 +10,7 @@ const lineIntersectsCircle = (
   pos: Vector,
   rad: number,
   s0: Vector,
-  s1: Vector,
+  s1: Vector
 ): boolean => {
   let d = Vec.sub(s1, s0);
   const len = Math.max(Vec.length(d), 0.000001);
@@ -39,21 +39,21 @@ function randomPointInsideCircle(maxRadius: number): Vector {
 
   return {
     x: Math.cos(angle) * length,
-    y: Math.sin(angle) * length,
+    y: Math.sin(angle) * length
   };
 }
 
 export function shootGun(
   gun: GunDefinition,
   trials: number,
-  targetDistance: number,
+  targetDistance: number
 ) {
   const {
     moveSpread,
     jitterRadius,
     bulletCount: limit,
     consistentPatterning,
-    ballistics: { damage, range },
+    ballistics: { damage, range }
   } = gun;
   const spread = Angle.degreesToRadians(moveSpread / 2);
   const lm1 = limit - 1;
@@ -76,13 +76,13 @@ export function shootGun(
         rayStart,
         Vec.add(
           Vec.fromPolar(
-            (consistentPatterning === true
+            (consistentPatterning
               ? 8 * (i / lm1 - 0.5) ** 3
               : randomFloat(-1, 1)) * spread,
-            range,
+            range
           ),
-          rayStart,
-        ),
+          rayStart
+        )
       );
     }
   }

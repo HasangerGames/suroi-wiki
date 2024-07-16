@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-2">
           <b>Pages</b>
-          {wikiPages.map((page) => (
+          {wikiPages.map(page => (
             <FooterLink key={page.url} href={page.url}>
               {page.name}
             </FooterLink>
@@ -48,7 +48,7 @@ export default function Footer() {
 
 function FooterLink({
   href,
-  children,
+  children
 }: React.PropsWithChildren & { href: string }) {
   return (
     <NextLink href={href} className="w-fit hover:text-white transition-colors">

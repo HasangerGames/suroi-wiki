@@ -5,7 +5,7 @@ import SVGObjectRenderer from "./SVGObjectRenderer";
 export default function SVGGroupRenderer({
   viewBox,
   className,
-  groups,
+  groups
 }: SVGGroupRendererProps) {
   return (
     <svg viewBox={viewBox} className={className ?? ""}>
@@ -21,7 +21,7 @@ export default function SVGGroupRenderer({
               }px - 50%)`,
               scale: `${group.scaleX ?? 1} ${group.scaleY ?? 1}`,
               rotate: `${group.rotation ?? 0}deg`,
-              transformOrigin: group.origin ?? "center",
+              transformOrigin: group.origin ?? "center"
             }}
           >
             <SVGObjectRenderer objects={group.objects} />
@@ -32,7 +32,7 @@ export default function SVGGroupRenderer({
 }
 
 export interface SVGGroupRendererProps extends React.PropsWithChildren {
-  viewBox: string;
-  className?: string;
-  groups: SVGGroup[];
+  viewBox: string
+  className?: string
+  groups: SVGGroup[]
 }

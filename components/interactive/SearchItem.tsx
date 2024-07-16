@@ -29,6 +29,6 @@ export default function SearchItem({ item, onClick }: SearchItemProps) {
 }
 
 export interface SearchItemProps extends React.PropsWithChildren {
-  item: SearchItem;
-  onClick?: () => unknown;
+  item: SearchItem
+  onClick?: () => unknown
 }
