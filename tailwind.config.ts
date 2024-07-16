@@ -1,5 +1,8 @@
 import type { Config } from "tailwindcss";
 
+import twForms from "@tailwindcss/forms";
+import twTypography from "@tailwindcss/typography";
+
 const config: Config = {
   content: [
     "./components/**/*.{js,ts,jsx,tsx,md,mdx}",
@@ -77,6 +80,9 @@ const config: Config = {
       }
     }
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")]
+  plugins: [
+    twForms,
+    twTypography
+  ]
 };
 export default config;
