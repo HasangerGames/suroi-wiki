@@ -9,7 +9,7 @@ export default function Bingo() {
     "Leaves 10 minutes after joining",
     "Didn't read #faq",
     `"The game isn't working"`,
-    "Submits stupid pr or issue to github",
+    "Submits stupid PR or issue to GitHub",
     "Harassing other server members for no reason",
     "Begging for roles",
     "Alt account",
