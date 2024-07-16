@@ -101,13 +101,7 @@ export default tseslint.config(
       ["@stylistic/linebreak-style"]: ["warn", "unix"],
       ["@stylistic/max-statements-per-line"]: "off",
       ["@stylistic/jsx-one-expression-per-line"]: "off",
-      ["@stylistic/member-delimiter-style"]: [
-        "warn",
-        {
-          singleline: { delimiter: "comma" },
-          multiline: { delimiter: "none" }
-        }
-      ],
+      ["@stylistic/member-delimiter-style"]: ["warn", { singleline: { delimiter: "comma" }, multiline: { delimiter: "none" } }],
       ["@stylistic/quotes"]: ["warn", "double", { avoidEscape: true }],
       ["@stylistic/space-before-function-paren"]: ["warn", "never"],
       ["@stylistic/no-multi-spaces"]: ["error", { ignoreEOLComments: true }],
@@ -118,16 +112,13 @@ export default tseslint.config(
         "error",
         { allowBitwiseExpressions: true }
       ],
-      ["@typescript-eslint/ban-ts-comment"]: [
-        "error",
-        {
-          "ts-expect-error": "allow-with-description",
-          "ts-ignore": true,
-          "ts-nocheck": true,
-          "ts-check": false,
-          "minimumDescriptionLength": 5
-        }
-      ],
+      ["@typescript-eslint/ban-ts-comment"]: ["error", {
+        "ts-expect-error": "allow-with-description",
+        "ts-ignore": true,
+        "ts-nocheck": true,
+        "ts-check": false,
+        "minimumDescriptionLength": 5
+      }],
       // KENOS SKILL ISSUE START
       // ["@typescript-eslint/explicit-function-return-type"]: ["warn", {
       //           allowExpressions: true,
@@ -148,13 +139,10 @@ export default tseslint.config(
       // }],
       // KENOS SKILL ISSUE END
       ["@typescript-eslint/prefer-readonly"]: "error",
-      ["@typescript-eslint/no-unused-vars"]: [
-        "error",
-        {
-          vars: "all",
-          args: "none"
-        }
-      ],
+      ["@typescript-eslint/no-unused-vars"]: ["error", {
+        vars: "all",
+        args: "none"
+      }],
 
       // Disabled rules
       ["@typescript-eslint/no-explicit-any"]: "off",
