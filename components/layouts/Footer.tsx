@@ -26,10 +26,10 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-2">
           <b>Source Code</b>
-          <FooterLink href="https://github.com/hasangergames/suroi">
+          <FooterLink href="https://github.com/HasangerGames/suroi">
             Suroi GitHub
           </FooterLink>
-          <FooterLink href="https://github.com/hasangergames/suroi-wiki">
+          <FooterLink href="https://github.com/HasangerGames/suroi-wiki">
             Wiki GitHub
           </FooterLink>
         </div>
