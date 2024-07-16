@@ -2,7 +2,7 @@ import { getSuroiImageLink } from "@/lib/util/suroi";
 import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
 import {
   HealType,
-  HealingItemDefinition,
+  HealingItemDefinition
 } from "@/vendor/suroi/common/src/definitions/healingItems";
 import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxAudio from "./utils/InfoboxAudio";
@@ -12,9 +12,9 @@ import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
 
 export default function HealingSidebar({
-  item,
+  item
 }: {
-  item: HealingItemDefinition;
+  item: HealingItemDefinition
 }) {
   return (
     <GenericSidebar title={item.name} image={getSuroiImageLink(item)}>
@@ -38,7 +38,7 @@ export default function HealingSidebar({
 
       <InfoboxHeader>Capacity</InfoboxHeader>
       <InfoboxRow>
-        {Backpacks.definitions.map((backpack) => (
+        {Backpacks.definitions.map(backpack => (
           <InfoboxColumn title={backpack.name} key={backpack.idString}>
             {backpack.maxCapacity[item.idString]}
           </InfoboxColumn>

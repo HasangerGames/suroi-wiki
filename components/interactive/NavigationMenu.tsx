@@ -21,7 +21,7 @@ export default function NavigationMenu() {
           <X className="w-8 h-8" />
         </button>
         <div className="flex flex-col ml-1">
-          {wikiPages.map((item) => (
+          {wikiPages.map(item => (
             <Link
               key={item.url}
               href={item.url}

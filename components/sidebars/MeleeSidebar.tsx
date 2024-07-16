@@ -8,8 +8,8 @@ import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
 
 export default function MeleeSidebar({ item }: MeleeSidebarProps) {
-  const skin =
-    Skins.definitions.find((skin) => {
+  const skin
+    = Skins.definitions.find(skin => {
       return skin.idString === "hazel_jumpsuit";
     }) ?? Skins.definitions[0];
   return (
@@ -18,38 +18,38 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
       imageVariations={[
         item.idString === "fists"
           ? {
-              type: "svg",
-              title: "Fists Image",
-              objects: [
-                {
-                  type: "image",
-                  url: getSuroiImageLink(skin, undefined, "fist"),
-                  scaleX: 32 / 34,
-                  scaleY: 32 / 34,
-                  x: 42.5 - 32 / 2,
-                  zIndex: 0,
-                },
-                {
-                  type: "image",
-                  url: getSuroiImageLink(skin, undefined, "fist"),
-                  scaleX: 32 / 34,
-                  scaleY: 32 / 34,
-                  x: -42.5 + 32 / 2,
-                  zIndex: 0,
-                },
-              ],
-              viewBox: "-42.5 -42.5 85 85",
-            }
+            type: "svg",
+            title: "Fists Image",
+            objects: [
+              {
+                type: "image",
+                url: getSuroiImageLink(skin, undefined, "fist"),
+                scaleX: 32 / 34,
+                scaleY: 32 / 34,
+                x: 42.5 - 32 / 2,
+                zIndex: 0
+              },
+              {
+                type: "image",
+                url: getSuroiImageLink(skin, undefined, "fist"),
+                scaleX: 32 / 34,
+                scaleY: 32 / 34,
+                x: -42.5 + 32 / 2,
+                zIndex: 0
+              }
+            ],
+            viewBox: "-42.5 -42.5 85 85"
+          }
           : {
-              type: "image",
-              url: getSuroiImageLink(item),
-              title: "Loot",
-            },
+            type: "image",
+            url: getSuroiImageLink(item),
+            title: "Loot"
+          },
         {
           type: "image",
           url: getSuroiKillfeedImageLink(item),
-          title: "Killfeed",
-        },
+          title: "Killfeed"
+        }
       ]}
     >
       <InfoboxRow>
@@ -78,9 +78,9 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
           abbr="Hypothetical maximum damage per second for obstacles"
         >
           {(
-            item.damage *
-            item.obstacleMultiplier *
-            (1000 / item.cooldown)
+            item.damage
+            * item.obstacleMultiplier
+            * (1000 / item.cooldown)
           ).toFixed(2)}
         </InfoboxColumn>
         {(item?.piercingMultiplier ?? 0) > 0 && (
@@ -108,5 +108,5 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
 }
 
 export interface MeleeSidebarProps {
-  item: MeleeDefinition;
+  item: MeleeDefinition
 }

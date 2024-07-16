@@ -2,7 +2,7 @@ import APIErrorCodes from "@/lib/api/ErrorCodes";
 import { Loots } from "@/vendor/suroi/common/src/definitions/loots";
 import {
   LootTables,
-  LootTiers,
+  LootTiers
 } from "@/vendor/suroi/server/src/data/lootTables";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -11,31 +11,32 @@ export async function GET(req: NextRequest) {
   const tableSearch = req.nextUrl.searchParams.get("table");
   const itemSearch = req.nextUrl.searchParams.get("item");
 
-  if (!tableSearch || !itemSearch)
-    return new NextResponse(null, { status: 400 });
+  if (!tableSearch || !itemSearch) { return new NextResponse(null, { status: 400 }); }
 
-  const item = Loots.definitions.find((loot) => loot.idString === itemSearch);
-  if (!item)
+  const item = Loots.definitions.find(loot => loot.idString === itemSearch);
+  if (!item) {
     return new NextResponse(
       JSON.stringify({
-        error: APIErrorCodes.ItemNotFound,
+        error: APIErrorCodes.ItemNotFound
       }),
-      { status: 404 },
+      { status: 404 }
     );
+  }
 
   const lootTable = LootTables[tableSearch];
-  if (!lootTable)
+  if (!lootTable) {
     return new NextResponse(
       JSON.stringify({
-        error: APIErrorCodes.LootTableNotFound,
+        error: APIErrorCodes.LootTableNotFound
       }),
-      { status: 404 },
+      { status: 404 }
     );
+  }
 
   // Check for item in loot table itself
   const lootTableItem = lootTable.loot
     .flat()
-    .find((loot) => "item" in loot && loot.item === itemSearch);
+    .find(loot => "item" in loot && loot.item === itemSearch);
 
   const tableTotal = lootTable.loot
     .flat()
@@ -50,8 +51,8 @@ export async function GET(req: NextRequest) {
         weight: lootTableItem.weight,
         total: tableTotal,
         chance: lootTableItem.weight / tableTotal,
-        oneIn: Math.round(1 / (lootTableItem.weight / tableTotal)),
-      }),
+        oneIn: Math.round(1 / (lootTableItem.weight / tableTotal))
+      })
     );
   }
 
@@ -65,7 +66,7 @@ export async function GET(req: NextRequest) {
     const tierItem = tier.find(
       // As of now there should always be `"item" in loot`
       // TODO: Make recursive function to expand loot tiers that reference other tiers in the future
-      (loot) => "item" in loot && loot.item === itemSearch,
+      loot => "item" in loot && loot.item === itemSearch
     );
 
     if (!tierItem) continue;
@@ -83,15 +84,15 @@ export async function GET(req: NextRequest) {
         tierWeight: entry.weight,
         tableTotal: tableTotal,
         chance,
-        oneIn: Math.round(1 / chance),
-      }),
+        oneIn: Math.round(1 / chance)
+      })
     );
   }
 
   return new NextResponse(
     JSON.stringify({
-      error: APIErrorCodes.ItemNotInLootTable,
+      error: APIErrorCodes.ItemNotInLootTable
     }),
-    { status: 404 },
+    { status: 404 }
   );
 }

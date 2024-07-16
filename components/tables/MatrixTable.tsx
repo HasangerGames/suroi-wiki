@@ -5,7 +5,7 @@ export default function MatrixTable({
   corner,
   tHeader,
   lHeader,
-  content,
+  content
 }: MatrixTableProps) {
   return (
     <div className="flex flex-col gap-2 p-4 pt-0 bg-muted rounded-md not-prose max-h-screen overflow-y-auto">
@@ -19,7 +19,7 @@ export default function MatrixTable({
             gridTemplateColumns: `repeat(${
               tHeader.length + 1
             }, minmax(0, 1fr))`,
-            gridTemplateRows: `repeat(${lHeader.length + 1}, minmax(0, 1fr))`,
+            gridTemplateRows: `repeat(${lHeader.length + 1}, minmax(0, 1fr))`
           }}
         >
           <div className="bg-primary sticky rounded-md font-bold min-w-[10ch] md:min-w-[5ch] z-10">
@@ -29,7 +29,7 @@ export default function MatrixTable({
             className=" bg-white/20 sticky rounded-md grid divide-x-4 divide-muted font-bold z-10"
             style={{
               gridColumn: `span ${tHeader.length} / span ${tHeader.length}`,
-              gridTemplateColumns: `repeat(${tHeader.length}, minmax(0, 1fr))`,
+              gridTemplateColumns: `repeat(${tHeader.length}, minmax(0, 1fr))`
             }}
           >
             {tHeader.map((cell, i) => (
@@ -42,7 +42,7 @@ export default function MatrixTable({
             className=" bg-white/20 rounded-md grid sticky min-w-[10ch] md:min-w-[5ch] divide-y-4 divide-muted font-bold z-10"
             style={{
               gridRow: `span ${lHeader.length} / span ${lHeader.length}`,
-              gridTemplateRows: `repeat(${lHeader.length}, minmax(0, 1fr))`,
+              gridTemplateRows: `repeat(${lHeader.length}, minmax(0, 1fr))`
             }}
           >
             {lHeader.map((cell, i) => (
@@ -56,7 +56,7 @@ export default function MatrixTable({
             style={{
               gridRow: `span ${lHeader.length} / span ${lHeader.length}`,
               gridTemplateRows: `repeat(${lHeader.length}, minmax(0, 1fr))`,
-              gridColumn: `span ${tHeader.length} / span ${tHeader.length}`,
+              gridColumn: `span ${tHeader.length} / span ${tHeader.length}`
             }}
           >
             {content.map((row, i) => (
@@ -64,7 +64,7 @@ export default function MatrixTable({
                 key={i}
                 className="grid divide-x-4 divide-muted"
                 style={{
-                  gridTemplateColumns: `repeat(${tHeader.length}, minmax(0, 1fr))`,
+                  gridTemplateColumns: `repeat(${tHeader.length}, minmax(0, 1fr))`
                 }}
               >
                 {row.map((cell, j) => (
@@ -82,9 +82,9 @@ export default function MatrixTable({
 }
 
 export interface MatrixTableProps extends React.PropsWithChildren {
-  title?: string;
-  corner?: ReactNode;
-  tHeader: ReactNode[];
-  lHeader: ReactNode[];
-  content: ReactNode[][];
+  title?: string
+  corner?: ReactNode
+  tHeader: ReactNode[]
+  lHeader: ReactNode[]
+  content: ReactNode[][]
 }

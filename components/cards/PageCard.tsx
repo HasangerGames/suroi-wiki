@@ -5,7 +5,7 @@ export default function PageCard({
   title,
   url,
   image,
-  description,
+  description
 }: PageCardProps) {
   return (
     <div className="flex-1">
@@ -35,8 +35,8 @@ export default function PageCard({
 }
 
 export interface PageCardProps {
-  title: string;
-  url: string;
-  image: string;
-  description?: string;
+  title: string
+  url: string
+  image: string
+  description?: string
 }

@@ -1,29 +1,29 @@
 import { ObjectCategory } from "@/vendor/suroi/common/src/constants";
 import {
   BuildingDefinition,
-  Buildings,
+  Buildings
 } from "@/vendor/suroi/common/src/definitions/buildings";
 import {
   DecalDefinition,
-  Decals,
+  Decals
 } from "@/vendor/suroi/common/src/definitions/decals";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import {
   LootDefinition,
   Loots,
-  WeaponDefinition,
+  WeaponDefinition
 } from "@/vendor/suroi/common/src/definitions/loots";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import {
   ObstacleDefinition,
-  Obstacles,
+  Obstacles
 } from "@/vendor/suroi/common/src/definitions/obstacles";
 import { SyncedParticleDefinition } from "@/vendor/suroi/common/src/definitions/syncedParticles";
 import {
   InventoryItemDefinition,
   ItemDefinition,
   ItemType,
-  ObjectDefinition,
+  ObjectDefinition
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 
 export function getSuroiItem(idString: string) {
@@ -59,7 +59,7 @@ export const IMAGE_BASE_URLS = {
   Building: "game/buildings",
   Decal: "game/decals",
   Parachute: "game/airdrop",
-  SyncedParticle: "game/particles",
+  SyncedParticle: "game/particles"
 } satisfies Record<keyof typeof ItemType | keyof typeof ObjectCategory, string>;
 
 export const BRANCH = "master";
@@ -72,28 +72,28 @@ export const REPO_URL = "https://github.com/HasangerGames/suroi/";
 
 export const REPO_BRANCH_URL = `${REPO_URL}blob/${BRANCH}/`;
 
-export const WIKI_URL = `https://github.com/HasangerGames/suroi-wiki/`;
+export const WIKI_URL = "https://github.com/HasangerGames/suroi-wiki/";
 
 export const IMAGE_BASE_URL = `${BASE_URL}client/public/img/`;
 
 export const SOUND_BASE_URL = `${REPO_URL}raw/${BRANCH}/client/public/audio/`;
 
 type ObjectCategoryMapping<Category extends ObjectCategory> = {
-  readonly [ObjectCategory.Player]: never;
-  readonly [ObjectCategory.Obstacle]: ObstacleDefinition;
-  readonly [ObjectCategory.DeathMarker]: never;
-  readonly [ObjectCategory.Loot]: LootDefinition;
-  readonly [ObjectCategory.Building]: BuildingDefinition;
-  readonly [ObjectCategory.Decal]: DecalDefinition;
-  readonly [ObjectCategory.Parachute]: never;
-  readonly [ObjectCategory.ThrowableProjectile]: never;
-  readonly [ObjectCategory.SyncedParticle]: SyncedParticleDefinition;
+  readonly [ObjectCategory.Player]: never
+  readonly [ObjectCategory.Obstacle]: ObstacleDefinition
+  readonly [ObjectCategory.DeathMarker]: never
+  readonly [ObjectCategory.Loot]: LootDefinition
+  readonly [ObjectCategory.Building]: BuildingDefinition
+  readonly [ObjectCategory.Decal]: DecalDefinition
+  readonly [ObjectCategory.Parachute]: never
+  readonly [ObjectCategory.ThrowableProjectile]: never
+  readonly [ObjectCategory.SyncedParticle]: SyncedParticleDefinition
 }[Category];
 
 export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
 
 export function getSuroiImageLink<
-  T extends ObjectDefinition | ItemDefinition | InventoryItemDefinition,
+  T extends ObjectDefinition | ItemDefinition | InventoryItemDefinition
 >(obj: T, variation?: number, append?: string | string[], dual?: boolean) {
   switch (true) {
     // Is obj an item?
@@ -103,7 +103,7 @@ export function getSuroiImageLink<
         obj.itemType,
         variation,
         append,
-        dual,
+        dual
       );
 
     // Is a building?
@@ -130,7 +130,7 @@ export function getSuroiImageLink<
 
 export function getSuroiKillfeedImageLink(
   source?: WeaponDefinition,
-  explosionID?: string,
+  explosionID?: string
 ) {
   return `${IMAGE_BASE_URL}/killfeed/${
     source?.idString ?? explosionID
@@ -142,7 +142,7 @@ function _itemImageLink(
   itemType: ItemType,
   variation?: number,
   append?: string | string[],
-  dual?: boolean,
+  dual?: boolean
 ) {
   return `${IMAGE_BASE_URL}${
     IMAGE_BASE_URLS[ItemType[itemType] as keyof typeof ItemType]
@@ -151,7 +151,7 @@ function _itemImageLink(
   }${
     append
       ? Array.isArray(append)
-        ? "_" + append.join("_")
+        ? `_${append.join("_")}`
         : `_${append}`
       : ""
   }.svg`;
@@ -160,7 +160,7 @@ function _itemImageLink(
 function _otherImageLink<Category extends ObjectCategory>(
   obj: ObjectCategoryMapping<Category>,
   category: Category,
-  variation?: number,
+  variation?: number
 ) {
   const key = ObjectCategory[category] as keyof typeof ObjectCategory;
 
@@ -174,20 +174,20 @@ function _otherImageLink<Category extends ObjectCategory>(
 export function buildingVariations(building: BuildingDefinition) {
   return [
     ...(building?.ceilingImages?.map(
-      (image) =>
-        `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`,
+      image =>
+        `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`
     ) ?? []),
     ...(building?.floorImages?.map(
-      (image) =>
-        `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`,
-    ) ?? []),
+      image =>
+        `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`
+    ) ?? [])
   ];
 }
 
 export function buildingParents(building: BuildingDefinition) {
   const parents = [];
   for (const b of Buildings.definitions) {
-    if (b.subBuildings?.some((sub) => sub.idString === building.idString)) {
+    if (b.subBuildings?.some(sub => sub.idString === building.idString)) {
       parents.push(b);
     }
   }
@@ -200,9 +200,9 @@ export function obstacleContainedBy(obstacle: ObstacleDefinition) {
   for (const b of Buildings.definitions) {
     if (
       b.obstacles?.some(
-        (sub) =>
-          sub.idString === obstacle.idString ||
-          Object.keys(sub.idString).some((key) => key === obstacle.idString),
+        sub =>
+          sub.idString === obstacle.idString
+          || Object.keys(sub.idString).some(key => key === obstacle.idString)
       )
     ) {
       parents.push(b);
@@ -231,5 +231,5 @@ export function isLoot(obj: ObjectDefinition): obj is LootDefinition {
 }
 
 export function isWeapon(obj: ObjectDefinition): obj is WeaponDefinition {
-  return Boolean([...Guns, ...Melees].find((weapon) => weapon === obj));
+  return Boolean([...Guns, ...Melees].find(weapon => weapon === obj));
 }

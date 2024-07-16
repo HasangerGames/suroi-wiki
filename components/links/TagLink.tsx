@@ -5,9 +5,9 @@ import Link from "./Link";
 
 export default async function TagLink({ sha, children }: TagLinkProps) {
   const tags = await fs.readdir(".git/modules/vendor/suroi/refs/tags", {
-    withFileTypes: true,
+    withFileTypes: true
   });
-  let tag: string = "";
+  let tag = "";
   for (const file of tags) {
     const tagSha = await fs.readFile(path.join(file.path, file.name), "utf-8");
     if (tagSha === sha) {
@@ -31,5 +31,5 @@ export default async function TagLink({ sha, children }: TagLinkProps) {
 }
 
 export interface TagLinkProps extends React.PropsWithChildren {
-  sha: string;
+  sha: string
 }

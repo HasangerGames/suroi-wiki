@@ -10,7 +10,7 @@ import {
   PointElement,
   ScatterController,
   Title,
-  Tooltip,
+  Tooltip
 } from "chart.js";
 import { Suspense, useRef } from "react";
 import { Scatter } from "react-chartjs-2";
@@ -22,7 +22,7 @@ export default function GunGraph({ gun }: GunGraphProps) {
     PointElement,
     Legend,
     Tooltip,
-    Title,
+    Title
   );
 
   // what is this for
@@ -32,7 +32,7 @@ export default function GunGraph({ gun }: GunGraphProps) {
   const stepCount = 751;
   const steps = Array.from(
     { length: stepCount },
-    (_, i) => i / (stepCount - 1),
+    (_, i) => i / (stepCount - 1)
   );
   const lerp = (a: number, b: number) => (t: number) => a * (1 - t) + b * t;
 
@@ -40,29 +40,29 @@ export default function GunGraph({ gun }: GunGraphProps) {
     ballistics: { range },
     bulletCount = 1,
     fireDelay,
-    fireMode,
+    fireMode
   } = gun;
   const interp = lerp(-margin, range + margin);
   const trialCount = ~~(500 / bulletCount);
 
   const damages = steps
     .map(interp)
-    .map((r) => ({ x: r, y: shootGun(gun, trialCount, r) }));
+    .map(r => ({ x: r, y: shootGun(gun, trialCount, r) }));
 
   const dps = damages.map(({ x: range, y: damage }) => ({
     x: range,
     y:
-      (damage * 1000) /
-      (fireMode === FireMode.Burst
-        ? gun.burstProperties.burstCooldown +
-          fireDelay * gun.burstProperties.shotsPerBurst
-        : fireDelay),
+      (damage * 1000)
+      / (fireMode === FireMode.Burst
+        ? gun.burstProperties.burstCooldown
+        + fireDelay * gun.burstProperties.shotsPerBurst
+        : fireDelay)
   }));
 
   return (
     <div className="prose prose-invert">
       <p>
-        This test assumes that the target isn{"'"}t moving, that the shooter is,
+        This test assumes that the target isn't moving, that the shooter is,
         and the gun is always aiming dead center on the target.
       </p>
       <Suspense fallback={<div>Loading...</div>}>
@@ -72,67 +72,67 @@ export default function GunGraph({ gun }: GunGraphProps) {
               {
                 label: `Simulated Damage of ${gun.name}`,
                 data: damages,
-                backgroundColor: "hsl(209, 60%, 51%)",
+                backgroundColor: "hsl(209, 60%, 51%)"
               },
               {
                 label: `Simulated DPS of ${gun.name}`,
                 data: dps,
-                backgroundColor: "hsl(27, 100%, 50%)",
-              },
-            ],
+                backgroundColor: "hsl(27, 100%, 50%)"
+              }
+            ]
           }}
           options={{
             aspectRatio: 1.3,
             hover: {
               axis: "x",
-              mode: "index",
+              mode: "index"
             },
             scales: {
               x: {
                 grid: {
-                  color: ["#444", "#888"],
+                  color: ["#444", "#888"]
                 },
                 ticks: {
                   color: "white",
-                  stepSize: 10,
+                  stepSize: 10
                 },
                 title: {
                   text: "Distance between target center and muzzle in game units",
                   display: true,
-                  color: "white",
-                },
+                  color: "white"
+                }
               },
               y: {
                 grid: {
-                  color: ["#444", "#888"],
+                  color: ["#444", "#888"]
                 },
                 ticks: {
-                  color: "white",
+                  color: "white"
                 },
                 title: {
                   text: "Damage value",
                   display: true,
-                  color: "white",
-                },
-              },
+                  color: "white"
+                }
+              }
             },
             plugins: {
               title: {
                 text: `Simulated damages of ${gun.name}`,
                 display: true,
-                color: "white",
+                color: "white"
               },
               legend: {
                 labels: {
-                  color: "white",
-                },
+                  color: "white"
+                }
               },
               tooltip: {
                 filter: (item, i) => {
                   return i === 0;
-                },
-              },
-            },
+                }
+              }
+            }
           }}
         />
         <p>CSV for damage</p>
@@ -163,5 +163,5 @@ export default function GunGraph({ gun }: GunGraphProps) {
 }
 
 export interface GunGraphProps extends React.PropsWithChildren {
-  gun: GunDefinition;
+  gun: GunDefinition
 }

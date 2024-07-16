@@ -5,14 +5,14 @@ import { ThrowableDefinition } from "@/vendor/suroi/common/src/definitions/throw
 import SVGObjectRenderer from "../SVGObjectRenderer";
 
 type Position = {
-  x: number;
-  y: number;
+  x: number
+  y: number
 };
 
 export default function PlayerHoldingThrowable({
   item,
   skin,
-  state,
+  state
 }: PlayerHoldingThrowableProps) {
   const base = getSuroiImageLink(skin, undefined, "base");
   const fist = getSuroiImageLink(skin, undefined, "fist");
@@ -29,7 +29,7 @@ export default function PlayerHoldingThrowable({
         ? item.animation.cook.leftFist.y * 20
         : state === "throw"
           ? item.animation.throw.leftFist.y * 20
-          : -35,
+          : -35
   };
   const rightFist: Position = {
     x:
@@ -43,29 +43,29 @@ export default function PlayerHoldingThrowable({
         ? item.animation.cook.rightFist.y * 20
         : state === "throw"
           ? item.animation.throw.rightFist.y * 20
-          : 35,
+          : 35
   };
 
   const image: SVGObject[] = [
     {
       type: "image",
       url: base,
-      zIndex: 2,
+      zIndex: 2
     },
     {
       type: "image",
       url: fist,
       x: leftFist.x,
       y: leftFist.y,
-      zIndex: 4,
+      zIndex: 4
     },
     {
       type: "image",
       url: fist,
       x: rightFist.x,
       y: rightFist.y,
-      zIndex: 4,
-    },
+      zIndex: 4
+    }
   ];
 
   if (state === "cook" || state === "throw") {
@@ -75,7 +75,7 @@ export default function PlayerHoldingThrowable({
       x: rightFist.x,
       y: rightFist.y,
       rotation: item.image.angle ?? 0,
-      zIndex: 5,
+      zIndex: 5
     });
   }
   if (state === "cook") {
@@ -84,7 +84,7 @@ export default function PlayerHoldingThrowable({
       url: `${IMAGE_BASE_URL}game/projectiles/throwables/${item.animation.pinImage}.svg`,
       x: leftFist.x + 15,
       y: leftFist.y,
-      zIndex: 3,
+      zIndex: 3
     });
   }
   if (state === "hold") {
@@ -94,7 +94,7 @@ export default function PlayerHoldingThrowable({
       x: item.image.position.x,
       y: item.image.position.y,
       rotation: item.image.angle ?? 0,
-      zIndex: 5,
+      zIndex: 5
     });
   }
   return (
@@ -105,7 +105,7 @@ export default function PlayerHoldingThrowable({
 }
 
 export interface PlayerHoldingThrowableProps extends React.PropsWithChildren {
-  item: ThrowableDefinition;
-  skin: SkinDefinition;
-  state: "hold" | "cook" | "throw";
+  item: ThrowableDefinition
+  skin: SkinDefinition
+  state: "hold" | "cook" | "throw"
 }

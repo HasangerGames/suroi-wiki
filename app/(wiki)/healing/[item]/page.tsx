@@ -5,7 +5,7 @@ import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems
 const toExport = GenericArticlePage({
   items: HealingItems.definitions,
   path: "healing",
-  Sidebar: HealingSidebar,
+  Sidebar: HealingSidebar
 });
 
 export const { generateMetadata, generateStaticParams } = toExport;

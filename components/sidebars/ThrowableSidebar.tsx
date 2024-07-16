@@ -10,39 +10,39 @@ import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
 
 export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
-  const skin =
-    Skins.definitions.find((s) => s.idString === "hazel_jumpsuit") ??
-    Skins.definitions[0];
+  const skin
+    = Skins.definitions.find(s => s.idString === "hazel_jumpsuit")
+    ?? Skins.definitions[0];
   const imageVariations: ImageTab[] = [
     {
       type: "image",
       url: getSuroiImageLink(item),
       alt: "Image of throwable",
-      title: "Loot",
+      title: "Loot"
     },
     {
       type: "image",
       url: getSuroiKillfeedImageLink(item),
       alt: "Image of throwable impact killfeed",
-      title: "Killfeed (Impact)",
+      title: "Killfeed (Impact)"
     },
     {
       type: "react",
       children: <PlayerHoldingThrowable item={item} skin={skin} state="hold" />,
-      title: "Holding",
+      title: "Holding"
     },
     {
       type: "react",
       children: <PlayerHoldingThrowable item={item} skin={skin} state="cook" />,
-      title: "Cooking",
+      title: "Cooking"
     },
     {
       type: "react",
       children: (
         <PlayerHoldingThrowable item={item} skin={skin} state="throw" />
       ),
-      title: "Throwing",
-    },
+      title: "Throwing"
+    }
   ];
 
   if (item.detonation.explosion) {
@@ -50,7 +50,7 @@ export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
       type: "image",
       url: getSuroiKillfeedImageLink(undefined, item.detonation.explosion),
       alt: "Image of throwable explosion killfeed",
-      title: "Killfeed (Explosion)",
+      title: "Killfeed (Explosion)"
     });
   }
   return (
@@ -106,5 +106,5 @@ export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
 }
 
 export interface ThrowableSidebarProps extends React.PropsWithChildren {
-  item: ThrowableDefinition;
+  item: ThrowableDefinition
 }

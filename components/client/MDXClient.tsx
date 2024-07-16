@@ -28,7 +28,7 @@ const components = {
   Empty,
   a: (props: HTMLProps<HTMLAnchorElement>) => (
     <Link href={props.href!}>{props.children}</Link>
-  ),
+  )
 };
 
 export default function MDXClient(props: MDXRemoteProps) {

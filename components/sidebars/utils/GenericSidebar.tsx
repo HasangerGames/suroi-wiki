@@ -5,7 +5,7 @@ export default function GenericSidebar({
   children,
   title,
   image,
-  imageVariations,
+  imageVariations
 }: GenericSidebarProps) {
   return (
     <div className="md:min-w-[20rem] md:max-w-[20rem]">
@@ -15,8 +15,8 @@ export default function GenericSidebar({
         </div>
         {(imageVariations && (
           <ImageTabs images={imageVariations ?? [{ url: image }]} />
-        )) ||
-          (image && <ImageTabs images={[{ type: "image", url: image }]} />)}
+        ))
+        || (image && <ImageTabs images={[{ type: "image", url: image }]} />)}
         {children}
       </div>
     </div>
@@ -24,7 +24,7 @@ export default function GenericSidebar({
 }
 
 export interface GenericSidebarProps extends React.PropsWithChildren {
-  title: string;
-  image?: string;
-  imageVariations?: ImageTab[];
+  title: string
+  image?: string
+  imageVariations?: ImageTab[]
 }

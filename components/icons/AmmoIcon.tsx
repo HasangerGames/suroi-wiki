@@ -16,6 +16,6 @@ export default function AmmoIcon({ ammo, scale = 1 }: AmmoIconProps) {
 }
 
 export interface AmmoIconProps {
-  ammo: string;
-  scale?: number;
+  ammo: string
+  scale?: number
 }

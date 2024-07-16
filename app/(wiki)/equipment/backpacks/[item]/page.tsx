@@ -5,7 +5,7 @@ import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
 const toExport = GenericArticlePage({
   items: Backpacks.definitions,
   path: "equipment/backpacks",
-  Sidebar: BackpackSidebar,
+  Sidebar: BackpackSidebar
 });
 
 export const { generateMetadata, generateStaticParams } = toExport;

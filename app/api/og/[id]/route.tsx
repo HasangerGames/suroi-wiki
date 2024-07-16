@@ -17,18 +17,18 @@ export async function GET(req: NextRequest) {
   const image = getSuroiImageLink(item);
 
   const inter = await fetch(
-    new URL("../../../../public/font/Inter-Regular.ttf", import.meta.url),
-  ).then((res) => res.arrayBuffer());
+    new URL("../../../../public/font/Inter-Regular.ttf", import.meta.url)
+  ).then(res => res.arrayBuffer());
   const interBold = await fetch(
-    new URL("../../../../public/font/Inter-Bold.ttf", import.meta.url),
-  ).then((res) => res.arrayBuffer());
+    new URL("../../../../public/font/Inter-Bold.ttf", import.meta.url)
+  ).then(res => res.arrayBuffer());
   const spaceMono = await fetch(
-    new URL("../../../../public/font/SpaceMono-Regular.ttf", import.meta.url),
-  ).then((res) => res.arrayBuffer());
+    new URL("../../../../public/font/SpaceMono-Regular.ttf", import.meta.url)
+  ).then(res => res.arrayBuffer());
 
   const logoData = await fetch(
-    new URL("../../../../public/img/logo.png", import.meta.url),
-  ).then((res) => res.arrayBuffer());
+    new URL("../../../../public/img/logo.png", import.meta.url)
+  ).then(res => res.arrayBuffer());
 
   return new ImageResponse(
     (
@@ -42,12 +42,12 @@ export async function GET(req: NextRequest) {
           flexDirection: "column",
           padding: "4rem",
           fontFamily: "Inter",
-          gap: "2rem",
+          gap: "2rem"
         }}
       >
         <div
           style={{
-            display: "flex",
+            display: "flex"
           }}
         >
           {/* @ts-expect-error */}
@@ -57,14 +57,14 @@ export async function GET(req: NextRequest) {
           style={{
             display: "flex",
             flex: "1 1 0%",
-            gap: "4rem",
+            gap: "4rem"
           }}
         >
           <div
             style={{
               display: "flex",
               flexDirection: "column",
-              flex: "1 1 0%",
+              flex: "1 1 0%"
             }}
           >
             <h1
@@ -72,7 +72,7 @@ export async function GET(req: NextRequest) {
                 fontSize: "5rem",
                 fontFamily: "InterBold",
                 fontWeight: "bold",
-                margin: 0,
+                margin: 0
               }}
             >
               {item.name}
@@ -80,7 +80,7 @@ export async function GET(req: NextRequest) {
             <h2
               style={{
                 fontFamily: "SpaceMono",
-                fontSize: "4rem",
+                fontSize: "4rem"
               }}
             >
               {item.idString}
@@ -89,7 +89,7 @@ export async function GET(req: NextRequest) {
 
           <div
             style={{
-              display: "flex",
+              display: "flex"
             }}
           >
             <img width="512" height="512" src={image} />
@@ -106,22 +106,22 @@ export async function GET(req: NextRequest) {
           name: "Inter",
           data: inter,
           style: "normal",
-          weight: 400,
+          weight: 400
         },
         {
           name: "InterBold",
           data: interBold,
           style: "normal",
-          weight: 700,
+          weight: 700
         },
 
         {
           name: "SpaceMono",
           data: spaceMono,
           style: "normal",
-          weight: 400,
-        },
-      ],
-    },
+          weight: 400
+        }
+      ]
+    }
   );
 }
