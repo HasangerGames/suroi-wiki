@@ -29,12 +29,12 @@ export default async function Home() {
           <div className="flex flex-row flex-wrap gap-4">
             <Pill href="https://suroi.io" text="Play Suroi" color="suroi" />
             <Pill
-              href="https://github.com/hasangergames/suroi"
+              href="https://github.com/HasangerGames/suroi"
               text="Suroi GitHub"
               color="primary"
             />
             <Pill
-              href="https://github.com/hasangergames/suroi-wiki"
+              href="https://github.com/HasangerGames/suroi-wiki"
               text="Wiki GitHub"
               color="muted"
             />
