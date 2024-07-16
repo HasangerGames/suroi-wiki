@@ -50,7 +50,7 @@ export async function GET(req: NextRequest) {
             display: "flex"
           }}
         >
-          {/* @ts-expect-error */}
+          {/* @ts-expect-error Someone was too lazy to decode the buffer. */}
           <img src={logoData} height={48 * 2} width={169 * 2} />
         </div>
         <div
