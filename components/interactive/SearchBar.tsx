@@ -72,6 +72,7 @@ export default function SearchBar() {
                 onChange={e => setQuery(e.target.value)}
                 className="z-10 p-2 w-full rounded-md bg-muted"
                 placeholder="Search..."
+                // eslint-disable-next-line jsx-a11y/no-autofocus
                 autoFocus
               />
               <button
