@@ -208,7 +208,7 @@ const ARTISTS: string[] = [
   "SquareCube",
   "itzblover",
   "DogEnjoyer",
-  "the chicken",
+  "the chicken"
 ];
 
 export default function CreditsPage() {
