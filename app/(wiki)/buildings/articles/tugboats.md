@@ -2,7 +2,7 @@ The **Tugboat** is a building added in the v0.16.0 "A Sailor's Dream" update on 
 
 # Location & Spawning
 
-Five White Tugboats and one Red Tugboat spawn in the water bordering the map. They spawn at random distances from the shore. 
+Five White Tugboats and one Red Tugboat spawn in the water bordering the map. They spawn at random distances from the shore.
 
 # Areas
 
@@ -18,7 +18,7 @@ All tugboat cabins contain one [Tugboat Control Panel](/obstacles/tugboat_contro
 
 # Tips
 
-- The water near Tugboats are not good places to fight as the water can slow you down, making you an easy target for a player who out-scopes you. 
+- The water near Tugboats are not good places to fight as the water can slow you down, making you an easy target for a player who out-scopes you.
 - Prioritize looting the structure with maximum efficiency and leaving as quickly as possible to minimize the chance to run into another player.
 - If you do happen to end up in a fight, the metal fences on the side of the Togboat provide indestructible cover and also reflects bullets.
 - Do not go for the Red Tugboat if you spawn late into the game, as it will likely already be looted.
@@ -31,6 +31,6 @@ All tugboat cabins contain one [Tugboat Control Panel](/obstacles/tugboat_contro
 # History
 
 - v0.16.1
-  - Fixed an issue with the hitboxes of the metal stairs
+  - Fixed an issue with the hitboxes of the metal stairs.
 - v0.16.0
-  - Added
+  - Added.

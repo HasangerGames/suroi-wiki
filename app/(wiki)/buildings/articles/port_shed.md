@@ -16,11 +16,11 @@ The Port Shed has barely any loot (only a [Bookshelf](/obstacles/bookshelf) and 
 
 # Trivia
 
-- The Port Shed was designed by platonthek
+- The Port Shed was designed by platonthek.
 
 # History
 
 - v0.13.0
-  - Fixed an issue where the window on the Port Shed was nonfunctional
+  - Fixed an issue where the window on the Port Shed was nonfunctional.
 - v0.11.0
-  - Added
+  - Added.

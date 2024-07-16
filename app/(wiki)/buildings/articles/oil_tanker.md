@@ -16,10 +16,10 @@ The control room features a large [Drawer](/obsatcles/drawers), a wide window, a
 
 # Tips 
 
-- When you enter the Oil Tanker, grab a weapon and quickly head to the control room to check if the weapon inside the Briefcase has been taken. 
-  - In case it has, watch out for enemies that might have it. 
+- When you enter the Oil Tanker, grab a weapon and quickly head to the control room to check if the weapon inside the Briefcase has been taken.
+  - In case it has, watch out for enemies that might have it.
 - Use the oil tanks as cover when fighting dangerous enemies, but beware of grenades!
 
 # History
 - v0.15.0
-  - Added
+  - Added.

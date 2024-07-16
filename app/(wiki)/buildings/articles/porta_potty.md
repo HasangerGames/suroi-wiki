@@ -21,18 +21,18 @@ The Porta Potty also has a roll of toilet paper and a small sink with hand sanit
 
 # Trivia
 
-- The Porta Potty was designed by 1092384, Slapdap, and Katloo
-- The explanation for why an open Porta Potty toilet drops guns is that whoever put the guns in it either didn't have time to or couldn't shut the lid
+- The Porta Potty was designed by 1092384, Slapdap, and Katloo.
+- The explanation for why an open Porta Potty toilet drops guns is that whoever put the guns in it either didn't have time to or couldn't shut the lid.
 
 # History
 
 - v0.17.0
-  - Fixed items popping through the back wall
+  - Fixed items popping through the back wall.
 - v0.16.0
-  - Improved hitboxes
+  - Improved hitboxes.
 - v0.12.0
-  - Fixed silent Porta Potty doors
+  - Fixed silent Porta Potty doors.
 - v0.10.0
-  - Improved visibility around the Porta Potty
+  - Improved visibility around the Porta Potty.
 - v0.9.0
-  - Added
+  - Added.
