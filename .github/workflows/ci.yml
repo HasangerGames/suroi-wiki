@@ -1,48 +1,88 @@
+name: CI
+
 on:
-  pull_request:
   push:
-  workflow_dispatch:  
+  pull_request:
+
+permissions:
+  contents: write
 
 jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    concurrency: ci-build-${{ github.ref }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+      
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+          cache-dependency-path: '**/pnpm-lock.yaml'
+
+      - name: Install Packages
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
   lint:
-    name: "Lint"
+    name: Lint
     runs-on: ubuntu-latest
+    concurrency: ci-lint-${{ github.ref }}
+
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        submodules: true
-    - name: Install pnpm
-      uses: pnpm/action-setup@v2.4.0
-      with:
-        version: 8
-    - name: Set up Node
-      uses: actions/setup-node@v3
-      with:
-        node-version: 20
-        cache: 'pnpm'
-    - name: Install dependencies
-      run: pnpm i
-    - name: Lint
-      run: pnpm ci:lint
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+      
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+          cache-dependency-path: '**/pnpm-lock.yaml'
+
+      - name: Install Packages
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm ci:lint
   spellcheck:
-    name: "Spell Check"
+    name: Spellcheck
     runs-on: ubuntu-latest
+    concurrency: ci-cspell-${{ github.ref }}
+
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        submodules: true
-    - name: Install pnpm
-      uses: pnpm/action-setup@v2.4.0
-      with:
-        version: 8
-    - name: Set up Node
-      uses: actions/setup-node@v3
-      with:
-        node-version: 20
-        cache: 'pnpm'
-    - name: Install dependencies
-      run: pnpm i
-    - name: Spellcheck
-      run: pnpm spellcheck
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+      
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+          cache-dependency-path: '**/pnpm-lock.yaml'
+
+      - name: Install Packages
+        run: pnpm install --frozen-lockfile
+
+      - name: Spellcheck
+        run: pnpm spellcheck
