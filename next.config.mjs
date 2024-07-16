@@ -31,7 +31,10 @@ const nextConfig = {
     // !! WARN !!
     // HACK: Webpack doesn't want to comply.
     ignoreBuildErrors: true
-  }
+  },
+
+  // HACK: Transpiles ESM-only packages to CJS because Next.js doesn't want to natively support ESM.
+  transpilePackages: ["@mdx-js/loader", "@mdx-js/react", "next-mdx-remote"]
 };
 
 export default withBundleAnalyzer(withMDX(nextConfig));
