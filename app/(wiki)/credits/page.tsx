@@ -195,7 +195,6 @@ const ARTISTS: string[] = [
   "Yeet120",
   "The Last Guys",
   "Cobby",
-  "Bear",
   "Eslamo",
   "Noob",
   "Scaredpenguin",
