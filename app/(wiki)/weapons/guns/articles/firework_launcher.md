@@ -33,7 +33,7 @@ The **Firework Launcher** is an RPG utilizing firework ammunition. It was added 
 - v0.18.3
   - Removed from the game.
 - v0.18.2
-  - Added back in golden airdops.
+  - Added back in golden airdrops.
 - v0.18.1
   - Removed from the game.
 - v0.18.0
