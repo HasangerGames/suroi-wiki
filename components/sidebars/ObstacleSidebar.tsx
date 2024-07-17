@@ -137,7 +137,7 @@ export default function ObstacleSidebar({
           <InfoboxHeader>Activatable Properties</InfoboxHeader>
           <InfoboxRow>
             <InfoboxColumn title="Item Required">
-              {item?.requiredItem ? getSuroiItem(item.requiredItem ?? "").name : "None"}
+              {item?.requiredItem ? getSuroiItem(item.requiredItem).name : "None"}
             </InfoboxColumn>
             {item.interactText && (
               <InfoboxColumn title="Interact Text">
