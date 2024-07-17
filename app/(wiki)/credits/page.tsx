@@ -25,9 +25,9 @@ const WIKI_TEAM: User[] = [
     website: "https://kenos.codeberg.page"
   },
   {
-    name: "Milocat",
+    name: "zedaes",
     description: "Wiki Developer",
-    avatar: "https://avatars.githubusercontent.com/u/119687855"
+    avatar: "https://avatars.githubusercontent.com/u/147769903"
   },
   {
     name: "Katloo",
@@ -40,14 +40,14 @@ const WIKI_TEAM: User[] = [
     avatar: "https://avatars.githubusercontent.com/u/66282302"
   },
   {
+    name: "Milocat",
+    description: "Wiki Developer",
+    avatar: "https://avatars.githubusercontent.com/u/119687855"
+  },
+  {
     name: "Fridge",
     description: "Wiki Developer",
     avatar: "https://avatars.githubusercontent.com/u/152137521"
-  },
-  {
-    name: "zedaes",
-    description: "Wiki Developer",
-    avatar: "https://avatars.githubusercontent.com/u/147769903"
   },
   {
     name: "sawq375",
@@ -104,7 +104,6 @@ const GAME_TEAM: User[] = [
     name: "Chpsterz",
     description: "Developer",
     avatar: "https://avatars.githubusercontent.com/u/72819276",
-    website: "https://chpsscode.github.io"
   },
   {
     name: "Limenade",
@@ -125,8 +124,7 @@ const GAME_TEAM: User[] = [
   {
     name: "Albie",
     description: "Developer",
-    avatar: "https://avatars.githubusercontent.com/u/78765172",
-    website: "https://www.linkedin.com/in/albie-morrison-7928b6299/"
+    avatar: "https://avatars.githubusercontent.com/u/78765172"
   },
   {
     name: "Error",
