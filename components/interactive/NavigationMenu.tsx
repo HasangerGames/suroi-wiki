@@ -20,7 +20,7 @@ export default function NavigationMenu() {
         <button onClick={() => setOpen(false)}>
           <X className="w-8 h-8" />
         </button>
-        <div className="flex flex-col ml-1">
+        <div className="flex flex-col ml-1 overflow-auto">
           {wikiPages.map(item => (
             <Link
               key={item.url}
