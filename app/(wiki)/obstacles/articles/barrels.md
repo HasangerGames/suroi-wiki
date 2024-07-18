@@ -1,4 +1,4 @@
-**Barrels** are a type of explosive [Obstacle](/obstacles) added in the [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0) "We're back, baby" update on May 20th, 2023. They come in two variants.
+**Barrels** are a type of explosive [Obstacle](/obstacles) added in the v0.1.0 "We're back, baby" update on May 20th, 2023. They come in two variants.
 
 # Location & Spawning
 
@@ -23,13 +23,13 @@ Barrels and Super Barrel drop no loot upon being broken, but they create an expl
 
 # History
 
-- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
+- v0.13.0
   - Fixed an issue with Barrel smoke not displaying
   - Decreased shrapnel damage from Normal Barrels to 2 (from 10)
   - Decreased shrapnel damage from Super Barrels to 4 (from 10)
-- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
+- v0.10.0
   - Added shrapnel to both Barrels
-- [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
+- v0.1.0
   - Added
 
 # Gallery
@@ -37,9 +37,9 @@ Barrels and Super Barrel drop no loot upon being broken, but they create an expl
 <Gallery
   images={[
     {
-      url: "/img/articles/obstacles/barrel/barrel_[v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0).png",
+      url: "/img/articles/obstacles/barrel/barrel_v0.4.0.png",
       author: "Katloo",
-      caption: "A player next to a Barrel in [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)",
+      caption: "A player next to a Barrel in v0.4.0",
     },
   ]}
 />

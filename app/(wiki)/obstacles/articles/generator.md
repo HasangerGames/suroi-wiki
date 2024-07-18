@@ -1,4 +1,4 @@
-The **Generator** is an interactive [Obstacle](/obstacles) added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023.
+The **Generator** is an interactive [Obstacle](/obstacles) added in the v0.11.0 "Making Waves" update on October 22nd, 2023.
 
 # Location & Spawning
 
@@ -20,5 +20,5 @@ The Generator is indestructible and therefore drops no loot. When interacting wi
 
 # History
 
-- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
+- v0.11.0
   - Added

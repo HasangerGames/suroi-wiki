@@ -1,6 +1,6 @@
 <Event />
 
-The **Pumpkin** is an [Obstacle](/obstacles) on the Halloween map. It was added to the game in the [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0) "Trick-or-Tweak" update on October 29th, 2023. It was a very common obstacle and a main focus of Halloween mode.
+The **Pumpkin** is an [Obstacle](/obstacles) on the Halloween map. It was added to the game in the v0.12.0 "Trick-or-Tweak" update on October 29th, 2023. It was a very common obstacle and a main focus of Halloween mode.
 
 # Location & Spawning
 
@@ -21,7 +21,7 @@ The pumpkin drops one of the following guns: - 95% chance for a [G17 (scoped)](/
 
 # History
 
-- [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
+- v0.12.1
   - Phased out the Halloween Map (including the Pumpkin)
-- [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
+- v0.12.0
   - Added

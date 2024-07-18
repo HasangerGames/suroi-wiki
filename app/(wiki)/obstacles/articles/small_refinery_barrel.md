@@ -1,4 +1,4 @@
-The **Small Refinery Barrel** is an [Obstacle](/obstacles) added in the [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0) "Back with a Bang" update on September 14th, 2023.
+The **Small Refinery Barrel** is an [Obstacle](/obstacles) added in the v0.10.0 "Back with a Bang" update on September 14th, 2023.
 
 # Location & Spawning
 
@@ -20,5 +20,5 @@ Small Refinery Barrels drop no loot and explode when broken. It can also reflect
 
 # History
 
-- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
+- v0.10.0
   - Added

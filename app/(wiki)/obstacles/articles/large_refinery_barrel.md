@@ -1,4 +1,4 @@
-The **Large Refinery Barrel** is an [Obstacle](/obstacles) added in the [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0) "Back with a Bang" update on September 14th, 2023.
+The **Large Refinery Barrel** is an [Obstacle](/obstacles) added in the v0.10.0 "Back with a Bang" update on September 14th, 2023.
 
 # Location & Spawning
 
@@ -23,5 +23,5 @@ Large Refinery Barrels drop no loot and explode when broken. They take a very la
 
 # History
 
-- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
+- v0.10.0
   - Added

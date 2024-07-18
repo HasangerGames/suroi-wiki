@@ -1,5 +1,5 @@
 <Stub/>
-**Fences** are a type of destructible obstacle added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update.
+**Fences** are a type of destructible obstacle added in the v0.15.0 "Pulling the Pin" update.
 
 # Location & Spawning
 
@@ -20,5 +20,5 @@ Fences do not drop loot.
 
 # History
 
-- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+- v0.15.0
   - Added

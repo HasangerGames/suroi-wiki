@@ -1,4 +1,4 @@
-The **Tear Gas Crate** is an [Obstacle](/obstacles) added to the game in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update.
+The **Tear Gas Crate** is an [Obstacle](/obstacles) added to the game in the v0.15.0 "Pulling the Pin" update.
 
 # Location and Spawning
 
@@ -19,5 +19,5 @@ Tear Gas Crates drop no loot when broken. When Tear Gas Crates are broken, they 
 - The Tear Gas Crate was designed by Just Alto and 1092384
 
 # History
-- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+- v0.15.0
   - Added

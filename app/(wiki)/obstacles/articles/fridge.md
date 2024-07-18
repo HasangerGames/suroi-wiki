@@ -1,4 +1,4 @@
-The **Fridge** is an [Obstacle](/obstacles) added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 30th, 2023. It drops [Colas](/healing/colas).
+The **Fridge** is an [Obstacle](/obstacles) added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It drops [Colas](/healing/colas).
 
 # Location & Spawning
 
@@ -19,5 +19,5 @@ The Fridge reflects bullets and always drops 2-3 [Colas](/healing/colas) upon be
 
 # History
 
-- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
+- v0.9.0
   - Added

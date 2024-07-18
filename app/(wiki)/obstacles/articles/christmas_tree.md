@@ -25,5 +25,5 @@ The Christmas Tree drops decent [loot](/loot#christmas_tree) and takes many hits
 
 # History
 
-- [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)
+- v0.14.0
   - Added

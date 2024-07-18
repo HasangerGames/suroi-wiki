@@ -1,5 +1,5 @@
 <Stub />
-The **Gun Case** is an [Obstacle](/obstacles) added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14th, 2024.
+The **Gun Case** is an [Obstacle](/obstacles) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024.
 
 # Location & Spawning
 
@@ -18,5 +18,5 @@ Gun Cases drop 1-2 guns of medium quality. See the special guns tier in the [Loo
 
 # History
 
-- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+- v0.15.0
   - Added

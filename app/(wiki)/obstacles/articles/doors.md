@@ -1,4 +1,4 @@
-**Doors** are a type of interactive [Obstacle](/obstacles) added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 30th, 2023.
+**Doors** are a type of interactive [Obstacle](/obstacles) added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023.
 
 # Location & Spawning
 
@@ -21,7 +21,7 @@ Wooden and Porta Potty Doors can be interacted with to change their position, wh
 
 # History
 
-- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
+- v0.11.0
   - Added Vault Door
-- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
+- v0.9.0
   - Added Door and Garage Door

@@ -1,4 +1,4 @@
-**Gun Mounts** are a type of [Obstacle](/obstacles) added in the [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0) "Back with a Bang" update on September 14th, 2023.
+**Gun Mounts** are a type of [Obstacle](/obstacles) added in the v0.10.0 "Back with a Bang" update on September 14th, 2023.
 
 # Location & Spawning
 
@@ -18,8 +18,8 @@ Gun Mounts have low health and are easily destroyed. They always drop the weapon
 
 # History
 
-- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
+- v0.17.0
   - Fixed gun mount loot phasing through walls
   - Added HP18 Gun Mount
-- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
+- v0.10.0
   - Added

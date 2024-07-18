@@ -1,4 +1,4 @@
-The **Mobile Home Window** is an [Obstacle](/obstacles) added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14th, 2024.
+The **Mobile Home Window** is an [Obstacle](/obstacles) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024.
 # Location and Spawning
 
 A single Mobile Home Window spawns in every [Mobile Home](/buildings/mobile_home) on the exterior.
@@ -19,5 +19,5 @@ The Mobile Home Window doesn't drop loot.
 
  # History 
 
-  - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+  - v0.15.0
     - Added

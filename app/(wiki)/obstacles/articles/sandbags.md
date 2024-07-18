@@ -1,4 +1,4 @@
-**Sandbags** are an indestructible [Obstacle](/obstacles) added to the game in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update.
+**Sandbags** are an indestructible [Obstacle](/obstacles) added to the game in the v0.15.0 "Pulling the Pin" update.
 
 # Location and Spawning
 Sandbags can spawn around the [Armory](/buildings/armory) and [Port](/buildings/port). A limited number of sandbags also spawn on the [Oil Tanker](/obstacles/oil_tanker_ship).
@@ -15,5 +15,5 @@ Sandbags do not drop loot as they cannot be destroyed.
 - The Sandbags were designed by Yeet120, 1092384, and eclair_is_tasty
 
 # History
-- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+- v0.15.0
   - Added

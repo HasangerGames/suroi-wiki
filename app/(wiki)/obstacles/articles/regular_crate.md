@@ -1,4 +1,4 @@
-The **Regular Crate**, commonly known as simply the **Crate** is an [Obstacle](/obstacle) added to the game in the [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0) "We're back, baby" update on May 20th, 2023. Breaking them results in loot being dropped, ranging from very common to very rare items.
+The **Regular Crate**, commonly known as simply the **Crate** is an [Obstacle](/obstacle) added to the game in the v0.1.0 "We're back, baby" update on May 20th, 2023. Breaking them results in loot being dropped, ranging from very common to very rare items.
 
 # Location & Spawning
 
@@ -19,11 +19,11 @@ The Regular Crate can drop a huge variety of decent [loot](/loot/#regular_crate)
 # Trivia
 
 - The Regular Crate is one of the first [Obstacles](/obstacles) to be added to the game
-  - Regular Crates didn't drop any loot until loot was added in [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
+  - Regular Crates didn't drop any loot until loot was added in v0.4.0
 
 # History
 
-- [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
+- v0.4.0
   - Regular Crates now drop loot
-- [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
+- v0.1.0
   - Added

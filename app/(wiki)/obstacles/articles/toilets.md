@@ -1,4 +1,4 @@
-**Toilets** are a type of [Obstacle](/obstacles) added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 30th, 2023.
+**Toilets** are a type of [Obstacle](/obstacles) added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023.
 
 # Location & Spawning
 
@@ -20,5 +20,5 @@ Unused Toilets usually contain 2-3 healing items but can occasionally contain sc
 
 # History
 
-- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
+- v0.9.0
   - Added
