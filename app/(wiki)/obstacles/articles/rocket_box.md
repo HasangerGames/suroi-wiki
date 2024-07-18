@@ -9,7 +9,7 @@ Anywhere from 2-5 Firework Rocket Boxes can be found inside the [Firework Wareho
 
 # Loot & More
 
-The Grenade Box drops either Fireworks or [Confetti Grenades](/weapons/throwables/confetti_grenade).
+The Firework Rocket Box drops either Fireworks or [Confetti Grenades](/weapons/throwables/confetti_grenade).
 
 # Tips
 
