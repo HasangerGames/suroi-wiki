@@ -19,5 +19,7 @@ Life Preservers drop nothing upon being broken.
 
 # History
 
+- [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0)
+  - Updated Texture
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added
