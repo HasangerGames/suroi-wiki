@@ -30,8 +30,8 @@ importers:
         specifier: ^0.5.13
         version: 0.5.13(tailwindcss@3.4.6)
       '@tanstack/react-query':
-        specifier: ^5.51.5
-        version: 5.51.5(react@18.3.1)
+        specifier: ^5.51.9
+        version: 5.51.9(react@18.3.1)
       chart.js:
         specifier: ^4.4.3
         version: 4.4.3
@@ -181,8 +181,8 @@ packages:
   '@cspell/dict-companies@3.1.2':
     resolution: {integrity: sha512-OwR5i1xbYuJX7FtHQySmTy3iJtPV1rZQ3jFCxFGwrA1xRQ4rtRcDQ+sTXBCIAoJHkXa84f9J3zsngOKmMGyS/w==}
 
-  '@cspell/dict-cpp@5.1.10':
-    resolution: {integrity: sha512-BmIF0sAz2BgGEOwzYIeEm9ALneDjd1tcTbFbo+A1Hcq3zOKP8yViSgxS9CEN30KOZIyph6Tldp531UPEpoEl0Q==}
+  '@cspell/dict-cpp@5.1.11':
+    resolution: {integrity: sha512-skDl1ozBK99Cq/mSh8BTbvk5V4UJwm3+PT0RC94/DqQTUHHNCUutWRipoot2JZ296fjNsivFCyuelUDhj3r9eg==}
 
   '@cspell/dict-cryptocurrencies@5.0.0':
     resolution: {integrity: sha512-Z4ARIw5+bvmShL+4ZrhDzGhnc9znaAGHOEMaB/GURdS/jdoreEDY34wdN0NtdLHDO5KO7GduZnZyqGdRoiSmYA==}
@@ -280,14 +280,14 @@ packages:
   '@cspell/dict-node@5.0.1':
     resolution: {integrity: sha512-lax/jGz9h3Dv83v8LHa5G0bf6wm8YVRMzbjJPG/9rp7cAGPtdrga+XANFq+B7bY5+jiSA3zvj10LUFCFjnnCCg==}
 
-  '@cspell/dict-npm@5.0.16':
-    resolution: {integrity: sha512-ZWPnLAziEcSCvV0c8k9Qj88pfMu+wZwM5Qks87ShsfBgI8uLZ9tGHravA7gmjH1Gd7Bgxy2ulvXtSqIWPh1lew==}
+  '@cspell/dict-npm@5.0.17':
+    resolution: {integrity: sha512-MEzlVq9CLWpBaA/Mtqjs8NAQtEJzRDjQr1N9y3dtETtIjddI0Q5QXa6+ZvVDOFaCLsSEDALsmGx0dve4bkuGIw==}
 
   '@cspell/dict-php@4.0.8':
     resolution: {integrity: sha512-TBw3won4MCBQ2wdu7kvgOCR3dY2Tb+LJHgDUpuquy3WnzGiSDJ4AVelrZdE1xu7mjFJUr4q48aB21YT5uQqPZA==}
 
-  '@cspell/dict-powershell@5.0.4':
-    resolution: {integrity: sha512-eosDShapDgBWN9ULF7+sRNdUtzRnUdsfEdBSchDm8FZA4HOqxUSZy3b/cX/Rdw0Fnw0AKgk0kzgXw7tS6vwJMQ==}
+  '@cspell/dict-powershell@5.0.5':
+    resolution: {integrity: sha512-3JVyvMoDJesAATYGOxcUWPbQPUvpZmkinV3m8HL1w1RrjeMVXXuK7U1jhopSneBtLhkU+9HKFwgh9l9xL9mY2Q==}
 
   '@cspell/dict-public-licenses@2.0.7':
     resolution: {integrity: sha512-KlBXuGcN3LE7tQi/GEqKiDewWGGuopiAD0zRK1QilOx5Co8XAvs044gk4MNIQftc8r0nHeUI+irJKLGcR36DIQ==}
@@ -307,8 +307,8 @@ packages:
   '@cspell/dict-rust@4.0.4':
     resolution: {integrity: sha512-v9/LcZknt/Xq7m1jdTWiQEtmkVVKdE1etAfGL2sgcWpZYewEa459HeWndNA0gfzQrpWX9sYay18mt7pqClJEdA==}
 
-  '@cspell/dict-scala@5.0.2':
-    resolution: {integrity: sha512-v97ClgidZt99JUm7OjhQugDHmhx4U8fcgunHvD/BsXWjXNj4cTr0m0YjofyZoL44WpICsNuFV9F/sv9OM5HUEw==}
+  '@cspell/dict-scala@5.0.3':
+    resolution: {integrity: sha512-4yGb4AInT99rqprxVNT9TYb1YSpq58Owzq7zi3ZS5T0u899Y4VsxsBiOgHnQ/4W+ygi+sp+oqef8w8nABR2lkg==}
 
   '@cspell/dict-software-terms@3.4.10':
     resolution: {integrity: sha512-S5S2sz98v4GWJ9TMo62Vp4L5RM/329e5UQfFn7yJfieTcrfXRH4IweVdz34rZcK9o5coGptgBUIv/Jcrd4cMpg==}
@@ -571,11 +571,11 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
 
-  '@tanstack/query-core@5.51.5':
-    resolution: {integrity: sha512-qovOto6hFet2zA4Pf3cDO+qkOqskO6xP39PlKnr6YKPtjRsePWyZnTaMf59+VnlOLY8gpku1I4WPC4dqBXo4FQ==}
+  '@tanstack/query-core@5.51.9':
+    resolution: {integrity: sha512-HsAwaY5J19MD18ykZDS3aVVh+bAt0i7m6uQlFC2b77DLV9djo+xEN7MWQAQQTR8IM+7r/zbozTQ7P0xr0bHuew==}
 
-  '@tanstack/react-query@5.51.5':
-    resolution: {integrity: sha512-jaYYPGF55HT3DSV2NxFHa7zGRUm6LiRENw1rspkzqNiOU93umP5YCdE/l4S61/ZdLnjzwYIM4FU96EQt+imq5Q==}
+  '@tanstack/react-query@5.51.9':
+    resolution: {integrity: sha512-F8j6i42wfKvFrRcxfOyFyYME+bPfNthAGOSkjdv4UwZZXJjnBnBs/yRQGT0bD23LVCTuBzlIfZ0GKSIyclZ9rQ==}
     peerDependencies:
       react: ^18.0.0
 
@@ -2719,7 +2719,7 @@ snapshots:
       '@cspell/dict-aws': 4.0.3
       '@cspell/dict-bash': 4.1.3
       '@cspell/dict-companies': 3.1.2
-      '@cspell/dict-cpp': 5.1.10
+      '@cspell/dict-cpp': 5.1.11
       '@cspell/dict-cryptocurrencies': 5.0.0
       '@cspell/dict-csharp': 4.0.2
       '@cspell/dict-css': 4.0.12
@@ -2751,15 +2751,15 @@ snapshots:
       '@cspell/dict-makefile': 1.0.0
       '@cspell/dict-monkeyc': 1.0.6
       '@cspell/dict-node': 5.0.1
-      '@cspell/dict-npm': 5.0.16
+      '@cspell/dict-npm': 5.0.17
       '@cspell/dict-php': 4.0.8
-      '@cspell/dict-powershell': 5.0.4
+      '@cspell/dict-powershell': 5.0.5
       '@cspell/dict-public-licenses': 2.0.7
       '@cspell/dict-python': 4.2.1
       '@cspell/dict-r': 2.0.1
       '@cspell/dict-ruby': 5.0.2
       '@cspell/dict-rust': 4.0.4
-      '@cspell/dict-scala': 5.0.2
+      '@cspell/dict-scala': 5.0.3
       '@cspell/dict-software-terms': 3.4.10
       '@cspell/dict-sql': 2.1.3
       '@cspell/dict-svelte': 1.0.2
@@ -2790,7 +2790,7 @@ snapshots:
 
   '@cspell/dict-companies@3.1.2': {}
 
-  '@cspell/dict-cpp@5.1.10': {}
+  '@cspell/dict-cpp@5.1.11': {}
 
   '@cspell/dict-cryptocurrencies@5.0.0': {}
 
@@ -2856,11 +2856,11 @@ snapshots:
 
   '@cspell/dict-node@5.0.1': {}
 
-  '@cspell/dict-npm@5.0.16': {}
+  '@cspell/dict-npm@5.0.17': {}
 
   '@cspell/dict-php@4.0.8': {}
 
-  '@cspell/dict-powershell@5.0.4': {}
+  '@cspell/dict-powershell@5.0.5': {}
 
   '@cspell/dict-public-licenses@2.0.7': {}
 
@@ -2876,7 +2876,7 @@ snapshots:
 
   '@cspell/dict-rust@4.0.4': {}
 
-  '@cspell/dict-scala@5.0.2': {}
+  '@cspell/dict-scala@5.0.3': {}
 
   '@cspell/dict-software-terms@3.4.10': {}
 
@@ -3156,11 +3156,11 @@ snapshots:
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.4.6
 
-  '@tanstack/query-core@5.51.5': {}
+  '@tanstack/query-core@5.51.9': {}
 
-  '@tanstack/react-query@5.51.5(react@18.3.1)':
+  '@tanstack/react-query@5.51.9(react@18.3.1)':
     dependencies:
-      '@tanstack/query-core': 5.51.5
+      '@tanstack/query-core': 5.51.9
       react: 18.3.1
 
   '@types/acorn@4.0.6':
