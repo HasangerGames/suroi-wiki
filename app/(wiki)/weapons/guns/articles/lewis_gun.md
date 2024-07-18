@@ -37,13 +37,13 @@ The Lewis Gun can be rarely found as world loot, but it is more common in higher
 
 # History
 
-- v0.16.0
+- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Casing type set to .30-06
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Moving spread increased to 9° (from 6°)
-- v0.12.1
+- [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
   - Recoil duration decreased to 200ms (from 240ms)
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - World image updated
   - Length decreased to 11.8 (from 13.5)
   - Left fist moved to (140, -10) (from ((130, -6)))
@@ -51,14 +51,14 @@ The Lewis Gun can be rarely found as world loot, but it is more common in higher
   - Right fist z-index set to 4
   - Image x-offset decreased to 120 (from 128)
   - Casing spawn moved to (4.7, 1.6) (from (4.5, 1))
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Length decreased to 13.5 (from 14)
   - Added casing particles
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Hand positions swapped
   - Reload time decreased to 3.4s (from 4s)
   - Moving spread increased to 6° (from 4°)
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Bullet velocity decreased to 0.3 (from 0.35)
   - Standing spread set to 2°
   - Move speed penalty set to 20%
@@ -67,10 +67,10 @@ The Lewis Gun can be rarely found as world loot, but it is more common in higher
   - Range increased to 180 (from 128)
   - Tracer width set to 1.1
   - Tracer length set to 1.4
-- v0.7.0
+- [v0.7.0](https://github.com/HasangerGames/suroi/releases/tag/v0.7.0)
   - Damage increased to 16 (from 10)
-- v0.6.0
+- [v0.6.0](https://github.com/HasangerGames/suroi/releases/tag/v0.6.0)
   - Image x-offset decreased to 128 (from 140)
   - Obstacle damage multiplier increased to 3 (from 2)
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Added

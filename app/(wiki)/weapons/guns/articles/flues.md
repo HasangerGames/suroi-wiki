@@ -1,4 +1,4 @@
-The **Ithaca Gun Company Flues Double-Barrel Trap**, known in-game as the **Flues**, is a double-barrel shotgun utilizing 12-gauge ammunition. It was added to the game in the v0.12.0 "Making Waves" update on October 22nd, 2023.
+The **Ithaca Gun Company Flues Double-Barrel Trap**, known in-game as the **Flues**, is a double-barrel shotgun utilizing 12-gauge ammunition. It was added to the game in the [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0) "Making Waves" update on October 22nd, 2023.
 
 # Background
 
@@ -36,16 +36,16 @@ The Flues is currently the second-rarest shotgun in the game. It is about 5 time
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - Center jitter on muzzle implicitly enabled
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Casing velocity y-component set to ±[8, 15]
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Range increased to 48 (from 40)
-- v0.12.1
+- [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
   - Move speed penalty increased to 8% (from 5%)
   - Left fist moved to (90, -8) (from (95, -2))
-- v0.12.0
+- [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
   - Casing count set to 2
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Added

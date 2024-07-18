@@ -1,4 +1,4 @@
-The **Oil Tanker** is a sub-building of the [Port](/buildings/port). It was added in the v0.15.0 "Pulling the Pin" update on January 14, 2024. It features a big cargo area, which contains three [Large Oil Tanks](/obstacles/large_oil_tank) and a control room, in which you can find the [Vector](/weapons/guns/vector) upon opening the door using the control panel.
+The **Oil Tanker** is a sub-building of the [Port](/buildings/port). It was added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14, 2024. It features a big cargo area, which contains three [Large Oil Tanks](/obstacles/large_oil_tank) and a control room, in which you can find the [Vector](/weapons/guns/vector) upon opening the door using the control panel.
 
 # Location & Spawning
 
@@ -21,5 +21,5 @@ The control room features a large [Drawer](/obsatcles/drawers), a wide window, a
 - Use the oil tanks as cover when fighting dangerous enemies, but beware of grenades!
 
 # History
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added.

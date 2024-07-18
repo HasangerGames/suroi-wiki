@@ -1,4 +1,4 @@
-The **Ruger Mini-14**, known in-game as the **Mini-14**, is a DMR utilizing 5.56mm ammunition. It was added to the game in the v0.10.0 "Back with a Bang" update on September 14th, 2023. It has decent damage, a high rate of fire, and high DPS.
+The **Ruger Mini-14**, known in-game as the **Mini-14**, is a DMR utilizing 5.56mm ammunition. It was added to the game in the [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0) "Back with a Bang" update on September 14th, 2023. It has decent damage, a high rate of fire, and high DPS.
 
 # Background
 
@@ -34,14 +34,14 @@ The Mini-14 can be found rarely as world loot but is more common in rare drops s
 
 # History
 
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Casing velocity y-component set to [4, 15]
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Standing spread increased to 2° (from 1°)
   - Moving spread increased to 5° (from 2.5°)
-- v0.12.1
+- [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
   - Recoil duration increased to 155ms (from 140ms)
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Updated world image
   - Length decreased to 7.4 (from 11.9)
   - Left fist moved to (96, -2) (from (130, -6))
@@ -49,5 +49,5 @@ The Mini-14 can be found rarely as world loot but is more common in rare drops s
   - Right fist z-index set to 4
   - Image moved to (85, 0) (from (120, 1.5))
   - Tracer length set to 1.5
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Added

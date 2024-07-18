@@ -1,11 +1,11 @@
 <Removed />
-The **House** was a building added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It was later removed from spawning on the map in the v0.11.0 "Making Waves" update on October 22nd, 2023 and completely removed in the v0.17.0 "Just the Two of Us" update on April 1st, 2024. It had a decent amount of loot for early games.
+The **House** was a building added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 30th, 2023. It was later removed from spawning on the map in the v0.11.0 "Making Waves" update on October 22nd, 2023 and completely removed in the v0.17.0 "Just the Two of Us" update on April 1st, 2024. It had a decent amount of loot for early games.
 
 # Areas
 
 ## Foyer
 
-The Foyer contains no loot, but it does have a [Table](/obstacles/table) and two [Chairs](/obstacles/chair). - However, the ability to hide under tables was not added until v0.11.0, so players were never able to hide under the tables in the House.
+The Foyer contains no loot, but it does have a [Table](/obstacles/table) and two [Chairs](/obstacles/chair). - However, the ability to hide under tables was not added until [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0), so players were never able to hide under the tables in the House.
 
 ## Kitchen
 
@@ -39,11 +39,11 @@ The Garage contains a Bookshelf, [Regular Crate](/obstacles/regular_crate), [Bar
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - Completely removed from the game.
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Removed from the map.
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Added holes in the roof to improve visibility.
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Added.

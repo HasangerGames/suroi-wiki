@@ -1,5 +1,5 @@
 <Stub />
-The **Seax** is a melee weapon added in the v0.15.0 "Pulling the Pin" update on January 14, 2024.
+The **Seax** is a melee weapon added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14, 2024.
 
 # Background
 
@@ -26,7 +26,7 @@ The Seax can only be obtained from the [Viking Chest](/obstacles/viking_chest), 
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - New texture
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added

@@ -1,4 +1,4 @@
-The **Refinery** is a large structure added in the v0.10.0 "Back with a Bang" update on September 14th, 2023. It contains a large amount of loot as well as an excellent location to find the [MCX Spear](/weapons/guns/mcx_spear) - but can be dangerous.
+The **Refinery** is a large structure added in the [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0) "Back with a Bang" update on September 14th, 2023. It contains a large amount of loot as well as an excellent location to find the [MCX Spear](/weapons/guns/mcx_spear) - but can be dangerous.
 
 # Location & Spawning
 
@@ -40,7 +40,7 @@ The Office, located towards the back of the Refinery, contains a wall mount and 
 
 # History
 
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - The Stoner 63 now has a 1/100 chance of replacing the MCX Spear in the Office.
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Added.

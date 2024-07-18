@@ -11,5 +11,5 @@ All players have a Bag when they join the game, similar to [Fists](/weapons/mele
 
 # History
 
- - v0.1.0
+ - [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
    - Added  
