@@ -129,7 +129,7 @@ export default function BackpackPage() {
             </Fragment>,
             backpack.maxCapacity.frag_grenade.toString(),
             backpack.maxCapacity.smoke_grenade.toString(),
-            backpack.maxCapacity.confetti_grenade.toString(),
+            backpack.maxCapacity.confetti_grenade.toString()
           ])}
         />
         <h2>List of Backpacks</h2>
