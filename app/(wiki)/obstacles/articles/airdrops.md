@@ -1,4 +1,4 @@
-**Airdrops** are a game mechanic added in the v0.13.0 "Terminal Velocity" update. Two Airdrops spawn naturally in each game, but more can be called on demand using the [Radio](/weapons/guns/radio). Airdrops contain a randomized selection of high-value loot. Airdrops are dropped from a plane that flies over the map, and the location of where the airdrop will land is revealed to all players in the game using a ping alert after the airdrop is dropped from the plane.
+**Airdrops** are a game mechanic added in the [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0) "Terminal Velocity" update. Two Airdrops spawn naturally in each game, but more can be called on demand using the [Radio](/weapons/guns/radio). Airdrops contain a randomized selection of high-value loot. Airdrops are dropped from a plane that flies over the map, and the location of where the airdrop will land is revealed to all players in the game using a ping alert after the airdrop is dropped from the plane.
 
 # Location and Spawning
 
@@ -31,9 +31,9 @@ Airdrops contain rare and useful loot, including powerful weapons, large scopes,
 
 # History
 
-- v0.14.0 _(2023 Winter)_
+- [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0) _(2023 Winter)_
   - Reskinned airdrops to be Christmas-themed
   - Fixed airdrops spawning in the gas
   - Fixed airdrop pings not showing up sometimes
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Added Airdrops

@@ -1,4 +1,4 @@
-**Gauze** is a consumable that heals 15 health, added in the v0.4.0 "Supplies received" update on June 17th, 2023. They spawn very commonly around the map in stacks of 5. To use gauze, either click on the icon in your inventory or press 7 on your keyboard. Gauze takes 3 seconds to use.
+**Gauze** is a consumable that heals 15 health, added in the [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0) "Supplies received" update on June 17th, 2023. They spawn very commonly around the map in stacks of 5. To use gauze, either click on the icon in your inventory or press 7 on your keyboard. Gauze takes 3 seconds to use.
 
 # Background
 
@@ -30,9 +30,9 @@ Gauze is a very common drop from crates, toilets, and the toilet in a Porta Pott
 
 # History
 
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Usage time increased to 3s (from 2s)
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Gauze can now be added to a Player's inventory
-- v0.4.0
+- [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
   - Added

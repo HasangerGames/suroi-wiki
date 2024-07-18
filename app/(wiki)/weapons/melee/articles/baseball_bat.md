@@ -1,4 +1,4 @@
-The **Baseball Bat** is a melee weapon added in the v0.5.0 "Locked & Loaded" update on June 24, 2023.
+The **Baseball Bat** is a melee weapon added in the [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0) "Locked & Loaded" update on June 24, 2023.
 
 # Background
 
@@ -29,13 +29,13 @@ Baseball Bats have a high chance of spawning from the [Melee Crate](/obstacles/m
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - New texture
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Swing Radius increased to 3.8 (from 3)
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Swing Radius decreased to 3 (from 4)
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Animation speed increased to 150 (from 125)
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Added

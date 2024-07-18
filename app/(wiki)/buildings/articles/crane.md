@@ -1,4 +1,4 @@
-The **Crane** is a sub-building of the [Port](/buildings/port). It was added in the v0.11.0 "Making Waves" update on October 22nd, 2023. The crane is a good source of cover and can also be used to surprise players.
+The **Crane** is a sub-building of the [Port](/buildings/port). It was added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023. The crane is a good source of cover and can also be used to surprise players.
 
 # Location & Spawning
 
@@ -22,5 +22,5 @@ The Crane itself does not have any loot, but it does have a large number of [AEG
 
 # History
 
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Added.

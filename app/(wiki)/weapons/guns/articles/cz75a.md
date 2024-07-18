@@ -1,4 +1,4 @@
-The **CZ 75 Automatic**, known in-game as the **CZ-75A**, is an automatic pistol utilizing 9mm ammunition. It was added to the game in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It shoots very fast, but has a high spread and low damage.
+The **CZ 75 Automatic**, known in-game as the **CZ-75A**, is an automatic pistol utilizing 9mm ammunition. It was added to the game in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 30th, 2023. It shoots very fast, but has a high spread and low damage.
 
 # Background
 
@@ -36,16 +36,16 @@ The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil 
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - New reload sound
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Casing velocity y-component set to [2, 18]
-- v0.14.0
+- [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)
   - Dual variant added
   - Bullet speed decreased to 0.16 (from 0.22)
-- v0.12.0
+- [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
   - Image y-offset decreased to -1 (from 0)
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Updated world image
   - Length decreased to 5.1 (from 6.7)
   - Left fist moved to (40, 0) (from (70 4))
@@ -53,10 +53,10 @@ The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil 
   - Left fist z-index set to 4
   - Right fist z-index set to 4
   - Image x-offset increased to 70 (from 58)
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Length increased to 6.7 (from 6)
   - Added casing particles
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Added
 
 # Gallery
@@ -68,7 +68,7 @@ The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil 
     {
       url: "/img/articles/weapons/guns/cz75a/cz75a_ground.png",
       author: "1092384",
-      caption: "A player finding a CZ-75A on the ground in v0.14.0",
+      caption: "A player finding a CZ-75A on the ground in [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)",
     },
   ]}
 />

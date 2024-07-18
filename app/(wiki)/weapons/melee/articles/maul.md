@@ -1,5 +1,5 @@
 <Stub />
-The **Maul** is a weapon that was added in the v0.9.0 "Behind Closed Doors" update on July 31, 2023. It was first made obtainable in the v0.15.0 "Pulling the Pin" update on January 15, 2024.
+The **Maul** is a weapon that was added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 31, 2023. It was first made obtainable in the v0.15.0 "Pulling the Pin" update on January 15, 2024.
 
 # Background
 
@@ -30,9 +30,9 @@ The Maul can only be obtained from the [Maul Mount](/obstacles/gun_mounts) in th
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - New texture
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Made obtainable
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Added

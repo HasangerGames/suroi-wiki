@@ -1,4 +1,4 @@
-The **Remington Arms Adaptive Combat Rifle**, known in-game as the **ACR**, is a suppressed assault rifle utilizing 5.56mm ammunition. It was added to the game in the v0.13.0 "Terminal Velocity" update on November 27th, 2023. It has decent accuracy, high damage, and excellent DPS.
+The **Remington Arms Adaptive Combat Rifle**, known in-game as the **ACR**, is a suppressed assault rifle utilizing 5.56mm ammunition. It was added to the game in the [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0) "Terminal Velocity" update on November 27th, 2023. It has decent accuracy, high damage, and excellent DPS.
 
 # Background
 
@@ -31,5 +31,5 @@ The ACR was designed by Magpul Industries in the early 2000s and was essentially
 
 # History
 
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Added

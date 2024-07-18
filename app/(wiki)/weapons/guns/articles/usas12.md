@@ -1,6 +1,6 @@
 <Event />
 
-The **Daewoo Precision Industries USAS-12**, known in-game as the **USAS-12**, is a powerful automatic shotgun firing explosive 12 Gauge ammunition. It was added to the game in the v0.12.0 "Trick-or-Tweak" update on October 29th, 2023.
+The **Daewoo Precision Industries USAS-12**, known in-game as the **USAS-12**, is a powerful automatic shotgun firing explosive 12 Gauge ammunition. It was added to the game in the [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0) "Trick-or-Tweak" update on October 29th, 2023.
 
 # Background
 
@@ -40,12 +40,12 @@ The USAS-12 has currently been obtainable in only two events.
 
 # History
 
-- v0.16.0
+- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Casing type set to 12 gauge HE
-- v0.12.1
+- [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
   - Recoil duration increased to 525ms (from 450ms)
   - Explosion damage reduced to 35 (from 50)
-- v0.12.0
+- [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
   - Added
 
 # Gallery
@@ -56,7 +56,7 @@ The USAS-12 has currently been obtainable in only two events.
       url: "/img/articles/weapons/guns/usas12/six_usas12.webp",
       author: "sniperboi4",
       caption:
-        "Fellow Surians find six USAS-12s in v0.12.0 (Halloween Mode 2023)",
+        "Fellow Surians find six USAS-12s in [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0) (Halloween Mode 2023)",
     },
   ]}
 />

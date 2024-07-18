@@ -1,4 +1,4 @@
-The **Medikit** is a consumable that heals 100 health and was added in the v0.4.0 "Supplies received" update on June 17th, 2023. They spawn rarely around the map. To use a Medikit, either click on the icon in your inventory or press 6 on your keyboard. A Medikit takes 6 seconds to use.
+The **Medikit** is a consumable that heals 100 health and was added in the [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0) "Supplies received" update on June 17th, 2023. They spawn rarely around the map. To use a Medikit, either click on the icon in your inventory or press 6 on your keyboard. A Medikit takes 6 seconds to use.
 
 # Background
 
@@ -35,10 +35,10 @@ Medikits are most commonly found in Toilets and the Porta-Potty. They can also b
 
 # History
 
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Heal amount increased to 100 (from 75)
   - Usage time increased to 6s (from 5s)
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Medikits can now be added to a Player's inventory
-- v0.4.0
+- [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
   - Added

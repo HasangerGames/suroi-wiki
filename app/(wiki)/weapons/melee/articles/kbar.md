@@ -1,4 +1,4 @@
-The **USMC Mark 2 combat knife or Knife, Fighting Utility**, known in-game as the **K-Bar** is a melee weapon added in the v0.5.0 "Locked & Loaded" update on June 24, 2023.
+The **USMC Mark 2 combat knife or Knife, Fighting Utility**, known in-game as the **K-Bar** is a melee weapon added in the [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0) "Locked & Loaded" update on June 24, 2023.
 
 # Background
 
@@ -30,9 +30,9 @@ The K-Bar can be obtained rarely from crates or other common loot sources. Addit
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - New texture
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Animation speed decreased to 100 (from 125)
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Added

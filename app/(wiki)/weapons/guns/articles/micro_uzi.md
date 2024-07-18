@@ -1,4 +1,4 @@
-The **IWI Micro Uzi**, known in-game as the **Micro Uzi** is a SMG utilizing 9mm ammunition. It was added to the game in the v0.5.0 "Locked & Loaded" update on June 24th, 2023. The Micro Uzi features high DPS, but low accuracy and range.
+The **IWI Micro Uzi**, known in-game as the **Micro Uzi** is a SMG utilizing 9mm ammunition. It was added to the game in the [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0) "Locked & Loaded" update on June 24th, 2023. The Micro Uzi features high DPS, but low accuracy and range.
 
 # Background
 
@@ -36,12 +36,12 @@ The Micro Uzi is a very common gun, and can be found from [Regular Crates](/obst
 
 # History
 
-- v0.12.0
+- [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
   - Length increased to 5.8 (from 5)
   - Left fist moved to (85, -6) (from (40, 0))
   - Left fist z-index reset
   - Image x-offset increased to 80 (from 70)
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - World image updated
   - Length decreased to 5 (from 6.8)
   - Left fist moved to (40, 0) (from (70, 4))
@@ -50,17 +50,17 @@ The Micro Uzi is a very common gun, and can be found from [Regular Crates](/obst
   - Right fist z-index set to 4
   - Damage decreased to 7.75 (from 9)
   - Image x-offset decreased to 70 (from 88)
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Length increased to 6.8 (from 6)
   - Added casing particles
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Hand positions swapped
   - Standing spread increased to 9° (from 8°)
   - Moving spread increased to 19° (from 12°)
   - Move speed penalty increased to 8% (from 2%)
   - Range decreased to 85 (from 86)
   - Obstacle multiplier decreased to 1 (from 1.3)
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Damage increased to 9 (from 7)
   - Obstacle multiplier decreased to 1.3 (from 2)
   - Bullet speed decreased to 0.16 (from 0.35)
@@ -70,7 +70,7 @@ The Micro Uzi is a very common gun, and can be found from [Regular Crates](/obst
   - Fire delay decreased to 40ms (from 50ms)
   - Standing spread set to 8°
   - Moving spread increased to 12° (from 9°)
-- v0.7.0
+- [v0.7.0](https://github.com/HasangerGames/suroi/releases/tag/v0.7.0)
   - Damage increased to 7 (from 4)
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Added
