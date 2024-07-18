@@ -46,7 +46,7 @@ export default function SkinCard({ skin }: SkinCardProps) {
               <code>{skin.roleRequired}</code> role required
             </li>
           )}
-          {skin.notInLoadout && <li>Not in loadout</li>}
+          {skin.hideFromLoadout && <li>Not in loadout</li>}
           {skin.grassTint && <li>Grass tinted</li>}
           {skin.hideEquipment && <li>Hidden equipment</li>}
         </ul>
