@@ -8,7 +8,8 @@ The **Firework Launcher** is an RPG utilizing firework ammunition. It was added 
 ## Using
 
 - The Firework Launcher is viable throughout the game due to its versatility.
-  - The [Firework Warehouse](/buildings/firework_warehouse) is majorly contested in the beginning of the game due to it having the Firework Launcher, Fireworks, and [Confetti Grenades](/weapons/throwables/confetti_grenade).
+  - The [Firework Warehouse](/buildings/firework_warehouse) is intensely contested in the beginning of the game due to it having the Firework Launcher, Fireworks, and [Confetti Grenades](/weapons/throwables/confetti_grenade).
+  - Do not enter the building unless you spawn early into the match or are adequately equipped.
 - Make sure to pick up as much Firework ammunition as you can, as it will be hard to source more fireworks later in game.
   - If you are really running low on Fireworks, you can break [Ammo Crates](/obstacles/ammo_crate) using a [Maul](/weapons/melee/maul) to get extra fireworks.
 - The Firework Launcher is most effective in long range fights.
@@ -24,17 +25,17 @@ The **Firework Launcher** is an RPG utilizing firework ammunition. It was added 
 
 # Obtaining
 
-- The Firework Launcher is one of the rarest weapons in the game, with only one found in every match. It can be found in the [Firework Warehouse](/buildings/firework_warehouse) with ammo.
+- The Firework Launcher is one of the rarest weapons in the game, with only one found in every match. It can be found in the [Firework Warehouse](/buildings/firework_warehouse) with ammo. The Firework Launcher is only obtainable during the 1st Anniversary and Fourth of July/20k discord members events.
 
 # Trivia
 
 # History
 
 - v0.18.3
-  - Removed from the game.
+  - Made unobtainable.
 - v0.18.2
   - Added back in golden airdrops.
 - v0.18.1
-  - Removed from the game.
+  - Made unobtainable.
 - v0.18.0
   - Added.
