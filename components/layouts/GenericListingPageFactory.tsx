@@ -2,7 +2,7 @@ import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefiniti
 import { ObjectCard } from "../cards/ObjectCard";
 
 export default function GenericListingPageFactory(
-  objects: ObjectDefinition[],
+  objects: readonly ObjectDefinition[],
   name: string,
   path: string,
   description?: string

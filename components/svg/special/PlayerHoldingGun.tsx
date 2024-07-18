@@ -19,7 +19,7 @@ export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {
   ];
 
   if (gun.isDual) {
-    const singleVariant = Guns.find(g => {
+    const singleVariant = Guns.definitions.find(g => {
       return g.idString === gun.singleVariant;
     });
     if (!singleVariant?.isDual) {
