@@ -6,7 +6,8 @@ Confetti Grenade Boxes only spawn inside the [Firework Warehouse](/buildings/fir
 
 # Loot & More
 
-The Confetti Grenade Box has a 2/3 chance of dropping four [Confetti Grenades](/weapons/throwables/confetti_grenade) and a 1/3 chance to drop either two [Frag Grenades](/weapons/throwables/frag_grenade) or two [Smoke Grenades](/weapons/throwables/smoke_grenade).
+The Confetti Grenade Box has a 2/3 chance of dropping four [Confetti Grenades](/weapons/throwables/confetti_grenade) and a 1/3 chance to drop either two [Frag Grenades](/weapons/throwables/frag_grenade) or two [Smoke Grenades](/weapons/throwables/smoke_grenade). The Confetti Grenade Box is only obtainable during the Anniversary and Fourth of July events.
+  - In 2024, the Fourth of July event coincided with the 20k Discord member milestone.
 
 # Tips
 
