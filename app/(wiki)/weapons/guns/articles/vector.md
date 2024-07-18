@@ -35,7 +35,7 @@ The Vector can be found very rarely as world loot. However, the easiest way to a
 
 # History
 
-- v0.16.0
+- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Casing spawn moved to (4.7, 0.3) (from (4.5, 0.6))
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added

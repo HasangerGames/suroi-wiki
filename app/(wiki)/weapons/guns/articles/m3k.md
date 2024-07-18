@@ -1,4 +1,4 @@
-The **Stoeger Industries M3K Freedom Series Defense Shotgun**, known in-game as the **M3K** is a semi-automatic shotgun utilizing 12-gauge ammunition. It was added to the game in the v0.2.0 "Fun guns" update on May 28th, 2023. It has good range, decent damage, and a large magazine.
+The **Stoeger Industries M3K Freedom Series Defense Shotgun**, known in-game as the **M3K** is a semi-automatic shotgun utilizing 12-gauge ammunition. It was added to the game in the [v0.2.0](https://github.com/HasangerGames/suroi/releases/tag/v0.2.0) "Fun guns" update on May 28th, 2023. It has good range, decent damage, and a large magazine.
 
 # Background
 
@@ -36,13 +36,13 @@ The M3K is uncommon in general world loot, but fairly common in rarer loot sourc
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - Center jitter on muzzle implicitly enabled
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Fire mode set to Single (from Auto)
-- v0.12.0
+- [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
   - Fire mode set to Auto (from Single)
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Updated world image
   - Length decreased to 7.7 (from 11)
   - Jitter radius set to 0.5
@@ -50,17 +50,17 @@ The M3K is uncommon in general world loot, but fairly common in rarer loot sourc
   - Right fist x-offset decreased to 40 (from 47)
   - Image moved to (90, 5) (from (110, 1))
   - Right fist z-index set to 4
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Length increased to 11 (from 10)
   - Left fist moved to (120, -3) (from (130, -6))
   - Right first x-offset decreased to 47 (from 65)
   - Added casing particles
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Move speed penalty increased to 8% (from 7%)
   - Hand positions swapped
   - Image x-offset increased to 110 (from 100)
   - Image y-offset decreased to 1 (from 3)
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Reload time decreased to 550ms (from 800ms)
   - Pellet damage increased to 9 (from 7)
   - Obstacle multiplier decreased to 1 (from 2)
@@ -70,28 +70,28 @@ The M3K is uncommon in general world loot, but fairly common in rarer loot sourc
   - Firing delay decreased to 700ms (from 750ms)
   - Bullet velocity decreased to 0.2 (from 0.35)
   - Quickswitch enabled
-- v0.7.0
+- [v0.7.0](https://github.com/HasangerGames/suroi/releases/tag/v0.7.0)
   - Pellet damage increased to 7 (from 6.5)
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Ammo type set to 12 gauge
   - Ammo spawn amount set to 18
   - Magazine capacity decreased to 9 (from Infinity)
   - Reload time set to 0.8s
   - Single reload enabled
-- v0.4.0
+- [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
   - Switch delay increased to 500ms (from 30ms)
   - Firing delay decreased to 750ms (from 1000ms)
   - Pellet damage decreased to 6.5 (from 7)
   - Firing speed penalty set to 50%
   - Recoil duration set to 500ms
-- v0.3.1
+- [v0.3.1](https://github.com/HasangerGames/suroi/releases/tag/v0.3.1)
   - Switch delay decreased to 30ms (from 450ms)
-- v0.3.0
+- [v0.3.0](https://github.com/HasangerGames/suroi/releases/tag/v0.3.0)
   - Switch delay set to 450ms
   - Length set to 10
   - Image y-offset increased to 3 (from 0)
   - Right hand y-offset increased to -6 (from -10)
-- v0.2.0
+- [v0.2.0](https://github.com/HasangerGames/suroi/releases/tag/v0.2.0)
   - Added
 
 # Gallery
@@ -101,7 +101,7 @@ The M3K is uncommon in general world loot, but fairly common in rarer loot sourc
     {
       url: "/img/articles/weapons/guns/m3k/m3k_warehouse.png",
       author: "1092384",
-      caption: "A player finding an M3K inside a warehouse in v0.14.0",
+      caption: "A player finding an M3K inside a warehouse in [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)",
     },
   ]}
 />

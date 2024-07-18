@@ -1,4 +1,4 @@
-The **Heckler & Koch MG5**, known in-game as the **MG5**, is a LMG utilizing the 7.62mm ammunition. It was added to the game in the v0.17.0 "Just the Two of Us" update on March 31st, 2024. The MG5 has a steady fire rate and great damage output.
+The **Heckler & Koch MG5**, known in-game as the **MG5**, is a LMG utilizing the 7.62mm ammunition. It was added to the game in the [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0) "Just the Two of Us" update on March 31st, 2024. The MG5 has a steady fire rate and great damage output.
 
 # Background
 The MG5 is based on a similar design to that of the MG4 light machine gun that preceded it, with some changes to make it more suited to firing the heavier 7.62x51mm NATO cartridge. The gun is quite accurate for a general purpose machine gun. It is used by a variety of military units around the world and has been produced since 2015. Learn more about the MG5 [here](https://en.wikipedia.org/wiki/Heckler_&_Koch_MG5).
@@ -36,5 +36,5 @@ The most common way to find a MG5 is through a [Gold Airdrop](/obstacles/gold_ai
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - Added

@@ -1,4 +1,4 @@
-The **Cargo Ship** is a sub-building of the [Port](/buildings/port). It was added in the v0.11.0 "Making Waves" update on October 22nd, 2023. It features a cargo area, control room, and a secret vault, and is the home of the [Tango 51](/weapons/guns/tango_51).
+The **Cargo Ship** is a sub-building of the [Port](/buildings/port). It was added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023. It features a cargo area, control room, and a secret vault, and is the home of the [Tango 51](/weapons/guns/tango_51).
 
 # Location & Spawning
 
@@ -38,11 +38,11 @@ The Vault, located in the bow of the Cargo Ship, is the most valuable area of th
   - The Control Room is treated as an indoor area on the map, similar to [Small Houses](/buildings/small_house).
 
 # History
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - There is no longer a 50% chance for the Tango Crate to be replaced with an AEGIS crate.
-- v0.14.0
+- [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)
   - Fixed a bug that allowed players to see into the Vault without opening the door.
-- v0.12.0
+- [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
   - There is now a 50% chance for the Tango Crate to be replaced with an AEGIS crate.
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Added.

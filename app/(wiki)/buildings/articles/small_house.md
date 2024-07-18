@@ -1,4 +1,4 @@
-The **Small House** is a building added in the v0.11.0 "Making Waves" update on October 22nd, 2023. It is a small and compact structure with decent loot density, perfect for getting geared up early game. The small house replaced the bigger [House](/buildings/house) that was added in v0.9.0.
+The **Small House** is a building added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023. It is a small and compact structure with decent loot density, perfect for getting geared up early game. The small house replaced the bigger [House](/buildings/house) that was added in v0.9.0.
 
 # Location & Spawning
 
@@ -40,11 +40,11 @@ The Dining Area has a [Table](/obstacles/table) with two [Chairs](/obstacles/cha
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - Redesigned roof and floor.
   - Added ground loot on the floor.
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - A bug has been fixed that prevented used toilets from spawning in the Small House.
   - Adjusted viewing hitboxes for all buildings, including the Small House.
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Added.

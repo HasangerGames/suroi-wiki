@@ -1,5 +1,5 @@
 <Stub />
-The **Sea Traffic Control** is a building added in the v0.16.0 update "A Sailor's Dream" on February 26th, 2024.
+The **Sea Traffic Control** is a building added in the [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0) update "A Sailor's Dream" on February 26th, 2024.
 
 # Location & Spawning
 
@@ -33,5 +33,5 @@ A [Radio](/weapons/guns/radio) spawns on the floor in the interior of every Sea 
 
 # History
 
-- v0.16.0
+- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added

@@ -1,4 +1,4 @@
-The **Port Shed** is a sub-building of the [Port](/buildings/port). It was added in the v0.11.0 "Making Waves" update on October 22nd, 2023. It features indestructible walls, a bookshelf, and a desk.
+The **Port Shed** is a sub-building of the [Port](/buildings/port). It was added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023. It features indestructible walls, a bookshelf, and a desk.
 
 # Location & Spawning
 
@@ -20,7 +20,7 @@ The Port Shed has barely any loot (only a [Bookshelf](/obstacles/bookshelf) and 
 
 # History
 
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Fixed an issue where the window on the Port Shed was nonfunctional.
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Added.

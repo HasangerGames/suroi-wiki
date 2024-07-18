@@ -1,4 +1,4 @@
-The **Tactical Operations Tango 51**, known in-game as the **Tango 51**, is a sniper rifle utilizing 7.62mm ammunition. It was added in the v0.5.0 "Locked & Loaded" on June 24, 2023. It features very high damage and accuracy.
+The **Tactical Operations Tango 51**, known in-game as the **Tango 51**, is a sniper rifle utilizing 7.62mm ammunition. It was added in the [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0) "Locked & Loaded" on June 24, 2023. It features very high damage and accuracy.
 
 # Background
 
@@ -30,14 +30,14 @@ The most reliable way to get a Tango 51 is to head for the [Ship](/buildings/shi
 
 # History
 
-- v0.14.0
+- [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)
   - Length increased to 8.9 (from 8.2)
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Move speed penalty decreased to 8% (from 10%)
-- v0.12.1
+- [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
   - Left hand x-offset decreased to 106 (from 110)
   - Casing ejection delay set to 450ms
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - World image updated
   - Length decreased to 8.2 (from 13.9)
   - Left fist x-offset decreased to 110 (from 145)
@@ -46,20 +46,20 @@ The most reliable way to get a Tango 51 is to head for the [Ship](/buildings/shi
   - Image moved to (90, 5) (from (125, 4))
   - Shoot-on-release enabled
   - Damage increased to 79 (from 75)
-- v0.10.1
+- [v0.10.1](https://github.com/HasangerGames/suroi/releases/tag/v0.10.1)
   - Fire delay decreased to 900ms (from 1.8s)
   - Switch delay increased to 900ms (from 750ms)
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Length increased to 13.9 (from 13)
   - Added casing particles
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Reload time set to 2.6s (from 3s)
   - Hand positions swapped
   - Damage decreased to 75 (from 80)
   - Obstacle multiplier decreased to 1 (from 1.5)
   - Bullet speed increased to 0.4 (from 0.35)
   - Range increased to 280 (from 250)
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Set standing spread to 0.3°
   - Moving spread increased to 0.6° (from 0.5°)
   - Move speed penalty set to 10%
@@ -68,7 +68,7 @@ The most reliable way to get a Tango 51 is to head for the [Ship](/buildings/shi
   - Range increased to 250 (from 150)
   - Tracer width set to 1.6
   - Tracer length set to 3.5
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Added
 
 ## Gallery

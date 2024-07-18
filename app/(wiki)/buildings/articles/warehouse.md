@@ -1,4 +1,4 @@
-The **Warehouse** is a building added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. It features plenty of early-game loot, perfect for getting geared up.
+The **Warehouse** is a building added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 30th, 2023. It features plenty of early-game loot, perfect for getting geared up.
 
 # Location & Spawning
 
@@ -27,7 +27,7 @@ The Warehouse always spawns with 3 [Regular Crates](/obstacles/regular_crate), 6
 
 # History
 
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Improved visibility around the Warehouse.
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Added.

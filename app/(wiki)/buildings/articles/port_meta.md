@@ -1,4 +1,4 @@
-The **Port** is a very large structure added in the v0.11.0 "Making Waves" update on October 22nd, 2023. It has a numerous number of buildings and containers and is also the home of the [Cargo Ship](/buildings/ship).
+The **Port** is a very large structure added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023. It has a numerous number of buildings and containers and is also the home of the [Cargo Ship](/buildings/ship).
 
 # Location & Spawning
 
@@ -44,5 +44,5 @@ A crane always spawns parallel to the Cargo Ship and contains a large amount of 
 
 # History
 
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Added.

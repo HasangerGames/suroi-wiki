@@ -1,6 +1,6 @@
 <DevWeapon />
 
-The **Revitalizer** is a dev-only shotgun firing 12-gauge ammunition. It was secretly added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. While initially decreasing both the player's maximum health and adrenaline, it will increase those two greatly beyond their normal amounts if the user kills players with it. Its effects—both positive and negative—stack in two ways; by getting multiple kills and by equipping multiple Revitalizers.
+The **Revitalizer** is a dev-only shotgun firing 12-gauge ammunition. It was secretly added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 30th, 2023. While initially decreasing both the player's maximum health and adrenaline, it will increase those two greatly beyond their normal amounts if the user kills players with it. Its effects—both positive and negative—stack in two ways; by getting multiple kills and by equipping multiple Revitalizers.
 
 # Strategies
 
@@ -191,13 +191,13 @@ As a dev-only weapon, the Revitalizer is only obtainable by Developers. However,
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - Consistent patterning buffed so that the pellet distribution is biased towards the center
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Casing velocity y-component set to ±[2, 5]
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Tracer length set to 0.7
-- v0.12.1
+- [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
   - Move speed penalty increased to 8% (from 7%)
   - Length decreased to 7.5 (from 10)
   - Left fist moved to (120, -2) (from (150, -6))
@@ -205,11 +205,11 @@ As a dev-only weapon, the Revitalizer is only obtainable by Developers. However,
   - Right fist z-index set to 4
   - Image x-offset decreased to 80 (from 90)
   - Casing spawn delay set to 450ms
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Length increased to 10 (from 8)
   - Consistent patterning enabled
   - Added casing particles
   - Kills now always restore 230 health and 30 adrenaline
   - Every pellet now restores 2 health (previously 1) and 1.5 adrenaline (previously 1)
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Secretly added
