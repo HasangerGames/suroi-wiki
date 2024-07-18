@@ -137,7 +137,7 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
 
 export interface GenericArticlePageArgs<T extends ObjectDefinition> {
   path: string
-  items: T[]
+  items: readonly T[]
   combinedArticles?: Array<CombinedArticle<T>>
   Sidebar: ComponentType<{ item: T }>
   After?: ReactNode

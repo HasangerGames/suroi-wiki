@@ -10,7 +10,7 @@ export default function SkinsPage() {
         There are {Skins.definitions.length} skins.{" "}
         {
           Skins.definitions.filter(value => {
-            return !value.notInLoadout;
+            return !value.hideFromLoadout;
           }).length
         }{" "}
         skins are available in the game.

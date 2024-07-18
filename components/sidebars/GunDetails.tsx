@@ -1,11 +1,10 @@
-import { Unpacked } from "@/lib/ts/utility";
 import { SOUND_BASE_URL } from "@/lib/util/suroi";
 import { FireMode } from "@/vendor/suroi/common/src/constants";
 import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
 import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
-import {
-  ItemDefinition,
-  WearerAttributes
+import type {
+  WearerAttributes,
+  ExtendedWearerAttributes
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { WithRequired } from "@tanstack/react-query";
 import AmmoIcon from "../icons/AmmoIcon";
@@ -300,23 +299,10 @@ function Effects({
   );
 }
 
-function Attributes({
-  attributes,
-  n
-}: {
+function Attributes({ attributes, n }: {
   attributes:
     | WearerAttributes
-    | NonNullable<
-      Unpacked<
-        WithRequired<
-          WithRequired<
-            ItemDefinition,
-            "wearerAttributes"
-          >["wearerAttributes"],
-          "on"
-        >["on"]["kill"]
-      >
-    >
+    | ExtendedWearerAttributes
   n?: number
 }) {
   const limit

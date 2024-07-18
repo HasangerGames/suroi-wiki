@@ -84,7 +84,7 @@ export default function PlayerWearingEquipment() {
             setHelmet(
               Armors.definitions.find(armor => {
                 return armor.idString === e.target.value;
-              })
+              })!
             );
           }
         }}
@@ -109,7 +109,7 @@ export default function PlayerWearingEquipment() {
             setVest(
               Armors.definitions.find(armor => {
                 return armor.idString === e.target.value;
-              })
+              })!
             );
           }
         }}
@@ -134,7 +134,7 @@ export default function PlayerWearingEquipment() {
             setBackpack(
               Backpacks.definitions.find(backpack => {
                 return backpack.idString === e.target.value;
-              })
+              })!
             );
           }
         }}
