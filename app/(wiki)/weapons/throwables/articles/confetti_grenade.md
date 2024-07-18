@@ -14,7 +14,8 @@ The **Confetti Grenade** is an explosive [Throwable](/throwables) added in the v
 - If your opponent utilizes "grenade spamming", you can try to rush forward and out-DPS them at close range using a weapon such as the [Flues](/weapons/guns/flues).
 
 # Obtaining
-Confetti Grenades are only obtainable from the [Confetti Grenade Box](/obstacles/confetti_grenade_box) and always drop in stacks of four. The Confetti Grenade is only obtainable during the 1st Anniversary and Fourth of July/20k discord members events.
+Confetti Grenades are only obtainable from the [Confetti Grenade Box](/obstacles/confetti_grenade_box) and always drop in stacks of four. The Confetti Grenade is only obtainable during the Anniversary and Fourth of July events.
+  - In 2024, the Fourth of July event coincided with the 20k Discord member milestone.
 
 # Trivia
 
@@ -28,4 +29,3 @@ Confetti Grenades are only obtainable from the [Confetti Grenade Box](/obstacles
   - Made unobtainable.
 - v0.18.0
   - Added.
-  
