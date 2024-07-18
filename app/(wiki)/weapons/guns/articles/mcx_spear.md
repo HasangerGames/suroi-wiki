@@ -1,4 +1,4 @@
-The **SIG Sauer MCX Spear**, known in-game as the **MCX Spear**, is an assault rifle using 7.62mm ammunition. It was v0.5.0 "Locked & Loaded" update on June 24th, 2023. It has high DPS, low magazine capacity, and very good accuracy.
+The **SIG Sauer MCX Spear**, known in-game as the **MCX Spear**, is an assault rifle using 7.62mm ammunition. It was [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0) "Locked & Loaded" update on June 24th, 2023. It has high DPS, low magazine capacity, and very good accuracy.
 
 # Background
 
@@ -37,10 +37,10 @@ The MCX Spear is rarely found as world loot in locations such as [Regular Crates
 
 # History
 
-- v0.12.1
+- [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
   - Firing speed penalty decreased to 25% (from 35%)
   - Recoil duration decreased to 130ms (from 240ms)
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Updated world image
   - Length decreased to 7.7 (from 10.8)
   - Left fist x-offset decreased to 105 (from 135)
@@ -48,17 +48,17 @@ The MCX Spear is rarely found as world loot in locations such as [Regular Crates
   - Right fist z-index set to 4
   - Image decreased from 80 (from 110)
   - Casing spawn x-offset increased to 5 (from 4)
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Length increased to 10.8 (from 9)
   - Added casing particles
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Standing spread increased to 2° (from 1.5°)
   - Moving spread increased to 4.5° (from 4°)
   - Hand positions swapped
   - Damage increased to 16 (from 15)
   - Move speed penalty decreased to 8% (from 10%)
   - Obstacle multiplier decreased to 1.5 (from 1.6)
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Move speed penalty set to 10%
   - Range increased to 180 (from 128)
   - Bullet speed decreased to 0.3 (from 0.35)
@@ -71,7 +71,7 @@ The MCX Spear is rarely found as world loot in locations such as [Regular Crates
   - Length decreased to 9 (from 10)
   - Ammo spawned with gun increased to 80 (from 60)
   - Tracer length set to 1.4
-- v0.7.0
+- [v0.7.0](https://github.com/HasangerGames/suroi/releases/tag/v0.7.0)
   - Damage increased to 14 (from 10)
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Added

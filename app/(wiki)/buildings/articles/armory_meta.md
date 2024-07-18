@@ -1,4 +1,4 @@
-The **Armory** is a large structure added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024. It contains a unique weapon, the [Maul](/weapons/melee/maul), and several unique obstacles.
+The **Armory** is a large structure added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14th, 2024. It contains a unique weapon, the [Maul](/weapons/melee/maul), and several unique obstacles.
 
 # Location & Spawning
 
@@ -66,5 +66,5 @@ The Porta Potty spawns near the exterior of the Vault.
 
 # History
 
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added.

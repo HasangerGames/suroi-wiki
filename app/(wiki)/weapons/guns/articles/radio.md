@@ -16,7 +16,7 @@ Radios are a type of communication device that utilizes electromagnetic radio wa
 
 ## Trivia
 
-- The radio used the same sound effects as the [Deathray](/weapons/guns/deathray) except for the firing sound until v0.16.0
+- The radio used the same sound effects as the [Deathray](/weapons/guns/deathray) except for the firing sound until [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
 
 # History
 
@@ -31,13 +31,13 @@ Radios are a type of communication device that utilizes electromagnetic radio wa
   - Tracer as-particle enabled
   - Tracer z-index set to BuildingsCeiling
   - Bullet collision disabled
-- v0.14.0
+- [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)
   - Range increased to 50 (from 0)
   - Bullet speed decreased to 0.01 (from 1)
   - Set a custom tracer image
   - Tracer opacity set to 0.8
   - Tracer max length force enabled
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Added
 
 # Gallery
@@ -47,7 +47,7 @@ Radios are a type of communication device that utilizes electromagnetic radio wa
     {
       url: "/img/articles/weapons/guns/radio/radio_ground.png",
       author: "1092384",
-      caption: "A player finding a Radio on the ground in v0.14.0",
+      caption: "A player finding a Radio on the ground in [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)",
     },
   ]}
 />

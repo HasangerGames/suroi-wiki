@@ -1,4 +1,4 @@
-The **Tugboat** is a building added in the v0.16.0 "A Sailor's Dream" update on February 26th, 2024. It comes in two variants: White Tugboats and Red Tugboats.
+The **Tugboat** is a building added in the [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0) "A Sailor's Dream" update on February 26th, 2024. It comes in two variants: White Tugboats and Red Tugboats.
 
 # Location & Spawning
 
@@ -30,7 +30,7 @@ All tugboat cabins contain one [Tugboat Control Panel](/obstacles/tugboat_contro
 
 # History
 
-- v0.16.1
+- [v0.16.1](https://github.com/HasangerGames/suroi/releases/tag/v0.16.1)
   - Fixed an issue with the hitboxes of the metal stairs.
-- v0.16.0
+- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added.

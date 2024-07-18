@@ -1,4 +1,4 @@
-The **Big Horn Armory Model 89 Carbine**, known in-game as the **Model 89**, is a lever-action DMR utilizing the 12.7mm ammunition. It was added to the game in the v0.16.0 "A Sailor's Dream" update on February 25th, 2024. Found only in [Gold Airdrops](/obstacles/airdrops) and [Flint Stones](/obstacles/flint_stone), it has a slow fire rate but packs incredible damage.
+The **Big Horn Armory Model 89 Carbine**, known in-game as the **Model 89**, is a lever-action DMR utilizing the 12.7mm ammunition. It was added to the game in the [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0) "A Sailor's Dream" update on February 25th, 2024. Found only in [Gold Airdrops](/obstacles/airdrops) and [Flint Stones](/obstacles/flint_stone), it has a slow fire rate but packs incredible damage.
 
 # Background
 The Model 89 was developed by Big Horn Armory to supersede the older Model 86 and Model 92 lever actions in a modern platform. It features a wide variety of options and fires the powerful .500 S&W cartridge. As a CNC-machined rifle, all the parts are exceptionally precise, which gives into its prowess at the range.
@@ -24,5 +24,5 @@ The Model 89 is only found in Gold Airdrops and [Flint Stones](/obstacles/flint_
 
 ## History
 
-- v0.16.0
+- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added

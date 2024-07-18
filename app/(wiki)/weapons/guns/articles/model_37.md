@@ -1,4 +1,4 @@
-The **Ithaca Model 37**, also known as the **Ithaca 37** and known in-game as the **Model 37** is a pump-action shotgun utilizing 12-gauge ammunition. It was added to the game in the v0.4.0 "Supplies received" update on June 17th, 2023. It has high damage, but short range and lots of recoil.
+The **Ithaca Model 37**, also known as the **Ithaca 37** and known in-game as the **Model 37** is a pump-action shotgun utilizing 12-gauge ammunition. It was added to the game in the [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0) "Supplies received" update on June 17th, 2023. It has high damage, but short range and lots of recoil.
 
 # Background
 
@@ -32,18 +32,18 @@ The Model 37 is fairly common as both ground loot as well as in places such as [
 
 # History
 
-- v0.17.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - Center jitter on muzzle implicitly enabled
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Casing velocity y-component set to ±[2, 5]
-- v0.14.0
+- [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)
   - Fire delay decreased to 900ms (from 925ms)
   - Switch delay decreased to 900ms (from 925ms)
-- v0.12.1
+- [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
   - Move speed penalty increased to 8% (from 7%)
   - Left fist x-offset decreased to 122 (from 123)
   - Casing ejection delay set to 450ms
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Updated world image
   - Length decreased to 7.9 (from 10.6)
   - Set jitter radius to 1.25
@@ -53,16 +53,16 @@ The Model 37 is fairly common as both ground loot as well as in places such as [
   - Casing spawn x-offset increased to 4.5 (from 4)
   - Right fist z-index set to 4
   - Tracer length set to 0.7
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Length increased to 10.6 (from 10)
   - Left hand y-offset increased to -3 (from -6)
   - Added casing particles
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Standing spread decreased to 11° (from 12°)
   - Moving spread decreased to 14° (from 15°)
   - Hand positions swapped
   - Image x-offset increased to 105 (from 90)
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Standing spread set to 12°
   - Moving spread increased to 15° (from 14°)
   - Reload time decreased to 750s (from 1s)
@@ -74,11 +74,11 @@ The Model 37 is fairly common as both ground loot as well as in places such as [
   - Range decreased to 48 (from 64)
   - Obstacle multiplier decreased to 1 (from 2)
   - Quickswitch enabled
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Ammo type set to 12 gauge
   - Ammo spawn amount set to 10
   - Magazine capacity decreased to 5 (from Infinity)
   - Reload time set to 1 second
   - Single reload enabled
-- v0.4.0
+- [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
   - Added

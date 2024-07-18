@@ -1,4 +1,4 @@
-Crates are a type of obstacle that spawns around the map randomly. They come in three distinct variants with different loot. Regular crates were first added to the game in the [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0) "We're back, baby" update on May 20th, 2023. Later, update [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0) "Locked & Loaded" brought the other crate variants.
+Crates are a type of obstacle that spawns around the map randomly. They come in three distinct variants with different loot. Regular crates were first added to the game in the [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0) "We're back, baby" update on May 20th, 2023. Later, update v0.5.0 "Locked & Loaded" brought the other crate variants.
 
 # Location and Spawning
 

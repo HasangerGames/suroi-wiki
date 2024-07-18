@@ -1,4 +1,4 @@
-The **Container** is a building added in the v0.11.0 "Making Waves" update on October 22nd, 2023. 
+The **Container** is a building added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023. 
 
 # Location & Spawning
 
@@ -23,5 +23,5 @@ Containers always contain one ground loot item on its floor.
 - The Containers were designed by platonthek.
 # History
 
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Added.

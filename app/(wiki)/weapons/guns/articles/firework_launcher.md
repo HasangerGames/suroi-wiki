@@ -1,7 +1,7 @@
 <Stub/>
 <Event/>
 
-The **Firework Launcher** is an RPG utilizing firework ammunition. It was added to the game in the v0.18.0 "Back in the Saddle" update on July 8th, 2024. It shoots very slowly, but has a high spread and damage. 
+The **Firework Launcher** is an RPG utilizing firework ammunition. It was added to the game in the [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0) "Back in the Saddle" update on July 8th, 2024. It shoots very slow, but has a high spread and damage. 
 
 # Strategies
 
@@ -33,11 +33,11 @@ The **Firework Launcher** is an RPG utilizing firework ammunition. It was added 
 
 # History
 
-- v0.18.3
-  - Made unobtainable.
-- v0.18.2
+- [v0.18.3](https://github.com/HasangerGames/suroi/releases/tag/v0.18.3)
+  - Removed from the game.
+- [v0.18.2](https://github.com/HasangerGames/suroi/releases/tag/v0.18.2)
   - Added back in golden airdrops.
-- v0.18.1
-  - Made unobtainable.
-- v0.18.0
+- [v0.18.1](https://github.com/HasangerGames/suroi/releases/tag/v0.18.1)
+  - Removed from the game.
+- [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0)
   - Added.

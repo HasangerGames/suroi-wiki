@@ -1,6 +1,6 @@
 <DevWeapon />
 
-The **Death Ray** is a dev-only weapon initially added in the v0.4.0 update, and majorly reworked in the v0.8.0 update. Capable of eliminating almost any object instantly, it also possesses the ability to sail right through cover and players without losing any damage or velocity, making it extremely dangerous.
+The **Death Ray** is a dev-only weapon initially added in the [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0) update, and majorly reworked in the v0.8.0 update. Capable of eliminating almost any object instantly, it also possesses the ability to sail right through cover and players without losing any damage or velocity, making it extremely dangerous.
 
 # Strategies
 
@@ -21,40 +21,40 @@ As a dev-only weapon, the Death Ray can only be obtained by developers, or on th
 
 # Trivia
 
-- This weapon was completely reworked in the v0.8.0 update.
+- This weapon was completely reworked in the [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0) update.
   - Previously, it was a weapon that fired 20 projectiles per shot for 200 damage per shot every 60ms (for 3333.333 DPS), had infinite ammo, 20° spread, no penetration, and a range comparable to the [Glock 19](/weapons/guns/g19).
     - That iteration of the Death Ray was weaker since it was possible to stall against it, and it was possible to outrange it.
-- It is the first developer weapon (both in its original form and its rework, since the next developer weapon, the [Revitalizer](/weapons/guns/revitalizer) was added in v0.9.0)
+- It is the first developer weapon (both in its original form and its rework, since the next developer weapon, the [Revitalizer](/weapons/guns/revitalizer) was added in [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0))
 - Its switch sound contains an easter egg.
 - Like other developer weapons, its kill icon contains colors and gradients.
 
 # History
 
-- v0.12.3
+- [v0.12.3](https://github.com/HasangerGames/suroi/releases/tag/v0.12.3)
   - Moving spread decreased to 0.1° (from 0.25°)
-- v0.12.1
+- [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
   - Speed penalty increased to 8% (from 4%)
   - Length decreased to 8.7 (from 9.7)
   - Bullet velocity increased to 4 (from 1)
   - Casing spawn moved to (4.5, 0.6) (from (0, 0))
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Set a custom tracer image
   - Bullet velocity increased to 1 (from 0.5)
   - Added casing particles
   - Tracer length set to 10
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Length decreased to 9.7 (from 11)
   - Muzzle flash disabled
   - Damage reduced to 800 (from Infinity)
   - Tracer opacity reset
   - Tracer length reset
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Drop-on-death enabled
   - Killstreak enabled
   - Hand positions swapped
   - Image x-offset decreased to 90 (from 100)
   - Damage increased to Infinity (from 300)
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Magazine capacity decreased to 1 (from Infinity)
   - Ammo type set to Power Cell
   - Drop-on-death disabled
@@ -78,13 +78,13 @@ As a dev-only weapon, the Death Ray can only be obtained by developers, or on th
   - Tracer starting opacity set to 100%
   - Tracer ending opacity set to 50%
   - Tracer length set to 2
-- v0.6.0
+- [v0.6.0](https://github.com/HasangerGames/suroi/releases/tag/v0.6.0)
   - Magazine capacity increased to Infinity (from 255)
   - Infinite ammo enabled
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Ammo spawned with gun set to 0
   - Ammo type set to 7.62mm
   - Magazine capacity decreased to 255 (from Infinity)
   - Reload time set to 100ms
-- v0.4.0
+- [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
   - Silently added

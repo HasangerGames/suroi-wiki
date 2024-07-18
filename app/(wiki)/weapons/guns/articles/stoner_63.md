@@ -1,4 +1,4 @@
-The **Stoner 63A Commando**, known in-game as the **Stoner 63**, is a 5.56mm LMG. It was added in the v0.10.0 "Back with a Bang" update on September 14th, 2023. It is an LMG with a large magazine capacity, decent DPS, and high accuracy.
+The **Stoner 63A Commando**, known in-game as the **Stoner 63**, is a 5.56mm LMG. It was added in the [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0) "Back with a Bang" update on September 14th, 2023. It is an LMG with a large magazine capacity, decent DPS, and high accuracy.
 
 # Background
 
@@ -37,17 +37,17 @@ The Stoner 63 is rarely found in [Flint](/obstacles/flint_crate) and [AEGIS Crat
 
 # History
 
-- v0.16.0
+- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Casing velocity y-component set to [-15, -10]
   - Additional casing "m13_link" ejected
-- v0.12.2
+- [v0.12.2](https://github.com/HasangerGames/suroi/releases/tag/v0.12.2)
   - Moving spread buffed to 4.5° (from 7.5°)
-- v0.12.1
+- [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
   - Switch delay decreased to 400ms (from 500ms)
   - Length decreased from 7.7 (from 8.2)
   - Left fist moved to (105, -3) (from (115, -8))
   - Image x-offset decreased to 90 (from 100)
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - World image updated
   - Length decreased to 8.2 (from 13.1)
   - Left fist moved to (115, -8) (from (150, -6))
@@ -55,9 +55,9 @@ The Stoner 63 is rarely found in [Flint](/obstacles/flint_crate) and [AEGIS Crat
   - Right fist z-index set to 4
   - Image x-offset decreased to 100 (from 115)
   - Casing spawn moved to (4, 0.6) (from (5.5, 0))
-- v0.10.1
+- [v0.10.1](https://github.com/HasangerGames/suroi/releases/tag/v0.10.1)
   - Image x-offset decreased to 115 (from 150)
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Added
 
 # Gallery
@@ -67,7 +67,7 @@ The Stoner 63 is rarely found in [Flint](/obstacles/flint_crate) and [AEGIS Crat
     {
       url: "/img/articles/weapons/guns/stoner_63/double_stoner_bookshelf.webp",
       author: "Cola25",
-      caption: "A player getting two Stoner 63s from a bookshelf in v0.12.5",
+      caption: "A player getting two Stoner 63s from a bookshelf in [v0.12.5](https://github.com/HasangerGames/suroi/releases/tag/v0.12.5)",
     },
   ]}
 />

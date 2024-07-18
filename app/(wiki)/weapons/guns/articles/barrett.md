@@ -1,4 +1,4 @@
-The **Barrett M95** also called the **Barrett**, is a powerful bolt-action sniper utilizing 12.7mm ammunition. It was added to the game in the v0.13.0 "Terminal Velocity" update on November 27th, 2023. It has very high damage, but a slow fire rate and high recoil.
+The **Barrett M95** also called the **Barrett**, is a powerful bolt-action sniper utilizing 12.7mm ammunition. It was added to the game in the [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0) "Terminal Velocity" update on November 27th, 2023. It has very high damage, but a slow fire rate and high recoil.
 
 # Background
 
@@ -51,9 +51,9 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
 
 # History
 
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Casing spawn x-offset decreased to 2 (from 4)
-- v0.13.0
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Added
 
 # Gallery
@@ -63,7 +63,7 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
     {
       url: "/img/articles/weapons/guns/barrett/double_barrett.webp",
       author: "zhew3i",
-      caption: "A player holding two Barrett M95s in v0.14.0 (Snow Mode 2023)",
+      caption: "A player holding two Barrett M95s in [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0) (Snow Mode 2023)",
     },
     {
       url: "pbTsMWDxj68",
