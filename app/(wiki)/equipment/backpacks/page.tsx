@@ -101,7 +101,7 @@ export default function BackpackPage() {
           title="Backpack Throwable Capacity Statistics"
           header={[
             "Backpack",
-            ...["frag_grenade", "smoke_grenade"].map(throwable => (
+            ...["frag_grenade", "smoke_grenade", "confetti_grenade"].map(throwable => (
               <Image
                 src={getSuroiImageLink(getSuroiItem(throwable))}
                 alt={throwable}
@@ -128,7 +128,8 @@ export default function BackpackPage() {
               </Link>
             </Fragment>,
             backpack.maxCapacity.frag_grenade.toString(),
-            backpack.maxCapacity.smoke_grenade.toString()
+            backpack.maxCapacity.smoke_grenade.toString(),
+            backpack.maxCapacity.confetti_grenade.toString()
           ])}
         />
         <h2>List of Backpacks</h2>
