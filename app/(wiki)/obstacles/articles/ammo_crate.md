@@ -7,7 +7,7 @@ Three Ammo Crates spawn in the [Armory](/buildings/armory) in various locations 
 
 # Loot & More
 
-Ammo Crates drop either 60 rounds of 5.56mm, 7.62mm, or 9mm or 10 rounds of 12 gauge. Ammo Crates can only be broken using weapons with piercing damage (such as a [Maul](/weapons/melee/maul)) or an [Airdrop](/obstacles/airdrops) landing on top of one.
+Ammo Crates drop either 60 rounds of 5.56mm, 7.62mm, or 9mm or 10 rounds of 12 gauge. Ammo Crates can only be broken using weapons with piercing damage (such as a [Maul](/weapons/melee/maul) or a [Hatchet](/weapons/melee/hatchet)) or an [Airdrop](/obstacles/airdrops) landing on top of one.
 
 # Tips
 
