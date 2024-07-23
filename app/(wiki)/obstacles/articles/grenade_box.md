@@ -2,7 +2,7 @@ The **Grenade Box** is an [Obstacle](/obstacles) added in the [v0.16.0](https://
 
 # Location & Spawning
 
-Grenade Boxes only spawn inside the [Warehouses](/buildings/warehouse) on the map, and have a 10 percent chance to replace any normal [Box](/obstacles/box) inside the Warehouse.
+Grenade Boxes only spawn inside the [Warehouses](/buildings/warehouse) on the map, and have a 10% chance to replace any normal [Box](/obstacles/box) inside the Warehouse.
 
 # Loot & More
 
