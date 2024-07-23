@@ -15,12 +15,12 @@ The Briefcase can drop a [Vector](/weapons/guns/vector), an [ARX-160](/weapons/g
 
 # Trivia
 
-- The Briefcase was designed by 1092384
+- The Briefcase was designed by 1092384.
 
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added
+  - Added.
 
 # Gallery
 

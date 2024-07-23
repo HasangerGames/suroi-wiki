@@ -14,9 +14,9 @@ The Large Oil Tank cannot be destroyed and reflects bullets.
 
 # Trivia
 
-- The Large Oil Tank was designed by platonthek
+- The Large Oil Tank was designed by platonthek.
 
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added
+  - Added.

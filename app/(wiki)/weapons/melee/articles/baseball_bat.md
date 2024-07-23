@@ -23,19 +23,19 @@ Baseball Bats have a high chance of spawning from the [Melee Crate](/obstacles/m
 
 # Trivia
 
-- The Baseball Bat was designed by Radians
-- Baseball bats have been used for murder
-- During the early days, players would use scrap wood to create their baseball bats
+- The Baseball Bat was designed by Radians.
+- Baseball bats have been used for murder.
+- During the early days, players would use scrap wood to create their baseball bats.
 
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - New texture
+  - New texture.
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Swing Radius increased to 3.8 (from 3)
+  - Swing Radius increased to 3.8 (from 3).
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Swing Radius decreased to 3 (from 4)
+  - Swing Radius decreased to 3 (from 4).
 - [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
-  - Animation speed increased to 150 (from 125)
+  - Animation speed increased to 150 (from 125).
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
-  - Added
+  - Added.

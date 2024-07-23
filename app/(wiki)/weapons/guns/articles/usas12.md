@@ -33,20 +33,20 @@ The USAS-12 has currently been obtainable in only two events.
 
 # Trivia
 
-- USAS-12 stands for "Universal Sporting Automatic Shotgun 12 gauge"
-- In Suroi, the USAS-12 fires FRAG-12 ammunition
-  - FRAG-12 is a specialized 12-gauge shell that contains a small amount of high-explosive
-- The USAS-12 is one of 6 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [VSS](/weapons/guns/vss), [M1 Garand](/weapons/guns/m1_garand) and [Mosin-Nagant](/weapons/guns/mosin)
+- USAS-12 stands for "Universal Sporting Automatic Shotgun 12 gauge".
+- In Suroi, the USAS-12 fires FRAG-12 ammunition.
+  - FRAG-12 is a specialized 12-gauge shell that contains a small amount of high-explosive.
+- The USAS-12 is one of 6 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [VSS](/weapons/guns/vss), [M1 Garand](/weapons/guns/m1_garand) and [Mosin-Nagant](/weapons/guns/mosin).
 
 # History
 
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Casing type set to 12 gauge HE
+  - Casing type set to 12 gauge HE.
 - [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
-  - Recoil duration increased to 525ms (from 450ms)
-  - Explosion damage reduced to 35 (from 50)
+  - Recoil duration increased to 525ms (from 450ms).
+  - Explosion damage reduced to 35 (from 50).
 - [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
-  - Added
+  - Added.
 
 # Gallery
 

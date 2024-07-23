@@ -14,9 +14,9 @@ Small Drawers drop either healing items or ammo while Large Drawers drop guns, s
 
 # Trivia
 
-- The Drawers were designed by platonthek
+- The Drawers were designed by platonthek.
 
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added
+  - Added.

@@ -22,11 +22,11 @@ The Seax can only be obtained from the [Viking Chest](/obstacles/viking_chest), 
 
 # Trivia
 
-- The Seax was designed by cobby and 1092384
+- The Seax was designed by cobby and 1092384.
 
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - New texture
+  - New texture.
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added
+  - Added.

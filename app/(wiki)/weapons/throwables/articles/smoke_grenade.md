@@ -21,9 +21,9 @@ Smoke Grenades can sometimes be obtained from [Regular Crates](/obstacles/regula
 
 # History
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Smoke now forces a 1x scope for players in it
+  - Smoke now forces a 1x scope for players in it.
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added
+  - Added.
 
 <Gallery
   images={[

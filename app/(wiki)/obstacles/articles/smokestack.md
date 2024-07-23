@@ -14,10 +14,10 @@ Smokestacks are indestructible and reflect bullets.
 
 # Trivia
 
-- The Smokestack was designed by platonthek
-- In real life, smokestacks are tall vertical pipes used to discharge gases or vapors safely
+- The Smokestack was designed by platonthek.
+- In real life, smokestacks are tall vertical pipes used to discharge gases or vapors safely.
 
 # History
 
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Added
+  - Added.

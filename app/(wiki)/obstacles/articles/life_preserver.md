@@ -14,12 +14,12 @@ Life Preservers drop nothing upon being broken.
 
 # Trivia
 
-- The Life Preserver was designed by Platonthek and Emeraldneo
+- The Life Preserver was designed by Platonthek and Emeraldneo.
 - In real life, life preservers are plastic portable buoys that provide buoyancy for a person who may be in danger from drowning, hence its name. 
 
 # History
 
 - [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0)
-  - Updated Texture
+  - Updated Texture.
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Added
+  - Added.
