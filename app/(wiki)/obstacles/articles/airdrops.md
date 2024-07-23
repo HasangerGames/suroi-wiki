@@ -26,7 +26,7 @@ Airdrops contain rare and useful loot, including powerful weapons, large scopes,
 - The Airdrop was designed by scared_penguin.
 - Airdrops were reskinned to be Christmas-themed during the 2023 Winter event.
   - The plane was replaced with a sleigh (and its accompanying sound was also replaced to sound like bells) and the Airdrop itself was retextured to look like a present.
-  - They were reskinned by emeraldneo and A.
+  - They were reskinned by Emeraldneo and A.
 - The silhouette of the plane that releases Airdrops is that of a Lockheed Martin C-130J Super Hercules.
 
 # History
