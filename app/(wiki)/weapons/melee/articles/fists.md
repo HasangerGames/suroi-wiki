@@ -34,11 +34,11 @@ All players spawn with fists, so they are available for use at the start.
 
 # Trivia
 
-- The hand that you punch with is completely random, sometimes it will be the right hand, and sometimes it will be the left hand
+- The hand that you punch with is completely random, sometimes it will be the right hand, and sometimes it will be the left hand.
 
 # History
 
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
-  - Obstacle damage multiplier halved (from 2)
+  - Obstacle damage multiplier halved (from 2).
 - [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0) (original beta release)
-  - Added
+  - Added.

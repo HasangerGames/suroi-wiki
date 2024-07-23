@@ -14,10 +14,10 @@ Distillation Columns are indestructible and reflect bullets.
 
 # Trivia
 
-- The Distillation Column was designed by platonthek
-- In real life, distillation columns are used to separate and purify mixtures from each other by heat
+- The Distillation Column was designed by platonthek.
+- In real life, distillation columns are used to separate and purify mixtures from each other by heat.
 
 # History
 
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Added
+  - Added.

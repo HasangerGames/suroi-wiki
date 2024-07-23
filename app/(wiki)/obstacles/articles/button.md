@@ -14,9 +14,9 @@ Buttons cannot be used as cover since their hitbox is too small.
 
 # Trivia
 
-- The Button was designed by Bear
+- The Button was designed by Bear.
 
 # History
 
  - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-   - Added
+   - Added.

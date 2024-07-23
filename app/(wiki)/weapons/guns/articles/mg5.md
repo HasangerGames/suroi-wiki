@@ -31,10 +31,10 @@ The MG5 is based on a similar design to that of the MG4 light machine gun that p
 The most common way to find a MG5 is through a [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone). It can also spawn very rarely as world loot.
 
 # Trivia
-- In real life, the MG5 is classified as a GPMG (General Purpose Machine Gun), but it is a LMG in Suroi for simplicity
-- The MG5 is one of two guns (the other being the [Negev](/weapons/guns/negev)) in Suroi that utilizes a belt feed system
+- In real life, the MG5 is classified as a GPMG (General Purpose Machine Gun), but it is a LMG in Suroi for simplicity.
+- The MG5 is one of two guns (the other being the [Negev](/weapons/guns/negev)) in Suroi that utilizes a belt feed system.
 
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - Added
+  - Added.

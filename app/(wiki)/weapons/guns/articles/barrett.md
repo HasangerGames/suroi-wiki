@@ -43,18 +43,18 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
 
 # Trivia
 
-- The Barrett is the second bullpup weapon to be added to Suroi, after the [AUG](/weapons/guns/aug)
-- At 129 damage, the Barrett has the highest damage per bullet of any obtainable weapon
-- In real life, the Barrett uses the .50 BMG cartridge
-  - However, this is simplified to the 12.7mm ammunition (technically correct because .50 BMG is 12.7x99mm)
-- The Barrett has the fastest bullet speed of any gun (excluding the [Death Ray](/weapons/guns/death_ray))
+- The Barrett is the second bullpup weapon to be added to Suroi, after the [AUG](/weapons/guns/aug).
+- At 129 damage, the Barrett has the highest damage per bullet of any obtainable weapon.
+- In real life, the Barrett uses the .50 BMG cartridge.
+  - However, this is simplified to the 12.7mm ammunition (technically correct because .50 BMG is 12.7x99mm).
+- The Barrett has the fastest bullet speed of any gun (excluding the [Death Ray](/weapons/guns/death_ray)).
 
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Casing spawn x-offset decreased to 2 (from 4)
+  - Casing spawn x-offset decreased to 2 (from 4).
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-  - Added
+  - Added.
 
 # Gallery
 

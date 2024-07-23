@@ -19,12 +19,12 @@ Trees drop no loot upon being broken.
 
 # Trivia
 
-- Trees are one of the first obstacles in Suroi
+- Trees are one of the first obstacles in Suroi.
 
 # History
 
 - [v0.9.1](https://github.com/HasangerGames/suroi/releases/tag/v0.9.1)
-  - Increased oak & birch tree trunk radius by 2.5 (from 3)
-  - Decreased random size scaling maximum by 0.1 (from 1.1)
+  - Increased oak & birch tree trunk radius by 2.5 (from 3).
+  - Decreased random size scaling maximum by 0.1 (from 1.1).
 - [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
-  - Added
+  - Added.

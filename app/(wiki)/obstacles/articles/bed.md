@@ -14,9 +14,9 @@ The Bed drops no loot upon being broken.
 
 # Trivia
 
-- The Bed was designed by platonthek
+- The Bed was designed by platonthek.
 
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added
+  - Added.

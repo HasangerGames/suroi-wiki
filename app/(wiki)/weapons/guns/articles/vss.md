@@ -31,51 +31,51 @@ The VSS is most easily found in special loot such as [AEGIS](/obstacles/aegis_cr
 
 # Trivia
 
-- The VSS is one of 6 guns that were in surviv.io, the others being the [AK-47](/weapons/guns/ak47), [M1 Garand](/weapons/guns/m1_garand), [USAS-12](/weapons/guns/usas12), and [Mosin-Nagant](/weapons/guns/mosin)
-- The romanized version of "Винто́вка Сна́йперская Специа́льная" is "Vintóvka Snáyperskaya Spetsiálnaya"
-- The VSS can fire fully automatically in real-life
-  - This is only used for emergencies as full-auto can damage the gun
-- In Russian, TsNIITochMash is written as ЦНИИТОЧМАШ
-  - The name is an initialism for "Центральный научно-исследовательский институт точного машиностроения", or "Central Scientific - Research Institute for Precision Machine Engineering"
-- This is the first and only 9mm weapon that doesn't utilize the 9x19mm Parabellum round
-- The VSS in-game most likely fires the armor-piercing SP6 variant of the 9x39mm cartridge
-  - It is also using the 20-round magazines from the AS VAL, as the real-life VSS comes with 10-round magazines
-- The VSS is the first DMR and the first suppressed weapon in Suroi
-- Out of all 9mm weapons, the VSS has the highest damage per bullet
+- The VSS is one of 6 guns that were in surviv.io, the others being the [AK-47](/weapons/guns/ak47), [M1 Garand](/weapons/guns/m1_garand), [USAS-12](/weapons/guns/usas12), and [Mosin-Nagant](/weapons/guns/mosin).
+- The romanized version of "Винто́вка Сна́йперская Специа́льная" is "Vintóvka Snáyperskaya Spetsiálnaya".
+- The VSS can fire fully automatically in real-life.
+  - This is only used for emergencies as full-auto can damage the gun.
+- In Russian, TsNIITochMash is written as ЦНИИТОЧМАШ.
+  - The name is an initialism for "Центральный научно-исследовательский институт точного машиностроения", or "Central Scientific - Research Institute for Precision Machine Engineering".
+- This is the first and only 9mm weapon that doesn't utilize the 9x19mm Parabellum round.
+- The VSS in-game most likely fires the armor-piercing SP6 variant of the 9x39mm cartridge.
+  - It is also using the 20-round magazines from the AS VAL, as the real-life VSS comes with 10-round magazines.
+- The VSS is the first DMR and the first suppressed weapon in Suroi.
+- Out of all 9mm weapons, the VSS has the highest damage per bullet.
 
 # History
 
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Casing type set to 9x39mm
+  - Casing type set to 9x39mm.
 - [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
-  - Obstacle multiplier increased to 1.5 (from 1)
-  - Damage decreased to 22 (from 24)
-  - Recoil duration decreased to 140ms (from 500ms)
+  - Obstacle multiplier increased to 1.5 (from 1).
+  - Damage decreased to 22 (from 24).
+  - Recoil duration decreased to 140ms (from 500ms).
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - World image updated
-  - Length decreased to 6.9 (from 11.4)
-  - Left fist moved to (110, -2) (from (130, -6))
-  - Right fist x-offset decreased to 40 (from 65)
-  - Right fist z-index set to 4
-  - Image x-offset decreased to 80 (from 100)
-  - Casing spawn x-offset decreased to 4 (from 5)
-  - Tracer length increased to 1.5 (from 1.3)
+  - World image updated.
+  - Length decreased to 6.9 (from 11.4).
+  - Left fist moved to (110, -2) (from (130, -6)).
+  - Right fist x-offset decreased to 40 (from 65).
+  - Right fist z-index set to 4.
+  - Image x-offset decreased to 80 (from 100).
+  - Casing spawn x-offset decreased to 4 (from 5).
+  - Tracer length increased to 1.5 (from 1.3).
 - [v0.10.1](https://github.com/HasangerGames/suroi/releases/tag/v0.10.1)
-  - Obstacle multiplier decreased to 1 (from 1.5)
+  - Obstacle multiplier decreased to 1 (from 1.5).
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Increased length to 11.4 (from 10)
-  - Muzzle flash disabled
-  - Added casing particles
-  - Tracer opacity set to 0.5
+  - Increased length to 11.4 (from 10).
+  - Muzzle flash disabled.
+  - Added casing particles.
+  - Tracer opacity set to 0.5.
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Hand positions swapped
-  - Fire delay decreased to 140ms (from 175ms)
-  - Move speed penalty increased to 8% (from 5%)
-  - Standing spread increased to 2° (from 1°)
-  - Moving spread increased to 3.5° (from 2°)
-  - Damage increased to 24 (from 23)
-  - Obstacle multiplier increased to 1.5 (from 1.3)
-  - Bullet speed decreased to 0.22 (from 0.3)
-  - Range decreased to 160 (from 180)
+  - Hand positions swapped.
+  - Fire delay decreased to 140ms (from 175ms).
+  - Move speed penalty increased to 8% (from 5%).
+  - Standing spread increased to 2° (from 1°).
+  - Moving spread increased to 3.5° (from 2°).
+  - Damage increased to 24 (from 23).
+  - Obstacle multiplier increased to 1.5 (from 1.3).
+  - Bullet speed decreased to 0.22 (from 0.3).
+  - Range decreased to 160 (from 180).
 - [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
-  - Added
+  - Added.

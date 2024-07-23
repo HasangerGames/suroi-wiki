@@ -28,7 +28,7 @@ Control Panels don't drop loot when destroyed, but it will create an explosion t
 
 # Trivia
 
-- The Control Panels were designed by Platonthek
+- The Control Panels were designed by Platonthek.
 - There are technically five variants of the control panel, but the fifth variant replaces a Control Panel 1 after it has been interacted with.
 
 # History
@@ -38,4 +38,4 @@ Control Panels don't drop loot when destroyed, but it will create an explosion t
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added tugboat variant
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Added 
+  - Added.

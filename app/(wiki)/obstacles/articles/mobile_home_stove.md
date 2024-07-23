@@ -14,10 +14,10 @@ The Mobile Home Stove doesn't drop loot and explodes when broken.
 
 # Trivia
 
-- The Mobile Home Stove was designed by platonthek
-- THe Mobile Home Stove is very similar to the normal [Stove](/obstacles/bed) except for its size
+- The Mobile Home Stove was designed by platonthek.
+- THe Mobile Home Stove is very similar to the normal [Stove](/obstacles/bed) except for its size.
 
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added
+  - Added.

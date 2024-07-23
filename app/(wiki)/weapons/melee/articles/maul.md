@@ -26,13 +26,13 @@ The Maul can only be obtained from the [Maul Mount](/obstacles/gun_mounts) in th
 # Trivia
 
 - For a while, attacking people through walls with the Maul was a decent strategy due to its long range and high damage.
-- The Maul was designed by Radians
+- The Maul was designed by Radians.
 
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - New texture
+  - New texture.
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Made obtainable
+  - Made obtainable.
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added
+  - Added.

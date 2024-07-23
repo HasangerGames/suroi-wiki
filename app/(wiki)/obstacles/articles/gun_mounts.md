@@ -14,12 +14,12 @@ Gun Mounts have low health and are easily destroyed. They always drop the weapon
 
 # Trivia
 
-- The Gun Mounts were designed by platonthek
+- The Gun Mounts were designed by platonthek.
 
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - Fixed gun mount loot phasing through walls
-  - Added HP18 Gun Mount
+  - Fixed gun mount loot phasing through walls.
+  - Added HP18 Gun Mount.
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Added
+  - Added.

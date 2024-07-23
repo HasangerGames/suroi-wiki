@@ -52,7 +52,7 @@ Frag Grenades can sometimes be obtained from [Regular Crates](/obstacles/regular
 
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added
+  - Added.
 
 <Gallery
   images={[

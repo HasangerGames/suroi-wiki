@@ -15,9 +15,9 @@ The Box has similar [loot](/loot#box) to the [Regular Crate](/obstacles/regular_
 
 # Trivia
 
-- The Box was designed by jchen
+- The Box was designed by jchen.
 
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added
+  - Added.

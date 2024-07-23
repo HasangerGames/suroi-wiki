@@ -7,11 +7,11 @@ However, it is rarer when compared to the Regular Helmet.
 
 # Trivia
 
-- The Regular Helmet was designed by Slapdap
+- The Regular Helmet was designed by Slapdap.
 
 # History
 
  - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-   - Unique pickup sound added 
+   - Unique pickup sound added.
  - [v0.7.0](https://github.com/HasangerGames/suroi/releases/tag/v0.7.0)
-   - Added 
+   - Added.

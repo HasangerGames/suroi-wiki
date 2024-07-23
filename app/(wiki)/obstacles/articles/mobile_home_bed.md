@@ -14,10 +14,10 @@ The Mobile Home Bed doesn't drop loot.
 
 # Trivia
 
-- The Mobile Home Bed was designed by platonthek
-- THe Mobile Home Bed is very similar to the normal [Bed](/obstacles/bed) except for its size
+- The Mobile Home Bed was designed by platonthek.
+- THe Mobile Home Bed is very similar to the normal [Bed](/obstacles/bed) except for its size.
 
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added
+  - Added.

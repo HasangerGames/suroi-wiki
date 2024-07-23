@@ -17,11 +17,11 @@ Wooden and Porta Potty Doors can be interacted with to change their position, wh
 
 # Trivia
 
-- All types of Doors were designed by platonthek
+- All types of Doors were designed by platonthek.
 
 # History
 
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Added Vault Door
+  - Added Vault Door.
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added Door and Garage Door
+  - Added Door and Garage Door.
