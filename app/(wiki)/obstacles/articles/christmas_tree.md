@@ -21,7 +21,7 @@ The Christmas Tree drops decent [loot](/loot#christmas_tree) and takes many hits
 
 # Trivia
 
-- The Christmas Tree was designed by bear
+- The Christmas Tree was designed by Bear.
 
 # History
 
