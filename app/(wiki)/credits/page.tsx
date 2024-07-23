@@ -58,7 +58,7 @@ const WIKI_TEAM: User[] = [
 
 const WIKI_CONTRIB: string[] = [
   "brianzjk",
-  "Emeraldneo",
+  "emeraldneo",
   "HeheBoi420",
   "Hugh Jass",
   "ei-pi",
@@ -179,7 +179,7 @@ const ARTISTS: string[] = [
   "Silverviolet",
   "Meower",
   "Just Alto",
-  "Emeraldneo",
+  "emeraldneo",
   "Pirelli",
   "Slapdap",
   "Platonthek",
