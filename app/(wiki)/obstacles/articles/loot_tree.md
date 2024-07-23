@@ -16,7 +16,7 @@ Look out for a tree with a slightly lighter color that also has a button on it. 
 
 # Trivia
 
-- The Loot Tree was designed by Emeraldneo.
+- The Loot Tree was designed by emeraldneo.
 
 # History
 
