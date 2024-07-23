@@ -25,13 +25,13 @@ All crates drop some sort of loot. The Regular Crate drops the [lowest quality l
 
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added the Grenade Crate
+  - Added the Grenade Crate.
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
-  - Added the AEGIS, Flint and Melee Crates
+  - Added the AEGIS, Flint and Melee Crates.
 - [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
-  - Regular Crates now drop loot
+  - Regular Crates now drop loot.
 - [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
-  - Added the Regular Crate. This does not drop anything yet
+  - Added the Regular Crate. This does not drop anything yet.
 
 # Gallery
 

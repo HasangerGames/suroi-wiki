@@ -16,11 +16,11 @@ The Washing Machine reflects bullets and drops either the "Verified or "no kill 
 
 # Trivia
 
-- The Washing Machine was designed by platonthek
+- The Washing Machine was designed by platonthek.
 
 # History
 
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Made unobtainable
+  - Made unobtainable.
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added
+  - Added.

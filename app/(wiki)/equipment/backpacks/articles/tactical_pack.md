@@ -6,12 +6,12 @@ The Tactical Pack can be obtained rarely from common loot sources such as [crate
 
 # Trivia 
 
- - The Tactical Pack was designed by Slapdap
- - The Tactical Pack has an AEGIS logo on it
+ - The Tactical Pack was designed by Slapdap.
+ - The Tactical Pack has an AEGIS logo on it.
 
 # History
 
  - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-   - Unique pickup sound added
+   - Unique pickup sound added.
  - [v0.7.0](https://github.com/HasangerGames/suroi/releases/tag/v0.7.0)
-   - Added
+   - Added.

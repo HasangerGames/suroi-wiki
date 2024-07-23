@@ -15,9 +15,9 @@ The Mobile Home Sink drops either healing items or ammo. The former is slightly 
 
 # Trivia
 
-- The Mobile Home Sink was designed by platonthek
+- The Mobile Home Sink was designed by platonthek.
 
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added
+  - Added.

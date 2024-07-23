@@ -4,14 +4,14 @@ The **Regular Pack** is a piece of [Equipment](/equipment) added in the [v0.7.0]
  
 The Regular Pack can be obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). However, it is rarer when compared to the Basic Pack.
 
-# Trivia 
+# Trivia
 
- - The Regular Pack was designed by Slapdap
- - The Regular Pack has a Flint logo on it
+ - The Regular Pack was designed by Slapdap.
+ - The Regular Pack has a Flint logo on it.
 
 # History
 
  - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-   - Unique pickup sounds added
+   - Unique pickup sounds added.
  - [v0.7.0](https://github.com/HasangerGames/suroi/releases/tag/v0.7.0)
-   - Added
+   - Added.

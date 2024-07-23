@@ -16,9 +16,9 @@ Small Refinery Barrels drop no loot and explode when broken. It can also reflect
 
 # Trivia
 
-- The Small Refinery Barrel was designed by platonthek
+- The Small Refinery Barrel was designed by platonthek.
 
 # History
 
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Added
+  - Added.

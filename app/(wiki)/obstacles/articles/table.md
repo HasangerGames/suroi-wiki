@@ -16,9 +16,9 @@ Tables drop no loot when broken. Tables have no hitbox, so players and bullets c
 
 # Trivia
 
-- The Table was designed by platonthek
+- The Table was designed by platonthek.
 
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added
+  - Added.

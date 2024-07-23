@@ -16,8 +16,8 @@ Tear Gas Crates drop no loot when broken. When Tear Gas Crates are broken, they 
 
 
 # Trivia
-- The Tear Gas Crate was designed by Just Alto and 1092384
+- The Tear Gas Crate was designed by Just Alto and 1092384.
 
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added
+  - Added.

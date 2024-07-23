@@ -18,19 +18,19 @@ Barrels and Super Barrel drop no loot upon being broken, but they create an expl
 
 # Trivia
 
-- The Barrels were designed by 123OP, Asultra, and Hasanger
-- The Barrels are one of the first obstacles added to Suroi
+- The Barrels were designed by 123OP, Asultra, and Hasanger.
+- The Barrels are one of the first obstacles added to Suroi.
 
 # History
 
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-  - Fixed an issue with Barrel smoke not displaying
-  - Decreased shrapnel damage from Normal Barrels to 2 (from 10)
-  - Decreased shrapnel damage from Super Barrels to 4 (from 10)
+  - Fixed an issue with Barrel smoke not displaying.
+  - Decreased shrapnel damage from Normal Barrels to 2 (from 10).
+  - Decreased shrapnel damage from Super Barrels to 4 (from 10).
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Added shrapnel to both Barrels
+  - Added shrapnel to both Barrels.
 - [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
-  - Added
+  - Added.
 
 # Gallery
 

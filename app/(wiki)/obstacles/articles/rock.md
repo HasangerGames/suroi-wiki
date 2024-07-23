@@ -18,16 +18,16 @@ The Rock drops no loot upon being destroyed.
 
 # Trivia
 
-- All Rock variants, excluding the Mossy and Cracked variants, were drawn by Leia
-- The Rock is one of the first Obstacles to be added to the game
+- All Rock variants, excluding the Mossy and Cracked variants, were drawn by Leia.
+- The Rock is one of the first Obstacles to be added to the game.
 
 # History
 
 -[v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added river rock variant
+  - Added river rock variant.
 - [v0.12.5](https://github.com/HasangerGames/suroi/releases/tag/v0.12.5)
-  - Art updated for Mossy and Cracked variants
+  - Art updated for Mossy and Cracked variants.
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
-  - Added Moss and Cracked variants
+  - Added Moss and Cracked variants.
 - [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
-  - Added Rock
+  - Added Rock.

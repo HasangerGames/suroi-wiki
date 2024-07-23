@@ -14,10 +14,10 @@ Distillation Equipments are indestructible and reflect bullets.
 
 # Trivia
 
-- Distillation Equipment was designed by platonthek
-- In real life, distillation is the process of purifying mixtures by heat
+- Distillation Equipment was designed by platonthek.
+- In real life, distillation is the process of purifying mixtures by heat.
 
 # History
 
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Added
+  - Added.

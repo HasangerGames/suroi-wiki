@@ -19,10 +19,10 @@ The Model 89 was developed by Big Horn Armory to supersede the older Model 86 an
 The Model 89 is only found in Gold Airdrops and [Flint Stones](/obstacles/flint_stone).
 
 # Trivia
-- The Model 89 in-game is a 18" carbine with a standard walnut stock and a matte stainless steel finish
-- The Model 89 is one of the two weapons which use 12.7mm ammunition. The other weapon which uses 12.7mm rounds is the [M82 Barrett](/weapons/guns/barrett)
+- The Model 89 in-game is a 18" carbine with a standard walnut stock and a matte stainless steel finish.
+- The Model 89 is one of the two weapons which use 12.7mm ammunition. The other weapon which uses 12.7mm rounds is the [M82 Barrett](/weapons/guns/barrett).
 
 ## History
 
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Added
+  - Added.

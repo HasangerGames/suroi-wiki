@@ -31,46 +31,46 @@ The Micro Uzi is a very common gun, and can be found from [Regular Crates](/obst
 
 # Trivia
 
-- The Micro Uzi was the second SMG to be added to the game, after the [SAF-200](weapons/guns/saf200)
-- The Micro Uzi has the highest DPS of any 9mm weapon in Suroi, yet the lowest damage per bullet (of any 9mm weapon)
+- The Micro Uzi was the second SMG to be added to the game, after the [SAF-200](weapons/guns/saf200).
+- The Micro Uzi has the highest DPS of any 9mm weapon in Suroi, yet the lowest damage per bullet (of any 9mm weapon).
 
 # History
 
 - [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
-  - Length increased to 5.8 (from 5)
-  - Left fist moved to (85, -6) (from (40, 0))
-  - Left fist z-index reset
-  - Image x-offset increased to 80 (from 70)
+  - Length increased to 5.8 (from 5).
+  - Left fist moved to (85, -6) (from (40, 0)).
+  - Left fist z-index reset.
+  - Image x-offset increased to 80 (from 70).
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - World image updated
-  - Length decreased to 5 (from 6.8)
-  - Left fist moved to (40, 0) (from (70, 4))
-  - Right fist x-offset decreased to 40 (from 65)
-  - Left fist z-index set to 4
-  - Right fist z-index set to 4
-  - Damage decreased to 7.75 (from 9)
-  - Image x-offset decreased to 70 (from 88)
+  - World image updated.
+  - Length decreased to 5 (from 6.8).
+  - Left fist moved to (40, 0) (from (70, 4)).
+  - Right fist x-offset decreased to 40 (from 65).
+  - Left fist z-index set to 4.
+  - Right fist z-index set to 4.
+  - Damage decreased to 7.75 (from 9).
+  - Image x-offset decreased to 70 (from 88).
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Length increased to 6.8 (from 6)
-  - Added casing particles
+  - Length increased to 6.8 (from 6).
+  - Added casing particles.
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Hand positions swapped
-  - Standing spread increased to 9° (from 8°)
-  - Moving spread increased to 19° (from 12°)
-  - Move speed penalty increased to 8% (from 2%)
-  - Range decreased to 85 (from 86)
-  - Obstacle multiplier decreased to 1 (from 1.3)
+  - Hand positions swapped.
+  - Standing spread increased to 9° (from 8°).
+  - Moving spread increased to 19° (from 12°).
+  - Move speed penalty increased to 8% (from 2%).
+  - Range decreased to 85 (from 86).
+  - Obstacle multiplier decreased to 1 (from 1.3).
 - [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
-  - Damage increased to 9 (from 7)
-  - Obstacle multiplier decreased to 1.3 (from 2)
-  - Bullet speed decreased to 0.16 (from 0.35)
-  - Range increased to 86 (from 64)
-  - Reload time decreased to 1.75s (from 2s)
-  - Move speed penalty set to 2%
-  - Fire delay decreased to 40ms (from 50ms)
-  - Standing spread set to 8°
-  - Moving spread increased to 12° (from 9°)
+  - Damage increased to 9 (from 7).
+  - Obstacle multiplier decreased to 1.3 (from 2).
+  - Bullet speed decreased to 0.16 (from 0.35).
+  - Range increased to 86 (from 64).
+  - Reload time decreased to 1.75s (from 2s).
+  - Move speed penalty set to 2%.
+  - Fire delay decreased to 40ms (from 50ms).
+  - Standing spread set to 8°.
+  - Moving spread increased to 12° (from 9°).
 - [v0.7.0](https://github.com/HasangerGames/suroi/releases/tag/v0.7.0)
-  - Damage increased to 7 (from 4)
+  - Damage increased to 7 (from 4).
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
-  - Added
+  - Added.

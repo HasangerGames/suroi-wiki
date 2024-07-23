@@ -15,9 +15,9 @@ The Mobile Home Window doesn't drop loot.
 
  # Trivia
 
-- The Mobile Home Window was designed by platonthek
+- The Mobile Home Window was designed by platonthek.
 
  # History 
 
-  - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-    - Added
+  - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0).
+    - Added.

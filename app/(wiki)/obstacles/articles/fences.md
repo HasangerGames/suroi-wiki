@@ -15,10 +15,10 @@ Fences do not drop loot.
 
 # Trivia
 
-- The fence was designed by Bear
-- Despite the fences having "port" in their ids, they are also used in the Armory
+- The fence was designed by Bear.
+- Despite the fences having "port" in their ids, they are also used in the Armory.
 
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added
+  - Added.

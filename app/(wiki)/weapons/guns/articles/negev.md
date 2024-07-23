@@ -32,11 +32,11 @@ The Negev was designed in the late 1980s to replace the aging Galil ARM. Many va
 The most common way to find a Negev is through a [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone). It can also spawn rarely as world loot.
 
 # Trivia
-- The Negev is one of two guns (the other being the [MG5](/weapons/guns/mg5)) in Suroi that utilizes a belt feed system
-- The variant in Suroi was formerly known as the "Negev NG-5", though now it is just "Negev"
-  - This variant has been produced since 2012 and features many improvements such as a Picatinny rail
+- The Negev is one of two guns (the other being the [MG5](/weapons/guns/mg5)) in Suroi that utilizes a belt feed system.
+- The variant in Suroi was formerly known as the "Negev NG-5", though now it is just "Negev".
+  - This variant has been produced since 2012 and features many improvements such as a Picatinny rail.
 
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - Added
+  - Added.

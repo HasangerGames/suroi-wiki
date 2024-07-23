@@ -34,59 +34,59 @@ The Mosin-Nagant is an uncommon drop from higher-tier crates such as the [AEGIS 
 
 # Trivia
 
-- Émile Nagant's brother, Léon Nagant, designed the [M1895](/weapons/guns/m1895) revolver
-- The Mosin-Nagant is one of 6 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [USAS-12](/weapons/guns/usas12), [M1 Garand](/weapons/guns/m1_garand), and [VSS](/weapons/guns/vss)
+- Émile Nagant's brother, Léon Nagant, designed the [M1895](/weapons/guns/m1895) revolver.
+- The Mosin-Nagant is one of 6 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [USAS-12](/weapons/guns/usas12), [M1 Garand](/weapons/guns/m1_garand), and [VSS](/weapons/guns/vss).
 
 # History
 
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Casing type set to 7.62x54mmR
+  - Casing type set to 7.62x54mmR.
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-  - Movement speed penalty decreased to 8% (from 10%)
+  - Movement speed penalty decreased to 8% (from 10%).
 - [v0.12.3](https://github.com/HasangerGames/suroi/releases/tag/v0.12.3)
-  - Standing spread increased to 1° (from 0.8°)
-  - Moving spread increased to 2° (from 1.3°)
+  - Standing spread increased to 1° (from 0.8°).
+  - Moving spread increased to 2° (from 1.3°).
 - [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
-  - Casing ejection delay set to 700ms
+  - Casing ejection delay set to 700ms.
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Shoot-on-release enabled
-  - Length decreased to 8.7 (from 11)
-  - Left fist moved to (115, -4) (from (145, -1))
-  - Right fist x-offset decreased to 40 (from 65)
-  - Right fist z-index set to 4
-  - Image moved to (90, 6.5) (from (105, 4))
-  - Damage increased to 70 (from 64)
+  - Shoot-on-release enabled.
+  - Length decreased to 8.7 (from 11).
+  - Left fist moved to (115, -4) (from (145, -1)).
+  - Right fist x-offset decreased to 40 (from 65).
+  - Right fist z-index set to 4.
+  - Image moved to (90, 6.5) (from (105, 4)).
+  - Damage increased to 70 (from 64).
 - [v0.10.1](https://github.com/HasangerGames/suroi/releases/tag/v0.10.1)
-  - Firing delay decreased to 900ms (from 1.75s)
-  - Switch delay increased to 900ms (from 750ms)
+  - Firing delay decreased to 900ms (from 1.75s).
+  - Switch delay increased to 900ms (from 750ms).
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Added casing particles
+  - Added casing particles.
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Damage decreased to 64 (from 68)
-  - Obstacle damage multiplier decreased to 1 (from 1.5)
-  - Range increased to 250 (from 180)
-  - Hand positions swapped
+  - Damage decreased to 64 (from 68).
+  - Obstacle damage multiplier decreased to 1 (from 1.5).
+  - Range increased to 250 (from 180).
+  - Hand positions swapped.
 - [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
-  - Reload time decreased to 850ms (from 1s)
-  - Movement speed penalty set to 10%
-  - Moving spread increased to 1.3° (from 1°)
-  - Standing spread set to 0.8°
-  - Damage increased to 68 (from 60)
-  - Obstacle damage multiplier decreased to 1.5 (from 2)
-  - Range increased to 180 (from 128)
-  - Bullet velocity decreased to 0.33 (from 0.35)
-  - Tracer width set to 1.4
-  - Tracer length set to 2.5
+  - Reload time decreased to 850ms (from 1s).
+  - Movement speed penalty set to 10%.
+  - Moving spread increased to 1.3° (from 1°).
+  - Standing spread set to 0.8°.
+  - Damage increased to 68 (from 60).
+  - Obstacle damage multiplier decreased to 1.5 (from 2).
+  - Range increased to 180 (from 128).
+  - Bullet velocity decreased to 0.33 (from 0.35).
+  - Tracer width set to 1.4.
+  - Tracer length set to 2.5.
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
-  - Ammo type set to 7.62mm
-  - Ammo spawned with gun set to 30
-  - Magazine capacity decreased to 5 (from Infinity)
-  - Single reload enabled
-  - Damage decreased to 60 (from 80)
-  - Standing spread increased to 1° (from 0°)
-  - Length increased to 11 (from 9)
+  - Ammo type set to 7.62mm.
+  - Ammo spawned with gun set to 30.
+  - Magazine capacity decreased to 5 (from Infinity).
+  - Single reload enabled.
+  - Damage decreased to 60 (from 80).
+  - Standing spread increased to 1° (from 0°).
+  - Length increased to 11 (from 9).
 - [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
-  - Added
+  - Added.
 
 # Gallery
 

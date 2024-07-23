@@ -14,9 +14,9 @@ Chairs drop no loot when broken.
 
 # Trivia
 
-- The Chair was designed by platonthek
+- The Chair was designed by platonthek.
 
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added
+  - Added.

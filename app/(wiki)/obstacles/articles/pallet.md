@@ -14,9 +14,9 @@ Pallets drop no loot when broken.
 
 # Trivia
 
-- The Pallet was designed by platonthek
+- The Pallet was designed by platonthek.
 
 # History
 
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Added
+  - Added.

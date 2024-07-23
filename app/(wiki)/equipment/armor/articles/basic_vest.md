@@ -6,11 +6,11 @@ The Basic Vest is easily obtained from common loot sources such as normal, AEGIS
 
 # Trivia
 
-- The Basic Vest was designed by Slapdap
+- The Basic Vest was designed by Slapdap.
 
 # History
 
  - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-   - Unique pickup sound added 
+   - Unique pickup sound added.
  - [v0.7.0](https://github.com/HasangerGames/suroi/releases/tag/v0.7.0)
-   - Added 
+   - Added.
