@@ -33,8 +33,8 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "globals": "^15.8.0",
     "postcss": "^8.4.39",
-    "typescript": "^5.5.3",
-    "typescript-eslint": "^7.16.1"
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.17.0"
   },
   "dependencies": {
     "@cspell/dict-ru_ru": "^2.2.1",
@@ -46,7 +46,7 @@
     "@tailwindcss/typography": "^0.5.13",
     "@tanstack/react-query": "^5.51.11",
     "chart.js": "^4.4.3",
-    "cspell": "^8.11.0",
+    "cspell": "^8.12.1",
     "fuse.js": "^7.0.0",
     "lucide-react": "^0.408.0",
     "next": "^14.2.5",
