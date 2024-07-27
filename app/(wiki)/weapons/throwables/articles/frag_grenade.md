@@ -10,7 +10,7 @@ The Frag Grenade, named by the US military as the M67 grenade, is an evolution o
 ## Using
 - Frag Grenades deal lots of damage and can be used to damage or kill an enemy that is in an area where they can't be shot at, such as behind cover.
 - Hold down the fire button to start cooking the grenade. To throw it, put your mouse cursor over to the target and release the fire button. All throwables go to where the mouse cursor is to a limited range.
-  - Don't cook the grenade for too long (see fuse time), as the grenade can explode in your hands.
+  - Don't cook the grenade for too long, as the grenade can explode in your hands if you don't throw it before the 4 second fuse time.
 - A strategy known as "grenade spamming" is effective during the late game, where the safe zone is very small and limiting.
   - To do this, cover most of the safe zones with Grenades by rapidly spamming them.
   - This will force your opponents out of cover into the zone, where you can finish them off using a long-ranged weapon.
