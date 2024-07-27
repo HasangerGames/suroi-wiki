@@ -5,7 +5,7 @@ The **Confetti Grenade** is an explosive [Throwable](/throwables) added in the v
 
 # Strategies
 ## Using
-- Confetti Grenades can be used in a similar manner to Frag Grenades, but keep in mind their lower radius and damage. 
+- Confetti Grenades can be used in a similar manner to [Frag Grenades](/throwables/frag_grenade), but keep in mind their lower radius and damage. The same 4 second fuse time applies to the Confetti Grenade.
   - See the [Frag Grenade](/throwables/frag_grenade) article for more information.
 
 ## Countering
