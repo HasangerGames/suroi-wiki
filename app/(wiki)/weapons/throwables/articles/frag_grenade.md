@@ -16,7 +16,7 @@ The Frag Grenade, named by the US military as the M67 grenade, is an evolution o
   - This will force your opponents out of cover into the zone, where you can finish them off using a long-ranged weapon.
   - Grenade spamming can also be used to make a quick escape from a fight, since it stops opponents from following you.
 - You can use the explosive power of the Grenade to launch other grenades, which can be used to damage opponents.
-  - This also works on loot. Launching loot out of reach of your opponents can be effective in the end game.
+  - This also works on loot; launching loot out of reach of your opponents can be effective in the end game.
   - However, make sure to stand back as the grenades can be launched by each other, possibly in your direction depending on the order of the explosions.
 
 ### Grenade Boosting (WIP)
