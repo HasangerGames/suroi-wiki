@@ -10,7 +10,7 @@ A Smoke Grenade, designed as a canister-type device, serves various military pur
   - This means that you can use it as a way to easily dodge bullets or to heal, as the enemy does not know where you are.
   - You can also use it on offense as a way to hide yourself while attacking, making it harder for your enemy to find your exact location.
   - However, while inside the smoke, your scope is reduced to 1x, which can  make it hard to see enemies. 
-- Unlike the [Frag Grenade](/weapons/throwables/frag_grenade), Smoke Grenades can't be cooked.
+- Like the [Frag Grenade](/weapons/throwables/frag_grenade), Smoke Grenades cook the same way except the time it takes is only 2 seconds.
 
 ## Countering
 - If the enemy is using the Smoke Grenade offensively, you can also hide in the smoke when it is safe to do so.
