@@ -34,7 +34,7 @@
     "globals": "^15.8.0",
     "postcss": "^8.4.40",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^7.17.0"
+    "typescript-eslint": "^7.18.0"
   },
   "dependencies": {
     "@cspell/dict-ru_ru": "^2.2.1",
