@@ -21,11 +21,11 @@ Confetti Grenades are only obtainable from the [Confetti Grenade Box](/obstacles
 
 # History
 
-- v0.18.3
+- [v0.18.3](https://github.com/HasangerGames/suroi/releases/tag/v0.18.3)
   - Made unobtainable.
-- v0.18.2
+- [v0.18.2](https://github.com/HasangerGames/suroi/releases/tag/v0.18.2)
   - Made obtainable during event.
-- v0.18.1
+- [v0.18.1](https://github.com/HasangerGames/suroi/releases/tag/v0.18.1)
   - Made unobtainable.
-- v0.18.0
+- [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0)
   - Added.
