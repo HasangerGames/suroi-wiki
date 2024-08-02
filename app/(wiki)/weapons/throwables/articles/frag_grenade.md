@@ -9,6 +9,7 @@ The Frag Grenade, named by the US military as the M67 grenade, is an evolution o
 # Strategies
 ## Using
 - Frag Grenades deal lots of damage and can be used to damage or kill an enemy that is in an area where they can't be shot at, such as behind cover.
+  - Note that grenades can only be thrown over certain obstacles. So make sure you don't accidentally throw a grenade into a wall and it explodes right next to you. (Read more [here](https://github.com/HasangerGames/suroi/blob/master/common/src/definitions/obstacles.ts#L23))
 - Hold down the fire button to start cooking the grenade. To throw it, put your mouse cursor over to the target and release the fire button. All throwables go to where the mouse cursor is to a limited range.
   - Don't cook the grenade for too long, as the grenade can explode in your hands if you don't throw it before the 4 second fuse time.
 - A strategy known as "grenade spamming" is effective during the late game, where the safe zone is very small and limiting.
