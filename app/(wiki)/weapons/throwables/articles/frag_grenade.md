@@ -41,6 +41,7 @@ This is a special technique that abuses the behavior of frag grenades pushing ot
 ## Countering
 - Move away from the grenade to avoid as much damage as possible.
   - This is usually not a challenge, but can be if you are in an enclosed space or your opponent times their grenade well.
+  - Note that if your opponent has been cooking the grenade, it will immediately, or very quickly, explode after being thrown.
 - If your opponent utilizes "grenade spamming", you can try to rush forward and out-DPS them at close range using a weapon such as the [Flues](/weapons/guns/flues) or [Micro Uzi](/weapons/guns/micro_uzi).
 
 
