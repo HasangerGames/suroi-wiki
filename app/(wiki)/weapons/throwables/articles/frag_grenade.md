@@ -52,7 +52,7 @@ Frag Grenades can sometimes be obtained from [Regular Crates](/obstacles/regular
 - The Frag Grenade is based on the real-life M67 grenade used by the U.S. military.
 
 # History
-- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0).
   - Added.
 
 <Gallery
