@@ -44,5 +44,5 @@ A crane always spawns parallel to the Cargo Ship and contains a large amount of 
 
 # History
 
-- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0).
   - Added.

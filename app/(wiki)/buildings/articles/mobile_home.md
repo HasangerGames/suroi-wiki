@@ -15,7 +15,7 @@ Nine Mobile Homes spawn across the map in random positions. All mobile homes con
 
  # History
 
-- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
+- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0).
   - Improved hitboxes.
-- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0).
   - Added.
