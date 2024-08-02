@@ -22,7 +22,7 @@ The Frag Grenade, named by the US military as the M67 grenade, is an evolution o
 ### Grenade Boosting (WIP)
 This is a special technique that abuses the behavior of frag grenades pushing other frag grenades. It involves throwing two or more grenades next to each other to get more range than the normal maximum throw distance. (Discovered by Lava and Kenos)
 
-- The easy way: more consistent, but requires planning
+- The easy way: more consistent, but requires planning.
   - While not moving both the player and mouse, throw two or more grenades near you, and then move out to avoid the explosion.
   - Each grenade will boost each other consistently.
   - Point in the opposite direction you want to aim.
@@ -35,7 +35,7 @@ This is a special technique that abuses the behavior of frag grenades pushing ot
 
 - Disadvantages
   - There is a large risk factor to grenade boosting, as interference from obstacles (ie. trees) and other explosions (ie. enemy frag grenades) can make grenade boosting inconsistent and may boost a grenade back to you, exploding you.
-  - Grenade boosts are well telegraphed and can be easily predicted, you can only really use this with scope advantage
+  - Grenade boosts are well telegraphed and can be easily predicted, you can only really use this with scope advantage.
   - It can waste a lot of frags.
 
 ## Countering
