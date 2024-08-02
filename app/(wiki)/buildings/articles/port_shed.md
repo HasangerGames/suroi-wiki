@@ -20,7 +20,7 @@ The Port Shed has barely any loot (only a [Bookshelf](/obstacles/bookshelf) and 
 
 # History
 
-- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0).
   - Fixed an issue where the window on the Port Shed was nonfunctional.
-- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0).
   - Added.
