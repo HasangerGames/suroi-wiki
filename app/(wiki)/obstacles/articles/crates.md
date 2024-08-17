@@ -22,6 +22,7 @@ All crates drop some sort of loot. The Regular Crate drops the [lowest quality l
 # Trivia
 
 - Crates were amongst the first obstacles added to the game.
+- The AEGIS crate is named after the [Aegis Combat System](https://www.lockheedmartin.com/en-us/products/aegis-combat-system.html).
 
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
