@@ -16,13 +16,13 @@
   },
   "license": "GPL-3.0",
   "devDependencies": {
-    "@eslint/js": "^9.8.0",
+    "@eslint/js": "^9.9.0",
     "@next/eslint-plugin-next": "^14.2.5",
-    "@stylistic/eslint-plugin": "^2.6.1",
+    "@stylistic/eslint-plugin": "^2.6.4",
     "@types/eslint__js": "^8.42.3",
     "@types/luxon": "^3.4.2",
     "@types/mdx": "^2.0.13",
-    "@types/node": "^20.14.14",
+    "@types/node": "^20.15.0",
     "@types/react": "^18.3.3",
     "@types/react-collapse": "^5.0.4",
     "@types/react-dom": "^18.3.0",
@@ -32,7 +32,7 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "globals": "^15.9.0",
-    "postcss": "^8.4.40",
+    "postcss": "^8.4.41",
     "typescript": "^5.5.4",
     "typescript-eslint": "^7.18.0"
   },
@@ -43,10 +43,10 @@
     "@next/bundle-analyzer": "^14.2.5",
     "@next/mdx": "^14.2.5",
     "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.13",
-    "@tanstack/react-query": "^5.51.21",
+    "@tailwindcss/typography": "^0.5.14",
+    "@tanstack/react-query": "^5.51.23",
     "chart.js": "^4.4.3",
-    "cspell": "^8.13.1",
+    "cspell": "^8.14.1",
     "fuse.js": "^7.0.0",
     "lucide-react": "^0.408.0",
     "next": "^14.2.5",
@@ -56,7 +56,7 @@
     "react-collapse": "^5.1.1",
     "react-dom": "^18.3.1",
     "react-tooltip": "^5.28.0",
-    "tailwindcss": "^3.4.7"
+    "tailwindcss": "^3.4.10"
   },
   "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
 }
