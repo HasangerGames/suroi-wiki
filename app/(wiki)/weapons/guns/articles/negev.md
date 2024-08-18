@@ -1,7 +1,7 @@
 The **IWI Negev NG-5**, known in-game as the **Negev** is a LMG utilizing the 5.56mm ammunition. It was added to the game in the [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0) "Just the Two of Us" update on March 31st, 2024. The Negev features a high fire rate and DPS combined with a large magazine capacity.
 
 # Background
-The Negev was designed in the late 1980s to replace the aging Galil ARM. Many variants have been developed, in both 7.62x51mm and 5.56x45mm NATO. It has gained popularity among many agencies around the world for being reliable and packing many features. Learn more about the Negev [here](https://en.wikipedia.org/wiki/IWI_Negev).
+The Negev started development in 1985 to replace the aging Galil ARM. The negev started service with the Israel defence forces in 1997 and is still in service to this day. Many variants have been developed, in both 7.62x51mm and 5.56x45mm NATO. It has Become very well known due to its increadible reliability, fire power, and penetration capabilities. Learn more about the Negev [here](https://en.wikipedia.org/wiki/IWI_Negev).
 
 # Strategies
 ## Using
@@ -14,7 +14,7 @@ The Negev was designed in the late 1980s to replace the aging Galil ARM. Many va
 - If your enemy is far away, such as 8x range, move closer so you can kill them easier and not waste ammo.
 - The Negev has a 2x obstacle multiplier, meaning it shreds through obstacles. If an opponent hides behind a destructible obstacle, don't hesitate to plow right through it.
 - Because the Negev is so rare, it can be used to bait players by leaving it on the ground.
-  - Be wary of a Negev as a ground, as it might be bait
+  - Be wary of a Negev on the ground, as it might be bait
 - Don't openly hold the Negev when not in combat. It has a large slowdown and makes you a prime target to others due to the distinctive world image.
 
 ## Countering
@@ -29,7 +29,7 @@ The Negev was designed in the late 1980s to replace the aging Galil ARM. Many va
 - Waste your opponents ammunition by dodging and hiding behind cover. Since the Negev burns through ammo, you may be able to force them to run low or even out altogether.
 
 # Obtaining
-The most common way to find a Negev is through a [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone). It can also spawn rarely as world loot.
+Finding a Negev is no easy task. The most common way to find a Negev is through a [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone). It can also spawn, rarely, as world loot.
 
 # Trivia
 - The Negev is one of two guns (the other being the [MG5](/weapons/guns/mg5)) in Suroi that utilizes a belt feed system.
