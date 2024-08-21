@@ -55,19 +55,19 @@ export default async function Home() {
         <Card title="Open Source">
           This wiki is open source! You can help by contributing{" "}
           <Link href="/meta/writingarticles">writing</Link> or{" "}
-          <Link href="/meta/developing">code</Link>
+          <Link href="/meta/developing">code</Link>.
         </Card>
         <Card title="Elegant">
           We aim to make the user experience smooth and fast while providing
-          advanced features
+          advanced features.
         </Card>
         <Card title="Generated Information">
           Wiki information is a combination of game definitions and written
-          articles
+          articles.
         </Card>
         <Card title="Auto Updated">
           Information is based on commit <CommitLink sha={HEAD} /> and on branch{" "}
-          <BranchLink branch={BRANCH} />
+          <BranchLink branch={BRANCH} />.
         </Card>
       </GridTable>
       <div>
