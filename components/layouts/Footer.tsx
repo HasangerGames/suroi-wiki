@@ -38,7 +38,7 @@ export default function Footer() {
           <span>Made with love by Compositr and Kenos</span>
           <FooterLink href="/credits">Game and Wiki Credits</FooterLink>
           <FooterLink href="https://nextjs.org">Next.JS by Vercel</FooterLink>
-          <FooterLink href="https://tailwindcss.org">TailwindCSS</FooterLink>
+          <FooterLink href="https://tailwindcss.com">TailwindCSS</FooterLink>
           <FooterLink href="https://fusejs.io">Fuse.js</FooterLink>
         </div>
       </div>
