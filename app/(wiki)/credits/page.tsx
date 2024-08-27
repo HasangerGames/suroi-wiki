@@ -14,7 +14,7 @@ type User = {
 const WIKI_TEAM: User[] = [
   {
     name: "Compositr",
-    description: "Main Wiki Developer",
+    description: "Lead Wiki Developer",
     avatar: "https://avatars.githubusercontent.com/u/43405050",
     website: "https://compositr.dev"
   },
@@ -106,7 +106,7 @@ const GAME_TEAM: User[] = [
     avatar: "https://avatars.githubusercontent.com/u/72819276"
   },
   {
-    name: "Limenade",
+    name: "LimeNade",
     description: "Developer",
     avatar: "https://avatars.githubusercontent.com/u/88803242",
     website: "https://limenade.me"
