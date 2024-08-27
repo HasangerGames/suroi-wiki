@@ -60,7 +60,6 @@ const WIKI_CONTRIB: string[] = [
   "brianzjk",
   "emeraldneo",
   "HeheBoi420",
-  "Hugh Jass",
   "ei-pi",
   "CroissantEdit",
   "blazingyoda",
