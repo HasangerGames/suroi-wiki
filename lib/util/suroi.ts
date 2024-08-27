@@ -93,6 +93,7 @@ type ObjectCategoryMapping<Category extends ObjectCategory> = {
 export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
 
 export function getSuroiImageLink<
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
   T extends ObjectDefinition | ItemDefinition | InventoryItemDefinition
 >(obj: T, variation?: number, append?: string | string[], dual?: boolean) {
   switch (true) {
