@@ -106,6 +106,12 @@ const GAME_TEAM: User[] = [
     avatar: "https://avatars.githubusercontent.com/u/72819276"
   },
   {
+    name: "Limenade",
+    description: "Developer",
+    avatar: "https://avatars.githubusercontent.com/u/88803242",
+    website: "https://limenade.me"
+  },
+  {
     name: "Radians",
     description: "Developer",
     avatar: "https://avatars.githubusercontent.com/u/61424950"
@@ -141,7 +147,6 @@ const GAME_TEAM: User[] = [
 const GAME_CONTRIB: string[] = [
   "Compositr",
   "1092384",
-  "Limenade",
   "rsgtree",
   "Domincog",
   "atk-r",
