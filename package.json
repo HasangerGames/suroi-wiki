@@ -12,7 +12,7 @@
     "start": "next start",
     "lint": "eslint . --fix",
     "ci:lint": "eslint . --max-warnings 0",
-    "spellcheck": "cspell '**/*.{md,mdx}' --show-context --show-suggestions"
+    "spellcheck": "cspell **/*.{md,mdx} --show-context --show-suggestions"
   },
   "license": "GPL-3.0",
   "devDependencies": {
