@@ -19,12 +19,6 @@ const WIKI_TEAM: User[] = [
     website: "https://compositr.dev"
   },
   {
-    name: "Kenos",
-    description: "Wiki Developer, advanced features",
-    avatar: "https://avatars.githubusercontent.com/u/75338427",
-    website: "https://kenos.codeberg.page"
-  },
-  {
     name: "zedaes",
     description: "Wiki Developer",
     avatar: "https://avatars.githubusercontent.com/u/147769903"

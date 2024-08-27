@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-2">
           <b>Credits</b>
-          <span>Made with love by Compositr, Kenos, and zedaes ❤️</span>
+          <span>Made with love by Compositr and zedaes ❤️</span>
           <FooterLink href="/credits">Game and Wiki Credits</FooterLink>
           <FooterLink href="https://nextjs.org">Next.JS by Vercel</FooterLink>
           <FooterLink href="https://tailwindcss.com">TailwindCSS</FooterLink>
