@@ -11,6 +11,7 @@ type User = {
   website?: string
 };
 
+// DONT CHANGE THIS UNLESS MODS HAVE APPROVED YOUR CHANGES
 const WIKI_TEAM: User[] = [
   {
     name: "Compositr",
