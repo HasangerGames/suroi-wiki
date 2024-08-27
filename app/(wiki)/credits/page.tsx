@@ -170,7 +170,9 @@ const GAME_CONTRIB: string[] = [
   "Yeet120",
   "J0m1ty",
   "emecdelam",
-  "Lightningeek"
+  "Lightningeek",
+  "Poyo",
+  "Mr. Bubbles"
 ];
 
 // Too many names lol
