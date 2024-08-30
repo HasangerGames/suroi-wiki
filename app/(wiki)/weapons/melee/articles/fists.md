@@ -40,5 +40,5 @@ All players spawn with fists, so they are available for use at the start.
 
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Obstacle damage multiplier halved (from 2).
-- [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0) (original beta release)
+- [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
   - Added.
