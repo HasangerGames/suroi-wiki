@@ -1,20 +1,20 @@
 <Stub/>
 <Event/>
 
-The **Firework Launcher** is an RPG utilizing firework ammunition. It was added to the game in the [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0) "Back in the Saddle" update on July 8th, 2024. It shoots very slow, but has a high spread and damage. 
+The **Firework Launcher** is an RPG utilizing firework ammunition. It was added to the game in the [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0) "Back in the Saddle" update on July 8th, 2024. It shoots very slowly but has a high spread and damage. 
 
 # Strategies
 
 ## Using
 
 - The Firework Launcher is viable throughout the game due to its versatility.
-  - The [Firework Warehouse](/buildings/firework_warehouse) is intensely contested in the beginning of the game as it contains the Firework Launcher, Fireworks, and [Confetti Grenades](/weapons/throwables/confetti_grenade).
+  - The [Firework Warehouse](/buildings/firework_warehouse) is intensely contested at the beginning of the game as it contains the Firework Launcher, Fireworks, and [Confetti Grenades](/weapons/throwables/confetti_grenade).
   - Do not enter the building unless you spawn early into the match or are adequately equipped.
 - Make sure to pick up as much Firework ammunition as you can, as it will be difficult to obtain more later in the game.
   - If you are running low on Fireworks, you can break [Ammo Crates](/obstacles/ammo_crate) using a [Maul](/weapons/melee/maul) to get extra fireworks.
 - The Firework Launcher is most effective in long range fights.
   - It pairs very well with larger scopes, like the 8x and 15x.
-- The Fireworks shot out of the Firework Launcher move relatively slow, so make sure to lead your shots when firing at opponents.
+- The Fireworks shot out of the Firework Launcher move relatively slowly, so make sure to lead your shots when firing at opponents.
 - You can easily damage yourself with the Firework Launcher, so make sure that there are no obstructions in the firing path.
 
 ## Countering
