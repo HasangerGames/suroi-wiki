@@ -7,6 +7,8 @@ The Seax is a large single-edged blade with a tang in the centerline of the blad
 
 # Strategies
 
+## Using
+
 - The Seax has a longer cooldown but has higher damage.
  - Make sure to time your shots well, as missing one can be fatal.
  - Think of the Seax as a buffed [Baseball Bat](/weapons/melee/baseball_bat).
