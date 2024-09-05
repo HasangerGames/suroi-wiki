@@ -1,4 +1,4 @@
-The **Bag** is a piece of [Equipment](/equipment) added in the beta release of suroi on May 21st, 2023. The Bag allows players to store items such as [healing](/healing) in their inventory.
+The **Bag** is a piece of [Equipment](/equipment) added in the beta (v0.1.0) release of Suroi on May 21st, 2023. The Bag allows players to store items such as [healing](/healing) in their inventory.
 
 # Obtaining
 
