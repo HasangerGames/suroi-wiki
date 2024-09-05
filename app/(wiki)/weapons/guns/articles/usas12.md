@@ -56,7 +56,7 @@ The USAS-12 has currently been obtainable in only two events.
       url: "/img/articles/weapons/guns/usas12/six_usas12.webp",
       author: "sniperboi4",
       caption:
-        "Fellow Surians find six USAS-12s in [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0) (Halloween Mode 2023)",
+        "Fellow Suroians find six USAS-12s in [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0) (Halloween Mode 2023)",
     },
   ]}
 />
