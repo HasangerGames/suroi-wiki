@@ -6,7 +6,7 @@ All players have a Bag when they join the game, similar to [Fists](/weapons/mele
 
 # Trivia
 
-- The Bag cannot be dropped in any way as it's not shown on the GUI.
+- The Bag cannot be dropped in any way as it's not shown on the GUI (Graphical User Interface).
 - When equipping a higher-tier backpack, the Bag simply disappears instead of being dropped.
 
 # History
