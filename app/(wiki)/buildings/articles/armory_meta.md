@@ -12,7 +12,7 @@ The Barracks spawns in the lower left of the Armory. It contains five [Bunk Beds
 
 ## Center
 
-The Center spawns on the right side of the Armory. It contains two [Chairs](/obstacles/chair), a [Table](/obstacles/table), a Cabinet, a small drawer, and a [Gun Mount](/obstacles/gun_mounts) always containing a Maul.
+The Center spawns on the right side of the Armory. It contains two [Chairs](/obstacles/chair), a [Table](/obstacles/table), a Cabinet, a small drawer, and a [Gun Mount](/obstacles/gun_mounts) always containing a [Maul](/weapons/melee/maul).
 
 ## Vault
 
