@@ -35,6 +35,7 @@ A somewhat low level of detail (use existing pieces as a reference), colored ren
   - This is somewhat arbitrary, but is maintained for the sake of consistency.
 - Use full-width borders for exterior details and use half-width borders for interior ones.
   - Borders are usually very big and take up space; for this reason, interior details' borders are half the width of the exterior ones. For small details on the exterior of a gun, such as a sling attachment point, a front/rear sight, a rail, or charging handle, a half-width stroke can be used.
+    - While the outside of trigger guards can have either a full-width or half-width stroke, their insides should have half-width strokes, since there usually isn't a whole lot of space to play with. For the same reason, triggers should use half-width strokes.
   - "Full-width" is defined as 8px and "half-width" as 4px.
   - A half-width stroke can be omitted if its inclusion would add too much noise. This doesn't happen often, as a detail too minute to warrant a stroke is typically too minute to warrant inclusion, but that's not to say it's impossible.
 - Borders use miter joints, with a miter angle of 29°.
@@ -65,7 +66,6 @@ _All of these are the opinions of this document's author._
 - Don't use borders to fill holes or as geometry. Borders are arguably decoration, and using them for what they aren't leaves one open to misaligning pieces of geometry. (_Also, it makes killfeed icons more annoying to produce because holes in geometry have to be patched._) Not only that, a border that acts as geometry ends up looking "thin", because it has no border, whereas everything else does.
 - Don't draw the gun as one big shape and cut it up later. It reduces color variety, and as stated earlier, if something is significant enough to warrant its own shape, it should have its own shape and its own color.
 - Use multiple reference images. This decreases the chance that an oddity of one reference makes it into the final product. Ideally, there'll be a primary reference—this is the one that'll be traced on, and should be the best of all available ones. The other references are for clarifying ambiguities; sometimes, things can be obscured or too pixelated to make out, and that's where a second perspective can help. It can also be useful to take things a step further and use a 3D model or a YouTube video, if available.
-- While the outside of trigger guards can have either a full-width or half-width stroke, their insides should have half-width strokes, since there usually isn't a whole lot of space to play with. For the same reason, triggers should use half-width strokes.
 - Not every gun has to be fifty shades of gray. Sometimes, artificially introducing a subtle tint across a weapon helps make it look less bland.
 - Knowledge of the firearm being drawn goes a long way. Not only is it usually fun trivia, but even a surface-level understanding of a weapon's function can help clear up ambiguities. For example, knowing that the AUG has a progressive trigger will prevent one from fruitlessly searching for its fire selector (or thinking that its safety is the fire selector). In the context of the “ready to fire” guideline described above, knowledge of the weapon depicted is especially valuable; even if finding most of the information will require a very short search on the internet, that's still slower than just knowing it to begin with.
 
@@ -180,6 +180,8 @@ A silhouette single-colored version of an item used in the killfeed. It has no b
 
 The preferred way to make them is to take the loot image, remove all its borders, (patch all the geometry) make every piece #D9D9D9, do splits and draw the muzzle flash. The split size is as follows: scale the gun so that its length in px is the same as its real-life length in millimeters; at this scale, all splits correspond to 4px lines. When it comes to the muzzle flash, more artistic liberties are granted; while muzzle flashes generally look the same, their size and position can vary to whatever the artist thinks looks right, while maintaining visual consistency with the other pieces.
 
+Specifically for suppressed weapons, the muzzle flash is replace with a tracer that fades out from the barrel.
+
 ### Case Studies
 
 **_Note: this document was released alongside a minor overhaul of the game’s guns. Unlike the loot icons viewed before, all the icons here are from after the overhaul._**
@@ -209,6 +211,18 @@ Another relatively simple icon, albeit with more detailed splits around the bolt
 handle area, showing that it's possible to get creative with how one places
 their splits. The muzzle flash is also considerably longer than it is high,
 which is a theme amongst sniper rifles.
+
+#### RSh-12
+
+_Made by Solstice (original loot image by Solstice)_
+
+<MdxImage
+  src="/img/articles/art_guide/guns/killfeed/death_ray.png"
+  width="400"
+  height="91.43"
+/>
+
+This revolver perfectly demonstrates the alternate style used for suppressed weapons: the regular muzzle flash has been replaced with a tracer leaving the muzzle. Other than that, this icon is very standard in its splits and presentation.
 
 #### Death Ray
 
