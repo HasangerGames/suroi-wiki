@@ -19,7 +19,7 @@ A hatchet is a single-handed striking tool with a sharp blade on one side used t
   
 # Obtaining
 
-The Seax can be obtained from [Loot Trees](https://wiki.suroi.io/obstacles/loot_tree) and [Airdrops](https://wiki.suroi.io/obstacles/airdrops)
+The Seax can be obtained from [Loot Trees](https://wiki.suroi.io/obstacles/loot_tree) and [Airdrops](https://wiki.suroi.io/obstacles/airdrops).
 
 # History
 
