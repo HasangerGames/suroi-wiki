@@ -25,7 +25,7 @@ The outer area of the Vault contains four [Buttons](/obstacles/button), two [Gun
 ### Inner Vault
 
 The inner area of the Vault can only be accessed by entering a specific password into the four buttons on the outer vault. Once the correct password is entered, the [Vault Door](/obstacles/doors) opens, allowing access to the inner Vault.
-<Spoiler spoiler="Armory Vault puzzle solution">
+<Spoiler spoiler="Armory Vault Puzzle Solution">
 The password to the inner vault is ÖLJY, which is Finnish for "oil". The markings on the floor determine which buttons correspond to which letter.
 </Spoiler>
 
