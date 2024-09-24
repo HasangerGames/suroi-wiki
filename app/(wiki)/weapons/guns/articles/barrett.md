@@ -50,7 +50,8 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
 - The Barrett has the fastest bullet speed of any gun (excluding the [Death Ray](/weapons/guns/death_ray)).
 
 # History
-
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
+  - Removed
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Casing spawn x-offset decreased to 2 (from 4).
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)

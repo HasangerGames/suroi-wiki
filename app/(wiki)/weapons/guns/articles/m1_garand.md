@@ -32,7 +32,7 @@ The M1 Garand was designed by John Garand in the 1920s and 1930s, and production
 # Trivia
 
 - The "ping" sound after the last round is the sound of the enbloc clip being ejected.
-- The M1 Garand is one of 6 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [VSS](/weapons/guns/vss), [USAS-12](/weapons/guns/usas12), and [Mosin-Nagant](/weapons/guns/mosin).
+- The M1 Garand is one of 7 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [VSS](/weapons/guns/vss), [USAS-12](/weapons/guns/usas12), [DEagle](/weapons/guns/deagle), and [Mosin-Nagant](/weapons/guns/mosin).
 
 # History
 
