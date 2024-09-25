@@ -8,12 +8,12 @@ The Model 89 was developed by Big Horn Armory to supersede the older Model 86 an
 - The Model 89 has a very distinctive barrel color, so keep it unequipped until you are ready to attack your opponent so that you surprise them.
 - Make sure to conserve ammo when you can, as chances are you won't be able to find more.
 - The Model 89 can play either like a sniper or a DMR. You can quickswitch it or spam it. Choose whichever style suits you better, but spamming isn't a good option when ammo reserves are low.
-- Break [Ammo Crates](/obstacles/ammo_crate) if possible to try and get more 12.7mm ammunition.
+- Break [Ammo Crates](/obstacles/ammo_crate) if possible to try and get more .50 Cal ammunition.
 - Always reload when not fighting, as the Model 89 has a high total reload time.
 
 ## Countering
 - Strafe back and forth to make the Model 89 user miss. The slow rate of fire makes it harder to aim.
-- Hide behind indestructible cover such as [Oil Tanks](/obstacles/oil_tank) or [Sandbags](/obstacles/sandbags). The 12.7mm ammo that the Model 89 uses is very rare, so you may be able to make your opponent run out of it by wasting it.
+- Hide behind indestructible cover such as [Oil Tanks](/obstacles/oil_tank) or [Sandbags](/obstacles/sandbags). The .50 Cal ammo that the Model 89 uses is very rare, so you may be able to make your opponent run out of it by wasting it.
 
 # Obtaining
 The Model 89 is only found in Gold Airdrops and [Flint Stones](/obstacles/flint_stone).
@@ -23,6 +23,7 @@ The Model 89 is only found in Gold Airdrops and [Flint Stones](/obstacles/flint_
 - The Model 89 is one of the two weapons which use 12.7mm ammunition. The other weapon which uses 12.7mm rounds is the [M95 Barrett](/weapons/guns/barrett).
 
 ## History
-
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
+  - Changed ammunition type from .50 Cal from 12.7mm
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added.
