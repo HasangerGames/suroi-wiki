@@ -35,7 +35,12 @@ The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil 
 - It was the second pistol to be added to the game, after the G19.
 
 # History
-
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
+  - Standing spread decreased to 8° (from 12°).
+  - Moving spread decreased to 14° (from 19°).
+  - Decreased range to 70 (from 85).
+  - Dual variant standing spread decreased to 14° (from 17°)
+  - Dual variant moving spread decreased to 25° (from 35°)
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - New reload sound.
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)

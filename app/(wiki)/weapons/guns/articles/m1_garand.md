@@ -35,7 +35,8 @@ The M1 Garand was designed by John Garand in the 1920s and 1930s, and production
 - The M1 Garand is one of 7 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [VSS](/weapons/guns/vss), [USAS-12](/weapons/guns/usas12), [DEagle](/weapons/guns/deagle), and [Mosin-Nagant](/weapons/guns/mosin).
 
 # History
-
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
+  - Tweaked texture
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added strap to loot image.
   - Casing type set to .30-06.
