@@ -8,7 +8,7 @@ The only entrance to the Small Bunker is in the middle of four closely packed [T
 
 # Areas
 
-The only area of the Small Bunker is the main room, which contains a [Small Desk](/obstacles/small_desk), a [Control Panel](/obstacles/control_panel) (always the second variant), two [Boxes](/obstacles/box), two [Small Drawers](/obstacles/drawers), a [Fridge](/obstacles/fridge), an [AEGIS Crate](/obstacles/crates), and a [Small Bed](/obstaces/small_bed).
+The only area of the Small Bunker is the main room, which contains a [Small Desk](/obstacles/small_desk), a [Control Panel](/obstacles/control_panel) (always the second variant), two [Boxes](/obstacles/box), two [Small Drawers](/obstacles/drawers), a [Fridge](/obstacles/fridge), a [Crate](/obstacles/crates), and a [Small Bed](/obstaces/small_bed).
 
 # Loot & More
 
