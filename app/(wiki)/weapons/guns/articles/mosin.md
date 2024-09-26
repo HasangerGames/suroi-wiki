@@ -38,7 +38,8 @@ The Mosin-Nagant is an uncommon drop from higher-tier crates such as the [AEGIS 
 - The Mosin-Nagant is one of 7 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [USAS-12](/weapons/guns/usas12), [M1 Garand](/weapons/guns/m1_garand), [DEagle](/weapons/guns/deagle), and [VSS](/weapons/guns/vss).
 
 # History
-
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
+  - Can now be fully reloaded with a clip when empty.
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Casing type set to 7.62x54mmR.
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)

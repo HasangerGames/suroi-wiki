@@ -25,5 +25,6 @@ The Model 89 is only found in Gold Airdrops and [Flint Stones](/obstacles/flint_
 ## History
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
   - Changed ammunition type to .50 Cal from 12.7mm
+  - Tweaked texture
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added.
