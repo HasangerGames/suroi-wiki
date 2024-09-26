@@ -28,8 +28,9 @@ The Desert Eagle was designed by Magnum Research, Inc. and fires the largest cen
 - The DEagle can only be found in [Airdrops](/obstacles/airdrop_crate), or in the [Golden AEGIS Case](/obstacles/aegis_golden_case) located in the [Headquarters](/buildings/headquarters_meta)
 
 # Trivia
-- The DEagle is the only gun in the game that is gold
+- The DEagle is the only gun in the game that is gold.
 - The DEagle is one of 7 guns that were in surviv.io, the others being the [M1 Garand](/weapons/guns/m1_garand), [VSS](/weapons/guns/vss), [USAS-12](/weapons/guns/usas12), [AK-47](/weapons/guns/ak47), [Vector](/weapons/guns/vector), and [Mosin-Nagant](/weapons/guns/mosin).
+- The DEagle is one of the three weapons which use .50 Cal ammunition. The other weapons which use .50 Cal rounds are the [RSh-12](/weapons/guns/rsh12) and [Model 89](/weapons/guns/model_89).
 
 # History
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)

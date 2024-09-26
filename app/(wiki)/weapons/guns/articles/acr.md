@@ -2,7 +2,7 @@ The **Remington Arms Adaptive Combat Rifle**, known in-game as the **ACR**, is a
 
 # Background
 
-The ACR was designed by Magpul Industries in the early 2000s and was essentially a melting pot of many existing assault rifle designs. It was initially known as the "Masada", but after the design was licensed to Bushmaster Arms in 2008, the name became Adaptive Combat Rifle or ACR. Note that the ACR doesn't stand for Advanced Combat Rifle. Remington Arms designed and produced the select-fire military variant, while Bushmaster made the semi-automatic civilian version. Although the ACR was entered into the Army's Individual Carbine competition (to replace the M4 carbine), the competition was canceled. The ACR has only ever seen semi-established service in the hands of the Polish SSW. Learn more about the ACR [here](https://en.wikipedia.org/wiki/Adaptive_Combat_Rifle).
+The ACR was designed by Magpul Industries in the early 2000s and was essentially a melting pot of many existing assault rifle designs. It was initially known as the "Masada", but after the design was licensed to Bushmaster Arms in 2008, the name became Adaptive Combat Rifle or ACR. Note that the ACR doesn't stand for Advanced Combat Rifle. Remington Arms designed and produced the select-fire military variant, while Bushmaster made the semi-automatic civilian version. Although the ACR was entered into the Army's Individual Carbine competition (to replace the M4 carbine), the competition was canceled. The ACR has only ever seen semi-established service in the hands of the Polish SSW. 
 
 # Strategies
 

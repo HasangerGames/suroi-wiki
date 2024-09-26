@@ -1,7 +1,7 @@
 The **Вятско-Полянский машиностроительный завод Вепрь-12 (JSC Vyatskiye Polyany Molot Machine-Building Plant Vepr-12)** is an automatic shotgun utilizing the 12-gauge ammunition. It was added to the game in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14th, 2024. It has a very high damage output and is one of the best shotguns.
 
 # Background
-The Vepr-12 was originally designed by the Kalashnikov Group (then Izhmash) in the early 2000s. It was then redesigned by Molot Weapons and brought into production. To compete with the Saiga-12, new features were brought to the Vepr-12 such as an ambidextrous safety selector, a bolt hold-open mechanism, and an improved magazine feeding system. Learn more about the Vepr-12 [here](https://en.wikipedia.org/wiki/Vepr-12).
+The Vepr-12 was originally designed by the Kalashnikov Group (then Izhmash) in the early 2000s. It was then redesigned by Molot Weapons and brought into production. To compete with the Saiga-12, new features were brought to the Vepr-12 such as an ambidextrous safety selector, a bolt hold-open mechanism, and an improved magazine feeding system. 
 
 # Strategies
 ## Using
@@ -27,7 +27,6 @@ The Vepr-12 was originally designed by the Kalashnikov Group (then Izhmash) in t
 The Vepr-12 can be found rarely as world loot. It is more common in higher-tier loot sources such as [Viking Chests](/obstacles/viking_chest), [Briefcases](/obstacles/briefcase), and regular [Airdrops](/obstacles/airdrop_crate).
 
 # Trivia
-- In real life, the Vepr-12 is a direct competitor to the Saiga-12, which was in surviv.io
 - This is the second automatic shotgun to be added to Suroi, after the [USAS-12](/weapons/guns/usas12).
 
 # History

@@ -4,7 +4,7 @@ The **Daewoo Precision Industries USAS-12**, known in-game as the **USAS-12**, i
 
 # Background
 
-The USAS-12 was designed in 1989 by John Trevor Jr. and was based on previous automatic shotguns such as the AA-12. It was mass-produced by Daewoo Precision Industries starting in the early 1990s. The shotgun saw very limited success in the civilian market due to heavy restrictions. However, it sold well for use in private security forces and special forces in South American and Asian countries. Learn more about the USAS-12 [here](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_USAS-12).
+The USAS-12 was designed in 1989 by John Trevor Jr. and was based on previous automatic shotguns such as the AA-12. It was mass-produced by Daewoo Precision Industries starting in the early 1990s. The shotgun saw very limited success in the civilian market due to heavy restrictions. However, it sold well for use in private security forces and special forces in South American and Asian countries. 
 
 # Strategies
 

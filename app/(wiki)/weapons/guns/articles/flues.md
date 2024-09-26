@@ -24,9 +24,9 @@ The Flues gets its name from designer Emil Flues, who worked for the Ithaca Gun 
 - Depending on the opponent's skill, they may miss one or both of their shots. Strafe them and try to make them miss, then attack while they reload.
 - Be wary of [Bushes](/obstacles/bush) and entrances to Buildings if you suspect someone is camping.
 
-# Rarity
+# Obtaining
 
-The Flues is currently the second-rarest shotgun in the game. It is about 5 times as rare as the [M3K](/weapons/guns/m3k) and the same level of rarity as the [ARX-160](/weapons/guns/arx160) in normal mode.
+The Flues is currently the second-rarest shotgun in the game. It is about 5 times as rare as the [M3K](/weapons/guns/m3k) and the same level of rarity as the [ARX-160](/weapons/guns/arx160) in normal mode. The Flues can be rarely found as world loot, but it is more common in higher-tier places such as [Flint](/obstacles/flint_crate) and [AEGIS Crates](/obstacles/aegis_crate).
 
 # Trivia
 

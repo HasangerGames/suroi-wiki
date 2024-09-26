@@ -2,15 +2,13 @@
 The **Hatchet** is a melee weapon added in the [v0.18.1](https://github.com/HasangerGames/suroi/releases/tag/v0.18.1) update on June 21, 2024.
 
 # Background
-
-A hatchet is a single-handed striking tool with a sharp blade on one side used to cut and split wood, and a hammerhead on the other side. Hatchets may also be used for hewing when making flattened surfaces on logs; when the hatchet head is optimized for this purpose it is called a hewing hatchet. More about it at [here](https://en.wikipedia.org/wiki/Hatchet).
+A hatchet is a single-handed striking tool with a sharp blade on one side used to cut and split wood, and a hammerhead on the other side. Hatchets may also be used for hewing when making flattened surfaces on logs; when the hatchet head is optimized for this purpose it is called a hewing hatchet. ire hatchets have a spike on the back and are used to break down windows and doors.
 
 # Strategies
 
 ## Using
-
-- The Hatchet is good at breaking obstacles and it can break [Flint Stone](https://wiki.suroi.io/obstacles/flint_stone).
-- It is advised that you shouldn't use the Hatchet during fights due to its low DPS of 71.43 (for reference, [Fists](https://wiki.suroi.io/weapons/melee/fists) has a DPS of 80).
+- The Hatchet can be used to break [Ammo Crates](/obstacles/ammo_crate) and [Gun Lockers](/obstacles/gun_locker) that aren't breakable by [Fists](/weapons/melee/fists).
+- With a very high DPS, the Hatchet fairs well against most other melee weapons.
 
 ## Countering
 
@@ -19,7 +17,7 @@ A hatchet is a single-handed striking tool with a sharp blade on one side used t
   
 # Obtaining
 
-The Seax can be obtained from [Loot Trees](https://wiki.suroi.io/obstacles/loot_tree) and [Airdrops](https://wiki.suroi.io/obstacles/airdrops).
+The Seax can be obtained from [Loot Trees](obstacles/loot_tree) and [Airdrops](obstacles/airdrops).
 
 # History
 

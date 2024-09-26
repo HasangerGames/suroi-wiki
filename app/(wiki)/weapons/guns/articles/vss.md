@@ -2,7 +2,7 @@ The **Винто́вка Сна́йперская Специа́льная ("Spe
 
 # Background
 
-The VSS was developed beginning in 1983 by TsNIITochMash, a then-Soviet industrial design bureau. Internally suppressed and firing the subsonic 9x39mm cartridge, it was intended for use in secret clandestine operations by Russian special forces. The VSS was mainly issued to Spetsnaz units, where the rifle's ability to be easily broken down for transport was very useful. Learn more about the VSS [here](https://en.wikipedia.org/wiki/AS_Val_and_VSS_Vintorez).
+The VSS was developed beginning in 1983 by TsNIITochMash, a then-Soviet industrial design bureau. Internally suppressed and firing the subsonic 9x39mm cartridge, it was intended for use in secret clandestine operations by Russian special forces. The VSS was mainly issued to Spetsnaz units, where the rifle's ability to be easily broken down for transport was very useful.
 
 # Strategies
 

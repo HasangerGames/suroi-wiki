@@ -2,7 +2,7 @@ The Lewis gun (aka Lewis automatic machine gun or Lewis automatic rifle), known 
 
 # Background
 
-The Lewis gun was invented in 1911 by Isaac Newton Lewis, a U.S. Army colonel. It was widely used by the United Kingdom during the First World War. During the Second World War, old stores of Lewis guns supplemented the arsenal of the Allies. It saw use both as a LMG and a mounted weapon for boats, airplanes, and vehicles. It was withdrawn from service in the UK in 1946. Learn more about the Lewis Gun [here](https://en.wikipedia.org/wiki/Lewis_gun).
+The Lewis gun was invented in 1911 by Isaac Newton Lewis, a U.S. Army colonel. It was widely used by the United Kingdom during the First World War. During the Second World War, old stores of Lewis guns supplemented the arsenal of the Allies. It saw use both as a LMG and a mounted weapon for boats, airplanes, and vehicles. It was withdrawn from service in the UK in 1946.
 
 # Strategies
 

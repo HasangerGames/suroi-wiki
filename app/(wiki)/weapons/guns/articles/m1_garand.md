@@ -2,7 +2,7 @@ The **M1 Garand** is a DMR utilizing 7.62 ammunition. It was added to the game i
 
 # Background
 
-The M1 Garand was designed by John Garand in the 1920s and 1930s, and production started in 1937. It greatly increased the output of an individual soldier over older bolt-action rifles. Millions were made and used by the US during World War Two, and it saw continued use through the Korean War and even into the Vietnam War. A large number of countries have either purchased M1 Garands or received them from aid packages. Thus, the M1 Garand has been used in over 30 major conflicts worldwide since its inception. Learn more about the M1 Garand [here](https://en.wikipedia.org/wiki/M1_Garand).
+The M1 Garand was designed by John Garand in the 1920s and 1930s, and production started in 1937. It greatly increased the output of an individual soldier over older bolt-action rifles. Millions were made and used by the US during World War Two, and it saw continued use through the Korean War and even into the Vietnam War. A large number of countries have either purchased M1 Garands or received them from aid packages. Thus, the M1 Garand has been used in over 30 major conflicts worldwide since its inception.
 
 # Strategies
 

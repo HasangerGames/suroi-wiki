@@ -2,7 +2,7 @@ The **SIG Sauer MCX Spear**, known in-game as the **MCX Spear**, is an assault r
 
 # Background
 
-The MCX Spear is the civilian version of the XM7, which was selected by the US military in early 2019 as a potential replacement for the M4 carbine and M249 SAW. It is normally chambered in the new .277 SIG FURY cartridge, which performs better against body armor than the old 5.56x45mm NATO. The MCX Spear was offered on the civilian market starting in 2022. That same year, the United States Army awarded SIG Sauer a 10-year contract to produce the XM7 and XM250 to replace the M4 and M249. Learn more about the MCX Spear [here](https://en.wikipedia.org/wiki/SIG_MCX_Spear).
+The MCX Spear is the civilian version of the XM7, which was selected by the US military in early 2019 as a potential replacement for the M4 carbine and M249 SAW. It is normally chambered in the new .277 SIG FURY cartridge, which performs better against body armor than the old 5.56x45mm NATO. The MCX Spear was offered on the civilian market starting in 2022. That same year, the United States Army awarded SIG Sauer a 10-year contract to produce the XM7 and XM250 to replace the M4 and M249. 
 
 # Strategies
 

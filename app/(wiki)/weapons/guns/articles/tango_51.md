@@ -2,7 +2,7 @@ The **Tactical Operations Tango 51**, known in-game as the **Tango 51**, is a sn
 
 # Background
 
-The Tango 51 is a tactical sniper rifle designed and manufactured by Tactical Operations in the 1990s. It was designed to be a lightweight, compact weapon and for use by law enforcement snipers. In testing, it had incredible accuracy and comes guaranteed with a .25" MOA. Learn more about the Tango 51 [here](https://en.wikipedia.org/wiki/Tango_51).
+The Tango 51 is a tactical sniper rifle designed and manufactured by Tactical Operations in the 1990s. It was designed to be a lightweight, compact weapon and for use by law enforcement snipers. In testing, it had incredible accuracy and comes guaranteed with a .25" MOA.
 
 # Strategies
 

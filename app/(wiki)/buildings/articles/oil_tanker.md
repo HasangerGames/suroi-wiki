@@ -21,5 +21,7 @@ The control room features a large [Drawer](/obsatcles/drawers), a wide window, a
 - Use the oil tanks as cover when fighting dangerous enemies, but beware of grenades!
 
 # History
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0).
+  - Reworked
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0).
-  - Added.
+  - Added
