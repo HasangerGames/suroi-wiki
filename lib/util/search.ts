@@ -77,7 +77,7 @@ export const wikiPages: SearchItem[] = [
     name: "Skins",
     url: "/skins",
     description: "List of skins",
-    image: getSuroiImageLink(getSuroiItem("leia"), undefined, "base")
+    image: getSuroiImageLink(getSuroiItem("katie"), undefined, "base")
   },
   {
     name: "Writing Guide",
