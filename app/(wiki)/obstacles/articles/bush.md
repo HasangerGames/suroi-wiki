@@ -22,6 +22,7 @@ The Bush does not have any loot, but the Blueberry Bush has decent [loot](/loot#
   - Some newer players may not fully hide themselves in Bushes, and become easy targets.
 - If you aren't sure where players are during the final stages of the zone, they could be hiding in Bushes. Shoot at a couple and see if a player comes out.
 - Always try to pick up the loot in Blueberry Bushes, as they can have rare loot occasionally and are a good source of Healing Items.
+- Be wary of the potential of [C4](/weapons/throwables/c4) in Bushes, especially if there is high-value loot around it.
 
 # Trivia
 
