@@ -31,60 +31,60 @@ As a dev-only weapon, the Death Ray can only be obtained by developers, or on th
 # History
 
 - [v0.12.3](https://github.com/HasangerGames/suroi/releases/tag/v0.12.3)
-  - Moving spread decreased to 0.1° (from 0.25°).
+  - Moving spread decreased to 0.1° (from 0.25°)
 - [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
-  - Speed penalty increased to 8% (from 4%).
-  - Length decreased to 8.7 (from 9.7).
-  - Bullet velocity increased to 4 (from 1).
-  - Casing spawn moved to (4.5, 0.6) (from (0, 0)).
+  - Speed penalty increased to 8% (from 4%)
+  - Length decreased to 8.7 (from 9.7)
+  - Bullet velocity increased to 4 (from 1)
+  - Casing spawn moved to (4.5, 0.6) (from (0, 0))
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Set a custom tracer image.
-  - Bullet velocity increased to 1 (from 0.5).
-  - Added casing particles.
-  - Tracer length set to 10.
+  - Set a custom tracer image
+  - Bullet velocity increased to 1 (from 0.5)
+  - Added casing particles
+  - Tracer length set to 10
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Length decreased to 9.7 (from 11).
-  - Muzzle flash disabled.
-  - Damage reduced to 800 (from Infinity).
-  - Tracer opacity reset.
-  - Tracer length reset.
+  - Length decreased to 9.7 (from 11)
+  - Muzzle flash disabled
+  - Damage reduced to 800 (from Infinity)
+  - Tracer opacity reset
+  - Tracer length reset
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Drop-on-death enabled.
-  - Killstreak enabled.
-  - Hand positions swapped.
-  - Image x-offset decreased to 90 (from 100).
-  - Damage increased to Infinity (from 300).
+  - Drop-on-death enabled
+  - Killstreak enabled
+  - Hand positions swapped
+  - Image x-offset decreased to 90 (from 100)
+  - Damage increased to Infinity (from 300)
 - [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
-  - Magazine capacity decreased to 1 (from Infinity).
-  - Ammo type set to Power Cell.
-  - Drop-on-death disabled.
-  - Infinite ammo disabled.
-  - Reload duration increased to 1.4s (from 100ms).
-  - Firing delay decreased to 40ms (from 60ms).
-  - Switch delay increased to 500ms (from 0ms).
-  - Move speed penalty set to 8%.
-  - Firing speed penalty increased to 20% (from 0%).
-  - Recoil duration increased to 100ms (from 0ms).
-  - Standing spread set to 0.15°.
-  - Moving spread decreased to 0.25° (from 20°).
-  - Projectile count decreased to 1 (from 20).
-  - Quickswitch enabled.
-  - Damage increased to 300 (from 10).
-  - Obstacle damage multiplier increased to 2 (from 1).
-  - Bullet velocity increased to 0.5 (from 0.35).
-  - Range increased to 400 (from 128).
-  - Player penetration enabled.
-  - Obstacle penetration enabled.
-  - Tracer starting opacity set to 100%.
-  - Tracer ending opacity set to 50%.
-  - Tracer length set to 2.
+  - Magazine capacity decreased to 1 (from Infinity)
+  - Ammo type set to Power Cell
+  - Drop-on-death disabled
+  - Infinite ammo disabled
+  - Reload duration increased to 1.4s (from 100ms)
+  - Firing delay decreased to 40ms (from 60ms)
+  - Switch delay increased to 500ms (from 0ms)
+  - Move speed penalty set to 8%
+  - Firing speed penalty increased to 20% (from 0%)
+  - Recoil duration increased to 100ms (from 0ms)
+  - Standing spread set to 0.15°
+  - Moving spread decreased to 0.25° (from 20°)
+  - Projectile count decreased to 1 (from 20)
+  - Quickswitch enabled
+  - Damage increased to 300 (from 10)
+  - Obstacle damage multiplier increased to 2 (from 1)
+  - Bullet velocity increased to 0.5 (from 0.35)
+  - Range increased to 400 (from 128)
+  - Player penetration enabled
+  - Obstacle penetration enabled
+  - Tracer starting opacity set to 100%
+  - Tracer ending opacity set to 50%
+  - Tracer length set to 2
 - [v0.6.0](https://github.com/HasangerGames/suroi/releases/tag/v0.6.0)
-  - Magazine capacity increased to Infinity (from 255).
+  - Magazine capacity increased to Infinity (from 255)
   - Infinite ammo enabled.
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
-  - Ammo spawned with gun set to 0.
-  - Ammo type set to 7.62mm.
-  - Magazine capacity decreased to 255 (from Infinity).
-  - Reload time set to 100ms.
+  - Ammo spawned with gun set to 0
+  - Ammo type set to 7.62mm
+  - Magazine capacity decreased to 255 (from Infinity)
+  - Reload time set to 100ms
 - [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
-  - Silently added.
+  - Silently added

@@ -37,4 +37,4 @@ The most common way to find an MG5 is through a [Gold Airdrop](/obstacles/gold_a
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - Added.
+  - Added

@@ -28,6 +28,6 @@ The Warehouse always spawns with 3 [Regular Crates](/obstacles/regular_crate), 6
 # History
 
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Improved visibility around the Warehouse.
+  - Improved visibility around the Warehouse
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added.
+  - Added

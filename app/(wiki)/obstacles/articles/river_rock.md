@@ -1,4 +1,4 @@
-The **River Rock** is an [Obstacle](/obstacles) that spawn frequently in the rivers. It was added to the game in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the pin" update on January 15th, 2023. This is functionally the same as the other rock variants, just bigger than them.
+The **River Rock** is an [Obstacle](/obstacles) that spawns frequently in rivers. It was added to the game in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 15th, 2023. It is functionally the same as the other rock variants, just larger and with more health.
 
 # Location & Spawning
 
@@ -12,9 +12,9 @@ The River Rock drops no loot upon being destroyed.
 
 - If you're low on health and have nowhere else to go, you can try hiding behind this to heal and avoid bullets.
 - You can hide behind this with a gun that has little range or a melee weapon to force an opponent to approach where you can get a hit on them.
-- Remember that Rocks are breakable and aren't fool-proof barriers.
-- If there is a river rock that an enemy is hiding behind, you can destroy it to avoid getting close to them or to stop them from healing.
-- Players trying to hide behind rocks are often low on health and can make for easy kills.
+- Remember that River Rocks are breakable and aren't fool-proof barriers.
+- The River Rock has a lot of health, so unless you have a LMG, it's not worth trying to destroy to get an opponent hiding behind it.
+- Players trying to hide behind River Rocks are often low on health and can make for easy kills.
 
 # Trivia
 
@@ -23,12 +23,5 @@ The River Rock drops no loot upon being destroyed.
 - This rock has the largest hitbox of all the rocks in the game.
 
 # History
-
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added river rock variant.
-- [v0.12.5](https://github.com/HasangerGames/suroi/releases/tag/v0.12.5)
-  - Art updated for Mossy and Cracked variants.
-- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
-  - Added Moss and Cracked variants.
-- [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
-  - Added Rock.
+  - Added 

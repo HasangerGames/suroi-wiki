@@ -42,7 +42,7 @@ The G17 has currently been obtainable in only two events.
 # History
 
 - [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)
-  - Dual variant drafted but not added.
-  - Length increased to 6.2 (from 5.9).
+  - Dual variant drafted but not added
+  - Length increased to 6.2 (from 5.9)
 - [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
-  - Added.
+  - Added

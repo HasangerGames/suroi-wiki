@@ -34,9 +34,9 @@ Tablets are most readily obtained by breaking toilets in buildings, as well as t
 
 - [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Adrenaline now does not follow a flat linear rate for healing. Previously, regeneration was calculated by multiplying the adrenaline number by 0.00039. This gave a max regeneration rate of 1.2987 health/second. Now:
-    - Above 87.5 adrenaline now heals 2.75 health/second.
-    - Above 50 adrenaline now heals 2.125 health/second.
-    - Above 25 adrenaline now heals 1.125 health/second.
-    - Above 0 adrenaline now heals 0.625 health/second.
+    - Above 87.5 adrenaline now heals 2.75 health/second
+    - Above 50 adrenaline now heals 2.125 health/second
+    - Above 25 adrenaline now heals 1.125 health/second
+    - Above 0 adrenaline now heals 0.625 health/second
 - [v0.6.0](https://github.com/HasangerGames/suroi/releases/tag/v0.6.0)
-  - Added.
+  - Added

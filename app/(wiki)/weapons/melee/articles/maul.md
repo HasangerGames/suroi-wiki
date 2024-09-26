@@ -30,8 +30,8 @@ The Maul can only be obtained from the [Maul Mount](/obstacles/gun_mounts) in th
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - New texture.
+  - New texture
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Made obtainable.
+  - Made obtainable
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added.
+  - Added

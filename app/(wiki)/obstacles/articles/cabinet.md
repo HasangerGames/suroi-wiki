@@ -20,4 +20,4 @@ Cabinets drop medium-tier guns, healing, scopes, or equipment and reflect bullet
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added.
+  - Added

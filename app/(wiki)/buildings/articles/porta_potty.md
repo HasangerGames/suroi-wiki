@@ -27,12 +27,12 @@ The Porta Potty also has a roll of toilet paper and a small sink with hand sanit
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - Fixed items popping through the back wall.
+  - Fixed items popping through the back wall
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Improved hitboxes.
+  - Improved hitboxes
 - [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
-  - Fixed silent Porta Potty doors.
+  - Fixed silent Porta Potty doors
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Improved visibility around the Porta Potty.
+  - Improved visibility around the Porta Potty
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added.
+  - Added

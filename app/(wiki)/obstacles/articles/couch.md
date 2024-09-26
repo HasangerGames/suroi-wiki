@@ -19,6 +19,6 @@ The Couch drops no loot upon being broken.
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - New texture.
+  - New texture
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added.
+  - Added

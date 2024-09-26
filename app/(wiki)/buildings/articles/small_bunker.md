@@ -23,4 +23,4 @@ Most of the obstacles that generate inside of the Small Bunker can be broken to 
 # History
 
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
-  - Added.
+  - Added

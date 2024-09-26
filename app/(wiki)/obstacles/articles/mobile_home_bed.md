@@ -20,4 +20,4 @@ The Mobile Home Bed doesn't drop loot.
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added.
+  - Added

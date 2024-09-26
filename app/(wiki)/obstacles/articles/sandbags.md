@@ -16,4 +16,4 @@ Sandbags do not drop loot as they cannot be destroyed.
 
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added.
+  - Added

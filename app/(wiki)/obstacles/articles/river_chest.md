@@ -17,4 +17,4 @@ The River Chest drops high quality weapons. See the River Chest Guns & River Che
 
 # History
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Added.
+  - Added

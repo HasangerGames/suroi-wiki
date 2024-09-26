@@ -41,12 +41,12 @@ The USAS-12 has currently been obtainable in only two events.
 # History
 
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Casing type set to 12 gauge HE.
+  - Casing type set to 12 gauge HE
 - [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
-  - Recoil duration increased to 525ms (from 450ms).
-  - Explosion damage reduced to 35 (from 50).
+  - Recoil duration increased to 525ms (from 450ms)
+  - Explosion damage reduced to 35 (from 50)
 - [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
-  - Added.
+  - Added
 
 # Gallery
 

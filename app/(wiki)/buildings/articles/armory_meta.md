@@ -62,9 +62,9 @@ The Porta Potty spawns near the exterior of the Vault.
 # Trivia
 
 - The Armory was designed by Bear.
-- In real life, an armory is a place for a military to store weapons. Learn more about the armory [here](https://en.wikipedia.org/wiki/Arsenal).
+- In real life, an armory is a place for a military to store weapons
 
 # History
 
-- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0).
-  - Added.
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+  - Added

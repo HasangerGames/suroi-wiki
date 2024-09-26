@@ -19,24 +19,24 @@ Radios are a type of communication device that utilizes electromagnetic radio wa
 
 # History
 - [v0.17.1](https://github.com/HasangerGames/suroi/releases/tag/v0.17.1)
-  - Bullet offset set to 1.5.
+  - Bullet offset set to 1.5
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - New texture.
+  - New texture
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Switch delay increased to 250ms (from 0ms).
-  - Added unique reloading and switching sound effects.
+  - Switch delay increased to 250ms (from 0ms)
+  - Added unique reloading and switching sound effects
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Tracer as-particle enabled.
-  - Tracer z-index set to BuildingsCeiling.
-  - Bullet collision disabled.
+  - Tracer as-particle enabled
+  - Tracer z-index set to BuildingsCeiling
+  - Bullet collision disabled
 - [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)
-  - Range increased to 50 (from 0).
-  - Bullet speed decreased to 0.01 (from 1).
-  - Set a custom tracer image.
-  - Tracer opacity set to 0.8.
+  - Range increased to 50 (from 0)
+  - Bullet speed decreased to 0.01 (from 1)
+  - Set a custom tracer image
+  - Tracer opacity set to 0.8
   - Tracer max length force enabled.
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-  - Added.
+  - Added
 
 # Gallery
 

@@ -38,12 +38,12 @@ The M1 Garand was designed by John Garand in the 1920s and 1930s, and production
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
   - Tweaked texture
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Added strap to loot image.
-  - Casing type set to .30-06.
-  - Additional casing "enbloc" ejected.
+  - Added strap to loot image
+  - Casing type set to .30-06
+  - Additional casing "enbloc" ejected
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Casing velocity y-component set to [4, 15].
+  - Casing velocity y-component set to [4, 15]
 - [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)
-  - Length increased to 8.1 (from 7.8).
+  - Length increased to 8.1 (from 7.8)
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-  - Added.
+  - Added

@@ -20,4 +20,4 @@ The Fridge reflects bullets and always drops 2-3 [Colas](/healing/colas) upon be
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added.
+  - Added

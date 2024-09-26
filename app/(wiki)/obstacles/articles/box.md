@@ -20,4 +20,4 @@ The Box has similar [loot](/loot#box) to the [Regular Crate](/obstacles/regular_
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
-  - Added.
+  - Added

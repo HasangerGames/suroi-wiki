@@ -6,4 +6,4 @@ The Ice Pick is currently unobtainable.
 
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added, currently unobtainbale.
+  - Added, currently unobtainable

@@ -31,8 +31,8 @@ Gauze is a very common drop from crates, toilets, and the toilet in a Porta Pott
 # History
 
 - [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
-  - Usage time increased to 3s (from 2s).
+  - Usage time increased to 3s (from 2s)
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
-  - Gauze can now be added to a Player's inventory.
+  - Gauze can now be added to a Player's inventory
 - [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
-  - Added.
+  - Added

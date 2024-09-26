@@ -32,8 +32,8 @@ Airdrops contain rare and useful loot, including powerful weapons, large scopes,
 # History
 
 - [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0) _(2023 Winter)_
-  - Reskinned airdrops to be Christmas-themed.
-  - Fixed airdrops spawning in the gas.
-  - Fixed airdrop pings not showing up sometimes.
+  - Reskinned airdrops to be Christmas-themed
+  - Fixed airdrops spawning in the gas
+  - Fixed airdrop pings not showing up sometimes
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-  - Added Airdrops.
+  - Added Airdrops

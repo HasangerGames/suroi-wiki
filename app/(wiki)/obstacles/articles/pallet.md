@@ -19,4 +19,4 @@ Pallets drop no loot when broken.
 # History
 
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Added.
+  - Added
