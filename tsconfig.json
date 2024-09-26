@@ -20,7 +20,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@common/*": ["./vendor/suroi/common/src/*"]
     }
   },
   "include": [
