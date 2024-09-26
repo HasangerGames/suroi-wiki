@@ -25,7 +25,7 @@ The Desert Eagle was designed by Magnum Research, Inc. and fires the largest cen
 - Attack while the opponent is reloading, as the DEagle's long reload leaves them exposed (this mainly applies to opponents with Dual DEagles).
 
 # Obtaining
-- The DEagle can only be found in [Airdrops](/obstacles/airdrop_crate), or in the [Golden AEGIS Case](/obstacles/aegis_golden_case) located in the [Headquarters](/buildings/headquarters_meta)
+- The DEagle can only be found in [Airdrops](/obstacles/airdrop_crate), or in the [Golden AEGIS Case](/obstacles/aegis_golden_case) located in the [Headquarters](/buildings/headquarters_meta).
 
 # Trivia
 - The DEagle is the only gun in the game that is gold.
