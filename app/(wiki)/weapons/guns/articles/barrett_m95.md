@@ -62,7 +62,7 @@ The Barrett M95 is a redesigned version of the Barrett M90, which was itself a b
 <Gallery
   images={[
     {
-      url: "/img/articles/weapons/guns/barrett/double_barrett.webp",
+      url: "/img/articles/weapons/guns/barrett_m95/double_barrett.webp",
       author: "zhew3i",
       caption: "A player holding two Barrett M95s in [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0) (Snow Mode 2023)",
     },

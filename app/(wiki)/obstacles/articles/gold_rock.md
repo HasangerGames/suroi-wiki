@@ -1,4 +1,4 @@
-The **Gold Rock** is a very rare variant of the [Rock](/obstacles/rock), and was added in the [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0) "Locked & Loaded" update on June 24th, 2023. It has 25% more health than a normal Rock and drops a [Mosin-Nagant](/weapons/guns/mosin_nagant_nagant).
+The **Gold Rock** is a very rare variant of the [Rock](/obstacles/rock), and was added in the [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0) "Locked & Loaded" update on June 24th, 2023. It has 25% more health than a normal Rock and drops a [Mosin-Nagant](/weapons/guns/mosin_nagant).
 
 # Location & Spawning
 
