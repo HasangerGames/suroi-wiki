@@ -2,7 +2,7 @@ The **Mosin-Nagant** is a bolt-action sniper rifle utilizing 7.62mm ammunition. 
 
 # Background
 
-The Mosin-Nagant was designed in 1891 by Captain Sergei Mosin and Émile Nagant for the Russian Empire. It saw the introduction of the popular 7.62x54mmR cartridge. Despite its old age, the rifle has seen use in a multitude of conflicts and is still in active service in some areas. Learn more about the Mosin-Nagant [here](https://en.wikipedia.org/wiki/Mosin-Nagant).
+The Mosin-Nagant was designed in 1891 by Captain Sergei Mosin and Émile Nagant for the Russian Empire. It saw the introduction of the popular 7.62x54mmR cartridge. Despite its old age, the rifle has seen use in a multitude of conflicts and is still in active service in some areas.
 
 # Strategies
 

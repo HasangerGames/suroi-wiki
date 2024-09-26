@@ -2,7 +2,7 @@ The **Steyr AUG (Armee-Universal-Gewehr)**, known in-game as the **AUG**, is a b
 
 # Background
 
-The AUG was designed by Steyr Arms in 1977 entering service in the same year. Since then, it has been a popular choice for militaries worldwide, first exporting to the US in 1980 and other countries later. It and its variants are still in service in many modern armies. Learn more about the AUG [here](https://en.wikipedia.org/wiki/Steyr_AUG).
+The AUG was designed by Steyr Arms in 1977 entering service in the same year. Since then, it has been a popular choice for militaries worldwide, first exporting to the US in 1980 and other countries later. It and its variants are still in service in many modern armies.
 
 # Strategies
 
@@ -23,6 +23,9 @@ The AUG was designed by Steyr Arms in 1977 entering service in the same year. Si
 # Obtaining
 
 The AUG is a very common gun, being more common than the [AK-47](weapons/guns/ak47). It can be found in many Crates, such as the [Regular Crate](/obstacles/regular_crate) and [Flint](/obstacles/flint_crate)/[AEGIS Crates](/obstacles/aegis_crate), as well as ground loot.
+
+# Trivia
+- The AUG was the first green colored gun added to the game.
 
 # History
 

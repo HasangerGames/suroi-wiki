@@ -2,7 +2,7 @@ The **Barrett M95** also called the **Barrett**, is a powerful bolt-action snipe
 
 # Background
 
-The Barrett M95 is a redesigned version of the Barrett M90, which was itself a bullpup bolt-action version of the semi-automatic Barrett M82. Compared to the M90, the M95 is the adjustment of the pistol grip and trigger to gain better magazine clearance. Minor changes were also made, such as a chrome-plated barrel, a redesigned bolt handle, and a modified firing pin and trigger. The Barrett M82 was chosen over the M95 to become the US Army's new anti-materiel rifle, but it still sees usage in the hands of a variety of special forces worldwide. Learn more about the Barret M95 [here](https://en.wikipedia.org/wiki/Barrett_M95).
+The Barrett M95 is a redesigned version of the Barrett M90, which was itself a bullpup bolt-action version of the semi-automatic Barrett M82. Compared to the M90, the M95 is the adjustment of the pistol grip and trigger to gain better magazine clearance. Minor changes were also made, such as a chrome-plated barrel, a redesigned bolt handle, and a modified firing pin and trigger. The Barrett M82 was chosen over the M95 to become the US Army's new anti-materiel rifle, but it still sees usage in the hands of a variety of special forces worldwide.
 
 # Strategies
 

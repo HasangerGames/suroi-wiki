@@ -13,17 +13,17 @@ The Model 89 was developed by Big Horn Armory to supersede the older Model 86 an
 
 ## Countering
 - Strafe back and forth to make the Model 89 user miss. The slow rate of fire makes it harder to aim.
-- Hide behind indestructible cover such as [Oil Tanks](/obstacles/oil_tank) or [Sandbags](/obstacles/sandbags). The .50 Cal ammo that the Model 89 uses is very rare, so you may be able to make your opponent run out of it by wasting it.
+- Hide behind indestructible cover such as [Oil Tanks](/obstacles/oil_tank) or [Sandbags](/obstacles/sandbags). The .50 Cal ammo that the Model 89 uses is rare, so you may be able to make your opponent run out of it by wasting it.
 
 # Obtaining
 The Model 89 is only found in Gold Airdrops and [Flint Stones](/obstacles/flint_stone).
 
 # Trivia
 - The Model 89 in-game is an 18" carbine with a standard walnut stock and a matte stainless steel finish.
-- The Model 89 is one of the two weapons which use 12.7mm ammunition. The other weapon which uses 12.7mm rounds is the [M95 Barrett](/weapons/guns/barrett).
+- The Model 89 is one of the three weapons which use .50 Cal ammunition. The other weapons which use .50 Cal rounds are the [RSh-12](/weapons/guns/rsh12) and [DEagle](/weapons/guns/deagle).
 
 ## History
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
-  - Changed ammunition type from .50 Cal from 12.7mm
+  - Changed ammunition type to .50 Cal from 12.7mm
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added.

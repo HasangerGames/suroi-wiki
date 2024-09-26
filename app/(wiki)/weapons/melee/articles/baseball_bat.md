@@ -2,20 +2,19 @@ The **Baseball Bat** is a melee weapon added in the [v0.5.0](https://github.com/
 
 # Background
 
-The Baseball Bat is a smooth wooden or metal club used in the sport of baseball to hit a baseball after it has been thrown. By regulation, a baseball bat may not be larger than 2.75 inches in diameter and no more than 42 inches in length. A baseball bat can also be used in other ways, such as bludgeoning people. Learn more about Baseball Bats [here](https://en.wikipedia.org/wiki/Baseball_bat).
-
+The Baseball Bat is a smooth wooden or metal club used in the sport of baseball to hit a baseball after it has been thrown. By regulation, a baseball bat may not be larger than 2.75 inches in diameter and no more than 42 inches in length. A baseball bat can also be used in other ways, such as bludgeoning people.
 # Strategies
 
 ## Using
 
-- Compared to fists and other melee weapons, the Baseball Bat has a slower swing speed, so missing a hit is more punishing.
+- Compared to Fists and other melee weapons, the Baseball Bat has a slower swing speed, so missing a hit is more punishing.
 - The large swing range can help in melee fights if your opponent keeps switching directions.
 
 ## Countering
 
 - As with other melee weapons, the best way to avoid them is to keep the distance between you and your opponent.
 - The [K-Bar](/weapons/melee/kbar) can out-DPS the Baseball Bat, so it is an effective counter to it.
-  - [Fists](/weapons/melee/fists) also beat the baseball in terms of DPS and can be used as another counter. However, this requires much skill, as fists have a much smaller swing range.
+  - [Fists](/weapons/melee/fists) also beat the baseball in terms of DPS and can be used as another counter. However, this requires much skill, as Fists have a much smaller swing range.
 
 # Obtaining
 
@@ -25,7 +24,7 @@ Baseball Bats have a high chance of spawning from the [Melee Crate](/obstacles/m
 
 - The Baseball Bat was designed by Radians.
 - Baseball bats have been used for murder.
-- During the early days, players would use scrap wood to create their baseball bats.
+- During the early days of baseball, players would use scrap wood to create their bats.
 
 # History
 
