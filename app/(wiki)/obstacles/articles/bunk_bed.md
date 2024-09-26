@@ -19,4 +19,4 @@ Bunk Beds cannot be destroyed and reflect bullets.
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added.
+  - Added

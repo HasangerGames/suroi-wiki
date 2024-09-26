@@ -38,4 +38,4 @@ Control Panels don't drop loot when destroyed, but it will create an explosion t
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added tugboat variant
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Added.
+  - Added

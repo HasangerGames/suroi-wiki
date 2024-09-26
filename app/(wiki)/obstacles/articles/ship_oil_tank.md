@@ -21,6 +21,6 @@ The Ship Oil Tank is indestructible and drops no loot.
 # History
 
 - [0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Renamed to "Ship Oil Tank" (from "Ship Thing 1").
+  - Renamed to "Ship Oil Tank" (from "Ship Thing 1")
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Added.
+  - Added

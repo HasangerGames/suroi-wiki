@@ -41,6 +41,6 @@ The Office, located towards the back of the Refinery, contains a wall mount and 
 # History
 
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-  - The Stoner 63 now has a 1/100 chance of replacing the MCX Spear in the Office.
+  - The Stoner 63 now has a 1/100 chance of replacing the MCX Spear in the Office
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Added.
+  - Added

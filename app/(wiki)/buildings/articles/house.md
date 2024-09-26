@@ -39,11 +39,11 @@ The Garage contains a Bookshelf, [Regular Crate](/obstacles/regular_crate), [Bar
 
 # History
 
-- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0).
-  - Completely removed from the game.
-- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0).
-  - Removed from the map.
-- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0).
-  - Added holes in the roof to improve visibility.
-- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0).
-  - Added.
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
+  - Completely removed from the game
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
+  - Removed from the map
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
+  - Added holes in the roof to improve visibility
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
+  - Added

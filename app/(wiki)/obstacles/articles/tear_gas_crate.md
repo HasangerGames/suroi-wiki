@@ -20,4 +20,4 @@ Tear Gas Crates drop no loot when broken. When Tear Gas Crates are broken, they 
 
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added.
+  - Added

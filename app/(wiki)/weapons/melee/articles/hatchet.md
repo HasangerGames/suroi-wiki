@@ -22,4 +22,4 @@ The Seax can be obtained from [Loot Trees](obstacles/loot_tree) and [Airdrops](o
 # History
 
 - [v0.18.1](https://github.com/HasangerGames/suroi/releases/tag/v0.18.1)
-  - Added.
+  - Added

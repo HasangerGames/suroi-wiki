@@ -36,9 +36,9 @@ Medikits are most commonly found in Toilets and the Porta-Potty. They can also b
 # History
 
 - [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
-  - Heal amount increased to 100 (from 75).
-  - Usage time increased to 6s (from 5s).
+  - Heal amount increased to 100 (from 75)
+  - Usage time increased to 6s (from 5s)
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
-  - Medikits can now be added to a Player's inventory.
+  - Medikits can now be added to a Player's inventory
 - [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
-  - Added.
+  - Added

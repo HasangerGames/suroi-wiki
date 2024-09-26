@@ -38,27 +38,27 @@ The Stoner 63 is rarely found in [Flint](/obstacles/flint_crate) and [AEGIS Crat
 # History
 
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Casing velocity y-component set to [-15, -10].
-  - Additional casing "m13_link" ejected.
+  - Casing velocity y-component set to [-15, -10]
+  - Additional casing "m13_link" ejected
 - [v0.12.2](https://github.com/HasangerGames/suroi/releases/tag/v0.12.2)
-  - Moving spread buffed to 4.5° (from 7.5°).
+  - Moving spread buffed to 4.5° (from 7.5°)
 - [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
-  - Switch delay decreased to 400ms (from 500ms).
-  - Length decreased from 7.7 (from 8.2).
-  - Left fist moved to (105, -3) (from (115, -8)).
-  - Image x-offset decreased to 90 (from 100).
+  - Switch delay decreased to 400ms (from 500ms)
+  - Length decreased from 7.7 (from 8.2)
+  - Left fist moved to (105, -3) (from (115, -8))
+  - Image x-offset decreased to 90 (from 100)
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - World image updated.
-  - Length decreased to 8.2 (from 13.1).
-  - Left fist moved to (115, -8) (from (150, -6)).
-  - Right fist x-offset decreased to 40 (from 65).
-  - Right fist z-index set to 4.
-  - Image x-offset decreased to 100 (from 115).
-  - Casing spawn moved to (4, 0.6) (from (5.5, 0)).
+  - World image updated
+  - Length decreased to 8.2 (from 13.1)
+  - Left fist moved to (115, -8) (from (150, -6))
+  - Right fist x-offset decreased to 40 (from 65)
+  - Right fist z-index set to 4
+  - Image x-offset decreased to 100 (from 115)
+  - Casing spawn moved to (4, 0.6) (from (5.5, 0))
 - [v0.10.1](https://github.com/HasangerGames/suroi/releases/tag/v0.10.1)
-  - Image x-offset decreased to 115 (from 150).
+  - Image x-offset decreased to 115 (from 150)
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Added.
+  - Added
 
 # Gallery
 

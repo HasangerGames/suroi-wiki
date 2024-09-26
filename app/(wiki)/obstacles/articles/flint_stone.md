@@ -25,8 +25,8 @@ The Flint Stone has very good [loot](/loot#flint_stone), and always drops a [Gol
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - No longer drops healing items.
+  - No longer drops healing items
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-  - The Flint Stone now drops loot.
+  - The Flint Stone now drops loot
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Added.
+  - Added

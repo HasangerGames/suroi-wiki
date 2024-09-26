@@ -33,10 +33,10 @@ The **Firework Launcher** is an RPG utilizing firework ammunition. It was added 
 # History
 
 - [v0.18.3](https://github.com/HasangerGames/suroi/releases/tag/v0.18.3)
-  - Removed from the game.
+  - Removed from the game
 - [v0.18.2](https://github.com/HasangerGames/suroi/releases/tag/v0.18.2)
-  - Added back in golden airdrops.
+  - Added back in golden airdrops
 - [v0.18.1](https://github.com/HasangerGames/suroi/releases/tag/v0.18.1)
-  - Removed from the game.
+  - Removed from the game
 - [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0)
-  - Added.
+  - Added

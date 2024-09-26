@@ -59,5 +59,5 @@ In the black space between the Lounge and the Executive Office, there is a hidde
 - The Headquarters was designed by platonthek, with editing by Solstice and eiπ
 
 # History
-- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0).
-  - Added.
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
+  - Added

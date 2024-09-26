@@ -24,6 +24,6 @@ The Regular Crate can drop a huge variety of decent [loot](/loot/#regular_crate)
 # History
 
 - [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
-  - Regular Crates now drop loot.
+  - Regular Crates now drop loot
 - [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
-  - Added.
+  - Added

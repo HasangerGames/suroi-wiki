@@ -18,10 +18,11 @@ Containers always contain one ground loot item on its floor.
   - This usually kills your opponent because the interior of a Container also reflects bullets, making them harder to dodge.
   - However, don't get too close, as your opponent could rush you.
     - You can also be hit by your own bullets.
-# Trivia
 
+# Trivia
 - The Containers were designed by platonthek.
+
 # History
 
-- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0).
-  - Added.
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
+  - Added

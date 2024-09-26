@@ -22,6 +22,6 @@ The pumpkin drops one of the following guns: - 95% chance for a [G17 (scoped)](/
 # History
 
 - [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
-  - Phased out the Halloween Map (including the Pumpkin).
+  - Phased out the Halloween Map (including the Pumpkin)
 - [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
-  - Added.
+  - Added

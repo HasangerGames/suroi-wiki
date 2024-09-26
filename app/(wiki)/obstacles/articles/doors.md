@@ -24,8 +24,8 @@ Wooden, Glass, Metal and Porta Potty Doors can be interacted with to change thei
 # History
 
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0).
-  - Added Glass, Secret, and Metal Doors.
+  - Added Glass, Secret, and Metal Doors
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0).
-  - Added Vault Door.
+  - Added Vault Door
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0).
-  - Added Door and Garage Door.
+  - Added Door and Garage Door

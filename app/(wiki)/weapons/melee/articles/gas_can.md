@@ -27,6 +27,6 @@ The only way to obtain the Gas Can in normal mode is to head to the [Ship](/buil
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - New texture.
+  - New texture
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Added.
+  - Added

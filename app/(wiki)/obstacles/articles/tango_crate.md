@@ -20,4 +20,4 @@ The Tango Crate always drops 1-5 [Tango 51s](/weapons/guns/tango_51) and either 
 # History
 
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Added.
+  - Added

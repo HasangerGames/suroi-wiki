@@ -22,5 +22,5 @@ The Crane itself does not have any loot, but it does have a large number of [AEG
 
 # History
 
-- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0).
-  - Added.
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
+  - Added

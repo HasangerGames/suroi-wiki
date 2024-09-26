@@ -29,7 +29,7 @@ A [Radio](/weapons/guns/radio) spawns on the floor in the interior of every Sea 
 
 # Trivia
 
-- The Tugboats were designed by Platonthek and emeraldneo.
+- The Sea Traffic Control building was designed by Platonthek and emeraldneo.
 
 # History
 

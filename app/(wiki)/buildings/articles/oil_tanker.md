@@ -20,8 +20,11 @@ The control room features a large [Drawer](/obsatcles/drawers), a wide window, a
   - In case it has, watch out for enemies that might have it.
 - Use the oil tanks as cover when fighting dangerous enemies, but beware of grenades!
 
+# Trivia
+- Although it seems huge, the Oil Tanker is actually quite small compared to versions in real life.
+
 # History
-- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0).
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Reworked
-- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0).
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added

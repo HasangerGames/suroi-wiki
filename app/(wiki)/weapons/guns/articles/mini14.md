@@ -35,19 +35,19 @@ The Mini-14 can be found rarely as world loot but is more common in rare drops s
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Casing velocity y-component set to [4, 15].
+  - Casing velocity y-component set to [4, 15]
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-  - Standing spread increased to 2° (from 1°).
-  - Moving spread increased to 5° (from 2.5°).
+  - Standing spread increased to 2° (from 1°)
+  - Moving spread increased to 5° (from 2.5°)
 - [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
-  - Recoil duration increased to 155ms (from 140ms).
+  - Recoil duration increased to 155ms (from 140ms)
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - Updated world image.
-  - Length decreased to 7.4 (from 11.9).
-  - Left fist moved to (96, -2) (from (130, -6)).
-  - Right fist x-offset decreased to 40 (from 65).
-  - Right fist z-index set to 4.
-  - Image moved to (85, 0) (from (120, 1.5)).
-  - Tracer length set to 1.5.
+  - Updated world image
+  - Length decreased to 7.4 (from 11.9)
+  - Left fist moved to (96, -2) (from (130, -6))
+  - Right fist x-offset decreased to 40 (from 65)
+  - Right fist z-index set to 4
+  - Image moved to (85, 0) (from (120, 1.5))
+  - Tracer length set to 1.5
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Added.
+  - Added

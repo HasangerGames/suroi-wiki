@@ -32,4 +32,4 @@ The ACR was designed by Magpul Industries in the early 2000s and was essentially
 # History
 
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-  - Added.
+  - Added

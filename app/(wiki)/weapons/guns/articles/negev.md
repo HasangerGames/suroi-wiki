@@ -39,4 +39,4 @@ Finding a Negev is no easy task. The most common way to find a Negev is through 
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - Added.
+  - Added

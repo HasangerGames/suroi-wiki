@@ -22,5 +22,5 @@ The Port Warehouse contains a bunch of [Regular Crates](/obstacles/regular_crate
 
 # History
 
-- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0).
-  - Added.
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
+  - Added

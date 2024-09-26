@@ -21,4 +21,4 @@ Small Refinery Barrels drop no loot and explode when broken. It can also reflect
 # History
 
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
-  - Added.
+  - Added

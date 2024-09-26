@@ -20,19 +20,17 @@ All crates drop some sort of loot. The Regular Crate drops the [lowest quality l
 - Crates can provide limited cover in a pinch, however, they are easily destroyed with any type of weapon.
 
 # Trivia
-
 - Crates were amongst the first obstacles added to the game.
-- The AEGIS crate is named after the [Aegis Combat System](https://www.lockheedmartin.com/en-us/products/aegis-combat-system.html).
 
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added the Grenade Crate.
+  - Added the Grenade Crate
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
-  - Added the AEGIS, Flint and Melee Crates.
+  - Added the AEGIS, Flint and Melee Crates
 - [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
-  - Regular Crates now drop loot.
+  - Regular Crates now drop loot
 - [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
-  - Added the Regular Crate. This does not drop anything yet.
+  - Added the Regular Crate, currently no loot table
 
 # Gallery
 

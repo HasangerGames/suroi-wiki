@@ -33,13 +33,13 @@ The Bush does not have any loot, but the Blueberry Bush has decent [loot](/loot#
 - [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
   - Added a reskinned version of Blueberry Bush for Halloween Map (red berries)
 - [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
-  - Added Blueberry Bush.
+  - Added Blueberry Bush
 - [v0.3.0](https://github.com/HasangerGames/suroi/releases/tag/v0.3.0)
-  - Bush texture updated.
+  - Bush texture updated
 - [v0.2.0](https://github.com/HasangerGames/suroi/releases/tag/v0.2.0)
-  - Bush texture updated.
+  - Bush texture updated
 - [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0)
-  - Added Bush.
+  - Added Bush
 
 <Gallery
   images={[

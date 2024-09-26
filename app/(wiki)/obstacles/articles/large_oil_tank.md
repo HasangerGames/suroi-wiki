@@ -19,4 +19,4 @@ The Large Oil Tank cannot be destroyed and reflects bullets.
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
-  - Added.
+  - Added

@@ -21,4 +21,4 @@ Look out for a tree with a slightly lighter color that also has a button on it. 
 # History
 
 - [v0.18.3](https://github.com/HasangerGames/suroi/releases/tag/v0.18.3)
-  - Added.
+  - Added

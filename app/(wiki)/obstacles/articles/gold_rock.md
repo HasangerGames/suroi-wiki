@@ -23,6 +23,6 @@ The Gold Rock has a [100% chance](/loot#gold_rock) of dropping a Mosin-Nagant.
 # History
 
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
-  - The Gold Rock no longer drops the Tango 51.
+  - The Gold Rock no longer drops the Tango 51
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
-  - Added.
+  - Added
