@@ -1,7 +1,7 @@
 The **KRISS Vector**, known in-game as the **Vector** is a SMG utilizing the 9mm ammunition. It features a high rate of fire and high DPS, as well as using very common ammo.
 
 # Background
-Then known as Transformational Defense Industries, the Vector was designed by KRISS USA in 2006. It has been officially produced since 2009. The standout feature of the Vector is a novel delayed blowback system that redirects the recoil to improve muzzle climb and reduce felt recoil. This leads to the Vector being very accurate compared to other weapons when fired automatically. The Vector has seen limited use worldwide, namely by the armies and national police of Bangladesh and Thailand and the national police of Panama. 
+Then known as Transformational Defense Industries, the Vector was designed by KRISS USA in 2006. It has been officially produced since 2009. The standout feature of the Vector is a novel delayed blowback system that redirects the recoil to improve muzzle climb and reduce felt recoil. This leads to the Vector being very accurate compared to other weapons when fired automatically. The Vector has seen limited use worldwide, namely by the armies and national police of Bangladesh and Thailand and the national police of Panama.
 
 # Strategies
 ## Using
@@ -30,7 +30,7 @@ Then known as Transformational Defense Industries, the Vector was designed by KR
 The Vector can be found very rarely as world loot. However, the easiest way to acquire a Vector is to find one from a [Briefcase](/obstacles/briefcase) at either the [Oil Tanker](/buildings/oil_tanker) or the [Armory](/buildings/armory_meta). It can also be found the in the [Viking Chest](/obstacles/viking_chest). It also spawns in regular [Airdrops](/obstacles/airdrop_crate).
 
 # Trivia
-- The Vector is one of 7 guns that were in surviv.io, the others being the [M1 Garand](/weapons/guns/m1_garand), [VSS](/weapons/guns/vss), [USAS-12](/weapons/guns/usas12), [AK-47](/weapons/guns/ak47), [DEagle](/weapons/guns/deagle), and [Mosin-Nagant](/weapons/guns/mosin).
+- The Vector is one of 7 guns that were in surviv.io, the others being the [M1 Garand](/weapons/guns/m1_garand), [VSS](/weapons/guns/vss), [USAS-12](/weapons/guns/usas12), [AK-47](/weapons/guns/ak47), [DEagle](/weapons/guns/deagle), and [Mosin-Nagant](/weapons/guns/mosin_nagant).
 - The in-game Vector is the first and so far only gun that is colored white.
 
 # History

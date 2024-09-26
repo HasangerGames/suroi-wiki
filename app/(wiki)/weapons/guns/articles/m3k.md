@@ -2,7 +2,7 @@ The **Stoeger Industries M3K Freedom Series Defense Shotgun**, known in-game as 
 
 # Background
 
-The M3K is an affordable budget semi-automatic shotgun offered by Stoeger Industries. Instead of a gas system to chamber the next round, it uses an inertia system developed by Benelli (Stoeger is a subsidiary of Benelli). This equates to fewer parts, meaning the M3K is very reliable and requires low maintenance. The family of shotguns is well known for the abundance of aftermarket parts and add-ons. 
+The M3K is an affordable budget semi-automatic shotgun offered by Stoeger Industries. Instead of a gas system to chamber the next round, it uses an inertia system developed by Benelli (Stoeger is a subsidiary of Benelli). This equates to fewer parts, meaning the M3K is very reliable and requires low maintenance. The family of shotguns is well known for the abundance of aftermarket parts and add-ons.
 
 # Strategies
 
@@ -13,7 +13,7 @@ The M3K is an affordable budget semi-automatic shotgun offered by Stoeger Indust
 - Use the M3K with another shotgun, such as the [Model 37](/weapons/guns/model_37). This will cover both long-range and short-range.
   - This works best with quickswitching.
 - If your opponent also has an M3K, use the aforementioned "peek" strategy and avoid being damaged while wasting their ammo.
-- The M3K's long-range also pairs well with a sniper like the [Mosin-Nagant](/weapons/guns/mosin), if you quickswitch both. This is great if you can't find another sniper.
+- The M3K's long-range also pairs well with a sniper like the [Mosin-Nagant](/weapons/guns/mosin_nagant), if you quickswitch both. This is great if you can't find another sniper.
 
 ## Countering
 

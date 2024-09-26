@@ -7,11 +7,11 @@ The Desert Eagle was designed by Magnum Research, Inc. and fires the largest cen
 ## Using
 - If you find a DEagle on the ground, but have no .50 Cal ammunition, it's best to leave it as finding more .50 Cal is uncertain.
   - Be wary of the DEagle being used on an ambush, especially if it is near a [Bush](/obstacles/bush). There may be a player waiting to suprise you and/or [C4](/weapons/throwables/c4) placed nearby.
-- The DEagle has a very distinct bullet trail and sprite, which makes it easy to identify one at a distance. Try and keep it stowed away until confrontations to surprise your enemy. 
+- The DEagle has a very distinct bullet trail and sprite, which makes it easy to identify one at a distance. Try and keep it stowed away until confrontations to surprise your enemy.
 - Be conservative with your ammunition usage, as you will have trouble finding more .50 Cal ammunition.
 - Break [Ammo Crates](/obstacles/ammo_crate) if you have a weapon that can break them such as the [Maul](/weapons/melee/maul) or the [Falchion](/weapons/melee/falchion). You may be able to find more .50 Cal ammunition.
   - [Potted Plants](/obstacles/potted_plant) have a very small chance to drop .50 Cal ammo.
-- With it's mediocre accuracy, the DEagle is ill-suited to long range combat. It is excellent in close/medium-range combat due to its high DPS. 
+- With it's mediocre accuracy, the DEagle is ill-suited to long range combat. It is excellent in close/medium-range combat due to its high DPS.
   - Dual DEagles have an even higher DPS and can quickly cause opponents to panic and hide from the rain of golden bullets.
 - Pair the DEagle with a secondary high-DPS close/medium-range weapons such as SMGs like the [Micro Uzi](/weapons/guns/micro_uzi) or [Vector](/weapons/guns/vector) or shotguns like the [Model 37](/weapons/guns/model_37) or [Vepr-12](/weapons/guns/vepr12). You can use this seconadry weapon to quickly finish off opponents.
 - Make sure to have cover nearby that you can retreat to when you need to reload the DEagle, as the long reload time (especially for the Dual DEagles) can leave you vulnerable.
@@ -29,7 +29,7 @@ The Desert Eagle was designed by Magnum Research, Inc. and fires the largest cen
 
 # Trivia
 - The DEagle is the only gun in the game that is gold.
-- The DEagle is one of 7 guns that were in surviv.io, the others being the [M1 Garand](/weapons/guns/m1_garand), [VSS](/weapons/guns/vss), [USAS-12](/weapons/guns/usas12), [AK-47](/weapons/guns/ak47), [Vector](/weapons/guns/vector), and [Mosin-Nagant](/weapons/guns/mosin).
+- The DEagle is one of 7 guns that were in surviv.io, the others being the [M1 Garand](/weapons/guns/m1_garand), [VSS](/weapons/guns/vss), [USAS-12](/weapons/guns/usas12), [AK-47](/weapons/guns/ak47), [Vector](/weapons/guns/vector), and [Mosin-Nagant](/weapons/guns/mosin_nagant).
 - The DEagle is one of the three weapons which use .50 Cal ammunition. The other weapons which use .50 Cal rounds are the [RSh-12](/weapons/guns/rsh12) and [Model 89](/weapons/guns/model_89).
 
 # History

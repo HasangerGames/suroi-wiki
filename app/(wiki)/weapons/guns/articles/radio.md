@@ -15,7 +15,7 @@ Radios are a type of communication device that utilizes electromagnetic radio wa
 - Radios can be found rarely from common loot sources and regular [Airdrops](/obstacles/airdrop_crate). The easiest way to find a Radio is to head to the [Sea Traffic Control](/buildings/sea_traffic_control), where there is a guaranteed drop.
 
 ## Trivia
-- The radio used the same sound effects as the [Deathray](/weapons/guns/deathray) except for the firing sound until [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0).
+- The radio used the same sound effects as the [Deathray](/weapons/guns/death_ray) except for the firing sound until [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0).
 
 # History
 - [v0.17.1](https://github.com/HasangerGames/suroi/releases/tag/v0.17.1)
