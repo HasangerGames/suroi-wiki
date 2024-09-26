@@ -8,16 +8,16 @@ The Rsh-12 was created for Russian Federal Security Service for use in high-stak
 - The RSh-12 has limited ammo capacity, but enough damage to kill most players in 4-5 well placed shots. Try to lure your enemies away from cover, or destroy it with a secondary weapon such as an LMG.
 - You can use the RSh-12 as a good substitute for a shotgun at close ranges, with the same playstyle of peeking from cover. 
 - Use the RSh-12 to start the fight on a significant health advantage, as two shots will bring your opponent to half health or lower, then finish with your secondary weapon. This can also be done in reverse if the enemy is trying to retreat.
-- Despite its otherwise short range, the RSh-12 can still outrange powerful weapons such as the Vepr-12, Vector, and M3k while doing significant burst damage to them. 
+- Despite its otherwise short range, the RSh-12 can still outrange powerful weapons such as the [Vepr-12](weapons/guns/vepr12), [Vector](/weapons/guns/vector), and [M3K](/weapons/guns/m3k) while doing significant burst damage to them. 
 - Wait between longer distance shots to take advantage of the First Shot Accuracy. This will waste fewer bullets to spread.
 - If you're running low on ammo, find a piercing weapon and look for ammo crates. They commonly drop 20 rounds of .50 cal ammunition.
-- If you find the dual variant of the RSh-12, don't hesitate to aggressively push players at close range and inside buildings. The dual DPS is high enough to win fights against anything but a Flues.
+- If you find the dual variant of the RSh-12, don't hesitate to aggressively push players at close range and inside buildings. The dual RSh-12 DPS is high enough to win fights against anything but a [Flues](/weapons/guns/flues) or possibly [Dual DEagle](/weapons/guns/deagle).
 
 ## Countering
 - The RSh-12 has a significant reload time and rare ammo, and every missed shot matters. Try to make the RSh-12 user to waste their ammo.
 - The bullet velocity of the RSh-12 is rather low. Take advantage of this to dodge shots closer to the edge of its range.
-- Use long range, accurate weapons such as the MCX SPEAR, or any DMR or Sniper Rifle to pepper the RSh-12 user down from beyond their firing range.
-- Cover is especially effective against the RSh-12. Smoke grenades are equally good, as the RSh-12 user cannot afford to waste bullets blindly firing into smoke.
+- Use long range, accurate weapons such as the [MCX Spear](/weapons/guns/mcx_spear), or any DMR or sniper rifle to pepper the RSh-12 user down from beyond their firing range.
+- Cover is especially effective against the RSh-12. [Smoke grenades](/weapons/throwables/smoke_grenade) are equally good, as the RSh-12 user cannot afford to waste bullets blindly firing into smoke.
 - If you encounter a player with the dual variant of the RSh-12, do not engage them unless absolutely necessary. The extreme burst damage and accuracy can kill even fully armored players in around a second.
 
 # Obtaining
