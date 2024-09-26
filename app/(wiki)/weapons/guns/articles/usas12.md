@@ -4,7 +4,7 @@ The **Daewoo Precision Industries USAS-12**, known in-game as the **USAS-12**, i
 
 # Background
 
-The USAS-12 was designed in 1989 by John Trevor Jr. and was based on previous automatic shotguns such as the AA-12. It was mass-produced by Daewoo Precision Industries starting in the early 1990s. The shotgun saw very limited success in the civilian market due to heavy restrictions. However, it sold well for use in private security forces and special forces in South American and Asian countries. 
+The USAS-12 was designed in 1989 by John Trevor Jr. and was based on previous automatic shotguns such as the AA-12. It was mass-produced by Daewoo Precision Industries starting in the early 1990s. The shotgun saw very limited success in the civilian market due to heavy restrictions. However, it sold well for use in private security forces and special forces in South American and Asian countries.
 
 # Strategies
 
@@ -36,7 +36,7 @@ The USAS-12 has currently been obtainable in only two events.
 - USAS-12 stands for "Universal Sporting Automatic Shotgun 12 gauge".
 - In Suroi, the USAS-12 fires FRAG-12 ammunition.
   - FRAG-12 is a specialized 12-gauge shell that contains a small amount of high-explosive.
-- The USAS-12 is one of 7 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [VSS](/weapons/guns/vss), [M1 Garand](/weapons/guns/m1_garand), [DEagle](/weapons/guns/deagle), and [Mosin-Nagant](/weapons/guns/mosin).
+- The USAS-12 is one of 7 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [VSS](/weapons/guns/vss), [M1 Garand](/weapons/guns/m1_garand), [DEagle](/weapons/guns/deagle), and [Mosin-Nagant](/weapons/guns/mosin_nagant).
 
 # History
 

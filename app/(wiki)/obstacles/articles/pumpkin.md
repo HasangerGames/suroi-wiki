@@ -8,7 +8,7 @@ The **Pumpkin** is an [Obstacle](/obstacles) on the Halloween map. It was added 
 
 # Loot & More
 
-The pumpkin drops one of the following guns: - 95% chance for a [G17 (scoped)](/weapons/guns/s_g17). - 5% chance for a [USAS-12](/weapons/guns/usas12).
+The pumpkin drops one of the following guns: - 95% chance for a [G17 (scoped)](/weapons/guns/g17_scoped). - 5% chance for a [USAS-12](/weapons/guns/usas12).
 
 # Tips
 

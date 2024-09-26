@@ -17,7 +17,7 @@ The Tango 51 is a tactical sniper rifle designed and manufactured by Tactical Op
 ## Countering
 
 - Don't rush your opponent directly if you plan on attacking close-range, as it makes you an easy shot. Instead, strategically move around obstacles and strafe in open spaces to minimize the number of shots your opponent hits.
-- If you have another sniper rifle such as the [Mosin-Nagant](/weapons/guns/mosin), it can be used for a long-range fight between you and your opponent. Be aware that the Tango deals a lot of damage, so hide behind [Obstacles](/obstacles) and strafe whenever possible.
+- If you have another sniper rifle such as the [Mosin-Nagant](/weapons/guns/mosin_nagant), it can be used for a long-range fight between you and your opponent. Be aware that the Tango deals a lot of damage, so hide behind [Obstacles](/obstacles) and strafe whenever possible.
 
 # Obtaining
 
