@@ -16,32 +16,32 @@
   },
   "license": "GPL-3.0",
   "devDependencies": {
-    "@eslint/js": "^9.10.0",
-    "@next/eslint-plugin-next": "^14.2.12",
+    "@eslint/js": "^9.11.1",
+    "@next/eslint-plugin-next": "^14.2.13",
     "@stylistic/eslint-plugin": "^2.8.0",
     "@types/eslint__js": "^8.42.3",
     "@types/luxon": "^3.4.2",
     "@types/mdx": "^2.0.13",
-    "@types/node": "^22.5.5",
-    "@types/react": "^18.3.7",
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.10",
     "@types/react-collapse": "^5.0.4",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.1",
     "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-react": "^7.37.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "globals": "^15.9.0",
     "postcss": "^8.4.47",
     "typescript": "^5.6.2",
-    "typescript-eslint": "^8.6.0"
+    "typescript-eslint": "^8.7.0"
   },
   "dependencies": {
     "@cspell/dict-ru_ru": "^2.2.1",
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/react": "^3.0.1",
-    "@next/bundle-analyzer": "^14.2.12",
-    "@next/mdx": "^14.2.12",
+    "@next/bundle-analyzer": "^14.2.13",
+    "@next/mdx": "^14.2.13",
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/typography": "^0.5.15",
     "@tanstack/react-query": "^5.56.2",
@@ -49,7 +49,7 @@
     "cspell": "^8.14.4",
     "fuse.js": "^7.0.0",
     "lucide-react": "^0.408.0",
-    "next": "^14.2.12",
+    "next": "^14.2.13",
     "next-mdx-remote": "^5.0.0",
     "punycode": "^2.3.1",
     "react": "^18.3.1",
@@ -57,7 +57,7 @@
     "react-collapse": "^5.1.1",
     "react-dom": "^18.3.1",
     "react-tooltip": "^5.28.0",
-    "tailwindcss": "^3.4.12"
+    "tailwindcss": "^3.4.13"
   },
   "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1"
 }
