@@ -77,45 +77,9 @@ const GAME_TEAM: User[] = [
     avatar: "https://avatars.githubusercontent.com/u/20248785"
   },
   {
-    name: "Leia",
-    description: "Developer",
-    avatar: "https://avatars.githubusercontent.com/u/69596237"
-  },
-  {
     name: "Katloo",
     description: "Project Management",
     avatar: "https://avatars.githubusercontent.com/u/132523318"
-  },
-  {
-    name: "eiπ",
-    description: "Developer",
-    avatar: "https://avatars.githubusercontent.com/u/91853103"
-  },
-  {
-    name: "Chpsterz",
-    description: "Developer",
-    avatar: "https://avatars.githubusercontent.com/u/72819276"
-  },
-  {
-    name: "LimeNade",
-    description: "Developer",
-    avatar: "https://avatars.githubusercontent.com/u/88803242",
-    website: "https://limenade.me"
-  },
-  {
-    name: "Radians",
-    description: "Developer",
-    avatar: "https://avatars.githubusercontent.com/u/61424950"
-  },
-  {
-    name: "Milocat",
-    description: "Developer",
-    avatar: "https://avatars.githubusercontent.com/u/119687855"
-  },
-  {
-    name: "Albie",
-    description: "Developer",
-    avatar: "https://avatars.githubusercontent.com/u/78765172"
   },
   {
     name: "Error",
@@ -124,18 +88,41 @@ const GAME_TEAM: User[] = [
     website: "https://error430.dev"
   },
   {
+    name: "Solstice",
+    description: "Development Manager & Lead Designer",
+    avatar: "https://avatars.githubusercontent.com/u/89994419"
+  },
+  {
+    name: "eiπ",
+    description: "Developer",
+    avatar: "https://avatars.githubusercontent.com/u/91853103"
+  },
+  {
     name: "pap",
     description: "Developer",
     avatar: "https://avatars.githubusercontent.com/u/71824952"
   },
   {
-    name: "Solstice",
-    description: "Development Manager & Lead Designer",
-    avatar: "https://avatars.githubusercontent.com/u/89994419"
+    name: "Albie",
+    description: "Developer",
+    avatar: "https://avatars.githubusercontent.com/u/78765172"
+  },
+  {
+    name: "Radians",
+    description: "Developer",
+    avatar: "https://avatars.githubusercontent.com/u/61424950"
+  },
+  {
+    name: "Chpsterz",
+    description: "Developer",
+    avatar: "https://avatars.githubusercontent.com/u/72819276"
   }
 ];
 
 const GAME_CONTRIB: string[] = [
+  "Milocat",
+  "LimeNade",
+  "Leia",
   "hotduck",
   "Compositr",
   "1092384",
