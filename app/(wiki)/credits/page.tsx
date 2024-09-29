@@ -14,18 +14,6 @@ type User = {
 // DONT CHANGE THIS UNLESS MODS HAVE APPROVED YOUR CHANGES
 const WIKI_TEAM: User[] = [
   {
-    name: "Compositr",
-    description: "Lead Wiki Developer",
-    avatar: "https://avatars.githubusercontent.com/u/43405050",
-    website: "https://compositr.dev"
-  },
-  {
-    name: "Kenos",
-    description: "Wiki Developer, advanced features",
-    avatar: "https://avatars.githubusercontent.com/u/75338427",
-    website: "https://kenos.codeberg.page"
-  },
-  {
     name: "zedaes",
     description: "Wiki Developer",
     avatar: "https://avatars.githubusercontent.com/u/147769903"
@@ -58,6 +46,8 @@ const WIKI_TEAM: User[] = [
 ];
 
 const WIKI_CONTRIB: string[] = [
+  "Compositr",
+  "Kenos",
   "brianzjk",
   "emeraldneo",
   "HeheBoi420",
