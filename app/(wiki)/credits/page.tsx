@@ -132,15 +132,11 @@ const GAME_TEAM: User[] = [
     name: "Solstice",
     description: "Development Manager & Lead Designer",
     avatar: "https://avatars.githubusercontent.com/u/89994419"
-  },
-  {
-    name: "hotDuck",
-    description: "Developer",
-    avatar: "https://avatars.githubusercontent.com/u/99621572"
   }
 ];
 
 const GAME_CONTRIB: string[] = [
+  "hotduck",
   "Compositr",
   "1092384",
   "rsgtree",
