@@ -60,13 +60,8 @@ const toExport = GenericArticlePage({
     },
     {
       title: "Doors",
-      items: ["door", "vault_door", "garage_door", "porta_potty_door"],
+      items: ["door", "metal_door", "vault_door", "garage_door", "porta_potty_door"],
       fileName: "doors"
-    },
-    {
-      title: "Fences",
-      items: ["port_fence", "port_fence_side"],
-      fileName: "fences"
     },
     {
       title: "Control Panels",
@@ -82,7 +77,7 @@ const toExport = GenericArticlePage({
     {
       title: "Bush",
       items: ["bush", "blueberry_bush"],
-      fileName: "bush"
+      fileName: "bushes"
     }
   ]
 });
