@@ -70,9 +70,10 @@ export default function Gallery({ images }: GalleryProps) {
               )}
             </span>
             {images[currentImage].caption && (
-              <span className="absolute bg-black/20 left-[50%] translate-x-[-50%] bottom-0 rounded-md p-4 h-16 overflow-y-auto z-10 text-center">
-                {images[currentImage].caption}
-              </span>
+              <span
+                className="absolute bg-black/20 left-[50%] translate-x-[-50%] bottom-0 rounded-md p-4 h-16 overflow-y-auto z-10 text-center"
+                dangerouslySetInnerHTML={{__html: images[currentImage].caption ?? ""}}
+              ></span>
             )}
             {images[currentImage].type === "youtube"
               ? (
