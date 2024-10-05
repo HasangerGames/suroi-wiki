@@ -21,7 +21,7 @@ Gauze intended for use as a medical item is typically made of cotton. It is usef
 
 # Obtaining
 
-Gauze is a very common drop from crates, toilets, and the toilet in a Porta Potty. It can also be readily found as ground loot.
+Gauze is a very common drop from crates, toilets, and the toilet in a Porta Potty. It can also be readily found as ground loot and in berry bushes.
 
 # Trivia
 
