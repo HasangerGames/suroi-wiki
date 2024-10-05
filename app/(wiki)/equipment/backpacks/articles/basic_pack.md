@@ -2,7 +2,7 @@ The **Basic Pack** is a piece of [Equipment](/equipment) added in the [v0.7.0](h
 
 # Obtaining
 
-The Basic Pack is easily obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates). 
+The Basic Pack is easily obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates) and can also be found on the ground on building floors or berry bushes. 
 
 # Trivia 
 
