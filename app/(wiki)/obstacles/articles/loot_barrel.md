@@ -19,7 +19,7 @@ Loot barrels, as the name indicates, drop 1 [SR-25](/weapons/guns/sr25) with amm
 # Trivia
 
 - The loot barrel has a different marking on the yellow caution sign, use this to help identify it.
-- The loot barrel is the third cache added to the game (the other two are the [Loot Tree](/obstacles/loot_tree)and the [Gold Rock](/obstacles/gold_rock)
+- The loot barrel is the third cache added to the game (the other two are the [Loot Tree](/obstacles/loot_tree) and the [Gold Rock](/obstacles/gold_rock)
 
 # History
 
