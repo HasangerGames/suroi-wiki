@@ -1,21 +1,21 @@
-#Blue House
+# Blue House
 
 The Blue House is a variant of the classic [Red House](/buildings/red_house) and is the newest house to be added in the game. 
 
 
 
-#Location & Spawning
+# Location & Spawning
 
 1 Blue House tries to spawn every map, but usually there are more, scattered throughout the map.
 
 
-#Loot & More
+# Loot & More
 
 In part of the Blue House, there is a vault - 3  [Boxes](/obstacles/box), and some ground loot in the front. Because the loot in the vault isn't that good, ideally loot the other parts of the house first. 
 
 
 
- #Tips
+ # Tips
 
 -This structure, due to the average loot drop, may often be left untouched - so for players who spawned later, this can be a gold mine. 
 
@@ -27,7 +27,7 @@ In part of the Blue House, there is a vault - 3  [Boxes](/obstacles/box), and so
 
 
 
- #Trivia
+ # Trivia
 
  -This is the newest house added to the game in the v.19 update. 
 
@@ -37,6 +37,6 @@ In part of the Blue House, there is a vault - 3  [Boxes](/obstacles/box), and so
 
 #History
 
-- [v.19] (https://github.com/HasangerGames/suroi/releases/tag/v0.19)
+-[v.19] (https://github.com/HasangerGames/suroi/releases/tag/v0.19)
 
   - Added
