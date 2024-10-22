@@ -10,9 +10,10 @@ Only 1 construction site can spawn per map. It consists of a bunker entrance (cu
 
 - Loot the Flint Crate first as it has the best loot in the building but be careful as another player might try to blow up the barrels instantly killing you. 
 - The [Road Blocks](/obstacles/roadblock) and [Sandbags](/obstacles/sandbags) are good cover, but grenades can fly over them, forcing you out. 
-
+- Use the [Bunker Entrance](/obstacles/bunker_entrance)for cover, as it is indestructible and has good positioning.
 # Trivia
-
+- The construction site was the first hint of a multi-story building in the game.
+- One day, the bunker entrance may open...
 # History
 
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
