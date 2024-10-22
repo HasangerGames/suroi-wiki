@@ -37,6 +37,6 @@ In part of the Blue House, there is a vault - 3  [Boxes](/obstacles/box), and so
 
 #History
 
--[v.19] (https://github.com/HasangerGames/suroi/releases/tag/v0.19)
+-[v.19](https://github.com/HasangerGames/suroi/releases/tag/v0.19)
 
   - Added
