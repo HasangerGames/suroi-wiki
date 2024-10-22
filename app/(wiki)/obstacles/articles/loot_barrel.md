@@ -1,22 +1,22 @@
-#Loot Barrel
+# Loot Barrel
 
 Loot barrels are a type of obstacle added in the v.18.2 update on July 4th, 2024. 
 
 
 
-#Location & Spawning
+# Location & Spawning
 
 Loot barrels are bluish-gray and only 1 spawns per map. No loot barrels are found in structures. 
 
 
 
-#Loot & More
+# Loot & More
 
 Loot barrels, as the name indicates, drop loot when destroyed - 1 [SR-25](/weapons/guns/sr25) with ammo, a backpack or vest, a [Crowbar](/weapons/melees/crowbar), and 3 [Throwables](/weapons#throwables). However, the barrel does explode once broken, damaging nearby obstacles as well as players if they are close by. 
 
 
 
-#Tips
+# Tips
 
 -You can gun down or destroy this barrel if other players are close by, but this is not recommended due to the good loot that it drops once broken. 
 
@@ -26,7 +26,7 @@ Loot barrels, as the name indicates, drop loot when destroyed - 1 [SR-25](/weapo
 
 
 
-#Trivia
+# Trivia
 
  -The loot barrel has a different marking on the yellow caution sign, use this to help identify it.
 
@@ -34,7 +34,7 @@ Loot barrels, as the name indicates, drop loot when destroyed - 1 [SR-25](/weapo
 
 
 
-#History
+# History
 
 - [v.18.2] (https://github.com/HasangerGames/suroi/releases/tag/v0.18.2)
 
