@@ -73,6 +73,7 @@ The Green House has a 100% chance to drop an [HP-18](/guns/hp18) next to the fro
 
  - In v.11, the [TV](/obstacles/tv) and [Washing Machine](/obstacles/washing_machine) were removed - but 6 versions later, they were readded. In fact, hasanger foreshadowed this, saying "The big variant will be overhauled and re-added in a future update.".
 
+- Platonthek designed the Green House
 
 
 
