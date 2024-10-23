@@ -38,27 +38,27 @@ The Green House has a 100% chance to drop an [HP-18](/guns/hp18) next to the fro
 
 
 
--When coming in through the main entrance, loot the [HP-18 Gun Mount](/obstacles/gun_mount_hp18) so you can kill other players if they come in. 
+- When coming in through the main entrance, loot the [HP-18 Gun Mount](/obstacles/gun_mount_hp18) so you can kill other players if they come in. 
 
 
 
--[Potted Plants](/obstacles/potted_plant) usually drop ammo or heals - but no guns.
+- [Potted Plants](/obstacles/potted_plant) usually drop ammo or heals - but no guns.
 
 
 
--This is one of the most loot-dense houses in the game, so if you spawn late, it is unlikely it will be untouched. 
+- This is one of the most loot-dense houses in the game, so if you spawn late, it is unlikely it will be untouched. 
 
 
 
--Use the skylights and broken roof to check if there are players inside - but be careful, because they may be able to see you as well. 
+- Use the skylights and broken roof to check if there are players inside - but be careful, because they may be able to see you as well. 
 
 
 
--The covered entrance in the front of the house can be used to ambush players with as you are hidden from the other players' view. The [Flues](/guns/flues) or [Model 37](/guns/model_37) are good options for this. 
+- The covered entrance in the front of the house can be used to ambush players with as you are hidden from the other players' view. The [Flues](/guns/flues) or [Model 37](/guns/model_37) are good options for this. 
 
 
 
- -Note that your opponent might creep up to you from the side with another high-DPS weapon, so this is not a free-kill strategy.
+ - Note that your opponent might creep up to you from the side with another high-DPS weapon, so this is not a free-kill strategy.
 
 
 
@@ -70,11 +70,11 @@ The Green House has a 100% chance to drop an [HP-18](/guns/hp18) next to the fro
 
 
 
- -This is the biggest house in the game
+ - This is the biggest house in the game
 
 
 
- -In v.11, the [TV](/obstacles/tv) and [Washing Machine](/obstacles/washing_machine) were removed - but 6 versions later, they were readded. In fact, hasanger foreshadowed this - saying "The big variant will be overhauled and re-added in a future update.".
+ - In v.11, the [TV](/obstacles/tv) and [Washing Machine](/obstacles/washing_machine) were removed - but 6 versions later, they were readded. In fact, hasanger foreshadowed this - saying "The big variant will be overhauled and re-added in a future update.".
 
 
 
