@@ -55,7 +55,7 @@ The Green House has a 100% chance to drop an [HP-18](/guns/hp18) next to the fro
 
 
 - The covered entrance in the front of the house can be used to ambush players with as you are hidden from the other players' view. The [Flues](/guns/flues) or [Model 37](/guns/model_37) are good options for this. 
- - Note that your opponent might creep up to you from the side with another high-DPS weapon, so this is not a free-kill strategy.
+  - Note that your opponent might creep up to you from the side with another high-DPS weapon, so this is not a free-kill strategy.
 
 
 
