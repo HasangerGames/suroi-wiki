@@ -12,7 +12,8 @@ Only 1 construction site can spawn per map. It consists of a bunker entrance (cu
 - Use the [Bunker Entrance](/obstacles/bunker_entrance) for cover, as it is indestructible and has good positioning.
 # Trivia
 - The construction site was the first hint of a multi-story building in the game.
-- One day, the bunker entrance may open...
+- One day, the bunker entrance may open, revealing a bunker...
+- Platonthek and Yeet designed the construction site
 # History
 
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
