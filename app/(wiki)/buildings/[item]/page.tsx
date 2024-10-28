@@ -45,6 +45,18 @@ const toExport = GenericArticlePage({
       title: "Tugboats",
       items: ["tugboat_white", "tugboat_red"],
       fileName: "tugboats"
+    },
+    {
+      title: "Plumpkin Bunker",
+      items: [
+        "plumpkin_bunker",
+        "hay_shed_4",
+        "plumpkin_bunker_main",
+        "plumpkin_bunker_vault",
+        "plumpkin_bunker_second_puzzle",
+        "plumpkin_bunker_third_puzzle"
+      ],
+      fileName: "plumpkin_bunker_meta" // Same as port
     }
   ]
 });
