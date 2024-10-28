@@ -2,8 +2,10 @@ import LootCalc from "@/components/interactive/LootCalc";
 import TableWithHeader from "@/components/tables/TableWithHeader";
 import { Loots } from "@/vendor/suroi/common/src/definitions/loots";
 import {
+  FullLootTable,
   LootTables,
-  LootTiers
+  LootTiers,
+  SimpleLootTable
 } from "@/vendor/suroi/server/src/data/lootTables";
 
 export default function LootPage() {
@@ -16,32 +18,27 @@ export default function LootPage() {
           features around the map. Loot tables also define the chances of
           various items to drop.
         </p>
-        <h2>Loot Tiers</h2>
-        <p>
-          Loot tables are divided into certain common loot tiers. These loot
-          tiers are reused throughout many different tables.
-        </p>
       </div>
       <div>
-        {Object.entries(LootTiers).map(([name, tiers]) => (
+        {Object.entries(LootTables.normal).map(([name, tables]) => (
           <div key={name} id={name}>
             <TableWithHeader
               key={name}
-              title={`Tier ${name}`}
+              title={`Table ${name}`}
               header={["Item", "Count", "Weight", "% Chance"]}
-              content={tiers.map(tier => [
-                "item" in tier
+              content={("loot" in tables ? (tables as FullLootTable).loot : tables as SimpleLootTable).map(table => [
+                "item" in table
                   ? `Item ${
                     Loots.definitions.find(
-                      loot => loot.idString === tier.item
+                      loot => loot.idString === table.item
                     )?.name
                   }`
-                  : `Tier ${tier.tier}`,
-                tier.count ? tier.count.toString() : "1",
-                tier.weight,
+                  : `Table ${table.table}`,
+                table.count ? table.count.toString() : "1",
+                table.weight,
                 `${(
-                  (tier.weight
-                  / tiers.reduce((acc, tier) => acc + tier.weight, 0))
+                  (table.weight
+                  / ("loot" in tables ? (tables as FullLootTable).loot : tables as SimpleLootTable).reduce((acc, table) => acc + table.weight, 0))
                   * 100
                 ).toFixed(2)}%`
               ])}
@@ -57,35 +54,6 @@ export default function LootPage() {
           </p>
         </div>
       </div>
-      {Object.entries(LootTables).map(([name, tables]) => (
-        <div key={name} id={name}>
-          <TableWithHeader
-            title={`Table ${name}`}
-            header={["Tier/Item", "Count", "Weight", "% Chance"]}
-            content={tables.loot
-              .flat()
-              .map(tier => [
-                "item" in tier
-                  ? `Item ${
-                    Loots.definitions.find(
-                      loot => loot.idString === tier.item
-                    )?.name
-                  }`
-                  : `Tier ${tier.tier}`,
-                tier.count ? tier.count.toString() : "1",
-                tier.weight.toString(),
-
-                `${(
-                  (tier.weight
-                  / tables.loot
-                    .flat()
-                    .reduce((acc, tier) => acc + tier.weight, 0))
-                    * 100
-                ).toFixed(2)}%`
-              ])}
-          />
-        </div>
-      ))}
       <div className="mt-8">
         <div className="prose prose-invert" id="calc">
           <h2>Calculator</h2>
