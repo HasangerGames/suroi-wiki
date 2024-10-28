@@ -13,6 +13,7 @@ The Mosin-Nagant was designed in 1891 by Captain Sergei Mosin and Émile Nagant 
 - The Mosin-Nagant is best used when quickswitched with another sniper or a shotgun. This allows you to have high damage output at both close and long range.
   - The [M3K](/weapons/guns/m3k) and [Model 37](/weapons/guns/model_37) are both good choices to pair with the Mosin-Nagant. The Model 37 packs more damage, but the M3K may be better if you have an 8x or 15x scope and expect a lot of long-range engagements.
 - Always reload bullets when not actively engaging, as the Mosin-Nagant takes 850ms to load each bullet (4.25 seconds for a full reload) and this saved time could win you a fight.
+  - If you only have 1 bullet left, it's better to shoot it and use the full clip reload than to reload 4 bullets individually.
 - If you're using the Mosin-Nagant at long range, make sure to lead your shots to ensure you hit your target.
 - A great strategy to use is to find cover such as a [Rock](/obstacles/rock) or an [Oil Tank](/obstacles/oil_tank) and "peek" your shots. This lessens the damage that you will take from your opponent while also wasting their ammo, destroying your cover.
   - Be careful against weapons with high obstacle DPS such as LMGs or some assault rifles, as they can readily destroy cover.

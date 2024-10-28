@@ -1,4 +1,7 @@
 {
   "cSpell.words": ["lucide", "Suroi"],
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "spellchecker.ignoreWordsList": [
+    "the12"
+  ]
 }
