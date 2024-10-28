@@ -15,7 +15,7 @@ The Flues gets its name from designer Emil Flues, who worked for the Ithaca Gun 
 - Be very careful with your shots, as the long reload time and 2 rounds make the Flues unforgiving.
 - The Flues is very dangerous when the safe zone is very small or in tight spaces such as Buildings.
 - You can use two Flues' as a makeshift [Vepr-12](/weapons/guns/vepr12).
-- Because of its very low recoil value and duration, it is not necessary to noslow the Flues.
+- Because of its very low recoil value and duration, it is not necessary to quickswitch the Flues.
 
 ## Countering
 - The Flues has the shortest range of any shotgun, tied with the [HP18](/weapons/guns/hp18), so don't get too close.

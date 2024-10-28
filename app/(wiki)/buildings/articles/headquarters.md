@@ -14,7 +14,7 @@ The vault can only be accessed by activating the secret code.
 Near the door of the vault is a piece of paper with some ammunition on it. There is a button with the same symbol on the console near the front of the room. Use this button to unlock the vault.
 </Spoiler>
 
-Inside the Vault, there always spawns two [Boxes](/obstacles/box), two [Gun Locker](/obstacles/gun_locker), and a [Mini-14](/weapons/guns/mini14) on a wall mount. The Gun Lockers are only breakble with an armor piercing melee weapon.
+Inside the Vault, there always spawns two [Boxes](/obstacles/box), two [Gun Locker](/obstacles/gun_locker), and a [Mini-14](/weapons/guns/mini14) on a wall mount. The Gun Lockers are only breakable with an armor-piercing melee weapon.
 
 ### Cafeteria
 The Cafeteria contains a kitchen wth two [Fridges](/obstacles/fridge)], a [Stove](/obstacles/stove), [Sink](/obstacles/stove), some tables and chairs, and a [Vending Machine](/obstacles/vending_machine).
@@ -51,8 +51,8 @@ In the black space between the Lounge and the Executive Office, there is a hidde
 - If you come through the main entrance, going into the Security Office's Armory can be a good option to quickly get a decent gun or two and some supplies.
 - Players entering from the inside staircase may want to loot the Boardroom first, as it contains a lot of loot as well as the Falchion, before tackling the Secret Room.
 - If you're entering on the outside staircase, your best bet is to get into the Secret Room through the couch.
-- The metal detectors can be very useful for letting you know when players have entered/exited the building even if you haven't seen them.
-  - You can place [C4](/weapons/throwables/c4) under the metal detectors to try and catch unsuspecting players. Simply trigger it when you hear the beep.
+- The Metal Detectors can be very useful for letting you know when players have entered/exited the building even if you haven't seen them.
+  - You can place [C4](/weapons/throwables/c4) under the Metal Detectors to try and catch unsuspecting players. Simply trigger it when you hear the beep.
 - "The pass" (where food is taken from kitchen to the table), or the area between the Cafeteria's kitchen and the rest of the Cafeteria, can be fired through with guns as it is a gap in the wall. Many players don't realize this and think they are safe behind this "wall".
 
 # Trivia
