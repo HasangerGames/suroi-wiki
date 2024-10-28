@@ -11,6 +11,9 @@ importers:
       '@cspell/dict-ru_ru':
         specifier: ^2.2.4
         version: 2.2.4
+      '@damienvesper/bit-buffer':
+        specifier: ^1.0.1
+        version: 1.0.1
       '@mdx-js/loader':
         specifier: ^3.1.0
         version: 3.1.0(acorn@8.13.0)(webpack@5.93.0)
@@ -352,6 +355,10 @@ packages:
   '@cspell/url@8.15.4':
     resolution: {integrity: sha512-K2oZu/oLQPs5suRpLS8uu04O3YMUioSlEU1D66fRoOxzI5NzLt7i7yMg3HQHjChGa09N5bzqmrVdhmQrRZXwGg==}
     engines: {node: '>=18.0'}
+
+  '@damienvesper/bit-buffer@1.0.1':
+    resolution: {integrity: sha512-9sRpqNevbCxTmI05mBA3WdaAB4P467XP7aiA/zwOZtWdAS90wIuokeZz9hrUgQlUUKAC4f5+/zqrblV6XdlnLA==}
+    engines: {node: '>=18.8.0', pnpm: '>=8.6.0'}
 
   '@discoveryjs/json-ext@0.5.7':
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
@@ -2882,6 +2889,8 @@ snapshots:
   '@cspell/strong-weak-map@8.15.4': {}
 
   '@cspell/url@8.15.4': {}
+
+  '@damienvesper/bit-buffer@1.0.1': {}
 
   '@discoveryjs/json-ext@0.5.7': {}
 

@@ -117,9 +117,5 @@ export const SearchItems: SearchItem[] = [
   ...Object.entries(LootTables).map(([k]) => ({
     name: `Loot Table ${k}`,
     url: `/loot#${k}`
-  })),
-  ...Object.entries(LootTiers).map(([k]) => ({
-    name: `Loot Tier ${k}`,
-    url: `/loot#${k}`
   }))
 ];
