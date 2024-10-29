@@ -23,6 +23,8 @@ The Model 89 is only found in Gold Airdrops and [Flint Stones](/obstacles/flint_
 - The Model 89 is one of the three weapons which use .50 Cal ammunition. The other weapons which use .50 Cal rounds are the [RSh-12](/weapons/guns/rsh12) and [DEagle](/weapons/guns/deagle).
 
 ## History
+- [v0.20.1](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+  - Reload time decreased to 0.4 (from 0.5)
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
   - Changed ammunition type to .50 Cal from 12.7mm
   - Tweaked texture

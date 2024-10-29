@@ -26,5 +26,9 @@ The SKS is very common and can be found in many basic loot sources such as [Regu
 - The SKS is the second gun in Suroi that has the ability to reload bullets one at a time when partially empty, but do a full reload when emptied, the other being the [Mosin-Nagant](/weapons/guns/mosin_nagant)
 
 # History
+- [v0.20.1](https://github.com/HasangerGames/suroi/releases/tag/v0.20.1)
+  - Damage increased to 23 (from 20)
+  - Bullet speed increase to 0.27 (from 0.26)
+  - When partially empty, the SKS now reloads two rounds at a time (resulting in faster reload times)
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
   - Added

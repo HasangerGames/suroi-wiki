@@ -34,7 +34,8 @@ The Vector can be found very rarely as world loot. However, the easiest way to a
 - The in-game Vector is the first and so far only gun that is colored white.
 
 # History
-
+- [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+  - Added new sounds
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Casing spawn moved to (4.7, 0.3) (from (4.5, 0.6))
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
