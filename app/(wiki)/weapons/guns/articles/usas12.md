@@ -25,7 +25,7 @@ The USAS-12 was designed in 1989 by John Trevor Jr. and was based on previous au
 - Be wary of Buildings, as they can be a death trap against a USAS-12 user.
 
 # Obtaining
-The USAS-12 can be found in Harvest mode in a [Briefcase](/obstacles/briefcase). 
+The USAS-12 can be found in Harvest Mode in a [Briefcase](/obstacles/briefcase), as well as very rarely in the [Loot Tree](/obstacles/loot_tree). It can also be found in Harvest Mode [Gold Airdrops](/obstacles/airdrops).
 
 It was also obtainable during 2 previous events:
 - On the Halloween 2023 map, it had a 5% chance to drop from a [Pumpkins](/obstacles/pumpkin).
@@ -40,7 +40,10 @@ It was also obtainable during 2 previous events:
 - The USAS-12 is one of 7 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [VSS](/weapons/guns/vss), [M1 Garand](/weapons/guns/m1_garand), [DEagle](/weapons/guns/deagle), and [Mosin-Nagant](/weapons/guns/mosin_nagant).
 
 # History
-
+- [v0.20.1](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+  - Range decreased to 60 (from 70)
+- [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+  - Range increased to 70 (from 55)
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Casing type set to 12 gauge HE
 - [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
