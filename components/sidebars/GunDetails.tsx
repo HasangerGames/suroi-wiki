@@ -24,7 +24,10 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
         <InfoboxColumn title="Ammo Type">
           <AmmoIcon ammo={gun.ammoType} scale={0.5} />
         </InfoboxColumn>
-        <InfoboxColumn title="Capacity">{gun.capacity}</InfoboxColumn>
+        <InfoboxColumn title="Capacity">{gun.capacity}
+          <abbr title="Capacity with Extended Magazines Perk">
+            ({gun.extendedCapacity})
+          </abbr></InfoboxColumn>
       </InfoboxRow>
       <InfoboxRow>
         <InfoboxColumn title="Reload">
