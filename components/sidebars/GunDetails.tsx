@@ -26,7 +26,7 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
         </InfoboxColumn>
         <InfoboxColumn title="Capacity">{gun.capacity}
           <abbr title="Capacity with Extended Magazines Perk">
-            ({gun.extendedCapacity})
+            ({gun.extendedCapacity ?? gun.capacity})
           </abbr></InfoboxColumn>
       </InfoboxRow>
       <InfoboxRow>
