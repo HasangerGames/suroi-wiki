@@ -19,6 +19,16 @@ export default function LootPage() {
           various items to drop.
         </p>
       </div>
+      <div className="mt-8">
+        <div className="prose prose-invert" id="calc">
+          <h2>Calculator</h2>
+          <p>
+            Use this interactive calculator to determine the chance of an item
+            dropping from an obstacle.
+          </p>
+        </div>
+        <LootCalc />
+      </div>
       <div>
         {Object.entries(LootTables.normal).map(([name, tables]) => (
           <div key={name} id={name}>
@@ -53,16 +63,6 @@ export default function LootPage() {
             These tables determine which loot tiers to use for a given obstacle.
           </p>
         </div>
-      </div>
-      <div className="mt-8">
-        <div className="prose prose-invert" id="calc">
-          <h2>Calculator</h2>
-          <p>
-            Use this interactive calculator to determine the chance of an item
-            dropping from an obstacle.
-          </p>
-        </div>
-        <LootCalc />
       </div>
     </div>
   );
