@@ -1,13 +1,14 @@
+import { Armors, Backpacks, Buildings, HealingItems } from "@/vendor/suroi/common/src/definitions";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import { Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
+import { Perks } from "@/vendor/suroi/common/src/definitions/perks";
 import {
   ObjectDefinition,
   ObjectDefinitions
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import {
-  LootTables,
-  LootTiers
+  LootTables
 } from "@/vendor/suroi/server/src/data/lootTables";
 import {
   IMAGE_BASE_URL,
@@ -74,6 +75,12 @@ export const wikiPages: SearchItem[] = [
     image: getSuroiImageLink(getSuroiBuilding("red_house"))
   },
   {
+    name: "Perks",
+    url: "/perks",
+    description: "List of perks",
+    image: getSuroiImageLink(getSuroiItem("advanced_athletics"))
+  },
+  {
     name: "Skins",
     url: "/skins",
     description: "List of skins",
@@ -113,7 +120,12 @@ export const SearchItems: SearchItem[] = [
   ...wikiPages,
   ...generateItemsFromDefinitions(Guns, "/weapons/guns/"),
   ...generateItemsFromDefinitions(Melees, "/weapons/melee/"),
+  ...generateItemsFromDefinitions(HealingItems, "/healing/"),
+  ...generateItemsFromDefinitions(Armors, "/equipment/armor/"),
+  ...generateItemsFromDefinitions(Backpacks, "/equipment/backpacks/"),
   ...generateItemsFromDefinitions(Obstacles, "/obstacles/"),
+  ...generateItemsFromDefinitions(Buildings, "/buildings/"),
+  ...generateItemsFromDefinitions(Perks, "/perks/"),
   ...Object.entries(LootTables).map(([k]) => ({
     name: `Loot Table ${k}`,
     url: `/loot#${k}`
