@@ -50,6 +50,7 @@ export const IMAGE_BASE_URLS = {
   Scope: "game/loot",
   Skin: "game/skins",
   ThrowableProjectile: "game/projectiles/throwables",
+  Perk: "game/perks",
 
   // Objects
   Player: "",
