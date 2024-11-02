@@ -10,6 +10,8 @@ When in smoke:
 
 Ability to vault (walk through) windows as well as walk through trees.
 
+In Harvest Mode, Advanced Athletics drops from the [Plumpkin](/obstacles/plumpkin), located in the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta). It is also rarely dropped from [Airdrops](/obstacles/airdrops) and [Gold Airdrops](/obstacles/gold_airdrop_crate).
+
 # Strategies
 ## Using
 - Advanced Athletics is generally a situational perk and can be extremely powerful depending on *where* the engagements you fight will take place. It's strong around smoke, water, and buildings, but can struggle in more open areas where there is only trees.
@@ -26,8 +28,10 @@ Ability to vault (walk through) windows as well as walk through trees.
 - Avoid throwing down smoke if you suspect that someone might have Advanced Athletics.
   - Similarly, avoid water fights with a player that could possibly have the perk.
 - Move to open land areas where there is no water or buildings that your opponent could use to their advantage.
-- Other speed boost perks like [Berserker](/perks/berserker) and [Second Wind](/perks/second_wind) can keep pace with or are faster than Advanced Athletics.
+- Other speed boost perks like [Berserker](/perks/stark_melee_gauntlet) and [Second Wind](/perks/second_wind) can keep pace with or are faster than Advanced Athletics.
 
 # History
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
   - Added
+
+  It allows for a greater range with [Throwables](/throwables), as well as providing a precise aiming point.
