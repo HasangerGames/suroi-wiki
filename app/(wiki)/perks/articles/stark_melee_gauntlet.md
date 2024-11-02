@@ -1,3 +1,4 @@
+<Event />
 **Berserker** is a [Perk](/perks) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It grants a speed boost when holding a [Melee Weapon](/weapons/melee), as well as increasing any melee damage done. 
 
 # Effects
@@ -6,7 +7,7 @@ When any melee weapon is equipped:
 - 30% Damage increase 
 
 # Obtaining 
-In Harvest Mode, Berserker drops from the [Plumpkin](/obstacles/plumpkin), located in the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta). It is also rarely dropped from [Airdrops](/obstacles/airdrops) and [Gold Airdrops](/obstacles/gold_airdrop_crate).
+In Harvest Mode, Berserker drops from the [Plumpkin](/obstacles/plumpkin), located in the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta). It is also occasionally dropped from [Airdrops](/obstacles/airdrops) and always from [Gold Airdrops](/obstacles/gold_airdrop_crate).
 
 # Strategies
 ## Using
@@ -16,6 +17,9 @@ In Harvest Mode, Berserker drops from the [Plumpkin](/obstacles/plumpkin), locat
 - Rush your opponent with Berserker if you have a good [Melee Weapon](/weapons/melee) and decent [Armor](/equipment/armor).
 - Make sure to have adrenaline on hand to enhance the effect of your speed boost.
 - If you're low on health, you can use Berserker's speed boost to escape the fight.
+- During Halloween Mode, Berserker synergizes extremely well with [Lycanthropy](/perks/lycanthropy), as it makes the melee damage and speed even greater than it normally is.
+  - It also works very with [Bloodthirst](/perks/bloodthirst) and [Experimental Treatment](/perks/experimental_treatment), as both can provide speed and adrenaline boosts.
+  - [Shrouded](/perks/shrouded) can make you more difficult to fight back against.
 
 ## Countering
 - Because it has advantages both close up and at range, Berserker is an extremely difficult perk to counter.

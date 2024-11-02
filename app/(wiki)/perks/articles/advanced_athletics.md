@@ -1,3 +1,4 @@
+<Event />
 **Advanced Athletics** is a [Perk](/perks) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It grants a speed boost when in water or smoke, and also allows the ability phase through trees and windows.
 
 # Effects:
@@ -10,7 +11,8 @@ When in smoke:
 
 Ability to vault (walk through) windows as well as walk through trees.
 
-In Harvest Mode, Advanced Athletics drops from the [Plumpkin](/obstacles/plumpkin), located in the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta). It is also rarely dropped from [Airdrops](/obstacles/airdrops) and [Gold Airdrops](/obstacles/gold_airdrop_crate).
+# Obtaining
+In Harvest Mode, Advanced Athletics drops from the [Plumpkin](/obstacles/plumpkin), located in the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta). Like other perks, it is occasionally dropped from [Airdrops](/obstacles/airdrops) and more commonly from [Gold Airdrops](/obstacles/gold_airdrop_crate).
 
 # Strategies
 ## Using
@@ -21,6 +23,7 @@ In Harvest Mode, Advanced Athletics drops from the [Plumpkin](/obstacles/plumpki
   - If you need to heal in smoke, use the speed boost to move around quicker and avoid bullets that opponents might shoot into the smoke. You can also use this to escape any [Frag Grenades](/weapons/throwables/frag_grenade) lobbed your way.
 - Hide inside trees to force opponents to waste their ammunition trying to attack you.
 - If an enemy is hiding on the other side of a tree, you can use a CQC weapon such as a shotgun (the [Flues](/weapons/guns/flues) works really well for this) to phase through the tree and surprise them.
+- During Halloween Mode, Advanced Athletics can be combined with [Lycanthropy](/perks/lycanthropy), which will make you insanely fast in water and allow you to (terrifyingly) jump through windows.
 
 ## Countering
 - Be on the lookout for any players that might have Advanced Athletics, so you won't be caught off guard if they vault through a window or phase through a tree.
@@ -34,4 +37,3 @@ In Harvest Mode, Advanced Athletics drops from the [Plumpkin](/obstacles/plumpki
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
   - Added
 
-  It allows for a greater range with [Throwables](/throwables), as well as providing a precise aiming point.

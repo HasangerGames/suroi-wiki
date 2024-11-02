@@ -1,3 +1,4 @@
+<Event />
 **Second Wind** is a [Perk](/perks) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It grants a speed boost when below 50% health.
 
 # Effects
@@ -5,7 +6,7 @@ When below 50% health:
 - 40% Speed increase
 
 # Obtaining
-In Harvest Mode, Second Wind drops from the [Plumpkin](/obstacles/plumpkin), located in the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta). It is also rarely dropped from [Airdrops](/obstacles/airdrops) and [Gold Airdrops](/obstacles/gold_airdrop_crate).
+In Harvest Mode, Second Wind drops from the [Plumpkin](/obstacles/plumpkin), located in the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta). It is also occasionally dropped from [Airdrops](/obstacles/airdrops) and always from [Gold Airdrops](/obstacles/gold_airdrop_crate).
 
 # Strategies
 ## Using
@@ -13,6 +14,7 @@ In Harvest Mode, Second Wind drops from the [Plumpkin](/obstacles/plumpkin), loc
 - Second Wind is very useful for escaping the Gas in the later stages of the game if you get caught in it and start taking a lot of damage.
 - Make sure to move around in random directions and strafe your opponents to benefit the most from Second Wind.
 - You can also use Second Wind to escape from a fight quickly if you decide you might be killed/knocked out.
+- During Halloween Mode, Second Wind can be combined with [Lycanthropy](/perks/lycanthropy) to provide an immense speed boost below half health, which only adds to Lycanthropy's effectiveness.
 
 ## Countering
 - Use a long ranged weapon such as a sniper or DMR to keep damaging any player with Second Wind that tries to run away.
