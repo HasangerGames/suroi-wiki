@@ -73,7 +73,7 @@ export default async function Home() {
       <div>
         <h1 className="text-xl font-bold text-center mb-4">Wiki Pages</h1>
         <GridTable>
-          {wikiPages.map(page => (
+          {wikiPages.filter(page => page.name !== "Home").map(page => (
             <PageCard
               key={page.url}
               title={page.name}
