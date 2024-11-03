@@ -24,6 +24,7 @@ In Harvest Mode, Advanced Athletics drops from the [Plumpkin](/obstacles/plumpki
 - Hide inside trees to force opponents to waste their ammunition trying to attack you.
 - If an enemy is hiding on the other side of a tree, you can use a CQC weapon such as a shotgun (the [Flues](/weapons/guns/flues) works really well for this) to phase through the tree and surprise them.
 - During Halloween Mode, Advanced Athletics can be combined with [Lycanthropy](/perks/lycanthropy), which will make you insanely fast in water and allow you to (terrifyingly) jump through windows.
+  - If you use Advanced Athletics with [Shrouded](/perks/shrouded), it grants you a permanent speed boost.
 
 ## Countering
 - Be on the lookout for any players that might have Advanced Athletics, so you won't be caught off guard if they vault through a window or phase through a tree.
