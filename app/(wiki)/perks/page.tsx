@@ -2,8 +2,8 @@ import GenericListingPageFactory from "@/components/layouts/GenericListingPageFa
 import { PerkCategories, PerkQualities, Perks } from "@/vendor/suroi/common/src/definitions/perks";
 
 const perkDefs = Perks.definitions;
-const normalPerks = perkDefs.filter(perk => perk.categories[0] === PerkCategories.Normal);
-const halloweenPerks = perkDefs.filter(perk => perk.categories[0] === PerkCategories.Halloween);
+const normalPerks = perkDefs.filter(perk => perk.category === PerkCategories.Normal);
+const halloweenPerks = perkDefs.filter(perk => perk.category === PerkCategories.Halloween);
 const halloweenPerkCountOfType = (type: PerkQualities): number => halloweenPerks.filter(perk => perk.type === type).length;
 
 export default GenericListingPageFactory(
