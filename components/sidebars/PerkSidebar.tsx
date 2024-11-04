@@ -13,7 +13,7 @@ export default function PerkSidebar({
   item: PerkDefinition
 }) {
   let category;
-  switch (item.categories[0]) {
+  switch (item.category) {
     case PerkCategories.Normal:
       category = "Normal";
       break;
