@@ -17,7 +17,7 @@ In Harvest Mode, Sabot Rounds drops from the [Plumpkin](/obstacles/plumpkin), lo
 - Most guns are buffed by Sabot Rounds, but in different ways.
   - Shotguns can shoot much farther with Sabot Rounds, allowing you to use them at some terrifying ranges.
   - Weapons that already had high bullet velocity, accuracy, and range, such as DMRs and snipers, becoming even better with Sabot Rounds. The extreme bullet velocity makes it much easier to land your hits on opponents.
-  - The [USAS-12](/weapons/guns/usas12) and [M590M](/weapons/guns/m590m) are more dangerous, as they can shoot far farther.
+  - The [USAS-12](/weapons/guns/usas12) and [M590M](/weapons/guns/m590m) are more dangerous, as they can shoot way farther.
   - Weapons that normally have slower bullet velocity, such as the [Model 89](/weapons/guns/model_89) and [RSh-12](/weapons/guns/rsh12), are much improved with Sabot rounds.
 - Try and stay out in the open as well as at a distance, as this is where you have your biggest advantage.
 - Find an 8x scope to spot your opponents from far away.
