@@ -25,6 +25,8 @@ import {
   ItemType,
   ObjectDefinition
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import { readdirSync, statSync } from "fs";
+import { resolve, sep } from "path";
 
 export function getSuroiItem(idString: string) {
   return Loots.fromString(idString);
@@ -40,44 +42,69 @@ export function getSuroiBuilding(idString: string) {
 
 export const IMAGE_BASE_URLS = {
   // Items
-  Gun: "game/weapons",
-  Ammo: "game/loot",
-  Melee: "game/weapons",
-  Throwable: "game/weapons",
-  Healing: "game/loot",
-  Armor: "game/loot",
-  Backpack: "game/loot",
-  Scope: "game/loot",
-  Skin: "game/skins",
-  ThrowableProjectile: "game/projectiles/throwables",
-  Perk: "game/perks",
+  Gun: "/weapons",
+  Ammo: "/loot",
+  Melee: "/weapons",
+  Throwable: "/weapons",
+  Healing: "/loot",
+  Armor: "/loot",
+  Backpack: "/loot",
+  Scope: "/loot",
+  Skin: "/skins",
+  ThrowableProjectile: "/projectiles",
+  Perk: "/perks",
 
   // Objects
   Player: "",
   DeathMarker: "",
-  Obstacle: "game/obstacles",
-  Loot: "game/loot",
-  Building: "game/buildings",
-  Decal: "game/decals",
-  Parachute: "game/airdrop",
-  SyncedParticle: "game/particles"
+  Obstacle: "/obstacles",
+  Loot: "/loot",
+  Building: "/buildings",
+  Decal: "/decals",
+  Parachute: "/airdrop",
+  SyncedParticle: "/particles"
 } satisfies Record<keyof typeof ItemType | keyof typeof ObjectCategory, string>;
 
-export const BRANCH = "master";
+export const TEXTURE_PATHS: Record<string, string> = {};
+
+if (typeof window === "undefined") {
+  const readDirectory = (dir: string): string[] => {
+    let results: string[] = [];
+    const files = readdirSync(dir);
+
+    for (const file of files) {
+      const filePath = resolve(dir, file);
+      const stat = statSync(filePath);
+
+      if (stat?.isDirectory()) {
+        const res = readDirectory(filePath);
+        results = results.concat(res);
+      } else results.push(filePath);
+    }
+
+    return results;
+  };
+
+  for (const folder of ["birthday", "halloween", "fall", "winter", "normal", "shared"] as const) {
+    for (const file of readDirectory(`vendor/suroi/client/public/img/game/${folder}`)) {
+      TEXTURE_PATHS[file.slice(file.lastIndexOf(sep) + 1, -4)] = folder;
+    }
+  }
+}
 
 export const WIKI_BRANCH = "main";
 
-export const BASE_URL = `https://raw.githubusercontent.com/HasangerGames/suroi/${BRANCH}/`;
-
-export const REPO_URL = "https://github.com/HasangerGames/suroi/";
-
-export const REPO_BRANCH_URL = `${REPO_URL}blob/${BRANCH}/`;
-
 export const WIKI_URL = "https://github.com/HasangerGames/suroi-wiki/";
 
-export const IMAGE_BASE_URL = `${BASE_URL}client/public/img/`;
+export const BRANCH = "master";
 
-export const SOUND_BASE_URL = `${REPO_URL}raw/${BRANCH}/client/public/audio/`;
+export const BASE_URL = "https://suroi.io";
+
+export const IMAGE_BASE_URL = `${BASE_URL}/img`;
+
+export const SOUND_BASE_URL = `${BASE_URL}/audio`;
+
+export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/shared/_missing_texture.svg`;
 
 type ObjectCategoryMapping<Category extends ObjectCategory> = {
   readonly [ObjectCategory.Player]: never
@@ -91,14 +118,9 @@ type ObjectCategoryMapping<Category extends ObjectCategory> = {
   readonly [ObjectCategory.SyncedParticle]: SyncedParticleDefinition
 }[Category];
 
-export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
-
-export function getSuroiImageLink<
-  // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
-  T extends ObjectDefinition | ItemDefinition | InventoryItemDefinition
->(obj: T, variation?: number, append?: string | string[], dual?: boolean) {
+export function getSuroiImageLink(obj: ObjectDefinition, variation?: number, append?: string | string[], dual?: boolean) {
   switch (true) {
-    // Is obj an item?
+    // Is it an item?
     case "itemType" in obj:
       return _itemImageLink(
         obj.idString,
@@ -108,25 +130,12 @@ export function getSuroiImageLink<
         dual
       );
 
-    // Is a building?
-    case isBuilding(obj):
-      return _otherImageLink(obj, ObjectCategory.Building, variation);
+    case isBuilding(obj): return imageLink(obj, ObjectCategory.Building, variation);
+    case isObstacle(obj): return imageLink(obj, ObjectCategory.Obstacle, variation);
+    case isDecal(obj): return imageLink(obj, ObjectCategory.Decal, variation);
+    case isLoot(obj): return imageLink(obj, ObjectCategory.Loot, variation);
 
-    // Is an obstacle?
-    case isObstacle(obj):
-      return _otherImageLink(obj, ObjectCategory.Obstacle, variation);
-
-    // Is a decal?
-    case isDecal(obj):
-      return _otherImageLink(obj, ObjectCategory.Decal, variation);
-
-    // Is loot? (should be covered by items already)
-    case isLoot(obj):
-      return _otherImageLink(obj, ObjectCategory.Loot, variation);
-
-    // Return missing texture
-    default:
-      return MISSING_TEXTURE;
+    default: return MISSING_TEXTURE;
   }
 }
 
@@ -146,7 +155,7 @@ function _itemImageLink(
   append?: string | string[],
   dual?: boolean
 ) {
-  return `${IMAGE_BASE_URL}${
+  return `${IMAGE_BASE_URL}/game/shared${
     IMAGE_BASE_URLS[ItemType[itemType] as keyof typeof ItemType]
   }/${dual ? idString : idString.replace("dual_", "")}${
     variation ? `_${variation}` : ""
@@ -159,31 +168,15 @@ function _itemImageLink(
   }.svg`;
 }
 
-function _otherImageLink<Category extends ObjectCategory>(
-  obj: ObjectCategoryMapping<Category>,
+export function imageLink<Category extends ObjectCategory>(
+  obj: ObjectCategoryMapping<Category> | string,
   category: Category,
   variation?: number
 ) {
   const key = ObjectCategory[category] as keyof typeof ObjectCategory;
-
-  return `${IMAGE_BASE_URL}${IMAGE_BASE_URLS[key]}/${
-    isBuilding(obj)
-      ? obj.ceilingImages?.[0]?.key || obj.floorImages?.[0]?.key
-      : obj.idString
-  }${variation ? `_${variation}` : ""}.svg`;
-}
-
-export function buildingVariations(building: BuildingDefinition) {
-  return [
-    ...(building?.ceilingImages?.map(
-      image =>
-        `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`
-    ) ?? []),
-    ...(building?.floorImages?.map(
-      image =>
-        `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`
-    ) ?? [])
-  ];
+  const idString = typeof obj === "string" ? obj : obj.idString;
+  const fullID = `${idString}${variation ? `_${variation}` : ""}`;
+  return `${IMAGE_BASE_URL}/game/${TEXTURE_PATHS[fullID] ?? "shared"}${IMAGE_BASE_URLS[key]}/${fullID}.svg`;
 }
 
 export function buildingParents(building: BuildingDefinition) {

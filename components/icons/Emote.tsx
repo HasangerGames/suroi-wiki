@@ -17,7 +17,7 @@ export default function Emote({
     <Image
       height={w}
       width={h}
-      src={`${IMAGE_BASE_URL}game/emotes/${emote}.svg`}
+      src={`${IMAGE_BASE_URL}/game/shared/emotes/${emote}.svg`}
       alt={`Emote: ${emote}`}
     />
   );

@@ -1,6 +1,6 @@
 import { SOUND_BASE_URL } from "@/lib/util/suroi";
 import { FireMode } from "@/vendor/suroi/common/src/constants";
-import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
+import { ExplosionDefinition, Explosions } from "@/vendor/suroi/common/src/definitions/explosions";
 import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
 import type {
   WearerAttributes,
@@ -214,27 +214,26 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
       <InfoboxAudioGroup>
         <InfoboxAudio
           name="Fire"
-          src={`${SOUND_BASE_URL}sfx/weapons/${gun.idString.replace(
+          src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
             "dual_",
             ""
           )}_fire.mp3`}
         />
         <InfoboxAudio
           name="Switch"
-          src={`${SOUND_BASE_URL}sfx/weapons/${gun.idString.replace(
+          src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
             "dual_",
             ""
           )}_switch.mp3`}
         />
         <InfoboxAudio
           name="Reload"
-          src={`${SOUND_BASE_URL}sfx/weapons/${gun.idString}_reload.mp3`}
+          src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString}_reload.mp3`}
         />
-        {explosion && (
+        {gun.ballistics.onHitExplosion && (
           <InfoboxAudio
             name="Explosion"
-            // HACK: hardcoded because USAS is the only explosive gun atm
-            src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/${explosion.idString}.mp3`}
+            src={`${SOUND_BASE_URL}/sfx/${Explosions.fromString(gun.ballistics.onHitExplosion).sound}.mp3`}
           />
         )}
       </InfoboxAudioGroup>

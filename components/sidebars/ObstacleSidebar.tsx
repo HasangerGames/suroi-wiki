@@ -60,7 +60,7 @@ export default function ObstacleSidebar({
               <div className="flex flex-col gap-2">
                 {(parents.length ?? 0) > 0 && (
                   <div>
-                    <span>({parents.length} Buildings)</span>
+                    <span>({parents.length} Building{parents.length !== 1 ? "s" : ""})</span>
                   </div>
                 )}
                 <div className="flex flex-wrap justify-around gap-2">
