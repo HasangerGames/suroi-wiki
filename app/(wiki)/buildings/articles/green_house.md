@@ -71,7 +71,7 @@ The Green House has an [HP-18](/guns/hp18) gun mount next to the front entrance.
 
 
 
- - In v.11, the [TV](/obstacles/tv) and [Washing Machine](/obstacles/washing_machine) were removed - but 6 versions later, they were readded. In fact, hasanger foreshadowed this, saying "The big variant will be overhauled and re-added in a future update.".
+ - In v.11, the [TV](/obstacles/tv) and [Washing Machine](/obstacles/washing_machine) were removed - but 6 versions later, they were readded. In fact, hansangr foreshadowed this, saying "The big variant will be overhauled and re-added in a future update.".
 
 - Platonthek designed the Green House
 
@@ -83,9 +83,6 @@ The Green House has an [HP-18](/guns/hp18) gun mount next to the front entrance.
 # History
 
 
-
-- [v.17] (https://github.com/HasangerGames/suroi/releases/tag/v0.17)
-
-
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
 
   - Added
