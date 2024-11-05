@@ -26,7 +26,7 @@ In most maps, 2-4 Green Houses spawn, though that number can vary. Often, player
 
 
 
-The Green House has a 100% chance to drop an [HP-18](/guns/hp18) next to the front entrance. It also has a few [Large Drawers](/obstacles/large_drawer) and a [Bookshelf](/obstacles/bookshelf). Both of these have a somewhat high chance to drop a gun, so break these first so you can go into battle. 
+The Green House has an [HP-18](/guns/hp18) gun mount next to the front entrance. It also has a few [Large Drawers](/obstacles/large_drawer) and a [Bookshelf](/obstacles/bookshelf). Both of these have a somewhat high chance to drop a gun, so break these first so you can go into battle. 
 
 
 
@@ -46,15 +46,15 @@ The Green House has a 100% chance to drop an [HP-18](/guns/hp18) next to the fro
 
 
 
-- This is one of the most loot-dense houses in the game, so if you spawn late, it is unlikely it will be untouched. 
+- This is one of the most loot-dense houses in the game, so if you spawn late, it is likely it will be looted. 
 
 
 
-- Use the skylights and broken roof to check if there are players inside - but be careful, because they may be able to see you as well. 
+- Use the skylights and partly damaged roof to check if there are players inside - but be careful, because they may be able to see you as well. 
 
 
 
-- The covered entrance in the front of the house can be used to ambush players with as you are hidden from the other players' view. The [Flues](/guns/flues) or [Model 37](/guns/model_37) are good options for this. 
+- The covered entrance in the front of the house can be used to ambush players with as you are hidden from the other players' view. The [Flues](/guns/flues) or [Model 37](/guns/model_37) are good options for this, though the [HP-18](/guns/hp18) can also work, especially becuase it's right next to the door. 
   - Note that your opponent might creep up to you from the side with another high-DPS weapon, so this is not a free-kill strategy.
 
 
