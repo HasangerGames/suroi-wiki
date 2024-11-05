@@ -71,7 +71,7 @@ The Green House has an [HP-18](/guns/hp18) gun mount next to the front entrance.
 
 
 
- - In v.11, the [TV](/obstacles/tv) and [Washing Machine](/obstacles/washing_machine) were removed - but 6 versions later, they were readded. In fact, hansangr foreshadowed this, saying "The big variant will be overhauled and re-added in a future update.".
+ - In v.11, the [TV](/obstacles/tv) and [Washing Machine](/obstacles/washing_machine) were removed - but 6 versions later, they were readded. In fact, Hasanger foreshadowed this, saying "The big variant will be overhauled and re-added in a future update.".
 
 - Platonthek designed the Green House
 
