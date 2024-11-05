@@ -1,5 +1,6 @@
 import ImageTabs from "@/components/interactive/ImageTabs";
 import { ImageTab } from "@/lib/util/types";
+import { ReactNode } from "react";
 
 export default function GenericSidebar({
   children,
@@ -16,7 +17,7 @@ export default function GenericSidebar({
         {(imageVariations && (
           <ImageTabs images={imageVariations ?? [{ url: image }]} />
         ))
-        || (image && <ImageTabs images={[{ type: "image", url: image }]} />)}
+        || (typeof image === "string" ? <ImageTabs images={[{ type: "image", url: image }]} /> : image)}
         {children}
       </div>
     </div>
@@ -25,6 +26,6 @@ export default function GenericSidebar({
 
 export interface GenericSidebarProps extends React.PropsWithChildren {
   title: string
-  image?: string
+  image?: string | ReactNode
   imageVariations?: ImageTab[]
 }

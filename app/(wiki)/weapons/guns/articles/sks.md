@@ -5,16 +5,30 @@ The SKS was designed in the Soviet Union during the Second World War by Sergei G
 
 # Strategies
 ## Using
+- Make sure to maximize the fire rate of the SKS to make the most out of the poor DPS.
+- Similar to the [Mosin-Nagant](/weapons/guns/mosin_nagant), it is optimal to reload the full clip if most of it is already depleted.
+  - Conversely, if it is mostly full, use the quick single reload to top off your magazine.
+- In general, always try to have a full magazine because the damage per magazine is already extremely low for a DMR.
+- Try to find a better weapon as soon as possible, because the SKS is largely ineffective against high tier [Armor](/equipment/armor).
+- Carry a secondary weapon like a shotgun that has a higher damage output.
 
 ## Countering
+- All other DMRs are superior to the SKS in DPS and can easily dispatch an opponent with a SKS.
+- High-DPS weapons such as SMGs and shotguns can beat the Mini-14 at close range.
+- Picking up Level 2 or 3 [Armor](/equipment/armor) will make you much harder for a SKS user to kill.
+- Strafe back and forth (especially with high adrenaline) to make the opponent miss. 
+- One of the best defenses against a SKS user is either indestructible cover ([Oil Tanks](/obstacles/oil_tank), Containers, and [Buildings](/buildings)) or cover in general ([Rocks](/obstacles/rock) and [Trees](/obstacles/tree)). The low damage output of the SKS makes it difficult to effectively destroy cover.
 
 # Obtaining
 The SKS is very common and can be found in many basic loot sources such as [Regular Crates](/obstacles/regular_crate).
 
 # Trivia
-- The SKS is the gun in Suroi that has the ability to reload bullets one at a time when partially empty, but do a full reload when emptied.
-  - Previously the [Mosin-Nagant](/weapons/guns/mosin_nagant) was able to do this, but this was changed.
+- The SKS is the second gun in Suroi that has the ability to reload bullets one at a time when partially empty, but do a full reload when emptied, the other being the [Mosin-Nagant](/weapons/guns/mosin_nagant)
 
 # History
+- [v0.20.1](https://github.com/HasangerGames/suroi/releases/tag/v0.20.1)
+  - Damage increased to 23 (from 20)
+  - Bullet speed increase to 0.27 (from 0.26)
+  - When partially empty, the SKS now reloads two rounds at a time (resulting in faster reload times)
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
   - Added

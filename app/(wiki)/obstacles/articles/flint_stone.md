@@ -7,12 +7,12 @@ Only one Flint Stone spawns per map, and it can be anywhere on the map. The Flin
 # Loot & More
 
 One way to break the Flint Stone is to obtain a rare [Radio](/weapons/guns/radio) and use the summoned airdrop to destroy the Flint Stone. Technically, a naturally spawned airdrop can also break it, but this is exceedingly rare. You can also break the Flint Stone using a weapon with piercing damage, such as the [Maul](/weapons/melee/maul).
-The Flint Stone has very good [loot](/loot#flint_stone), and always drops a [Gold Airdrop gun](/loot#gold_airdrop_guns). Each one of these has a 33.33% (1/3) chance of dropping.
+The Flint Stone has very good [loot](/loot#flint_stone), and always drops a [Gold Airdrop gun](/loot#gold_airdrop_guns).
 
 # Tips
 
-- The Flint Stone makes for a very good cover due to its indestructible nature
-- If you get a Radio, check the map to see if a Flint Stone is nearby that you can use on
+- The Flint Stone makes for a very good cover due to its indestructible nature.
+- If you get a Radio, check the map to see if a Flint Stone is nearby that you can use on.
 
 # Trivia
 

@@ -12,7 +12,7 @@ The [Ship](/buildings/ship)'s main and biggest area, the cargo area, is found fr
 
 ## Control room
 
-The control room features a large [Drawer](/obsatcles/drawers), a wide window, and a set of control panels. The middle control panel can be interacted with to open the [Vault Door](/obstacles/doors) to the left, which contains a [Briefcase](/obstacles/briefcase) as well as two [Regular Crates](/obstacles/crate).
+The control room features a large [Drawer](/obstacles/drawers), a wide window, and a set of control panels. The middle control panel can be interacted with to open the [Vault Door](/obstacles/doors) to the left, which contains a [Briefcase](/obstacles/briefcase) as well as two [Regular Crates](/obstacles/crate).
 
 # Tips 
 

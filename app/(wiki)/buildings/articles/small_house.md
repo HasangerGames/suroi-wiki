@@ -18,7 +18,7 @@ The bedroom contains a [Bed](/obstacles/bed), a [Bookshelf](/obstacles/bookshelf
 
 ## Foyer
 
-The Foyer contains a [Couch](/obstacles/couch), a large [Large Drawer](/obstacles/large_drawer), and a bookshelf.
+The Foyer contains a [Couch](/obstacles/couch), a [Large Drawer](/obstacles/large_drawer), and a bookshelf.
 
 ## Kitchen & Dining Area
 

@@ -1,13 +1,14 @@
+import { Armors, Backpacks, Buildings, HealingItems } from "@/vendor/suroi/common/src/definitions";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import { Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
+import { Perks } from "@/vendor/suroi/common/src/definitions/perks";
 import {
   ObjectDefinition,
   ObjectDefinitions
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import {
-  LootTables,
-  LootTiers
+  LootTables
 } from "@/vendor/suroi/server/src/data/lootTables";
 import {
   IMAGE_BASE_URL,
@@ -74,28 +75,34 @@ export const wikiPages: SearchItem[] = [
     image: getSuroiImageLink(getSuroiBuilding("red_house"))
   },
   {
+    name: "Perks",
+    url: "/perks",
+    description: "List of perks",
+    image: getSuroiImageLink(getSuroiItem("advanced_athletics"))
+  },
+  {
     name: "Skins",
     url: "/skins",
     description: "List of skins",
-    image: getSuroiImageLink(getSuroiItem("katie"), undefined, "base")
+    image: getSuroiImageLink(getSuroiItem("hasanger"), undefined, "base")
   },
   {
     name: "Writing Guide",
     url: "/meta/writingarticles",
     description: "Guidelines for writing articles",
-    image: `${IMAGE_BASE_URL}game/emotes/monocle_face.svg`
+    image: `${IMAGE_BASE_URL}/game/shared/emotes/monocle_face.svg`
   },
   {
     name: "Developer Guide",
     url: "/meta/developing",
     description: "Guidelines for developing for the wiki",
-    image: `${IMAGE_BASE_URL}game/emotes/picasso_face.svg`
+    image: `${IMAGE_BASE_URL}/game/shared/emotes/picasso_face.svg`
   },
   {
     name: "Credits",
     url: "/credits",
     description: "Game and Wiki Credits",
-    image: `${IMAGE_BASE_URL}game/emotes/partying_face.svg`
+    image: `${IMAGE_BASE_URL}/game/shared/emotes/partying_face.svg`
   }
 ];
 
@@ -113,13 +120,14 @@ export const SearchItems: SearchItem[] = [
   ...wikiPages,
   ...generateItemsFromDefinitions(Guns, "/weapons/guns/"),
   ...generateItemsFromDefinitions(Melees, "/weapons/melee/"),
+  ...generateItemsFromDefinitions(HealingItems, "/healing/"),
+  ...generateItemsFromDefinitions(Armors, "/equipment/armor/"),
+  ...generateItemsFromDefinitions(Backpacks, "/equipment/backpacks/"),
   ...generateItemsFromDefinitions(Obstacles, "/obstacles/"),
+  ...generateItemsFromDefinitions(Buildings, "/buildings/"),
+  ...generateItemsFromDefinitions(Perks, "/perks/"),
   ...Object.entries(LootTables).map(([k]) => ({
     name: `Loot Table ${k}`,
-    url: `/loot#${k}`
-  })),
-  ...Object.entries(LootTiers).map(([k]) => ({
-    name: `Loot Tier ${k}`,
     url: `/loot#${k}`
   }))
 ];

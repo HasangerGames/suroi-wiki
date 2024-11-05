@@ -1,8 +1,6 @@
 import {
   buildingParents,
-  buildingVariations,
   getSuroiBuilding,
-  getSuroiImageLink,
   getSuroiObstacle
 } from "@/lib/util/suroi";
 import { BuildingDefinition } from "@/vendor/suroi/common/src/definitions/buildings";
@@ -11,6 +9,7 @@ import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
+import RenderedBuilding from "../svg/special/RenderedBuilding";
 
 export default function BuildingSidebar({
   item
@@ -22,11 +21,7 @@ export default function BuildingSidebar({
   return (
     <GenericSidebar
       title={item.name}
-      image={getSuroiImageLink(item)}
-      imageVariations={buildingVariations(item).map(variation => ({
-        type: "image",
-        url: variation
-      }))}
+      image={<RenderedBuilding building={item}></RenderedBuilding>}
     >
       <InfoboxHeader>Contains</InfoboxHeader>
       <InfoboxRow>
@@ -132,7 +127,7 @@ export default function BuildingSidebar({
               <div className="flex flex-col gap-2">
                 {(parents.length ?? 0) > 0 && (
                   <div>
-                    <span>({parents.length} Buildings)</span>
+                    <span>({parents.length} Building{parents.length !== 1 ? "s" : ""})</span>
                   </div>
                 )}
                 <div className="flex flex-wrap justify-around gap-2">

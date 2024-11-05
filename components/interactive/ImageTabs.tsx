@@ -60,7 +60,7 @@ export default function ImageTabs({ images }: ImageTabsProps) {
               : currentImage.type === "react"
                 ? (
                   <div
-                    className={`w-60 h-60 my-4 flex ${getColor(
+                    className={`w-60 ${currentImage.unlimitedHeight ? "" : "h-60"} my-4 flex ${getColor(
                       backgroundMode
                     )} bg-repeat bg-[length:1rem]`}
                   >

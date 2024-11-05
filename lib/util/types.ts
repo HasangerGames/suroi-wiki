@@ -23,6 +23,7 @@ export type ImageTab = {
   | {
     type: "react"
     children: ReactNode
+    unlimitedHeight?: boolean
   }
 );
 
