@@ -3,6 +3,6 @@ import { Buildings } from "@/vendor/suroi/common/src/definitions";
 
 export default function Test() {
   return (
-    <RenderedBuilding building={Buildings.fromString("headquarters")} view="ceiling"></RenderedBuilding>
+    <RenderedBuilding building={Buildings.fromString("port")} view="ceiling"></RenderedBuilding>
   );
 }
