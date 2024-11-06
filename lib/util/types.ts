@@ -54,6 +54,10 @@ export type SVGObject = SVGItem &
       radius: number
       fill: string
     }
+    | {
+      type: "react"
+      url: ReactNode
+    }
   );
 
 export type SVGGroup = {

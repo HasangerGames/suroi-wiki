@@ -1,68 +1,100 @@
-import { buildingLink, getSuroiImageLink, imageLink } from "@/lib/util/suroi";
+import { getSuroiImageLink, imageLink } from "@/lib/util/suroi";
 import { SVGObject } from "@/lib/util/types";
-import { ObjectCategory, ZIndexes } from "@/vendor/suroi/common/src/constants";
-import { BuildingDefinition } from "@/vendor/suroi/common/src/definitions/buildings";
+import { Layer, ObjectCategory, ZIndexes } from "@/vendor/suroi/common/src/constants";
+import { BuildingDefinition, Buildings } from "@/vendor/suroi/common/src/definitions/buildings";
 import { ObstacleDefinition, Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
 import { Orientation } from "@/vendor/suroi/common/src/typings";
 import { RectangleHitbox } from "@/vendor/suroi/common/src/utils/hitbox";
 import { Angle } from "@/vendor/suroi/common/src/utils/math";
 import { random } from "@/vendor/suroi/common/src/utils/random";
-import { Vec } from "@/vendor/suroi/common/src/utils/vector";
-import { getRandomIDString } from "@/vendor/suroi/server/src/utils/misc";
+import { Vec, Vector } from "@/vendor/suroi/common/src/utils/vector";
 import SVGObjectRenderer from "../SVGObjectRenderer";
+import { ObjectDefinition, ReferenceOrRandom, ReferenceTo } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import { getEffectiveZIndex } from "@/vendor/suroi/common/src/utils/layer";
 
 const PIXI_SCALE = 20;
 const WALL_STROKE_WIDTH = 8;
 
-function getBuildingFloorOrCeilingImages(images: BuildingDefinition["floorImages"], zIndex: ZIndexes): SVGObject[] {
+export const RENDERED_BUILDING_VIEWS = ["bunker", "first_floor", "second_floor", "ceiling"] as const;
+
+const IMAGES_IN_MM = ["headquarters_ceiling_1", "headquarters_ceiling_2", "headquarters_torture_window"];
+
+function getBuildingFloorOrCeilingImages(images: BuildingDefinition["floorImages"], zIndex: ZIndexes, offset?: Vector): SVGObject[] {
   return images.map(
-    ({ key, position, rotation, scale, tint }) => ({
-      type: "image",
-      url: imageLink(key, ObjectCategory.Building),
-      x: position.x * PIXI_SCALE,
-      y: position.y * PIXI_SCALE,
-      rotation,
-      scaleX: scale?.x ?? 1,
-      scaleY: scale?.y ?? 1,
-      zIndex
-    })
+    ({ key, position, rotation, scale, tint }) => {
+      const { x, y } = Vec.scale(offset ? Vec.addAdjust(position, offset, (rotation ?? 0) as Orientation) : position, PIXI_SCALE);
+      const mmScale = IMAGES_IN_MM.includes(key) ? 0.9365 : 1;
+      return {
+        type: "image",
+        url: imageLink(key, ObjectCategory.Building),
+        x, y,
+        rotation: Angle.radiansToDegrees(rotation ?? 0),
+        scaleX: (scale?.x ?? 1) * mmScale,
+        scaleY: (scale?.y ?? 1) * mmScale,
+        tint,
+        zIndex
+      };
+    }
   );
 }
 
-export default function RenderedBuilding({ building, hideCeiling = false }: { building: BuildingDefinition, hideCeiling?: boolean }) {
+export default function RenderedBuilding({ building, view, className }: { building: BuildingDefinition, view: typeof RENDERED_BUILDING_VIEWS[number], className?: string }) {
   const { min, max } = building.spawnHitbox.toRectangle().transform(Vec.create(0, 0), PIXI_SCALE);
   const [width, height] = [max.x - min.x, max.y - min.y];
 
-  const objects: SVGObject[] = [
-    ...getBuildingFloorOrCeilingImages(building.floorImages, building.floorZIndex),
-    ...(hideCeiling ? [] : getBuildingFloorOrCeilingImages(building.ceilingImages, building.ceilingZIndex)),
-    ...building.obstacles.filter(({ idString }) => !Obstacles.fromString(typeof idString === "object" ? Object.keys(idString)[0] : idString).invisible).map(
-      ({ idString, position, rotation, variation, scale }) => {
-        const id = getRandomIDString(idString);
+  return (
+    <svg viewBox={`${-width / 2} ${-height / 2} ${width} ${height}`} className={className}>
+      <SVGObjectRenderer objects={getBuildingObjects(building, view)}></SVGObjectRenderer>
+    </svg>
+  );
+}
+
+function getBuildingObjects(building: BuildingDefinition, view: typeof RENDERED_BUILDING_VIEWS[number], layer: Layer = Layer.Ground, offset?: Vector): SVGObject[] {
+  return [
+    ...getBuildingFloorOrCeilingImages(
+      building.floorImages,
+      getEffectiveZIndex(building.floorZIndex, layer),
+      offset
+    ),
+
+    ...(
+      view === "ceiling"
+        ? getBuildingFloorOrCeilingImages(
+          building.ceilingImages,
+          getEffectiveZIndex(building.ceilingZIndex, layer),
+          offset
+        )
+        : []
+    ),
+
+    ...building.obstacles
+      .filter(({ idString }) => !Obstacles.fromString(getIDString(idString)).invisible)
+      .map(({ idString, position, rotation, variation, scale }) => {
+        const id = getIDString(idString);
         const obstacle = Obstacles.fromString(id);
-        const scaledPosition = Vec.scale(position, PIXI_SCALE);
-        const adjustedPosition = id === "door" ? Vec.addAdjust(scaledPosition, Vec.create(-9, 0), rotation as Orientation) : scaledPosition;
+        const scaledPosition = Vec.scale(offset ? Vec.add(position, offset) : position, PIXI_SCALE);
+        const { x, y } = obstacle.isDoor ? Vec.addAdjust(scaledPosition, Vec.create(-9, 0), rotation as Orientation) : scaledPosition;
         return {
-          type: "image",
+          type: obstacle.wall ? "react" : "image",
           url: obstacle.wall
             ? renderWall(obstacle as WallObstacle)
             : getSuroiImageLink(obstacle, (variation !== undefined ? variation + 1 : obstacle.variations !== undefined ? random(1, obstacle.variations) : undefined)),
-          x: adjustedPosition.x,
-          y: adjustedPosition.y,
+          x, y,
           rotation: Angle.radiansToDegrees(Angle.orientationToRotation(rotation ?? 0)),
           scaleX: scale ?? 1,
           scaleY: scale ?? 1,
-          zIndex: obstacle.zIndex ?? ZIndexes.ObstaclesLayer1
+          zIndex: getEffectiveZIndex(obstacle.zIndex ?? ZIndexes.ObstaclesLayer1, layer)
         };
-      }
-    )
-  ];
+      }),
 
-  return (
-    <svg viewBox={`${-width / 2} ${-height / 2} ${width} ${height}`}>
-      <SVGObjectRenderer objects={objects}></SVGObjectRenderer>
-    </svg>
-  );
+    ...building.subBuildings
+      .filter(b => (view === "second_floor" || b.layer !== Layer.Floor1) && (view === "bunker" || b.layer !== Layer.Basement1))
+      .flatMap(b => getBuildingObjects(Buildings.fromString(getIDString(b.idString)), view, b.layer, Vec.scale(b.position, PIXI_SCALE)))
+  ] as SVGObject[];
+}
+
+function getIDString<T extends ObjectDefinition>(idString: ReferenceOrRandom<T>): ReferenceTo<T> {
+  return typeof idString === "object" ? Object.keys(idString)[0] : idString;
 }
 
 type WallObstacle = { hitbox: RectangleHitbox, wall: Exclude<ObstacleDefinition["wall"], undefined> };
@@ -72,6 +104,17 @@ function renderWall({ hitbox, wall }: WallObstacle) {
   const { min, max } = hitbox;
   const width = (max.x - min.x) * PIXI_SCALE;
   const height = (max.y - min.y) * PIXI_SCALE;
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}"><rect width="${width}" height="${height}" fill="#${borderColor.toString(16)}" /><rect x="${WALL_STROKE_WIDTH}" y="${WALL_STROKE_WIDTH}" width="${width - WALL_STROKE_WIDTH * 2}" height="${height - WALL_STROKE_WIDTH * 2}" fill="#${color.toString(16)}" ${rounded ? `rx="${WALL_STROKE_WIDTH}"` : ""} /></svg>`;
-  return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+  return (
+    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`}>
+      <rect width={width} height={height} fill={`#${borderColor.toString(16)}`} />
+      <rect
+        x={WALL_STROKE_WIDTH}
+        y={WALL_STROKE_WIDTH}
+        width={width - WALL_STROKE_WIDTH * 2}
+        height={height - WALL_STROKE_WIDTH * 2}
+        fill={`#${color.toString(16)}`}
+        rx={rounded ? WALL_STROKE_WIDTH : 0}
+      />
+    </svg>
+  );
 }
