@@ -29,7 +29,8 @@ export default function SVGObjectRenderer({ objects }: SVGObjectRenderer) {
                 height={object.height}
               />
             ))
-            || (object.type === "image" && <image href={object.url} />)}
+            || (object.type === "image" && <image href={object.url} />)
+            || (object.type === "react" && object.url)}
           </g>
         ))}
     </>
