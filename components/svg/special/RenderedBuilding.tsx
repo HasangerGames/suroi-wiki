@@ -5,12 +5,12 @@ import { BuildingDefinition, Buildings } from "@/vendor/suroi/common/src/definit
 import { ObstacleDefinition, Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
 import { Orientation } from "@/vendor/suroi/common/src/typings";
 import { RectangleHitbox } from "@/vendor/suroi/common/src/utils/hitbox";
-import { Angle } from "@/vendor/suroi/common/src/utils/math";
+import { getEffectiveZIndex } from "@/vendor/suroi/common/src/utils/layer";
+import { Angle, Numeric } from "@/vendor/suroi/common/src/utils/math";
+import { ObjectDefinition, ReferenceOrRandom, ReferenceTo } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { random } from "@/vendor/suroi/common/src/utils/random";
 import { Vec, Vector } from "@/vendor/suroi/common/src/utils/vector";
 import SVGObjectRenderer from "../SVGObjectRenderer";
-import { ObjectDefinition, ReferenceOrRandom, ReferenceTo } from "@/vendor/suroi/common/src/utils/objectDefinitions";
-import { getEffectiveZIndex } from "@/vendor/suroi/common/src/utils/layer";
 
 const PIXI_SCALE = 20;
 const WALL_STROKE_WIDTH = 8;
@@ -19,16 +19,22 @@ export const RENDERED_BUILDING_VIEWS = ["bunker", "first_floor", "second_floor",
 
 const IMAGES_IN_MM = ["headquarters_ceiling_1", "headquarters_ceiling_2", "headquarters_torture_window"];
 
-function getBuildingFloorOrCeilingImages(images: BuildingDefinition["floorImages"], zIndex: ZIndexes, offset?: Vector): SVGObject[] {
+function getBuildingFloorOrCeilingImages(
+  images: BuildingDefinition["floorImages"],
+  zIndex: ZIndexes,
+  offset?: Vector,
+  orientation?: number
+): SVGObject[] {
   return images.map(
     ({ key, position, rotation, scale, tint }) => {
-      const { x, y } = Vec.scale(offset ? Vec.addAdjust(position, offset, (rotation ?? 0) as Orientation) : position, PIXI_SCALE);
+      rotation = Numeric.addOrientations((rotation ?? 0) as Orientation, (orientation ?? 0) as Orientation);
+      const { x, y } = Vec.scale(offset ? Vec.addAdjust(position, offset, rotation) : position, PIXI_SCALE);
       const mmScale = IMAGES_IN_MM.includes(key) ? 0.9365 : 1;
       return {
         type: "image",
         url: imageLink(key, ObjectCategory.Building),
         x, y,
-        rotation: Angle.radiansToDegrees(rotation ?? 0),
+        rotation: Angle.radiansToDegrees(orientation === undefined ? rotation ?? 0 : Angle.orientationToRotation(rotation ?? 0)),
         scaleX: (scale?.x ?? 1) * mmScale,
         scaleY: (scale?.y ?? 1) * mmScale,
         tint,
@@ -39,22 +45,31 @@ function getBuildingFloorOrCeilingImages(images: BuildingDefinition["floorImages
 }
 
 export default function RenderedBuilding({ building, view, className }: { building: BuildingDefinition, view: typeof RENDERED_BUILDING_VIEWS[number], className?: string }) {
-  const { min, max } = building.spawnHitbox.toRectangle().transform(Vec.create(0, 0), PIXI_SCALE);
+  const hitbox = building.spawnHitbox.toRectangle().transform(Vec.create(0, 0), PIXI_SCALE);
+  const { x, y } = hitbox.getCenter();
+  const { min, max } = hitbox;
   const [width, height] = [max.x - min.x, max.y - min.y];
 
   return (
-    <svg viewBox={`${-width / 2} ${-height / 2} ${width} ${height}`} className={className}>
+    <svg viewBox={`${(-width + x) / 2} ${(-height + y) / 2} ${width + x} ${height + y}`} className={className}>
       <SVGObjectRenderer objects={getBuildingObjects(building, view)}></SVGObjectRenderer>
     </svg>
   );
 }
 
-function getBuildingObjects(building: BuildingDefinition, view: typeof RENDERED_BUILDING_VIEWS[number], layer: Layer = Layer.Ground, offset?: Vector): SVGObject[] {
+function getBuildingObjects(
+  building: BuildingDefinition,
+  view: typeof RENDERED_BUILDING_VIEWS[number],
+  layer: Layer = Layer.Ground,
+  offset?: Vector,
+  orientation?: number
+): SVGObject[] {
   return [
     ...getBuildingFloorOrCeilingImages(
       building.floorImages,
       getEffectiveZIndex(building.floorZIndex, layer),
-      offset
+      offset,
+      orientation
     ),
 
     ...(
@@ -62,7 +77,8 @@ function getBuildingObjects(building: BuildingDefinition, view: typeof RENDERED_
         ? getBuildingFloorOrCeilingImages(
           building.ceilingImages,
           getEffectiveZIndex(building.ceilingZIndex, layer),
-          offset
+          offset,
+          orientation
         )
         : []
     ),
@@ -70,6 +86,7 @@ function getBuildingObjects(building: BuildingDefinition, view: typeof RENDERED_
     ...building.obstacles
       .filter(({ idString }) => !Obstacles.fromString(getIDString(idString)).invisible)
       .map(({ idString, position, rotation, variation, scale }) => {
+        rotation = Numeric.addOrientations((rotation ?? 0) as Orientation, (orientation ?? 0) as Orientation);
         const id = getIDString(idString);
         const obstacle = Obstacles.fromString(id);
         const scaledPosition = Vec.scale(offset ? Vec.add(position, offset) : position, PIXI_SCALE);
@@ -88,8 +105,19 @@ function getBuildingObjects(building: BuildingDefinition, view: typeof RENDERED_
       }),
 
     ...building.subBuildings
-      .filter(b => (view === "second_floor" || b.layer !== Layer.Floor1) && (view === "bunker" || b.layer !== Layer.Basement1))
-      .flatMap(b => getBuildingObjects(Buildings.fromString(getIDString(b.idString)), view, b.layer, Vec.scale(b.position, PIXI_SCALE)))
+      .filter(b =>
+        (view === "second_floor" || b.layer !== Layer.Floor1)
+        && (view === "bunker" || b.layer !== Layer.Basement1)
+      )
+      .flatMap(b =>
+        getBuildingObjects(
+          Buildings.fromString(getIDString(b.idString)),
+          view,
+          b.layer,
+          offset ? Vec.add(b.position, offset) : b.position,
+          Numeric.addOrientations((orientation ?? 0) as Orientation, b.orientation ?? 0)
+        )
+      )
   ] as SVGObject[];
 }
 
