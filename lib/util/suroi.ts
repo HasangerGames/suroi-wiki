@@ -18,12 +18,14 @@ import {
   ObstacleDefinition,
   Obstacles
 } from "@/vendor/suroi/common/src/definitions/obstacles";
+import { PerkCategories, PerkDefinition, Perks } from "@/vendor/suroi/common/src/definitions/perks";
 import { SyncedParticleDefinition } from "@/vendor/suroi/common/src/definitions/syncedParticles";
 import {
   InventoryItemDefinition,
   ItemDefinition,
   ItemType,
-  ObjectDefinition
+  ObjectDefinition,
+  ReferenceTo
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { readdirSync, statSync } from "fs";
 import { resolve, sep } from "path";
@@ -155,7 +157,7 @@ function _itemImageLink(
   append?: string | string[],
   dual?: boolean
 ) {
-  return `${IMAGE_BASE_URL}/game/shared${
+  return `${IMAGE_BASE_URL}/game/${itemType === ItemType.Perk ? Perks.fromString(idString as ReferenceTo<PerkDefinition>).category === PerkCategories.Halloween ? "halloween" : "fall" : "shared"}${
     IMAGE_BASE_URLS[ItemType[itemType] as keyof typeof ItemType]
   }/${dual ? idString : idString.replace("dual_", "")}${
     variation ? `_${variation}` : ""
