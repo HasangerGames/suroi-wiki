@@ -71,6 +71,7 @@ export type SVGItem = {
   scaleY?: number
   rotation?: number
   origin?: string
+  tint?: number
   zIndex: number
 };
 
