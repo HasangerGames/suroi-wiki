@@ -7,18 +7,58 @@ export default function SVGObjectRenderer({ objects }: SVGObjectRenderer) {
       {[...objects]
         .sort((a, b) => a.zIndex - b.zIndex)
         .map((object, i) => {
-          let r: number | undefined;
-          let g: number | undefined;
-          let b: number | undefined;
+          let red: number | undefined;
+          let green: number | undefined;
+          let blue: number | undefined;
+          let alpha: number | undefined;
           let filterURL: string | undefined;
-          const tint = object.tint;
-          if (tint) {
-            r = ((tint & 0xff0000) >> 16) / 255;
-            g = ((tint & 0x00ff00) >> 8) / 255;
-            b = (tint & 0x0000ff) / 255;
-            console.log(r, g, b);
+          let tint = object.tint;
+          if (typeof tint === "string") {
+            if (tint.startsWith("#")) {
+              switch (tint.length) {
+                case 4: {
+                  const [r, g, b] = [
+                    tint.charAt(1),
+                    tint.charAt(2),
+                    tint.charAt(3)
+                  ];
+                  tint = parseInt(`${r}${r}${g}${g}${b}${b}`, 16);
+                  break;
+                }
+                case 5: {
+                  const [r, g, b, a] = [
+                    tint.charAt(1),
+                    tint.charAt(2),
+                    tint.charAt(3),
+                    tint.charAt(4)
+                  ];
+                  tint = parseInt(`${r}${r}${g}${g}${b}${b}${a}${a}`, 16);
+                  break;
+                }
+                default: {
+                  tint = parseInt((tint as string).slice(1), 16);
+                  break;
+                }
+              }
+            } else {
+              tint = 0xffffff;
+            }
+          }
+          if (typeof tint === "number") {
+            if (tint > 0xffffff) {
+              red = ((tint & 0xff000000) >> 24) / 255;
+              green = ((tint & 0x00ff0000) >> 16) / 255;
+              blue = ((tint & 0x0000ff00) >> 8) / 255;
+              alpha = (tint & 0x000000ff) / 255;
+            } else {
+              red = ((tint & 0xff0000) >> 16) / 255;
+              green = ((tint & 0x00ff00) >> 8) / 255;
+              blue = (tint & 0x0000ff) / 255;
+              alpha = 1;
+            }
             filterURL = randomUUID();
           }
+
           return (
             <>
               {tint && (
@@ -27,10 +67,10 @@ export default function SVGObjectRenderer({ objects }: SVGObjectRenderer) {
                     in="SourceGraphic"
                     color-interpolation-filters="sRGB"
                     type="matrix"
-                    values={`${r} 0 0 0 0
-                            0 ${g} 0 0 0
-                            0 0 ${b} 0 0
-                            0 0 0 1 0`}
+                    values={`${red} 0 0 0 0
+                            0 ${green} 0 0 0
+                            0 0 ${blue} 0 0
+                            0 0 0 ${alpha} 0`}
                   />
                 </filter>
               )}
