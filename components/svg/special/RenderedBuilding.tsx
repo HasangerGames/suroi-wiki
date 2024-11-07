@@ -28,7 +28,7 @@ function getBuildingFloorOrCeilingImages(
   return images.map(
     ({ key, position, rotation, scale, tint }) => {
       rotation = Numeric.addOrientations((rotation ?? 0) as Orientation, (orientation ?? 0) as Orientation);
-      const { x, y } = Vec.scale(offset ? Vec.addAdjust(position, offset, rotation) : position, PIXI_SCALE);
+      const { x, y } = Vec.scale(offset ? Vec.addAdjust(position, offset, rotation as Orientation) : position, PIXI_SCALE);
       const mmScale = IMAGES_IN_MM.includes(key) ? 0.9365 : 1;
       return {
         type: "image",
