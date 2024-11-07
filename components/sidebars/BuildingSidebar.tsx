@@ -33,7 +33,7 @@ export default function BuildingSidebar({
           type: "react",
           title: viewMap[view],
           children: <RenderedBuilding building={item} view={view}></RenderedBuilding>,
-          classes: "h-60"
+          classes: "w-full p-1 aspect-square"
         }))
       }
       initialTab={3}
