@@ -69,7 +69,7 @@ export const IMAGE_BASE_URLS = {
 
 export const TEXTURE_PATHS: Record<string, string> = {};
 
-if (typeof window === "undefined") {
+if (typeof window === "undefined" && readdirSync) {
   const readDirectory = (dir: string): string[] => {
     let results: string[] = [];
     const files = readdirSync(dir);
