@@ -4,7 +4,7 @@ import { Buildings } from "@/vendor/suroi/common/src/definitions";
 export default function Test() {
   return (
     <>
-      <RenderedBuilding building={Buildings.fromString("port")} view="first_floor"></RenderedBuilding>
+      <RenderedBuilding building={Buildings.fromString("armory")} view="first_floor"></RenderedBuilding>
     </>
   );
 }
