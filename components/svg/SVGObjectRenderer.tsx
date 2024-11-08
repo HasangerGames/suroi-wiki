@@ -78,9 +78,7 @@ export default function SVGObjectRenderer({ objects }: SVGObjectRenderer) {
                 key={i.toString()}
                 style={{
                   transformBox: "fill-box",
-                  translate: `calc(${object.x ?? 0}px - 50%) calc(${
-                    object.y ?? 0
-                  }px - 50%)`,
+                  translate: `calc(${object.x ?? 0}px - 50%) calc(${object.y ?? 0}px - 50%)`,
                   scale: `${object.scaleX ?? 1} ${object.scaleY ?? 1}`,
                   rotate: `${object.rotation ?? 0}deg`,
                   transformOrigin: object.origin ?? "center"

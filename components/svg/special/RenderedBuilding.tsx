@@ -2,16 +2,16 @@ import { getSuroiImageLink, imageLink } from "@/lib/util/suroi";
 import { SVGObject } from "@/lib/util/types";
 import { Layer, ObjectCategory, ZIndexes } from "@/vendor/suroi/common/src/constants";
 import { BuildingDefinition, Buildings } from "@/vendor/suroi/common/src/definitions/buildings";
-import { ObstacleDefinition, Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
+import { ObstacleDefinition, Obstacles, RotationMode } from "@/vendor/suroi/common/src/definitions/obstacles";
 import { Orientation } from "@/vendor/suroi/common/src/typings";
-import { RectangleHitbox } from "@/vendor/suroi/common/src/utils/hitbox";
+import { Hitbox, HitboxType, RectangleHitbox } from "@/vendor/suroi/common/src/utils/hitbox";
 import { getEffectiveZIndex } from "@/vendor/suroi/common/src/utils/layer";
 import { Angle, Numeric } from "@/vendor/suroi/common/src/utils/math";
 import { ObjectDefinition, ReferenceOrRandom, ReferenceTo } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { random } from "@/vendor/suroi/common/src/utils/random";
 import { Vec, Vector } from "@/vendor/suroi/common/src/utils/vector";
-import SVGObjectRenderer from "../SVGObjectRenderer";
 import { getRandomIDString } from "@/vendor/suroi/server/src/utils/misc";
+import SVGObjectRenderer from "../SVGObjectRenderer";
 
 const PIXI_SCALE = 20;
 const WALL_STROKE_WIDTH = 8;
@@ -24,6 +24,12 @@ function rotationToOrientation(rotation: number): number {
   return 3 - Numeric.absMod((rotation / Math.PI * 2) - 1, 4);
 }
 
+function transformPosition(position: Vector, offset?: Vector, orientation = 0) {
+  const adjustedOffset = offset && Vec.addAdjust(Vec.create(0, 0), offset, orientation as Orientation);
+  const adjustedPosition = Vec.addAdjust(Vec.create(0, 0), position, orientation as Orientation);
+  return Vec.scale(adjustedOffset ? Vec.add(adjustedPosition, adjustedOffset) : adjustedPosition, PIXI_SCALE);
+}
+
 function getBuildingFloorOrCeilingImages(
   images: BuildingDefinition["floorImages"],
   zIndex: ZIndexes,
@@ -31,13 +37,11 @@ function getBuildingFloorOrCeilingImages(
   orientation = 0
 ): SVGObject[] {
   return images.map(
-    ({ key, position, rotation = 0, scale, tint }) => {
+    ({ key, position, rotation = 0, scale, tint, zIndex: imageZIndex }) => {
       if (rotation) {
         rotation = rotationToOrientation(rotation);
       }
-      const adjustedOffset = offset && Vec.addAdjust(Vec.create(0, 0), offset, orientation as Orientation);
-      const adjustedPosition = Vec.addAdjust(Vec.create(0, 0), position, orientation as Orientation);
-      const { x, y } = Vec.scale(adjustedOffset ? Vec.add(adjustedPosition, adjustedOffset) : adjustedPosition, PIXI_SCALE);
+      const { x, y } = transformPosition(position, offset, orientation);
       const mmScale = IMAGES_IN_MM.includes(key) ? 0.9365 : 1;
       return {
         type: "image",
@@ -51,7 +55,7 @@ function getBuildingFloorOrCeilingImages(
         scaleX: (scale?.x ?? 1) * mmScale,
         scaleY: (scale?.y ?? 1) * mmScale,
         tint,
-        zIndex
+        zIndex: zIndex ?? imageZIndex
       };
     }
   );
@@ -104,17 +108,16 @@ function getBuildingObjects(
         const id = getRandomIDString(idString);
         const obstacle = Obstacles.fromString(id);
 
-        const adjustedOffset = offset && Vec.addAdjust(Vec.create(0, 0), offset, orientation as Orientation);
-        const adjustedPosition = Vec.addAdjust(Vec.create(0, 0), position, orientation as Orientation);
-        const scaledPosition = Vec.scale(adjustedOffset ? Vec.add(adjustedPosition, adjustedOffset) : adjustedPosition, PIXI_SCALE);
+        const scaledPosition = transformPosition(position, offset, orientation);
         const { x, y } = obstacle.isDoor ? Vec.addAdjust(scaledPosition, Vec.create(-9, 0), rotation as Orientation) : scaledPosition;
+
         return {
           type: obstacle.wall ? "react" : "image",
           url: obstacle.wall
             ? renderWall(obstacle as WallObstacle)
             : getSuroiImageLink(obstacle, (variation !== undefined ? variation + 1 : obstacle.variations !== undefined ? random(1, obstacle.variations) : undefined)),
           x, y,
-          rotation: Angle.radiansToDegrees(Angle.orientationToRotation(rotation)),
+          rotation: obstacle.rotationMode === RotationMode.None ? 0 : Angle.radiansToDegrees(Angle.orientationToRotation(rotation)),
           scaleX: scale ?? 1,
           scaleY: scale ?? 1,
           zIndex: getEffectiveZIndex(obstacle.zIndex ?? ZIndexes.ObstaclesLayer1, layer)
@@ -134,7 +137,10 @@ function getBuildingObjects(
           offset ? Vec.add(b.position, offset) : b.position,
           Numeric.addOrientations(orientation as Orientation, b.orientation ?? 0)
         )
-      )
+      ),
+
+    ...[...building.groundGraphics].reverse().flatMap((graphics, i) => renderGroundGraphics(graphics, -i, offset, orientation)),
+    ...[...building.graphics].reverse().flatMap((graphics, i) => renderGroundGraphics(graphics, getEffectiveZIndex(building.graphicsZIndex - (i / (building.graphics.length + 1)), layer), offset, orientation))
   ] as SVGObject[];
 }
 
@@ -162,4 +168,38 @@ function renderWall({ hitbox, wall }: WallObstacle) {
       />
     </svg>
   );
+}
+
+function renderGroundGraphics(
+  { color, hitbox }: BuildingDefinition["groundGraphics"][number],
+  zIndex: ZIndexes,
+  offset?: Vector,
+  orientation = 0
+): SVGObject | SVGObject[] {
+  if (typeof color === "number") {
+    color = `#${color.toString(16).padStart(6, "0")}`;
+  }
+  const renderHitbox = (hitbox: Hitbox): SVGObject | SVGObject[] => {
+    switch (hitbox.type) {
+      case HitboxType.Rect: {
+        const { min, max } = hitbox;
+        const width = (max.x - min.x) * PIXI_SCALE;
+        const height = (max.y - min.y) * PIXI_SCALE;
+        const { x, y } = transformPosition(hitbox.getCenter(), offset, orientation);
+        return {
+          type: "react",
+          x, y,
+          url: (
+            <rect width={width} height={height} fill={color as string} />
+          ),
+          zIndex
+        };
+      }
+      case HitboxType.Group: {
+        return hitbox.hitboxes.flatMap(hitbox => renderHitbox(hitbox));
+      }
+    }
+    return [];
+  };
+  return renderHitbox(hitbox);
 }
