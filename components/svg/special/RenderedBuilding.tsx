@@ -198,6 +198,25 @@ function renderGroundGraphics(
       case HitboxType.Group: {
         return hitbox.hitboxes.flatMap(hitbox => renderHitbox(hitbox));
       }
+      // case HitboxType.Polygon: {
+      //   return {
+      //     type: "react",
+      //     url: (
+      //       <polygon
+      //         points={
+      //           hitbox.points
+      //             .map(point => {
+      //               const { x, y } = transformPosition(point, offset, orientation);
+      //               return `${x},${y}`;
+      //             })
+      //             .join(" ")
+      //         }
+      //         fill={color as string}
+      //       />
+      //     ),
+      //     zIndex
+      //   };
+      // }
     }
     return [];
   };
