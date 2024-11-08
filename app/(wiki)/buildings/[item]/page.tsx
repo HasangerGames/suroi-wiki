@@ -50,7 +50,7 @@ export const BuildingMetaArticles = [
     title: "Tents",
     items: [
       ...range(5, 1).map(n => `tent_${n}`),
-      ...range(4, 1).map(n => `big_tent_${n}`)
+      ...range(4, 1).map(n => `tent_big_${n}`)
     ],
     fileName: "tents"
   },
