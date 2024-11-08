@@ -65,7 +65,7 @@ export default function SVGObjectRenderer({ objects }: SVGObjectRenderer) {
                 <filter id={filterURL}>
                   <feColorMatrix
                     in="SourceGraphic"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                     type="matrix"
                     values={`${red} 0 0 0 0
                             0 ${green} 0 0 0

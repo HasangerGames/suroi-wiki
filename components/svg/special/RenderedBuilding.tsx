@@ -11,30 +11,43 @@ import { ObjectDefinition, ReferenceOrRandom, ReferenceTo } from "@/vendor/suroi
 import { random } from "@/vendor/suroi/common/src/utils/random";
 import { Vec, Vector } from "@/vendor/suroi/common/src/utils/vector";
 import SVGObjectRenderer from "../SVGObjectRenderer";
+import { getRandomIDString } from "@/vendor/suroi/server/src/utils/misc";
 
 const PIXI_SCALE = 20;
 const WALL_STROKE_WIDTH = 8;
 
 export const RENDERED_BUILDING_VIEWS = ["bunker", "first_floor", "second_floor", "ceiling"] as const;
 
-const IMAGES_IN_MM = ["headquarters_ceiling_1", "headquarters_ceiling_2", "headquarters_torture_window"];
+const IMAGES_IN_MM = ["headquarters_ceiling_1", "headquarters_ceiling_2", "headquarters_torture_window", "port_warehouse_ceiling"];
+
+function rotationToOrientation(rotation: number): number {
+  return 3 - Numeric.absMod((rotation / Math.PI * 2) - 1, 4);
+}
 
 function getBuildingFloorOrCeilingImages(
   images: BuildingDefinition["floorImages"],
   zIndex: ZIndexes,
   offset?: Vector,
-  orientation?: number
+  orientation = 0
 ): SVGObject[] {
   return images.map(
-    ({ key, position, rotation, scale, tint }) => {
-      rotation = Numeric.addOrientations((rotation ?? 0) as Orientation, (orientation ?? 0) as Orientation);
-      const { x, y } = Vec.scale(offset ? Vec.addAdjust(position, offset, rotation as Orientation) : position, PIXI_SCALE);
+    ({ key, position, rotation = 0, scale, tint }) => {
+      if (rotation) {
+        rotation = rotationToOrientation(rotation);
+      }
+      const adjustedOffset = offset && Vec.addAdjust(Vec.create(0, 0), offset, orientation as Orientation);
+      const adjustedPosition = Vec.addAdjust(Vec.create(0, 0), position, orientation as Orientation);
+      const { x, y } = Vec.scale(adjustedOffset ? Vec.add(adjustedPosition, adjustedOffset) : adjustedPosition, PIXI_SCALE);
       const mmScale = IMAGES_IN_MM.includes(key) ? 0.9365 : 1;
       return {
         type: "image",
         url: imageLink(key, ObjectCategory.Building),
         x, y,
-        rotation: Angle.radiansToDegrees(orientation === undefined ? rotation ?? 0 : Angle.orientationToRotation(rotation ?? 0)),
+        rotation: Angle.radiansToDegrees(
+          Angle.orientationToRotation(
+            Numeric.addOrientations(rotation as Orientation, orientation as Orientation)
+          )
+        ),
         scaleX: (scale?.x ?? 1) * mmScale,
         scaleY: (scale?.y ?? 1) * mmScale,
         tint,
@@ -62,7 +75,7 @@ function getBuildingObjects(
   view: typeof RENDERED_BUILDING_VIEWS[number],
   layer: Layer = Layer.Ground,
   offset?: Vector,
-  orientation?: number
+  orientation = 0
 ): SVGObject[] {
   return [
     ...getBuildingFloorOrCeilingImages(
@@ -85,11 +98,15 @@ function getBuildingObjects(
 
     ...building.obstacles
       .filter(({ idString }) => !Obstacles.fromString(getIDString(idString)).invisible)
-      .map(({ idString, position, rotation, variation, scale }) => {
-        rotation = Numeric.addOrientations((rotation ?? 0) as Orientation, (orientation ?? 0) as Orientation);
-        const id = getIDString(idString);
+      .map(({ idString, position, rotation = 0, variation, scale }) => {
+        rotation = Numeric.addOrientations(rotation as Orientation, orientation as Orientation);
+
+        const id = getRandomIDString(idString);
         const obstacle = Obstacles.fromString(id);
-        const scaledPosition = Vec.scale(offset ? Vec.add(position, offset) : position, PIXI_SCALE);
+
+        const adjustedOffset = offset && Vec.addAdjust(Vec.create(0, 0), offset, orientation as Orientation);
+        const adjustedPosition = Vec.addAdjust(Vec.create(0, 0), position, orientation as Orientation);
+        const scaledPosition = Vec.scale(adjustedOffset ? Vec.add(adjustedPosition, adjustedOffset) : adjustedPosition, PIXI_SCALE);
         const { x, y } = obstacle.isDoor ? Vec.addAdjust(scaledPosition, Vec.create(-9, 0), rotation as Orientation) : scaledPosition;
         return {
           type: obstacle.wall ? "react" : "image",
@@ -97,7 +114,7 @@ function getBuildingObjects(
             ? renderWall(obstacle as WallObstacle)
             : getSuroiImageLink(obstacle, (variation !== undefined ? variation + 1 : obstacle.variations !== undefined ? random(1, obstacle.variations) : undefined)),
           x, y,
-          rotation: Angle.radiansToDegrees(Angle.orientationToRotation(rotation ?? 0)),
+          rotation: Angle.radiansToDegrees(Angle.orientationToRotation(rotation)),
           scaleX: scale ?? 1,
           scaleY: scale ?? 1,
           zIndex: getEffectiveZIndex(obstacle.zIndex ?? ZIndexes.ObstaclesLayer1, layer)
@@ -111,11 +128,11 @@ function getBuildingObjects(
       )
       .flatMap(b =>
         getBuildingObjects(
-          Buildings.fromString(getIDString(b.idString)),
+          Buildings.fromString(getRandomIDString(b.idString)),
           view,
           b.layer,
           offset ? Vec.add(b.position, offset) : b.position,
-          Numeric.addOrientations((orientation ?? 0) as Orientation, b.orientation ?? 0)
+          Numeric.addOrientations(orientation as Orientation, b.orientation ?? 0)
         )
       )
   ] as SVGObject[];
