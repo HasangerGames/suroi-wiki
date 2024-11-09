@@ -1,3 +1,4 @@
+import RenderedBuilding from "@/components/svg/special/RenderedBuilding";
 import { Armors, Backpacks, Buildings, HealingItems } from "@/vendor/suroi/common/src/definitions";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
@@ -12,15 +13,15 @@ import {
 } from "@/vendor/suroi/server/src/data/lootTables";
 import {
   IMAGE_BASE_URL,
-  getSuroiBuilding,
   getSuroiImageLink,
   getSuroiItem,
   getSuroiObstacle
 } from "./suroi";
+import { ReactNode } from "react";
 
 export type SearchItem = {
   name: string
-  image?: string
+  image?: string | ReactNode
   url: string
   description?: string
 };
@@ -72,7 +73,9 @@ export const wikiPages: SearchItem[] = [
     name: "Buildings",
     url: "/buildings",
     description: "List of buildings",
-    image: getSuroiImageLink(getSuroiBuilding("red_house"))
+    image: (
+      <RenderedBuilding building={Buildings.fromString("red_house")} view="ceiling" className="w-24 h-24"></RenderedBuilding>
+    )
   },
   {
     name: "Perks",

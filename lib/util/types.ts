@@ -54,6 +54,10 @@ export type SVGObject = SVGItem &
       radius: number
       fill: string
     }
+    | {
+      type: "react"
+      url: ReactNode
+    }
   );
 
 export type SVGGroup = {
@@ -67,6 +71,7 @@ export type SVGItem = {
   scaleY?: number
   rotation?: number
   origin?: string
+  tint?: number | `#${string}`
   zIndex: number
 };
 

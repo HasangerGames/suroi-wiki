@@ -9,7 +9,14 @@ import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
-import RenderedBuilding from "../svg/special/RenderedBuilding";
+import RenderedBuilding, { RENDERED_BUILDING_VIEWS } from "../svg/special/RenderedBuilding";
+
+const viewMap: Record<typeof RENDERED_BUILDING_VIEWS[number], string> = {
+  bunker: "Underground",
+  first_floor: "1st Floor",
+  second_floor: "2nd Floor",
+  ceiling: "Outside"
+};
 
 export default function BuildingSidebar({
   item
@@ -21,7 +28,15 @@ export default function BuildingSidebar({
   return (
     <GenericSidebar
       title={item.name}
-      image={<RenderedBuilding building={item}></RenderedBuilding>}
+      imageVariations={
+        RENDERED_BUILDING_VIEWS.map(view => ({
+          type: "react",
+          title: viewMap[view],
+          children: <RenderedBuilding building={item} view={view}></RenderedBuilding>,
+          classes: "w-full p-1 aspect-square"
+        }))
+      }
+      initialTab={3}
     >
       <InfoboxHeader>Contains</InfoboxHeader>
       <InfoboxRow>

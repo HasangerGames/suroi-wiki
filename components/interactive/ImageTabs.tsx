@@ -7,8 +7,13 @@ import { useState } from "react";
 
 const BackgroundMode = ["transparent", "white", "black", "checker"];
 
-export default function ImageTabs({ images }: ImageTabsProps) {
-  const [currentTab, setCurrentTab] = useState(0);
+export interface ImageTabsProps extends React.PropsWithChildren {
+  images: ImageTab[]
+  initialTab?: number
+}
+
+export default function ImageTabs({ images, initialTab }: ImageTabsProps) {
+  const [currentTab, setCurrentTab] = useState(initialTab ?? 0);
   const [backgroundMode, setBackgroundMode] = useState("transparent");
   const currentImage = images[currentTab];
   return (
@@ -60,7 +65,7 @@ export default function ImageTabs({ images }: ImageTabsProps) {
               : currentImage.type === "react"
                 ? (
                   <div
-                    className={`w-60 ${currentImage.unlimitedHeight ? "" : "h-60"} my-4 flex ${getColor(
+                    className={`${currentImage.classes ?? "w-60 h-60"} my-4 flex ${getColor(
                       backgroundMode
                     )} bg-repeat bg-[length:1rem]`}
                   >
@@ -68,7 +73,7 @@ export default function ImageTabs({ images }: ImageTabsProps) {
                   </div>
                 )
                 : (
-                  <h1>(No image avaliable)</h1>
+                  <h1>(No image available)</h1>
                 )
         )
         : (
@@ -105,8 +110,4 @@ function getColor(
     default:
       return "";
   }
-}
-
-export interface ImageTabsProps extends React.PropsWithChildren {
-  images: ImageTab[]
 }
