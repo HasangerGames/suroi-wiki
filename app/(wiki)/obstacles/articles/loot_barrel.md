@@ -23,5 +23,5 @@ Loot barrels, as the name indicates, drop 1 [SR-25](/weapons/guns/sr25) with amm
 
 # History
 
-- [v.18.2] (https://github.com/HasangerGames/suroi/releases/tag/v0.18.2)
+- [v0.18.2](https://github.com/HasangerGames/suroi/releases/tag/v0.18.2)
   - Added
