@@ -21,8 +21,6 @@ import {
 import { PerkCategories, PerkDefinition, Perks } from "@/vendor/suroi/common/src/definitions/perks";
 import { SyncedParticleDefinition } from "@/vendor/suroi/common/src/definitions/syncedParticles";
 import {
-  InventoryItemDefinition,
-  ItemDefinition,
   ItemType,
   ObjectDefinition,
   ReferenceTo

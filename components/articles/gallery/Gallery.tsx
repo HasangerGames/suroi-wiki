@@ -72,8 +72,9 @@ export default function Gallery({ images }: GalleryProps) {
             {images[currentImage].caption && (
               <span
                 className="absolute bg-black/20 left-[50%] translate-x-[-50%] bottom-0 rounded-md p-4 h-16 overflow-y-auto z-10 text-center"
-                dangerouslySetInnerHTML={{__html: images[currentImage].caption ?? ""}}
-              ></span>
+                dangerouslySetInnerHTML={{ __html: images[currentImage].caption ?? "" }}
+              >
+              </span>
             )}
             {images[currentImage].type === "youtube"
               ? (
@@ -99,8 +100,8 @@ export default function Gallery({ images }: GalleryProps) {
                     src={images[currentImage].url}
                     alt={
                       (images[currentImage].caption
-                      && images[currentImage].caption)
-                      || "Image with no caption"
+                        && images[currentImage].caption)
+                        || "Image with no caption"
                     }
                     width={500}
                     height={500}
