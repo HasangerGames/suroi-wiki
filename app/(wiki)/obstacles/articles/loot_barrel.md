@@ -23,5 +23,16 @@ Loot barrels, as the name indicates, drop 1 [SR-25](/weapons/guns/sr25) with amm
 
 # History
 
-- [v.18.2] (https://github.com/HasangerGames/suroi/releases/tag/v0.18.2)
+- [v0.18.2](https://github.com/HasangerGames/suroi/releases/tag/v0.18.2)
   - Added
+
+# Gallery
+<Gallery
+  images={[
+    {
+      url: "/img/articles/obstacles/loot_barrel.webp",
+      author: "xvc, pap",
+      caption: "A player finding a loot barrel in [v0.18.2](https://github.com/HasangerGames/suroi/releases/tag/v0.18.2) Note the different caution label when compared to a regular [Barrel](/obstacles/barrel)",
+    },
+  ]}
+/>
