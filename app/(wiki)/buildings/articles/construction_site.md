@@ -11,6 +11,7 @@ Only 1 construction site can spawn per map. It consists of a bunker entrance (cu
 - The [Road Blocks](/obstacles/roadblock) and [Sandbags](/obstacles/sandbags) are good cover, but grenades can fly over them, forcing you out. 
 - Use the [Bunker Entrance](/obstacles/bunker_entrance) for cover, as it is indestructible and has good positioning.
 # Trivia
+
 - The construction site was the first hint of a multi-story building in the game.
 - One day, the bunker entrance may open, revealing a bunker...
 - Platonthek and Yeet120 designed the construction site.
