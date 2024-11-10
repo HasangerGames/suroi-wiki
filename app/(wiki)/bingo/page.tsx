@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 export default function Bingo() {
   const slots: string[] = [
-    "Can't Spell",
+    "Can't spell",
     "Pings hasanger",
     "Leaves 10 minutes after joining",
     "Didn't read #faq",
@@ -13,21 +13,21 @@ export default function Bingo() {
     "Harassing other server members for no reason",
     "Begging for roles",
     "Alt account",
-    "Reporting teamers without evidence",
+    "Reporting without evidence",
     "Offensive slurs in profile",
     "Deleting every other message they send",
     "Free!",
     "Has to translate messages",
-    "Politics",
+    "Politically motivated",
     "Ban speedrun",
     "\"how to play surviv\"",
-    "Spam stupid suggestions",
-    "\"When are teams coming\"",
+    "Spamming stupid suggestions",
+    "\"When is cobalt/50vs50 coming\"",
     "Attempts to contribute and never sends another message after the day they join",
-    "Spamming",
+    "In-game ban appeal",
     "Complaining about balance, teamers, or lag in #general while the topic is unrelated",
     "Obviously underage",
-    "Please add (surviv feature)",
+    "Please add (random surviv feature)",
     "Communicates exclusively with gifs, emojis, and videos"
   ];
   return (
