@@ -27,7 +27,8 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
         <InfoboxColumn title="Capacity">{gun.capacity}
           <abbr title="Capacity with Extended Magazines Perk">
             ({gun.extendedCapacity ?? gun.capacity})
-          </abbr></InfoboxColumn>
+          </abbr>
+        </InfoboxColumn>
       </InfoboxRow>
       <InfoboxRow>
         <InfoboxColumn title="Reload">
@@ -113,9 +114,9 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
           {gun.fireMode === FireMode.Burst
           && (
             (1000
-            / (gun.burstProperties.burstCooldown
-            + gun.fireDelay * gun.burstProperties.shotsPerBurst))
-            * (gun.ballistics.damage * gun.burstProperties.shotsPerBurst)
+              / (gun.burstProperties.burstCooldown
+                + gun.fireDelay * gun.burstProperties.shotsPerBurst))
+                * (gun.ballistics.damage * gun.burstProperties.shotsPerBurst)
           ).toFixed(2)}
           {gun.fireMode !== FireMode.Burst
           && (
@@ -131,11 +132,11 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
           {gun.fireMode === FireMode.Burst
           && (
             (1000
-            / (gun.burstProperties.burstCooldown
-            + gun.fireDelay * gun.burstProperties.shotsPerBurst))
-            * (gun.ballistics.damage
-            * gun.ballistics.obstacleMultiplier
-            * gun.burstProperties.shotsPerBurst)
+              / (gun.burstProperties.burstCooldown
+                + gun.fireDelay * gun.burstProperties.shotsPerBurst))
+                * (gun.ballistics.damage
+                  * gun.ballistics.obstacleMultiplier
+                  * gun.burstProperties.shotsPerBurst)
           ).toFixed(2)}
           {gun.fireMode !== FireMode.Burst
           && (

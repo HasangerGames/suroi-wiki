@@ -2,11 +2,11 @@ import Link, { LinkProps } from "next/link";
 
 export default function URLLink(
   props: LinkProps &
-  React.PropsWithChildren & {
-    target?: string
-    className?: string
-    unstyled?: boolean
-  }
+    React.PropsWithChildren & {
+      target?: string
+      className?: string
+      unstyled?: boolean
+    }
 ) {
   const { unstyled, ...passProps } = props;
 

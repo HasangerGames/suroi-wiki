@@ -114,8 +114,8 @@ export default function ArmorCalc() {
               <span className="font-bold">Damage Reduction:</span>{" "}
               {(
                 ((selectedHelmet?.damageReduction ?? 0)
-                + (selectedVest?.damageReduction ?? 0))
-                * 100
+                  + (selectedVest?.damageReduction ?? 0))
+                  * 100
               ).toFixed(2)}
               %
             </span>
@@ -124,16 +124,16 @@ export default function ArmorCalc() {
               {(
                 selectedGun.ballistics.damage
                 * (1
-                - ((selectedHelmet?.damageReduction ?? 0)
-                + (selectedVest?.damageReduction ?? 0)))
+                  - ((selectedHelmet?.damageReduction ?? 0)
+                    + (selectedVest?.damageReduction ?? 0)))
               ).toFixed(2)}{" "}
               (
               {(
                 selectedGun.ballistics.damage
                 * (1
-                - ((selectedHelmet?.damageReduction ?? 0)
-                + (selectedVest?.damageReduction ?? 0)))
-                - selectedGun.ballistics.damage
+                  - ((selectedHelmet?.damageReduction ?? 0)
+                    + (selectedVest?.damageReduction ?? 0)))
+                    - selectedGun.ballistics.damage
               ).toFixed(2)}
               )
             </span>
@@ -146,9 +146,9 @@ export default function ArmorCalc() {
               {Math.ceil(
                 100
                 / (selectedGun.ballistics.damage
-                * (1
-                - ((selectedHelmet?.damageReduction ?? 0)
-                + (selectedVest?.damageReduction ?? 0))))
+                  * (1
+                    - ((selectedHelmet?.damageReduction ?? 0)
+                      + (selectedVest?.damageReduction ?? 0))))
               )}
               {selectedGun.bulletCount && selectedGun.bulletCount > 1 && (
                 <span>
@@ -157,10 +157,10 @@ export default function ArmorCalc() {
                   {Math.ceil(
                     100
                     / (selectedGun.ballistics.damage
-                    * (1
-                    - ((selectedHelmet?.damageReduction ?? 0)
-                    + (selectedVest?.damageReduction ?? 0))))
-                    / selectedGun.bulletCount
+                      * (1
+                        - ((selectedHelmet?.damageReduction ?? 0)
+                          + (selectedVest?.damageReduction ?? 0))))
+                          / selectedGun.bulletCount
                   )}{" "}
                   shot(s) with {selectedGun.bulletCount} bullets)
                 </span>
