@@ -1,12 +1,7 @@
 import LootCalc from "@/components/interactive/LootCalc";
 import TableWithHeader from "@/components/tables/TableWithHeader";
 import { Loots } from "@/vendor/suroi/common/src/definitions/loots";
-import {
-  FullLootTable,
-  LootTables,
-  LootTiers,
-  SimpleLootTable
-} from "@/vendor/suroi/server/src/data/lootTables";
+import { LootTables } from "@/vendor/suroi/server/src/data/lootTables";
 
 export default function LootPage() {
   return (
@@ -36,7 +31,7 @@ export default function LootPage() {
               key={name}
               title={`Table ${name}`}
               header={["Item", "Count", "Weight", "% Chance"]}
-              content={("loot" in tables ? (tables as FullLootTable).loot : tables as SimpleLootTable).map(table => [
+              content={("loot" in tables ? (tables).loot : tables).map(table => [
                 "item" in table
                   ? `Item ${
                     Loots.definitions.find(
@@ -48,8 +43,8 @@ export default function LootPage() {
                 table.weight,
                 `${(
                   (table.weight
-                  / ("loot" in tables ? (tables as FullLootTable).loot : tables as SimpleLootTable).reduce((acc, table) => acc + table.weight, 0))
-                  * 100
+                    / ("loot" in tables ? (tables).loot : tables).reduce((acc, table) => acc + table.weight, 0))
+                    * 100
                 ).toFixed(2)}%`
               ])}
             />

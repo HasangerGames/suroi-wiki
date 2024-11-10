@@ -1,4 +1,4 @@
-The **Bush** is an [Obstacle](/obstacles) that spawns frequently around the map. It was added to the game in the [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0) "We're back, baby" update on May 20th, 2023. They are mostly opaque and can be moved through. The **Blueberry Bush** is a larger and more opaque variation of the standard Bush and contains loot underneath.
+The **Bush** is an [Obstacle](/obstacles) that spawns frequently around the map. It was added to the game in the [v0.1.0](https://github.com/HasangerGames/suroi/releases/tag/v0.1.0) "We're back, baby" update on May 20th, 2023. They are mostly opaque and can be moved through. The **Blueberry Bush** is a larger and more opaque variation of the standard Bush and contains loot underneath. The **Vibrant Bush** is a large variation of the Blueberry Bush that has extra health but only spawns on the Harvest and Halloween Maps.
 
 # Location & Spawning
 
@@ -6,9 +6,11 @@ Both Bushes and Blueberry Bushes can be randomly spawned around the map, with no
 
 - 120 Bushes and 30 Blueberry Bushes spawn per map
 
+200 Vibrant Bushes spawn on both the Harvest and Halloween Maps.
+
 # Loot & More
 
-The Bush does not have any loot, but the Blueberry Bush has decent [loot](/loot#blueberry_bush). It spawns with [Scopes](/loot#scopes), [Armor](equipment/armor), or [Backpacks](equipment/backpacks).
+The Bush does not have any loot, but the Blueberry Bush has decent [loot](/loot#blueberry_bush). It spawns with [Scopes](/loot#scopes), [Armor](equipment/armor), or [Backpacks](equipment/backpacks). The Vibrant Bush can also spawn with [Healing items](/healing).
 
 # Tips
 
@@ -29,7 +31,8 @@ The Bush does not have any loot, but the Blueberry Bush has decent [loot](/loot#
 - When Blueberry Bushes were first added, a layering bug caused players to appear on top of bushes on other players' screens.
 
 # History
-
+- [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+  - Added Vibrant Bushes
 - [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0)
   - Added a reskinned version of Blueberry Bush for Halloween Map (red berries)
 - [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
