@@ -76,7 +76,7 @@ const toExport = GenericArticlePage({
     },
     {
       title: "Bush",
-      items: ["bush", "blueberry_bush"],
+      items: ["bush", "blueberry_bush", "vibrant_bush"],
       fileName: "bushes"
     }
   ]

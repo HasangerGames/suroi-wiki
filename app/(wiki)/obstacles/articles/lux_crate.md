@@ -6,12 +6,13 @@ One Lux Crate spawns in the [Red Tugboat](/buildings/tugboats) in each game.
 
 # Loot & More
 
-The Lux Crate always drops a scope and the [CZ-600](/weapons/guns/cz600). 
+The Lux Crate always drops a scope and on the normal map, a [CZ-600](/weapons/guns/cz600). On the Harvest and Halloween Maps, it drops either a [VKS Vykhlop](/weapons/guns/vks) or a [Tango 51](/weapons/guns/tango_51). Both have an equal chance to spawn.
 
 # Tips
 
-- Since the Lux Crate has extremely low health, it makes poor cover from enemies.
-- It is almost always better to break it for loot since it drops the powerful [CZ-600](/weapons/guns/cz600).
+- Since the Lux Crate has extremely low health and poor positioning, it makes poor cover from enemies.
+- It is almost always better to break it for loot since it drops the powerful [CZ-600](/weapons/guns/cz600) on the normal map and the extremely powerful [VKS Vykhlop](/weapons/guns/vks) or [Tango 51](/weapons/guns/tango_51) on the Harvest and Halloween Maps.
+.
 
 # Trivia
 

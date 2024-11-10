@@ -1,5 +1,5 @@
 # Green House
-The Green House is a relatively new building that drops decent loot, especially with the recent buff of the [HP-18](/guns/hp18).
+The Green House is a relatively new building added in the [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0) "Just the Two of Us" update on March 31st, 2024. It drops decent loot, especially with the recent buff of the [HP-18](/guns/hp18).
 # Location & Spawning
 In most maps, 2-4 Green Houses spawn, though that number can vary. Often, players spawn somewhat close to a Green House, and the guaranteed weapon drop makes it an attractive location. 
 # Loot & More

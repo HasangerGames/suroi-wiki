@@ -14,7 +14,6 @@ The Tango Crate always drops 1-5 [Tango 51s](/weapons/guns/tango_51) and either 
 
 # Trivia
 
-- The Tango Crate was designed by myka.
 - The chance of a Tango Crate dropping five Tango 51s is roughly 1 in 936,000,000.
 
 # History
