@@ -3,7 +3,7 @@ The **Construction Site** is a building added in [v0.19.0](https://github.com/Ha
 
 # Location and Spawning
 
-Only 1 construction site can spawn per map. It consists of a bunker entrance (currently closed), a [Cooler](/obstacles/cooler), [Boxes](/obstacles/box), [Road Block](/obstacles/roadblock), barrels, a few [Sandbags](/obstacles/sandbags) and 1 [Flint Crate](/obstacles/crates).
+Only one construction site can spawn per map. It consists of a bunker entrance (currently closed), a [Cooler](/obstacles/cooler), [Boxes](/obstacles/box), [Road Block](/obstacles/roadblock), barrels, a few [Sandbags](/obstacles/sandbags) and one [Flint Crate](/obstacles/crates).
 
 # Tips
 
