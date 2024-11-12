@@ -11,7 +11,7 @@ When entering through the [Barn Door](/obstacles/barn_door), there are 2 large [
 Ideally, go loot the [Flint Crate](/obstacles/flint_crate) or the [Gun Case](obstacles/gun_case) first, as they have the best loot on this floor. Once broken, go to the 2nd floor through either of the 2 stairwells. 
 
 ## Second Floor
-Break the [Gun Case](obstacles/gun_case) or the [Gun Locker](obstacles/gun_locker) first, but you need a piercing weapon (e.g. [Maul](/weapons/melee/maul)) to break the Gun Locker. The 2nd floor is cramped and if you don't have a CQC weapon like the [Micro Uzi(/weapons/guns/micro_uzi) or a shotgun, you may be killed. Be wary of [C4s](/weapons/throwables/c4) that may be placed on the stairwells - their grey color makes for a nearly invisible death trap. 
+Break the [Gun Case](obstacles/gun_case) or the [Gun Locker](obstacles/gun_locker) first, but you need a piercing weapon (e.g. [Maul](/weapons/melee/maul)) to break the Gun Locker. The 2nd floor is cramped and if you don't have a CQC weapon like the [Micro Uzi](/weapons/guns/micro_uzi) or a shotgun, you may be killed. Be wary of [C4s](/weapons/throwables/c4) that may be placed on the stairwells - their grey color makes for a nearly invisible death trap. 
 
 # Tips
 - Hide in the overhang (it's next to the side [Door](/obstacles/door)) with a shotgun to get some kills, but be careful to not hide next to the [Ammo Crate](/obstacles/ammo_crate), as there is a hole in the ceiling where players can see you. Alternatively, you can plant a [C4](/weapons/throwables/c4) there and go behind the door in case the C4 doesn't kill them.
