@@ -25,7 +25,7 @@ const toExport = GenericArticlePage({
     },
     {
       title: "Trees",
-      items: ["oak_tree", "birch_tree", "pine_tree"],
+      items: ["oak_tree", "birch_tree", "pine_tree", "dormant_oak_tree", "maple_tree"],
       fileName: "trees"
     },
     {

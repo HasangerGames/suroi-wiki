@@ -17,10 +17,10 @@ Near the door of the vault is a piece of paper with some ammunition on it. There
 Inside the Vault, there always spawns two [Boxes](/obstacles/box), two [Gun Locker](/obstacles/gun_locker), and a [Mini-14](/weapons/guns/mini14) on a wall mount. The Gun Lockers are only breakable with an armor-piercing melee weapon.
 
 ### Cafeteria
-The Cafeteria contains a kitchen wth two [Fridges](/obstacles/fridge)], a [Stove](/obstacles/stove), [Sink](/obstacles/stove), some tables and chairs, and a [Vending Machine](/obstacles/vending_machine).
+The Cafeteria contains a kitchen wth two [Fridges](/obstacles/fridge), a [Stove](/obstacles/stove), [Sink](/obstacles/stove), some tables and chairs, and a [Vending Machine](/obstacles/vending_machine).
 
 ### Bathrooms
-Across from the Cafeteria is the Bathrooms, which has 3 [Toilets](/obstacles/toilet) and an indestructible sink.
+Across from the Cafeteria is the Bathrooms, which has three [Toilets](/obstacles/toilet) and an indestructible sink.
 
 ### Offices
 Next to the Cafeteria and close to the main entrance, there are a large number of cubicles as well as a larger office.
@@ -43,7 +43,7 @@ In the black space between the Lounge and the Executive Office, there is a hidde
 [View Loot Chances](/loot/tier_aegis_golden_crate)
 
 # Tips
-- As the game's currently largest single building, the Headquarters usually had a lot of players converging on it.
+- As the game's currently largest single building in normal mode, the Headquarters usually had a lot of players converging on it.
 - The Headquarters includes a lot of areas suitable for CQC weapons like SMGs and shotguns.
  - LMGs can be useful in certain areas such as the cubicles for destroying cover.
 - If you hear the music from upstairs, there's a good chance the Golden AEGIS Case has already been looted.
