@@ -21,6 +21,6 @@ Lily Pads do not drop anything when broken. Additionally, they have no hitbox, l
 
 # History
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
-  - Lily Pads are now larger.
+  - Lily Pads are now larger
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added
