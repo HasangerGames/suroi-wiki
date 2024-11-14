@@ -2,31 +2,30 @@ The **Warehouse** is a building added in the [v0.9.0](https://github.com/Hasange
 
 # Location & Spawning
 
-Up to 5 Warehouses attempt to spawn each game anywhere on the normal map.
+Up to five Warehouses attempt to spawn each game anywhere on the Normal Map. On the Harvest and Halloween maps, four Warehouse attempt to spawn instead.
 
 # Loot & More
 
-The Warehouse always spawns with 3 [Regular Crates](/obstacles/regular_crate), 6 [Boxes](/obstacles/box), and 1 [Barrel](/obstacles/barrel). The Regular Crates and Barrels are in the corners, and the Boxes are along either side on [Metal Shelves](/obstacles/metal_shelf).
-
-- There's 30% chance a [Flint Crate](/obstacles/flint_crate) will replace the crate directly across from the [Barrel](/obstacles/barrel).
-- The center of the Warehouse can drop decent [loot](/loot#warehouse).
+There are three different possible layouts of the Warehouse. They can contain varying amounts of [Boxes](/obstacles/box), [Grenade Boxes](/obstacles/grenade_box), [Regular Crates](/obstacles/crates), [Grenade Crates](/obstacles/crates), [Ammo Crates](/obstacles/ammo_crate), and both variants of the [Barrel](/obstacles/barrel).
 
 # Tips
 
 - You can stand close to the Warehouse and still be able to see with your scope.
   - This is very useful for seeing enemies on the other side of the Warehouse if you have an 8x or 15x scope.
 - Be careful of standing in corners, as reflected bullets can easily kill you.
-- The barrel in the one corner can be a death trap.
-  - Likewise, use the barrel in the corner to try to kill other players.
-- If the Warehouse has a Flint Crate, loot it first, as it has the most valuable loot.
+- The barrels in some of the warehouses can be a death trap.
+  - Likewise, use the barrels to try to kill other players.
 
 # Trivia
 
-- The Warehouse was designed by Leia and 1092384.
-- Originally, the Warehouse was going to be a smaller, squarer building, but this was scrapped
+- In v0.21.3, the Warehouse was completely redesigned.
+  - The pre-v0.21.3 Warehouse was designed by Leia and 1092384.
+- Originally, the Warehouse was going to be a smaller, squarer building, but this was scrapped.
 
 # History
 
+- [v0.21.3](https://github.com/HasangerGames/suroi/releases/tag/v0.21.3)
+  - Completely redesigned
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Improved visibility around the Warehouse
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
