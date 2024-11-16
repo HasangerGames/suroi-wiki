@@ -4,7 +4,7 @@
 
 Two Airdrops naturally spawn each game at a random location within the safe circle. However, it is possible to call additional Airdrops using the rare [Radio](/weapons/guns/radio).
 
-The normal Airdrop is the most common. The Gold Airdrop is significantly rarer, replacing a normal airdrop 5% of the time, but drops powerful weapons such as the [ACR](/weapons/guns/acr) and [Barrett M95](/weapons/guns/barrett_m95), which are exclusive to the Gold Airdrop and the [Flint Stone](/obstacles/flint_stone).
+The normal Airdrop is the most common. The Gold Airdrop is significantly rarer, replacing a normal airdrop 5% of the time, but drops powerful weapons such as the [ACR](/weapons/guns/acr) and [L115A1](/weapons/guns/l115a1), which are exclusive to the Gold Airdrop and the [Flint Stone](/obstacles/flint_stone).
 
 # Loot & More
 

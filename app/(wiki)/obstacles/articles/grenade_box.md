@@ -6,11 +6,11 @@ Grenade Boxes only spawn inside the [Warehouses](/buildings/warehouse) on the ma
 
 # Loot & More
 
-The Grenade Box drops either a single [Frag Grenade](/weapons/throwables/frag_grenade) or a single [Smoke Grenade](/weapons/throwables/smoke_grenade).
+The Grenade Box drops either a pair of [Frag Grenades](/weapons/throwables/frag_grenade) or a pair of [Smoke Grenades](/weapons/throwables/smoke_grenade).
 
 # Tips
 
-- If you're trying to find an emergency weapon early game, these have a 50% chance to drop a Frag Grenade.
+- If you're trying to find an emergency weapon early game, these have a 50% chance to drop two Frag Grenades.
 
 # Trivia
 
@@ -18,5 +18,7 @@ The Grenade Box drops either a single [Frag Grenade](/weapons/throwables/frag_gr
 
 # History
 
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
+- Now drops pairs of grenades instead of singles
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added

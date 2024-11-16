@@ -39,7 +39,9 @@ const toExport = GenericArticlePage({
         "gun_mount_mcx_spear",
         "gun_mount_stoner_63",
         "gun_mount_hp18",
-        "gun_mount_maul"
+        "gun_mount_maul",
+        "gun_mount_dual_rsh12",
+        "gun_mount_mini14"
       ],
       fileName: "gun_mounts"
     },
