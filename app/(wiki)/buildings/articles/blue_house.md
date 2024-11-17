@@ -21,4 +21,5 @@ In part of the Blue House there is a vault containing one [Box](/obstacles/box),
 # History
 - [v0.19.1](https://github.com/HasangerGames/suroi/releases/tag/v0.19.1)
   - Changes to vault loot
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
   - Added
