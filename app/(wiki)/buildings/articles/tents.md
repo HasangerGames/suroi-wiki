@@ -4,7 +4,7 @@
 
 Up to eight Big Tents, twelve Normal Tents, and one Special Tent spawn randomly across the map on the Harvest and Halloween Maps. 
 
-Big Tents and Normal Tents are either colored red, green, blue, or orange. Big Tents spawn two of each color per map while Normal tents spawn three of each color per map.
+Big Tents and Normal Tents are either colored red, green, blue, or orange. Big Tents spawn two of each color per map while Normal Tents spawn three of each color per map.
 
 Special Tents are the same size as Normal Tents and are always purple in color.
 
