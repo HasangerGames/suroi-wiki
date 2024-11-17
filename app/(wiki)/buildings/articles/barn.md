@@ -17,15 +17,18 @@ The Ground Floor contains a [Flint Crate](/obstacles/crates), a Normal Crate, an
 When entering through the [Barn Door](/obstacles/barn_door), there are two large Hay Bales directly in front of you. Hay Bales and the Barn Doors make excellent cover as they both have high amounts of health. 
 
 ## Second Floor
-Break the [Gun Case](obstacles/gun_case) or the [Gun Locker](obstacles/gun_locker) first, but you need a piercing weapon (e.g. [Maul](/weapons/melee/maul)) to break the Gun Locker. The 2nd floor is cramped and if you don't have a CQC weapon like a shotgun, you will probably be killed.
+
+The Second Floor contains a Gun Case, a Barrel next to the Gun Case, two Normal Crates, a Box, a Grenade Box, a Bookshelf, and a [Gun Locker](obstacles/gun_locker).
+
+Break the Gun Case or the Gun Locker first, but you need a piercing weapon (e.g. [Maul](/weapons/melee/maul)) to break the Gun Locker. The second floor is cramped and if you don't have a CQC weapon like a shotgun, you will probably be killed.
 
 # Tips
 
-- Ideally, go loot the [Flint Crate](/obstacles/flint_crate) or the [Gun Case](obstacles/gun_case) first, as they have the best loot on this floor. Once broken, go to the 2nd floor through either of the two stairwells. 
+- Ideally, go loot the [Flint Crate](/obstacles/flint_crate) or the [Gun Case](obstacles/gun_case) first, as they have the best loot on this floor. Once broken, go to the second floor through either of the two stairwells. 
     - Note that the Flint Crate is blocked by a Hay Bale which must be broken first.
 - Hide in the overhang (it's next to the side Door) with a shotgun to get some kills, but be careful to not hide next to the [Ammo Crate](/obstacles/ammo_crate), as there is a hole in the ceiling where players can see you.
 - The [Barrel](/obstacles/barrel) that is next to the rear stairwell can be damaged, and when somebody exits the stairs, shoot the barrel to kill or heavily damage them. Many players don't think twice about this strategic location. 
-- On the 2nd floor, you can see players on the ground floor. Use this to your advantage, as they cannot see you.
+- On the second floor, you can see players on the ground floor. Use this to your advantage, as they cannot see you.
     - [Grenade Crates](/obstacles/grenade_crate), near the side entrance are a good source of throwables and can be thrown down on the first floor, insta-killing many players.
 
 # History
