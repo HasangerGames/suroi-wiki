@@ -2,7 +2,7 @@ The **Gold Rock** is a very rare variant of the [Rock](/obstacles/rock), and was
 
 # Location & Spawning
 
-Only one Gold Rock spawns per map. - The Gold Rock is not visible on the minimap.
+Only one Gold Rock spawns per map and it is not visible on the minimap.
 
 # Loot & More
 
