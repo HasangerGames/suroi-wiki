@@ -2,15 +2,15 @@ The **Gun Locker** is an obstacle and was added in the added in the [v0.19.0](ht
 
 # Location and Spawning
 
-- Two Gun Lockers spawn in the vault on the first floor that also contains a [Gun Mount](/obstacles/gun_mounts) with a [Mini-14](/weapons/guns/mini14) of the [Headquarters](/buildings/headquarters). 
+- Two Gun Lockers spawn in the vault on the first floor of the [Headquarters](/buildings/headquarters). This vault also contains a guranteed [Gun Mount](/obstacles/gun_mounts) with a [Mini-14](/weapons/guns/mini14).
 
 - Two Gun Lockers spawn in the security office and northeast hall of the [Plumpkin Bunker](/buildings/plumpkin_bunker). 
 
- - One Gun Locker can also be found on the second floor of the [Barn](/buildings/barn) and in the vault on the second floor of the [Lodge](/buildings/lodge).
+- One Gun Locker can also be found on the second floor of the [Barn](/buildings/barn) and in the vault on the second floor of the [Lodge](/buildings/lodge).
 
 # Loot & More
 
-Gun Lockers drop 1-2 guns. See the special guns tier in the [Loot Tables](/loot) for more information. Gun Lockers reflect bullets can only be broken using melee weapons that deal piercing damage.
+Gun Lockers drop 1-2 guns. See the special guns tier in the [Loot Tables](/loot) for more information. Gun Lockers reflect bullets and can only be broken using melee weapons that deal piercing damage.
 
 # Tips
 
