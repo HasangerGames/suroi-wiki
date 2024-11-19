@@ -2,7 +2,7 @@ The **Box** is an [Obstacle](/obstacles) added in the [v0.9.0](https://github.co
 
 # Location & Spawning
 
-Boxes spawn inside [Warehouses](/buildings/warehouse) as well as various locations around the [Port](/buildings/port).
+Boxes spawn inside many structures such as [Warehouses](/buildings/warehouse) and the [Port](/buildings/port).
 
 # Loot & More
 
