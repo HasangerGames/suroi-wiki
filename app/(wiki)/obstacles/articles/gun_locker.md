@@ -24,5 +24,6 @@ Gun Lockers drop 1-2 guns. See the special guns tier in the [Loot Tables](/loot)
 - The Gun Lockers were once (in beta testing) breakable by fists, but soon switched to requiring armor piercing weapons to loot. 
 
 # History
+
 - [v0.19.0] (https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
 	- Added
