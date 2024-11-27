@@ -1,4 +1,3 @@
-<Stub />
 The **Sickle** is a melee weapon added in the [v0.18.2](https://github.com/HasangerGames/suroi/releases/tag/v0.18.2) "Pulling the Pin" update on July 4th, 2024.
 
 # Background
