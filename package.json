@@ -18,11 +18,11 @@
   "devDependencies": {
     "@eslint/js": "^9.15.0",
     "@next/eslint-plugin-next": "^14.2.18",
-    "@stylistic/eslint-plugin": "^2.10.1",
+    "@stylistic/eslint-plugin": "^2.11.0",
     "@types/eslint__js": "^8.42.3",
     "@types/luxon": "^3.4.2",
     "@types/mdx": "^2.0.13",
-    "@types/node": "^22.9.0",
+    "@types/node": "^22.10.1",
     "@types/react": "^18.3.12",
     "@types/react-collapse": "^5.0.4",
     "@types/react-dom": "^18.3.1",
@@ -33,8 +33,8 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "globals": "^15.12.0",
     "postcss": "^8.4.49",
-    "typescript": "^5.6.3",
-    "typescript-eslint": "^8.14.0"
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.16.0"
   },
   "dependencies": {
     "@cspell/dict-ru_ru": "^2.2.4",
@@ -45,9 +45,9 @@
     "@next/mdx": "^14.2.18",
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/typography": "^0.5.15",
-    "@tanstack/react-query": "^5.60.5",
+    "@tanstack/react-query": "^5.61.5",
     "chart.js": "^4.4.6",
-    "cspell": "^8.16.0",
+    "cspell": "^8.16.1",
     "fuse.js": "^7.0.0",
     "lucide-react": "^0.408.0",
     "next": "^14.2.18",
