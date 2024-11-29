@@ -21,12 +21,11 @@ This wiki utilizes [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Sub
 
 ```sh
 git clone https://github.com/HasangerGames/suroi-wiki.git
-git submodule init
-git submodule update --remote
 cd suroi-wiki
-
-pnpm i
-pnpm dev
+git submodule init
+# Do not use --remote as it does not respect the selected commit
+git submodule update
+pnpm install
 ```
 
 ### Local Development
@@ -118,4 +117,4 @@ pnpm spellcheck
 
 # Where To Start
 
-If you want to contribute code; reach out to @kenos1 (kenos) or @Compositr on the [Suroi Discord](https://discord.gg/suroi).
+If you want to contribute code; reach out to @zedaes on the [Suroi Discord](https://discord.gg/suroi). Or, you can just edit things to make the website better! Anything helps!
