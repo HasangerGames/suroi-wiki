@@ -43,8 +43,7 @@ export default function LootPage() {
                 table.weight,
                 `${(
                   (table.weight
-                    / ("loot" in tables ? (tables).loot : tables).reduce((acc, table) => acc + table.weight, 0))
-                    * 100
+                    / ("loot" in tables ? (tables).loot : tables).reduce((acc, table) => acc + table.weight, 0)) * 100
                 ).toFixed(2)}%`
               ])}
             />
