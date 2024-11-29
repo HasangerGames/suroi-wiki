@@ -20,12 +20,9 @@ Please refer to the documentation of each framework / library for more informati
 This wiki utilizes [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules), so first-time setup for a development environment is slightly different from normal:
 
 ```sh
-git clone https://github.com/HasangerGames/suroi-wiki.git
+git clone https://github.com/HasangerGames/suroi-wiki.git --recursive
 cd suroi-wiki
-git submodule init
-# Do not use --remote as it does not respect the selected commit
-git submodule update
-pnpm install
+pnpm i
 ```
 
 ### Local Development
