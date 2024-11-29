@@ -3,7 +3,7 @@ The **Sickle** is a melee weapon added in the [v0.18.2](https://github.com/Hasan
 
 # Background
 
-The Sickle is a one-handed tool used for agricultural purposes. It features a curved blade which enables it to harvest crops effectively. A user should swing the sickle against the base of a crop, capturing the crops in a curved area (to maximize efficency) and slicing them. Sickles are very old tools; there are surviving examples of the Sickle from the Epipalaeolithic Era, which was over 10000 years ago. Although not designed to be one, the Sickle has been used as a weapon in Southeast Asia. For example, The Celurit, a tool native to Indonesia and similar to the Sickle, is used not only as a farming tool but also as a defensive weapon.
+The Sickle is a one-handed tool used for agricultural purposes. It features a curved blade which enables it to harvest crops effectively. A user should swing the sickle against the base of a crop, capturing the crops in a curved area (to maximize efficiency) and slicing them. Sickles are very old tools; there are surviving examples of the Sickle from the Epipalaeolithic Era, which was over 10000 years ago. Although not designed to be one, the Sickle has been used as a weapon in Southeast Asia. For example, The Celurit, a tool native to Indonesia and similar to the Sickle, is used not only as a farming tool but also as a defensive weapon.
 
 # Strategies
 

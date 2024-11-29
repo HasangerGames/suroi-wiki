@@ -1,7 +1,7 @@
 The **Самозарядный карабин системы Симонова (Self-loading Carbine of the Simonov System)**, known in-game as the **SKS**, is a DMR utilizing the 7.62mm ammunition. It was added to the game in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It features a low magazine capacity low damage, but can reload single rounds like a shotgun.
 
 # Background
-The SKS was designed in the Soviet Union during the Second World War by Sergei Gavrilovich Simonov. Using a conventtional gas-operated design, the SKS is somewhat unique as a sem--auto in the fact that it can be reload by hand or with a stripper clip. The development of the AK-47 and its derivatives only a few years later rendered the SKS obsolete and it saw limited active service in the Soviet Union (although it was popular in Soviet satellite states). Today, the SKS is popular in the United States as a sports shooter but sees no active military use.
+The SKS was designed in the Soviet Union during the Second World War by Sergei Gavrilovich Simonov. Using a conventional gas-operated design, the SKS is somewhat unique as a sem--auto in the fact that it can be reload by hand or with a stripper clip. The development of the AK-47 and its derivatives only a few years later rendered the SKS obsolete and it saw limited active service in the Soviet Union (although it was popular in Soviet satellite states). Today, the SKS is popular in the United States as a sports shooter but sees no active military use.
 
 # Strategies
 ## Using
