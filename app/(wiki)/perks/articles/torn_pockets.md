@@ -3,7 +3,7 @@
 
 # Effects
 
-Every two seconds, two rounds of a random ammo type in your inventory are forcibly dropped on the ground. Ammo types that you have more of are more likely to be chozen.
+Every two seconds, two rounds of a random ammo type in your inventory are forcibly dropped on the ground. Ammo types that you have more of are more likely to be chosen.
 
 # Obtaining
 On the Halloween Map, you have a 1 in 12 chance to get the Torn Pockets perk after picking up a [Plumpkin Gamble](/perks/lets_go_gambling) perk dropped from a [Diseased Plumpkins](/obstacles/diseased_plumpkin). Diseased Pumpkins are scattered throughout the map as well as one in the [Plumpkin Bunker](/building/plumpkin_bunker).

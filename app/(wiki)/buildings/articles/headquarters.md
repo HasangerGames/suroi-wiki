@@ -1,4 +1,4 @@
-The **AEGIS Ind. Headquarters**, or **Headquarters**, is a large structure added in the [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0) "High Caliber Negotiations" update on Sepetember 22nd, 2024. It contains a unique melee weapon, the [Falchion](/weapons/melee/falchion), either the [DEagle](/weapons/guns/deagle) or [RSh-12](/weapons/guns/rsh12) as well as many unique obstacles. 
+The **AEGIS Ind. Headquarters**, or **Headquarters**, is a large structure added in the [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0) "High Caliber Negotiations" update on September 22nd, 2024. It contains a unique melee weapon, the [Falchion](/weapons/melee/falchion), either the [DEagle](/weapons/guns/deagle) or [RSh-12](/weapons/guns/rsh12) as well as many unique obstacles. 
 
 # Location & Spawning
 The Headquarters attempts to spawn once per map, anywhere on the map.

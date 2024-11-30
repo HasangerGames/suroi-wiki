@@ -1,7 +1,7 @@
 The **Falchion** is a melee weapon added in the [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0) "High Caliber Negotiations" update on September 22nd, 2024. 
 
 # Background
-Falchions are a one-handed single-edged sword popular in Europe from the 13th through 16th centuries. A mystery surrounds the fact that very few examples have been found compared to the many thousands of straight-edged swords recovered. Designs varied widely around Europe, and researchers aren't sure the status of the people using them, as they aren't depicted being used by nobility, yet the craftsmanship is far above what a peasant would carry. Additionally, the use case is stil unclear, whether they were for cutting through chain and leather armor or simply a utility tool used for clearing brush. 
+Falchions are a one-handed single-edged sword popular in Europe from the 13th through 16th centuries. A mystery surrounds the fact that very few examples have been found compared to the many thousands of straight-edged swords recovered. Designs varied widely around Europe, and researchers aren't sure the status of the people using them, as they aren't depicted being used by nobility, yet the craftsmanship is far above what a peasant would carry. Additionally, the use case is still unclear, whether they were for cutting through chain and leather armor or simply a utility tool used for clearing brush. 
 
 # Strategies
 ## Using

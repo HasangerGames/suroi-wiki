@@ -8,9 +8,11 @@
     "tldr",
     "wasd",
     "bleh",
+    "readded",
 
     // Suroi
     "suroi",
+    "suroian",
     "suroians",
     "surviv",
     "survivrs",
@@ -26,6 +28,8 @@
     "ghillie",
     "detonated",
     "undetonated",
+    "insta",
+    "nerfed",
     // Buildings
     "porta",
 
@@ -118,6 +122,21 @@
     // rsh12
     "Viktor",
     "Zelenko",
+    "ЦКИБ",
+    "Lapua",
+    "Celurit",
+    "Epipalaeolithic",
+    "chion",
+    "fahl",
+    "gost",
+    "ckib",
+    "Vykhlop",
+    "Simonov",
+    "Gabrilovich",
+    "Mjölnir",
+    "flechettes",
+    "flechette",
+    "Gavrilovich",
 
     // People
     "compositr",
@@ -206,7 +225,8 @@
     "misaligning",
     "synergize",
     "zombsroyale",
-    "pubg"
+    "pubg",
+    "synergizes",
   ],
 
   "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
