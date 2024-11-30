@@ -10,11 +10,11 @@ In Harvest Mode, Low Profile drops from the [Plumpkin](/obstacles/plumpkin), loc
 
 # Strategies
 ## Using
-- Due to it's explosive resistance, Low Profile is effective against not only [Frag Grenades](/weapons/throwables/frag_grenade), but the [M590M](/weapon/guns/m590m) and [USAS-12](/weapons/guns/usas12) as well.
+- Due to its explosive resistance, Low Profile is effective against not only [Frag Grenades](/weapons/throwables/frag_grenade), but the [M590M](/weapon/guns/m590m) and [USAS-12](/weapons/guns/usas12) as well.
 - Low Profile makes you harder to hit, so you can use [Melee Weapon](/weapons/melee) with it and get up close.
   - Make sure to have high adrenaline and a solid Melee Weapon should you choose to do this.
 - During Halloween Mode, Low Profile can be combined with [Lycanthropy](/perks/lycanthropy), making you even harder to hit.
-  - Another good Halloween perk to combined Low Profile with is [Engorged](/perks/engorged). Not only does Low Profile help counteract some of Engorged's size increase, it also adds explosive resistance.
+  - Another good Halloween perk to combine Low Profile with is [Engorged](/perks/engorged). Not only does Low Profile help counteract some of Engorged's size increase, it also adds explosive resistance.
 
 ## Countering
 - Explosive weapons are relatively ineffective against opponents with Low Profile
