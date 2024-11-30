@@ -1,5 +1,5 @@
 <Event />
-**Plumpkin Bomb** is a [Perk](/perks) added in the [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0) update on November 1st, 2024. It makes Plumpkins explosive when they are destroyed by a player with Plumpkin Bomb. It also makes throwables more deadly and gives them a new appearance.
+**Plumpkin Bomb** is a [Perk](/perks) added in the [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0) "Plumpkin Panic" update on October 31st, 2024. It makes Plumpkins explosive when they are destroyed by a player with Plumpkin Bomb. It also makes throwables more deadly and gives them a new appearance.
 
 # Effects
 - 20% throwable damage increase
