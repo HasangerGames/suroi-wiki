@@ -1,5 +1,5 @@
 <Event />
-**Plumpkin Gamble** is a [Perk](/perks) added in the [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0) "Open Season" update on November 1st, 2024. It gives the player a random Halloween perk.
+**Plumpkin Gamble** is a [Perk](/perks) added in the [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0) update on November 1st, 2024. It gives the player a random Halloween perk.
 
 # Effects
 - Removes itself from the player's perk inventory upon being picked up and gives the player a random Halloween perk, including:
