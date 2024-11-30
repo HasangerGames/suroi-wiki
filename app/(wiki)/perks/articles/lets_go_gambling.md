@@ -1,5 +1,5 @@
 <Event />
-**Plumpkin Gamble** is a [Perk](/perks) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It gives the player a random Halloween perk.
+**Plumpkin Gamble** is a [Perk](/perks) added in the [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0) "Open Season" update on November 1st, 2024. It gives the player a random Halloween perk.
 
 # Effects
 - Removes itself from the player's perk inventory upon being picked up and gives the player a random Halloween perk, including:
@@ -25,5 +25,5 @@ In Harvest Mode, [Diseased Plumpkins](/obstacles/diseased_plumpkin) drop Plumpki
 - You may need 2 Plumpkin Gamble perks on the surrounding ground to immediately reroll bad perks.
 
 # History
-- [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0)
   - Added
