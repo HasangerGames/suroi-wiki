@@ -10,13 +10,16 @@ The official wiki for [Suroi](https://suroi.io), an open-source 2D battle royale
 If you don't have `pnpm` installed, you can install it with `npm i -g pnpm`.
 
 ```shell
-git clone https://github.com/HasangerGames/suroi-wiki.git --recursive
+git clone https://github.com/HasangerGames/suroi-wiki.git
 cd suroi-wiki
-pnpm i
+git submodule init
+# Do not use --remote as it does not respect the selected commit
+git submodule update
+pnpm install
 ```
 
 ## Development
-To start a local development server, run `pnpm dev`, then go to https://127.0.0.1:3000 in your browser (A different port maybe be used if 3000 is being used).
+To start a local development server, run `pnpm dev`, then go to https://127.0.0.1:3000 in your browser.
 
 ## Production
 To build for production, run `pnpm build`. To start the server, run `pnpm start`.
