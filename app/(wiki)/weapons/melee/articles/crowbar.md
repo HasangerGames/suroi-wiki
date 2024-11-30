@@ -3,7 +3,7 @@ The **Crowbar** is a melee weapon added in the [v0.18.2](https://github.com/Hasa
 
 # Background
 
-A Crowbar, also called a wrecking bar, pry bar or prybar, pinch-bar, or occasionally a prise bar or prisebar, colloquially gooseneck, or pig bar, or in Australia a jemmy,[1] is a lever consisting of a metal bar with a single curved end and flattened points, used to force two objects apart or gain mechanical advantage in lifting; often the curved end has a notch for removing nails.
+A Crowbar, also called a wrecking bar, pry bar or prybar, pinch-bar, or occasionally a prise bar or prisebar, colloquially gooseneck, or pig bar, or in Australia a jemmy, is a lever consisting of a metal bar with a single curved end and flattened points, used to force two objects apart or gain mechanical advantage in lifting; often the curved end has a notch for removing nails.
 
 # Strategies
 
@@ -14,7 +14,7 @@ A Crowbar, also called a wrecking bar, pry bar or prybar, pinch-bar, or occasion
 ## Using
 
 - The Crowbar can destroy all common crates in a single hit, making it a viable item to quickly loot items
-- The Crowbar possess a 2x obstacle multiplier
+- The Crowbar possess a 2.2x obstacle multiplier
 
 ## Countering
 
@@ -23,7 +23,7 @@ A Crowbar, also called a wrecking bar, pry bar or prybar, pinch-bar, or occasion
 
 # Obtaining
 
-- 1 Crowbar is dropped from the [Loot_Barrel](/obstacles/loot_barrel) 
+- One Crowbar is dropped from the [Loot_Barrel](/obstacles/loot_barrel) 
 - Crowbars have a small chance of dropping from [Airdrops](/obstacles/aidrops) 
 
 # Trivia
