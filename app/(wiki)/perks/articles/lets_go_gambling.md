@@ -12,9 +12,9 @@
   - [Baby Plumpkin Pie](/perks/baby_plumpkin_pie).
   - [Costumed](/perks/costumed).
   - [Torn Pockets](/perks/torn_pockets).
-  - [Claustrophobic](/perks/claustrophobic)
-  - [Laced Stimulants](/perks/laced_stimulants)
-  - [Rotten Plumpkin](/perks/rotten_plumpkin)
+  - [Claustrophobic](/perks/claustrophobic).
+  - [Laced Stimulants](/perks/laced_stimulants).
+  - [Rotten Plumpkin](/perks/rotten_plumpkin).
 
 # Obtaining
 In Harvest Mode, [Diseased Plumpkins](/obstacles/diseased_plumpkin) drop Plumpkin Gamble perk with 100% chance of dropping.
