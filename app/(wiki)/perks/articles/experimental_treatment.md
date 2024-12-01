@@ -1,10 +1,10 @@
 <Stub/>
 <Event />
-**Experimental Treatment** is a [Perk](/perks) added in the [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0) "Plumpkin Panic" update on October 31st, 2024. It gives the player permanent full adrenaline bar.
+**Experimental Treatment** is a [Perk](/perks) added in the [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0) "Plumpkin Panic" update on October 31st, 2024. It gives the player a permanent full adrenaline bar.
 
 # Effects
-- Permanent 100% adrenaline
-- 20% health decrease
+- Max health set to 80
+- Adrenaline set to 100 and does not gradually decrease
 
 # Obtaining
 Experimental Treatment can be obtained from [Plumpkin Gamble](/perks/lets_go_gambling) which drops from [Diseased Plumpkins](/obstacles/diseased_plumpkin).

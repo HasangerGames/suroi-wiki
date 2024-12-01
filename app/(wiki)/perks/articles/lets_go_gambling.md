@@ -17,12 +17,12 @@
   - [Rotten Plumpkin](/perks/rotten_plumpkin).
 
 # Obtaining
-In Harvest Mode, [Diseased Plumpkins](/obstacles/diseased_plumpkin) drop Plumpkin Gamble perk with 100% chance of dropping.
+In Harvest and Halloween Mode, [Diseased Plumpkins](/obstacles/diseased_plumpkin) always drop the Plumpkin Gamble perk.
 
 # Strategies
 ## Using
 - Use Plumpkin Gamble to get good perks like [Plumpkin Bomb](/perks/plumpkin_bomb), [Lycanthropy](/perks/lycanthropy), [Shrouded](/perks/shrouded), and so forth.
-- You may need 2 Plumpkin Gamble perks on the surrounding ground to immediately reroll bad perks.
+- You may want at least two Plumpkin Gamble Perks on the surrounding ground before picking one up in order to immediately reroll bad perks.
 
 # History
 - [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0)
