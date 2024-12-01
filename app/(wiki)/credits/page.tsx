@@ -29,19 +29,19 @@ const WIKI_TEAM: User[] = [
     avatar: "https://avatars.githubusercontent.com/u/66282302"
   },
   {
-    name: "Milocat",
-    description: "Wiki Developer",
-    avatar: "https://avatars.githubusercontent.com/u/119687855"
-  },
-  {
     name: "Fridge",
     description: "Wiki Developer",
     avatar: "https://avatars.githubusercontent.com/u/152137521"
   },
   {
-    name: "sawq375",
+    name: "Hasanger",
     description: "Wiki Developer",
-    avatar: "https://avatars.githubusercontent.com/u/97305445"
+    avatar: "https://avatars.githubusercontent.com/u/20248785"
+  },
+  {
+    name: "KatieKool",
+    description: "Wiki Developer",
+    avatar: "https://avatars.githubusercontent.com/u/55889672"
   }
 ];
 
@@ -67,7 +67,10 @@ const WIKI_CONTRIB: string[] = [
   "geodic",
   "AnnihilatingFox",
   "Zollo757347",
-  "yestice"
+  "yestice",
+  "fwee62",
+  "Arman-Ali",
+  "xvc"
 ];
 
 const GAME_TEAM: User[] = [
