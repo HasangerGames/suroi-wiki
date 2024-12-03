@@ -10,7 +10,7 @@ The Mini-14, as the name suggests, is based on the bigger 7.62x51mm NATO firing 
 
 - The Mini-14 is best used at long-range, but its high DPS makes it effective against many weapons at mid-range as well.
 - Stay at long range, as the high accuracy and fast bullet speed make the Mini-14 very powerful against other long-range weapons like snipers and the [MCX Spear.](/weapons/guns/mcx_spear)
-- The [SR-25](/weapons/guns/sr25) has more damage than the Mini-14 albeit at the cost of a slightly lower DPS.
+- The [SR-25](/weapons/guns/sr25) has more damage and DPS compared to the Mini-14 and is an effective counter against the Mini-14.
 - Pair the Mini-14 with a high-DPS shotgun or SMG for close-range combat.
 
 ## Countering
@@ -21,11 +21,11 @@ The Mini-14, as the name suggests, is based on the bigger 7.62x51mm NATO firing 
   - Hide around indestructible obstacles such as [Oil Tanks](/obstacles/oil_tank) or in [Buildings](/buildings) to force the Mini-14 user into close-range combat.
   - Be careful, however, as they might have a shotgun or SMG of their own as a secondary weapon.
 - At long-range, snipers can be effective against the Mini-14, provided that you quickswitch to move around quicker.
-- The [MCX Spear](/weapons/guns/mcx_spear) has a higher DPS and comparable accuracy to the Mini-14, and can be used as a counter.
+- The [MCX Spear](/weapons/guns/mcx_spear) has a higher DPS and comparable accuracy to the Mini-14, and can be used as a counter. However, it has less damage per magazine which means you will reload frequently.
 
 # Obtaining
 
-The Mini-14 can be found rarely as world loot but is more common in rare drops such as from [AEGIS](/obstacles/aegis_crate) and [Flint Crates](/obstacles/flint_crate), [Airdrops](/obstacles/airdrop_crate), or from the center of a [Warehouse](/buildings/warehouse).
+A Mini-14 always spawns on a [Gun Mount](/obstacles/gun_mounts) in the security room vault on the first floor of the [Headquarters](/buildings/headquarters). The Mini-14 additionally can be found rarely as world loot and uncommonly from special loot sources such as from [AEGIS](/obstacles/aegis_crate) and [Flint Crates](/obstacles/flint_crate), or from the center of a [Warehouse](/buildings/warehouse).
 
 # Trivia
 

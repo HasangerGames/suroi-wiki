@@ -1,5 +1,5 @@
 <Event />
-**Lycanthropy** is a [Perk](/perks) added in the [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0) "Plumpkin Panic" update on October 31st, 2024. It turns players into furries along with giving players high damage, speed, and health. However, it removes the ability to use guns, melee weapons, and grenades.
+**Lycanthropy** is a [Perk](/perks) added in the [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0) "Plumpkin Panic" update on October 31st, 2024. It turns players into wolf furries along with giving players high damage, speed, and health. However, it removes the ability to use guns, melee weapons, and grenades.
 
 # Effects
 - 150% damage increase

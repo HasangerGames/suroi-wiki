@@ -14,7 +14,7 @@ The SKS was designed in the Soviet Union during the Second World War by Sergei G
 
 ## Countering
 - All other DMRs are superior to the SKS in DPS and can easily dispatch an opponent with a SKS.
-- High-DPS weapons such as SMGs and shotguns can beat the Mini-14 at close range.
+- High-DPS weapons such as SMGs and shotguns can easily beat the SKS at close range.
 - Picking up Level 2 or 3 [Armor](/equipment/armor) will make you much harder for a SKS user to kill.
 - Strafe back and forth (especially with high adrenaline) to make the opponent miss. 
 - One of the best defenses against a SKS user is either indestructible cover ([Oil Tanks](/obstacles/oil_tank), Containers, and [Buildings](/buildings)) or cover in general ([Rocks](/obstacles/rock) and [Trees](/obstacles/tree)). The low damage output of the SKS makes it difficult to effectively destroy cover.
