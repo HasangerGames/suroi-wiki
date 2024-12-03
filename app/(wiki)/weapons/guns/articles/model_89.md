@@ -16,7 +16,7 @@ The Model 89 was developed by Big Horn Armory to supersede the older Model 86 an
 - Hide behind indestructible cover such as [Oil Tanks](/obstacles/oil_tank) or [Sandbags](/obstacles/sandbags). The .50 Cal ammo that the Model 89 uses is rare, so you may be able to make your opponent run out of it by wasting it.
 
 # Obtaining
-The Model 89 can be found in Airdrop, occasionally in [Gun Lockers](/obstacles/gun_locker), and very rarely in common loot sources such as [Regular Crates](/obstacles/crates). It is more common in Harvest mode.
+The Model 89 can be found in [Regular Airdrops](/obstacles/airdrops), occasionally in [Gun Lockers](/obstacles/gun_locker), and very rarely in common loot sources such as [Regular Crates](/obstacles/crates). It is more common in Harvest mode.
 
 # Trivia
 - The Model 89 in-game is an 18" carbine with a standard walnut stock and a matte stainless steel finish.
