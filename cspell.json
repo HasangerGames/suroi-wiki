@@ -218,6 +218,7 @@
     "limenade",
     "chpsterz",
     "albie",
+    "nefertari",
 
     // Random
     "excipients", // Plural of excipient
@@ -227,6 +228,7 @@
     "zombsroyale",
     "pubg",
     "synergizes",
+    "furries"
   ],
 
   "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
