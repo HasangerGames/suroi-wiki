@@ -15,7 +15,7 @@ type User = {
 const WIKI_TEAM: User[] = [
   {
     name: "zedaes",
-    description: "Wiki Developer",
+    description: "Wiki Managr",
     avatar: "https://avatars.githubusercontent.com/u/147769903"
   },
   {
