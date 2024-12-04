@@ -6,6 +6,43 @@ import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import { Throwables } from "@/vendor/suroi/common/src/definitions/throwables";
 import Link from "next/link";
+import TableWithHeader from "@/components/tables/TableWithHeader";
+import { FireMode } from "@/vendor/suroi/common/src/constants";
+
+const dpsList: Array<[string, number, number]> = [];
+for (const gun of Guns) {
+  dpsList.push([
+    gun.name,
+    Number(gun.fireMode === FireMode.Burst
+      ? (
+        (1000
+          / (gun.burstProperties.burstCooldown
+            + gun.fireDelay * gun.burstProperties.shotsPerBurst))
+            * (gun.ballistics.damage * gun.burstProperties.shotsPerBurst)
+      ).toFixed(2)
+      : (
+        gun.ballistics.damage
+        * (gun.bulletCount ?? 1)
+        * (1000 / gun.fireDelay)
+      ).toFixed(2)),
+    Number(gun.fireMode === FireMode.Burst
+      ? (
+        (1000
+          / (gun.burstProperties.burstCooldown
+            + gun.fireDelay * gun.burstProperties.shotsPerBurst))
+            * (gun.ballistics.damage
+              * gun.burstProperties.shotsPerBurst
+              * gun.ballistics.obstacleMultiplier)
+      ).toFixed(2)
+      : (
+        gun.ballistics.damage
+        * gun.ballistics.obstacleMultiplier
+        * (gun.bulletCount ?? 1)
+        * (1000 / gun.fireDelay)
+      ).toFixed(2))
+  ]);
+}
+dpsList.sort((a, b) => (b[1] - a[1]));
 
 export default function WeaponsPage() {
   return (
@@ -90,6 +127,20 @@ export default function WeaponsPage() {
           ))}
         </GridTable>
       </Collapsible>
+      <Collapsible
+        label={(
+          <div className="prose prose-invert">
+            <h2 id="throwables">Gun DPS Table</h2>
+          </div>
+        )}
+        className="my-4"
+      >
+        <TableWithHeader
+          header={["Gun", "DPS", "Obstacle DPS"]}
+          content={[...dpsList]}
+        />
+      </Collapsible>
+
     </main>
   );
 }
