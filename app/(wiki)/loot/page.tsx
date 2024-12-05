@@ -24,32 +24,6 @@ export default function LootPage() {
         </div>
         <LootCalc />
       </div>
-      <div>
-        {Object.entries(LootTables.normal).map(([name, tables]) => (
-          <div key={name} id={name}>
-            <TableWithHeader
-              key={name}
-              title={`Table ${name}`}
-              header={["Item", "Count", "Weight", "% Chance"]}
-              content={("loot" in tables ? (tables).loot : tables).map(table => [
-                "item" in table
-                  ? `Item ${
-                    Loots.definitions.find(
-                      loot => loot.idString === table.item
-                    )?.name
-                  }`
-                  : `Table ${table.table}`,
-                table.count ? table.count.toString() : "1",
-                table.weight,
-                `${(
-                  (table.weight
-                    / ("loot" in tables ? (tables).loot : tables).reduce((acc, table) => acc + table.weight, 0)) * 100
-                ).toFixed(2)}%`
-              ])}
-            />
-          </div>
-        ))}
-      </div>
       <div className="mt-8">
         <div className="prose prose-invert">
           <h2>Loot Tables</h2>
@@ -58,6 +32,45 @@ export default function LootPage() {
           </p>
         </div>
       </div>
+      {...Object.entries(LootTables).map(([mode]) => (
+        <div>
+          <div className="mt-8">
+            <div className="prose prose-invert p-3">
+              <h2>{`${mode.charAt(0).toUpperCase() + mode.slice(1)} mode`}</h2>
+            </div>
+          </div>
+          {Object.entries(LootTables[mode]).map(([name, tables]) => (
+            <div key={name} id={name}>
+              <TableWithHeader
+                key={name}
+                title={`Table ${name}`}
+                header={["Item", "Count", "Weight", "% Chance"]}
+                content={("loot" in tables ? tables.loot : tables).map(
+                  table => [
+                    "item" in table
+                      ? `Item ${
+                        Loots.definitions.find(
+                          loot => loot.idString === table.item
+                        )?.name
+                      }`
+                      : `Table ${table.table}`,
+                    table.count ? table.count.toString() : "1",
+                    table.weight,
+                    `${(
+                      (table.weight /
+                        ("loot" in tables ? tables.loot : tables).reduce(
+                          (acc, table) => acc + table.weight,
+                          0
+                        )) *
+                        100
+                    ).toFixed(2)}%`,
+                  ]
+                )}
+              />
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
   );
 }
