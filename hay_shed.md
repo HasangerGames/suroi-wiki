@@ -1,7 +1,7 @@
 
 
 # Hay Sheds
-The **Hay Shed** is a tiny building added in the indestructible object added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) “Open Season” update on October 27, 2024. It is a building only in the Harvest mode and Halloween mode.
+The **Hay Shed** is a small building added in the indestructible object added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) “Open Season” update on October 27, 2024. It is a building only in the Harvest mode and Halloween mode.
 
 # Location & Spawning
 Hay Sheds are scattered around the Harvest and Halloween maps, with one variation of Hay Shed leading to the [Plumpkin Bunker](/buildings/plumpkin_bunker). 
