@@ -26,7 +26,8 @@ The Foyer contains a [Couch](/obstacles/couch), a [Large Drawer](/obstacles/larg
 
 The Kitchen contains a [Stove](/obstacles/stove) and a [Fridge](/obstacles/fridge). 
 
-The Dining Area has a [Table](/obstacles/table) with two [Chairs](/obstacles/chair) and a Small Drawer by the door. - Players can hide under the Table.
+The Dining Area has a [Table](/obstacles/table) with two [Chairs](/obstacles/chair) and a Small Drawer by the door. 
+  - Players can hide under the Table.
 
 ### Other
 
