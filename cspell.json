@@ -228,7 +228,9 @@
     "zombsroyale",
     "pubg",
     "synergizes",
-    "furries"
+    "furries",    // uwu ^w^
+    "Bartolomeo", // inventor of the piano
+    "Cristofori"  // last name
   ],
 
   "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
