@@ -6,7 +6,7 @@ A Sink spawns in every [Mobile Home](/buildings/mobile_home) in its interior nex
 
 # Loot & More
 
-The Mobile Home Sink drops either healing items or ammo. The former is slightly more common.
+The Sink drops either healing items or ammo. The former is slightly more common.
 
 # Tips
 
