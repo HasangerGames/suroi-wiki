@@ -80,6 +80,11 @@ const toExport = GenericArticlePage({
       title: "Bush",
       items: ["bush", "blueberry_bush", "vibrant_bush"],
       fileName: "bushes"
+    },
+    {
+      title: "Kitchen Units",
+      items: ["kitchen_unit_1", "kitchen_unit_2", "kitchen_unit_3"],
+      fileName: "kitchen_units"
     }
   ]
 });
