@@ -1,5 +1,8 @@
 import RenderedBuilding from "@/components/svg/special/RenderedBuilding";
-import { Armors, Backpacks, Buildings, HealingItems } from "@/vendor/suroi/common/src/definitions";
+import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
+import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
+import { Buildings } from "@/vendor/suroi/common/src/definitions/buildings";
+import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import { Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
