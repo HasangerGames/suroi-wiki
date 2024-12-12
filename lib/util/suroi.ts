@@ -1,5 +1,5 @@
 import { ObjectCategory } from "@/vendor/suroi/common/src/constants";
-import { EmoteDefinition, Emotes } from "@/vendor/suroi/common/src/definitions";
+import { EmoteDefinition, Emotes } from "@/vendor/suroi/common/src/definitions/emotes";
 import {
   BuildingDefinition,
   Buildings
