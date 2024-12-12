@@ -1,4 +1,5 @@
 import { ObjectCategory } from "@/vendor/suroi/common/src/constants";
+import { EmoteDefinition, Emotes } from "@/vendor/suroi/common/src/definitions/emotes";
 import {
   BuildingDefinition,
   Buildings
@@ -134,6 +135,7 @@ export function getSuroiImageLink(obj: ObjectDefinition, variation?: number, app
     case isObstacle(obj): return imageLink(obj, ObjectCategory.Obstacle, variation);
     case isDecal(obj): return imageLink(obj, ObjectCategory.Decal, variation);
     case isLoot(obj): return imageLink(obj, ObjectCategory.Loot, variation);
+    case isEmote(obj): return `${IMAGE_BASE_URL}/game/shared/emotes/${obj.idString}.svg`;
 
     default: return MISSING_TEXTURE;
   }
@@ -227,4 +229,8 @@ export function isLoot(obj: ObjectDefinition): obj is LootDefinition {
 
 export function isWeapon(obj: ObjectDefinition): obj is WeaponDefinition {
   return Boolean([...Guns, ...Melees].find(weapon => weapon === obj));
+}
+
+export function isEmote(obj: ObjectDefinition): obj is EmoteDefinition {
+  return Boolean(Emotes.fromStringSafe(obj.idString));
 }
