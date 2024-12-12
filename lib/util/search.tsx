@@ -93,6 +93,12 @@ export const wikiPages: SearchItem[] = [
     image: getSuroiImageLink(getSuroiItem("hasanger"), undefined, "base")
   },
   {
+    name: "Emotes",
+    url: "/emotes",
+    description: "List of emotes",
+    image: `${IMAGE_BASE_URL}/game/shared/emotes/happy_face.svg`
+  },
+  {
     name: "Writing Guide",
     url: "/meta/writingarticles",
     description: "Guidelines for writing articles",
