@@ -1,6 +1,6 @@
 import BuildingCard from "@/components/cards/BuildingCard";
 import GridTable from "@/components/tables/GridTable";
-import { Buildings } from "@/vendor/suroi/common/src/definitions";
+import { Buildings } from "@/vendor/suroi/common/src/definitions/buildings";
 import { BuildingMetaArticles } from "./[item]/page";
 
 const BuildingArticles: string[] = [
