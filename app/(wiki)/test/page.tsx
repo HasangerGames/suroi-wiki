@@ -1,5 +1,5 @@
 import RenderedBuilding from "@/components/svg/special/RenderedBuilding";
-import { Buildings } from "@/vendor/suroi/common/src/definitions";
+import { Buildings } from "@/vendor/suroi/common/src/definitions/buildings";
 
 export default function Test() {
   return (
