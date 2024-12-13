@@ -116,7 +116,7 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
             (1000
               / (gun.burstProperties.burstCooldown
                 + gun.fireDelay * gun.burstProperties.shotsPerBurst))
-                * (gun.ballistics.damage * gun.burstProperties.shotsPerBurst)
+              * (gun.ballistics.damage * gun.burstProperties.shotsPerBurst)
           ).toFixed(2)}
           {gun.fireMode !== FireMode.Burst
           && (
@@ -134,9 +134,9 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
             (1000
               / (gun.burstProperties.burstCooldown
                 + gun.fireDelay * gun.burstProperties.shotsPerBurst))
-                * (gun.ballistics.damage
-                  * gun.ballistics.obstacleMultiplier
-                  * gun.burstProperties.shotsPerBurst)
+              * (gun.ballistics.damage
+                * gun.ballistics.obstacleMultiplier
+                * gun.burstProperties.shotsPerBurst)
           ).toFixed(2)}
           {gun.fireMode !== FireMode.Burst
           && (

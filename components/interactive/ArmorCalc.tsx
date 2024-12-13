@@ -115,7 +115,7 @@ export default function ArmorCalc() {
               {(
                 ((selectedHelmet?.damageReduction ?? 0)
                   + (selectedVest?.damageReduction ?? 0))
-                  * 100
+                * 100
               ).toFixed(2)}
               %
             </span>
@@ -133,7 +133,7 @@ export default function ArmorCalc() {
                 * (1
                   - ((selectedHelmet?.damageReduction ?? 0)
                     + (selectedVest?.damageReduction ?? 0)))
-                    - selectedGun.ballistics.damage
+                  - selectedGun.ballistics.damage
               ).toFixed(2)}
               )
             </span>
@@ -160,7 +160,7 @@ export default function ArmorCalc() {
                       * (1
                         - ((selectedHelmet?.damageReduction ?? 0)
                           + (selectedVest?.damageReduction ?? 0))))
-                          / selectedGun.bulletCount
+                        / selectedGun.bulletCount
                   )}{" "}
                   shot(s) with {selectedGun.bulletCount} bullets)
                 </span>

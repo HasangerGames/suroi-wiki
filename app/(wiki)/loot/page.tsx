@@ -57,13 +57,13 @@ export default function LootPage() {
                     table.count ? table.count.toString() : "1",
                     table.weight,
                     `${(
-                      (table.weight /
-                        ("loot" in tables ? tables.loot : tables).reduce(
+                      (table.weight
+                        / ("loot" in tables ? tables.loot : tables).reduce(
                           (acc, table) => acc + table.weight,
                           0
-                        )) *
-                        100
-                    ).toFixed(2)}%`,
+                        ))
+                        * 100
+                    ).toFixed(2)}%`
                   ]
                 )}
               />

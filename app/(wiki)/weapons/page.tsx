@@ -18,7 +18,7 @@ for (const gun of Guns) {
         (1000
           / (gun.burstProperties.burstCooldown
             + gun.fireDelay * gun.burstProperties.shotsPerBurst))
-            * (gun.ballistics.damage * gun.burstProperties.shotsPerBurst)
+          * (gun.ballistics.damage * gun.burstProperties.shotsPerBurst)
       ).toFixed(2)
       : (
         gun.ballistics.damage
@@ -30,9 +30,9 @@ for (const gun of Guns) {
         (1000
           / (gun.burstProperties.burstCooldown
             + gun.fireDelay * gun.burstProperties.shotsPerBurst))
-            * (gun.ballistics.damage
-              * gun.burstProperties.shotsPerBurst
-              * gun.ballistics.obstacleMultiplier)
+          * (gun.ballistics.damage
+            * gun.burstProperties.shotsPerBurst
+            * gun.ballistics.obstacleMultiplier)
       ).toFixed(2)
       : (
         gun.ballistics.damage
