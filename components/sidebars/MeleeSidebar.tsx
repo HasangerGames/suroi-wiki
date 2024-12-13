@@ -52,11 +52,14 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
         }
       ]}
     >
-      <InfoboxRow>
-        <InfoboxColumn title="Player Preview">
-          <PlayerHoldingMelee melee={item} skin={skin} use={false} />
-        </InfoboxColumn>
-      </InfoboxRow>
+      { /* TODO Support for rotating melee animations */ }
+      {"useRight" in item.fists && (
+        <InfoboxRow>
+          <InfoboxColumn title="Player Preview">
+            <PlayerHoldingMelee melee={item} skin={skin} use={false} />
+          </InfoboxColumn>
+        </InfoboxRow>
+      )}
       <InfoboxRow>
         <InfoboxColumn title="Damage">{item.damage}</InfoboxColumn>
         <InfoboxColumn title="Cooldown" abbr="Cooldown between hits">
