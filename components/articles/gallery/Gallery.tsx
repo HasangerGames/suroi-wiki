@@ -101,7 +101,7 @@ export default function Gallery({ images }: GalleryProps) {
                     alt={
                       (images[currentImage].caption
                         && images[currentImage].caption)
-                        || "Image with no caption"
+                      || "Image with no caption"
                     }
                     width={500}
                     height={500}
