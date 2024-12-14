@@ -16,7 +16,7 @@
   },
   "license": "GPL-3.0",
   "devDependencies": {
-    "@eslint/js": "^9.16.0",
+    "@eslint/js": "^9.17.0",
     "@next/eslint-plugin-next": "^14.2.20",
     "@stylistic/eslint-plugin": "^2.12.1",
     "@types/eslint__js": "^8.42.3",
