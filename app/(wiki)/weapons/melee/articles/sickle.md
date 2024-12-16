@@ -27,7 +27,7 @@ The Sickle is a one-handed tool used for agricultural purposes. It features a cu
 
 # Obtaining
 
-The Sickle is obtained from Melee Crates(/obstacles/melee_crate) and Airdrops(/obstacles/airdrops).
+The Sickle is obtained from [Melee Crates](/obstacles/melee_crate) and [Airdrops](/obstacles/airdrops).
 
 # History
 
