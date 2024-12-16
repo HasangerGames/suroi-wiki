@@ -47,7 +47,7 @@
     "@tailwindcss/typography": "^0.5.15",
     "@tanstack/react-query": "^5.62.7",
     "chart.js": "^4.4.7",
-    "cspell": "^8.16.1",
+    "cspell": "^8.17.0",
     "fuse.js": "^7.0.0",
     "lucide-react": "^0.408.0",
     "next": "^14.2.20",
