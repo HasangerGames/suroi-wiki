@@ -12,7 +12,7 @@ Special Tents are the same size as Normal Tents and are always purple in color.
 
 Big Tents can spawn with up to five [Boxes](/obstacles/box) in the interior or right outside one of the exits. Some of these Boxes can be randomly replaced with [Office Chairs](/obstacles/office_chair) or [Grenade Boxes](/obstacles/grenade_box). They also contain two instances of world loot in the interior.
 
-Normal Tents always contain a single Box and an instance of world loot on the floor while Special Tents contain three Boxes instead of one. Special Tents are also more likely to spawn high tier guns on the floor.
+Normal Tents always contain a single Box and an instance of world loot on the floor while Special Tents contain a [Gun Case](/obstacles/gun_case). Special Tents are also more likely to spawn high tier guns on the floor.
 
 Destroying a wall or a pole of the tent will cause the entire structure including any remaining walls or poles to collapse.
 
