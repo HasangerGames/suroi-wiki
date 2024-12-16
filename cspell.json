@@ -22,7 +22,7 @@
     "Yoinky",
     "sploinky",
 
-    // Game
+    // Game-related terms
     "quickswitch",
     "adren",
     "ghillie",
@@ -30,7 +30,6 @@
     "undetonated",
     "insta",
     "nerfed",
-    // Buildings
     "porta",
 
     // Items
@@ -50,7 +49,8 @@
     "kriss",
     "vepr",
     "seax",
-    /* CZ-75A */
+
+    // CZ-75A related
     "františek",
     "koucký",
     "ČZUB",
@@ -58,7 +58,8 @@
     "zbrojovka",
     "uherský",
     "brod",
-    /* --- */
+
+    // Other weapons
     "revitalizer",
     "iver",
     "kbar",
@@ -70,7 +71,8 @@
     "uziel",
     "ruger",
     "pederson",
-    /* VSS */
+    
+    // VSS-related
     "tsNIITochMash",
     "ЦНИИТОЧМАШ",
     "spetsiálnaya",
@@ -80,7 +82,8 @@
     "Сна́йперская",
     "Винто́вка",
     "Spetsnaz",
-    /* --- */
+
+    // Other brands/models
     "daewoo",
     "arma",
     "armalite",
@@ -89,37 +92,36 @@
     "Guglielmo",
     "Vollmer",
     "Maschinenpistole",
-    /* Vepr-12 */
+
+    // Vepr-12-related
     "Vyatskiye",
     "Molot",
     "Izhmash",
-    /* PP-19 */
+
+    // PP-19 related
     "Vityaz",
     "Bizon",
-    /* M1 Garand */
+
+    // M1 Garand-related
     "enbloc",
-    /* MG5 */
-    "Maschinengewehr", // add german when™
+
+    // MG5-related
+    "Maschinengewehr",
     "GPMG",
-    /* Negev */
+
+    // Negev-related
     "Galil",
-    /* --- */
-    // Generator
+
+    // Miscellaneous weapon-related
     "Yanmar",
-    // Armory puzzle
     "ÖLJY",
-    // M1117
     "m1117",
     "M2HB",
     "M240H",
-    // Ammo
     "curadell",
-    // ARX160
     "futuro",
-    // AUG
     "armee",
     "gewehr",
-    // rsh12
     "Viktor",
     "Zelenko",
     "ЦКИБ",
@@ -138,7 +140,7 @@
     "flechette",
     "Gavrilovich",
 
-    // People
+    // People (usernames/aliases)
     "compositr",
     "platonthek",
     "slapdap",
@@ -221,17 +223,16 @@
     "nefertari",
 
     // Random
-    "excipients", // Plural of excipient
+    "excipients",
     "retextured",
     "misaligning",
     "synergize",
     "zombsroyale",
     "pubg",
     "synergizes",
-    "furries",    // uwu ^w^
-    "Bartolomeo", // inventor of the piano
-    "Cristofori"  // last name
+    "furries",
+    "Bartolomeo",
+    "Cristofori"
   ],
-
   "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
 }
