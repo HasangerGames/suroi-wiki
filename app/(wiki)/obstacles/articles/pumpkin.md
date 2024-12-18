@@ -6,7 +6,7 @@ The **Pumpkin** is an [Obstacle](/obstacles) that only spawns on the Harvest and
 
 # Loot & More
 
-The pumpkin drops common loot similar to crates such as ammo and guns.
+The Pumpkin drops common loot similar to crates such as ammo and guns.
 
 # Tips
 
