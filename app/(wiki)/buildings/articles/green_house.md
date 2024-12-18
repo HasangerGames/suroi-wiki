@@ -11,7 +11,7 @@ The Green House has an [HP-18](/weapons/guns/hp18) Gun Mount next to the front e
 - When coming in through the main entrance, loot the [HP-18 Gun Mount](/obstacles/gun_mount_hp18) first so you can kill other players if they come in. 
 - [Potted Plants](/obstacles/potted_plant) drop ammo, heal, and sometimes equipment, but not guns.
 - This is one of the more loot-dense houses in the game, so if you spawn late, it will likely be already looted by other players. 
-- Use the skylights and partly damaged roof to check if there are players inside, but be careful because they may be able to see you as well. 
+- Use the skylights and partially damaged roof to check if there are players inside, but be careful because they may be able to see you as well. 
 - The covered entrance in the front of the house can be used to ambush players with as you are hidden from the other players' view. The [Flues](/weapons/guns/flues) or [Model 37](/weapons/guns/model_37) are good options for this. The [HP-18](/weapons/guns/hp18) that can be found from the Gun Mount is also a reliable option.
   - Note that your opponent might creep up to you from the side with another high-DPS weapon, so this is not a free-kill strategy.
 # Trivia
