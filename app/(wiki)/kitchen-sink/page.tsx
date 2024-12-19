@@ -53,12 +53,12 @@ export default function Kitchen() {
           min: 3,
           max: 5,
           loot: [
-              { table: "special_guns", weight: 1 },
-              { table: "special_equipment", weight: 0.65 },
-              { table: "special_scopes", weight: 0.3 },
-              { table: "special_healing_items", weight: 0.15 }
+            { table: "special_guns", weight: 1 },
+            { table: "special_equipment", weight: 0.65 },
+            { table: "special_scopes", weight: 0.3 },
+            { table: "special_healing_items", weight: 0.15 }
           ]
-      }}
+        }}
       />
       <PlayerWearingEquipment />
       <DevWeapon />
