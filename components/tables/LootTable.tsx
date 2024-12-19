@@ -1,8 +1,8 @@
 /* eslint-disable @stylistic/operator-linebreak */
 /* eslint-disable @stylistic/multiline-ternary */
-import { TableWithHeader } from "./TableWithHeader";
+import TableWithHeader from "./TableWithHeader";
 import { SimpleLootTable, FullLootTable, WeightedItem } from "../../vendor/suroi/server/src/data/lootTables";
-import { Loots } from "@/vendor/suroi/common/src/definitions/loots";
+import { Loots } from "../../vendor/suroi/common/src/definitions/loots";
 
 export default function LootTable({
   title,
@@ -11,12 +11,12 @@ export default function LootTable({
 
 }: LootTable) {
   return (
-    <div>
-      <div className="flex flex-col gap-2 p-4 pt-0 bg-muted rounded-md not-prose max-h-screen overflow-y-auto">
+    <div className="p-4">
+      <div className="flex flex-col p-4 pt-0 bg-muted rounded-md not-prose overflow-y-auto">
         <div className="flex flex-col gap-2 bg-muted sticky pt-4 top-0">
           <h3 className="text-xl font-bold">{title}</h3>
         </div>
-        <div>{notice && <p className="text-l">{notice}</p>}</div>
+        <div>{notice && <p className="text-l pt-2">{notice}</p>}</div>
         <div>
           {Array.isArray(content) ? (
             // differentiate between simple and full loot tables
@@ -47,10 +47,55 @@ export default function LootTable({
                 />
               ))
             ) : (
-              "replacement string"
+              <TableWithHeader
+                header={["Item", "Count", "Weight", "% Chance"]}
+                content={content.map((item: WeightedItem) => [
+                  "item" in item
+                    ? `Item ${
+                      Loots.definitions.find(
+                        loot => loot.idString === item.item
+                      )?.name
+                    }`
+                    : `Table ${item.table}`,
+                  item.count ? item.count.toString() : "1",
+                  item.weight,
+                  `${(
+                    (item.weight /
+                      content.reduce(
+                        (acc: number, table: WeightedItem) =>
+                          acc + table.weight,
+                        0
+                      )) *
+                      100
+                  ).toFixed(2)}%`
+                ])}
+              />
             )
           ) : (
-            "replacement string 2"
+            <TableWithHeader
+              header={["Item", "Count", "Weight", "% Chance"]}
+              content={content.loot.map((item: WeightedItem) => [
+              //               ^^^^ this will never cause any issues because the tenary only returns this section if "content" isn't an array, which means it is a Full Loot Table and must have a "loot" property
+                "item" in item
+                  ? `Item ${
+                    Loots.definitions.find(
+                      loot => loot.idString === item.item
+                    )?.name
+                  }`
+                  : `Table ${item.table}`,
+                item.count ? item.count.toString() : "1",
+                item.weight,
+                `${(
+                  (item.weight /
+                    content.loot.reduce(
+                      //    ^^^^ same goes for here
+                      (acc: number, table: WeightedItem) => acc + table.weight,
+                      0
+                    )) *
+                    100
+                ).toFixed(2)}%`
+              ])}
+            />
           )}
         </div>
       </div>
@@ -61,5 +106,5 @@ export default function LootTable({
 export interface LootTable extends React.PropsWithChildren {
   title: string
   notice?: string
-  content: SimpleLootTable | FullLootTable | readonly WeightedItem[] | ReadonlyArray<readonly WeightedItem[]>
+  content: SimpleLootTable | FullLootTable
 }

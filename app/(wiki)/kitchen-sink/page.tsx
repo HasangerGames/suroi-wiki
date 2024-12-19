@@ -49,10 +49,16 @@ export default function Kitchen() {
       />
       <LootTable
         title="fuck"
-        content={[
-          [{ item: "firework_launcher", weight: 1 }],
-          [{ item: "1st_birthday", weight: 1 }]
-      ]}
+        content={{
+          min: 3,
+          max: 5,
+          loot: [
+              { table: "special_guns", weight: 1 },
+              { table: "special_equipment", weight: 0.65 },
+              { table: "special_scopes", weight: 0.3 },
+              { table: "special_healing_items", weight: 0.15 }
+          ]
+      }}
       />
       <PlayerWearingEquipment />
       <DevWeapon />
