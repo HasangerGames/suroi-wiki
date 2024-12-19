@@ -14,7 +14,7 @@ Potted plants are usually left unlooted, and can be used as a way to get [Healin
 
 # Trivia
 
-- TBA
+- The potted plant was designed by Platonkek
 
 # History
 
