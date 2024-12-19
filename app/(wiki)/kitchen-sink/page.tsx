@@ -11,6 +11,7 @@ import Collapsible from "@/components/interactive/Collapsible";
 import PlayerWearingEquipment from "@/components/svg/special/PlayerWearingEquipment";
 import MatrixTable from "@/components/tables/MatrixTable";
 import TableWithHeader from "@/components/tables/TableWithHeader";
+import LootTable from "@/components/tables/LootTable";
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 
@@ -33,6 +34,9 @@ export default function Kitchen() {
           ["bleh", ":3", "silly"]
         ]}
       />
+      <p>
+
+      </p>
       <MatrixTable
         title="1092384 sucks at css"
         tHeader={["1", "2", "3"]}
@@ -42,6 +46,19 @@ export default function Kitchen() {
           ["1", "2", "3"],
           ["1", "2", "3"]
         ]}
+      />
+      <LootTable
+        title="fuck"
+        content={{
+          min: 3,
+          max: 5,
+          loot: [
+            { table: "special_guns", weight: 1 },
+            { table: "special_equipment", weight: 0.65 },
+            { table: "special_scopes", weight: 0.3 },
+            { table: "special_healing_items", weight: 0.15 }
+          ]
+        }}
       />
       <PlayerWearingEquipment />
       <DevWeapon />
