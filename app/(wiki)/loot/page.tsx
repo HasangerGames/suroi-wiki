@@ -32,14 +32,14 @@ export default function LootPage() {
         </div>
       </div>
       {...Object.entries(LootTables).map(([mode]) => (
-        <div>
+        <div key={mode} id={mode}>
           <div className="mt-8">
             <div className="prose prose-invert p-3">
               <h2>{`${mode.charAt(0).toUpperCase() + mode.slice(1)} mode`}</h2>
             </div>
           </div>
           {Object.entries(LootTables[mode]).map(([name, tables]) => (
-            <div key={name} id={name}>
+            <div key={`${name}_${mode}`} id={`${name}_${mode}`}>
               <LootTable
                 title={name}
                 notice={Array.isArray(tables) ? "" : `This table drops ${tables.min}-${tables.max} items.`}
