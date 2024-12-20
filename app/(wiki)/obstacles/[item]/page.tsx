@@ -85,6 +85,11 @@ const toExport = GenericArticlePage({
       title: "Kitchen Units",
       items: ["kitchen_unit_1", "kitchen_unit_2", "kitchen_unit_3"],
       fileName: "kitchen_units"
+    },
+    {
+      title: "Gifts",
+      items: ["red_gift", "green_gift", "blue_gift", "black_gift", "purple_gift"],
+      fileName: "gifts"
     }
   ]
 });
