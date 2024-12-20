@@ -1,7 +1,6 @@
 import LootCalc from "@/components/interactive/LootCalc";
-import TableWithHeader from "@/components/tables/TableWithHeader";
-import { Loots } from "@/vendor/suroi/common/src/definitions/loots";
 import { LootTables } from "@/vendor/suroi/server/src/data/lootTables";
+import LootTable from "@/components/tables/LootTable";
 
 export default function LootPage() {
   return (
@@ -41,31 +40,10 @@ export default function LootPage() {
           </div>
           {Object.entries(LootTables[mode]).map(([name, tables]) => (
             <div key={name} id={name}>
-              <TableWithHeader
-                key={name}
-                title={`Table ${name}`}
-                header={["Item", "Count", "Weight", "% Chance"]}
-                content={("loot" in tables ? tables.loot : tables).map(
-                  table => [
-                    "item" in table
-                      ? `Item ${
-                        Loots.definitions.find(
-                          loot => loot.idString === table.item
-                        )?.name
-                      }`
-                      : `Table ${table.table}`,
-                    table.count ? table.count.toString() : "1",
-                    table.weight,
-                    `${(
-                      (table.weight /
-                        ("loot" in tables ? tables.loot : tables).reduce(
-                          (acc, table) => acc + table.weight,
-                          0
-                        )) *
-                        100
-                    ).toFixed(2)}%`,
-                  ]
-                )}
+              <LootTable
+                title={name}
+                notice={Array.isArray(tables) ? "" : `This table drops ${tables.min}-${tables.max} items.`}
+                content={tables}
               />
             </div>
           ))}
