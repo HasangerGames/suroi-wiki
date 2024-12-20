@@ -13,7 +13,7 @@ All Small Bridges contain some sort of loot at their center. It’s ideal to cro
 
 # Trivia
 - There have been several updates that broke Small Bridges, making them lead to the ocean, overlap, or not fully crossing a river.
-  - While most bugs regarding Small Bridge spawning mechanics have been fixed, Small Bridges can still spawn in unintented locations on ocassion.
+  - While most bugs regarding Small Bridge spawning mechanics have been fixed, Small Bridges can still spawn in unintended locations on occasion.
 
 # History
 
