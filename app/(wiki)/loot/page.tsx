@@ -27,7 +27,7 @@ export default function LootPage() {
         <div className="prose prose-invert">
           <h2>Loot Tables</h2>
           <p>
-            These tables determine which loot tiers to use for a given obstacle.
+            These tables determine which loot tiers to use for a given obstacle. Multiple tables inside of a tier indicate that the corresponding obstacle drops a random item from each table.
           </p>
         </div>
       </div>
