@@ -3,6 +3,7 @@
 import TableWithHeader from "./TableWithHeader";
 import { SimpleLootTable, FullLootTable, WeightedItem } from "../../vendor/suroi/server/src/data/lootTables";
 import { Loots } from "../../vendor/suroi/common/src/definitions/loots";
+import { NullString } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 
 export default function LootTable({
   title,
@@ -27,10 +28,10 @@ export default function LootTable({
                     header={["Item", "Count", "Weight", "% Chance"]}
                     content={tables.map((table: WeightedItem) => [
                       "item" in table
-                        ? `Item ${Loots.definitions.find(
+                        ? (table.item === NullString ? "Nothing" : `Item ${Loots.definitions.find(
                           loot => loot.idString === table.item
                         )?.name
-                        }`
+                        }`)
                         : `Table ${table.table}`,
                       table.count ? table.count.toString() : "1",
                       table.weight,
@@ -53,10 +54,10 @@ export default function LootTable({
                   header={["Item", "Count", "Weight", "% Chance"]}
                   content={content.map((item: WeightedItem) => [
                     "item" in item
-                      ? `Item ${Loots.definitions.find(
+                      ? (item.item === NullString ? "Nothing" : `Item ${Loots.definitions.find(
                         loot => loot.idString === item.item
                       )?.name
-                      }`
+                      }`)
                       : `Table ${item.table}`,
                     item.count ? item.count.toString() : "1",
                     item.weight,
@@ -80,11 +81,11 @@ export default function LootTable({
                 content={content.loot.map((item: WeightedItem) => [
                 //               ^^^^ this will never cause any issues because the tenary only returns this section if "content" isn't an array, which means it is a Full Loot Table and must have a "loot" property
                   "item" in item
-                    ? `Item ${
+                    ? (item.item === NullString ? "Nothing" : `Item ${
                       Loots.definitions.find(
                         loot => loot.idString === item.item
                       )?.name
-                    }`
+                    }`)
                     : `Table ${item.table}`,
                   item.count ? item.count.toString() : "1",
                   item.weight,
