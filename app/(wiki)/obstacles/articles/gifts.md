@@ -8,7 +8,7 @@ Four (or rarely six) Gifts spawn symmetrically around the [Christmas Tree](/obst
 
 All Gifts have a chance to contain a skin and most Gifts are guaranteed to contain a weapon.
 
-The color of the Gift determines what loot table the gift will use:
+The color of the Gift determines what loot table the gift will use. Click on the Gift's name to see a full loot table.
 
 - [Red Gifts](/loot#red_gift_normal) always drop a shotgun.
 
