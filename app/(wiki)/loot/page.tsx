@@ -42,7 +42,7 @@ export default function LootPage() {
             <div key={`${name}_${mode}`} id={`${name}_${mode}`}>
               <LootTable
                 title={name}
-                notice={Array.isArray(tables) ? "" : `This table drops ${tables.min}-${tables.max} items.`}
+                notice={Array.isArray(tables) ? "" : `This table drops ${tables.min === tables.max ? tables.min : `${tables.min}-${tables.max}`}${tables.noDuplicates ? " distinct" : ""} item${tables.max === 1 ? "" : "s"}.`}
                 content={tables}
               />
             </div>
