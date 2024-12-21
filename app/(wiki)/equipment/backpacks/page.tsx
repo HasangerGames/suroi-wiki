@@ -66,9 +66,9 @@ export default function BackpackPage() {
                   src={getSuroiImageLink(getSuroiItem(ammo))}
                   alt={ammo}
                   key={ammo}
-                  width={40}
-                  height={40}
-                  className="w-10 h-10"
+                  width={32}
+                  height={32}
+                  className="w-10 h-10 ml-2"
                 />
               )
             )

@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function AmmoIcon({ ammo, scale = 1 }: AmmoIconProps) {
   return (
     <Image
-      src={`${IMAGE_BASE_URL}game/loot/${ammo}.svg`}
+      src={`${IMAGE_BASE_URL}/game/shared/loot/${ammo}.svg`}
       width={72 * scale}
       height={50 * scale}
       alt={`Ammo icon for ${ammo}`}
