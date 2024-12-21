@@ -20,6 +20,7 @@ export default function LootPage() {
             Use this interactive calculator to determine the chance of an item
             dropping from an obstacle.
           </p>
+          <h3>NOTICE: The Loot Table calculator is currently broken.</h3>
         </div>
         <LootCalc />
       </div>
