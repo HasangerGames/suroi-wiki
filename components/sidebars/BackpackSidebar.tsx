@@ -93,7 +93,21 @@ export default function BackpackSidebar({
         ))}
       </InfoboxRow>
       <InfoboxRow>
-        {["127mm", "power_cell", "curadell"].map(ammo => (
+        {["50cal", "338lap"].map(ammo => (
+          <InfoboxColumn
+            key={ammo}
+            title={(
+              <div className="flex justify-center">
+                <AmmoIcon ammo={ammo} scale={0.55} />
+              </div>
+            )}
+          >
+            {item.maxCapacity[ammo]}
+          </InfoboxColumn>
+        ))}
+      </InfoboxRow>
+      <InfoboxRow>
+        {["curadell", "firework_rocket"].map(ammo => (
           <InfoboxColumn
             key={ammo}
             title={(
@@ -109,6 +123,25 @@ export default function BackpackSidebar({
       <InfoboxHeader>Throwable Capacity</InfoboxHeader>
       <InfoboxRow>
         {["frag_grenade", "smoke_grenade"].map(throwable => (
+          <InfoboxColumn
+            key={throwable}
+            title={(
+              <div className="flex justify-center">
+                <Image
+                  src={getSuroiImageLink(getSuroiItem(throwable))}
+                  alt={throwable}
+                  width={40}
+                  height={40}
+                />
+              </div>
+            )}
+          >
+            {item.maxCapacity[throwable]}
+          </InfoboxColumn>
+        ))}
+      </InfoboxRow>
+      <InfoboxRow>
+        {["confetti_grenade", "c4"].map(throwable => (
           <InfoboxColumn
             key={throwable}
             title={(

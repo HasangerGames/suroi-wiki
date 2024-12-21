@@ -12,7 +12,7 @@ export default function HealingIcon({
 }: HealingIconProps) {
   return (
     <Image
-      src={`${IMAGE_BASE_URL}game/loot/${ammo}.svg`}
+      src={`${IMAGE_BASE_URL}/game/shared/loot/${ammo}.svg`}
       width={50 * scale}
       height={50 * scale}
       alt={`Healing icon for ${ammo}`}
