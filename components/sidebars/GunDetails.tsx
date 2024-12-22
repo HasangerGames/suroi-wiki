@@ -32,7 +32,7 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
       </InfoboxRow>
       <InfoboxRow>
         <InfoboxColumn title="Reload">
-          {gun.singleReload ? "1" : gun.capacity} in {gun.reloadTime}s
+          {gun.shotsPerReload ?? gun.capacity} in {gun.reloadTime}s {gun.reloadFullOnEmpty ? `or ${gun.capacity} in ${gun.fullReloadTime}s` : ""}
         </InfoboxColumn>
         <InfoboxColumn title="Firing Delay" abbr="Delay between shots">
           {gun.fireDelay}ms
