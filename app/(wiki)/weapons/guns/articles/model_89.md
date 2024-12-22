@@ -23,9 +23,12 @@ The Model 89 can be found in [Regular Airdrops](/obstacles/airdrops), occasional
 - The Model 89 is one of the three weapons which use .50 Cal ammunition. The other weapons which use .50 Cal rounds are the [RSh-12](/weapons/guns/rsh12) and [DEagle](/weapons/guns/deagle).
 
 ## History
+- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0)
+  - Damage increased to 55 (from 49)
+  - Bullet speed increased to 0.31 (from 0.28)
 - [v0.20.1](https://github.com/HasangerGames/suroi/releases/tag/v0.20.1)
   - Reload time decreased to 0.4 (from 0.5)
-- [v0.20.1](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+- [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
   - Damage decreased to 49 (from 62.5)
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
   - Changed ammunition type to .50 Cal from 12.7mm

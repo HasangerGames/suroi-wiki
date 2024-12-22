@@ -36,6 +36,10 @@ The Flues is currently the second-rarest shotgun in the game. It is about 5 time
 
 # History
 
+- [v0.21.5](https://github.com/HasangerGames/suroi/releases/tag/v0.21.5)
+  - Recoil duration increased to 550 (from 100)
+  - Recoil multiplier decreased to 0.5 (from 0.8)
+  - Fire delay increased to 250 (from 175)
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - Center jitter on muzzle implicitly enabled
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
