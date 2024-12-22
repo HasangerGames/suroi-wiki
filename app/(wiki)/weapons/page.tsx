@@ -135,10 +135,13 @@ export default function WeaponsPage() {
         )}
         className="my-4"
       >
-        <TableWithHeader
-          header={["Gun", "DPS", "Obstacle DPS"]}
-          content={[...dpsList]}
-        />
+        <div className="mt-4">
+          <TableWithHeader
+            header={["Gun", "DPS", "Obstacle DPS"]}
+            content={[...dpsList]}
+          />
+        </div>
+
       </Collapsible>
 
     </main>
