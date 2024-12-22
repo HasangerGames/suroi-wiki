@@ -33,7 +33,7 @@ The Dining Area has a [Table](/obstacles/table) with two [Chairs](/obstacles/cha
 
 There is a Small Drawer near the Back Door of this variant.
 
-# Second Variant
+## Second Variant
 
 ### Bathroom
 
