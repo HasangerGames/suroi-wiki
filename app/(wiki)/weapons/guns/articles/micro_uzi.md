@@ -22,7 +22,7 @@ The original Uzi is an open-bolt, blowback-operated design, very similar to the 
   - Try peeking from cover with a weapon like a burst-fire gun or a shotgun while they are reloading.
 - Stay at medium or long range and use a more accurate weapon such as a DMR or assault rifle to take out your opponent. Avoid close-range encounters with the Micro Uzi, especially if you have lower tier armor.
   - The MP 40 also works well for this, as it is very accurate.
-- Shotguns like the [Flues](weapons/guns/flues) can easily overpower the Micro Uzi at close-range.
+- Shotguns like the [Flues](/weapons/guns/flues) can easily overpower the Micro Uzi at close-range.
   - Make sure to quickswitch and avoid the recoil from shotguns, as this will make you a sitting duck for the Micro Uzi user.
 
 # Obtaining
@@ -31,7 +31,7 @@ The Micro Uzi is a very common gun, and can be found from [Regular Crates](/obst
 
 # Trivia
 
-- The Micro Uzi was the second SMG to be added to the game, after the [SAF-200](weapons/guns/saf200).
+- The Micro Uzi was the second SMG to be added to the game, after the [SAF-200](/weapons/guns/saf200).
 - The Micro Uzi has the second highest DPS of any 9mm weapon in Suroi, and the lowest damage per bullet (of any 9mm weapon).
 
 # History

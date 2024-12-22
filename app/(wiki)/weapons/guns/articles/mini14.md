@@ -9,7 +9,7 @@ The Mini-14, as the name suggests, is based on the bigger 7.62x51mm NATO firing 
 ## Using
 
 - The Mini-14 is best used at long-range, but its high DPS makes it effective against many weapons at mid-range as well.
-- Stay at long range, as the high accuracy and fast bullet speed make the Mini-14 very powerful against other long-range weapons like snipers and the [MCX Spear.](/weapons/guns/mcx_spear)
+- Stay at long range, as the high accuracy and fast bullet speed make the Mini-14 very powerful against other long-range weapons like snipers and the [MCX Spear](/weapons/guns/mcx_spear).
 - The [SR-25](/weapons/guns/sr25) has more damage and DPS compared to the Mini-14 and is an effective counter against the Mini-14.
 - Pair the Mini-14 with a high-DPS shotgun or SMG for close-range combat.
 

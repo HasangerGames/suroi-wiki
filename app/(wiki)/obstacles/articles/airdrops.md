@@ -8,7 +8,7 @@ The normal Airdrop is the most common. The Gold Airdrop is significantly rarer, 
 
 # Loot & More
 
-Airdrops contain rare and useful loot, including powerful weapons, large scopes, medical supplies, and exclusive skins. The loot table can be found [here](/loot#airdrop_crate). Very rarely, a Gold Airdrop will spawn with a [G19.](/weapons/guns/g19)
+Airdrops contain rare and useful loot, including powerful weapons, large scopes, medical supplies, and exclusive skins. The loot table can be found [here](/loot#airdrop_crate_normal). Very rarely, a Gold Airdrop will spawn with a [G19.](/weapons/guns/g19)
 
 # Tips
 
