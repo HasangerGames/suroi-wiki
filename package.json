@@ -34,7 +34,7 @@
     "globals": "^15.14.0",
     "postcss": "^8.4.49",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.18.1"
+    "typescript-eslint": "^8.18.2"
   },
   "dependencies": {
     "@cspell/dict-ru_ru": "^2.2.4",
@@ -45,7 +45,7 @@
     "@next/mdx": "^14.2.21",
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/typography": "^0.5.15",
-    "@tanstack/react-query": "^5.62.8",
+    "@tanstack/react-query": "^5.62.9",
     "chart.js": "^4.4.7",
     "cspell": "^8.17.1",
     "fuse.js": "^7.0.0",
