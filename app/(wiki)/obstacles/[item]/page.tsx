@@ -14,7 +14,8 @@ const toExport = GenericArticlePage({
         "flint_crate",
         "regular_crate",
         "melee_crate",
-        "grenade_crate"
+        "grenade_crate",
+        "frozen_crate"
       ],
       fileName: "crates"
     },
