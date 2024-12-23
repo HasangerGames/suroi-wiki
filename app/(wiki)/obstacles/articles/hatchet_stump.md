@@ -1,4 +1,4 @@
-The **Hatchet Stump** is an [Obstacle](/obstacles) that only spawns on the Harvest and Halloween Maps and was added alongside the Harvest Map in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It is a rare variant of the [Stump](/obstacles/stump)
+The **Hatchet Stump** is an [Obstacle](/obstacles) that only spawns on the Harvest and Halloween Maps and was added alongside the Harvest Map in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It is a rare variant of the [Stump](/obstacles/stump).
 
 # Location & Spawning
 
