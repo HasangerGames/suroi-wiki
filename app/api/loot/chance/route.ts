@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/restrict-plus-operands */
 import APIErrorCodes from "@/lib/api/ErrorCodes";
 import { Loots } from "@/vendor/suroi/common/src/definitions/loots";
 import {
