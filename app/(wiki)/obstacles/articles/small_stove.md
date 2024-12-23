@@ -14,7 +14,6 @@ The Small Stove doesn't drop loot and explodes when broken.
 
 # Trivia
 
-- The Small Stove was designed by platonthek.
 - THe Small Stove is very similar to the normal [Stove](/obstacles/bed) except for its size.
 
 # History

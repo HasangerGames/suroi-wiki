@@ -13,10 +13,6 @@ The Briefcase can drop a [Vector](/weapons/guns/vector), an [ARX-160](/weapons/g
 - The Briefcase almost always drops a decent weapon so it should be the first obstacle to head to in the buildings containing it.
 - The Briefcase can't be used as cover due to its positioning.
 
-# Trivia
-
-- The Briefcase was designed by 1092384.
-
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)

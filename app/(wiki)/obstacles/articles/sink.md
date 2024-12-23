@@ -13,10 +13,6 @@ The Sink drops either healing items or ammo. The former is slightly more common.
 - Sinks can only be used as cover in certain situations.
 - Sinks are a good way to get healing items when you need them.
 
-# Trivia
-
-- The Sink was designed by platonthek.
-
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)

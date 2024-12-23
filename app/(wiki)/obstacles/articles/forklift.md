@@ -15,10 +15,6 @@ Some Forklifts spawn with a pallet with [Boxes](/obstacles/box), a [Barrel](/obs
 - Being indestructible, the Forklift is a pretty decent source of cover.
 - Move around it to frustrate your opponents.
 
-# Trivia
-
-- The Forklift was designed by jchen.
-
 # History
 
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)

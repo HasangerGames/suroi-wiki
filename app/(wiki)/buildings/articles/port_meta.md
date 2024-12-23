@@ -38,10 +38,6 @@ A crane always spawns parallel to the Cargo Ship and contains a large amount of 
 - Be careful as there are often many players at the port looking for loot.
   - Unless you spawn close to the Port early-game, don't bother heading for the Port as it will likely already be looted by the time you arrive.
 
-# Trivia
-
-- The Port was designed by platonthek.
-
 # History
 
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)

@@ -14,7 +14,6 @@ The Pumpkin drops common loot similar to crates such as ammo and guns.
 
 # Trivia
 
-- The Pumpkin was designed by Redcoder09.
 - During the Halloween 2023 event, the Pumpkin had a 95% chance to drop a [G17 (scoped)](/weapons/guns/g17_scoped) and a 5% chance to drop a [USAS-12](/weapons/guns/usas12).
 
 # History

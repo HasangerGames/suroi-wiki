@@ -14,8 +14,6 @@ Gun Cases drop 1-2 guns of medium quality. See the special guns tier in the [Loo
 - Since the Gun Case has extremely low health, it makes poor cover from enemies.
   - It is almost always better to break them for loot since they have a high chance of containing a decent weapon.
 
-# Trivia
-
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)

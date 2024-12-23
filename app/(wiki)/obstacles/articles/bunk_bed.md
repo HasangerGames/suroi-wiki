@@ -12,10 +12,6 @@ Bunk Beds cannot be destroyed and reflect bullets.
 
 - Due to its positioning, the Bunk Bed is not a very effective piece of cover.
 
-# Trivia
-
-- The Bunk Bed was designed by Yeet120.
-
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)

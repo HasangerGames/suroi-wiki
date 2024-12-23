@@ -18,7 +18,7 @@ The Green House has an [HP-18](/weapons/guns/hp18) Gun Mount next to the front e
 
  - This is the biggest house currently in the game.
  - In v0.11.0, the [TV](/obstacles/tv) and [Washing Machine](/obstacles/washing_machine) were removed. However, six versions later, they were readded. In fact, Hasanger, the owner of suroi.io foreshadowed this, saying "The big variant will be overhauled and re-added in a future update", refering to the Green House. 
-- Platonthek designed the Green House.
+
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)

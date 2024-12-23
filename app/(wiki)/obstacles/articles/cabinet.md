@@ -12,11 +12,6 @@ Cabinets drop medium-tier guns, healing, scopes, or equipment and reflect bullet
 
 - Due to their positioning, Cabinets can't be used as cover.
 
-
-# Trivia
-
-- The Cabinet was designed by Bear.
-
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)

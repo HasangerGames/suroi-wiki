@@ -13,10 +13,6 @@ The Bollard is indestructible and therefore drops no loot.
 - Since the Bollard is indestructible, it can be used to hide from players with guns if need be.
   - However, since the Cargo Ship is so close and having to stand in the water slows you down, the Bollard should only be used as cover in certain situations.
 
-# Trivia
-
-- The Bollard was designed by platonthek.
-
 # History
 
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)

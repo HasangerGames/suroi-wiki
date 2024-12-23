@@ -22,10 +22,6 @@ Gun Mounts have low health and are easily destroyed. They always drop the weapon
 
 - Due to their positioning and low health, Gun Mounts are poor cover from enemies.
 
-# Trivia
-
-- The Gun Mounts were designed by platonthek.
-
 # History
 - [v0.21.2](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
   - Fixed gun mount loot phasing through walls

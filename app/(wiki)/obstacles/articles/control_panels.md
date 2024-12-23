@@ -26,10 +26,6 @@ Control Panels don't drop loot when destroyed, but it will create an explosion t
 
 - Since Control Panels are explosive, you can shoot them if they're on low health to make it explode. The bullets from shooting and the shrapnel may damage your enemy, giving you an advantage.
 
-# Trivia
-
-- The Control Panels were designed by Platonthek.
-
 # History
 
 - [v0.16.1](https://github.com/HasangerGames/suroi/releases/tag/v0.16.1)

@@ -16,7 +16,6 @@ The Flint Stone has very good [loot](/loot#flint_stone), and always drops a [Gol
 
 # Trivia
 
-- The Flint Stone was designed by Hasanger, but the logo on it was designed by Katloo.
 - Before [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0), the Flint Stone didn't drop any loot.
   - If the code was edited to make it destructible, it still wouldn't drop any loot.
 - The name "Flint Stone" is a play on words that references the animated sitcom _The Flintstones_.

@@ -55,9 +55,6 @@ In the black space between the Lounge and the Executive Office, there is a hidde
   - You can place [C4](/weapons/throwables/c4) under the Metal Detectors to try and catch unsuspecting players. Simply trigger it when you hear the beep.
 - "The pass" (where food is taken from kitchen to the table), or the area between the Cafeteria's kitchen and the rest of the Cafeteria, can be fired through with guns as it is a gap in the wall. Many players don't realize this and think they are safe behind this "wall".
 
-# Trivia
-- The Headquarters was designed by platonthek, with editing by Solstice and eiπ
-
 # History
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
   - Added

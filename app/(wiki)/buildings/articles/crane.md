@@ -17,7 +17,6 @@ The Crane itself does not have any loot, but it does have a large number of [AEG
 
 # Trivia
 
-- The Crane was designed by platonthek.
 - The Crane is used to load and unload cargo off of the Ship.
 
 # History

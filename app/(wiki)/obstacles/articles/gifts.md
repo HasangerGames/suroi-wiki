@@ -28,7 +28,6 @@ The color of the Gift determines what loot table the gift will use. Click on the
 # Trivia
 
 - Gifts were supposed to be added during the 2023 winter event but weren't finished on time.
-- Gifts were designed by Platonthek and 1092384.
 
 # History
 

@@ -6,7 +6,6 @@ The Tactical Pack can be obtained rarely from common loot sources such as [crate
 
 # Trivia 
 
- - The Tactical Pack was designed by Slapdap.
  - The Tactical Pack has an AEGIS logo on it.
 
 # History

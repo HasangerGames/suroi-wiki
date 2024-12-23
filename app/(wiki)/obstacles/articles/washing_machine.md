@@ -14,10 +14,6 @@ The Washing Machine reflects bullets and drops either the "Verified or "no kill 
 - If you want to loot the Washing Machine, do it last, since it has the least important loot in the House.
 - This obstacle is currently unobtainable and can't be found on the map since the [House](/buildings/house) doesn't spawn on the map.
 
-# Trivia
-
-- The Washing Machine was designed by platonthek.
-
 # History
 
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)

@@ -12,10 +12,6 @@ Small Drawers drop either healing items or ammo while Large Drawers drop guns, s
 
 - Drawers can be used as cover in some situations, but it is better to break them for loot.
 
-# Trivia
-
-- The Drawers were designed by platonthek.
-
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)

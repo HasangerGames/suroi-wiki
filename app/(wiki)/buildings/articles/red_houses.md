@@ -63,10 +63,6 @@ The Kitchen contains a [Small Stove](/obstacles/small_stove) and a [Fridge](/obs
 - Use doors to block damage and frustrate your enemies.
   - The door in the Bedroom is particularly effective at this, and useful if you have no weapons.
 
-# Trivia
-
-- The Red House was designed by platonthek.
-
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)

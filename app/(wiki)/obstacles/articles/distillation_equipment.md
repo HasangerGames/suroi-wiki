@@ -14,7 +14,6 @@ Distillation Equipments are indestructible and reflect bullets.
 
 # Trivia
 
-- Distillation Equipment was designed by platonthek.
 - In real life, distillation is the process of purifying mixtures by heat.
 
 # History

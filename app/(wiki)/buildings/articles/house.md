@@ -34,7 +34,6 @@ The Garage contains a Bookshelf, [Regular Crate](/obstacles/regular_crate), [Bar
 
 # Trivia
 
-- The House was designed by platonthek.
 - The Garage has an oil stain on the floor, possibly suggesting a car or other vehicle had been there before.
 
 # History
