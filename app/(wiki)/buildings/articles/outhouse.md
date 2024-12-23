@@ -14,10 +14,6 @@ The Outhouse spawns with either an unused [Toilet](/obstacles/toilets) or a used
 - Be careful against assault rifles, LMGs, and other weapons with high obstacle DPS when using the Outhouse as cover. The entire Outhouse can easily be shredded in seconds by those weapons.
 - The Outhouse is a good place to hide and heal quickly if necessary.
 
-# Trivia
-
-- The Outhouse was designed by pap
-
 # History
 
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)

@@ -6,7 +6,6 @@ The Regular Pack can be obtained from common loot sources such as normal, AEGIS,
 
 # Trivia
 
- - The Regular Pack was designed by Slapdap.
  - The Regular Pack has a Flint logo on it.
 
 # History

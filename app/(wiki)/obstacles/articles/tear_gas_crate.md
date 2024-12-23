@@ -14,10 +14,6 @@ Tear Gas Crates drop no loot when broken. When Tear Gas Crates are broken, they 
 - The Tear Gas released after Tear Gas Crates are broken can be used as a substitute for a Smoke Grenade. 
   - However, it is advised to just use Smoke Grenades since Tear Gas depletes adrenaline.
 
-
-# Trivia
-- The Tear Gas Crate was designed by Just Alto and 1092384.
-
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added

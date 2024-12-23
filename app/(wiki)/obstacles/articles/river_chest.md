@@ -12,8 +12,6 @@ The River Chest drops high quality weapons. See the River Chest Guns & River Che
 
 - The River Chest has poor health so it is not recommended for cover from gun fire.
   - It's better to break this chest because it has good loot.
- 
-# Trivia
 
 # History
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)

@@ -13,10 +13,6 @@ The Lux Crate always drops a scope and on the normal map, a [RGS](/weapons/guns/
 - Since the Lux Crate has extremely low health and poor positioning, it makes poor cover from enemies.
 - It is almost always better to break it for loot since it drops the powerful [RGS](/weapons/guns/rgs) on the Normal Map and a chance for the extremely powerful [VKS Vykhlop](/weapons/guns/vks) or [Tango 51](/weapons/guns/tango_51) on the Harvest and Halloween Maps.
 
-# Trivia
-
-- The Lux Crate was designed by Platonthek and emeraldneo.
-
 # History
 
 - [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)

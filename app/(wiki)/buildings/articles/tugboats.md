@@ -25,7 +25,6 @@ All tugboat cabins contain one [Tugboat Control Panel](/obstacles/tugboat_contro
 
 # Trivia
 
-- The Tugboats were designed by Platonthek and emeraldneo
 - In real life, tugboats are a type of boat that is usually used to move other vessels out of dangerous or crowded by using a tow line. Earlier versions were powered by steam engines, which have now been replaced by diesel engines.
 
 # History

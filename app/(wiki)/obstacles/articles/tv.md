@@ -12,10 +12,6 @@ TVs drop no loot when broken.
 
 - Since the TV has extremely low health, it cannot be normally used as cover.
 
-# Trivia
-
-- The TV was designed by platonthek.
-
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)

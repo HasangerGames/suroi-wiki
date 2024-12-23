@@ -19,10 +19,6 @@ The Christmas Tree drops decent [loot](/loot#christmas_tree) and takes many hits
 - If an enemy is hiding behind the Christmas Tree, it is not a good idea to try and destroy it, especially if it is at full health. You'll just be wasting your ammo. Instead, try to chase them out of their cover.
   - If you do decide to try and destroy the Christmas Tree make sure to have a weapon with a lot of ammo and a good obstacle multiplier such as the [Lewis Gun](/weapons/guns/lewis_gun) or [Stoner 63](/weapons/guns/stoner_63).
 
-# Trivia
-
-- The Christmas Tree was designed by Bear.
-
 # History
 
 - [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)

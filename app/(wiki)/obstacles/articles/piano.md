@@ -15,7 +15,6 @@ Since the Piano is indestructible, it can't no loot. However, it can be interact
 - In real life, the Piano is a musical instrument that creates sound through a set of 88 hammers that strike a set of strings which are tuned to a specific pitch. These hammers are linked up to keys which are struck by the pianist's fingers. The Piano was invented by Bartolomeo Cristofori, an Italian harpsichord maker, around the 1700s. Today, the Piano features an extensive amount of repertoire including many solo works, making it one of the most played instruments worldwide.
 - Surviv also featured a piano, but it was a keyboard piano while the piano in Suroi is a grand piano.
 - The Piano in Suroi only has 36 keys for simplicity.
-- Platonthek designed the Piano. 
 
 # History  
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)  

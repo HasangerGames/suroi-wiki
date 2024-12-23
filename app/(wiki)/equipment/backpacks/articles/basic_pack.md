@@ -4,10 +4,6 @@ The **Basic Pack** is a piece of [Equipment](/equipment) added in the [v0.7.0](h
 
 The Basic Pack is easily obtained from common loot sources such as normal, AEGIS, or flint [crates](/obstacles/crates) and can also be found within buildings on the ground and in berry bushes. 
 
-# Trivia 
-
-- The Basic Pack was designed by Slapdap.
-
 # History
 
  - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)

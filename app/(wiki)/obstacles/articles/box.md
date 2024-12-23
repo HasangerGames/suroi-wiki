@@ -13,10 +13,6 @@ The Box has similar [loot](/loot#box) to the [Regular Crate](/obstacles/regular_
 - Boxes are a compact and decent source of loot.
 - If you're trying to find a gun, opt to break Regular Crates first, since they are more likely to drop guns.
 
-# Trivia
-
-- The Box was designed by jchen.
-
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)

@@ -12,10 +12,6 @@ Pallets drop no loot when broken.
 
 - Since Pallets have no hitbox, they cannot be used as cover.
 
-# Trivia
-
-- The Pallet was designed by platonthek.
-
 # History
 
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)

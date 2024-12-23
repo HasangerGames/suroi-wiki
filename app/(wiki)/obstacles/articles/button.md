@@ -12,10 +12,6 @@ Buttons are usually linked to puzzles. They can be pressed by interacting with t
 
 Buttons cannot be used as cover since their hitbox is too small.
 
-# Trivia
-
-- The Button was designed by Bear.
-
 # History
 
  - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)

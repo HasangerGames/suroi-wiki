@@ -4,10 +4,6 @@ The **Tactical Vest** is a piece of [Equipment](/equipment) added in the [v0.7.0
 
 The Tactical Vest can be obtained rarely from common loot sources such as [crates](/obstacles/crates), but it is most easily found from an [Airdrop](/obstacles/airdrops) because they have a guranteed chance to drop one piece of level 3 equipment. 
 
-# Trivia 
-
- - The Tactical Vest was designed by Slapdap and jc
-
 # History
 
  - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)

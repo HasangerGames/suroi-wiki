@@ -12,10 +12,6 @@ Chairs drop no loot when broken.
 
 - Due to its low health and positioning, the Chair can only be used as temporary cover from enemies in specific situations.
 
-# Trivia
-
-- The Chair was designed by platonthek.
-
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)

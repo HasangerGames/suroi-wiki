@@ -18,7 +18,6 @@ Barrels and Super Barrel drop no loot upon being broken, but they create an expl
 
 # Trivia
 
-- The Barrels were designed by 123OP, Asultra, and Hasanger.
 - The Barrels are one of the first obstacles added to Suroi.
 
 # History

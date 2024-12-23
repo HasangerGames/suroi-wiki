@@ -12,10 +12,6 @@ Bookshelves can drop equipment, scopes, guns, and healing items when broken.
 
 - Bookshelves can be used as cover in some situations, but it is better to break them for loot.
 
-# Trivia
-
-- The Bookshelf was designed by platonthek.
-
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)

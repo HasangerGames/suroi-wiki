@@ -17,10 +17,6 @@ Wooden, Glass, Metal and Porta Potty Doors can be interacted with to change thei
 - Vault Doors can be used as an indestructible cover once opened.
 - Garage Doors can be used as an alternative exit to the removed House.
 
-# Trivia
-
-- All types of Doors were designed by platonthek.
-
 # History
 
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0).

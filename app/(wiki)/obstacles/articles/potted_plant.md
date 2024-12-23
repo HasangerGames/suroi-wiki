@@ -12,10 +12,6 @@ Potted Plants can drop ammunition, [Cola](/healing/cola), and occasionally other
 
 Potted Plants are usually left unlooted and can be used as a way to get [Healing items](/healing) and ammunition in the endgame if you are running low on either.
 
-# Trivia
-
-- The Potted Plant was designed by Platonthek
-
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)

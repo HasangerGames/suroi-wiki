@@ -37,10 +37,6 @@ The Office, located towards the back of the Refinery, contains a wall mount and 
 - If you're the first player there, either go for the MCX Spear in the Office or the AEGIS Crates in the Storage Area so you can be geared up.
 - Exercise caution around the barrels in the hallway of the Refinery, as opponents will try to explode them to kill you.
 
-# Trivia
-
-- The Refinery was designed by platonthek.
-
 # History
 
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)

@@ -14,7 +14,7 @@ Hay Shed variation 1 has good loot, with a [Flint Crate](/obstacles/flint_crate)
 - Use the holes in the roofs of Hay Sheds to find a possible easy kill. 
 
 # Trivia
-- The Hay Shed was designed by Platonthek
+
 - The Hay Shed is the first building to have a variation that leads to a bunker
 
 # History

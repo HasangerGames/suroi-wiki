@@ -15,7 +15,6 @@ The Stove reflects bullets and always explodes upon being broken.
 
 # Trivia
 
-- The Stove was designed by platonthek and 1092384.
 - The explosion of the Stove has the same stats as a [Barrel](/obstacles/barrel).
 
 # History

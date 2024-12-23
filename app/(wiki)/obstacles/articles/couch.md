@@ -12,10 +12,6 @@ The Couch drops no loot upon being broken.
 
 - Due to its positioning and low health, the Couch is not a very effective piece of cover.
 
-# Trivia
-
-- The Couch was designed by platonthek.
-
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)

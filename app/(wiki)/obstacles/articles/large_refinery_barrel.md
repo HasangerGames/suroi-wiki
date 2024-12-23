@@ -17,10 +17,6 @@ Large Refinery Barrels drop no loot and explode when broken. They take a very la
   - Make sure to stand far away, as the explosion from the Large Refinery Barrel has a large radius and deals extremely high damage.
   - If the player escapes the area before the barrels explode, attempt to finish them off using your guns.
 
-# Trivia
-
-- The Large Refinery Barrel was designed by platonthek.
-
 # History
 
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)

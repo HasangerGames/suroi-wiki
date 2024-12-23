@@ -20,7 +20,7 @@ The Oil Tank is indestructible and therefore drops no loot.
 
 # Trivia
 
-- Originally, 5 Oil Tanks spawned randomly around the map, and 2 were coded to spawn close to the center of the map.
+- Originally, five Oil Tanks spawned randomly around the map, and two were coded to spawn close to the center of the map.
   - This was done because, at the time, there were no buildings and finding cover late-game was difficult.
   - This was removed in [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0).
 
