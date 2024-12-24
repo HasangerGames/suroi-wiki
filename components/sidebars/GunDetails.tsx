@@ -116,11 +116,11 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
             (1000
               / (gun.burstProperties.burstCooldown
                 + gun.fireDelay * gun.burstProperties.shotsPerBurst))
-              * (gun.ballistics.damage * gun.burstProperties.shotsPerBurst)
+              * ((gun.ballistics.damage + (explosion?.damage ?? 0) + (explosion?.ballistics ? (explosion.ballistics.damage * explosion.shrapnelCount) : 0)) * gun.burstProperties.shotsPerBurst)
           ).toFixed(2)}
           {gun.fireMode !== FireMode.Burst
           && (
-            gun.ballistics.damage
+            (gun.ballistics.damage + (explosion?.damage ?? 0) + (explosion?.ballistics ? (explosion.ballistics.damage * explosion.shrapnelCount) : 0))
             * (gun.bulletCount ?? 1)
             * (1000 / gun.fireDelay)
           ).toFixed(2)}
@@ -134,13 +134,13 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
             (1000
               / (gun.burstProperties.burstCooldown
                 + gun.fireDelay * gun.burstProperties.shotsPerBurst))
-              * (gun.ballistics.damage
+              * ((gun.ballistics.damage + (explosion?.damage ?? 0) + (explosion?.ballistics ? (explosion.ballistics.damage * explosion.shrapnelCount) : 0))
                 * gun.ballistics.obstacleMultiplier
                 * gun.burstProperties.shotsPerBurst)
           ).toFixed(2)}
           {gun.fireMode !== FireMode.Burst
           && (
-            gun.ballistics.damage
+            (gun.ballistics.damage + (explosion?.damage ?? 0) + (explosion?.ballistics ? (explosion.ballistics.damage * explosion.shrapnelCount) : 0))
             * gun.ballistics.obstacleMultiplier
             * (gun.bulletCount ?? 1)
             * (1000 / gun.fireDelay)
@@ -220,6 +220,15 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
             ""
           )}_fire.mp3`}
         />
+        {gun.ballistics.lastShotFX && (
+          <InfoboxAudio
+            name="Last Shot"
+            src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
+              "dual_",
+              ""
+            )}_fire_last.mp3`}
+          />
+        )}
         <InfoboxAudio
           name="Switch"
           src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
@@ -231,6 +240,15 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
           name="Reload"
           src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString}_reload.mp3`}
         />
+        {gun.reloadFullOnEmpty && (
+          <InfoboxAudio
+            name="Full Reload"
+            src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
+              "dual_",
+              ""
+            )}_reload_full.mp3`}
+          />
+        )}
         {gun.ballistics.onHitExplosion && (
           <InfoboxAudio
             name="Explosion"
