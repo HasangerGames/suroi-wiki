@@ -8,12 +8,13 @@ The Stoner 63 was developed by Eugene Stoner after he left ArmaLite in 1961. Sto
 
 ## Using
 
-- The Stoner 63 is the most accurate LMG, so make sure to have a 4x or 8x scope to take advantage of this.
+- The Stoner 63 has very good accuracy so make sure to have a 4x or 8x scope to take advantage of this.
   - The high moving accuracy can overpower other automatic weapons at long range.
 - The Stoner 63 chews through ammo if you're not careful. Make sure to pick up ammo and avoid wasting shots.
 - Due to its high obstacle multiplier and good DPS, the Stoner 63 is a great weapon for destroying obstacles. Use it to clear out enemy cover.
+  - The Stoner 63 has the highest obstacle DPS in the game after the [Flues](/weapons/guns/flues) and dual [DEagle](/weapons/guns/deagle).
 - Make sure to take cover while reloading, as this gun has a long reload time.
-  - It is useful to pair this weapon with a short-range weapon (e.g., a [Flues](/weapons/guns/flues) or [Model 37](/weapons/guns/model_37)) to cover its weakness at close range.
+  - It is useful to pair this weapon with a short-range weapon (e.g. a Flues or [Model 37](/weapons/guns/model_37)) to cover its weakness at close range.
 
 ## Countering
 
@@ -32,7 +33,7 @@ The Stoner 63 is rarely found in [Flint](/obstacles/flint_crate) and [AEGIS Crat
 # Trivia
 
 - The Stoner 63 is the second LMG added to the game, after the [Lewis Gun](/weapons/guns/lewis_gun).
-- It is also the second gun to show a visible magazine, after the Lewis Gun.
+  - It is also the second gun to show a visible magazine, after the Lewis Gun.
 - Eugene Stoner also designed the [M16A4](/weapons/guns/m16a4) and the [SR-25](/weapons/guns/sr25).
 
 # History
@@ -67,7 +68,7 @@ The Stoner 63 is rarely found in [Flint](/obstacles/flint_crate) and [AEGIS Crat
     {
       url: "/img/articles/weapons/guns/stoner_63/double_stoner_bookshelf.webp",
       author: "Cola25",
-      caption: "A player getting two Stoner 63s from a bookshelf in [v0.12.5](https://github.com/HasangerGames/suroi/releases/tag/v0.12.5)",
+      caption: "A player getting two Stoner 63s from a bookshelf in v0.12.5",
     },
   ]}
 />

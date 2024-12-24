@@ -45,7 +45,7 @@ Radios are a type of communication device that utilizes electromagnetic radio wa
     {
       url: "/img/articles/weapons/guns/radio/radio_ground.png",
       author: "1092384",
-      caption: "A player finding a Radio on the ground in [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)",
+      caption: "A player finding a Radio on the ground in v0.14.0",
     },
   ]}
 />
