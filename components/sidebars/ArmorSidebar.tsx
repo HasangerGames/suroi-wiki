@@ -1,4 +1,4 @@
-import { getSuroiImageLink } from "@/lib/util/suroi";
+import { getSuroiSprite } from "@/lib/util/suroi";
 import { ArmorDefinition } from "@/vendor/suroi/common/src/definitions/armors";
 import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";
@@ -7,7 +7,7 @@ import InfoboxRow from "./utils/InfoboxRow";
 
 export default function ArmorSidebar({ item }: { item: ArmorDefinition }) {
   return (
-    <GenericSidebar title={item.name} image={getSuroiImageLink(item)}>
+    <GenericSidebar title={item.name} image={getSuroiSprite(item.idString)}>
       <InfoboxRow>
         <InfoboxColumn title="Level">{item.level}</InfoboxColumn>
         <InfoboxColumn title="Damage Reduction">
