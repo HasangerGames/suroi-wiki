@@ -96,9 +96,9 @@ The Mosin-Nagant is an uncommon drop from higher-tier crates such as the [AEGIS 
 <Gallery
   images={[
     {
-      url: "/img/articles/weapons/guns/mosin_nagant/dual_mosin_[v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0).png",
+      url: "/img/articles/weapons/guns/mosin_nagant/dual_mosin_v0.4.0.png",
       author: "Katloo",
-      caption: "A player with two Mosin-Nagants in their inventory in [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)",
+      caption: "A player with two Mosin-Nagants in their inventory in v0.4.0",
     },
   ]}
 />

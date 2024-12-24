@@ -10,7 +10,7 @@ The MG5 is based on a similar design to that of the MG4 light machine gun that p
   - Not only will this give you a full magazine to work with, it also frees up more space in your pack for ammunition.
   - The MG5 has the second longest reload of any weapon, so reload out of combat and avoid reloading in combat if possible.
   - If you find an MG5 but have no backpack, reload multiple times to carry as much ammo as possible, since you don't want to run out.
-- Because it is more accurate, (albeit with slightly lower DPS) the MG5 is more suited to close/mid-range combat than its competitor, the [Negev](/weapons/guns/negev).
+- Because it is more accurate, (albeit with slightly lower DPS) the MG5 is more suited to long-range combat than its competitor, the [Negev](/weapons/guns/negev).
 - If your enemy is far away, such as 8x range, move closer so you can kill them more easily and not waste ammo.
 - The MG5 has a 2x obstacle multiplier, meaning it shreds through obstacles. If an opponent hides behind a destructible obstacle, don't hesitate to plow right through it.
 - Because the MG5 is so rare, it can be used to bait players by leaving it on the ground.

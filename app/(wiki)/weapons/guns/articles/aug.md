@@ -53,7 +53,7 @@ The AUG is a very common gun, being more common than the [AK-47](weapons/guns/ak
     {
       url: "/img/articles/weapons/guns/aug/aug_ground.png",
       author: "1092384",
-      caption: "A player finding an AUG on the ground in [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)",
+      caption: "A player finding an AUG on the ground in v0.14.0",
     },
   ]}
 />

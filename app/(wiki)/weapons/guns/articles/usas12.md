@@ -60,7 +60,7 @@ It was also obtainable during 2 previous events:
       url: "/img/articles/weapons/guns/usas12/six_usas12.webp",
       author: "sniperboi4",
       caption:
-        "Fellow Suroians find six USAS-12s in [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0) (Halloween Mode 2023)",
+        "Fellow Suroians find six USAS-12s in v0.12.0 (Halloween Mode 2023)",
     },
   ]}
 />
