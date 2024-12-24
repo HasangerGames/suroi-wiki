@@ -10,7 +10,7 @@ The Golden Aegis Case has a 66% chance to drop the [DEagle](/weapons/guns/deagle
 
 # Tips  
 
-- Since this crate (almost) always gurantees a solid weapon, you should go for this crate first if you enter the Headquarters through the fire exit that leads directly to the second floor.
+- Since this crate (almost) always guarantees a solid weapon, you should go for this crate first if you enter the Headquarters through the fire exit that leads directly to the second floor.
   - If it is already looted, be careful of any nearby players as both the DEagle and RSh-12 are deadly weapons that can kill you very quickly with their high DPS.
 
 # Trivia
