@@ -17,9 +17,9 @@ The Pumpkin drops common loot similar to crates such as ammo and guns.
 - During the Halloween 2023 event, the Pumpkin had a 95% chance to drop a [G17 (scoped)](/weapons/guns/g17_scoped) and a 5% chance to drop a [USAS-12](/weapons/guns/usas12).
 
 # History
-- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
+- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0)
   - Added to 2024 Halloween event map
-- [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
+- [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
   - Rebalanced the Pumpkin loot table and added it to the Harvest Map
 - [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
   - No longer available due to the 2023 Halloween event map being phased out
