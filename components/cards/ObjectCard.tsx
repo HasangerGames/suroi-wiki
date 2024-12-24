@@ -1,4 +1,4 @@
-import { getSuroiImageLink } from "@/lib/util/suroi";
+import { getSuroiSprite } from "@/lib/util/suroi";
 import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,10 +16,7 @@ export function ObjectCard({ obj, path }: ObjectCardProps) {
           )
           : (
             <Image
-              src={getSuroiImageLink(
-                obj,
-                "variations" in obj && obj.variations ? 1 : 0
-              )}
+              src={getSuroiSprite(obj.idString + ("variations" in obj ? "_1" : ""))}
               alt={`Image of ${obj.name}`}
               width={100}
               height={100}
