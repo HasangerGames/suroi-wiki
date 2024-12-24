@@ -95,6 +95,11 @@ const toExport = GenericArticlePage({
       title: "Pumpkins",
       items: ["pumpkin", "large_pumpkin"],
       fileName: "pumpkins"
+    },
+    {
+      title: "Headquarters Desk",
+      items: ["hq_desk_left", "hq_desk_right"],
+      fileName: "headquarters_desk"
     }
   ]
 });
