@@ -1,4 +1,4 @@
-The **Lewis automatic machine gun** or **Lewis automatic rifle**, known in-game as the **Lewis Gun**, is an LMG utilizing 7.62mm ammunition.
+The **Lewis Automatic Machine Gun** or **Lewis Automatic Rifle**, known in-game as the **Lewis Gun**, is an LMG utilizing 7.62mm ammunition.
 
 # Background
 
