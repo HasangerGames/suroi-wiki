@@ -90,6 +90,11 @@ const toExport = GenericArticlePage({
       title: "Gifts",
       items: ["red_gift", "green_gift", "blue_gift", "black_gift", "purple_gift"],
       fileName: "gifts"
+    },
+    {
+      title: "Pumpkins",
+      items: ["pumpkin", "large_pumpkin"],
+      fileName: "pumpkins"
     }
   ]
 });
