@@ -2,7 +2,7 @@ The **Bookshelf** is an [Obstacle](/obstacles) added in the [v0.9.0](https://git
 
 # Location & Spawning
 
-One Bookshelf spawns each in the Bedroom, Bathroom, and Garage areas of the [House](/buildings/house) and the Bedroom and Living Room areas of the [Small House](/buildings/small_house). One bookshelf also spawns each in the [Shed](/buildings/port_shed) and on the [Ship](/buildings/ship) in the [Port](/buildings/port).
+One Bookshelf spawns each in the Bedroom, Bathroom, and Garage areas of the [House](/buildings/house) and the Bedroom and Living Room areas of the [Small House](/buildings/small_house). One bookshelf also spawns each in the [Shed](/buildings/port_shed) and on the ship in the [Port](/buildings/port).
 
 # Loot & More
 
