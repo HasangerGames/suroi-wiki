@@ -21,7 +21,7 @@ The Firework Rocket Box drops either Fireworks or [Confetti Grenades](/weapons/t
 
 # History
 
-- v0.18.1
+- [v0.18.1](https://github.com/HasangerGames/suroi/releases/tag/v0.18.1)
   - Removed from the game
-- v0.18.0
+- [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0)
   - Added
