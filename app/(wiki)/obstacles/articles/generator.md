@@ -2,7 +2,7 @@ The **Generator** is an interactive [Obstacle](/obstacles) added in the [v0.11.0
 
 # Location & Spawning
 
-The Generator always spawns near the front of the [Ship](/buildings/ship) next to the vault.
+The Generator always spawns near the front of the [Cargo Ship](/buildings/cargo_ship) next to the vault.
 
 # Loot & More
 

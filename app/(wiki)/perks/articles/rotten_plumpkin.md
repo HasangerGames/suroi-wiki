@@ -14,5 +14,5 @@ Rotten Plumpkin can be obtained from [Plumpkin Gamble](/perks/lets_go_gambling) 
 - Try to reroll the perk as soon as possible as this perk can become annoying very quickly.
 
 # History
-- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0)
   - Added

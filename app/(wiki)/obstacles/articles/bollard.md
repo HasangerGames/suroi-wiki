@@ -2,7 +2,7 @@ The **Bollard** is an [Obstacle](/obstacles) added to the game in the [v0.11.0](
 
 # Location and Spawning
 
-The Bollard only spawns between the edge of the [Port](/buildings/port) and the [Cargo Ship](/buildings/ship). 8 of them spawn in a line.
+The Bollard only spawns between the edge of the [Port](/buildings/port) and the ship. 8 of them spawn in a line.
 
 # Loot & More
 
