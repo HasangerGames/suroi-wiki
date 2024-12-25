@@ -1,4 +1,4 @@
-The **Tactical Operations Tango 51**, known in-game as the **Tango 51**, is a sniper rifle utilizing 7.62mm ammunition. It was added in the [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0) "Locked & Loaded" on June 24, 2023. It features very high damage and accuracy.
+The **Tactical Operations Tango 51**, known in-game as the **Tango 51**, is a sniper rifle utilizing 7.62mm ammunition. It was added in the [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0) "Locked & Loaded" on June 24th, 2023. It features very high damage and accuracy.
 
 # Background
 
@@ -21,7 +21,7 @@ The Tango 51 is a tactical sniper rifle designed and manufactured by Tactical Op
 
 # Obtaining
 
-The most reliable way to get a Tango 51 is to head for the [Ship](/buildings/ship) at the [Port](/buildings/port) at the beginning of the game, and solve the puzzle. The Tango 51 can also be found extremely rarely from common sources of loot, such as [Regular Crates](/obstacles/regular_crate). It also spawns in regular [Airdrops](/obstacles/airdrop_crate).
+The most reliable way to get a Tango 51 is to head for the [Cargo Ship](/buildings/cargo_ship) at the [Port](/buildings/port) at the beginning of the game, and solve the puzzle. The Tango 51 can also be found extremely rarely from common sources of loot, such as [Regular Crates](/obstacles/regular_crate). It also spawns in regular [Airdrops](/obstacles/airdrop_crate).
 
 # Trivia
 
