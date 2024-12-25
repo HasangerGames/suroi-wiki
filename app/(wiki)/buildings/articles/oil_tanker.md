@@ -24,7 +24,7 @@ The control room features a large [Drawer](/obstacles/drawers), a wide window, a
 - Although it seems huge, the Oil Tanker is actually quite small compared to versions in real life.
 
 # History
-- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
   - Reworked
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added
