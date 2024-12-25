@@ -1,8 +1,8 @@
-The **Lewis Automatic Machine Gun** or **Lewis Automatic Rifle**, known in-game as the **Lewis Gun**, is an LMG utilizing 7.62mm ammunition.
+The **Lewis Automatic Machine Gun** or **Lewis Automatic Rifle**, known in-game as the **Lewis Gun**, is an LMG utilizing 7.62mm ammunition that was added to the game in the [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0) "Locked & Loaded" update on June 24th, 2023.
 
 # Background
 
-The Lewis gun was invented in 1911 by Isaac Newton Lewis, a U.S. Army colonel. It was widely used by the United Kingdom during the First World War. During the Second World War, old stores of Lewis guns supplemented the arsenal of the Allies. It saw use both as a LMG and a mounted weapon for boats, airplanes, and vehicles. It was withdrawn from service in the UK in 1946.
+The Lewis gun was invented in 1911 by Isaac Newton Lewis, a U.S. Army colonel. It was widely used by the United Kingdom during the First World War. During the Second World War, old stores of Lewis guns supplemented the arsenal of the Allies. It saw use both as an LMG and a mounted weapon for boats, airplanes, and vehicles. It was withdrawn from service in the UK in 1946.
 
 # Strategies
 
@@ -35,7 +35,7 @@ The Lewis Gun can be rarely found as world loot, but it is more common in higher
 
 - Most Lewis Guns in real life were chambered for .303 British or .30-06 Springfield.
   - This means the Lewis Gun in-game is most likely a 7.62x54R variant exported to Russia in 1917.
-- The Lewis Gun is the first LMG to be added to the game.
+- The Lewis Gun is the first LMG added to the game.
 
 # History
 
