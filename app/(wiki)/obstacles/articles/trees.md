@@ -26,7 +26,7 @@ Trees drop no loot upon being broken.
 - Trees are one of the first obstacles added to Suroi.
 
 # History
-- [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+- [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)
   - Added small oak trees
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
   - Added maple & dormant oak trees
