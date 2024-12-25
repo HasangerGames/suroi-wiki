@@ -1,5 +1,5 @@
 <Event />
-The **Christmas Camp** is an open-space building added in the [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0) "Cold Steel" update on December 11, 2024. It features a [Christmas Tree](/obstacles/christmas_tree) in the middle and a hidden [Ice Pick Case](/obstacles/ice_pick_case).
+The **Christmas Camp** is an open-space building added in the [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0) "Cold Steel" update on December 11th, 2024. It features a [Christmas Tree](/obstacles/christmas_tree) in the middle and a hidden [Ice Pick Case](/obstacles/ice_pick_case).
 
 # Location & Spawning
 
