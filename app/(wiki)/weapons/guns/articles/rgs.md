@@ -1,4 +1,4 @@
-The **Ruger Gunsite Scout**, known in-game as the **RGS**, is a bolt-action sniper rifle utilizing the 5.56mm ammunition. It was added to the game in the [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0) "Cold Steel" update on December 11, 2024. It features a low firing delay and high magazine capacity and is a direct upgrade of the [CZ-600](/weapons/guns/cz600).
+The **Ruger Gunsite Scout**, known in-game as the **RGS**, is a bolt-action sniper rifle utilizing the 5.56mm ammunition. It was added to the game in the [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0) "Cold Steel" update on December 11th, 2024. It features a low firing delay and high magazine capacity and is a direct upgrade of the [CZ-600](/weapons/guns/cz600).
 
 # Background
 
@@ -24,5 +24,5 @@ On the Normal Map, the RGS can only be found in the [Lux Crate](/obstacles/lux_c
 - Similar to the [BLR](/weapons/guns/blr) and [M1 Garand](/weapons/guns/m1_garand), the RGS has a special firing sound that plays when the last round in the magazine is fired.
 
 ## History
-- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
+- [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)
   - Added
