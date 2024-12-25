@@ -2,7 +2,7 @@ The **Crane** is a sub-building of the [Port](/buildings/port). It was added in 
 
 # Location & Spawning
 
-The Crane always spawns parallel to the [Ship](/buildings/ship), and only one spawns per map.
+The Crane always spawns parallel to the ship, and only one spawns per map.
 
 # Loot & More
 

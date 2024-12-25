@@ -8,7 +8,7 @@ The Oil Tanker can be found spawning offshore of the Port on the edge of the map
 
 ## Cargo area
 
-The [Ship](/buildings/ship)'s main and biggest area, the cargo area, is found from one end of the ship and almost until the other end, ending in the control center. On the cargo area, you can find three Large Oil Tanks that you can use for cover in battles, a few [Sandbags](/obstacles/sandbags), some [Barrels](/obstacles/barrels), and an assortment of different types of [Crates](/obstacles/crates).
+The ship's main and biggest area, the cargo area, is found from one end of the ship and almost to the other end, ending in the control center. In the cargo area, you can find three Large Oil Tanks that you can use for cover in battles, a few [Sandbags](/obstacles/sandbags), some [Barrels](/obstacles/barrels), and an assortment of different types of [Crates](/obstacles/crates).
 
 ## Control room
 
@@ -24,7 +24,7 @@ The control room features a large [Drawer](/obstacles/drawers), a wide window, a
 - Although it seems huge, the Oil Tanker is actually quite small compared to versions in real life.
 
 # History
-- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
   - Reworked
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added

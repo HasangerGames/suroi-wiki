@@ -22,5 +22,5 @@ Lycanthropy can be obtained from [Plumpkin Gamble](/perks/lets_go_gambling) whic
 - Make sure to keep an eye on Lycanthropy players when they are around, especially when you are fighting another player.
 
 # History
-- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0)
   - Added

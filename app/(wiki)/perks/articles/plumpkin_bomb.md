@@ -18,5 +18,5 @@ Plumpkin Bomb can be obtained from [Plumpkin Gamble](/perks/lets_go_gambling) wh
 - Be aware of Plumpkins near you when you are dealing with a Plumpkin Bomb player. You can spot a player with Plumpkin Bomb by paying attention to their throwable appearance.
 
 # History
-- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0)
   - Added

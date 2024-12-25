@@ -14,5 +14,5 @@ Claustrophobic can be obtained from [Plumpkin Gamble](/perks/lets_go_gambling) w
 - Do not try to fight in buildings and bunkers while you have this perk.
 
 # History
-- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0)
   - Added

@@ -14,5 +14,5 @@ Laced Stimulants can be obtained from [Plumpkin Gamble](/perks/lets_go_gambling)
 - If you are stuck to this perk and can't swap it out, you can try to find a [Tear Gas Crate](/obstacles/tear_gas_crate) to remove your adrenaline if you have any.
 
 # History
-- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+- [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0)
   - Added
