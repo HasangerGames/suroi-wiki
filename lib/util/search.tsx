@@ -27,6 +27,8 @@ export type SearchItem = {
   image?: string | ReactNode
   url: string
   description?: string
+  important?: boolean
+  exclude?: boolean
 };
 
 export const wikiPages: SearchItem[] = [
@@ -34,48 +36,56 @@ export const wikiPages: SearchItem[] = [
     name: "Home",
     url: "/",
     description: "Home Page",
-    image: "/img/logo.svg"
+    image: "/img/logo.svg",
+    exclude: true
   },
   {
     name: "Weapons",
     url: "/weapons",
     description: "List of weapons",
+    important: true,
     image: getSuroiImageLink(getSuroiItem("ak47"))
   },
   {
     name: "Healing Items",
     url: "/healing",
     description: "List of healing items",
+    important: true,
     image: getSuroiImageLink(getSuroiItem("medikit"))
   },
   {
     name: "Loot Tables",
     url: "/loot",
     description: "Loot drop rates",
+    important: true,
     image: getSuroiImageLink(getSuroiObstacle("flint_crate"))
   },
   {
     name: "Armor",
     url: "/equipment/armor",
     description: "List of armor, including helmet and vests",
+    important: true,
     image: getSuroiImageLink(getSuroiItem("regular_vest"))
   },
   {
     name: "Backpacks",
     url: "/equipment/backpacks/",
     description: "List of backpacks",
+    important: true,
     image: getSuroiImageLink(getSuroiItem("tactical_pack"))
   },
   {
     name: "Obstacles",
     url: "/obstacles",
     description: "List of obstacles",
+    important: true,
     image: getSuroiImageLink(getSuroiObstacle("rock"), 1)
   },
   {
     name: "Buildings",
     url: "/buildings",
     description: "List of buildings",
+    important: true,
     image: (
       <RenderedBuilding building={Buildings.fromString("red_house")} view="ceiling" className="w-24 h-24"></RenderedBuilding>
     )
@@ -84,6 +94,7 @@ export const wikiPages: SearchItem[] = [
     name: "Perks",
     url: "/perks",
     description: "List of perks",
+    important: true,
     image: getSuroiImageLink(getSuroiItem("advanced_athletics"))
   },
   {
@@ -109,6 +120,18 @@ export const wikiPages: SearchItem[] = [
     url: "/meta/developing",
     description: "Guidelines for developing for the wiki",
     image: `${IMAGE_BASE_URL}/game/shared/emotes/picasso_face.svg`
+  },
+  {
+    name: "Art Guides",
+    url: "/art_guides",
+    description: "Guidelines for drawing assets for suroi.io",
+    image: `${IMAGE_BASE_URL}/game/shared/emotes/trophy.svg`
+  },
+  {
+    name: "Removed Content",
+    url: "/removed_content",
+    description: "List of all removed content",
+    image: "/img/articles/weapons/guns/barrett_m95/barrett.svg"
   },
   {
     name: "Credits",
