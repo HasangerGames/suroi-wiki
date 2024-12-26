@@ -109,6 +109,12 @@ export const wikiPages: SearchItem[] = [
     url: "/meta/developing",
     description: "Guidelines for developing for the wiki",
     image: `${IMAGE_BASE_URL}/game/shared/emotes/picasso_face.svg`
+  },
+  {
+    name: "Credits",
+    url: "/credits",
+    description: "Game and Wiki Credits",
+    image: `${IMAGE_BASE_URL}/game/shared/emotes/partying_face.svg`
   }
 ];
 
