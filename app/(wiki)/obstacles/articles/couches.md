@@ -12,7 +12,7 @@ The Brown Couch spawns in the Residential Quarters of the Plumpkin Bunker, in th
 
 # Loot & More
 
-The Brown Couch is actually a group of seperate couch parts which are treated as individual obstacles. This allows for the hitbox of the Brown Couch to be flexible.
+The Brown Couch is actually a group of separate couch parts which are treated as individual obstacles. This allows for the hitbox of the Brown Couch to be flexible.
 
 # History
 
