@@ -1,4 +1,4 @@
-import { getSuroiSprite } from "@/lib/util/suroi";
+import { getSuroiImageLink } from "@/lib/util/suroi";
 import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
 import SVGObjectRenderer from "../svg/SVGObjectRenderer";
 
@@ -10,7 +10,7 @@ export default function SkinCard({ skin }: SkinCardProps) {
           objects={[
             {
               type: "image",
-              url: getSuroiSprite(`${skin.idString}_base`),
+              url: getSuroiImageLink(skin, undefined, "base"),
               x: 0,
               y: 0,
               rotation: 90,
@@ -18,7 +18,7 @@ export default function SkinCard({ skin }: SkinCardProps) {
             },
             {
               type: "image",
-              url: getSuroiSprite(`${skin.idString}_fist`),
+              url: getSuroiImageLink(skin, undefined, "fist"),
               x: -35,
               y: 38,
               rotation: 90,
@@ -26,7 +26,7 @@ export default function SkinCard({ skin }: SkinCardProps) {
             },
             {
               type: "image",
-              url: getSuroiSprite(`${skin.idString}_fist`),
+              url: getSuroiImageLink(skin, undefined, "fist"),
               x: 35,
               y: 38,
               rotation: 90,
@@ -41,9 +41,9 @@ export default function SkinCard({ skin }: SkinCardProps) {
         </h3>
         <ul>
           <li className="font-mono">{skin.idString}</li>
-          {skin.rolesRequired && (
+          {skin.roleRequired && (
             <li>
-              <code>{skin.rolesRequired.join(", ")}</code> role(s) required
+              <code>{skin.roleRequired}</code> role required
             </li>
           )}
           {skin.hideFromLoadout && <li>Not in loadout</li>}

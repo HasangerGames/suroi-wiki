@@ -119,13 +119,6 @@ type ObjectCategoryMapping<Category extends ObjectCategory> = {
   readonly [ObjectCategory.SyncedParticle]: SyncedParticleDefinition
 }[Category];
 
-export function getSuroiSprite(frame: string) {
-  return `/api/img/frame/${frame}/`;
-}
-
-/**
- * @deprecated Use `getSuroiSprite()`
- */
 export function getSuroiImageLink(obj: ObjectDefinition, variation?: number, append?: string | string[], dual?: boolean) {
   switch (true) {
     // Is it an item?

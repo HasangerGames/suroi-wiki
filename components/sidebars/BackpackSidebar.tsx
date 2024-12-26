@@ -1,5 +1,7 @@
 import {
-  getSuroiSprite
+  IMAGE_BASE_URL,
+  getSuroiImageLink,
+  getSuroiItem
 } from "@/lib/util/suroi";
 import { BackpackDefinition } from "@/vendor/suroi/common/src/definitions/backpacks";
 import Image from "next/image";
@@ -22,12 +24,12 @@ export default function BackpackSidebar({
         {
           type: "image",
           title: "Loot",
-          url: getSuroiSprite(item.idString)
+          url: getSuroiImageLink(item)
         },
         {
           type: "image",
           title: "World",
-          url: getSuroiSprite(`${item.idString}_world`)
+          url: `${IMAGE_BASE_URL}game/equipment/${item.idString}_world.svg`
         }
       ]}
     >
@@ -126,7 +128,7 @@ export default function BackpackSidebar({
             title={(
               <div className="flex justify-center">
                 <Image
-                  src={getSuroiSprite(throwable)}
+                  src={getSuroiImageLink(getSuroiItem(throwable))}
                   alt={throwable}
                   width={40}
                   height={40}
@@ -145,7 +147,7 @@ export default function BackpackSidebar({
             title={(
               <div className="flex justify-center">
                 <Image
-                  src={getSuroiSprite(throwable)}
+                  src={getSuroiImageLink(getSuroiItem(throwable))}
                   alt={throwable}
                   width={40}
                   height={40}
