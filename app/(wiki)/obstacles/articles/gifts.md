@@ -1,4 +1,4 @@
-**Gifts** are a type of [Obstacle](/obstacles) added in the [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0) "Cold Steel" update on December 11, 2024. They almost always guarantee a reliable mid or high tier weapon when broken.
+**Gifts** are a type of [Obstacle](/obstacles) added in the [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0) "Cold Steel" update on December 11th, 2024. They almost always guarantee a reliable mid or high tier weapon when broken.
 
 # Location & Spawning
 

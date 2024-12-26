@@ -1,4 +1,4 @@
-The **Piano** is an indestructible obstacle added in the [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0) “High-Caliber Negotiations” update on September 22, 2024. It is an obstacle designed to add fun and interactivity to the [Headquarters](/buildings/headquarters).
+The **Piano** is an indestructible obstacle added in the [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0) “High-Caliber Negotiations” update on September 22nd, 2024. It is an obstacle designed to add fun and interactivity to the [Headquarters](/buildings/headquarters).
 
 # Location & Spawning  
 Currently, only one **Piano** spawns per map in the lounge area of the second floor of the [Headquarters](/buildings/headquarters). 

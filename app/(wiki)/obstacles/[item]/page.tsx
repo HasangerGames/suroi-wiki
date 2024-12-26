@@ -100,6 +100,11 @@ const toExport = GenericArticlePage({
       title: "Headquarters Desk",
       items: ["hq_desk_left", "hq_desk_right"],
       fileName: "headquarters_desk"
+    },
+    {
+      title: "Couches",
+      items: ["couch", "white_small_couch", "red_small_couch", "couch_part", "couch_end_left", "couch_end_right", "couch_corner"],
+      fileName: "couches"
     }
   ]
 });

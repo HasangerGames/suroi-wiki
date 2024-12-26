@@ -1,4 +1,4 @@
-The **Ice Pick Case** is an [Obstacle](/obstacles) added in the [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0) "Cold Steel" update on December 11, 2024.
+The **Ice Pick Case** is an [Obstacle](/obstacles) added in the [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0) "Cold Steel" update on December 11th, 2024.
 
 # Location & Spawning
 
