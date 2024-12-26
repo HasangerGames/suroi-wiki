@@ -1,4 +1,4 @@
-The **Viking Chest** is an [Obstacle](/obstacles) that was added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14, 2024. 
+The **Viking Chest** is an [Obstacle](/obstacles) that was added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14th, 2024. 
 
 # Location & Spawning
 
