@@ -4,7 +4,7 @@ The **Piano** is an indestructible obstacle added in the [v0.19.0](https://githu
 Currently, only one **Piano** spawns per map in the lounge area of the second floor of the [Headquarters](/buildings/headquarters). 
 
 # Loot & More  
-Since the Piano is indestructible, it can't no loot. However, it can be interacted with: if the Piano is hit using [Fists](/weapons/melee/fists), another melee weapon, or a gun, a sound resembling a dissonant chord being played on a piano plays.
+Since the Piano is indestructible, it can't drop loot. However, it can be interacted with: if the Piano is hit using [Fists](/weapons/melee/fists), another melee weapon, or a gun, a sound resembling a dissonant chord being played on a piano plays.
 
 # Tips  
 - Don’t attempt to use the Piano as cover as its positioning doesn’t allow you to manipulate its indestructibility. 
