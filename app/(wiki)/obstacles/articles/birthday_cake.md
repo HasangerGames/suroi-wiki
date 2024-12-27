@@ -9,7 +9,7 @@ The Birthday Cake can be found anywhere on the map.
 
 # Loot & More
 
-The Birthday Cake contains good guns and equipment, an exclusive skin, and the [Firework Launcher](weapons/guns/firework_launcher), along with Firework Rockets.
+The Birthday Cake contains good guns and equipment, an exclusive skin, and the [Firework Launcher](/weapons/guns/firework_launcher), along with Firework Rockets.
 
 # Tips
 
