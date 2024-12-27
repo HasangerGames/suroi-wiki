@@ -2,8 +2,8 @@ The **Birthday Cake** is an [Obstacle](/obstacles) that only spawns on the Birth
 
 # Location & Spawning
 
-The Birthday Cake can be found anywhere on the Nap.
-- there are 100 Birthday Cakes per Nap
+The Birthday Cake can be found anywhere on the Map.
+- there are 100 Birthday Cakes per Map
 
 # Loot & More
 
