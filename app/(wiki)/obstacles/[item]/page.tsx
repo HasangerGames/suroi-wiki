@@ -110,6 +110,11 @@ const toExport = GenericArticlePage({
       title: "Tables",
       items: ["small_table", "large_table", "round_table"],
       fileName: "tables"
+    },
+    {
+      title: "Sinks",
+      items: ["sink", "sink2"],
+      fileName: "sinks"
     }
   ]
 });
