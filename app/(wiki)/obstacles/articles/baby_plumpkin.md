@@ -6,7 +6,7 @@ Three Baby Plumpkins spawn inside of the second chamber inside the laboratory of
 
 # Loot & More
 
-Baby Plumpkins don't drop loot. However, when they are broken, they will swap out your current held gun/melee/throwable with another weapon in the same category that is obtainable on the current map. Each obtainable weapon has an equal chance to spawn which means that you are just as likely to get a [L115A1](/weapons/guns/l115a1) than to get a [HP-18](/weapons/guns/hp18).
+Baby Plumpkins don't drop loot. However, when they are broken, they will swap out your current held gun/melee/throwable with another weapon in the same category that is obtainable on the current map. Each obtainable weapon has an equal chance to spawn which means that you are just as likely to get an [L115A1](/weapons/guns/l115a1) than to get an [HP-18](/weapons/guns/hp18).
 
 # Tips
 
