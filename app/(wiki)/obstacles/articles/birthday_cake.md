@@ -1,13 +1,13 @@
-The **Birthday Cake** is an [Obstacle](/obstacles) that only spawns on the Birthday Map and was added in the [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0) "Back in the Saddle" update on June 8th, 2024.
+The **Birthday Cake** is an [Obstacle](/obstacles) that only spawns on the Birthday Map, and was added in the [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0) "Back in the Saddle" update on June 8th, 2024.
 
 # Location & Spawning
 
-The Birthday Cake can be found anywhere on the map.
-- there are 100 Birthday Cakes per map
+The Birthday Cake can be found anywhere on the Nap.
+- there are 100 Birthday Cakes per Nap
 
 # Loot & More
 
-The Birthday Cake contains good Guns and Equipment, an Exclusive skin, and the Firework Launcher, along with Firework Rockets.
+The Birthday Cake contains good guns and equipment, an exclusive skin, and the Firework Launcher, along with Firework Rockets.
 
 # Tips
 
