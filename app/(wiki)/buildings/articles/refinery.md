@@ -2,7 +2,7 @@ The **Refinery** is a large structure added in the [v0.10.0](https://github.com/
 
 # Location & Spawning
 
-The Refinery attempts to spawn once per map, anywhere on the map.
+The Refinery attempts to spawn once per map on the Normal Map, anywhere on the map.
 
 # Areas
 
@@ -12,7 +12,8 @@ The Loading Areas are located in the corners of the Refinery. Both have two [Reg
 
 ## Storage Area
 
-The Storage Area contains some AEGIS Crates, Regular Crates, and two [Large Refinery Barrels](/obstacles/large_refinery_barrel). - Each Large Refinery Barrel has 3500 health, but only one has to be broken to destroy the other due to the large explosion.
+The Storage Area contains some AEGIS Crates, Regular Crates, and two [Large Refinery Barrels](/obstacles/large_refinery_barrel). 
+- Each Large Refinery Barrel has 3500 health, but only one has to be broken to destroy the other due to the large explosion.
 
 ## Refinery
 
@@ -20,7 +21,9 @@ The actual Refinery building contains some tanks and equipment for refining oil,
 
 ## Office
 
-The Office, located towards the back of the Refinery, contains a wall mount and a [Table](/obstacles/table) with a [Chair](/obstacles/chair). - The wall mount spawns with a [MCX Spear](/weapons/guns/mcx_spear) normally but also has a 1/100 chance to spawn a [Stoner 63](/weapons/guns/stoner_63) instead. - You can hide under the Table to ambush players.
+The Office, located towards the back of the Refinery, contains a wall mount and a [Table](/obstacles/table) with a [Chair](/obstacles/chair). 
+- The wall mount spawns with a [MCX Spear](/weapons/guns/mcx_spear) normally but also has a 1/100 chance to spawn a [Stoner 63](/weapons/guns/stoner_63) instead. 
+- You can hide under the Table to ambush players.
 
 # Tips
 
@@ -33,10 +36,6 @@ The Office, located towards the back of the Refinery, contains a wall mount and 
 - The [Small Refinery Barrel](/obstacles/small_refinery_barrel) can be a good way to kill an opponent hiding inside the Refinery and catch them off guard.
 - If you're the first player there, either go for the MCX Spear in the Office or the AEGIS Crates in the Storage Area so you can be geared up.
 - Exercise caution around the barrels in the hallway of the Refinery, as opponents will try to explode them to kill you.
-
-# Trivia
-
-- The Refinery was designed by platonthek.
 
 # History
 

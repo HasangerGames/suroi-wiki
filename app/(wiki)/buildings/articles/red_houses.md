@@ -33,7 +33,7 @@ The Dining Area has a [Table](/obstacles/table) with two [Chairs](/obstacles/cha
 
 There is a Small Drawer near the Back Door of this variant.
 
-# Second Variant
+## Second Variant
 
 ### Bathroom
 
@@ -62,10 +62,6 @@ The Kitchen contains a [Small Stove](/obstacles/small_stove) and a [Fridge](/obs
   - This will kill or severely damage opponents.
 - Use doors to block damage and frustrate your enemies.
   - The door in the Bedroom is particularly effective at this, and useful if you have no weapons.
-
-# Trivia
-
-- The Red House was designed by platonthek.
 
 # History
 

@@ -19,7 +19,6 @@ There are three different possible layouts of the Warehouse. They can contain va
 # Trivia
 
 - In v0.21.3, the Warehouse was completely redesigned.
-  - The pre-v0.21.3 Warehouse was designed by Leia and 1092384.
 - Originally, the Warehouse was going to be a smaller, squarer building, but this was scrapped.
 
 # History

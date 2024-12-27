@@ -65,9 +65,6 @@ To access the Secret Room, break the [Fireplace](/obstacles/Fireplace) in the He
   - This strategy may not as work as well with the DT-11 due to its lower damage output than the Flues and lower capacity compared to the HP-18.
   - Do not try this with the Model 37 as it has a long firing delay, making it extremely risky to use against the M590M.
 
-# Trivia
-- The Lodge was designed by platonthek
-
 # History
 
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)

@@ -12,10 +12,6 @@ The Grenade Box drops either a pair of [Frag Grenades](/weapons/throwables/frag_
 
 - If you're trying to find an emergency weapon early game, these have a 50% chance to drop two Frag Grenades.
 
-# Trivia
-
-- The Grenade Box was designed by Croissant
-
 # History
 
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)

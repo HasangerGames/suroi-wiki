@@ -25,5 +25,5 @@ Gun Lockers drop 1-2 guns. See the special guns tier in the [Loot Tables](/loot)
 
 # History
 
-- [v0.19.0] (https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
 	- Added

@@ -14,7 +14,6 @@ The Small Bed doesn't drop loot.
 
 # Trivia
 
-- The Small Bed was designed by platonthek.
 - The Small Bed is very similar to the normal [Bed](/obstacles/bed) except for its size.
 
 # History

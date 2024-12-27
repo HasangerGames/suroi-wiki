@@ -1,4 +1,4 @@
-The **Винто́вка Сна́йперская Специа́льная ("Special Sniper Rifle")**, known in-game as the **VSS**, is a suppressed DMR utilizing 9mm ammunition. It was added to the game in the [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0) "Untrodden Lands" update on July 17th, 2023. It features a high rate of fire but less accuracy and damage than other DMRs.
+The **Винто́вка Сна́йперская Специа́льная ("Special Sniper Rifle")**, known in-game as the **VSS Vintorez** or simply the **VSS**, is a suppressed DMR utilizing 9mm ammunition. It was added to the game in the [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0) "Untrodden Lands" update on July 17th, 2023. It features a high rate of fire but less accuracy and damage than other DMRs.
 
 # Background
 

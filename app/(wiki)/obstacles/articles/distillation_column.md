@@ -14,7 +14,6 @@ Distillation Columns are indestructible and reflect bullets.
 
 # Trivia
 
-- The Distillation Column was designed by platonthek.
 - In real life, distillation columns are used to separate and purify mixtures from each other by heat.
 
 # History

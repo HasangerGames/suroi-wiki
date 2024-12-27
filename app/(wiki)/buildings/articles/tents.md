@@ -22,10 +22,6 @@ Destroying a wall or a pole of the tent will cause the entire structure includin
 - Be careful against opponents with strong weapons like the [SR-25](/weapons/guns/sr25) when using Tents as cover. The entire Tent can easily be destroyed in less than a second by those weapons since destroying any part of the Tent's structure causes the whole thing to collapse.
 - Tents are a good place to hide and heal quickly if necessary.
 
-# Trivia
-
-- The Tents were designed by emeraldneo and platonthek
-
 # History
 
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)

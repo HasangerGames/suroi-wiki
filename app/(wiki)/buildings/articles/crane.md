@@ -2,7 +2,7 @@ The **Crane** is a sub-building of the [Port](/buildings/port). It was added in 
 
 # Location & Spawning
 
-The Crane always spawns parallel to the [Ship](/buildings/ship), and only one spawns per map.
+The Crane always spawns parallel to the ship, and only one spawns per map.
 
 # Loot & More
 
@@ -17,7 +17,6 @@ The Crane itself does not have any loot, but it does have a large number of [AEG
 
 # Trivia
 
-- The Crane was designed by platonthek.
 - The Crane is used to load and unload cargo off of the Ship.
 
 # History

@@ -2,7 +2,7 @@ The **Tango Crate** is an [Obstacle](/obstacles) added in the [v0.11.0](https://
 
 # Location & Spawning
 
-The Tango Crate always spawns in the vault of the [Ship](/buildings/ship).
+The Tango Crate always spawns in the vault of the [Cargo Ship](/buildings/cargo_ship).
 
 # Loot & More
 

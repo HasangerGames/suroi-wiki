@@ -14,7 +14,6 @@ Life Preservers drop nothing upon being broken.
 
 # Trivia
 
-- The Life Preserver was designed by Platonthek and emeraldneo.
 - In real life, life preservers are plastic portable buoys that provide buoyancy for a person who may be in danger from drowning, hence its name. 
 
 # History

@@ -1,4 +1,4 @@
-The **Port** is a very large structure added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023. It has a large number of buildings and containers, and is also the home of the [Cargo Ship](/buildings/ship).
+The **Port** is a very large structure added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023. It has a number of buildings and containers and is also the home of the [Cargo Ship](/buildings/cargo_ship) and the [Oil Tanker](/buildings/oil_tanker).
 
 # Location & Spawning
 
@@ -6,10 +6,10 @@ One Port attempts to spawn per map, always at the edge of the map. - Very rarely
 
 # Areas
 
-## Cargo Ship
+## Ships
 
-Main article: [Cargo Ship](/buildings/ship).
-On the outer edge of the Port, the Cargo Ship spawns in the water.
+Main article: [Cargo Ship](/buildings/cargo_ship), [Oil Tanker](/buildings/oil_tanker).
+On the outer edge of the Port, the Ships spawn in the water.
 
 ## Port Warehouses
 
@@ -37,10 +37,6 @@ A crane always spawns parallel to the Cargo Ship and contains a large amount of 
 
 - Be careful as there are often many players at the port looking for loot.
   - Unless you spawn close to the Port early-game, don't bother heading for the Port as it will likely already be looted by the time you arrive.
-
-# Trivia
-
-- The Port was designed by platonthek.
 
 # History
 

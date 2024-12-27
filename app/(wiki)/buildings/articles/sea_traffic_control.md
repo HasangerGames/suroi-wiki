@@ -27,10 +27,6 @@ A [Radio](/weapons/guns/radio) spawns on the floor in the interior of every Sea 
 - If you see a player looting the Interior, throw several [Frag Grenades](/weapons/throwables/frag_grenade) to chase your opponent out, then shoot them down using your guns.
   - Alternatively, you can also shoot the control panels inside the Interior if you don't have grenades.
 
-# Trivia
-
-- The Sea Traffic Control building was designed by Platonthek and emeraldneo.
-
 # History
 
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)

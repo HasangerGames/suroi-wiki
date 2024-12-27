@@ -11,9 +11,6 @@ Sandbags do not drop loot as they cannot be destroyed.
 - Grenades can fly over Sandbags which can be used to flush out hiding opponents.
   - Likewise, you can hide behind Sandbags and throw grenades without the risk of getting shot.
 
-# Trivia
-- The Sandbags were designed by Yeet120, 1092384, and eclair_is_tasty.
-
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added

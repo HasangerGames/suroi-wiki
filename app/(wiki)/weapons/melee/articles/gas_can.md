@@ -15,7 +15,7 @@ The Gas Can is a type of storage container for fuels and is usually made out of 
 
 # Obtaining
 
-The only way to obtain the Gas Can in normal mode is to head to the [Ship](/buildings/ship) in the Port structure and go inside the bridge, which has the Gas Can at the center of the room.
+The only way to obtain the Gas Can in normal mode is to head to the ship in the Port structure and go inside the bridge, which has the Gas Can at the center of the room.
 
 - In the Suroi Weapon Swap Event, it could be acquired from swapping after getting a melee kill. This was the only time more than one Gas Can at a time was in a game.
 

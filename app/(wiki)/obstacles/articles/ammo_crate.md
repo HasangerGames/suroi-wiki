@@ -16,7 +16,8 @@ Ammo Crates drop two loot instances of the following: 60 rounds of 5.56mm, 7.62m
 # Trivia
 
 # History
-
+- [v0.21.3](https://github.com/HasangerGames/suroi/releases/tag/v0.21.3)
+  - New Ammo Crate sprite
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
   - Revamped the loot table for the Ammo Crate
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)

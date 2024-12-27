@@ -9,8 +9,8 @@ The Vepr-12 was originally designed by the Kalashnikov Group (then Izhmash) in t
   - It is especially good around [Buildings](/buildings) and Containers.
 - The high DPS lets the Vepr-12 shred through opponents, making it very useful late game even against higher tier armor.
 - Keep an eye on your reserves of 12-gauge ammunition, as the Vepr-12 burns through ammo.
-- The Vepr-12 pairs well with most other guns, but it pairs especially well with snipers.
-- Try not to shoot all 5 rounds from your Vepr-12 when fighting an opponent. Instead, fire 2-3 bursts and switch to your secondary (such as an assault rifle or SMG), and if your opponent still isn't dead, you can fire the remaining 2-3 rounds from your Vepr-12.
+- The Vepr-12 pairs well with most other guns, but it pairs especially well with long-range weapons such as snipers or LMGs.
+- Try not to shoot all five rounds from your Vepr-12 when fighting an opponent. Instead, fire 2-3 bursts and switch to your secondary (such as an assault rifle or SMG), and if your opponent still isn't dead, you can fire the remaining 2-3 rounds from your Vepr-12.
 - Like the [Model 37](/weapons/guns/model_37) and other shotguns, the Vepr-12 can be quickswitched. Doing so sacrifices DPS, but greatly increases mobility. Strategies are similar to those with the Model 37.
 - If an opponent is hiding behind a Rock, you can shoot at the Rock and let the Vepr-12 destroy it and expose the other player. There should still be enough rounds left to kill them.
 

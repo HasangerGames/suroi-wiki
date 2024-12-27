@@ -14,10 +14,6 @@ The Port Shed has barely any loot (only a [Bookshelf](/obstacles/bookshelf) and 
 - You can hide under the desk to ambush other players.
   - This is generally not as effective as hiding under the desk in the [Refinery](/buildings/refinery), because few players bother to enter it.
 
-# Trivia
-
-- The Port Shed was designed by platonthek.
-
 # History
 
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)

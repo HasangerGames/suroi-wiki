@@ -14,7 +14,6 @@ The Tire doesn't drop loot.
 
 # Trivia
 
-- The Tire was designed by platonthek.
 - Despite Tires being made out of rubber, the Tire uses stone sound effects.
 - The Tire is similar to the tires found on the [Truck](/obstacles/truck).
 

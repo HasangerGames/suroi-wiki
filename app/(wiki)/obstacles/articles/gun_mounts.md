@@ -12,7 +12,7 @@
 
 - A Gun Mount always containing a [M590M](/weapons/guns/m590m) spawns in the second floor of the [Lodge](/buildings/lodge) in the secret room behind the [Fireplace](/obstacle/fireplace). 
 
-- A Gun Mount always spawns in the vault of the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta). The vault can be accessed by completing the second puzzle in the bunker. It has a 10 in 13 chance of containing a Mini-14, 2 in 13 chance of containing a M590M, and 1 in 13 chance to contain a pair of [RSH-12][weapons/rsh12]s.
+- A Gun Mount always spawns in the vault of the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta). The vault can be accessed by completing the second puzzle in the bunker. It has a 10 in 13 chance of containing a Mini-14, 2 in 13 chance of containing a M590M, and 1 in 13 chance to contain a pair of [RSH-12](weapons/guns/rsh12)s.
 
 # Loot & More
 
@@ -21,10 +21,6 @@ Gun Mounts have low health and are easily destroyed. They always drop the weapon
 # Tips
 
 - Due to their positioning and low health, Gun Mounts are poor cover from enemies.
-
-# Trivia
-
-- The Gun Mounts were designed by platonthek.
 
 # History
 - [v0.21.2](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)

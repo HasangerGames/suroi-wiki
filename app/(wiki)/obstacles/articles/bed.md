@@ -12,10 +12,6 @@ The Bed drops no loot upon being broken.
 
 - Due to its positioning and low health, the Bed is not a very effective piece of cover.
 
-# Trivia
-
-- The Bed was designed by platonthek.
-
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)

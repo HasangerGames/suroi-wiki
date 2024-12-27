@@ -12,10 +12,6 @@ The Large Oil Tank cannot be destroyed and reflects bullets.
 
 - The Large Oil Tank can be used as effective cover, but its circular shape can cause problems when your opponent is chasing you.
 
-# Trivia
-
-- The Large Oil Tank was designed by platonthek.
-
 # History
 
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)

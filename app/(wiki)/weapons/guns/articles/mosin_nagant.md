@@ -1,4 +1,4 @@
-The **Mosin-Nagant** is a bolt-action sniper rifle utilizing 7.62mm ammunition. It was added to the game in the [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0) "Supplies received" update on June 17th, 2023.
+The **3-line Rifle M1891** or **Mosin's Rifle**, known in-game as the **Mosin-Nagant**, is a bolt-action sniper rifle utilizing 7.62mm ammunition. It was added to the game in the [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0) "Supplies received" update on June 17th, 2023.
 
 # Background
 
@@ -96,9 +96,9 @@ The Mosin-Nagant is an uncommon drop from higher-tier crates such as the [AEGIS 
 <Gallery
   images={[
     {
-      url: "/img/articles/weapons/guns/mosin_nagant/dual_mosin_[v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0).png",
+      url: "/img/articles/weapons/guns/mosin_nagant/dual_mosin_v0.4.0.png",
       author: "Katloo",
-      caption: "A player with two Mosin-Nagants in their inventory in [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)",
+      caption: "A player with two Mosin-Nagants in their inventory in v0.4.0",
     },
   ]}
 />

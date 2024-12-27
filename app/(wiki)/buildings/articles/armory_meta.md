@@ -61,7 +61,6 @@ The Porta Potty spawns near the exterior of the Vault.
 
 # Trivia
 
-- The Armory was designed by Bear.
 - In real life, an armory is a place for a military to store weapons.
 
 # History

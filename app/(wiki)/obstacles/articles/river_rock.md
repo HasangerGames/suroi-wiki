@@ -16,12 +16,6 @@ The River Rock drops no loot upon being destroyed.
 - The River Rock has a lot of health, so unless you have a LMG, it's not worth trying to destroy to get an opponent hiding behind it.
 - Players trying to hide behind River Rocks are often low on health and can make for easy kills.
 
-# Trivia
-
-- All Rock variants, excluding the Mossy and Cracked variants, were drawn by Leia.
-- The Rock is one of the first Obstacles to be added to the game.
-- This rock has the largest hitbox of all the rocks in the game.
-
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added 

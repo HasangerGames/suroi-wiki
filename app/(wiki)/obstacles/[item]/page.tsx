@@ -14,7 +14,8 @@ const toExport = GenericArticlePage({
         "flint_crate",
         "regular_crate",
         "melee_crate",
-        "grenade_crate"
+        "grenade_crate",
+        "frozen_crate"
       ],
       fileName: "crates"
     },
@@ -25,7 +26,7 @@ const toExport = GenericArticlePage({
     },
     {
       title: "Trees",
-      items: ["oak_tree", "birch_tree", "pine_tree", "dormant_oak_tree", "maple_tree"],
+      items: ["oak_tree", "small_oak_tree", "birch_tree", "pine_tree", "dormant_oak_tree", "maple_tree"],
       fileName: "trees"
     },
     {
@@ -69,8 +70,7 @@ const toExport = GenericArticlePage({
       title: "Control Panels",
       items: [
         "control_panel",
-        "control_panel_activated",
-        "control_panel_2",
+        "control_panel2",
         "control_panel_small",
         "tugboat_control_panel"
       ],
@@ -85,6 +85,31 @@ const toExport = GenericArticlePage({
       title: "Kitchen Units",
       items: ["kitchen_unit_1", "kitchen_unit_2", "kitchen_unit_3"],
       fileName: "kitchen_units"
+    },
+    {
+      title: "Gifts",
+      items: ["red_gift", "green_gift", "blue_gift", "black_gift", "purple_gift"],
+      fileName: "gifts"
+    },
+    {
+      title: "Pumpkins",
+      items: ["pumpkin", "large_pumpkin"],
+      fileName: "pumpkins"
+    },
+    {
+      title: "Headquarters Desk",
+      items: ["hq_desk_left", "hq_desk_right"],
+      fileName: "headquarters_desk"
+    },
+    {
+      title: "Couches",
+      items: ["couch", "white_small_couch", "red_small_couch", "couch_part", "couch_end_left", "couch_end_right", "couch_corner"],
+      fileName: "couches"
+    },
+    {
+      title: "Tables",
+      items: ["small_table", "large_table", "round_table"],
+      fileName: "tables"
     }
   ]
 });

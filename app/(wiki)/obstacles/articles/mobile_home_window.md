@@ -13,10 +13,6 @@ The Mobile Home Window doesn't drop loot.
    - Since many people know this trick, you can aim at the window to ambush players inside the Mobile Home, not just the door.
 - Don't use the Mobile Home Window as cover since it is easily destroyed.
 
- # Trivia
-
-- The Mobile Home Window was designed by platonthek.
-
  # History 
 
   - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0).

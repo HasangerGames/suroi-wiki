@@ -18,7 +18,6 @@ The Rock drops no loot upon being destroyed.
 
 # Trivia
 
-- All Rock variants, excluding the Mossy and Cracked variants, were drawn by Leia.
 - The Rock is one of the first Obstacles to be added to the game.
 
 # History

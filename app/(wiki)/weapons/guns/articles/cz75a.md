@@ -33,8 +33,13 @@ The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil 
   - The CZ-75A is much more powerful than the old G19.
 - The CZ-75A is the first gun added from ČZUB (Česká zbrojovka Uherský Brod).
 - It was the second pistol to be added to the game, after the G19.
+- During the 
 
 # History
+- [v0.22.1](https://github.com/HasangerGames/suroi/releases/tag/v0.22.1)
+  - Fixed killfeed being scaled incorrectly
+- [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)
+  - Updated loot image and killfeed
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
   - Standing spread decreased to 8° (from 12°)
   - Moving spread decreased to 14° (from 19°)
@@ -71,7 +76,12 @@ The CZ 75 was designed by František Koucký starting in 1969. It uses a recoil 
     {
       url: "/img/articles/weapons/guns/cz75a/cz75a_ground.png",
       author: "1092384",
-      caption: "A player finding a CZ-75A on the ground in [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)",
+      caption: "A player finding a CZ-75A on the ground in v0.14.0",
     },
+    {
+      url: "/img/articles/weapons/guns/cz75a/cz75a_killfeed_bug.png",
+      author: "Caydub",
+      caption: "The bugged killfeed in v0.22.0",
+    }
   ]}
 />

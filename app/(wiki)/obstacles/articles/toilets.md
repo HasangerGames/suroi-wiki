@@ -13,11 +13,6 @@ Unused Toilets usually contain 2-3 healing items but can occasionally contain sc
 - Toilets can be used as cover in certain situations, but it is more worthwhile to break them for loot.
 - Toilets often contain the best loot in houses along with the [Fridge](/obstacles/fridge), so it is recommended to loot them first.
 
-# Trivia
-
-- The "Ceramic" Toilets were designed by platonthek.
-- The Porta Potty Toilets were designed by 1092384, Slapdap, and Katloo.
-
 # History
 
 - [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)

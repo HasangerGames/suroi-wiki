@@ -8,7 +8,7 @@ The Cargo Ship can be found spawning offshore of the Port on the edge of the map
 
 ## Cargo Area
 
-The Cargo Area of the Cargo Ship, located in the center, has many Containers. You can use these for cover and to get some quick loot.
+The Cargo Area of the Cargo Ship, located in the center, has many [Containers](/buildings/containers). You can use these for cover and to get some quick loot.
 
 ## Control Room
 

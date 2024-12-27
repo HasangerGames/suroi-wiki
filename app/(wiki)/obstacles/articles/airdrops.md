@@ -8,7 +8,7 @@ The normal Airdrop is the most common. The Gold Airdrop is significantly rarer, 
 
 # Loot & More
 
-Airdrops contain rare and useful loot, including powerful weapons, large scopes, medical supplies, and exclusive skins. The loot table can be found [here](/loot#airdrop_crate). Very rarely, a Gold Airdrop will spawn with a [G19.](/weapons/guns/g19)
+Airdrops contain rare and useful loot, including powerful weapons, large scopes, medical supplies, and exclusive skins. The loot table can be found [here](/loot#airdrop_crate_normal). Very rarely, a Gold Airdrop will spawn with a [G19.](/weapons/guns/g19)
 
 # Tips
 
@@ -23,10 +23,8 @@ Airdrops contain rare and useful loot, including powerful weapons, large scopes,
 
 # Trivia
 
-- The Airdrop was designed by scared_penguin.
 - Airdrops were reskinned to be Christmas-themed during the 2023 Winter event.
   - The plane was replaced with a sleigh (and its accompanying sound was also replaced to sound like bells) and the Airdrop itself was retextured to look like a present.
-  - They were reskinned by emeraldneo and A.
 - The silhouette of the plane that releases Airdrops is that of a Lockheed Martin C-130J Super Hercules.
 
 # History

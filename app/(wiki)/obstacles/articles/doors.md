@@ -2,7 +2,7 @@
 
 # Location & Spawning
 
-Doors spawn in between rooms of many structures, such as the [Small House](/buildings/small_house). A Porta Potty Door spawns at the entrance of a [Porta Potty](/buildings/porta_potty). One Vault Door spawns each in the entrance to the Vaults of the [Ship](/buildings/ship) or [Oil Tanker](/buildings/oil_tanker) in the [Port](/buildings/port) and the entrance to the vault in the [Armory](/buildings/armory). Glass doors open automatically when a player approaches them. Glass Doors and Secret doors currently only spawn in the [Headquarters](/buildings/headquarters_meta). Metal Doors are indestructible doors, some of which are locked and require a puzzle to be solved in order to become usable. Garage Doors aren't interactive and must be broken to pass through. They only spawned in the Garage area of the removed [House](/buildings/house) structure.
+Doors spawn in between rooms of many structures, such as the [Small House](/buildings/small_house). A Porta Potty Door spawns at the entrance of a [Porta Potty](/buildings/porta_potty). One Vault Door spawns each in the entrance to the Vaults of the [Cargo Ship](/buildings/cargo_ship) or [Oil Tanker](/buildings/oil_tanker) in the [Port](/buildings/port) and the entrance to the vault in the [Armory](/buildings/armory). Glass doors open automatically when a player approaches them. Glass Doors and Secret doors currently only spawn in the [Headquarters](/buildings/headquarters_meta). Metal Doors are indestructible doors, some of which are locked and require a puzzle to be solved in order to become usable. Garage Doors aren't interactive and must be broken to pass through. They only spawned in the Garage area of the removed [House](/buildings/house) structure.
 
 # Loot & More
 
@@ -16,10 +16,6 @@ Wooden, Glass, Metal and Porta Potty Doors can be interacted with to change thei
   - Glass Doors shouldn't be used as cover due to their low health.
 - Vault Doors can be used as an indestructible cover once opened.
 - Garage Doors can be used as an alternative exit to the removed House.
-
-# Trivia
-
-- All types of Doors were designed by platonthek.
 
 # History
 

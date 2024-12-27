@@ -3,18 +3,18 @@
 
 # Effects
 - Removes itself from the player's perk inventory upon being picked up and gives the player a random Halloween perk, including:
-  - [Lycanthropy](/perks/lycanthropy).
-  - [Bloodthirst](/perks/bloodthirst).
-  - [Plumpkin Bomb](/perks/plumpkin_bomb).
-  - [Shrouded](/perks/shrouded).
-  - [Experimental Treatment](/perks/experimental_treatment).
-  - [Engorged](/perks/engorged).
-  - [Baby Plumpkin Pie](/perks/baby_plumpkin_pie).
-  - [Costumed](/perks/costumed).
-  - [Torn Pockets](/perks/torn_pockets).
-  - [Claustrophobic](/perks/claustrophobic).
-  - [Laced Stimulants](/perks/laced_stimulants).
-  - [Rotten Plumpkin](/perks/rotten_plumpkin).
+  - [Lycanthropy](/perks/lycanthropy)
+  - [Bloodthirst](/perks/bloodthirst)
+  - [Plumpkin Bomb](/perks/plumpkin_bomb)
+  - [Shrouded](/perks/shrouded)
+  - [Experimental Treatment](/perks/experimental_treatment)
+  - [Engorged](/perks/engorged)
+  - [Baby Plumpkin Pie](/perks/baby_plumpkin_pie)
+  - [Costumed](/perks/costumed)
+  - [Torn Pockets](/perks/torn_pockets)
+  - [Claustrophobic](/perks/claustrophobic)
+  - [Laced Stimulants](/perks/laced_stimulants)
+  - [Rotten Plumpkin](/perks/rotten_plumpkin)
 
 # Obtaining
 In Harvest and Halloween Mode, [Diseased Plumpkins](/obstacles/diseased_plumpkin) always drop the Plumpkin Gamble perk.

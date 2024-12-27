@@ -1,6 +1,6 @@
 <Stub/>
 
-The **Loot Tree** is an [Obstacle](/obstacles) that was added in the [v0.18.3](https://github.com/HasangerGames/suroi/releases/tag/v0.18.3) update on July 15, 2024.
+The **Loot Tree** is an [Obstacle](/obstacles) that was added in the [v0.18.3](https://github.com/HasangerGames/suroi/releases/tag/v0.18.3) update on July 15th, 2024.
 
 # Location & Spawning
 

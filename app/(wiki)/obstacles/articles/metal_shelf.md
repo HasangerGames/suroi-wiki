@@ -12,10 +12,6 @@ Metal Shelves are indestructible and reflect bullets.
 
 - The Metal Shelves in the old Warehouse always spawn with three [Boxes](/obstacles/boxes) on top of them. They can be broken for loot.
 
-# Trivia
-
-- The Metal Shelf was designed by Leia.
-
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Removed from the Warehouse

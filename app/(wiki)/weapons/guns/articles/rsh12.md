@@ -1,7 +1,7 @@
-The **Револьвер Штурмовой калибра 12,7 (Assault Revolver Calibre 12.7)**, known in-game as the **Rsh-12**, is a suppressed pistol utilizing the .50 Cal ammunition. It was added to the game in the [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0) "High Caliber Negotiations" update on September 22nd, 2024. The Rsh-12 features a very low magazine size, but extreme damage.
+The **Револьвер Штурмовой калибра 12,7 (Assault Revolver Calibre 12.7)**, known in-game as the **RSh-12**, is a suppressed, revolving, and double-action pistol utilizing the .50 Cal ammunition. It was added to the game in the [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0) "High Caliber Negotiations" update on September 22nd, 2024. The RSh-12 features a very low magazine size, but extreme damage.
 
 # Background
-The Rsh-12 was created for Russian Federal Security Service for use in high-stakes operations. Designed by Viktor Zelenko of the KPB Instrument Design Bureau, it fires the 12.7x55mm cartridge also used by the VKS sniper rifle and ShAk-12 battle rifle. Unlike most pistols, it fires from the bottom chamber rather than the top. The RSh-12 features a gas system that is purported to be similar to that of the [M1895](/weapons/guns/m1895), and has support for a flashlight, suppressor, foregrip, buttstock. Not much is know about if the RSh-12 ever entered production, and if it was ever used. In real life, the large caliber is most likely best suited for anti-material purposes in a close-quarters situation, such as shooting door locks.
+The RSh-12 was created for Russian Federal Security Service for use in high-stakes operations. Designed by Viktor Zelenko of the KPB Instrument Design Bureau, it fires the 12.7x55mm cartridge also used by the [VKS sniper rifle](/weapons/guns/vks) and ShAk-12 battle rifle. Unlike most revolvers, it fires from the bottom chamber rather than the top. The RSh-12 features a gas system that is purported to be similar to that of the [M1895](/weapons/guns/m1895), and has support for a flashlight, suppressor, foregrip, buttstock. Not much is know about if the RSh-12 ever entered production, and if it was ever used. In real life, the large caliber is most likely best suited for anti-material purposes in a close-quarters situation, such as shooting door locks.
 
 # Strategies
 ## Using
@@ -24,7 +24,8 @@ The Rsh-12 was created for Russian Federal Security Service for use in high-stak
 Currently, the RSh-12 can only be obtained from the [Golden AEGIS Case](/obstacles/aegis_golden_case) located in the [Headquarters](/buildings/headquarters_meta), and from [Gold Airdrops](/obstacles/airdrops).
 
 # Trivia 
-- The RSh-12 is one of the three weapons which use .50 Cal ammunition. The other weapons which use .50 Cal rounds are the [Model 89](/weapons/guns/model_89) and [DEagle](/weapons/guns/deagle).
+- The RSh-12 is the second revolver added to the game.
+- A variant of the RSh-12 chambered in 9x39mm also exists and is known as the RSh-9.
 
 # History
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)

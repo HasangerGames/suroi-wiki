@@ -40,7 +40,7 @@ It was also obtainable during 2 previous events:
 - The USAS-12 is one of 7 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [VSS](/weapons/guns/vss), [M1 Garand](/weapons/guns/m1_garand), [DEagle](/weapons/guns/deagle), and [Mosin-Nagant](/weapons/guns/mosin_nagant).
 
 # History
-- [v0.20.1](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+- [v0.20.1](https://github.com/HasangerGames/suroi/releases/tag/v0.20.1)
   - Range decreased to 60 (from 70)
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
   - Range increased to 70 (from 55)
@@ -60,7 +60,7 @@ It was also obtainable during 2 previous events:
       url: "/img/articles/weapons/guns/usas12/six_usas12.webp",
       author: "sniperboi4",
       caption:
-        "Fellow Suroians find six USAS-12s in [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0) (Halloween Mode 2023)",
+        "Fellow Suroians find six USAS-12s in v0.12.0 (Halloween Mode 2023)",
     },
   ]}
 />
