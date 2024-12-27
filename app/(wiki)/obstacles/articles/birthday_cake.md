@@ -4,12 +4,12 @@ The **Birthday Cake** is an [Obstacle](/obstacles) that only spawns on the Birth
 
 # Location & Spawning
 
-The Birthday Cake can be found anywhere on the Map.
-- there are 100 Birthday Cakes per Map
+The Birthday Cake can be found anywhere on the map.
+- There are 100 Birthday Cakes per map.
 
 # Loot & More
 
-The Birthday Cake contains good guns and equipment, an exclusive skin, and the [Firework Launcher](https://wiki.suroi.io/weapons/guns/firework_launcher), along with Firework Rockets.
+The Birthday Cake contains good guns and equipment, an exclusive skin, and the [Firework Launcher](weapons/guns/firework_launcher), along with Firework Rockets.
 
 # Tips
 
