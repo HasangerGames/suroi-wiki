@@ -12,13 +12,13 @@ import PlayerHoldingGun from "../svg/special/PlayerHoldingGun";
 import GunDetails from "./GunDetails";
 import GenericSidebar from "./utils/GenericSidebar";
 
-export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
+export default function GunSidebar({ gun, explosion, showTitle }: GunSidebarProps) {
   // ah yes, top 10 naming
   const [showDual, showDual_] = useState(false);
   const dualDef = Guns.fromStringSafe(`dual_${gun.idString}`);
   return (
     <div className="min-w-[20rem]">
-      {dualDef && (
+      {(dualDef && showTitle !== false) && (
         <div className="flex flex-row flex-wrap w-full justify-around gap-2 mb-2 items-center p-1">
           <button
             onClick={() => showDual_(false)}
@@ -92,4 +92,5 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
 export interface GunSidebarProps {
   gun: GunDefinition
   explosion?: ExplosionDefinition
+  showTitle?: boolean
 }
