@@ -112,6 +112,11 @@ const toExport = GenericArticlePage({
       fileName: "tables"
     },
     {
+      title: "Chairs",
+      items: ["chair", "office_chair", "grey_office_chair"],
+      fileName: "chairs"
+    },
+    {
       title: "Sinks",
       items: ["sink", "sink2"],
       fileName: "sinks"
