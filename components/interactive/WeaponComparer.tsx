@@ -73,17 +73,17 @@ export default function WeaponComparer() {
       <div className={`flex flex-row justify-center${(gun1 || gun2 || gun3) ? " mt-4" : ""}`}>
         <div className="pl-2 pr-2 pb-2">
           {
-            gun1 && <GunSidebar gun={gun1} explosion={Explosions.definitions.find(explosion => explosion.idString === gun1.ballistics.onHitExplosion)} showTitle={false} />
+            gun1 && <GunSidebar gun={gun1} explosion={Explosions.definitions.find(explosion => explosion.idString === gun1.ballistics.onHitExplosion)} hideTitle={true} hideSounds={true} />
           }
         </div>
         <div className="pl-2 pr-2 pb-2">
           {
-            gun2 && <GunSidebar gun={gun2} explosion={Explosions.definitions.find(explosion => explosion.idString === gun2.ballistics.onHitExplosion)} showTitle={false} />
+            gun2 && <GunSidebar gun={gun2} explosion={Explosions.definitions.find(explosion => explosion.idString === gun2.ballistics.onHitExplosion)} hideTitle={true} hideSounds={true} />
           }
         </div>
         <div className="pl-2 pr-2 pb-2">
           {
-            gun3 && <GunSidebar gun={gun3} explosion={Explosions.definitions.find(explosion => explosion.idString === gun3.ballistics.onHitExplosion)} showTitle={false} />
+            gun3 && <GunSidebar gun={gun3} explosion={Explosions.definitions.find(explosion => explosion.idString === gun3.ballistics.onHitExplosion)} hideTitle={true} hideSounds={true} />
           }
         </div>
       </div>
