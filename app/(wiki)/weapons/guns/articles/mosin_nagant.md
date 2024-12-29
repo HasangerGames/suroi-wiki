@@ -37,7 +37,7 @@ The Mosin-Nagant is an uncommon drop from higher-tier crates such as the [AEGIS 
 
 - Émile Nagant's brother, Léon Nagant, designed the [M1895](/weapons/guns/m1895) revolver.
 - The Mosin-Nagant is one of 7 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [USAS-12](/weapons/guns/usas12), [M1 Garand](/weapons/guns/m1_garand), [DEagle](/weapons/guns/deagle), and [VSS](/weapons/guns/vss).
-  - It also the first sniper rifle added to Suroi
+  - It also the first sniper rifle added to Suroi.
 
 # History
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
