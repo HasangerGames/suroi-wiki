@@ -120,6 +120,16 @@ const toExport = GenericArticlePage({
       title: "Sinks",
       items: ["sink", "sink2"],
       fileName: "sinks"
+    },
+    {
+      title: "Stoves",
+      items: ["stove", "small_stove"],
+      fileName: "stoves"
+    },
+    {
+      title: "Beds",
+      items: ["bed", "small_bed"],
+      fileName: "beds"
     }
   ]
 });
