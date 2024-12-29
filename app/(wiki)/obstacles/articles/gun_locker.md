@@ -1,4 +1,4 @@
-The **Gun Locker** is an obstacle and was added in the added in the [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0) "High-Caliber Negotiations" update on September 22nd, 2024. It has a high chance to drop high quality guns but can only be broken using certain melee weapons.
+The **Gun Locker** is an obstacle and was added in the [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0) "High-Caliber Negotiations" update on September 22nd, 2024. It has a high chance to drop high quality guns but can only be broken using certain melee weapons.
 
 # Location and Spawning
 
