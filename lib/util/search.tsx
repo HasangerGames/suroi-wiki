@@ -113,7 +113,7 @@ export const wikiPages: SearchItem[] = [
     name: "Writing Guide",
     url: "/meta/writingarticles",
     description: "Guidelines for writing articles",
-    image: `${IMAGE_BASE_URL}/game/shared/emotes/monocle_face.svg`
+    image: "/img/icons/writing_guide.svg"
   },
   {
     name: "Developer Guide",
@@ -125,7 +125,7 @@ export const wikiPages: SearchItem[] = [
     name: "Art Guides",
     url: "/art_guides",
     description: "Guidelines for drawing assets for suroi.io",
-    image: `${IMAGE_BASE_URL}/game/shared/emotes/trophy.svg`
+    image: "/img/icons/art_guide.svg"
   },
   {
     name: "Removed Content",
