@@ -124,7 +124,7 @@ export const wikiPages: SearchItem[] = [
   {
     name: "Art Guides",
     url: "/art_guides",
-    description: "Guidelines for drawing assets for suroi.io",
+    description: "Guidelines for drawing assets for Suroi",
     image: "/img/icons/art_guide.svg"
   },
   {
