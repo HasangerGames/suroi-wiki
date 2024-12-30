@@ -1,7 +1,7 @@
 <Stub/>
 <Event/>
 
-The **Confetti Grenade** is an explosive [Throwable](/throwables) added in the [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0) "Back in the Saddle" update on June 8th, 2024. It has lower damage when compared to the [Frag Grenade](/throwables/frag_grenade) but has more shrapnel and can be carried in larger quantities.
+The **Confetti Grenade** is an explosive [Throwable](/throwables) added in the [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0) "Back in the Saddle" update on June 9th, 2024. It has lower damage when compared to the [Frag Grenade](/throwables/frag_grenade) but has more shrapnel and can be carried in larger quantities.
 
 # Strategies
 ## Using
