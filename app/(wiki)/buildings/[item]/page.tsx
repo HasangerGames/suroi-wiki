@@ -28,7 +28,6 @@ export const BuildingMetaArticles = [
       "port_warehouse_blue"
     ],
     fileName: "port_meta" // For some reason using `port` crashes my browser
-    // 109 says: LLLLLLLLLLLLLLLL
   },
   {
     title: "Armory",
@@ -37,7 +36,8 @@ export const BuildingMetaArticles = [
       "armory_center",
       "armory_vault",
       "armory_inner_vault",
-      "armory"
+      "armory",
+      "bombed_armory"
     ],
     fileName: "armory_meta" // Same as port
   },

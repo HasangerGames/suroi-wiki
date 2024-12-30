@@ -22,6 +22,7 @@ export default GenericListingPageFactory(
         "headquarters_wood_table_second_floor",
         "headquarters_sinks",
         "headquarters_security_desk_activated",
+        "bunker_entrance",
 
         // obstacles not significant enough to need a page or have missing textures
         "pebble",

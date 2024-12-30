@@ -1,6 +1,6 @@
 <Event />
 
-The **Birthday Cake** is an [Obstacle](/obstacles) that only spawns on the Birthday Map, and was added in the [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0) "Back in the Saddle" update on June 8th, 2024.
+The **Birthday Cake** is an [Obstacle](/obstacles) that only spawns on the Birthday Map, and was added in the [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0) "Back in the Saddle" update on June 9th, 2024. 
 
 # Location & Spawning
 
