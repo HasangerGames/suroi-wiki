@@ -1,4 +1,4 @@
-<Event />
+<Mode />
 **Torn Pockets** is a [Perk](/perks) added in the [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0) "Plumpkin Panic" update on October 31st, 2024 that causes you to drop two of any ammo every two seconds.
 
 # Effects

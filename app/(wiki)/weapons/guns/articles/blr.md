@@ -1,3 +1,5 @@
+<Mode />
+
 The **BLR Lightweight '81 Stainless Takedown**, known in-game as the **BLR 556**, is a common lever-action DMR chambered in 5.56mm that can only be found on the Harvest Map. It was added to the game in the [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0) "Cold Steel" update on December 11th, 2024.
 
 # Background

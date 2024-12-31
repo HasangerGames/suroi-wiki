@@ -1,4 +1,5 @@
-<Event />
+<Mode />
+
 **Flechettes** is a [Perk](/perks) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It splits your bullets into 3 smaller and weaker (but collectively stronger) bullets.
 
 # Effects

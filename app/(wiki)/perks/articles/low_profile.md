@@ -1,4 +1,5 @@
-<Event />
+<Mode />
+
 **Low Profile** is a [Perk](/perks) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It shrinks the player and provides reduced damage from explosions.
 
 # Effects

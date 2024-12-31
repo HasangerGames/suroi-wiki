@@ -1,3 +1,6 @@
+<Mode />
+
+
 **Pumpkins** are a type of [Obstacle](/obstacles) that come in two sizes and only spawn on the Harvest and Halloween Maps. The Normal Pumpkin was added to the game in the [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0) "Trick-or-Tweak" update on October 29th, 2023 and the Large Pumpkins were added to the game in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. Normal Pumpkins are a very common obstacle on both the Harvest and Halloween Maps while Large Pumpkins are rarer.
 
 # Location & Spawning

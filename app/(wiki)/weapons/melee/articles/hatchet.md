@@ -1,4 +1,5 @@
 <Stub/>
+
 The **Hatchet** is a melee weapon added in the [v0.18.1](https://github.com/HasangerGames/suroi/releases/tag/v0.18.1) update on June 21, 2024.
 
 # Background

@@ -1,3 +1,5 @@
+<Mode />
+
 The **Lux Crate** is an [Obstacle](/obstacles) added in [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0) "A Sailor's Dream" update on February 25th, 2024.
 
 # Location & Spawning 
