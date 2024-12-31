@@ -2,7 +2,7 @@ The **Container** is a building added in the [v0.11.0](https://github.com/Hasang
 
 # Location & Spawning
 
-Up to twelve Containers spawn in random positions on the map. Many Containers can also spawn as part of the [Port](/buildings/port) structure.
+Up to twelve Containers spawn in random positions on the map. Many Containers can also spawn as part of the [Port](/buildings/port) structure. Containers can be blue, green, yellow, red, or silver. Silver and red containers can only be found at the Port and don't have an entrance, which means you can't enter them.
 
 # Loot & More
 
@@ -17,7 +17,7 @@ Containers always contain one ground loot item on its floor.
 - If you see a player inside a Container with one exit, you can fire bullets into the Container with a high-DPS weapon. Your opponent won't be able to see you because they have their scopes disabled when inside a Container.
   - This usually kills your opponent because the interior of a Container also reflects bullets, making them harder to dodge.
   - However, don't get too close, as your opponent could rush you.
-    - You can also be hit by your own bullets.
+  - You can also be hit by your own bullets if you aren't careful.
 
 # History
 

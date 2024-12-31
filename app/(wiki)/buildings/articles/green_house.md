@@ -1,5 +1,3 @@
-# Green House
-
 The Green House is a building added in the [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0) "Just the Two of Us" update on March 31st, 2024. It drops decent loot, especially with the recent buff of the [HP-18](/weapons/guns/hp18).
 # Location & Spawning
 
