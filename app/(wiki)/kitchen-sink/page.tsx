@@ -4,6 +4,7 @@
 import Gallery from "@/components/articles/gallery/Gallery";
 import DevWeapon from "@/components/articles/notices/DevWeapon";
 import Empty from "@/components/articles/notices/Empty";
+import Mode from "@/components/articles/notices/Mode";
 import Event from "@/components/articles/notices/Event";
 import Removed from "@/components/articles/notices/Removed";
 import Stub from "@/components/articles/notices/Stub";
@@ -66,6 +67,7 @@ export default function Kitchen() {
       <DevWeapon />
       <Empty />
       <Event />
+      <Mode />
       <Removed />
       <Stub />
       <Gallery
