@@ -3,7 +3,7 @@ The **Ammo Crate** is an impenetrable [Obstacle](/obstacles) added in the [v0.15
 
 # Location & Spawning
 
-Three Ammo Crates spawn in the [Armory](/buildings/armory) in various locations around the structure. Several Ammo Crates can also spawn in the interior of each [Warehouse](/buildings/warehouse) in the various layouts.
+Ammo Crates can be found in many structures, especially medium and large structures such as the [Large Bridge](/buildings/large_bridge) and [Armory](/buildings/armory).
 
 # Loot & More
 
@@ -11,7 +11,7 @@ Ammo Crates drop two loot instances of the following: 60 rounds of 5.56mm, 7.62m
 
 # Tips
 
-- Since Ammo Crates aren't easily destroyed, they make a great cover from enemies.
+- Since Ammo Crates aren't easily destroyed, they can be effectively used as cover from enemies.
 
 # Trivia
 
