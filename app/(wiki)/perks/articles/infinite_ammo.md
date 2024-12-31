@@ -1,4 +1,5 @@
-<Event />
+<Mode />
+
 **Infinite Ammo** is a [Perk](/perks) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. As the name implies, player have infinite ammo and can empty and reload without affecting the ammo stored in their [Backpack](/equipment/backpacks).
 
 # Effects

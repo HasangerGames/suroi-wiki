@@ -1,4 +1,4 @@
-<Event />
+<Mode />
 
 The **Daewoo Precision Industries USAS-12**, known in-game as the **USAS-12**, is a powerful automatic shotgun firing explosive 12 Gauge ammunition. It was added to the game in the [v0.12.0](https://github.com/HasangerGames/suroi/releases/tag/v0.12.0) "Trick-or-Tweak" update on October 29th, 2023.
 

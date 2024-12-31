@@ -1,3 +1,5 @@
+<Mode />
+
 The **Pole** is a small circular [Obstacle](/obstacles) that spawns on the Harvest and Halloween Maps and was added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024.
 
 # Location & Spawning
