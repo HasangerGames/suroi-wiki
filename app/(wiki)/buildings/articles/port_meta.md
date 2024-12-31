@@ -5,7 +5,6 @@ The **Port** is a very large structure added in the [v0.11.0](https://github.com
 One Port attempts to spawn per map, always at the edge of the map. However, a Port can fail to spawn on a map in very rare circumstances.
 
 # Areas
-
 ## Entrance
 The Entrance to the Port contains a [Barrier](/obstacles/barrier) with a [Shed](/buildings/shed) next to it. Adjacent to the Shed is a [Porta Potty](/buildings/porta_potty).
 
@@ -33,7 +32,7 @@ The Crane can be found at the far end of the Port next to the Parking Lot. A gro
 Next to the Porta Potty near the Shed and inland of the red Port Warehouse is the the Secret Area. It contains three [Sandbags](/obstacles/sandbags), three Barrels, two Super Barrels, and two crates which can either be Flint Crates or AEGIS Crates. 
 
 ## Ship
-The ship can be found offshore of the Port and is connected to the Port through two walkways near the Crane. There are two types of ships that both have an equal chance of spawning: the [Cargo Ship](/buildings/cargo_ship) and the [Oil Tanker](/buildings/oil_tanker).
+The Ship can be found offshore of the Port and is connected to the Port through two walkways near the Crane. There are two types of ships that both have an equal chance of spawning: the [Cargo Ship](/buildings/cargo_ship) and the [Oil Tanker](/buildings/oil_tanker).
 
 # Tips
 
