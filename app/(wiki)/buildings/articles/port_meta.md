@@ -2,36 +2,38 @@ The **Port** is a very large structure added in the [v0.11.0](https://github.com
 
 # Location & Spawning
 
-One Port attempts to spawn per map, always at the edge of the map. - Very rarely, a Port can fail to spawn on a map.
+One Port attempts to spawn per map, always at the edge of the map. However, a Port can fail to spawn on a map in very rare circumstances.
 
 # Areas
 
-## Ships
-
-Main article: [Cargo Ship](/buildings/cargo_ship), [Oil Tanker](/buildings/oil_tanker).
-On the outer edge of the Port, the Ships spawn in the water.
+## Entrance
+The Entrance to the Port contains a [Barrier](/obstacles/barrier) with a [Shed](/buildings/shed) next to it. Adjacent to the Shed is a [Porta Potty](/buildings/porta_potty).
 
 ## Port Warehouses
+Two Port Warehouses spawn at opposite sides of the Port. They are special variants of the [Warehouse](/buildings/warehouse) that have a different layout and roof design. All Port Warehouses contain the following:
 
-Main article: [Port Warehouse](/buildings/port_warehouse).
+- A [Flint Crate](/obstacles/crates) near a [Regular Crate](/obstacles/crates), a [Super Barrel](/obstacles/super_barrel), and two [Barrels](/obstacles/barrel) at one end of the building. The Flint Crate is sometimes replaced by a regular crate.
+- A [Forklift](/obstacles/forklift) with three Regular Crates behind it and two Barrels with two [Boxes](/obstacles/box) near them at the center of the building.
+- A Forklift, a Super Barrel, and a Regular Crate at the other end of the building.
 
-## Port Shed
+One of the Port Warehouses is colored blue while the other is colored red. Two [Dumpsters](/obstacles/dumpster), a Flint Crate that is sometimes replaced with a Regular Crate, and a Forklift with a Flint Crate can be found on the outside of the blue Port Warehouse.
 
-Main article: [Port Shed](/buildings/port_shed).
-A Port Shed spawns towards the center of the Port, alongside a lowered [Barrier](/obstacles/barrier).
+## Containers
+Four groups of six [Containers](/buildings/containers) can be found scattered throughout the Port. These Containers are usually the blue, green, and yellow Containers found scattered around the map but can also be silver or red, which are container colors exclusive to the Port. Silver and red Containers are inaccessible and never have any openings.
+
+One group of Containers spawns inland of the blue Port Warehouse, two groups can be found in the center of the Port, and one group can be found underneath the Crane at the far end of the Port. The group of Containers found near the blue Port Warehouse also has a Barrel and a Super Barrel near it as well as several crates which can be [AEGIS Crates](/obstacles/crates), Flint Crates, Normal Crates, or Grenade Crates.
+
+## Parking Lot
+The Parking Lot can be found at the far end of the Port near the Crane. It contains two [Trucks](/obstacles/trucks) that both have [Trailers](/obstacles/trailer) attached to them, two Forklifts with one having a Barrel and the other having a Regular Crate, three Boxes, and three Regular Crates. One of the Regular Crates is sometimes replaced with a [Grenade Crate](/obstacles/grenade_crate). 
 
 ## Crane
+The Crane can be found at the far end of the Port next to the Parking Lot. A group of Containers and two Barrels that are sometimes replaced by Super Barrels can be found right underneath the Crane. A Porta Potty, two Regular Crates, two AEGIS Crates, a Forklift with a Regular Crate and Box, and a Grenade Crate can also be found nearby.
 
-Main article: [Crane](/buildings/crane).
-A crane always spawns parallel to the Cargo Ship and contains a large amount of loot underneath it.
+## Secret Area
+Next to the Porta Potty near the Shed and inland of the red Port Warehouse is the the Secret Area. It contains three [Sandbags](/obstacles/sandbags), three Barrels, two Super Barrels, and two crates which can either be Flint Crates or AEGIS Crates. 
 
-## Other
-
-- The Port contains a large number of Containers in various locations. They are useful for getting some basic weapons, armor, and healing items to engage other players.
-- In one of the corners opposite the Port Warehouses, there are multiple [Trucks](/obstacles/truck) and [Trailers](/obstacles/trailer), which make for effective cover.
-- [Bollards](/obstacles/bollard) spawn along the border with the ocean.
-- A line of [Porta Potties](/buildings/porta_potty) spawns near the trucks.
-  - These are great for getting tons of healing items early in a game.
+## Ship
+The ship can be found offshore of the Port and is connected to the Port through two walkways near the Crane. There are two types of ships that both have an equal chance of spawning: the [Cargo Ship](/buildings/cargo_ship) and the [Oil Tanker](/buildings/oil_tanker).
 
 # Tips
 
@@ -40,5 +42,7 @@ A crane always spawns parallel to the Cargo Ship and contains a large amount of 
 
 # History
 
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+  - Revamped
 - [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Added
