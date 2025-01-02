@@ -1,5 +1,5 @@
-<Stub/>
-<Event />
+<Mode />
+
 **Experimental Treatment** is a [Perk](/perks) added in the [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0) "Plumpkin Panic" update on October 31st, 2024. It gives the player a permanent full adrenaline bar.
 
 # Effects

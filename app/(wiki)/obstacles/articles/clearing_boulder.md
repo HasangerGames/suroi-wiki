@@ -1,3 +1,5 @@
+<Mode />
+
 The **Clearing Boulder** is an [Obstacle](/obstacles) that spawns across the map on the Harvest and Halloween Maps. It was added alongside the Harvest Map in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. 
 # Location & Spawning
 

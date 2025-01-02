@@ -35,7 +35,7 @@ The Vault, located in the bow of the Cargo Ship, is the most valuable area of th
 # Trivia
 
 - Despite clearly having stairs into the Control Room, the stairs don't lead to another layer.
-  - The Control Room is treated as an indoor area on the map, similar to [Small Houses](/buildings/small_house).
+  - The Control Room is treated as an indoor area on the map, similar to buildings such as the [Red House](/buildings/red_houses).
 
 # History
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)

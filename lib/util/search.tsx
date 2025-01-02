@@ -113,19 +113,19 @@ export const wikiPages: SearchItem[] = [
     name: "Writing Guide",
     url: "/meta/writingarticles",
     description: "Guidelines for writing articles",
-    image: `${IMAGE_BASE_URL}/game/shared/emotes/monocle_face.svg`
+    image: "/img/icons/writing_guide.svg"
   },
   {
     name: "Developer Guide",
     url: "/meta/developing",
     description: "Guidelines for developing for the wiki",
-    image: `${IMAGE_BASE_URL}/game/shared/emotes/picasso_face.svg`
+    image: "/img/icons/developer_guide.svg"
   },
   {
     name: "Art Guides",
     url: "/art_guides",
-    description: "Guidelines for drawing assets for suroi.io",
-    image: `${IMAGE_BASE_URL}/game/shared/emotes/trophy.svg`
+    description: "Guidelines for drawing assets for Suroi",
+    image: "/img/icons/art_guide.svg"
   },
   {
     name: "Removed Content",

@@ -1,4 +1,5 @@
-<Event />
+<Mode />
+
 The **Lodge** was a building added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 28th, 2024. The lodge spawns once per map and only on the Harvest and Halloween maps. It contains a Gun Mount containing the [M590M](/weapons/guns/m590m), a rare and powerful shotgun that fires FRAG-12 rounds.
 
 # Areas
