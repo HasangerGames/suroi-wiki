@@ -3,7 +3,7 @@
 The **Hatchet** is a melee weapon added in the [v0.18.1](https://github.com/HasangerGames/suroi/releases/tag/v0.18.1) update on June 21, 2024.
 
 # Background
-A hatchet is a single-handed striking tool with a sharp blade on one side used to cut and split wood, and a hammerhead on the other side. Hatchets may also be used for hewing when making flattened surfaces on logs; when the hatchet head is optimized for this purpose it is called a hewing hatchet. Fire hatchets have a spike on the back and are used to break down windows and doors.
+A hatchet is a single-handed striking tool with a sharp blade on one side used to cut and split wood, and a hammerhead on the other side. Hatchets may also be used for hewing when making flattened surfaces on logs; when the hatchet head is optimized for this purpose it is called a hewing hatchet.
 
 # Strategies
 
@@ -13,8 +13,7 @@ A hatchet is a single-handed striking tool with a sharp blade on one side used t
 
 ## Countering
 
-- Watch out when a player with Hatchet tries to approach you at close range, use shotguns when needed.
-- Switch to melee as soon as they are too close, most melees have more DPS than Hatchet so try to utilize them.
+- As with other melees, try to keep your distance from the Hatchet user. The Hatchet has a higher DPS than most other melee weapons so try not to engage in melee combat unless necessary.
   
 # Obtaining
 
