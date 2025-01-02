@@ -7,14 +7,13 @@ import {
 import GunSidebar from "../sidebars/GunSidebar";
 import { useState } from "react";
 import { Explosions } from "@/vendor/suroi/common/src/definitions/explosions";
-
 export default function WeaponComparer() {
   const [gun1, setGun1] = useState<null | GunDefinition>(null);
   const [gun2, setGun2] = useState<null | GunDefinition>(null);
   const [gun3, setGun3] = useState<null | GunDefinition>(null);
 
   return (
-    <div className="p-4 bg-white/5 rounded-md">
+    <div className="p-4 pb-2 bg-white/5 rounded-md">
       <div className="flex gap-2 items-center m-2">
         <label htmlFor="gun">Gun #1</label>
         <select
@@ -70,18 +69,18 @@ export default function WeaponComparer() {
         </select>
       </div>
 
-      <div className={`flex flex-row justify-center${(gun1 || gun2 || gun3) ? " mt-4" : ""}`}>
-        <div className="pl-2 pr-2 pb-2">
+      <div className={`flex flex-row flex-wrap justify-center${(gun1 || gun2 || gun3) ? " mt-4 mb-4" : " mb-2"}`}>
+        <div className={gun1 ? "pl-2 pr-2" : undefined}>
           {
             gun1 && <GunSidebar gun={gun1} explosion={Explosions.definitions.find(explosion => explosion.idString === gun1.ballistics.onHitExplosion)} hideTitle={true} hideSounds={true} />
           }
         </div>
-        <div className="pl-2 pr-2 pb-2">
+        <div className={gun2 ? "pl-2 pr-2" : undefined}>
           {
             gun2 && <GunSidebar gun={gun2} explosion={Explosions.definitions.find(explosion => explosion.idString === gun2.ballistics.onHitExplosion)} hideTitle={true} hideSounds={true} />
           }
         </div>
-        <div className="pl-2 pr-2 pb-2">
+        <div className={gun3 ? "pl-2 pr-2" : undefined}>
           {
             gun3 && <GunSidebar gun={gun3} explosion={Explosions.definitions.find(explosion => explosion.idString === gun3.ballistics.onHitExplosion)} hideTitle={true} hideSounds={true} />
           }
