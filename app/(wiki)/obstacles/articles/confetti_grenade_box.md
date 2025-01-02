@@ -1,4 +1,4 @@
-The **Confetti Grenade Box** is an [Obstacle](/obstacles) added in the [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0) "Back in the Saddle" update on February 26th, 2024.
+The **Confetti Grenade Box** is an [Obstacle](/obstacles) added in the [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0) "Back in the Saddle" update on June 9th, 2024. 
 
 # Location & Spawning
 

@@ -4,6 +4,7 @@
 import Gallery from "@/components/articles/gallery/Gallery";
 import DevWeapon from "@/components/articles/notices/DevWeapon";
 import Empty from "@/components/articles/notices/Empty";
+import Mode from "@/components/articles/notices/Mode";
 import Event from "@/components/articles/notices/Event";
 import Removed from "@/components/articles/notices/Removed";
 import Stub from "@/components/articles/notices/Stub";
@@ -12,6 +13,7 @@ import PlayerWearingEquipment from "@/components/svg/special/PlayerWearingEquipm
 import MatrixTable from "@/components/tables/MatrixTable";
 import TableWithHeader from "@/components/tables/TableWithHeader";
 import LootTable from "@/components/tables/LootTable";
+import WeaponComparer from "@/components/interactive/WeaponComparer";
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 
@@ -60,10 +62,12 @@ export default function Kitchen() {
           ]
         }}
       />
+      <WeaponComparer />
       <PlayerWearingEquipment />
       <DevWeapon />
       <Empty />
       <Event />
+      <Mode />
       <Removed />
       <Stub />
       <Gallery

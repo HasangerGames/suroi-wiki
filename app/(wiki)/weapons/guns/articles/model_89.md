@@ -20,7 +20,6 @@ The Model 89 can be found in [Regular Airdrops](/obstacles/airdrops), occasional
 
 # Trivia
 - The Model 89 in-game is an 18" carbine with a standard walnut stock and a matte stainless steel finish.
-- The Model 89 is one of the three weapons which use .50 Cal ammunition. The other weapons which use .50 Cal rounds are the [RSh-12](/weapons/guns/rsh12) and [DEagle](/weapons/guns/deagle).
 
 ## History
 - [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0)

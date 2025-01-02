@@ -34,7 +34,7 @@ The Stoner 63 is rarely found in [Flint](/obstacles/flint_crate) and [AEGIS Crat
 
 - The Stoner 63 is the second LMG added to the game, after the [Lewis Gun](/weapons/guns/lewis_gun).
   - It is also the second gun to show a visible magazine, after the Lewis Gun.
-- Eugene Stoner also designed the [M16A4](/weapons/guns/m16a4) and the [SR-25](/weapons/guns/sr25).
+- Eugene Stoner also designed the [M16A2](/weapons/guns/m16a2) and the [SR-25](/weapons/guns/sr25).
 
 # History
 

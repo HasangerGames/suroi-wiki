@@ -1,4 +1,4 @@
-<Event />
+<Mode />
 **Sabot Rounds** is a [Perk](/perks) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It boosts bullet range, bullet velocity, and accuracy, at a slight cost of damage.
 
 # Effects

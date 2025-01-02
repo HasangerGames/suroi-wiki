@@ -1,5 +1,5 @@
 
-The **Construction Site** is a building added in [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0) "Back in the Saddle" update alongside the Birthday Event. The site is a relatively small structure with moderately good loot.
+The **Construction Site** is a building added in [v0.18.0](https://github.com/HasangerGames/suroi/releases/tag/v0.18.0) "Back in the Saddle" update alongside the Birthday Event. The site is a relatively small structure with moderately good loot.
 
 # Location and Spawning
 
