@@ -134,7 +134,7 @@ export default function WeaponsPage() {
       <Collapsible
         label={(
           <div className="prose prose-invert">
-            <h2 id="throwables">Gun DPS Table</h2>
+            <h2 id="dps_table">Gun DPS Table</h2>
           </div>
         )}
         className="my-4"
@@ -150,7 +150,7 @@ export default function WeaponsPage() {
       <Collapsible
         label={(
           <div className="prose prose-invert">
-            <h2 id="throwables">Gun Comparer</h2>
+            <h2 id="gun_comparer">Gun Comparer</h2>
           </div>
         )}
         className="my-4"
