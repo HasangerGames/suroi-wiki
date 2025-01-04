@@ -28,5 +28,10 @@ Currently, the RSh-12 can only be obtained from the [Golden AEGIS Case](/obstacl
 - A variant of the RSh-12 chambered in 9x39mm also exists and is known as the RSh-9.
 
 # History
+- [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
+  - Updated world image
+  - Length increased to 5.35 (from 0.1)
+  - Dual variant standing spread decreased to 2° (from 3°)
+  - Dual variant moving spread decreased to 5° (from 6°)
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
   - Added
