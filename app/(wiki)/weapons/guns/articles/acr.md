@@ -32,5 +32,8 @@ The ACR was designed by Magpul Industries in the early 2000s and was essentially
 # History
 - [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
   - Updated world image
+  - Left fist moved to (100, -2) (from (95, -2))
+  - Image moved to (78, 0) (from (75, -1))
+  - Casing spawn location moved to (3.5, 0.4) (from (4, 0.4))
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Added
