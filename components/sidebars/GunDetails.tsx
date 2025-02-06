@@ -215,7 +215,7 @@ export default function GunDetails({ gun, explosion, hideSounds }: GunDetailsPro
         <InfoboxAudioGroup>
           <InfoboxAudio
             name="Fire"
-            src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
+            src={`https://suroi.io/audio/game/shared/weapons/${gun.idString.replace(
               "dual_",
               ""
             )}_fire.mp3`}
@@ -223,7 +223,7 @@ export default function GunDetails({ gun, explosion, hideSounds }: GunDetailsPro
           {gun.ballistics.lastShotFX && (
             <InfoboxAudio
               name="Last Shot"
-              src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
+              src={`https://suroi.io/audio/game/shared/weapons/${gun.idString.replace(
                 "dual_",
                 ""
               )}_fire_last.mp3`}
@@ -231,19 +231,19 @@ export default function GunDetails({ gun, explosion, hideSounds }: GunDetailsPro
           )}
           <InfoboxAudio
             name="Switch"
-            src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
+            src={`https://suroi.io/audio/game/shared/weapons/${gun.idString.replace(
               "dual_",
               ""
             )}_switch.mp3`}
           />
           <InfoboxAudio
             name="Reload"
-            src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString}_reload.mp3`}
+            src={`https://suroi.io/audio/game/shared/weapons/${gun.idString}_reload.mp3`}
           />
           {gun.reloadFullOnEmpty && (
             <InfoboxAudio
               name="Full Reload"
-              src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
+              src={`https://suroi.io/audio/game/shared/weapons/${gun.idString.replace(
                 "dual_",
                 ""
               )}_reload_full.mp3`}
@@ -252,7 +252,7 @@ export default function GunDetails({ gun, explosion, hideSounds }: GunDetailsPro
           {gun.ballistics.onHitExplosion && (
             <InfoboxAudio
               name="Explosion"
-              src={`${SOUND_BASE_URL}/sfx/${Explosions.fromString(gun.ballistics.onHitExplosion).sound}.mp3`}
+              src={`https://suroi.io/audio/game/shared/sfx/${Explosions.fromString(gun.ballistics.onHitExplosion).sound}.mp3`}
             />
           )}
         </InfoboxAudioGroup>
