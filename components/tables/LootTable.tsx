@@ -1,7 +1,7 @@
 /* eslint-disable @stylistic/operator-linebreak */
 /* eslint-disable @stylistic/multiline-ternary */
 import TableWithHeader from "./TableWithHeader";
-import { SimpleLootTable, FullLootTable, WeightedItem } from "../../vendor/suroi/server/src/data/lootTables";
+import { SimpleLootTable, FullLootTable, WeightedItem } from "../../vendor/suroi/server/src/utils/lootHelpers";
 import { Loots } from "../../vendor/suroi/common/src/definitions/loots";
 import { NullString } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 
