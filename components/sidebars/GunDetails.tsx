@@ -1,4 +1,3 @@
-import { SOUND_BASE_URL } from "@/lib/util/suroi";
 import { FireMode } from "@/vendor/suroi/common/src/constants";
 import { ExplosionDefinition, Explosions } from "@/vendor/suroi/common/src/definitions/explosions";
 import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";

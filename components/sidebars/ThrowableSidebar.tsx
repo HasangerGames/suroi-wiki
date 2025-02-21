@@ -12,7 +12,7 @@ import InfoboxRow from "./utils/InfoboxRow";
 export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
   const skin
     = Skins.definitions.find(s => s.idString === "hazel_jumpsuit")
-    ?? Skins.definitions[0];
+      ?? Skins.definitions[0];
   const imageVariations: ImageTab[] = [
     {
       type: "image",
