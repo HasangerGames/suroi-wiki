@@ -6,11 +6,11 @@ A single Viking Chest typically spawns on the beach near the shore once per game
 
 # Loot & More
 
-The Viking Chest has decent [loot](/loot#viking_crate). It drops a [Seax](/weapons/melee/seax), 2-3 [Guns](/loot#viking_chest_guns), up to two pieces of [Equipment](/loot#special_equipment), and up to two [Scopes](/loot#special_scopes).
+The Viking Chest has decent [loot](/loot#viking_crate_normal). It drops a [Seax](/weapons/melee/seax), 2-3 [Guns](/loot#viking_chest_guns_normal), up to two pieces of [Equipment](/loot#special_equipment_normal), and up to two [Scopes](/loot#special_scopes_normal).
 
 # Tips
 
-- The Viking Chest can be used as cover in certain situations, but it is more worthwhile to break them for loot.
+- The Viking Chest can be used as cover in certain situations, but it is more worthwhile to break it for loot.
 
 # History
 

@@ -43,6 +43,7 @@ In the black space between the Lounge and the Executive Office, there is a hidde
 [View Loot Chances](/loot/tier_aegis_golden_crate)
 
 # Tips
+- Papas24, the developer who added the Headquarters into the game, didn't know about the object placer tool for buildings and calculated the positions of all of the obstacles, hitboxes, and stair colliders from scratch.
 - As the game's currently largest single building in normal mode, the Headquarters usually had a lot of players converging on it.
 - The Headquarters includes a lot of areas suitable for CQC weapons like SMGs and shotguns.
  - LMGs can be useful in certain areas such as the cubicles for destroying cover.

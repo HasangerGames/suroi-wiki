@@ -13,23 +13,21 @@ A Crowbar, also called a wrecking bar, pry bar or prybar, pinch-bar, or occasion
 
 ## Using
 
-- The Crowbar can destroy all common crates in a single hit, making it a viable item to quickly loot items
-- The Crowbar possess a 2.2x obstacle multiplier
+- The Crowbar can destroy all common crates in a single hit due to its 2.2x obstacle damage multiplier, making it a viable item to quickly loot items.
 
 ## Countering
 
-- As with other melee weapons, the best way to avoid them is to keep the distance between you and your opponent and use CQC guns (Close Quarters Combat) or shotguns such as the [Flues](/weapons/guns/flues)
-- The Crowbar is a difficult item to use, as long as you can keep decent distance and as well as move around enough, it will be difficult for the crowbar user to hit you
+- As with other melee weapons, the best way to avoid them is to keep the distance between you and your opponent and use CQC guns (Close Quarters Combat) or shotguns such as the [Flues](/weapons/guns/flues).
+- The Crowbar is a difficult item to use, as long as you can keep decent distance and as well as move around enough, it will be difficult for the crowbar user to hit you.
 
 # Obtaining
 
-- One Crowbar is dropped from the [Loot_Barrel](/obstacles/loot_barrel) 
-- Crowbars have a small chance of dropping from [Airdrops](/obstacles/aidrops) 
+- One Crowbar is dropped from the [Loot_Barrel](/obstacles/loot_barrel).
+- Crowbars have a small chance of dropping from [Airdrops](/obstacles/aidrops).
 
 # Trivia
 
-- The first Crowbar was likely made by a blacksmith who modified a lever for a customer. The lever dates back to the Stone Age
-- The Crowbar was designed by Nefertari
+- The first Crowbar was likely made by a blacksmith who modified a lever for a customer. The lever dates back to the Stone Age.
 
 # History
 

@@ -1,3 +1,5 @@
+<Mode />
+
 **Tents** are small buildings that were added alongside the Harvest Map in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. They come in two sizes and contain mediocre loot.
 
 # Location & Spawning

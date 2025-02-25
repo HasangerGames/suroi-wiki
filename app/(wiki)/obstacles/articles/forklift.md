@@ -2,13 +2,11 @@ The **Forklift** is an [Obstacle](/obstacles) added in the [v0.11.0](https://git
 
 # Location & Spawning
 
-The Forklift always spawns inside [Port Warehouses](/buildings/port_warehouse) as well as around the rest of the [Port](/buildings/port).
+The Forklift always spawns inside [Port Warehouses](/buildings/port_warehouse) as well as around the rest of the [Port](/buildings/port). A single Forklift can also be found in the warehouse of the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta).
 
 # Loot & More
 
-The Forklift is indestructible and drops no loot. 
-
-Some Forklifts spawn with a pallet with [Boxes](/obstacles/box), a [Barrel](/obstacles/barrel), or a [Grenade Crate](/obstacles/grenade_crate) on top of it.
+The Forklift itself is indestructible and drops no loot. However, it often has a [Pallet](/obstacles/pallet) on the forks of it, which can often have lootable obstacles such as [Boxes](/obstacles/boxes).
 
 # Tips
 

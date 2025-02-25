@@ -1,4 +1,5 @@
-<Event />
+<Mode />
+
 **Field Medic** is a [Perk](/perks) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It speeds up the usage of [Healing Items](/healing) as well as the time it takes to revive teammates.
 
 # Effects

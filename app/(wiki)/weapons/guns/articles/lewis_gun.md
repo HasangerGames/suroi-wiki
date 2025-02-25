@@ -33,8 +33,9 @@ The Lewis Gun can be rarely found as world loot, but it is more common in higher
 
 # Trivia
 
-- Most Lewis Guns in real life were chambered for .303 British or .30-06 Springfield.
-  - This means the Lewis Gun in-game is most likely a 7.62x54R variant exported to Russia in 1917.
+- Most Lewis guns in real life were chambered for .303 British or .30-06 Springfield. Lewis guns exported to Russia were chambered in 7.62x54mmR.
+  - The variant in-game is chambered in .30-06 Springfield which in metric is 7.62×63mm.
+  - The [M1 Garand](/weapons/guns/m1_garand) is also chambered in .30-06 Springfield.
 - The Lewis Gun is the first LMG added to the game.
 
 # History

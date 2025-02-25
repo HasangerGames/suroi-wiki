@@ -8,10 +8,6 @@ One Smokestack spawns in one of the corners of the [Refinery](/buildings/refiner
 
 Smokestacks are indestructible and reflect bullets.
 
-# Tips
-
-- The Smokestack in the refinery can be used as cover from enemies; however, its usage very situational.
-
 # Trivia
 
 - In real life, smokestacks are tall vertical pipes used to discharge gases or vapors safely.

@@ -1,4 +1,4 @@
-<Event />
+<Mode />
 **Berserker** is a [Perk](/perks) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It grants a speed boost when holding a [Melee Weapon](/weapons/melee), as well as increasing any melee damage done. 
 
 # Effects

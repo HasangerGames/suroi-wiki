@@ -9,6 +9,7 @@ import { Throwables } from "@/vendor/suroi/common/src/definitions/throwables";
 import Link from "next/link";
 import TableWithHeader from "@/components/tables/TableWithHeader";
 import { FireMode } from "@/vendor/suroi/common/src/constants";
+import WeaponComparer from "@/components/interactive/WeaponComparer";
 const dpsList: Array<[string, number, number]> = [];
 for (const gun of Guns) {
   const explosion = Explosions.definitions.find(
@@ -133,7 +134,7 @@ export default function WeaponsPage() {
       <Collapsible
         label={(
           <div className="prose prose-invert">
-            <h2 id="throwables">Gun DPS Table</h2>
+            <h2 id="dps_table">Gun DPS Table</h2>
           </div>
         )}
         className="my-4"
@@ -143,6 +144,19 @@ export default function WeaponsPage() {
             header={["Gun", "DPS", "Obstacle DPS"]}
             content={[...dpsList]}
           />
+        </div>
+
+      </Collapsible>
+      <Collapsible
+        label={(
+          <div className="prose prose-invert">
+            <h2 id="gun_comparer">Gun Comparer</h2>
+          </div>
+        )}
+        className="my-4"
+      >
+        <div className="mt-4">
+          <WeaponComparer />
         </div>
 
       </Collapsible>

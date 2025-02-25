@@ -47,7 +47,7 @@ The M3K is uncommon in general world loot, but fairly common in rarer loot sourc
   - Length decreased to 7.7 (from 11)
   - Jitter radius set to 0.5
   - Left fist x-offset decreased to 105 (from 120)
-  - Right fist x-offset decreased to 40 (from 47
+  - Right fist x-offset decreased to 40 (from 47)
   - Image moved to (90, 5) (from (110, 1))
   - Right fist z-index set to 4
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)

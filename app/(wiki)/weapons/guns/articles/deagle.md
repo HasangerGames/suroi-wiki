@@ -19,7 +19,7 @@ The Desert Eagle was designed by Magnum Research, Inc. and fires the largest cen
 ## Countering
 - Strafe back and forth to make the DEagle user miss. This will waste their ammo, and you can attack while they reload.
 - Hide behind indestructible cover such as [Oil Tanks](/obstacles/oil_tank) or [Sandbags](/obstacles/sandbags). The .50 Cal ammo that the DEagle uses is somewhat rare, so you may be able to make your opponent run out of it by wasting it.
-- Stay at long-range with an accurate DMR ([Mini-14](/weapons/guns/mini14), [SR-25](/weapons/guns/sr25)) or Assault Rifle ([M16A4](/weapons/guns/m16a4), [MCX Spear](/weapons/guns/mcx_spear)). This will take advantage of the DEagle's poor long-range accuracy.
+- Stay at long-range with an accurate DMR ([Mini-14](/weapons/guns/mini14), [SR-25](/weapons/guns/sr25)) or Assault Rifle ([M16A2](/weapons/guns/m16a2), [MCX Spear](/weapons/guns/mcx_spear)). This will take advantage of the DEagle's poor long-range accuracy.
 - Try using a high-DPS weapon such as a shotgun or SMG at close range against the DEagle user.
   - Be careful, however, as there's a good chance they may have a secondary and the DEagle itself has a high-DPS as well. This is more effective with stronger [Armor](/equipment/armor).
 - Attack while the opponent is reloading, as the DEagle's long reload leaves them exposed (this mainly applies to opponents with Dual DEagles).
@@ -30,7 +30,6 @@ The Desert Eagle was designed by Magnum Research, Inc. and fires the largest cen
 # Trivia
 - The DEagle is the only gun in the game that is gold.
 - The DEagle is one of 7 guns that were in surviv.io, the others being the [M1 Garand](/weapons/guns/m1_garand), [VSS](/weapons/guns/vss), [USAS-12](/weapons/guns/usas12), [AK-47](/weapons/guns/ak47), [Vector](/weapons/guns/vector), and [Mosin-Nagant](/weapons/guns/mosin_nagant).
-- The DEagle is one of the three weapons which use .50 Cal ammunition. The other weapons which use .50 Cal rounds are the [RSh-12](/weapons/guns/rsh12) and [Model 89](/weapons/guns/model_89).
 
 # History
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)

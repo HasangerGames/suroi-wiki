@@ -2,7 +2,7 @@ The **Potted Plant** is an [Obstacle](/obstacles) added in the [v0.17.0](https:/
 
 # Location and Spawning
 
-Potted Plants spawn in [Green Houses](/buildings/green_house), [Red Houses](/buildings/small_house), [Blue Houses](/buildings/blue_house), in the [Aegis Headquarters](/buildings/headquarters), the [Lodge](/buildings/lodge) and the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta).
+Potted Plants spawn in [Green Houses](/buildings/green_house), [Red Houses](/buildings/red_houses), [Blue Houses](/buildings/blue_house), in the [Aegis Headquarters](/buildings/headquarters), the [Lodge](/buildings/lodge) and the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta).
 
 # Loot & More
 
@@ -10,7 +10,7 @@ Potted Plants can drop ammunition, [Cola](/healing/cola), and occasionally other
 
 # Tips
 
-Potted Plants are usually left unlooted and can be used as a way to get [Healing items](/healing) and ammunition in the endgame if you are running low on either.
+- Potted Plants are usually left unlooted and can be used as a way to get [Healing items](/healing) and ammunition in the endgame if you are running low on either.
 
 # History
 

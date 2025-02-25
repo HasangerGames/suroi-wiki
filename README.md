@@ -42,6 +42,8 @@ pnpm install
 To start a local development server, run:
 
 ```shell
+git checkout dev 
+# This switches to the `dev` branch of the wiki with all the new changes
 pnpm dev
 ```
 

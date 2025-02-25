@@ -2,7 +2,7 @@ The **Fridge** is an [Obstacle](/obstacles) added in the [v0.9.0](https://github
 
 # Location & Spawning
 
-Fridges spawn in the Kitchens of both [Houses](/buildings/house) and [Small Houses](/buildings/small_house). It also spawns in the Barracks of the [Armory](/buildings/armory).
+Fridges spawn in many residential structures such as [Red Houses](/buildings/red_houses) and the [AEGIS Headquarters](/buildings/headquarters).
 
 # Loot & More
 
@@ -10,8 +10,9 @@ The Fridge reflects bullets and always drops 2-3 [Colas](/healing/colas) upon be
 
 # Tips
 
-- Many players don't know that you can break Fridges, so you can often find them late-game in Houses/Small Houses that are otherwise completely looted.
+- Some players don't know that you can break Fridges, so you can sometimes stumble upon houses that still have Fridges but are otherwise completely looted.
 - Be careful if you're using a gun to destroy the Fridge, as you could damage yourself with the reflected bullets.
+  - Some people also choose to first destroy the [Stove](/obstacles/stove) that spawns close to most Fridges, which usually heavily damages the Fridge.
 
 # History
 
