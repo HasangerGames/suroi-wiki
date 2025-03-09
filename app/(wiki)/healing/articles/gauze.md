@@ -30,6 +30,8 @@ Gauze is a very common drop from crates, toilets, and the toilet in a Porta Pott
 
 # History
 
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Heal ammount increased to 20 (from 15)
 - [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Usage time increased to 3s (from 2s)
 - [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
