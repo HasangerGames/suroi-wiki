@@ -3,8 +3,8 @@ import { SVGObject } from "@/lib/util/types";
 import {
   GunDefinition,
   Guns
-} from "@/vendor/suroi/common/src/definitions/guns";
-import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
+} from "@/vendor/suroi/common/src/definitions/items/guns";
+import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/items/skins";
 import SVGObjectRenderer from "../SVGObjectRenderer";
 
 export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {

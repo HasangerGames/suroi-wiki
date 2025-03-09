@@ -5,8 +5,8 @@ import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explo
 import {
   GunDefinition,
   Guns
-} from "@/vendor/suroi/common/src/definitions/guns";
-import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
+} from "@/vendor/suroi/common/src/definitions/items/guns";
+import { Skins } from "@/vendor/suroi/common/src/definitions/items/skins";
 import { useState } from "react";
 import PlayerHoldingGun from "../svg/special/PlayerHoldingGun";
 import GunDetails from "./GunDetails";
