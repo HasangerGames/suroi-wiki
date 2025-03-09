@@ -3,7 +3,7 @@
 import {
   GunDefinition,
   Guns
-} from "@/vendor/suroi/common/src/definitions/guns";
+} from "@/vendor/suroi/common/src/definitions/items/guns";
 import GunSidebar from "../sidebars/GunSidebar";
 import { useState } from "react";
 import { Explosions } from "@/vendor/suroi/common/src/definitions/explosions";

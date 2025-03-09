@@ -15,7 +15,7 @@ import TableWithHeader from "@/components/tables/TableWithHeader";
 import LootTable from "@/components/tables/LootTable";
 import WeaponComparer from "@/components/interactive/WeaponComparer";
 import { getSuroiImageLink } from "@/lib/util/suroi";
-import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import { Guns } from "@/vendor/suroi/common/src/definitions/items/guns";
 
 export default function Kitchen() {
   return (
