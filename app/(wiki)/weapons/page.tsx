@@ -2,10 +2,10 @@ import PageCard from "@/components/cards/PageCard";
 import Collapsible from "@/components/interactive/Collapsible";
 import GridTable from "@/components/tables/GridTable";
 import { getSuroiImageLink } from "@/lib/util/suroi";
-import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
-import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
+import { Guns } from "@/vendor/suroi/common/src/definitions/items/guns";
+import { Melees } from "@/vendor/suroi/common/src/definitions/items/melees";
 import { Explosions } from "@/vendor/suroi/common/src/definitions/explosions";
-import { Throwables } from "@/vendor/suroi/common/src/definitions/throwables";
+import { Throwables } from "@/vendor/suroi/common/src/definitions/items/throwables";
 import Link from "next/link";
 import TableWithHeader from "@/components/tables/TableWithHeader";
 import { FireMode } from "@/vendor/suroi/common/src/constants";
@@ -134,6 +134,19 @@ export default function WeaponsPage() {
       <Collapsible
         label={(
           <div className="prose prose-invert">
+            <h2 id="gun_comparer">Gun Comparer</h2>
+          </div>
+        )}
+        className="my-4"
+      >
+        <div className="mt-4">
+          <WeaponComparer />
+        </div>
+
+      </Collapsible>
+      <Collapsible
+        label={(
+          <div className="prose prose-invert">
             <h2 id="dps_table">Gun DPS Table</h2>
           </div>
         )}
@@ -144,19 +157,6 @@ export default function WeaponsPage() {
             header={["Gun", "DPS", "Obstacle DPS"]}
             content={[...dpsList]}
           />
-        </div>
-
-      </Collapsible>
-      <Collapsible
-        label={(
-          <div className="prose prose-invert">
-            <h2 id="gun_comparer">Gun Comparer</h2>
-          </div>
-        )}
-        className="my-4"
-      >
-        <div className="mt-4">
-          <WeaponComparer />
         </div>
 
       </Collapsible>
