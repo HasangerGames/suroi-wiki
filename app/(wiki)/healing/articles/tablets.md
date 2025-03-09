@@ -1,4 +1,4 @@
-**Tablets** is are a consumable that restores 50 adrenaline, added in the [v0.6.0](https://github.com/HasangerGames/suroi/releases/tag/v0.6.0) "Tablets & Tweaks" update on July 2nd, 2023. They rarely spawn around the map. To use Tablets, either click on the icon in your inventory or press 8 on your keyboard. Tablets take 5 seconds to use.
+**Tablets** is are a consumable that restores 50 adrenaline, added in the [v0.6.0](https://github.com/HasangerGames/suroi/releases/tag/v0.6.0) "Tablets & Tweaks" update on July 2nd, 2023. They rarely spawn around the map. To use Tablets, either click on the icon in your inventory or press 8 on your keyboard. Tablets take 4 seconds to use.
 
 # Background
 
@@ -32,6 +32,8 @@ Tablets are most readily obtained by breaking toilets in buildings, as well as t
 
 # History
 
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Tablets now take 4 seconds to use instead of 5.
 - [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Adrenaline now does not follow a flat linear rate for healing. Previously, regeneration was calculated by multiplying the adrenaline number by 0.00039. This gave a max regeneration rate of 1.2987 health/second. Now:
     - Above 87.5 adrenaline now heals 2.75 health/second
