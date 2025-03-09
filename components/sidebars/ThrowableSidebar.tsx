@@ -1,7 +1,7 @@
 import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
 import { ImageTab } from "@/lib/util/types";
-import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
-import { ThrowableDefinition } from "@/vendor/suroi/common/src/definitions/throwables";
+import { Skins } from "@/vendor/suroi/common/src/definitions/items/skins";
+import { ThrowableDefinition } from "@/vendor/suroi/common/src/definitions/items/throwables";
 import PlayerHoldingThrowable from "../svg/special/PlayerHoldingThrowable";
 import ExplosionRow from "./utils/ExplosionRow";
 import GenericSidebar from "./utils/GenericSidebar";
@@ -12,7 +12,7 @@ import InfoboxRow from "./utils/InfoboxRow";
 export default function ThrowableSidebar({ item }: ThrowableSidebarProps) {
   const skin
     = Skins.definitions.find(s => s.idString === "hazel_jumpsuit")
-    ?? Skins.definitions[0];
+      ?? Skins.definitions[0];
   const imageVariations: ImageTab[] = [
     {
       type: "image",

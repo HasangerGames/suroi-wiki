@@ -1,4 +1,5 @@
-<Event />
+<Mode />
+
 **Advanced Athletics** is a [Perk](/perks) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It grants a speed boost when in water or smoke, and also allows the ability phase through trees and windows.
 
 # Effects:

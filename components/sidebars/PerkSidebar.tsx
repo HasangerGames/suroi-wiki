@@ -5,7 +5,7 @@ import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
-import { PerkCategories, PerkDefinition, PerkQualities } from "@/vendor/suroi/common/src/definitions/perks";
+import { PerkCategories, PerkDefinition, PerkQualities } from "@/vendor/suroi/common/src/definitions/items/perks";
 
 export default function PerkSidebar({
   item

@@ -8,7 +8,7 @@ import {
   ArmorDefinition,
   ArmorType,
   Armors
-} from "@/vendor/suroi/common/src/definitions/armors";
+} from "@/vendor/suroi/common/src/definitions/items/armors";
 import Image from "next/image";
 
 const Helmets = Armors.definitions.filter(

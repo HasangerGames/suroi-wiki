@@ -3,6 +3,7 @@ import TimeLink from "@/components/links/TimeLink";
 import Removed from "@/components/articles/notices/Removed";
 import CommitLink from "@/components/links/CommitLink";
 import DevWeapon from "@/components/articles/notices/DevWeapon";
+import Mode from "@/components/articles/notices/Mode.tsx";
 import Gallery from "@/components/articles/gallery/Gallery.tsx";
 import SuroiItemImage from "@/components/articles/SuroiItemImage.tsx";
 
@@ -40,9 +41,15 @@ There are a couple [MDX](https://mdxjs.com/docs/what-is-mdx/) / [JSX](https://le
 ### `<Event />`
 
 Shows a small banner at the top of the page like the one on the [USAS-12 Article](/weapons/guns/usas12) notifying readers
-that this item is only available in a specific event. See below:
+that this it is only found in a specific event. See below:
 
 <Event />
+
+### `<Mode />`
+
+Shows a small banner at the top of the article that is only found in a specific mode. See below:
+
+<Mode />
 
 ### `<CommitLink sha="Git SHA Hash" />`
 

@@ -2,7 +2,7 @@
 
 # Location & Spawning
 
-One "Ceramic" Toilet always spawns in the bathrooms of the [House](/buildings/house) and the [Small House](/buildings/small_house). These toilets have a 30% chance to be used. Porta Potty Toilets spawn in [Porta Potties](/buildings/porta_potty) and have a 70% chance to be used.
+Ceramic Toilets are found across many structures and can often spawn multiple times in large structures like the [Lodge](/buildings/lodge). In contrast, the Porta Potty Toilet is only found as part of the [Porta Potty](/buildings/porta_potty).
 
 # Loot & More
 
@@ -11,7 +11,7 @@ Unused Toilets usually contain 2-3 healing items but can occasionally contain sc
 # Tips
 
 - Toilets can be used as cover in certain situations, but it is more worthwhile to break them for loot.
-- Toilets often contain the best loot in houses along with the [Fridge](/obstacles/fridge), so it is recommended to loot them first.
+- Toilets often contain the best loot in houses along with the [Fridge](/obstacles/fridge), so it is recommended to loot them first. Some players go as far as to only loot the Fridge and the Toilet and then immediately leave the house in order to not waste time looting the less valuable obstacles.
 
 # History
 

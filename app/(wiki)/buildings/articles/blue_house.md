@@ -1,5 +1,3 @@
-# Blue House
-
 The Blue House is a variant of the classic [Red House](/buildings/red_house) and is the newest house to be added in the game, being added in the [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0) "High Caliber Negotiations" update on September 22nd, 2024.
 # Location & Spawning
 

@@ -1,3 +1,5 @@
+<Mode />
+
 The **Barn** is a medium-sized building added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It contains a good amount of loot, but is a dangerous structure due to the lack of solid cover.
 
 # Location & Spawning
@@ -32,6 +34,8 @@ Break the Gun Case or the Gun Locker first, but you need a piercing weapon (e.g.
 
 # History
 
+- [v0.23.0](https://github.com/HasangerGames/suroi/releases/tag/v0.23.0)
+    - Improved layout
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
     - Added
 

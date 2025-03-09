@@ -5,20 +5,20 @@ import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explo
 import {
   GunDefinition,
   Guns
-} from "@/vendor/suroi/common/src/definitions/guns";
-import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
+} from "@/vendor/suroi/common/src/definitions/items/guns";
+import { Skins } from "@/vendor/suroi/common/src/definitions/items/skins";
 import { useState } from "react";
 import PlayerHoldingGun from "../svg/special/PlayerHoldingGun";
 import GunDetails from "./GunDetails";
 import GenericSidebar from "./utils/GenericSidebar";
 
-export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
+export default function GunSidebar({ gun, explosion, hideTitle, hideSounds }: GunSidebarProps) {
   // ah yes, top 10 naming
   const [showDual, showDual_] = useState(false);
   const dualDef = Guns.fromStringSafe(`dual_${gun.idString}`);
   return (
     <div className="min-w-[20rem]">
-      {dualDef && (
+      {(dualDef && hideTitle !== true) && (
         <div className="flex flex-row flex-wrap w-full justify-around gap-2 mb-2 items-center p-1">
           <button
             onClick={() => showDual_(false)}
@@ -83,7 +83,7 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
           }
         ]}
       >
-        <GunDetails gun={showDual ? dualDef! : gun} explosion={explosion} />
+        <GunDetails gun={showDual ? dualDef! : gun} explosion={explosion} hideSounds={hideSounds} />
       </GenericSidebar>
     </div>
   );
@@ -92,4 +92,6 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
 export interface GunSidebarProps {
   gun: GunDefinition
   explosion?: ExplosionDefinition
+  hideTitle?: boolean
+  hideSounds?: boolean
 }

@@ -1,7 +1,6 @@
-import { SOUND_BASE_URL } from "@/lib/util/suroi";
 import { FireMode } from "@/vendor/suroi/common/src/constants";
 import { ExplosionDefinition, Explosions } from "@/vendor/suroi/common/src/definitions/explosions";
-import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
+import { GunDefinition } from "@/vendor/suroi/common/src/definitions/items/guns";
 import type {
   WearerAttributes,
   ExtendedWearerAttributes
@@ -14,7 +13,7 @@ import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
 
-export default function GunDetails({ gun, explosion }: GunDetailsProps) {
+export default function GunDetails({ gun, explosion, hideSounds }: GunDetailsProps) {
   return (
     <>
       <InfoboxRow>
@@ -211,51 +210,52 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
           </InfoboxRow>
         </>
       )}
-
-      <InfoboxAudioGroup>
-        <InfoboxAudio
-          name="Fire"
-          src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
-            "dual_",
-            ""
-          )}_fire.mp3`}
-        />
-        {gun.ballistics.lastShotFX && (
+      {!hideSounds && (
+        <InfoboxAudioGroup>
           <InfoboxAudio
-            name="Last Shot"
-            src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
+            name="Fire"
+            src={`https://suroi.io/audio/game/shared/weapons/${gun.idString.replace(
               "dual_",
               ""
-            )}_fire_last.mp3`}
+            )}_fire.mp3`}
           />
-        )}
-        <InfoboxAudio
-          name="Switch"
-          src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
-            "dual_",
-            ""
-          )}_switch.mp3`}
-        />
-        <InfoboxAudio
-          name="Reload"
-          src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString}_reload.mp3`}
-        />
-        {gun.reloadFullOnEmpty && (
+          {gun.ballistics.lastShotFX && (
+            <InfoboxAudio
+              name="Last Shot"
+              src={`https://suroi.io/audio/game/shared/weapons/${gun.idString.replace(
+                "dual_",
+                ""
+              )}_fire_last.mp3`}
+            />
+          )}
           <InfoboxAudio
-            name="Full Reload"
-            src={`${SOUND_BASE_URL}/sfx/weapons/${gun.idString.replace(
+            name="Switch"
+            src={`https://suroi.io/audio/game/shared/weapons/${gun.idString.replace(
               "dual_",
               ""
-            )}_reload_full.mp3`}
+            )}_switch.mp3`}
           />
-        )}
-        {gun.ballistics.onHitExplosion && (
           <InfoboxAudio
-            name="Explosion"
-            src={`${SOUND_BASE_URL}/sfx/${Explosions.fromString(gun.ballistics.onHitExplosion).sound}.mp3`}
+            name="Reload"
+            src={`https://suroi.io/audio/game/shared/weapons/${gun.idString}_reload.mp3`}
           />
-        )}
-      </InfoboxAudioGroup>
+          {gun.reloadFullOnEmpty && (
+            <InfoboxAudio
+              name="Full Reload"
+              src={`https://suroi.io/audio/game/shared/weapons/${gun.idString.replace(
+                "dual_",
+                ""
+              )}_reload_full.mp3`}
+            />
+          )}
+          {gun.ballistics.onHitExplosion && (
+            <InfoboxAudio
+              name="Explosion"
+              src={`https://suroi.io/audio/game/shared/sfx/${Explosions.fromString(gun.ballistics.onHitExplosion).sound}.mp3`}
+            />
+          )}
+        </InfoboxAudioGroup>
+      )}
 
       <InfoboxHeader>Advanced Stats</InfoboxHeader>
       <InfoboxRow>
@@ -270,6 +270,7 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
 export interface GunDetailsProps {
   gun: GunDefinition
   explosion?: ExplosionDefinition
+  hideSounds?: boolean
 }
 
 function Effects({

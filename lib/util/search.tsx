@@ -1,12 +1,12 @@
 import RenderedBuilding from "@/components/svg/special/RenderedBuilding";
-import { Armors } from "@/vendor/suroi/common/src/definitions/armors";
-import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
+import { Armors } from "@/vendor/suroi/common/src/definitions/items/armors";
+import { Backpacks } from "@/vendor/suroi/common/src/definitions/items/backpacks";
 import { Buildings } from "@/vendor/suroi/common/src/definitions/buildings";
-import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems";
-import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
-import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
+import { HealingItems } from "@/vendor/suroi/common/src/definitions/items/healingItems";
+import { Guns } from "@/vendor/suroi/common/src/definitions/items/guns";
+import { Melees } from "@/vendor/suroi/common/src/definitions/items/melees";
 import { Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
-import { Perks } from "@/vendor/suroi/common/src/definitions/perks";
+import { Perks } from "@/vendor/suroi/common/src/definitions/items/perks";
 import {
   ObjectDefinition,
   ObjectDefinitions
@@ -113,19 +113,19 @@ export const wikiPages: SearchItem[] = [
     name: "Writing Guide",
     url: "/meta/writingarticles",
     description: "Guidelines for writing articles",
-    image: `${IMAGE_BASE_URL}/game/shared/emotes/monocle_face.svg`
+    image: "/img/icons/writing_guide.svg"
   },
   {
     name: "Developer Guide",
     url: "/meta/developing",
     description: "Guidelines for developing for the wiki",
-    image: `${IMAGE_BASE_URL}/game/shared/emotes/picasso_face.svg`
+    image: "/img/icons/developer_guide.svg"
   },
   {
     name: "Art Guides",
     url: "/art_guides",
-    description: "Guidelines for drawing assets for suroi.io",
-    image: `${IMAGE_BASE_URL}/game/shared/emotes/trophy.svg`
+    description: "Guidelines for drawing assets for Suroi",
+    image: "/img/icons/art_guide.svg"
   },
   {
     name: "Removed Content",

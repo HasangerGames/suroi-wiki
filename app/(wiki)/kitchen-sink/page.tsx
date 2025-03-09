@@ -4,6 +4,7 @@
 import Gallery from "@/components/articles/gallery/Gallery";
 import DevWeapon from "@/components/articles/notices/DevWeapon";
 import Empty from "@/components/articles/notices/Empty";
+import Mode from "@/components/articles/notices/Mode";
 import Event from "@/components/articles/notices/Event";
 import Removed from "@/components/articles/notices/Removed";
 import Stub from "@/components/articles/notices/Stub";
@@ -12,8 +13,9 @@ import PlayerWearingEquipment from "@/components/svg/special/PlayerWearingEquipm
 import MatrixTable from "@/components/tables/MatrixTable";
 import TableWithHeader from "@/components/tables/TableWithHeader";
 import LootTable from "@/components/tables/LootTable";
+import WeaponComparer from "@/components/interactive/WeaponComparer";
 import { getSuroiImageLink } from "@/lib/util/suroi";
-import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import { Guns } from "@/vendor/suroi/common/src/definitions/items/guns";
 
 export default function Kitchen() {
   return (
@@ -34,9 +36,7 @@ export default function Kitchen() {
           ["bleh", ":3", "silly"]
         ]}
       />
-      <p>
 
-      </p>
       <MatrixTable
         title="1092384 sucks at css"
         tHeader={["1", "2", "3"]}
@@ -60,10 +60,50 @@ export default function Kitchen() {
           ]
         }}
       />
+      <WeaponComparer />
+      <Collapsible
+        label={(
+          <div className="prose prose-invert">
+            <h2 id="damage_table">Gun Bullet Damage Table</h2>
+          </div>
+        )}
+        className="my-4"
+      >
+        <div className="mt-4">
+          <TableWithHeader
+            header={["Gun", "Damage"]}
+            content={[
+              ...Guns.definitions.map(gun =>
+                [gun.name, gun.ballistics.damage]
+              ).sort((a, b) => (Number(b[1]) - Number(a[1])))
+            ]}
+          />
+        </div>
+      </Collapsible>
+      <Collapsible
+        label={(
+          <div className="prose prose-invert">
+            <h2 id="capacity_table">Gun Capacity Table</h2>
+          </div>
+        )}
+        className="my-4"
+      >
+        <div className="mt-4">
+          <TableWithHeader
+            header={["Gun", "Capacity", "Capacity with Extended Magazines Perk"]}
+            content={[
+              ...Guns.definitions.map(gun =>
+                [gun.name, gun.capacity, gun.extendedCapacity ?? gun.capacity]
+              ).sort((a, b) => (Number(b[1]) - Number(a[1])))
+            ]}
+          />
+        </div>
+      </Collapsible>
       <PlayerWearingEquipment />
       <DevWeapon />
       <Empty />
       <Event />
+      <Mode />
       <Removed />
       <Stub />
       <Gallery
