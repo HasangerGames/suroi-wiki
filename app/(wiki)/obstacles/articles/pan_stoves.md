@@ -10,7 +10,7 @@ All types of Stoves reflect bullets, drops the [Pan](/weapons/melee/pan), and al
 
 # Tips
 
-- If you see a Pan stove, hit it a few times. Until you see smoke, then with a gun shoot it, to minimize how much ammo you use.
+- If you see a Pan stove, hit it a few times, until you see smoke. Then with a gun shoot it, to minimize how much ammo you use. be wary that certain melee weapons will destroy it faster, and if you aren't careful, you may take a lot of damage or die.
 - If another player is near a Pan Stove inside of a building, you can shoot at the Pan Stove with an assault rifle or LMG to explode it and damage or kill the player.
 - The Small Pan Stove inside of the Mobile Home is particularly dangerous as the Mobile Home is a very cramped building which leaves little room for you to escape the explosion of the Small Pan Stove if an enemy begins shooting it down, especially due to the relatively low health of Pan Stoves.
 
