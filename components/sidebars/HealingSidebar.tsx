@@ -1,9 +1,9 @@
 import { getSuroiImageLink } from "@/lib/util/suroi";
-import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
+import { Backpacks } from "@/vendor/suroi/common/src/definitions/items/backpacks";
 import {
   HealType,
   HealingItemDefinition
-} from "@/vendor/suroi/common/src/definitions/healingItems";
+} from "@/vendor/suroi/common/src/definitions/items/healingItems";
 import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxAudio from "./utils/InfoboxAudio";
 import InfoboxAudioGroup from "./utils/InfoboxAudioGroup";

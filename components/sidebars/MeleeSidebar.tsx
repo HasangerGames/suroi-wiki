@@ -1,6 +1,6 @@
 import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
-import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/melees";
-import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
+import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/items/melees";
+import { Skins } from "@/vendor/suroi/common/src/definitions/items/skins";
 import PlayerHoldingMelee from "../svg/special/PlayerHoldingMelee";
 import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";
@@ -66,7 +66,7 @@ export default function MeleeSidebar({ item }: MeleeSidebarProps) {
           {item.cooldown}ms
         </InfoboxColumn>
         <InfoboxColumn title="Obstacle Damage">
-          x{item.obstacleMultiplier} ({item.obstacleMultiplier * item.damage})
+          x{item.obstacleMultiplier} <br></br>({(item.obstacleMultiplier * item.damage).toFixed(2)})
         </InfoboxColumn>
       </InfoboxRow>
       <InfoboxRow>

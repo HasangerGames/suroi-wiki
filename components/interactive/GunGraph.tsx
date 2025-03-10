@@ -2,7 +2,7 @@
 
 import { shootGun } from "@/lib/util/calculators";
 import { FireMode } from "@/vendor/suroi/common/src/constants";
-import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
+import { GunDefinition } from "@/vendor/suroi/common/src/definitions/items/guns";
 import {
   Chart,
   Legend,

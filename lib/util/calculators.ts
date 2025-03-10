@@ -1,4 +1,4 @@
-import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
+import { GunDefinition } from "@/vendor/suroi/common/src/definitions/items/guns";
 import { Angle } from "@/vendor/suroi/common/src/utils/math";
 import { randomFloat } from "@/vendor/suroi/common/src/utils/random";
 import { Vec, type Vector } from "@/vendor/suroi/common/src/utils/vector";

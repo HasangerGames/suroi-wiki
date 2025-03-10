@@ -1,5 +1,5 @@
 import GenericListingPageFactory from "@/components/layouts/GenericListingPageFactory";
-import { PerkCategories, PerkQualities, Perks } from "@/vendor/suroi/common/src/definitions/perks";
+import { PerkCategories, PerkQualities, Perks } from "@/vendor/suroi/common/src/definitions/items/perks";
 
 const perkDefs = Perks.definitions;
 const normalPerks = perkDefs.filter(perk => perk.category === PerkCategories.Normal);

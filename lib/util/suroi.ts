@@ -8,18 +8,18 @@ import {
   DecalDefinition,
   Decals
 } from "@/vendor/suroi/common/src/definitions/decals";
-import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import { Guns } from "@/vendor/suroi/common/src/definitions/items/guns";
 import {
   LootDefinition,
   Loots,
   WeaponDefinition
 } from "@/vendor/suroi/common/src/definitions/loots";
-import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
+import { Melees } from "@/vendor/suroi/common/src/definitions/items/melees";
 import {
   ObstacleDefinition,
   Obstacles
 } from "@/vendor/suroi/common/src/definitions/obstacles";
-import { PerkCategories, PerkDefinition, Perks } from "@/vendor/suroi/common/src/definitions/perks";
+import { PerkCategories, PerkDefinition, Perks } from "@/vendor/suroi/common/src/definitions/items/perks";
 import { SyncedParticleDefinition } from "@/vendor/suroi/common/src/definitions/syncedParticles";
 import {
   ItemType,
