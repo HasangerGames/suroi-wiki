@@ -2,7 +2,7 @@
 
 # Location & Spawning
 
-The Pan Stove has a %3 chance to spawn instead of their other variant, [Small & Normal Stove](/obstacles/stoves). They may spawn in residential buildings such as the [Green House](/buildings/green_house) and [Mobile Home](/buildings/mobile_home).
+The Pan Stove has a 3% chance to spawn instead of their other variant, [Small & Normal Stove](/obstacles/stoves). They may spawn in residential buildings such as the [Green House](/buildings/green_house) and [Mobile Home](/buildings/mobile_home).
 
 # Loot & More
 
