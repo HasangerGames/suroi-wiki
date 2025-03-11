@@ -46,7 +46,7 @@ The Porta Potty spawns near the exterior of the Vault.
 - There is a [M1117](/obstacles/m1117) in the top right of the Armory.
   - Near it is a [Flint Crate](/obstacles/crates) and two [Gun Cases](/obstacles/gun_case) that can drop your weapons and other loot.
   - The M1117 reflects bullets, is indestructible, prevents [Frag Grenades](/weapons/throwables/frag_grenade) from flying over.
-- Many [Regular Crates](/obstacles/regular_crate), [Barrels](/obstacles/barrel), [Super Barrels](/obstacles/super_barrel), [Sandbags](/obstacles/sandbags), [Grenade Crates](/obstacles/grenade_crate), as well as several [Tear Gas Crates](/obstacles/tear_gas_crate), [Gun Cases](/obstacles/gun_case) and [Ammo Crates](/obstacles/ammo_crate) spawn throughout the structure.
+- Many [Regular Crates](/obstacles/regular_crate), [Barrels](/obstacles/barrels), [Super Barrels](/obstacles/barrels), [Sandbags](/obstacles/sandbags), [Grenade Crates](/obstacles/grenade_crate), as well as several [Tear Gas Crates](/obstacles/tear_gas_crate), [Gun Cases](/obstacles/gun_case) and [Ammo Crates](/obstacles/ammo_crate) spawn throughout the structure.
   - These obstacles can be used for cover or loot.
 - A [Barrier](/obstacles/barrier) spawns behind two [Sandbags](/obstacles/sandbags) at the bottom of the Armory. It can be used as an indestructible cover from enemies.
 - Most of the structure is surrounded by [Port Fences](/obstacles/port_fence).
@@ -78,11 +78,11 @@ One Bombed Armory attempts to spawn per map in a random position and rotation, o
 
 ## Barracks
 
-The Barracks spawns in the lower left of the Bombed Armory. It contains five [Bunk Beds](/obstacles/bunk_bed), the loot of two destroyed [Cabinets](/obstacles/cabinet) are on the ground, two small [Drawers](/obstacles/drawers), two [Boxes](/obstacles/box), a [Stove](/obstacles/stove), and a [Fridge](/obstacles/fridge).
+The Barracks spawns in the lower left of the Bombed Armory. It contains five [Bunk Beds](/obstacles/bunk_bed), the loot of two destroyed [Cabinets](/obstacles/cabinet), two small [Drawers](/obstacles/drawers), two [Boxes](/obstacles/box), a [Stove](/obstacles/stove), and a [Fridge](/obstacles/fridge).
 
 ## Center
 
-The Center spawns on the right side of the Bombed Armory. It contains one [Chairs](/obstacles/chair), the loot of a destroyed [Cabinet](/obstacles/cabinet), the loot of a destroyed small drawer, a trash can, and a [Gun Mount](/obstacles/gun_mounts) always containing a [Maul](/weapons/melee/maul).
+The Center spawns on the right side of the Bombed Armory. It contains one [Chairs](/obstacles/chair), the loot of one destroyed [Cabinet](/obstacles/cabinet), the loot of one destroyed small drawer, a trash can, and a [Gun Mount](/obstacles/gun_mounts) always containing a [Maul](/weapons/melee/maul).
 
 ## Vault
 
@@ -107,7 +107,7 @@ The [Outhouse](/buildings/outhouse) in the Bombed Armory spawns instead of the [
 - There is a [M1117](/obstacles/m1117) in the top right of the Bombed Armory.
   - Near it is the loot of one destroyed [Flint Crate](/obstacles/crates) and the loot of one destroyed [Gun Case](/obstacles/gun_case) and one unbroken, that can drop your weapons and other loot.
   - The M1117 reflects bullets, is indestructible, prevents [Frag Grenades](/weapons/throwables/frag_grenade) from flying over.
-- Many [Regular Crates](/obstacles/regular_crate), [Roadblocks](/obstacles/roadblock), [Barrels](/obstacles/barrel), [Super Barrels](/obstacles/super_barrel), [Sandbags](/obstacles/sandbags), [Grenade Crates](/obstacles/grenade_crate), as well as several [Tear Gas Crates](/obstacles/tear_gas_crate), [Gun Cases](/obstacles/gun_case) and [Ammo Crates](/obstacles/ammo_crate) spawn throughout the structure.
+- Many [Regular Crates](/obstacles/regular_crate), [Roadblocks](/obstacles/roadblock), [Barrels](/obstacles/barrels), [Super Barrels](/obstacles/barrels), [Sandbags](/obstacles/sandbags), the loot of destroyed [Grenade Crates](/obstacles/grenade_crate), as well as several [Tear Gas Crates](/obstacles/tear_gas_crate), [Gun Cases](/obstacles/gun_case), and [Ammo Crates](/obstacles/ammo_crate) spawn throughout the structure.
   - These obstacles can be used for cover or loot.
 - A [Barrier](/obstacles/barrier) spawns behind two [Sandbags](/obstacles/sandbags) at the bottom of the Bombed Armory. It can be used as an indestructible cover from enemies.
 - Most of the structure is surrounded by [Port Fences](/obstacles/port_fence).
