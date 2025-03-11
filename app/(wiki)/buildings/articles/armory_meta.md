@@ -91,7 +91,7 @@ The Vault spawns in the top left corner of the Bombed Armory.
 
 ### Outer Vault
 
-Where the door of the normal Armory would be, there is instead a cracked wall which can be broken with the [Maul](/weapons/melee/maul). There is the loot of one destroyed [Gun Case](/obstacles/gun_case) and one unbroken, The loot of one destroyed [Ammo Crate](/obstacles/ammo_crate) and one unbroken, three [Boxes](/obstacles/box), a [Tear Gas Crate](/obstacles/tear_gas_crate), two [Roadblocks](/obstacles/roadblock) and a [Grenade Crate](/obstacles/grenade_crate).
+Where the vault door of the normal Armory would be, there is instead a cracked wall which can be broken with the [Maul](/weapons/melee/maul). There is the loot of one destroyed [Gun Case](/obstacles/gun_case) and one unbroken, The loot of one destroyed [Ammo Crate](/obstacles/ammo_crate) and one unbroken, three [Boxes](/obstacles/box), a [Tear Gas Crate](/obstacles/tear_gas_crate), two [Roadblocks](/obstacles/roadblock) and a [Grenade Crate](/obstacles/grenade_crate).
 
 ### Inner Vault
 
