@@ -124,7 +124,6 @@ The [Outhouse](/buildings/outhouse) in the Bombed Armory spawns instead of the [
 # Trivia
 
 - A lot of the obstacles that were in the normal Armory are already destroyed in the Bombed Armory, with the loot on the ground.
-- 
 
 # History
 
