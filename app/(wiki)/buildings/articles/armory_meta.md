@@ -68,14 +68,6 @@ The Porta Potty spawns near the exterior of the Vault.
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added
 
-
-
-
-
-
-
-
-
 The **Bombed Armory** is a variant of the [Armory](/buildings/armory_meta) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It contains two unique weapons, the [USAS-12](/weapons/guns/usas12), and the [Maul](/weapons/melee/maul), and even more unique obstacles.
 
 # Location & Spawning
@@ -86,11 +78,11 @@ One Bombed Armory attempts to spawn per map in a random position and rotation, o
 
 ## Barracks
 
-The Barracks spawns in the lower left of the Armory. It contains five [Bunk Beds](/obstacles/bunk_bed), the loot of two destroyed [Cabinets](/obstacles/cabinet) are on the ground, two small [Drawers](/obstacles/drawers), two [Boxes](/obstacles/box), a [Stove](/obstacles/stove), and a [Fridge](/obstacles/fridge).
+The Barracks spawns in the lower left of the Bombed Armory. It contains five [Bunk Beds](/obstacles/bunk_bed), the loot of two destroyed [Cabinets](/obstacles/cabinet) are on the ground, two small [Drawers](/obstacles/drawers), two [Boxes](/obstacles/box), a [Stove](/obstacles/stove), and a [Fridge](/obstacles/fridge).
 
 ## Center
 
-The Center spawns on the right side of the Armory. It contains one [Chairs](/obstacles/chair), the loot of a destroyed [Cabinet](/obstacles/cabinet), the loot of a destroyed small drawer, a trash can, and a [Gun Mount](/obstacles/gun_mounts) always containing a [Maul](/weapons/melee/maul).
+The Center spawns on the right side of the Bombed Armory. It contains one [Chairs](/obstacles/chair), the loot of a destroyed [Cabinet](/obstacles/cabinet), the loot of a destroyed small drawer, a trash can, and a [Gun Mount](/obstacles/gun_mounts) always containing a [Maul](/weapons/melee/maul).
 
 ## Vault
 
@@ -98,7 +90,7 @@ The Vault spawns in the top left corner of the Bombed Armory.
 
 ### Outer Vault
 
-Where the door of the regular Armory would be, there is instead a cracked wall which can be broken with the [Maul](/weapons/melee/maul). There is the loot of one destroyed [Gun Case](/obstacles/gun_case) and one unbroken, The loot of one destroyed [Ammo Crate](/obstacles/ammo_crate) and one unbroken, three [Boxes](/obstacles/box), a [Tear Gas Crate](/obstacles/tear_gas_crate), two [Roadblocks](/obstacles/roadblock) and a [Grenade Crate](/obstacles/grenade_crate).
+Where the door of the normal Armory would be, there is instead a cracked wall which can be broken with the [Maul](/weapons/melee/maul). There is the loot of one destroyed [Gun Case](/obstacles/gun_case) and one unbroken, The loot of one destroyed [Ammo Crate](/obstacles/ammo_crate) and one unbroken, three [Boxes](/obstacles/box), a [Tear Gas Crate](/obstacles/tear_gas_crate), two [Roadblocks](/obstacles/roadblock) and a [Grenade Crate](/obstacles/grenade_crate).
 
 ### Inner Vault
 
