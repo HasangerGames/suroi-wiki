@@ -68,6 +68,7 @@ The Porta Potty spawns near the exterior of the Vault.
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added
 
+# Bombed Armory
 The **Bombed Armory** is a variant of the [Armory](/buildings/armory_meta) added in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. It contains two unique weapons, the [USAS-12](/weapons/guns/usas12), and the [Maul](/weapons/melee/maul), and even more unique obstacles.
 
 # Location & Spawning
