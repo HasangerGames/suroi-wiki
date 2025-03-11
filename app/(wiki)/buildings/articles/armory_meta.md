@@ -46,7 +46,7 @@ The Porta Potty spawns near the exterior of the Vault.
 - There is a [M1117](/obstacles/m1117) in the top right of the Armory.
   - Near it is a [Flint Crate](/obstacles/crates) and two [Gun Cases](/obstacles/gun_case) that can drop your weapons and other loot.
   - The M1117 reflects bullets, is indestructible, prevents [Frag Grenades](/weapons/throwables/frag_grenade) from flying over.
-- Many [Regular Crates](/obstacles/regular_crate), [Barrels](/obstacles/barrels), [Super Barrels](/obstacles/barrels), [Sandbags](/obstacles/sandbags), [Grenade Crates](/obstacles/grenade_crate), as well as several [Tear Gas Crates](/obstacles/tear_gas_crate), [Gun Cases](/obstacles/gun_case) and [Ammo Crates](/obstacles/ammo_crate) spawn throughout the structure.
+- Many [Regular Crates](/obstacles/regular_crate), [Barrels](/obstacles/barrels), [Super Barrels](/obstacles/barrels), [Sandbags](/obstacles/sandbags), [Grenade Crates](/obstacles/grenade_crate), [Boxes](/obstacles/box), as well as several [Tear Gas Crates](/obstacles/tear_gas_crate), [Gun Cases](/obstacles/gun_case) and [Ammo Crates](/obstacles/ammo_crate) spawn throughout the structure.
   - These obstacles can be used for cover or loot.
 - A [Barrier](/obstacles/barrier) spawns behind two [Sandbags](/obstacles/sandbags) at the bottom of the Armory. It can be used as an indestructible cover from enemies.
 - Most of the structure is surrounded by [Port Fences](/obstacles/port_fence).
