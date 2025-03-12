@@ -5,7 +5,7 @@ import {
   obstacleContainedBy
 } from "@/lib/util/suroi";
 import {
-  ObstacleDefinition,
+  ObstacleDefinition
 } from "@/vendor/suroi/common/src/definitions/obstacles";
 import Link from "../links/Link";
 import ExplosionRow from "./utils/ExplosionRow";
