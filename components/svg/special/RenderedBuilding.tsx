@@ -1,8 +1,8 @@
 import { getSuroiImageLink, imageLink } from "@/lib/util/suroi";
 import { SVGObject } from "@/lib/util/types";
-import { Layer, ObjectCategory, ZIndexes } from "@/vendor/suroi/common/src/constants";
+import { Layer, ObjectCategory, RotationMode, ZIndexes } from "@/vendor/suroi/common/src/constants";
 import { BuildingDefinition, Buildings } from "@/vendor/suroi/common/src/definitions/buildings";
-import { ObstacleDefinition, Obstacles, RotationMode } from "@/vendor/suroi/common/src/definitions/obstacles";
+import { ObstacleDefinition, Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
 import { Orientation } from "@/vendor/suroi/common/src/typings";
 import { Hitbox, HitboxType, RectangleHitbox } from "@/vendor/suroi/common/src/utils/hitbox";
 import { getEffectiveZIndex } from "@/vendor/suroi/common/src/utils/layer";
@@ -36,7 +36,7 @@ function getBuildingFloorOrCeilingImages(
   offset?: Vector,
   orientation = 0
 ): SVGObject[] {
-  return images.map(
+  return (images ?? []).map(
     ({ key, position, rotation = 0, scale, tint, zIndex: imageZIndex }) => {
       if (rotation) {
         rotation = rotationToOrientation(rotation);
@@ -84,7 +84,7 @@ function getBuildingObjects(
   return [
     ...getBuildingFloorOrCeilingImages(
       building.floorImages,
-      getEffectiveZIndex(building.floorZIndex, layer),
+      getEffectiveZIndex(building.floorZIndex ?? ZIndexes.BuildingsFloor, layer),
       offset,
       orientation
     ),
@@ -93,14 +93,14 @@ function getBuildingObjects(
       view === "ceiling"
         ? getBuildingFloorOrCeilingImages(
           building.ceilingImages,
-          getEffectiveZIndex(building.ceilingZIndex, layer),
+          getEffectiveZIndex(building.ceilingZIndex ?? ZIndexes.BuildingsCeiling, layer),
           offset,
           orientation
         )
         : []
     ),
 
-    ...building.obstacles
+    ...(building.obstacles ?? [])
       .filter(({ idString }) => !Obstacles.fromString(getIDString(idString)).invisible)
       .map(({ idString, position, rotation = 0, variation, scale }) => {
         rotation = Numeric.addOrientations(rotation as Orientation, orientation as Orientation);
@@ -124,7 +124,7 @@ function getBuildingObjects(
         };
       }),
 
-    ...building.subBuildings
+    ...(building.subBuildings ?? [])
       .filter(b =>
         (view === "second_floor" || b.layer !== Layer.Floor1)
         && (view === "bunker" || b.layer !== Layer.Basement1)
@@ -139,8 +139,8 @@ function getBuildingObjects(
         )
       ),
 
-    ...[...building.groundGraphics].reverse().flatMap((graphics, i) => renderGroundGraphics(graphics, -i, offset, orientation)),
-    ...[...building.graphics].reverse().flatMap((graphics, i) => renderGroundGraphics(graphics, getEffectiveZIndex(building.graphicsZIndex - (i / (building.graphics.length + 1)), layer), offset, orientation))
+    ...Array.from(building.groundGraphics ?? []).reverse().flatMap((graphics, i) => renderGroundGraphics(graphics, -i, offset, orientation)),
+    ...Array.from(building.graphics ?? []).reverse().flatMap((graphics, i) => renderGroundGraphics(graphics, getEffectiveZIndex((building.graphicsZIndex ?? ZIndexes.BuildingsFloor) - (i / (building.graphics.length + 1)), layer), offset, orientation))
   ] as SVGObject[];
 }
 

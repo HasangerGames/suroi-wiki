@@ -73,7 +73,7 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
     );
     const combinedArticleItems = combinedArticle?.items.map(
       item => args.items.find(i => i.idString === item)!
-    );
+    ).filter(item => item);
 
     const article
       = articles[`${params.item ?? combinedArticle?.fileName}.md`] ?? null;
