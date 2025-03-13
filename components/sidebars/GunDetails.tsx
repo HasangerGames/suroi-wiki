@@ -48,13 +48,13 @@ export default function GunDetails({ gun, explosion, hideSounds }: GunDetailsPro
           title="Speed Multiplier"
           abbr="How much the gun slows/speeds you up when holding"
         >
-          x{gun.speedMultiplier}
+          x{gun.speedMultiplier.toFixed(4)}
         </InfoboxColumn>
         <InfoboxColumn
           title="Recoil Speed Multiplier"
           abbr="How much the gun slows/speeds you up after firing"
         >
-          x{gun.recoilMultiplier}
+          x{gun.recoilMultiplier.toFixed(4)}
         </InfoboxColumn>
         <InfoboxColumn
           title="Recoil Duration"
