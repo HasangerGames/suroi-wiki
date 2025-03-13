@@ -32,9 +32,10 @@ The Negev started development in 1985 to replace the aging Galil ARM. The Negev 
 Finding a Negev is no easy task. The most common way to find a Negev is through a [Gold Airdrop](/obstacles/gold_airdrop_crate) or by breaking a [Flint Stone](/obstacles/flint_stone). It can also spawn, rarely, as world loot.
 
 # Trivia
-- The Negev is one of two guns (the other being the [MG5](/weapons/guns/mg5)) in Suroi that utilizes a belt feed system.
-- The variant in Suroi was formerly known as the "Negev NG-5", though now it is just "Negev".
+- The Negev is one of three guns (the others being the [MG5](/weapons/guns/mg5) and [PK-61](/weapons/guns/pk61)) in Suroi that utilizes a belt feed system.
+- The variant in Suroi was formerly known as the "Negev NG-5", and then the "Negev", but now it is just "Negev SF".
   - This variant has been produced since 2012 and features many improvements such as a Picatinny rail.
+  - SF stands for Special Forces, and features a side grip evident in the world image.
 
 # History
 - [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)
