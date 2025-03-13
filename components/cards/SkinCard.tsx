@@ -1,5 +1,5 @@
 import { getSuroiImageLink } from "@/lib/util/suroi";
-import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
+import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/items/skins";
 import SVGObjectRenderer from "../svg/SVGObjectRenderer";
 
 export default function SkinCard({ skin }: SkinCardProps) {
@@ -14,7 +14,7 @@ export default function SkinCard({ skin }: SkinCardProps) {
               x: 0,
               y: 0,
               rotation: 90,
-              zIndex: 3,
+              zIndex: 3
             },
             {
               type: "image",
@@ -22,7 +22,7 @@ export default function SkinCard({ skin }: SkinCardProps) {
               x: -35,
               y: 38,
               rotation: 90,
-              zIndex: 4,
+              zIndex: 4
             },
             {
               type: "image",
@@ -30,8 +30,8 @@ export default function SkinCard({ skin }: SkinCardProps) {
               x: 35,
               y: 38,
               rotation: 90,
-              zIndex: 4,
-            },
+              zIndex: 4
+            }
           ]}
         />
       </svg>
@@ -46,7 +46,7 @@ export default function SkinCard({ skin }: SkinCardProps) {
               <code>{skin.roleRequired}</code> role required
             </li>
           )}
-          {skin.notInLoadout && <li>Not in loadout</li>}
+          {skin.hideFromLoadout && <li>Not in loadout</li>}
           {skin.grassTint && <li>Grass tinted</li>}
           {skin.hideEquipment && <li>Hidden equipment</li>}
         </ul>
@@ -56,5 +56,5 @@ export default function SkinCard({ skin }: SkinCardProps) {
 }
 
 export interface SkinCardProps extends React.PropsWithChildren {
-  skin: SkinDefinition;
+  skin: SkinDefinition
 }

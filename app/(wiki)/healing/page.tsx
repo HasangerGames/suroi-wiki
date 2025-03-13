@@ -1,7 +1,7 @@
 import PageCard from "@/components/cards/PageCard";
 import GridTable from "@/components/tables/GridTable";
 import { getSuroiImageLink } from "@/lib/util/suroi";
-import { HealingItems } from "@/vendor/suroi/common/src/definitions/healingItems";
+import { HealingItems } from "@/vendor/suroi/common/src/definitions/items/healingItems";
 
 export default function HealingPage() {
   return (
@@ -14,7 +14,7 @@ export default function HealingPage() {
         </p>
       </div>
       <GridTable>
-        {HealingItems.definitions.map((item) => (
+        {HealingItems.definitions.map(item => (
           <PageCard
             title={item.name}
             image={getSuroiImageLink(item)}

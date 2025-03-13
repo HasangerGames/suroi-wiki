@@ -1,4 +1,4 @@
-The **Tire** is an [Obstacle](/obstacles) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024.
+The **Tire** is an [Obstacle](/obstacles) added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14th, 2024.
 
 # Location & Spawning
 
@@ -14,11 +14,13 @@ The Tire doesn't drop loot.
 
 # Trivia
 
-- The Tire was designed by platonthek
-- Despite Tires being made out of rubber, the Tire uses stone sound effects
-- The Tire is similar to the tires found on the [Truck](/obstacles/truck)
+- Despite Tires being made out of rubber, the Tire uses stone sound effects.
+- The Tire is similar to the tires found on the [Truck](/obstacles/truck).
 
 # History
 
-- v0.15.0
+- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
+  - Added to Tugboats
+  - ID changed from "mobile_home_tire" to "tire"
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added

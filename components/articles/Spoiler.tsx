@@ -14,8 +14,8 @@ export default function Spoiler({ spoiler, children }: SpoilerProps) {
       {!revealed && (
         <div className="absolute flex flex-col justify-center gap-4 p-4 inset-0 w-full h-full backdrop-blur-md rounded-md">
           <span className="text-center font-bold">
-            {(spoiler && `Warning! This is a spoiler for: ${spoiler}`) ||
-              "Warning! This is a spoiler!"}
+            {(spoiler && `Warning! This is a spoiler for: ${spoiler}`)
+            || "Warning! This is a spoiler!"}
           </span>
           <button
             className="transition-colors p-2 rounded-md bg-muted mx-auto flex flex-row gap-2 hover:bg-primary"
@@ -31,5 +31,5 @@ export default function Spoiler({ spoiler, children }: SpoilerProps) {
 }
 
 export interface SpoilerProps extends React.PropsWithChildren {
-  spoiler?: string;
+  spoiler?: string
 }

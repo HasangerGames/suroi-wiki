@@ -2,22 +2,22 @@ import EditButton from "@/components/interactive/EditButton";
 import GunGraphButton from "@/components/interactive/GunGraphButton";
 import GunSidebar from "@/components/sidebars/GunSidebar";
 import { Explosions } from "@/vendor/suroi/common/src/definitions/explosions";
-import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import { Guns } from "@/vendor/suroi/common/src/definitions/items/guns";
 import { notFound } from "next/navigation";
 
 export default function GunLayout({
   children,
-  params,
+  params
 }: {
   params: {
-    item: string;
-  };
+    item: string
+  }
 } & React.PropsWithChildren) {
-  const gun = Guns.find((gun) => gun.idString === params.item);
+  const gun = Guns.definitions.find(gun => gun.idString === params.item);
   if (!gun) notFound();
 
   const explosion = Explosions.definitions.find(
-    (explosion) => explosion.idString === gun.ballistics.onHitExplosion,
+    explosion => explosion.idString === gun.ballistics.onHitExplosion
   );
 
   return (

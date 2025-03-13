@@ -4,33 +4,34 @@ import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
 import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
 import {
   GunDefinition,
-  Guns,
-} from "@/vendor/suroi/common/src/definitions/guns";
-import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
+  Guns
+} from "@/vendor/suroi/common/src/definitions/items/guns";
+import { Skins } from "@/vendor/suroi/common/src/definitions/items/skins";
 import { useState } from "react";
 import PlayerHoldingGun from "../svg/special/PlayerHoldingGun";
 import GunDetails from "./GunDetails";
 import GenericSidebar from "./utils/GenericSidebar";
 
-export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
-  const [dual, setDual] = useState(false);
-  const dualGun = Guns.find((g) => g.idString === `dual_${gun.idString}`);
+export default function GunSidebar({ gun, explosion, hideTitle, hideSounds }: GunSidebarProps) {
+  // ah yes, top 10 naming
+  const [showDual, showDual_] = useState(false);
+  const dualDef = Guns.fromStringSafe(`dual_${gun.idString}`);
   return (
     <div className="min-w-[20rem]">
-      {dualGun && (
+      {(dualDef && hideTitle !== true) && (
         <div className="flex flex-row flex-wrap w-full justify-around gap-2 mb-2 items-center p-1">
           <button
-            onClick={() => setDual(false)}
+            onClick={() => showDual_(false)}
             className={`flex justify-center grow rounded-md min-w-[7ch] hover:bg-muted/50 cursor-pointer text-muted-foreground hover:text-white p-2 ${
-              !dual ? "!text-white bg-muted ring-primary ring" : ""
+              !showDual ? "!text-white bg-muted ring-primary ring" : ""
             }`}
           >
             Single
           </button>
           <button
-            onClick={() => setDual(true)}
+            onClick={() => showDual_(true)}
             className={`flex justify-center grow rounded-md min-w-[7ch] hover:bg-muted/50 cursor-pointer text-muted-foreground hover:text-white p-2 ${
-              dual ? "!text-white bg-muted ring-primary ring" : ""
+              showDual ? "!text-white bg-muted ring-primary ring" : ""
             }`}
           >
             Dual
@@ -38,57 +39,59 @@ export default function GunSidebar({ gun, explosion }: GunSidebarProps) {
         </div>
       )}
       <GenericSidebar
-        title={dual ? dualGun?.name ?? gun.name : gun.name}
+        title={showDual ? (dualDef?.name ?? gun.name) : gun.name}
         image={getSuroiImageLink(
-          dual ? dualGun! : gun,
+          showDual ? dualDef! : gun,
           undefined,
           undefined,
-          true,
+          true
         )}
         imageVariations={[
           {
             type: "image",
             url: getSuroiImageLink(
-              dual ? dualGun! : gun,
+              showDual ? dualDef! : gun,
               undefined,
               undefined,
-              true,
+              true
             ),
-            title: "Loot",
+            title: "Loot"
           },
           {
             type: "image",
             url: getSuroiImageLink(gun, undefined, "world"),
-            title: "World",
+            title: "World"
           },
           {
             type: "image",
-            url: getSuroiKillfeedImageLink(dual ? dualGun! : gun),
-            title: "Killfeed",
+            url: getSuroiKillfeedImageLink(showDual ? dualDef! : gun),
+            title: "Killfeed"
           },
           {
             type: "react",
             children: (
               <PlayerHoldingGun
-                gun={dual ? dualGun ?? gun : gun}
+                gun={showDual ? (dualDef ?? gun) : gun}
                 skin={
-                  Skins.definitions.find((skin) => {
+                  Skins.definitions.find(skin => {
                     return skin.idString === "hazel_jumpsuit";
                   }) ?? Skins.definitions[0]
                 }
               />
             ),
-            title: "Player Preview",
-          },
+            title: "Player Preview"
+          }
         ]}
       >
-        <GunDetails gun={dual ? dualGun! : gun} explosion={explosion} />
+        <GunDetails gun={showDual ? dualDef! : gun} explosion={explosion} hideSounds={hideSounds} />
       </GenericSidebar>
     </div>
   );
 }
 
 export interface GunSidebarProps {
-  gun: GunDefinition;
-  explosion?: ExplosionDefinition;
+  gun: GunDefinition
+  explosion?: ExplosionDefinition
+  hideTitle?: boolean
+  hideSounds?: boolean
 }

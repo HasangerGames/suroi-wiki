@@ -1,7 +1,7 @@
 export default function InfoboxColumn({
   children,
   title,
-  abbr,
+  abbr
 }: InfoboxColumnProps) {
   return (
     <div className="p-2 min-w-[10ch] basis-0 grow flex flex-col">
@@ -14,7 +14,7 @@ export default function InfoboxColumn({
 }
 
 export interface InfoboxColumnProps extends React.PropsWithChildren {
-  title: React.ReactNode;
-  abbr?: string;
-  image?: boolean;
+  title: React.ReactNode
+  abbr?: string
+  image?: boolean
 }

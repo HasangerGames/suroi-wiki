@@ -29,13 +29,13 @@ export default async function Home() {
           <div className="flex flex-row flex-wrap gap-4">
             <Pill href="https://suroi.io" text="Play Suroi" color="suroi" />
             <Pill
-              href="https://github.com/hasangergames/suroi"
-              text="Suroi Github"
+              href="https://github.com/HasangerGames/suroi"
+              text="Suroi GitHub"
               color="primary"
             />
             <Pill
-              href="https://github.com/hasangergames/suroi-wiki"
-              text="Wiki Github"
+              href="https://github.com/HasangerGames/suroi-wiki"
+              text="Wiki GitHub"
               color="muted"
             />
           </div>
@@ -55,25 +55,39 @@ export default async function Home() {
         <Card title="Open Source">
           This wiki is open source! You can help by contributing{" "}
           <Link href="/meta/writingarticles">writing</Link> or{" "}
-          <Link href="/meta/developing">code</Link>
+          <Link href="/meta/developing">code</Link>.
         </Card>
         <Card title="Elegant">
           We aim to make the user experience smooth and fast while providing
-          advanced features
+          advanced features.
         </Card>
         <Card title="Generated Information">
           Wiki information is a combination of game definitions and written
-          articles
+          articles.
         </Card>
         <Card title="Auto Updated">
           Information is based on commit <CommitLink sha={HEAD} /> and on branch{" "}
-          <BranchLink branch={BRANCH} />
+          <BranchLink branch={BRANCH} />.
         </Card>
       </GridTable>
       <div>
         <h1 className="text-xl font-bold text-center mb-4">Wiki Pages</h1>
         <GridTable>
-          {wikiPages.map((page) => (
+          {wikiPages.filter(page => !page.exclude && page.important).map(page => (
+            <PageCard
+              key={page.url}
+              title={page.name}
+              url={page.url}
+              image={page.image ?? ""}
+              description={page.description}
+            />
+          ))}
+        </GridTable>
+      </div>
+      <div>
+        <h1 className="text-xl font-bold text-center mb-4">More</h1>
+        <GridTable>
+          {wikiPages.filter(page => !page.exclude && !page.important).map(page => (
             <PageCard
               key={page.url}
               title={page.name}
@@ -100,9 +114,9 @@ function Pill({ text, href, color }: PillProps) {
 }
 
 interface PillProps extends React.PropsWithChildren {
-  text: string;
-  href: string;
-  color: string;
+  text: string
+  href: string
+  color: string
 }
 
 function Card({ title, children }: CardProps) {
@@ -115,5 +129,5 @@ function Card({ title, children }: CardProps) {
 }
 
 interface CardProps extends React.PropsWithChildren {
-  title: string;
+  title: string
 }

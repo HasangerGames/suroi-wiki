@@ -1,11 +1,9 @@
-import { Unpacked } from "@/lib/ts/utility";
-import { SOUND_BASE_URL } from "@/lib/util/suroi";
 import { FireMode } from "@/vendor/suroi/common/src/constants";
-import { ExplosionDefinition } from "@/vendor/suroi/common/src/definitions/explosions";
-import { GunDefinition } from "@/vendor/suroi/common/src/definitions/guns";
-import {
-  ItemDefinition,
+import { ExplosionDefinition, Explosions } from "@/vendor/suroi/common/src/definitions/explosions";
+import { GunDefinition } from "@/vendor/suroi/common/src/definitions/items/guns";
+import type {
   WearerAttributes,
+  ExtendedWearerAttributes
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { WithRequired } from "@tanstack/react-query";
 import AmmoIcon from "../icons/AmmoIcon";
@@ -15,7 +13,7 @@ import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
 
-export default function GunDetails({ gun, explosion }: GunDetailsProps) {
+export default function GunDetails({ gun, explosion, hideSounds }: GunDetailsProps) {
   return (
     <>
       <InfoboxRow>
@@ -25,11 +23,15 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
         <InfoboxColumn title="Ammo Type">
           <AmmoIcon ammo={gun.ammoType} scale={0.5} />
         </InfoboxColumn>
-        <InfoboxColumn title="Capacity">{gun.capacity}</InfoboxColumn>
+        <InfoboxColumn title="Capacity">{gun.capacity}
+          <abbr title="Capacity with Extended Magazines Perk">
+            ({gun.extendedCapacity ?? gun.capacity})
+          </abbr>
+        </InfoboxColumn>
       </InfoboxRow>
       <InfoboxRow>
         <InfoboxColumn title="Reload">
-          {gun.singleReload ? "1" : gun.capacity} in {gun.reloadTime}s
+          {gun.shotsPerReload ?? gun.capacity} in {gun.reloadTime}s {gun.reloadFullOnEmpty ? `or ${gun.capacity} in ${gun.fullReloadTime}s` : ""}
         </InfoboxColumn>
         <InfoboxColumn title="Firing Delay" abbr="Delay between shots">
           {gun.fireDelay}ms
@@ -39,6 +41,26 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
           abbr="Cooldown between switching between this weapon and another"
         >
           {gun.switchDelay}ms
+        </InfoboxColumn>
+      </InfoboxRow>
+      <InfoboxRow>
+        <InfoboxColumn
+          title="Speed Multiplier"
+          abbr="How much the gun slows/speeds you up when holding"
+        >
+          x{gun.speedMultiplier}
+        </InfoboxColumn>
+        <InfoboxColumn
+          title="Recoil Speed Multiplier"
+          abbr="How much the gun slows/speeds you up after firing"
+        >
+          x{gun.recoilMultiplier}
+        </InfoboxColumn>
+        <InfoboxColumn
+          title="Recoil Duration"
+          abbr="How long the recoil speed multiplier lasts"
+        >
+          {gun.recoilDuration}ms
         </InfoboxColumn>
       </InfoboxRow>
 
@@ -88,40 +110,40 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
           title="Max. DPS"
           abbr="Hypothetical maximum damage per second (DPS)"
         >
-          {gun.fireMode === FireMode.Burst &&
-            (
-              (1000 /
-                (gun.burstProperties.burstCooldown +
-                  gun.fireDelay * gun.burstProperties.shotsPerBurst)) *
-              (gun.ballistics.damage * gun.burstProperties.shotsPerBurst)
-            ).toFixed(2)}
-          {gun.fireMode !== FireMode.Burst &&
-            (
-              gun.ballistics.damage *
-              (gun.bulletCount ?? 1) *
-              (1000 / gun.fireDelay)
-            ).toFixed(2)}
+          {gun.fireMode === FireMode.Burst
+          && (
+            (1000
+              / (gun.burstProperties.burstCooldown
+                + gun.fireDelay * gun.burstProperties.shotsPerBurst))
+              * ((gun.ballistics.damage + (explosion?.damage ?? 0) + (explosion?.ballistics ? (explosion.ballistics.damage * explosion.shrapnelCount) : 0)) * gun.burstProperties.shotsPerBurst)
+          ).toFixed(2)}
+          {gun.fireMode !== FireMode.Burst
+          && (
+            (gun.ballistics.damage + (explosion?.damage ?? 0) + (explosion?.ballistics ? (explosion.ballistics.damage * explosion.shrapnelCount) : 0))
+            * (gun.bulletCount ?? 1)
+            * (1000 / gun.fireDelay)
+          ).toFixed(2)}
         </InfoboxColumn>
         <InfoboxColumn
           title="Max. Obstacle DPS"
           abbr="Hypothetical maximum damage per second (DPS) on obstacles"
         >
-          {gun.fireMode === FireMode.Burst &&
-            (
-              (1000 /
-                (gun.burstProperties.burstCooldown +
-                  gun.fireDelay * gun.burstProperties.shotsPerBurst)) *
-              (gun.ballistics.damage *
-                gun.ballistics.obstacleMultiplier *
-                gun.burstProperties.shotsPerBurst)
-            ).toFixed(2)}
-          {gun.fireMode !== FireMode.Burst &&
-            (
-              gun.ballistics.damage *
-              gun.ballistics.obstacleMultiplier *
-              (gun.bulletCount ?? 1) *
-              (1000 / gun.fireDelay)
-            ).toFixed(2)}
+          {gun.fireMode === FireMode.Burst
+          && (
+            (1000
+              / (gun.burstProperties.burstCooldown
+                + gun.fireDelay * gun.burstProperties.shotsPerBurst))
+              * ((gun.ballistics.damage + (explosion?.damage ?? 0) + (explosion?.ballistics ? (explosion.ballistics.damage * explosion.shrapnelCount) : 0))
+                * gun.ballistics.obstacleMultiplier
+                * gun.burstProperties.shotsPerBurst)
+          ).toFixed(2)}
+          {gun.fireMode !== FireMode.Burst
+          && (
+            (gun.ballistics.damage + (explosion?.damage ?? 0) + (explosion?.ballistics ? (explosion.ballistics.damage * explosion.shrapnelCount) : 0))
+            * gun.ballistics.obstacleMultiplier
+            * (gun.bulletCount ?? 1)
+            * (1000 / gun.fireDelay)
+          ).toFixed(2)}
         </InfoboxColumn>
       </InfoboxRow>
 
@@ -188,34 +210,52 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
           </InfoboxRow>
         </>
       )}
-
-      <InfoboxAudioGroup>
-        <InfoboxAudio
-          name="Fire"
-          src={`${SOUND_BASE_URL}sfx/weapons/${gun.idString.replace(
-            "dual_",
-            "",
-          )}_fire.mp3`}
-        />
-        <InfoboxAudio
-          name="Switch"
-          src={`${SOUND_BASE_URL}sfx/weapons/${gun.idString.replace(
-            "dual_",
-            "",
-          )}_switch.mp3`}
-        />
-        <InfoboxAudio
-          name="Reload"
-          src={`${SOUND_BASE_URL}sfx/weapons/${gun.idString}_reload.mp3`}
-        />
-        {explosion && (
+      {!hideSounds && (
+        <InfoboxAudioGroup>
           <InfoboxAudio
-            name="Explosion"
-            // HACK: hardcoded because USAS is the only explosive gun atm
-            src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/${explosion.idString}.mp3`}
+            name="Fire"
+            src={`https://suroi.io/audio/game/shared/weapons/${gun.idString.replace(
+              "dual_",
+              ""
+            )}_fire.mp3`}
           />
-        )}
-      </InfoboxAudioGroup>
+          {gun.ballistics.lastShotFX && (
+            <InfoboxAudio
+              name="Last Shot"
+              src={`https://suroi.io/audio/game/shared/weapons/${gun.idString.replace(
+                "dual_",
+                ""
+              )}_fire_last.mp3`}
+            />
+          )}
+          <InfoboxAudio
+            name="Switch"
+            src={`https://suroi.io/audio/game/shared/weapons/${gun.idString.replace(
+              "dual_",
+              ""
+            )}_switch.mp3`}
+          />
+          <InfoboxAudio
+            name="Reload"
+            src={`https://suroi.io/audio/game/shared/weapons/${gun.idString}_reload.mp3`}
+          />
+          {gun.reloadFullOnEmpty && (
+            <InfoboxAudio
+              name="Full Reload"
+              src={`https://suroi.io/audio/game/shared/weapons/${gun.idString.replace(
+                "dual_",
+                ""
+              )}_reload_full.mp3`}
+            />
+          )}
+          {gun.ballistics.onHitExplosion && (
+            <InfoboxAudio
+              name="Explosion"
+              src={`https://suroi.io/audio/game/shared/sfx/${Explosions.fromString(gun.ballistics.onHitExplosion).sound}.mp3`}
+            />
+          )}
+        </InfoboxAudioGroup>
+      )}
 
       <InfoboxHeader>Advanced Stats</InfoboxHeader>
       <InfoboxRow>
@@ -228,14 +268,15 @@ export default function GunDetails({ gun, explosion }: GunDetailsProps) {
 }
 
 export interface GunDetailsProps {
-  gun: GunDefinition;
-  explosion?: ExplosionDefinition;
+  gun: GunDefinition
+  explosion?: ExplosionDefinition
+  hideSounds?: boolean
 }
 
 function Effects({
-  gun,
+  gun
 }: {
-  gun: WithRequired<GunDefinition, "wearerAttributes">;
+  gun: WithRequired<GunDefinition, "wearerAttributes">
 }) {
   return (
     <>
@@ -280,47 +321,36 @@ function Effects({
   );
 }
 
-function Attributes({
-  attributes,
-  n,
-}: {
+function Attributes({ attributes, n }: {
   attributes:
     | WearerAttributes
-    | NonNullable<
-        Unpacked<
-          WithRequired<
-            WithRequired<
-              ItemDefinition,
-              "wearerAttributes"
-            >["wearerAttributes"],
-            "on"
-          >["on"]["kill"]
-        >
-      >;
-  n?: number;
+    | ExtendedWearerAttributes
+  n?: number
 }) {
-  const limit =
-    "limit" in attributes ? (
-      <>
-        {" "}
-        <abbr
-          title={`This effect can be applied up to a maximum of ${attributes.limit} times`}
-          className="inline-block ml-[1ch]"
-        >
-          ({attributes.limit} limit)
-        </abbr>
-      </>
-    ) : (
-      <>
-        {" "}
-        <abbr
-          title={`This effect can be applied an infinite amount of times`}
-          className="inline-block ml-[1ch]"
-        >
-          (No limit)
-        </abbr>
-      </>
-    );
+  const limit
+    = "limit" in attributes
+      ? (
+        <>
+          {" "}
+          <abbr
+            title={`This effect can be applied up to a maximum of ${attributes.limit} times`}
+            className="inline-block ml-[1ch]"
+          >
+            ({attributes.limit} limit)
+          </abbr>
+        </>
+      )
+      : (
+        <>
+          {" "}
+          <abbr
+            title="This effect can be applied an infinite amount of times"
+            className="inline-block ml-[1ch]"
+          >
+            (No limit)
+          </abbr>
+        </>
+      );
 
   return (
     <>

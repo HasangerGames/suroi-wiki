@@ -8,10 +8,13 @@
     "tldr",
     "wasd",
     "bleh",
+    "readded",
+    "tanky",
 
     // Suroi
     "suroi",
-    "surians",
+    "suroian",
+    "suroians",
     "surviv",
     "survivrs",
     "suroiwiki",
@@ -20,13 +23,14 @@
     "Yoinky",
     "sploinky",
 
-    // Game
+    // Game-related terms
     "quickswitch",
     "adren",
     "ghillie",
     "detonated",
     "undetonated",
-    // Buildings
+    "insta",
+    "nerfed",
     "porta",
 
     // Items
@@ -46,7 +50,8 @@
     "kriss",
     "vepr",
     "seax",
-    /* CZ-75A */
+
+    // CZ-75A related
     "františek",
     "koucký",
     "ČZUB",
@@ -54,7 +59,8 @@
     "zbrojovka",
     "uherský",
     "brod",
-    /* --- */
+
+    // Other weapons
     "revitalizer",
     "iver",
     "kbar",
@@ -66,7 +72,8 @@
     "uziel",
     "ruger",
     "pederson",
-    /* VSS */
+    
+    // VSS-related
     "tsNIITochMash",
     "ЦНИИТОЧМАШ",
     "spetsiálnaya",
@@ -76,7 +83,9 @@
     "Сна́йперская",
     "Винто́вка",
     "Spetsnaz",
-    /* --- */
+    "Vintorez",
+
+    // Other brands/models
     "daewoo",
     "arma",
     "armalite",
@@ -85,24 +94,59 @@
     "Guglielmo",
     "Vollmer",
     "Maschinenpistole",
-    /* Vepr-12 */
+
+    // Vepr-12-related
     "Vyatskiye",
     "Molot",
     "Izhmash",
-    /* PP-19 */
+
+    // PP-19 related
     "Vityaz",
     "Bizon",
-    /* --- */
-    // Armory puzzle
+
+    // M1 Garand-related
+    "enbloc",
+
+    // MG5-related
+    "Maschinengewehr",
+    "GPMG",
+
+    // Negev-related
+    "Galil",
+
+    // Miscellaneous weapon-related
+    "Yanmar",
     "ÖLJY",
-    // M1117
     "m1117",
     "M2HB",
     "M240H",
-    // Ammo
     "curadell",
+    "futuro",
+    "armee",
+    "gewehr",
+    "Viktor",
+    "Zelenko",
+    "ЦКИБ",
+    "Lapua",
+    "Celurit",
+    "Epipalaeolithic",
+    "chion",
+    "fahl",
+    "gost",
+    "ckib",
+    "Vykhlop",
+    "Simonov",
+    "Gabrilovich",
+    "Mjölnir",
+    "flechettes",
+    "flechette",
+    "Gavrilovich",
+    "Sturm",
+    "Miroku",
+    "bren",
+    "vickers",
 
-    // People
+    // People (usernames/aliases)
     "compositr",
     "platonthek",
     "slapdap",
@@ -117,24 +161,85 @@
     "zhew",
     "kenos",
     "sniperboi",
-    "Medeus",
+    "medeus",
     "eipi",
     "yeet120",
     "eclair_is_tasty",
     "sawq375",
     "brianzjk",
-    "Emeraldneo",
-    "HeheBoi420",
-    "F̴̋̓S̶̾͋Q̸̂̈́",
+    "emeraldneo",
+    "heheboi420",
+    "f̴̋̓s̶̾͋q̸̂̈́",
+    "zedaes",
+    "1092384",
+    "rsgtree",
+    "domincog",
+    "atk-r",
+    "lmssiehdev",
+    "kaklikof13",
+    "xluin",
+    "croissantedit",
+    "dedl0x",
+    "alany08",
+    "ariesninjadev",
+    "jcproject5678",
+    "martintintin3",
+    "bien-star",
+    "ariespowv",
+    "scaredpenguinxxl",
+    "viswas-programs",
+    "gatovuelta",
+    "zspybr",
+    "jakweg",
+    "j0m1ty",
+    "emecdelam",
+    "lightningeek",
+    "avocado",
+    "silverviolet",
+    "meower",
+    "just alto",
+    "pirelli",
+    "svennos",
+    "ymrn",
+    "endermanking",
+    "sharky",
+    "tacomy loh",
+    "glek",
+    "cobby",
+    "eslamo",
+    "noob",
+    "scaredpenguin",
+    "nugg4ec",
+    "vp",
+    "jc",
+    "heeyst",
+    "squarecube",
+    "itzblover",
+    "dogenjoyer",
+    "the chicken",
+    "milocat",
+    "fridge",
+    "error",
+    "pap",
+    "hotduck",
+    "radians",
+    "limenade",
+    "chpsterz",
+    "albie",
+    "nefertari",
 
     // Random
-    "excipients", // Plural of excipient
+    "excipients",
     "retextured",
+    "unlooted",
     "misaligning",
     "synergize",
     "zombsroyale",
-    "pubg"
+    "pubg",
+    "synergizes",
+    "furries",
+    "Bartolomeo",
+    "Cristofori"
   ],
-
   "import": ["@cspell/dict-ru_ru/cspell-ext.json"]
 }

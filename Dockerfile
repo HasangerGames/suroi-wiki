@@ -19,7 +19,7 @@ RUN pnpm i
 FROM base AS builder
 
 RUN corepack enable
-RUN corepack prepare pnpm@latest --activate 
+RUN corepack prepare pnpm@latest --activate
 
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules

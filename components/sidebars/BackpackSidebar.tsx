@@ -1,9 +1,9 @@
 import {
   IMAGE_BASE_URL,
   getSuroiImageLink,
-  getSuroiItem,
+  getSuroiItem
 } from "@/lib/util/suroi";
-import { BackpackDefinition } from "@/vendor/suroi/common/src/definitions/backpacks";
+import { BackpackDefinition } from "@/vendor/suroi/common/src/definitions/items/backpacks";
 import Image from "next/image";
 import AmmoIcon from "../icons/AmmoIcon";
 import HealingIcon from "../icons/HealingIcon";
@@ -13,9 +13,9 @@ import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
 
 export default function BackpackSidebar({
-  item,
+  item
 }: {
-  item: BackpackDefinition;
+  item: BackpackDefinition
 }) {
   return (
     <GenericSidebar
@@ -24,39 +24,39 @@ export default function BackpackSidebar({
         {
           type: "image",
           title: "Loot",
-          url: getSuroiImageLink(item),
+          url: getSuroiImageLink(item)
         },
         {
           type: "image",
           title: "World",
-          url: `${IMAGE_BASE_URL}game/equipment/${item.idString}_world.svg`,
-        },
+          url: `${IMAGE_BASE_URL}game/equipment/${item.idString}_world.svg`
+        }
       ]}
     >
       <InfoboxHeader>Healing Capacity</InfoboxHeader>
       <InfoboxRow>
-        {["gauze", "medikit"].map((healing) => (
+        {["gauze", "medikit"].map(healing => (
           <InfoboxColumn
             key={healing}
-            title={
+            title={(
               <div className="flex justify-center">
                 <HealingIcon item={healing} />
               </div>
-            }
+            )}
           >
             {item.maxCapacity[healing]}
           </InfoboxColumn>
         ))}
       </InfoboxRow>
       <InfoboxRow>
-        {["cola", "tablets"].map((healing) => (
+        {["cola", "tablets"].map(healing => (
           <InfoboxColumn
             key={healing}
-            title={
+            title={(
               <div className="flex justify-center">
                 <HealingIcon item={healing} scale={0.5} />
               </div>
-            }
+            )}
           >
             {item.maxCapacity[healing]}
           </InfoboxColumn>
@@ -65,42 +65,56 @@ export default function BackpackSidebar({
 
       <InfoboxHeader>Ammo Capacity</InfoboxHeader>
       <InfoboxRow>
-        {["12g", "556mm"].map((ammo) => (
+        {["12g", "556mm"].map(ammo => (
           <InfoboxColumn
             key={ammo}
-            title={
+            title={(
               <div className="flex justify-center">
                 <AmmoIcon ammo={ammo} scale={0.55} />
               </div>
-            }
+            )}
           >
             {item.maxCapacity[ammo]}
           </InfoboxColumn>
         ))}
       </InfoboxRow>
       <InfoboxRow>
-        {["762mm", "9mm"].map((ammo) => (
+        {["762mm", "9mm"].map(ammo => (
           <InfoboxColumn
             key={ammo}
-            title={
+            title={(
               <div className="flex justify-center">
                 <AmmoIcon ammo={ammo} scale={0.55} />
               </div>
-            }
+            )}
           >
             {item.maxCapacity[ammo]}
           </InfoboxColumn>
         ))}
       </InfoboxRow>
       <InfoboxRow>
-        {["127mm", "power_cell", "curadell"].map((ammo) => (
+        {["50cal", "338lap"].map(ammo => (
           <InfoboxColumn
             key={ammo}
-            title={
+            title={(
               <div className="flex justify-center">
                 <AmmoIcon ammo={ammo} scale={0.55} />
               </div>
-            }
+            )}
+          >
+            {item.maxCapacity[ammo]}
+          </InfoboxColumn>
+        ))}
+      </InfoboxRow>
+      <InfoboxRow>
+        {["curadell", "firework_rocket"].map(ammo => (
+          <InfoboxColumn
+            key={ammo}
+            title={(
+              <div className="flex justify-center">
+                <AmmoIcon ammo={ammo} scale={0.55} />
+              </div>
+            )}
           >
             {item.maxCapacity[ammo]}
           </InfoboxColumn>
@@ -108,19 +122,38 @@ export default function BackpackSidebar({
       </InfoboxRow>
       <InfoboxHeader>Throwable Capacity</InfoboxHeader>
       <InfoboxRow>
-        {["frag_grenade", "smoke_grenade"].map((throwable) => (
+        {["frag_grenade", "smoke_grenade"].map(throwable => (
           <InfoboxColumn
             key={throwable}
-            title={
+            title={(
               <div className="flex justify-center">
                 <Image
-                  src={getSuroiImageLink(getSuroiItem(throwable)!)}
+                  src={getSuroiImageLink(getSuroiItem(throwable))}
                   alt={throwable}
                   width={40}
                   height={40}
                 />
               </div>
-            }
+            )}
+          >
+            {item.maxCapacity[throwable]}
+          </InfoboxColumn>
+        ))}
+      </InfoboxRow>
+      <InfoboxRow>
+        {["confetti_grenade", "c4"].map(throwable => (
+          <InfoboxColumn
+            key={throwable}
+            title={(
+              <div className="flex justify-center">
+                <Image
+                  src={getSuroiImageLink(getSuroiItem(throwable))}
+                  alt={throwable}
+                  width={40}
+                  height={40}
+                />
+              </div>
+            )}
           >
             {item.maxCapacity[throwable]}
           </InfoboxColumn>

@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 
   title: {
     default: "Suroi Wiki",
-    template: "%s | Suroi Wiki",
+    template: "%s | Suroi Wiki"
   },
   description:
     "The official wiki for Suroi, an open-source 2D battle royale game inspired by surviv.io.",
   openGraph: {
-    type: "website",
+    type: "website"
   },
   keywords: [
     "suroi",
@@ -29,22 +29,22 @@ export const metadata: Metadata = {
     "open-source",
     "battle-royale",
     "community",
-    "shooter",
+    "shooter"
   ],
   twitter: {
-    card: "summary_large_image",
-  },
+    card: "summary_large_image"
+  }
 };
 
 export const viewport: Viewport = {
   themeColor: "#ff7300",
-  colorScheme: "dark",
+  colorScheme: "dark"
 };
 
 export default function RootLayout({
-  children,
+  children
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">

@@ -3,22 +3,22 @@
 import { easeLinear } from "@/lib/util/animation";
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import { SVGObject } from "@/lib/util/types";
-import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/melees";
-import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
+import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/items/melees";
+import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/items/skins";
 import { useEffect, useState } from "react";
 import SVGObjectRenderer from "../SVGObjectRenderer";
 
 export default function PlayerHoldingMelee({
   melee,
   skin,
-  use,
+  use
 }: PlayerHoldingMeleeProps) {
   const fps = 60;
-  const modes: ("Hold" | "Used" | "Animate" | "Pause")[] = [
+  const modes: Array<"Hold" | "Used" | "Animate" | "Pause"> = [
     "Hold",
     "Used",
     "Animate",
-    "Pause",
+    "Pause"
   ];
   const [currentMode, setCurrentMode] = useState<
     "Hold" | "Used" | "Animate" | "Pause"
@@ -38,19 +38,19 @@ export default function PlayerHoldingMelee({
     x: easeLinear(
       melee.image?.position.x ?? 0,
       melee.image?.usePosition.x ?? 0,
-      progress,
+      progress
     ),
     y: easeLinear(
       melee.image?.position.y ?? 0,
       melee.image?.usePosition.y ?? 0,
-      progress,
+      progress
     ),
     rotation: easeLinear(
       melee.image?.angle ?? 0,
       melee.image?.useAngle ?? 0,
-      progress,
+      progress
     ),
-    zIndex: 1,
+    zIndex: 1
   };
 
   const leftFist: SVGObject = {
@@ -59,14 +59,14 @@ export default function PlayerHoldingMelee({
     x: easeLinear(
       melee.fists.left.x,
       melee.fists.useLeft.x,
-      progress * (!fist ? 1 : randomFist),
+      progress * (!fist ? 1 : randomFist)
     ),
     y: easeLinear(
       melee.fists.left.y,
       melee.fists.useLeft.y,
-      progress * (!fist ? 1 : randomFist),
+      progress * (!fist ? 1 : randomFist)
     ),
-    zIndex: 4,
+    zIndex: 4
   };
 
   const rightFist: SVGObject = {
@@ -75,14 +75,14 @@ export default function PlayerHoldingMelee({
     x: easeLinear(
       melee.fists.right.x,
       melee.fists.useRight.x,
-      progress * (fist ? 1 : randomFist),
+      progress * (fist ? 1 : randomFist)
     ),
     y: easeLinear(
       melee.fists.right.y,
       melee.fists.useRight.y,
-      progress * (fist ? 1 : randomFist),
+      progress * (fist ? 1 : randomFist)
     ),
-    zIndex: 4,
+    zIndex: 4
   };
 
   useEffect(() => {
@@ -115,11 +115,11 @@ export default function PlayerHoldingMelee({
             {
               type: "image",
               url: getSuroiImageLink(skin, undefined, "base"),
-              zIndex: 2,
+              zIndex: 2
             },
             leftFist,
             rightFist,
-            weapon,
+            weapon
           ]}
         />
       </svg>
@@ -141,7 +141,7 @@ export default function PlayerHoldingMelee({
 }
 
 export interface PlayerHoldingMeleeProps extends React.PropsWithChildren {
-  melee: MeleeDefinition;
-  skin: SkinDefinition;
-  use: boolean;
+  melee: MeleeDefinition
+  skin: SkinDefinition
+  use: boolean
 }

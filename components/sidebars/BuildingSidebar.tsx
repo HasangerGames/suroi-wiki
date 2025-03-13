@@ -1,9 +1,7 @@
 import {
   buildingParents,
-  buildingVariations,
   getSuroiBuilding,
-  getSuroiImageLink,
-  getSuroiObstacle,
+  getSuroiObstacle
 } from "@/lib/util/suroi";
 import { BuildingDefinition } from "@/vendor/suroi/common/src/definitions/buildings";
 import Link from "../links/Link";
@@ -11,22 +9,34 @@ import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
+import RenderedBuilding, { RENDERED_BUILDING_VIEWS } from "../svg/special/RenderedBuilding";
+
+const viewMap: Record<typeof RENDERED_BUILDING_VIEWS[number], string> = {
+  bunker: "Underground",
+  first_floor: "1st Floor",
+  second_floor: "2nd Floor",
+  ceiling: "Outside"
+};
 
 export default function BuildingSidebar({
-  item,
+  item
 }: {
-  item: BuildingDefinition;
+  item: BuildingDefinition
 }) {
   const parents = buildingParents(item);
 
   return (
     <GenericSidebar
       title={item.name}
-      image={getSuroiImageLink(item)}
-      imageVariations={buildingVariations(item).map((variation) => ({
-        type: "image",
-        url: variation,
-      }))}
+      imageVariations={
+        RENDERED_BUILDING_VIEWS.map(view => ({
+          type: "react",
+          title: viewMap[view],
+          children: <RenderedBuilding building={item} view={view}></RenderedBuilding>,
+          classes: "w-full p-1 aspect-square"
+        }))
+      }
+      initialTab={3}
     >
       <InfoboxHeader>Contains</InfoboxHeader>
       <InfoboxRow>
@@ -40,35 +50,36 @@ export default function BuildingSidebar({
             <div className="flex flex-wrap justify-around gap-2">
               {item.obstacles && item.obstacles.length > 0
                 ? item.obstacles
-                    .map((obstacle) => {
-                      if (typeof obstacle.idString !== "string")
-                        return Object.keys(obstacle.idString).map((key) => ({
-                          ...obstacle,
-                          idString: key,
-                        }));
-                      return obstacle;
-                    })
-                    .flat()
-                    // https://stackoverflow.com/a/36744732
-                    // filter out duplicate objects but with different positions
-                    .filter(
-                      (obstacle, index, self) =>
-                        index ===
-                        self.findIndex(
-                          (t) =>
-                            t.idString.toString() ===
-                            obstacle.idString.toString(),
-                        ),
-                    )
-                    .map((obstacle) => (
-                      <Link
-                        href={`/obstacles/${obstacle.idString}`}
-                        key={obstacle.idString.toString()}
-                      >
-                        {getSuroiObstacle(obstacle.idString.toString())?.name ??
-                          obstacle.idString.toString()}
-                      </Link>
-                    ))
+                  .map(obstacle => {
+                    if (typeof obstacle.idString !== "string") {
+                      return Object.keys(obstacle.idString).map(key => ({
+                        ...obstacle,
+                        idString: key
+                      }));
+                    }
+                    return obstacle;
+                  })
+                  .flat()
+                // https://stackoverflow.com/a/36744732
+                // filter out duplicate objects but with different positions
+                  .filter(
+                    (obstacle, index, self) =>
+                      index
+                      === self.findIndex(
+                        t =>
+                          t.idString.toString()
+                          === obstacle.idString.toString()
+                      )
+                  )
+                  .map(obstacle => (
+                    <Link
+                      href={`/obstacles/${obstacle.idString}`}
+                      key={obstacle.idString.toString()}
+                    >
+                      {getSuroiObstacle(obstacle.idString.toString())?.name
+                      ?? obstacle.idString.toString()}
+                    </Link>
+                  ))
                 : "None"}
             </div>
           </div>
@@ -85,37 +96,38 @@ export default function BuildingSidebar({
             <div className="flex flex-wrap justify-around gap-2">
               {item.subBuildings && item.subBuildings.length > 0
                 ? item.subBuildings
-                    .map((subBuildings) => {
-                      if (typeof subBuildings.idString !== "string")
-                        return Object.keys(subBuildings.idString).map(
-                          (key) => ({
-                            ...subBuildings,
-                            idString: key,
-                          }),
-                        );
-                      return subBuildings;
-                    })
-                    .flat()
-                    // https://stackoverflow.com/a/36744732
-                    // filter out duplicate objects but with different positions
-                    .filter(
-                      (subBuildings, index, self) =>
-                        index ===
-                        self.findIndex(
-                          (t) =>
-                            t.idString.toString() ===
-                            subBuildings.idString.toString(),
-                        ),
-                    )
-                    .map((subBuildings) => (
-                      <Link
-                        href={`/buildings/${subBuildings.idString}`}
-                        key={subBuildings.idString.toString()}
-                      >
-                        {getSuroiBuilding(subBuildings.idString.toString())
-                          ?.name ?? subBuildings.idString.toString()}
-                      </Link>
-                    ))
+                  .map(subBuildings => {
+                    if (typeof subBuildings.idString !== "string") {
+                      return Object.keys(subBuildings.idString).map(
+                        key => ({
+                          ...subBuildings,
+                          idString: key
+                        })
+                      );
+                    }
+                    return subBuildings;
+                  })
+                  .flat()
+                // https://stackoverflow.com/a/36744732
+                // filter out duplicate objects but with different positions
+                  .filter(
+                    (subBuildings, index, self) =>
+                      index
+                      === self.findIndex(
+                        t =>
+                          t.idString.toString()
+                          === subBuildings.idString.toString()
+                      )
+                  )
+                  .map(subBuildings => (
+                    <Link
+                      href={`/buildings/${subBuildings.idString}`}
+                      key={subBuildings.idString.toString()}
+                    >
+                      {getSuroiBuilding(subBuildings.idString.toString())
+                        ?.name ?? subBuildings.idString.toString()}
+                    </Link>
+                  ))
                 : "None"}
             </div>
           </div>
@@ -130,19 +142,19 @@ export default function BuildingSidebar({
               <div className="flex flex-col gap-2">
                 {(parents.length ?? 0) > 0 && (
                   <div>
-                    <span>({parents.length} Buildings)</span>
+                    <span>({parents.length} Building{parents.length !== 1 ? "s" : ""})</span>
                   </div>
                 )}
                 <div className="flex flex-wrap justify-around gap-2">
                   {parents.length > 0
-                    ? parents.map((parent) => (
-                        <Link
-                          href={`/buildings/${parent.idString}`}
-                          key={parent.idString.toString()}
-                        >
-                          {parent.name ?? parent.idString.toString()}
-                        </Link>
-                      ))
+                    ? parents.map(parent => (
+                      <Link
+                        href={`/buildings/${parent.idString}`}
+                        key={parent.idString.toString()}
+                      >
+                        {parent.name ?? parent.idString.toString()}
+                      </Link>
+                    ))
                     : "None"}
                 </div>
               </div>

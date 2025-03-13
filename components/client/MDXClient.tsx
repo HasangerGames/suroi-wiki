@@ -7,6 +7,7 @@ import Spoiler from "../articles/Spoiler";
 import Gallery from "../articles/gallery/Gallery";
 import DevWeapon from "../articles/notices/DevWeapon";
 import Empty from "../articles/notices/Empty";
+import Mode from "../articles/notices/Mode";
 import EventItem from "../articles/notices/Event";
 import Removed from "../articles/notices/Removed";
 import Stub from "../articles/notices/Stub";
@@ -17,6 +18,7 @@ import TimeLink from "../links/TimeLink";
 const components = {
   Link,
   Event: EventItem,
+  Mode,
   TimeLink,
   FileLink,
   CommitLink,
@@ -28,7 +30,7 @@ const components = {
   Empty,
   a: (props: HTMLProps<HTMLAnchorElement>) => (
     <Link href={props.href!}>{props.children}</Link>
-  ),
+  )
 };
 
 export default function MDXClient(props: MDXRemoteProps) {

@@ -1,4 +1,7 @@
-import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import {
+  ObjectDefinition,
+  ObjectDefinitions
+} from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { notFound } from "next/navigation";
 import React, { ComponentType } from "react";
 
@@ -9,29 +12,29 @@ import React, { ComponentType } from "react";
  * @returns Is a HOC that returns a layout to export to Next,js
  */
 export default function GenericLayoutFactory<T extends ObjectDefinition>(
-  args: GenericLayoutFactoryArgs<T>,
+  args: GenericLayoutFactoryArgs<T>
 ) {
   return function GenericLayout({
     children,
-    params,
+    params: { item }
   }: {
     params: {
-      item: string;
-    };
+      item: string
+    }
   } & React.PropsWithChildren) {
-    const item = args.items.find((item) => item.idString === params.item);
-    if (!item) notFound();
+    const def = args.items.fromStringSafe(item);
+    if (!def) notFound();
 
     return (
       <>
         <div className="grow prose prose-invert">
-          <h1 className="hidden sm:block">{item.name}</h1>
+          <h1 className="hidden sm:block">{def.name}</h1>
           {children}
         </div>
-        <args.Sidebar item={item} />
+        <args.Sidebar item={def} />
         {/* here because reverse flex-col */}
         <div className="prose prose-invert sm:hidden">
-          <h1>{item.name}</h1>
+          <h1>{def.name}</h1>
         </div>
       </>
     );
@@ -39,6 +42,6 @@ export default function GenericLayoutFactory<T extends ObjectDefinition>(
 }
 
 export interface GenericLayoutFactoryArgs<T extends ObjectDefinition> {
-  Sidebar: ComponentType<{ item: T }>;
-  items: T[];
+  Sidebar: ComponentType<{ item: T }>
+  items: ObjectDefinitions<T>
 }

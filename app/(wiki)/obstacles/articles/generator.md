@@ -1,8 +1,8 @@
-The **Generator** is an interactive [Obstacle](/obstacles) added in the v0.11.0 "Making Waves" update on October 22nd, 2023.
+The **Generator** is an interactive [Obstacle](/obstacles) added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023.
 
 # Location & Spawning
 
-The Generator always spawns near the front of the [Ship](/buildings/ship) next to the vault.
+The Generator always spawns near the front of the [Cargo Ship](/buildings/cargo_ship) next to the vault.
 
 # Loot & More
 
@@ -14,10 +14,11 @@ The Generator is indestructible and therefore drops no loot. When interacting wi
 
 # Trivia
 
-- The Generator was designed by platonthek
-- In real life, Generators are machines that convert potential, kinetic, or chemical energy into electricity. The Generator in suroi is a fuel-based generator since it requires Gas to operate
+- In real life, Generators are machines that convert potential, kinetic, or chemical energy into electricity.
+- The sounds for the Generator came from a Yanmar 3TNA72UJ3 3-cylinder Diesel engine inside a John Deere 455.
+  - This engine produces 22 hp, or 16.4kW of power.
 
 # History
 
-- v0.11.0
+- [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0)
   - Added

@@ -18,27 +18,28 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-2">
           <b>Pages</b>
-          {wikiPages.map((page) => (
+          {wikiPages.map(page => (
             <FooterLink key={page.url} href={page.url}>
               {page.name}
             </FooterLink>
           ))}
         </div>
         <div className="flex flex-col gap-2">
-          <b>Source code</b>
-          <FooterLink href="https://github.com/hasangergames/suroi">
-            Suroi Github
+          <b>Source Code</b>
+          <FooterLink href="https://github.com/HasangerGames/suroi">
+            Suroi GitHub
           </FooterLink>
-          <FooterLink href="https://github.com/hasangergames/suroi-wiki">
-            Wiki Github
+          <FooterLink href="https://github.com/HasangerGames/suroi-wiki">
+            Wiki GitHub
           </FooterLink>
         </div>
         <div className="flex flex-col gap-2">
           <b>Credits</b>
-          <span>Made with love by Compositr and Kenos</span>
-          <FooterLink href="/credits">Game and Wiki Credits</FooterLink>
-          <FooterLink href="https://nextjs.org">NextJS by Vercel</FooterLink>
-          <FooterLink href="https://tailwindcss.org">TailwindCSS</FooterLink>
+          <span>Made with love by Compositr, Kenos, and zedaes ❤️</span>
+          <span>Maintained by the Wiki Team ❤️</span>
+          <FooterLink href="/credits">Wiki, Game, Art and Sound Credits</FooterLink>
+          <FooterLink href="https://nextjs.org">Next.JS by Vercel</FooterLink>
+          <FooterLink href="https://tailwindcss.com">TailwindCSS</FooterLink>
           <FooterLink href="https://fusejs.io">Fuse.js</FooterLink>
         </div>
       </div>
@@ -48,7 +49,7 @@ export default function Footer() {
 
 function FooterLink({
   href,
-  children,
+  children
 }: React.PropsWithChildren & { href: string }) {
   return (
     <NextLink href={href} className="w-fit hover:text-white transition-colors">

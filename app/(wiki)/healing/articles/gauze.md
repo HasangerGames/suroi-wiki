@@ -1,14 +1,14 @@
-**Gauze** is a consumable that heals 15 health, added in the v0.4.0 "Supplies received" update on June 17th, 2023. They spawn very commonly around the map in stacks of 5. To use gauze, either click on the icon in your inventory or press 5 on your keyboard. Gauze takes 3 seconds to use.
+**Gauze** is a consumable that heals 15 health, added in the [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0) "Supplies received" update on June 17th, 2023. They spawn very commonly around the map in stacks of 5. To use gauze, either click on the icon in your inventory or press 7 on your keyboard. Gauze takes 3 seconds to use.
 
 # Background
 
-Gauze intended for use as a medical item is typically made of cotton. It is useful for wounds where other fabrics might stick to the wound, such as burns.
+Gauze intended for use as a medical item is typically made of cotton. It is useful for wounds where other fabrics might stick to the wound, such as burns. Learn more about the gauze [here](https://en.wikipedia.org/wiki/Gauze_sponge).
 
 # Strategies
 
 ## Using
 
-- Use bandages if you either don't have a Medikit or your health isn't very low. You may want to use Gauze to conserve Medikits for later in the game.
+- Use Gauzes if you either don't have a Medikit or your health isn't very low. You may want to use Gauze to conserve Medikits for later in the game.
 - If you have a lot of time or aren't in an engagement, you can use 5 or 6 Gauze instead of a Medikit.
   - This works best when taking adrenaline such as Tablets or Cola first, as it will heal you while you use the Gauze.
 - Make sure you are in a safe and/or easily defensible location when using Gauze, as the slowdown makes you vulnerable.
@@ -21,18 +21,18 @@ Gauze intended for use as a medical item is typically made of cotton. It is usef
 
 # Obtaining
 
-Gauze is a very common drop from crates, toilets, and the toilet in a Porta Potty. It can also be readily found as ground loot.
+Gauze is a very common drop from crates, toilets, and the toilet in a Porta Potty. It can also be readily found as ground loot and in berry bushes.
 
 # Trivia
 
-- Before Gauze and other consumables were added, the only way to heal yourself was to break a Health Crate
-  - Health Crates have now been removed from the game
+- Before Gauze and other consumables were added, the only way to heal yourself was to break a Health Crate.
+  - Health Crates have now been removed from the game.
 
 # History
 
-- v0.8.0
+- [v0.8.0](https://github.com/HasangerGames/suroi/releases/tag/v0.8.0)
   - Usage time increased to 3s (from 2s)
-- v0.5.0
+- [v0.5.0](https://github.com/HasangerGames/suroi/releases/tag/v0.5.0)
   - Gauze can now be added to a Player's inventory
-- v0.4.0
+- [v0.4.0](https://github.com/HasangerGames/suroi/releases/tag/v0.4.0)
   - Added

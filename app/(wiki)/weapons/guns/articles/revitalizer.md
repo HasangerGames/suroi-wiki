@@ -1,6 +1,6 @@
 <DevWeapon />
 
-The **Revitalizer** is a dev-only shotgun firing 12-gauge ammunition. It was secretly added in the v0.9.0 "Behind Closed Doors" update on July 30th, 2023. While initially decreasing both the player's maximum health and adrenaline, it will increase those two greatly beyond their normal amounts if the user kills players with it. Its effects—both positive and negative—stack in two ways; by getting multiple kills and by equipping multiple Revitalizers.
+The **Revitalizer** is a dev-only shotgun firing 12-gauge ammunition. It was secretly added in the [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0) "Behind Closed Doors" update on July 30th, 2023. While initially decreasing both the player's maximum health and adrenaline, it will increase those two greatly beyond their normal amounts if the user kills players with it. Its effects—both positive and negative—stack in two ways; by getting multiple kills and by equipping multiple Revitalizers.
 
 # Strategies
 
@@ -17,7 +17,7 @@ The **Revitalizer** is a dev-only shotgun firing 12-gauge ammunition. It was sec
 
 - Pick on low-boost players. Typically, they will play more defensively and will be moving at regular speed. Here, you'll have 4 times their health, so almost any weapon can take them down, even weapons traditionally countered by shotguns.
 - A boosted Revitalizer player is very, very hard to take down. The only thing capable of cleanly taking down a fully boosted (whether single or double) player is the [Large Refinery Barrel](/obstacles/large_refinery_barrel). Thus, your best option is usually to try and disengage; a 1v1 fight with a boosted Revitalizer is extremely in favor of the Revitalizer player, and depending on how boosted they are, even 2 or 3 players might not be enough.
-  - That being said, the [Death Ray](/weapons/guns/deathray) wins against Revitalizer.
+  - That being said, the [Death Ray](/weapons/guns/death_ray) wins against Revitalizer.
 - Stats-wise, it's the same as the Model 37, except for the health/adrenaline-altering things; this means that staying out of its range is a viable strategy. Just be careful, as a boosted player may be able to close the distance
 
 # Obtaining
@@ -29,7 +29,7 @@ As a dev-only weapon, the Revitalizer is only obtainable by Developers. However,
 - It is a [Model 37](/weapons/guns/model_37) with a pistol grip, telescoping stock, and a custom pump.
   - One can spot a device mounted similarly to sight above the gun, with a red wire connecting it to an object
     fixed to the muzzle. Presumably, this device is the cause of the gun's unique properties.
-- The pellets fired from this weapon are always spread out in a uniformly distributed pattern.
+- The pellets fired from this weapon are always spread out in a uniformly distributed pattern, with a bias towards sending pellets parallel to the aim line.
 - The effects of the Revitalizer stack if one equips multiple; here's a table showing the various combinations.
 
 <table>
@@ -191,11 +191,25 @@ As a dev-only weapon, the Revitalizer is only obtainable by Developers. However,
 
 # History
 
-- v0.12.1
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
+  - Consistent patterning buffed so that the pellet distribution is biased towards the center
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+  - Casing velocity y-component set to ±[2, 5]
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
+  - Tracer length set to 0.7
+- [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)
   - Move speed penalty increased to 8% (from 7%)
-  - Adjusted length
-- v0.10.0
+  - Length decreased to 7.5 (from 10)
+  - Left fist moved to (120, -2) (from (150, -6))
+  - Right fist x-offset decreased to 45 (from 75)
+  - Right fist z-index set to 4
+  - Image x-offset decreased to 80 (from 90)
+  - Casing spawn delay set to 450ms
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
+  - Length increased to 10 (from 8)
+  - Consistent patterning enabled
+  - Added casing particles
   - Kills now always restore 230 health and 30 adrenaline
   - Every pellet now restores 2 health (previously 1) and 1.5 adrenaline (previously 1)
-- v0.9.0
+- [v0.9.0](https://github.com/HasangerGames/suroi/releases/tag/v0.9.0)
   - Secretly added

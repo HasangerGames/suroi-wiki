@@ -7,15 +7,15 @@ import { getSuroiImageLink } from "@/lib/util/suroi";
 import {
   ArmorDefinition,
   ArmorType,
-  Armors,
-} from "@/vendor/suroi/common/src/definitions/armors";
+  Armors
+} from "@/vendor/suroi/common/src/definitions/items/armors";
 import Image from "next/image";
 
 const Helmets = Armors.definitions.filter(
-  (armor) => armor.armorType === ArmorType.Helmet,
+  armor => armor.armorType === ArmorType.Helmet
 );
 const Vests = Armors.definitions.filter(
-  (armor) => armor.armorType === ArmorType.Vest,
+  armor => armor.armorType === ArmorType.Vest
 );
 
 const vest2 = Vests[2];
@@ -53,7 +53,7 @@ export default function ArmorPage() {
         <TableWithHeader
           title="Armor Statistics"
           header={["Armor", "Level", "Damage Reduction"]}
-          content={[...Vests, ...Helmets].map((armor) => [
+          content={[...Vests, ...Helmets].map(armor => [
             <>
               <Image
                 src={getSuroiImageLink(armor)}
@@ -67,7 +67,7 @@ export default function ArmorPage() {
               </Link>
             </>,
             armor.level,
-            armor.damageReduction * 100 + "%",
+            `${armor.damageReduction * 100}%`
           ])}
         />
       </div>
@@ -76,7 +76,7 @@ export default function ArmorPage() {
           title="Damage Reduction & Effective Health Table"
           tHeader={[
             "None",
-            ...Vests.map((vest) => (
+            ...Vests.map(vest => (
               <>
                 <Image
                   src={getSuroiImageLink(vest)}
@@ -89,11 +89,11 @@ export default function ArmorPage() {
                   {vest.name}
                 </Link>
               </>
-            )),
+            ))
           ]}
           lHeader={[
             "None",
-            ...Helmets.map((helmet) => (
+            ...Helmets.map(helmet => (
               <>
                 <Image
                   src={getSuroiImageLink(helmet)}
@@ -106,45 +106,45 @@ export default function ArmorPage() {
                   {helmet.name}
                 </Link>
               </>
-            )),
+            ))
           ]}
           content={[
             {
               idString: "",
               name: "(None)",
-              damageReduction: 0,
+              damageReduction: 0
             } as ArmorDefinition,
-            ...Helmets,
-          ].map((helmet) =>
+            ...Helmets
+          ].map(helmet =>
             [
               {
                 idString: "",
                 name: "(None)",
-                damageReduction: 0,
+                damageReduction: 0
               } as ArmorDefinition,
-              ...Vests,
-            ].map((vest) => (
+              ...Vests
+            ].map(vest => (
               <div key="" className="flex flex-col gap-1">
                 <div>
                   <b>
                     <abbr title="Damage Reduction">DR</abbr>:
                   </b>{" "}
-                  {(
-                    (helmet.damageReduction + vest.damageReduction) *
-                    100
-                  ).toFixed(0) + "%"}
+                  {`${(
+                    (helmet.damageReduction + vest.damageReduction)
+                    * 100
+                  ).toFixed(0)}%`}
                 </div>
                 <div>
                   <b>
                     <abbr title="Effective Health">EHP</abbr>:
                   </b>{" "}
                   {(
-                    100 /
-                    (1 - helmet.damageReduction - vest.damageReduction)
+                    100
+                    / (1 - helmet.damageReduction - vest.damageReduction)
                   ).toFixed(2)}
                 </div>
               </div>
-            )),
+            ))
           )}
         />
       </div>

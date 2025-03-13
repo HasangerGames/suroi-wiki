@@ -1,124 +1,149 @@
 import { ObjectCategory } from "@/vendor/suroi/common/src/constants";
+import { EmoteDefinition, Emotes } from "@/vendor/suroi/common/src/definitions/emotes";
 import {
   BuildingDefinition,
-  Buildings,
+  Buildings
 } from "@/vendor/suroi/common/src/definitions/buildings";
 import {
   DecalDefinition,
-  Decals,
+  Decals
 } from "@/vendor/suroi/common/src/definitions/decals";
-import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import { Guns } from "@/vendor/suroi/common/src/definitions/items/guns";
 import {
   LootDefinition,
   Loots,
-  WeaponDefinition,
+  WeaponDefinition
 } from "@/vendor/suroi/common/src/definitions/loots";
-import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
+import { Melees } from "@/vendor/suroi/common/src/definitions/items/melees";
 import {
   ObstacleDefinition,
-  Obstacles,
+  Obstacles
 } from "@/vendor/suroi/common/src/definitions/obstacles";
+import { PerkCategories, PerkDefinition, Perks } from "@/vendor/suroi/common/src/definitions/items/perks";
+import { SyncedParticleDefinition } from "@/vendor/suroi/common/src/definitions/syncedParticles";
 import {
-  InventoryItemDefinition,
-  ItemDefinition,
   ItemType,
   ObjectDefinition,
+  ReferenceTo
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import { readdirSync, statSync } from "fs";
+import { resolve, sep } from "path";
 
 export function getSuroiItem(idString: string) {
-  return Loots.definitions.find((item) => item.idString === idString);
+  return Loots.fromString(idString);
 }
 
 export function getSuroiObstacle(idString: string) {
-  return Obstacles.definitions.find((item) => item.idString === idString);
+  return Obstacles.fromString(idString);
 }
 
 export function getSuroiBuilding(idString: string) {
-  return Buildings.definitions.find((item) => item.idString === idString);
+  return Buildings.fromString(idString);
 }
 
 export const IMAGE_BASE_URLS = {
   // Items
-  Gun: "game/weapons",
-  Ammo: "game/loot",
-  Melee: "game/weapons",
-  Throwable: "game/weapons",
-  Healing: "game/loot",
-  Armor: "game/loot",
-  Backpack: "game/loot",
-  Scope: "game/loot",
-  Skin: "game/skins",
-  ThrowableProjectile: "game/projectiles/throwables",
+  Gun: "/weapons",
+  Ammo: "/loot",
+  Melee: "/weapons",
+  Throwable: "/weapons",
+  Healing: "/loot",
+  Armor: "/loot",
+  Backpack: "/loot",
+  Scope: "/loot",
+  Skin: "/skins",
+  ThrowableProjectile: "/projectiles",
+  Perk: "/perks",
 
   // Objects
   Player: "",
   DeathMarker: "",
-  Obstacle: "game/obstacles",
-  Loot: "game/loot",
-  Building: "game/buildings",
-  Decal: "game/decals",
-  Parachute: "game/airdrop",
-  SyncedParticle: "game/particles",
+  Obstacle: "/obstacles",
+  Loot: "/loot",
+  Building: "/buildings",
+  Decal: "/decals",
+  Parachute: "/airdrop",
+  SyncedParticle: "/particles"
 } satisfies Record<keyof typeof ItemType | keyof typeof ObjectCategory, string>;
 
-export const BRANCH = "master";
+export const TEXTURE_PATHS: Record<string, string> = {};
+
+if (typeof window === "undefined" && readdirSync) {
+  const readDirectory = (dir: string): string[] => {
+    let results: string[] = [];
+    const files = readdirSync(dir);
+
+    for (const file of files) {
+      const filePath = resolve(dir, file);
+      const stat = statSync(filePath);
+
+      if (stat?.isDirectory()) {
+        const res = readDirectory(filePath);
+        results = results.concat(res);
+      } else results.push(filePath);
+    }
+
+    return results;
+  };
+
+  for (const folder of ["birthday", "halloween", "fall", "winter", "normal", "shared"] as const) {
+    for (const file of readDirectory(`vendor/suroi/client/public/img/game/${folder}`)) {
+      TEXTURE_PATHS[file.slice(file.lastIndexOf(sep) + 1, -4)] = folder;
+    }
+  }
+}
 
 export const WIKI_BRANCH = "main";
 
-export const BASE_URL = `https://raw.githubusercontent.com/HasangerGames/suroi/${BRANCH}/`;
+export const WIKI_URL = "https://github.com/HasangerGames/suroi-wiki/";
 
-export const REPO_URL = "https://github.com/HasangerGames/suroi/";
+export const BRANCH = "master";
 
-export const REPO_BRANCH_URL = `${REPO_URL}blob/${BRANCH}/`;
+export const BASE_URL = "https://suroi.io";
 
-export const WIKI_URL = `https://github.com/HasangerGames/suroi-wiki/`;
+export const IMAGE_BASE_URL = `${BASE_URL}/img`;
 
-export const IMAGE_BASE_URL = `${BASE_URL}client/public/img/`;
+export const SOUND_BASE_URL = `${BASE_URL}/audio`;
 
-export const SOUND_BASE_URL = `${REPO_URL}raw/${BRANCH}/client/public/audio/`;
+export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/shared/_missing_texture.svg`;
 
-type ObjectCategoryMapping<Category extends ObjectCategory> =
-  Category extends ObjectCategory.Obstacle
-    ? ObstacleDefinition
-    : Category extends ObjectCategory.Building
-      ? BuildingDefinition
-      : Category extends ObjectCategory.Decal
-        ? DecalDefinition
-        : Category extends ObjectCategory.Loot
-          ? LootDefinition
-          : never;
+type ObjectCategoryMapping<Category extends ObjectCategory> = {
+  readonly [ObjectCategory.Player]: never
+  readonly [ObjectCategory.Obstacle]: ObstacleDefinition
+  readonly [ObjectCategory.DeathMarker]: never
+  readonly [ObjectCategory.Loot]: LootDefinition
+  readonly [ObjectCategory.Building]: BuildingDefinition
+  readonly [ObjectCategory.Decal]: DecalDefinition
+  readonly [ObjectCategory.Parachute]: never
+  readonly [ObjectCategory.ThrowableProjectile]: never
+  readonly [ObjectCategory.SyncedParticle]: SyncedParticleDefinition
+}[Category];
 
-export const MISSING_TEXTURE = `${IMAGE_BASE_URL}/game/_missing_texture.svg`;
+export function getSuroiImageLink(obj: ObjectDefinition, variation?: number, append?: string | string[], dual?: boolean) {
+  switch (true) {
+    // Is it an item?
+    case "itemType" in obj:
+      return _itemImageLink(
+        obj.idString,
+        obj.itemType,
+        variation,
+        append,
+        dual
+      );
 
-export function getSuroiImageLink<
-  T extends ObjectDefinition | ItemDefinition | InventoryItemDefinition,
->(obj: T, variation?: number, append?: string | string[], dual?: boolean) {
-  // Is obj an item?
-  if ("itemType" in obj)
-    return _itemImageLink(obj.idString, obj.itemType, variation, append, dual);
+    case isBuilding(obj): return imageLink(obj, ObjectCategory.Building, variation);
+    case isObstacle(obj): return imageLink(obj, ObjectCategory.Obstacle, variation);
+    case isDecal(obj): return imageLink(obj, ObjectCategory.Decal, variation);
+    case isLoot(obj): return imageLink(obj, ObjectCategory.Loot, variation);
+    case isEmote(obj): return `${IMAGE_BASE_URL}/game/shared/emotes/${obj.idString}.svg`;
 
-  // Is a building?
-  if (isBuilding(obj))
-    return _otherImageLink(obj, ObjectCategory.Building, variation);
-
-  // Is an obstacle?
-  if (isObstacle(obj))
-    return _otherImageLink(obj, ObjectCategory.Obstacle, variation);
-
-  // Is a decal?
-  if (isDecal(obj))
-    return _otherImageLink(obj, ObjectCategory.Decal, variation);
-
-  // Is loot? (should be covered by items already)
-  if (isLoot(obj)) return _otherImageLink(obj, ObjectCategory.Loot, variation);
-
-  // Return missing texture
-  return MISSING_TEXTURE;
+    default: return MISSING_TEXTURE;
+  }
 }
 
 export function getSuroiKillfeedImageLink(
   source?: WeaponDefinition,
-  explosionID?: string,
+  explosionID?: string
 ) {
   return `${IMAGE_BASE_URL}/killfeed/${
     source?.idString ?? explosionID
@@ -130,52 +155,36 @@ function _itemImageLink(
   itemType: ItemType,
   variation?: number,
   append?: string | string[],
-  dual?: boolean,
+  dual?: boolean
 ) {
-  return `${IMAGE_BASE_URL}${
+  return `${IMAGE_BASE_URL}/game/${itemType === ItemType.Perk ? Perks.fromString(idString as ReferenceTo<PerkDefinition>).category === PerkCategories.Halloween ? "halloween" : "fall" : "shared"}${
     IMAGE_BASE_URLS[ItemType[itemType] as keyof typeof ItemType]
   }/${dual ? idString : idString.replace("dual_", "")}${
     variation ? `_${variation}` : ""
   }${
     append
       ? Array.isArray(append)
-        ? "_" + append.join("_")
+        ? `_${append.join("_")}`
         : `_${append}`
       : ""
   }.svg`;
 }
 
-function _otherImageLink<Category extends ObjectCategory>(
-  obj: ObjectCategoryMapping<Category>,
+export function imageLink<Category extends ObjectCategory>(
+  obj: ObjectCategoryMapping<Category> | string,
   category: Category,
-  variation?: number,
+  variation?: number
 ) {
   const key = ObjectCategory[category] as keyof typeof ObjectCategory;
-
-  return `${IMAGE_BASE_URL}${IMAGE_BASE_URLS[key]}/${
-    isBuilding(obj)
-      ? obj.ceilingImages?.[0].key || obj.floorImages?.[0].key
-      : obj.idString
-  }${variation ? `_${variation}` : ""}.svg`;
-}
-
-export function buildingVariations(building: BuildingDefinition) {
-  return [
-    ...(building?.ceilingImages?.map(
-      (image) =>
-        `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`,
-    ) ?? []),
-    ...(building?.floorImages?.map(
-      (image) =>
-        `${IMAGE_BASE_URL}${IMAGE_BASE_URLS.Building}/${image.key}.svg`,
-    ) ?? []),
-  ];
+  const idString = typeof obj === "string" ? obj : obj.idString;
+  const fullID = `${idString}${variation ? `_${variation}` : ""}`;
+  return `${IMAGE_BASE_URL}/game/${TEXTURE_PATHS[fullID] ?? "shared"}${IMAGE_BASE_URLS[key]}/${fullID}.svg`;
 }
 
 export function buildingParents(building: BuildingDefinition) {
   const parents = [];
   for (const b of Buildings.definitions) {
-    if (b.subBuildings?.some((sub) => sub.idString === building.idString)) {
+    if (b.subBuildings?.some(sub => sub.idString === building.idString)) {
       parents.push(b);
     }
   }
@@ -188,9 +197,9 @@ export function obstacleContainedBy(obstacle: ObstacleDefinition) {
   for (const b of Buildings.definitions) {
     if (
       b.obstacles?.some(
-        (sub) =>
-          sub.idString === obstacle.idString ||
-          Object.keys(sub.idString).some((key) => key === obstacle.idString),
+        sub =>
+          sub.idString === obstacle.idString
+          || Object.keys(sub.idString).some(key => key === obstacle.idString)
       )
     ) {
       parents.push(b);
@@ -200,40 +209,28 @@ export function obstacleContainedBy(obstacle: ObstacleDefinition) {
   return parents;
 }
 
-/**
- * Type Assertions
- */
+// #region Type Predicates
 
 export function isBuilding(obj: ObjectDefinition): obj is BuildingDefinition {
-  return Boolean(
-    Buildings.definitions.find(
-      (building) => building.idString === obj.idString,
-    ),
-  );
+  return Boolean(Buildings.fromStringSafe(obj.idString));
 }
 
 export function isObstacle(obj: ObjectDefinition): obj is ObstacleDefinition {
-  return Boolean(
-    Obstacles.definitions.find(
-      (obstacle) => obstacle.idString === obj.idString,
-    ),
-  );
+  return Boolean(Obstacles.fromStringSafe(obj.idString));
 }
 
 export function isDecal(obj: ObjectDefinition): obj is DecalDefinition {
-  return Boolean(
-    Decals.definitions.find((decal) => decal.idString === obj.idString),
-  );
+  return Boolean(Decals.fromStringSafe(obj.idString));
 }
 
 export function isLoot(obj: ObjectDefinition): obj is LootDefinition {
-  return Boolean(
-    Loots.definitions.find((loot) => loot.idString === obj.idString),
-  );
+  return Boolean(Loots.fromStringSafe(obj.idString));
 }
 
 export function isWeapon(obj: ObjectDefinition): obj is WeaponDefinition {
-  return Boolean(
-    [...Guns, ...Melees].find((weapon) => weapon.idString === obj.idString),
-  );
+  return Boolean([...Guns, ...Melees].find(weapon => weapon === obj));
+}
+
+export function isEmote(obj: ObjectDefinition): obj is EmoteDefinition {
+  return Boolean(Emotes.fromStringSafe(obj.idString));
 }

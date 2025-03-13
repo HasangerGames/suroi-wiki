@@ -1,14 +1,16 @@
 <Stub />
-The **Seax** is a melee weapon added in the v0.15.0 "Pulling the Pin" update on January 14, 2024.
+The **Seax** is a melee weapon added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14, 2024.
 
 # Background
 
-The Seax is a large single-edged blade with a tang in the centerline of the blade, inserted into an organic hilt either made of wood or horn. Its typical use is for hunting and fighting.
+The Seax is a large single-edged blade with a tang in the centerline of the blade, inserted into an organic hilt either made of wood or horn. Its typical use is for hunting and fighting. The Germanic peoples of the Migration Period and the Early Middle Ages, especially the Saxons used the Seax. The name comes from an Old English word for "knife". 
 
 # Strategies
 
+## Using
+
 - The Seax has a longer cooldown but has higher damage.
- - Make sure to time your shots well as missing one can be fatal.
+ - Make sure to time your shots well, as missing one can be fatal.
  - Think of the Seax as a buffed [Baseball Bat](/weapons/melee/baseball_bat).
 
 ## Countering
@@ -20,11 +22,9 @@ The Seax is a large single-edged blade with a tang in the centerline of the blad
 
 The Seax can only be obtained from the [Viking Chest](/obstacles/viking_chest), which always spawns once per game and is located along the shore in the map. 
 
-# Trivia
-
-- The Seax was designed by cobby and 1092384
-
 # History
 
-- v0.15.0
+- [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
+  - New texture
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added

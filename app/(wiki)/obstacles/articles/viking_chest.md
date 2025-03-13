@@ -1,4 +1,4 @@
-The **Viking Chest** is an [Obstacle](/obstacles) that was added in the v0.15.0 "Pulling the Pin" update on January 14, 2024. 
+The **Viking Chest** is an [Obstacle](/obstacles) that was added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14th, 2024. 
 
 # Location & Spawning
 
@@ -6,17 +6,13 @@ A single Viking Chest typically spawns on the beach near the shore once per game
 
 # Loot & More
 
-The Viking Chest has decent [loot](/loot#viking_crate). It drops a [Seax](/weapons/melee/seax), 2-3 [Guns](/loot#viking_chest_guns), up to two pieces of [Equipment](/loot#special_equipment), and up to two [Scopes](/loot#special_scopes).
+The Viking Chest has decent [loot](/loot#viking_crate_normal). It drops a [Seax](/weapons/melee/seax), 2-3 [Guns](/loot#viking_chest_guns_normal), up to two pieces of [Equipment](/loot#special_equipment_normal), and up to two [Scopes](/loot#special_scopes_normal).
 
 # Tips
 
-- The Viking Chest can be used as cover in certain situations, but it is more worthwhile to break them for loot.
-
-# Trivia
-
-- The Viking Chest was designed by 1092384, cobby, and kenos
+- The Viking Chest can be used as cover in certain situations, but it is more worthwhile to break it for loot.
 
 # History
 
- - v0.15.0
+ - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
    - Added

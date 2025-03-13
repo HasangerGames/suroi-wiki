@@ -3,13 +3,16 @@ import TimeLink from "@/components/links/TimeLink";
 import Removed from "@/components/articles/notices/Removed";
 import CommitLink from "@/components/links/CommitLink";
 import DevWeapon from "@/components/articles/notices/DevWeapon";
+import Mode from "@/components/articles/notices/Mode.tsx";
 import Gallery from "@/components/articles/gallery/Gallery.tsx";
 import SuroiItemImage from "@/components/articles/SuroiItemImage.tsx";
 
 # Writing Articles
 
-First of all, thanks for helping out with the documentation! Since this wiki is community-run, we need all the help we can get.
+First of all, thanks for helping out with the documentation! We need all the help we can get.<br/>
 Since this wiki is a custom coded solution, creating articles is a bit different to what you might be used to over on Fandom.
+
+If you find any grammar errors, or inconsistencies in general in the wiki, feel free to open an [issue](https://github.com/HasangerGames/suroi-wiki/issues) or [pull request](https://github.com/HasangerGames/suroi-wiki/pulls) at the [github repository](https://github.com/HasangerGames).
 
 Articles are written in [MDX](https://mdxjs.com/docs/what-is-mdx/), an extension of the typical Markdown you may be used to.
 
@@ -20,31 +23,33 @@ article (e.g., [AK47](/weapons/guns/ak47)).
 
 ## Article Layout
 
-## General Pointers
+### General Pointers
 
-- Articles should be written in American English (e.g. color rather than colo**u**r)
-- We read your article submissions to check if they are high quality and relevant
-  - We automatically spell check your submissions
+- Articles should be written in American English (e.g. color rather than colo**u**r).
+- We read your article submissions to check if they are high quality and relevant.
+  - We automatically spell check your submissions.
 
-# Syntax
+## Syntax
 
 See the [MDX](https://mdxjs.com/docs/what-is-mdx/) docs for a detailed overview of MDX. If you are new to Markdown, you can find a
 guide [here](https://www.markdownguide.org/basic-syntax/).
 
-Also, make sure to adhere to the following grammar rules:
-
-1. Use American English (e.g. color rather than colo**u**r) for all articles on the wiki.
-
 ## Extensions
 
-There are a couple MDX/JSX tags you can use to make your articles more interactive. They are listed below for your reference.
+There are a couple [MDX](https://mdxjs.com/docs/what-is-mdx/) / [JSX](https://legacy.reactjs.org/docs/introducing-jsx.html) tags you can use to make your articles more interactive. They are listed below for your reference.
 
 ### `<Event />`
 
 Shows a small banner at the top of the page like the one on the [USAS-12 Article](/weapons/guns/usas12) notifying readers
-that this item is only available in a specific event. See below:
+that this it is only found in a specific event. See below:
 
 <Event />
+
+### `<Mode />`
+
+Shows a small banner at the top of the article that is only found in a specific mode. See below:
+
+<Mode />
 
 ### `<CommitLink sha="Git SHA Hash" />`
 
@@ -61,7 +66,7 @@ See below:
 
 <TimeLink time={1699868632020} />
 
-- **time** Unix milliseconds, UTC of course
+- `time`: Unix milliseconds, UTC timezone
 
 ### `<RemovedItem />`
 
@@ -77,18 +82,18 @@ Shows a small banner at the top of the page notifying readers the item is a deve
 
 ### `<SuroiItemImage itemID="item idString" width="optional" height="optional" rotation="optional" variation="optional" append="optional" dual="optional" />`
 
-A item image from the game. Requires the item idString.
+An item image from the game. Requires the item idString.
 
 Options:
 
-- width: width in px
-- height: height in px
-- rotation: rotation in degrees
-- variation: for sprites with variations, a number
-- append: for sprites that have suffixes like "\_world" at the end of their sprite file name
-- dual: for dual guns only
+- `width`: width in px
+- `height`: height in px
+- `rotation`: rotation in degrees
+- `variation`: for sprites with variations, a number
+- `append`: for sprites that have suffixes like "\_world" at the end of their sprite file name
+- `dual`: for dual guns only
 
-<SuroiItemImage itemID="deathray" />
+<SuroiItemImage itemID="death_ray" />
 
 ### `<Gallery images={[array of GalleryImage]}/>`
 
@@ -115,15 +120,15 @@ A gallery of images.
   ]}
 />
 
-This is a bit more complicated to use, as it involves [Javascript objects](https://www.w3schools.com/js/js_objects.asp)
+This is a bit more complicated to use, as it involves [Javascript objects](https://www.w3schools.com/js/js_objects.asp).
 
-We use an array of `GalleryImage`s, as seen in `src/lib/types.ts`,
+We use an array of `GalleryImage`s, as seen in `src/lib/types.ts`:
 
 ```jsx
 <Gallery images={[GalleryImages]} />
 ```
 
-This is the code for the gallery example above,
+This is the code for the gallery example above:
 
 ```jsx
 <Gallery
@@ -147,3 +152,7 @@ This is the code for the gallery example above,
   ]}
 />
 ```
+
+# Where To Start
+
+If you want to write articles; reach out to @zedaes on the [Suroi Discord](https://discord.gg/suroi). Or, you can look for simple grammar errors in the articles. Anything helps!

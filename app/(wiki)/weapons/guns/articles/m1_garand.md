@@ -1,4 +1,4 @@
-The **M1 Garand** is a DMR utilizing 7.62 ammunition. It was added to the game in the v0.13.0 "Terminal Velocity" update on November 27th, 2023. Despite the low clip size, it has very high DPS, accuracy, and range.
+The **M1 Garand** is a DMR utilizing 7.62 ammunition. It was added to the game in the [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0) "Terminal Velocity" update on November 27th, 2023. Despite the low clip size, it has very high DPS, accuracy, and range.
 
 # Background
 
@@ -9,7 +9,7 @@ The M1 Garand was designed by John Garand in the 1920s and 1930s, and production
 ## Using
 
 - Like most DMRs, the M1 Garand has very good accuracy and range, so make sure to get a good scope like an 8x or 15x to take advantage of this.
-- Unlike most DMRs however, the M1 Garand has a much smaller clip size of only 8 rounds. This makes missing a shot much more punishing, so prioritize aiming and hitting your shots over getting the max DPS.
+- Unlike most DMRs, however, the M1 Garand has a much smaller clip size of only 8 rounds. This makes missing a shot much more punishing, so prioritize aiming and hitting your shots over getting the max DPS.
 - The M1 Garand works well when paired with an LMG, as the LMG can be used to destroy cover and then the M1 Garand can deal lots of damage quickly.
   - Shotguns also pair well, as they cover the close-range combat that the M1 Garand is not as good at.
 - Be wary of ambushes by opponents with close-range, high-DPS weapons like shotguns and SMGs.
@@ -31,12 +31,21 @@ The M1 Garand was designed by John Garand in the 1920s and 1930s, and production
 
 # Trivia
 
-- The "ping" sound after the last round is the sound of the en bloc clip being ejected
-- The M1 Garand is one of 6 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [VSS](/weapons/guns/vss), [USAS-12](/weapons/guns/usas12), and [Mosin-Nagant](/weapons/guns/mosin)
+- The "ping" sound after the last round is the sound of the enbloc clip being ejected.
+- The M1 Garand is one of 7 guns that were in surviv.io, the others being the [Vector](/weapons/guns/vector), [AK-47](/weapons/guns/ak47), [VSS](/weapons/guns/vss), [USAS-12](/weapons/guns/usas12), [DEagle](/weapons/guns/deagle), and [Mosin-Nagant](/weapons/guns/mosin_nagant).
 
 # History
-
-- v0.16.0
+- [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+- Increased damage to 48 (from 39)
+- [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
+  - Tweaked texture
+- [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Added strap to loot image
-- v0.13.0
+  - Casing type set to .30-06
+  - Additional casing "enbloc" ejected
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
+  - Casing velocity y-component set to [4, 15]
+- [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)
+  - Length increased to 8.1 (from 7.8)
+- [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
   - Added

@@ -8,7 +8,7 @@ export default function InfoboxSection({
   grid = "grid-cols-3",
   title,
   abbr,
-  children,
+  children
 }: InfoboxSectionProps) {
   const [isOpened, setIsOpened] = useState(true);
 
@@ -39,7 +39,7 @@ export default function InfoboxSection({
 }
 
 export interface InfoboxSectionProps extends React.PropsWithChildren {
-  grid?: `grid-cols-${number}`;
-  abbr?: string;
-  title?: string;
+  grid?: `grid-cols-${number}`
+  abbr?: string
+  title?: string
 }

@@ -1,6 +1,6 @@
 import {
   ObjectDefinition,
-  ReferenceTo,
+  ReferenceTo
 } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { serialize } from "next-mdx-remote/serialize";
 import { notFound, redirect } from "next/navigation";
@@ -19,12 +19,12 @@ import MultiSidebar from "../sidebars/MultiSidebar";
  * @returns Export this from the page.tsx
  */
 export default function GenericArticlePage<T extends ObjectDefinition>(
-  args: GenericArticlePageArgs<T>,
+  args: GenericArticlePageArgs<T>
 ) {
   const generateMetadata = ({ params }: { params: { item: string } }) => {
-    const item = args.items.find((item) => item.idString === params.item);
+    const item = args.items.find(item => item.idString === params.item);
     const combinedArticle = args.combinedArticles?.find(
-      (combined) => combined.fileName === params.item,
+      combined => combined.fileName === params.item
     );
 
     // If no item or combined article found, return no metadata
@@ -35,49 +35,48 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
       title: item?.name ?? combinedArticle?.title,
       openGraph: {
         type: "article",
-        images: [`/api/og/${item?.idString}`],
-      },
+        images: [`/api/og/${item?.idString}`]
+      }
     };
   };
 
   const generateStaticParams = () => {
-    return args.items.map((item) => ({
-      item: item.idString,
+    return args.items.map(item => ({
+      item: item.idString
     }));
   };
 
-  const defaultExport = async ({ params }: { params: { item: string } }) => {
+  const defaultExport = async({ params }: { params: { item: string } }) => {
     const files = await fs.readdir(
       path.join(process.cwd(), `/app/(wiki)/${args.path}/articles`),
-      { withFileTypes: true },
+      { withFileTypes: true }
     );
 
     const articles = Object.fromEntries(
       await Promise.all(
-        files.map(async (file) => [
+        files.map(async file => [
           file.name,
-          await serialize(await fs.readFile(path.join(file.path, file.name))),
-        ]),
-      ),
+          await serialize(await fs.readFile(path.join(file.path, file.name)))
+        ])
+      )
     );
 
     // Hardcoded redirect for dual guns
-    if (params.item.startsWith("dual_"))
-      return redirect(`/weapons/guns/${params.item.replace("dual_", "")}`);
+    if (params.item.startsWith("dual_")) { return redirect(`/weapons/guns/${params.item.replace("dual_", "")}`); }
 
-    const item = args.items.find((item) => item.idString === params.item);
+    const item = args.items.find(item => item.idString === params.item);
     const combinedArticle = args.combinedArticles?.find(
-      (combined) => combined.fileName === params.item,
+      combined => combined.fileName === params.item
     );
-    const parentCombinedArticle = args.combinedArticles?.find((combined) =>
-      combined.items.find((item) => item === params.item),
+    const parentCombinedArticle = args.combinedArticles?.find(combined =>
+      combined.items.find(item => item === params.item)
     );
     const combinedArticleItems = combinedArticle?.items.map(
-      (item) => args.items.find((i) => i.idString === item)!,
-    );
+      item => args.items.find(i => i.idString === item)!
+    ).filter(item => item);
 
-    const article =
-      articles[(params.item ?? combinedArticle?.fileName) + ".md"] ?? null;
+    const article
+      = articles[`${params.item ?? combinedArticle?.fileName}.md`] ?? null;
 
     if (!item) {
       // Lookup combined articles
@@ -101,24 +100,26 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
           </h1>
           {
             // If there is an article, render it
-            article ? (
-              <MDXClient {...article} />
-            ) : (
+            article
+              ? (<MDXClient {...article} />)
+              : (
               // Otherwise, render an empty notice
-              <Empty />
-            )
+                <Empty />
+              )
           }
           {args.After && args.After}
         </div>
-        {item ? (
-          <args.Sidebar item={item} />
-        ) : (
-          <MultiSidebar itemNames={combinedArticleItems?.map((a) => a.name)!}>
-            {combinedArticleItems!.map((item) => (
-              <args.Sidebar key={item.idString} item={item} />
-            ))}
-          </MultiSidebar>
-        )}
+        {item
+          ? (
+            <args.Sidebar item={item} />
+          )
+          : (
+            <MultiSidebar itemNames={combinedArticleItems?.map(a => a.name)!}>
+              {combinedArticleItems!.map(item => (
+                <args.Sidebar key={item.idString} item={item} />
+              ))}
+            </MultiSidebar>
+          )}
         {/* here because reverse flex-col */}
         <div className="prose prose-invert sm:hidden">
           <h1>{item?.name ?? combinedArticle?.title}</h1>
@@ -130,20 +131,20 @@ export default function GenericArticlePage<T extends ObjectDefinition>(
   return {
     generateMetadata,
     generateStaticParams,
-    default: defaultExport,
+    default: defaultExport
   };
 }
 
 export interface GenericArticlePageArgs<T extends ObjectDefinition> {
-  path: string;
-  items: T[];
-  combinedArticles?: CombinedArticle<T>[];
-  Sidebar: ComponentType<{ item: T }>;
-  After?: ReactNode;
+  path: string
+  items: readonly T[]
+  combinedArticles?: Array<CombinedArticle<T>>
+  Sidebar: ComponentType<{ item: T }>
+  After?: ReactNode
 }
 
 export interface CombinedArticle<T extends ObjectDefinition> {
-  items: ReferenceTo<T>[];
-  fileName: string;
-  title: string;
+  items: Array<ReferenceTo<T>>
+  fileName: string
+  title: string
 }

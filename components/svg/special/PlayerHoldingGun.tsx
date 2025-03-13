@@ -2,9 +2,9 @@ import { getSuroiImageLink } from "@/lib/util/suroi";
 import { SVGObject } from "@/lib/util/types";
 import {
   GunDefinition,
-  Guns,
-} from "@/vendor/suroi/common/src/definitions/guns";
-import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
+  Guns
+} from "@/vendor/suroi/common/src/definitions/items/guns";
+import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/items/skins";
 import SVGObjectRenderer from "../SVGObjectRenderer";
 
 export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {
@@ -14,12 +14,12 @@ export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {
       x: 0,
       y: 0,
       url: getSuroiImageLink(skin, undefined, "base"),
-      zIndex: 3,
-    },
+      zIndex: 3
+    }
   ];
 
   if (gun.isDual) {
-    const singleVariant = Guns.find((g) => {
+    const singleVariant = Guns.definitions.find(g => {
       return g.idString === gun.singleVariant;
     });
     if (!singleVariant?.isDual) {
@@ -29,14 +29,14 @@ export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {
         url: getSuroiImageLink(gun, undefined, "world"),
         x: singleVariant?.image.position.x,
         y: gun.leftRightOffset * -20,
-        zIndex: 2,
+        zIndex: 2
       });
       image.push({
         type: "image",
         url: getSuroiImageLink(skin, undefined, "fist"),
         x: singleVariant?.fists.left.x,
         y: gun.leftRightOffset * -20,
-        zIndex: singleVariant?.fists.leftZIndex ?? 1,
+        zIndex: singleVariant?.fists.leftZIndex ?? 1
       });
       // Right
       image.push({
@@ -44,14 +44,14 @@ export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {
         url: getSuroiImageLink(gun, undefined, "world"),
         x: singleVariant?.image.position.x,
         y: gun.leftRightOffset * 20,
-        zIndex: 2,
+        zIndex: 2
       });
       image.push({
         type: "image",
         url: getSuroiImageLink(skin, undefined, "fist"),
         x: singleVariant?.fists.right.x,
         y: gun.leftRightOffset * 20,
-        zIndex: singleVariant?.fists.rightZIndex ?? 1,
+        zIndex: singleVariant?.fists.rightZIndex ?? 1
       });
     }
   } else {
@@ -61,22 +61,22 @@ export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {
         url: getSuroiImageLink(gun, undefined, "world"),
         x: gun.image.position.x,
         y: gun.image.position.y,
-        zIndex: 2,
+        zIndex: 2
       },
       {
         type: "image",
         url: getSuroiImageLink(skin, undefined, "fist"),
         x: gun.fists.right.x,
         y: gun.fists.right.y,
-        zIndex: gun.fists.rightZIndex ?? 1,
+        zIndex: gun.fists.rightZIndex ?? 1
       },
       {
         type: "image",
         url: getSuroiImageLink(skin, undefined, "fist"),
         x: gun.fists.left.x,
         y: gun.fists.left.y,
-        zIndex: gun.fists.leftZIndex ?? 1,
-      },
+        zIndex: gun.fists.leftZIndex ?? 1
+      }
     );
   }
   return (
@@ -87,6 +87,6 @@ export default function PlayerHoldingGun({ gun, skin }: PlayerHoldingGunProps) {
 }
 
 export interface PlayerHoldingGunProps extends React.PropsWithChildren {
-  gun: GunDefinition;
-  skin: SkinDefinition;
+  gun: GunDefinition
+  skin: SkinDefinition
 }

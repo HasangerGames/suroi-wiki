@@ -1,4 +1,4 @@
-import { SearchItem } from "@/lib/util/search";
+import type { SearchItem as SearchItemType } from "@/lib/util/search";
 import { HashIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,6 +29,6 @@ export default function SearchItem({ item, onClick }: SearchItemProps) {
 }
 
 export interface SearchItemProps extends React.PropsWithChildren {
-  item: SearchItem;
-  onClick?: () => unknown;
+  item: SearchItemType
+  onClick?: () => unknown
 }

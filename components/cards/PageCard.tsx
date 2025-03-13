@@ -1,24 +1,31 @@
 import Link from "@/components/links/Link";
 import Image from "next/image";
+import { ReactNode } from "react";
 
 export default function PageCard({
   title,
   url,
   image,
-  description,
+  description
 }: PageCardProps) {
   return (
     <div className="flex-1">
       <Link href={url} unstyled>
         <div className="flex gap-8 p-4 w-full h-full rounded-md border transition-colors border-border hover:border-blue-500 group">
           <div className="flex justify-center items-center">
-            <Image
-              src={image}
-              width={100}
-              height={100}
-              alt={`${title} page image`}
-              className="w-24 h-24"
-            />
+            {
+              typeof image === "string"
+                ? (
+                  <Image
+                    src={image}
+                    width={100}
+                    height={100}
+                    alt={`${title} page image`}
+                    className="w-24 h-24"
+                  />
+                )
+                : image
+            }
           </div>
           <div className="flex-1">
             <h3 className="text-lg font-bold leading-loose underline transition-colors group-hover:text-blue-500">
@@ -35,8 +42,8 @@ export default function PageCard({
 }
 
 export interface PageCardProps {
-  title: string;
-  url: string;
-  image: string;
-  description?: string;
+  title: string
+  url: string
+  image: string | ReactNode
+  description?: string
 }

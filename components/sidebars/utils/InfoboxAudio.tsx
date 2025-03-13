@@ -2,6 +2,7 @@ export default function InfoboxAudio({ name, src }: InfoboxAudioProps) {
   return (
     <div className="flex flex-row gap-2 items-center p-2">
       <h4 className="mr-2 font-bold">{name}</h4>
+      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
       <audio controls className="w-full">
         <source src={src} type="audio/mpeg" />
         Your browser does not support the audio element.
@@ -11,6 +12,6 @@ export default function InfoboxAudio({ name, src }: InfoboxAudioProps) {
 }
 
 export interface InfoboxAudioProps {
-  name: string;
-  src: string;
+  name: string
+  src: string
 }

@@ -7,7 +7,7 @@ import {
   ImageIcon,
   Maximize2,
   User2,
-  X,
+  X
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +23,7 @@ export default function Gallery({ images }: GalleryProps) {
       {fullscreen && (
         <div
           className="flex flex-col gap-8 fixed z-50 inset-0 w-full h-full bg-black/80 p-4"
-          onClick={(e) => {
+          onClick={e => {
             e.preventDefault();
             // only close when clicking on itself and not a child
             if (e.target === e.currentTarget) return setFullscreen(false);
@@ -40,7 +40,7 @@ export default function Gallery({ images }: GalleryProps) {
           </button>
           <div
             className="relative w-full h-full"
-            onClick={(e) => {
+            onClick={e => {
               e.preventDefault();
               // only close when clicking on itself and not a child
               if (e.target === e.currentTarget) return setFullscreen(false);
@@ -50,17 +50,15 @@ export default function Gallery({ images }: GalleryProps) {
               className="absolute hidden z-10 md:block left-0 top-[50%] translate-y-[-50%] rounded-full p-8 hover:bg-muted"
               onClick={() =>
                 setCurrentImage(
-                  currentImage - 1 < 0 ? images.length - 1 : currentImage - 1,
-                )
-              }
+                  currentImage - 1 < 0 ? images.length - 1 : currentImage - 1
+                )}
             >
               <ChevronLeft className="w-16 h-16" />
             </button>
             <button
               className="absolute hidden z-10 md:block right-0 top-[50%] translate-y-[-50%] rounded-full p-8 hover:bg-muted"
               onClick={() =>
-                setCurrentImage((currentImage + 1) % images.length)
-              }
+                setCurrentImage((currentImage + 1) % images.length)}
             >
               <ChevronRight className="w-16 h-16" />
             </button>
@@ -72,41 +70,45 @@ export default function Gallery({ images }: GalleryProps) {
               )}
             </span>
             {images[currentImage].caption && (
-              <span className="absolute bg-black/20 left-[50%] translate-x-[-50%] bottom-0 rounded-md p-4 h-16 overflow-y-auto z-10 text-center">
-                {images[currentImage].caption}
+              <span
+                className="absolute bg-black/20 left-[50%] translate-x-[-50%] bottom-0 rounded-md p-4 h-16 overflow-y-auto z-10 text-center"
+                dangerouslySetInnerHTML={{ __html: images[currentImage].caption ?? "" }}
+              >
               </span>
             )}
-            {images[currentImage].type === "youtube" ? (
-              <iframe
-                width={
-                  window.innerWidth < 500
-                    ? window.innerWidth
-                    : window.innerWidth - 300
-                }
-                height={window.innerHeight - 300}
-                src={`https://www.youtube-nocookie.com/embed/${images[currentImage].url}`}
-                title="YouTube video player"
-                // @ts-ignore
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="absolute object-scale-down left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
-              ></iframe>
-            ) : (
-              <Link href={images[currentImage].url} className="">
-                <Image
-                  src={images[currentImage].url}
-                  alt={
-                    (images[currentImage].caption &&
-                      images[currentImage].caption) ||
-                    "Image with no caption"
+            {images[currentImage].type === "youtube"
+              ? (
+                <iframe
+                  width={
+                    window.innerWidth < 500
+                      ? window.innerWidth
+                      : window.innerWidth - 300
                   }
-                  width={500}
-                  height={500}
-                  className="absolute w-min h-min object-scale-down left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
-                />
-              </Link>
-            )}
+                  height={window.innerHeight - 300}
+                  src={`https://www.youtube-nocookie.com/embed/${images[currentImage].url}`}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute object-scale-down left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+                >
+                </iframe>
+              )
+              : (
+                <Link href={images[currentImage].url} className="">
+                  <Image
+                    src={images[currentImage].url}
+                    alt={
+                      (images[currentImage].caption
+                        && images[currentImage].caption)
+                      || "Image with no caption"
+                    }
+                    width={500}
+                    height={500}
+                    className="absolute w-min h-min object-scale-down left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+                  />
+                </Link>
+              )}
           </div>
           <div className="flex flex-row justify-center gap-4 overflow-x-scroll w-full h-36">
             {images.map((image, i) => (
@@ -140,8 +142,8 @@ export default function Gallery({ images }: GalleryProps) {
           style={
             firstImage.type === "youtube"
               ? {
-                  backgroundImage: `url(https://invidious.projectsegfau.lt/vi/${firstImage.url}/hqdefault.jpg)`,
-                }
+                backgroundImage: `url(https://invidious.projectsegfau.lt/vi/${firstImage.url}/hqdefault.jpg)`
+              }
               : {}
           }
         >
@@ -173,5 +175,5 @@ export default function Gallery({ images }: GalleryProps) {
 }
 
 export interface GalleryProps extends React.PropsWithChildren {
-  images: GalleryImage[];
+  images: GalleryImage[]
 }

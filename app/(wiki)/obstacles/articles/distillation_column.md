@@ -1,4 +1,4 @@
-The **Distillation Column** is an [Obstacle](/obstacles) added in the v0.10.0 "Back with a Bang" update on September 14th, 2023.
+The **Distillation Column** is an [Obstacle](/obstacles) added in the [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0) "Back with a Bang" update on September 14th, 2023.
 
 # Location & Spawning
 
@@ -14,10 +14,9 @@ Distillation Columns are indestructible and reflect bullets.
 
 # Trivia
 
-- The Distillation Column was designed by platonthek
-- In real life, distillation columns are used to separate and purify mixtures from each other by heat
+- In real life, distillation columns are used to separate and purify mixtures from each other by heat.
 
 # History
 
-- v0.10.0
+- [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Added

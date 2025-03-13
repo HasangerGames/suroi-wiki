@@ -1,12 +1,16 @@
 import ImageTabs from "@/components/interactive/ImageTabs";
 import { ImageTab } from "@/lib/util/types";
+import { ReactNode } from "react";
 
-export default function GenericSidebar({
-  children,
-  title,
-  image,
-  imageVariations,
-}: GenericSidebarProps) {
+export default function GenericSidebar(
+  {
+    children,
+    title,
+    image,
+    imageVariations,
+    initialTab
+  }: GenericSidebarProps
+) {
   return (
     <div className="md:min-w-[20rem] md:max-w-[20rem]">
       <div className="flex flex-col gap-2 p-2 bg-muted rounded-md">
@@ -14,9 +18,9 @@ export default function GenericSidebar({
           <h2 className="text-xl font-bold text-center">{title}</h2>
         </div>
         {(imageVariations && (
-          <ImageTabs images={imageVariations ?? [{ url: image }]} />
-        )) ||
-          (image && <ImageTabs images={[{ type: "image", url: image }]} />)}
+          <ImageTabs images={imageVariations ?? [{ url: image }]} initialTab={initialTab} />
+        ))
+        || (typeof image === "string" ? <ImageTabs images={[{ type: "image", url: image }]} initialTab={initialTab} /> : image)}
         {children}
       </div>
     </div>
@@ -24,7 +28,8 @@ export default function GenericSidebar({
 }
 
 export interface GenericSidebarProps extends React.PropsWithChildren {
-  title: string;
-  image?: string;
-  imageVariations?: ImageTab[];
+  title: string
+  image?: string | ReactNode
+  imageVariations?: ImageTab[]
+  initialTab?: number
 }

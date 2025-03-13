@@ -1,4 +1,4 @@
-import { ObjectDefinition } from "@/vendor/suroi/common/src/utils/objectDefinitions";
+import { ObjectDefinitions } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import fs from "fs/promises";
 import { Metadata } from "next";
 import { serialize } from "next-mdx-remote/serialize";
@@ -9,38 +9,38 @@ import MDXClient from "../client/MDXClient";
 
 export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
   return async function GenericMDXPage({
-    params,
+    params
   }: {
     params: {
-      item: string;
-    };
+      item: string
+    }
   }) {
     const files = await fs.readdir(
       path.join(process.cwd(), `/app/(wiki)/${args.path}/articles`),
-      { withFileTypes: true },
+      { withFileTypes: true }
     );
 
     const articles = Object.fromEntries(
       await Promise.all(
-        files.map(async (file) => [
+        files.map(async file => [
           file.name,
-          await serialize(await fs.readFile(path.join(file.path, file.name))),
-        ]),
-      ),
+          await serialize(await fs.readFile(path.join(file.path, file.name)))
+        ])
+      )
     );
 
     // Hardcoded redirect for dual guns
-    if (params.item.startsWith("dual_"))
-      return redirect(`/weapons/guns/${params.item.replace("dual_", "")}`);
+    if (params.item.startsWith("dual_")) { return redirect(`/weapons/guns/${params.item.replace("dual_", "")}`); }
 
-    const article = articles[params.item + ".md"] ?? null;
+    const article = articles[`${params.item}.md`] ?? null;
 
-    if (article)
+    if (article) {
       return (
         <>
           <MDXClient {...article} />
         </>
       );
+    }
 
     return (
       <>
@@ -51,32 +51,28 @@ export default function GenericMDXPageFactory(args: GenericMDXPageFactoryArgs) {
 }
 
 export interface GenericMDXPageFactoryArgs {
-  path: string;
+  path: string
 }
 
-export function GenericGenerateStaticParamsFactory<T extends ObjectDefinition>(
-  items: T[],
-) {
-  return function () {
-    return items.map((item) => ({
-      item: item.idString,
-    }));
-  };
+export function GenericGenerateStaticParamsFactory(items: ObjectDefinitions) {
+  return () => items.definitions.map(({ idString }) => ({ item: idString }));
 }
 
-export function GenericGenerateMetadataFactory<T extends ObjectDefinition>(
-  items: T[],
-) {
-  return function ({ params }: { params: { item: string } }): Metadata {
-    const item = items.find((item) => item.idString === params.item);
-    if (!item) notFound();
+export function GenericGenerateMetadataFactory(items: ObjectDefinitions) {
+  return function({
+    params: { item }
+  }: {
+    params: { item: string }
+  }): Metadata {
+    const def = items.fromStringSafe(item);
+    if (!def) notFound();
 
     return {
-      title: item.name,
+      title: def.name,
       openGraph: {
         type: "article",
-        images: [`/api/og/${item.idString}`],
-      },
+        images: [`/api/og/${def.idString}`]
+      }
     };
   };
 }

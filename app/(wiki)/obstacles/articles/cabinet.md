@@ -1,23 +1,18 @@
-The **Cabinet** is an [Obstacle](/obstacles) added in the v0.15.0 "Pulling the Pin" update on January 14th, 2024.
+The **Cabinet** is an [Obstacle](/obstacles) added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14th, 2024.
 
 # Location & Spawning
 
-Three Cabinets spawn in the [Armory](/buildings/armory). Two spawn in the Barracks and one spawns in the center.
+- Three Cabinets spawn in the [Armory](/buildings/armory). Two spawn in the Barracks and one spawns in the center. 
+
+- Two Cabinets spawn on the first floor of the [AEGIS Headquarters](/buildings/headquarters).
+
+- Four Cabinets spawn in various areas of the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta).
 
 # Loot & More
 
 Cabinets drop medium-tier guns, healing, scopes, or equipment and reflect bullets.
 
-# Tips
-
-- Due to their positioning, Cabinets can't be used as cover.
-
-
-# Trivia
-
-- The Cabinet was designed by Bear
-
 # History
 
-- v0.15.0
+- [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added

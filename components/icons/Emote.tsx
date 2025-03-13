@@ -7,17 +7,17 @@ import Image from "next/image";
 export default function Emote({
   emote,
   w = 64,
-  h = 64,
+  h = 64
 }: {
-  emote: string;
-  w?: number;
-  h?: number;
+  emote: string
+  w?: number
+  h?: number
 }) {
   return (
     <Image
       height={w}
       width={h}
-      src={`${IMAGE_BASE_URL}game/emotes/${emote}.svg`}
+      src={`${IMAGE_BASE_URL}/game/shared/emotes/${emote}.svg`}
       alt={`Emote: ${emote}`}
     />
   );

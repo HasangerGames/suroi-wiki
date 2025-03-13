@@ -7,13 +7,18 @@ import { useState } from "react";
 
 const BackgroundMode = ["transparent", "white", "black", "checker"];
 
-export default function ImageTabs({ images }: ImageTabsProps) {
-  const [currentTab, setCurrentTab] = useState(0);
+export interface ImageTabsProps extends React.PropsWithChildren {
+  images: ImageTab[]
+  initialTab?: number
+}
+
+export default function ImageTabs({ images, initialTab }: ImageTabsProps) {
+  const [currentTab, setCurrentTab] = useState(initialTab ?? 0);
   const [backgroundMode, setBackgroundMode] = useState("transparent");
   const currentImage = images[currentTab];
   return (
     <div
-      className={`flex flex-col items-center justify-start gap-2 bg-white/5 rounded-md`}
+      className="flex flex-col items-center justify-start gap-2 bg-white/5 rounded-md"
     >
       {images.length > 1 && (
         <div className="flex flex-row flex-wrap w-full justify-around gap-2 items-center p-2">
@@ -32,40 +37,48 @@ export default function ImageTabs({ images }: ImageTabsProps) {
           ))}
         </div>
       )}
-      {currentImage ? (
-        currentImage.type === "image" ? (
-          <Image
-            src={currentImage.url}
-            alt={currentImage.alt ?? currentImage.title ?? currentImage.url}
-            width={128}
-            height={128}
-            className={`w-40 h-40 my-4 p-4 ${getColor(
-              backgroundMode,
-            )} bg-repeat bg-[length:1rem]`}
-          />
-        ) : currentImage.type === "svg" ? (
-          <svg
-            viewBox={currentImage.viewBox}
-            className={`w-40 h-40 my-4 p-4 ${getColor(
-              backgroundMode,
-            )} bg-repeat bg-[length:1rem]`}
-          >
-            <SVGObjectRenderer objects={currentImage.objects} />
-          </svg>
-        ) : currentImage.type === "react" ? (
-          <div
-            className={`w-60 h-60 my-4 flex ${getColor(
-              backgroundMode,
-            )} bg-repeat bg-[length:1rem]`}
-          >
-            {currentImage.children}
-          </div>
-        ) : (
-          <h1>(No image avaliable)</h1>
+      {currentImage
+        ? (
+          currentImage.type === "image"
+            ? (
+              <Image
+                src={currentImage.url}
+                alt={currentImage.alt ?? currentImage.title ?? currentImage.url}
+                width={128}
+                height={128}
+                className={`w-40 h-40 my-4 p-4 ${getColor(
+                  backgroundMode
+                )} bg-repeat bg-[length:1rem]`}
+              />
+            )
+            : currentImage.type === "svg"
+              ? (
+                <svg
+                  viewBox={currentImage.viewBox}
+                  className={`w-40 h-40 my-4 p-4 ${getColor(
+                    backgroundMode
+                  )} bg-repeat bg-[length:1rem]`}
+                >
+                  <SVGObjectRenderer objects={currentImage.objects} />
+                </svg>
+              )
+              : currentImage.type === "react"
+                ? (
+                  <div
+                    className={`${currentImage.classes ?? "w-60 h-60"} my-4 flex ${getColor(
+                      backgroundMode
+                    )} bg-repeat bg-[length:1rem]`}
+                  >
+                    {currentImage.children}
+                  </div>
+                )
+                : (
+                  <h1>(No image available)</h1>
+                )
         )
-      ) : (
-        <h1>(No image available)</h1>
-      )}
+        : (
+          <h1>(No image available)</h1>
+        )}
       <div className="flex flex-row gap-2 mb-4">
         {BackgroundMode.map((color, i) => (
           <button
@@ -74,7 +87,8 @@ export default function ImageTabs({ images }: ImageTabsProps) {
               color === backgroundMode ? "border-primary" : "border-white"
             } flex w-8 h-8 rounded-md`}
             onClick={() => setBackgroundMode(color)}
-          ></button>
+          >
+          </button>
         ))}
       </div>
     </div>
@@ -82,7 +96,7 @@ export default function ImageTabs({ images }: ImageTabsProps) {
 }
 
 function getColor(
-  color: "transparent" | "white" | "black" | "checker" | string,
+  color: "transparent" | "white" | "black" | "checker" | string
 ) {
   switch (color) {
     case "transparent":
@@ -96,8 +110,4 @@ function getColor(
     default:
       return "";
   }
-}
-
-export interface ImageTabsProps extends React.PropsWithChildren {
-  images: ImageTab[];
 }

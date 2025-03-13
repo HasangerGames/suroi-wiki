@@ -8,7 +8,7 @@ export default function SuroiItemImage({
   rotation,
   variation,
   append,
-  dual,
+  dual
 }: SuroiItemImageProps) {
   const item = getSuroiItem(itemID);
   if (!item) throw new Error(`SuroiItemImage > Item ${itemID} not found`);
@@ -16,14 +16,14 @@ export default function SuroiItemImage({
     item,
     variation ?? undefined,
     append ?? "",
-    dual ?? false,
+    dual ?? false
   );
   return (
     <Image
       width={width ?? 100}
       height={height ?? 100}
       style={{
-        rotate: `${rotation ?? 0}deg`,
+        rotate: `${rotation ?? 0}deg`
       }}
       src={link}
       alt={item.name}
@@ -32,11 +32,11 @@ export default function SuroiItemImage({
 }
 
 export interface SuroiItemImageProps extends React.PropsWithChildren {
-  itemID: string;
-  width?: number;
-  height?: number;
-  rotation?: number;
-  variation?: number;
-  append?: string;
-  dual?: boolean;
+  itemID: string
+  width?: number
+  height?: number
+  rotation?: number
+  variation?: number
+  append?: string
+  dual?: boolean
 }
