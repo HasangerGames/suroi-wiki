@@ -91,11 +91,6 @@ const GAME_TEAM: User[] = [
     website: "https://error430.dev"
   },
   {
-    name: "Solstice",
-    description: "Development Manager & Lead Designer",
-    avatar: "https://avatars.githubusercontent.com/u/89994419"
-  },
-  {
     name: "eiπ",
     description: "Developer",
     avatar: "https://avatars.githubusercontent.com/u/91853103"
@@ -123,6 +118,7 @@ const GAME_TEAM: User[] = [
 ];
 
 const GAME_CONTRIB: string[] = [
+  "Solstice",
   "Milocat",
   "LimeNade",
   "Leia",
