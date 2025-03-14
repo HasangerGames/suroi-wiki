@@ -5,17 +5,15 @@ import {
   obstacleContainedBy
 } from "@/lib/util/suroi";
 import {
-  FlyoverPref,
-  ObstacleDefinition,
-  RotationMode
+  ObstacleDefinition
 } from "@/vendor/suroi/common/src/definitions/obstacles";
-import { ObstacleSpecialRoles } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import Link from "../links/Link";
 import ExplosionRow from "./utils/ExplosionRow";
 import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";
 import InfoboxRow from "./utils/InfoboxRow";
+import { FlyoverPref, RotationMode } from "@/vendor/suroi/common/src/constants";
 
 export default function ObstacleSidebar({
   item
@@ -105,14 +103,16 @@ export default function ObstacleSidebar({
         {item.explosion && <InfoboxColumn title="Explodes" />}
         {item.reflectBullets && <InfoboxColumn title="Reflects Bullets" />}
         {item.noCollisions && <InfoboxColumn title="No Collisions" />}
-        {item.role !== undefined && (
-          <InfoboxColumn title={`Is ${ObstacleSpecialRoles[item.role]}`} />
-        )}
+        {item.isActivatable && <InfoboxColumn title="Is Activatable" />}
+        {item.isDoor && <InfoboxColumn title="Is Activatable" />}
+        {item.isStair && <InfoboxColumn title="Is Stair" />}
+        {item.isWall && <InfoboxColumn title="Is Wall" />}
+        {item.isWindow && <InfoboxColumn title="Is Window" />}
       </InfoboxRow>
 
       {/* Special Properties */}
 
-      {item.role === ObstacleSpecialRoles.Door && (
+      {item.isDoor && (
         <>
           <InfoboxHeader>Door Properties</InfoboxHeader>
           <InfoboxRow>
@@ -132,7 +132,7 @@ export default function ObstacleSidebar({
         </>
       )}
 
-      {item.role === ObstacleSpecialRoles.Activatable && (
+      {item.isActivatable && (
         <>
           <InfoboxHeader>Activatable Properties</InfoboxHeader>
           <InfoboxRow>
