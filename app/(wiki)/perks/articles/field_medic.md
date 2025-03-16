@@ -10,7 +10,7 @@ In Harvest Mode, Field Medic drops from the [Plumpkin](/obstacles/plumpkin), loc
 
 # Strategies
 ## Using
-- Make sure to stock up on lots of Healing Items, especially [Gauze](/healing/gauze). Because it can be used so quickly, you can can easily top off 15 health in a fight.
+- Make sure to stock up on lots of Healing Items, especially [Gauze](/healing/gauze). Because it can be used so quickly, you can can easily top off 20 health in a fight.
 - Field Medic is much better in team modes such as Duos and Squads, as the faster reviving is not applicable in Solos.
 - [Medikits](/healing/medikit) are much easier to use if you have Field Medic.
 
