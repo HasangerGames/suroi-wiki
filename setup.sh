@@ -17,6 +17,8 @@ install_git() {
         sudo yum install -y git
     elif command -v zypper &> /dev/null; then
         sudo zypper install -y git
+    elif command -v brew &> /dev/null; then
+        brew install git
     else
         echo "Unsupported OS for git installation. Please install git manually."
         exit 1
@@ -36,6 +38,8 @@ install_node() {
         sudo yum install -y nodejs npm
     elif command -v zypper &> /dev/null; then
         sudo zypper install -y nodejs npm
+    elif command -v brew &> /dev/null; then
+        brew install node
     else
         echo "Unsupported OS for Node.js installation. Please install Node.js and npm manually."
         exit 1
