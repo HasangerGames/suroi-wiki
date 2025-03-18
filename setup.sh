@@ -45,7 +45,18 @@ install_node() {
 # Function to install pnpm
 install_pnpm() {
     echo "Installing pnpm..."
-    npm install -g pnpm
+    if ! npm install -g pnpm; then
+        echo "Failed to install pnpm. You may need to run the command with elevated permissions."
+        echo "Try running the following command:"
+        echo "sudo npm install -g pnpm"
+        echo "Alternatively, you can change npm's global directory to avoid permission issues."
+        echo "Run the following commands:"
+        echo "mkdir -p \$HOME/.npm-global"
+        echo "npm config set prefix '\$HOME/.npm-global'"
+        echo "export PATH=\"\$HOME/.npm-global/bin:\$PATH\""
+        echo "Then add the above export command to your shell configuration file (e.g., ~/.bashrc or ~/.zshrc)."
+        exit 1
+    fi
 }
 
 # Check and install git
