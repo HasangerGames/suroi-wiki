@@ -6,24 +6,36 @@ set -e
 # Function to install git
 install_git() {
     echo "Installing git..."
-    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    if command -v apt &> /dev/null; then
         sudo apt update
         sudo apt install -y git
-    elif [[ "$OSTYPE" == "darwin"* ]]; then
-        brew install git
+    elif command -v dnf &> /dev/null; then
+        sudo dnf install -y git
+    elif command -v pacman &> /dev/null; then
+        sudo pacman -S --noconfirm git
+    elif command -v yum &> /dev/null; then
+        sudo yum install -y git
+    elif command -v zypper &> /dev/null; then
+        sudo zypper install -y git
     else
         echo "Unsupported OS for git installation. Please install git manually."
         exit 1
     fi
 }
 
-# Function to install npm
-install_npm() {
+# Function to install Node.js and npm
+install_node() {
     echo "Installing Node.js and npm..."
-    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    if command -v apt &> /dev/null; then
         sudo apt install -y nodejs npm
-    elif [[ "$OSTYPE" == "darwin"* ]]; then
-        brew install node
+    elif command -v dnf &> /dev/null; then
+        sudo dnf install -y nodejs npm
+    elif command -v pacman &> /dev/null; then
+        sudo pacman -S --noconfirm nodejs npm
+    elif command -v yum &> /dev/null; then
+        sudo yum install -y nodejs npm
+    elif command -v zypper &> /dev/null; then
+        sudo zypper install -y nodejs npm
     else
         echo "Unsupported OS for Node.js installation. Please install Node.js and npm manually."
         exit 1
@@ -43,11 +55,11 @@ else
     echo "git is already installed."
 fi
 
-# Check and install npm
-if ! command -v npm &> /dev/null; then
-    install_npm
+# Check and install Node.js and npm
+if ! command -v node &> /dev/null; then
+    install_node
 else
-    echo "npm is already installed."
+    echo "Node.js and npm are already installed."
 fi
 
 # Check and install pnpm
