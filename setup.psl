@@ -1,0 +1,49 @@
+# Check for Git installation
+if (-Not (Get-Command git -ErrorAction SilentlyContinue)) {
+    Write-Host "Installing Git..."
+    Start-Process "https://git-scm.com/download/win" -Wait
+} else {
+    Write-Host "Git is already installed."
+}
+
+# Check for Node.js installation
+if (-Not (Get-Command node -ErrorAction SilentlyContinue)) {
+    Write-Host "Installing Node.js and npm..."
+    Start-Process "https://nodejs.org/en/download/" -Wait
+} else {
+    Write-Host "Node.js and npm are already installed."
+}
+
+# Install pnpm
+if (-Not (Get-Command pnpm -ErrorAction SilentlyContinue)) {
+    Write-Host "Installing pnpm..."
+    npm install -g pnpm
+} else {
+    Write-Host "pnpm is already installed."
+}
+
+# Define the repository URL
+$repoUrl = "https://github.com/HasangerGames/suroi-wiki.git"
+
+# Clone the repository
+Write-Host "Cloning the repository..."
+git clone $repoUrl
+
+# Change directory to the cloned repository
+Set-Location -Path "suroi-wiki"
+
+# Initialize and update git submodules
+Write-Host "Initializing and updating submodules..."
+git submodule init
+git submodule update
+
+# Install project dependencies
+Write-Host "Installing project dependencies..."
+pnpm install
+
+# Set up pre-commit hooks
+Write-Host "Setting up pre-commit hooks..."
+"pnpm lint; pnpm spellcheck" | Out-File -Encoding utf8 -FilePath ".git\hooks\pre-commit"
+chmod +x ".git\hooks\pre-commit"
+
+Write-Host "Setup complete! You can now run 'pnpm dev' to start the local development server."
