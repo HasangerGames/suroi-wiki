@@ -1,3 +1,2 @@
 <DevWeapon />
 
-<Stub />

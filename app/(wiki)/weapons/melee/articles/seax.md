@@ -1,4 +1,3 @@
-<Stub />
 The **Seax** is a melee weapon added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14, 2024.
 
 # Background

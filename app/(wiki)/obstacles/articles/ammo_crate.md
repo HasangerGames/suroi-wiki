@@ -1,4 +1,3 @@
-<Stub />
 The **Ammo Crate** is an impenetrable [Obstacle](/obstacles) added in the [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0) "Pulling the Pin" update on January 14th, 2024. It can only be destroyed using Airdrops or weapons with piercing damage.
 
 # Location & Spawning
