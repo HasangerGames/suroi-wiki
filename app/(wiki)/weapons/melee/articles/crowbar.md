@@ -1,4 +1,3 @@
-<Stub />
 The **Crowbar** is a melee weapon added in the [v0.18.2](https://github.com/HasangerGames/suroi/releases/tag/v0.18.2) "Locked & Loaded" update on June 24, 2023.
 
 # Background

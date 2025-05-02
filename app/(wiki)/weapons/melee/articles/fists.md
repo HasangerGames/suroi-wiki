@@ -1,4 +1,3 @@
-<Stub />
 **Fists** are a melee weapon added in the original beta release of Suroi on May 21st, 2023.
 
 # Background
