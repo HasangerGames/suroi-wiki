@@ -24,7 +24,7 @@ export default async function Home() {
           </h1>
           <p className="text-lg">
             The official wiki for the open source 2D battle royale game{" "}
-            <Link href="https://suroi.io">Suroi</Link>
+            <Link href="https://suroi.io">Suroi</Link>.
           </p>
           <div className="flex flex-row flex-wrap gap-4">
             <Pill href="https://suroi.io" text="Play Suroi" color="suroi" />
