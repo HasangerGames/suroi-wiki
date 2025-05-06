@@ -5,7 +5,6 @@ import { BuildingDefinition, Buildings } from "@/vendor/suroi/common/src/definit
 import { ObstacleDefinition, Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
 import { Orientation } from "@/vendor/suroi/common/src/typings";
 import { Hitbox, HitboxType, RectangleHitbox } from "@/vendor/suroi/common/src/utils/hitbox";
-import { getEffectiveZIndex } from "@/vendor/suroi/common/src/utils/layer";
 import { Angle, Numeric } from "@/vendor/suroi/common/src/utils/math";
 import { ObjectDefinition, ReferenceOrRandom, ReferenceTo } from "@/vendor/suroi/common/src/utils/objectDefinitions";
 import { random } from "@/vendor/suroi/common/src/utils/random";
@@ -19,6 +18,12 @@ const WALL_STROKE_WIDTH = 8;
 export const RENDERED_BUILDING_VIEWS = ["bunker", "first_floor", "second_floor", "ceiling"] as const;
 
 const IMAGES_IN_MM = ["headquarters_ceiling_1", "headquarters_ceiling_2", "headquarters_torture_window", "port_warehouse_ceiling"];
+
+const layerCount = Object.keys(ZIndexes).length / 2; // account for double-indexing
+
+export function getEffectiveZIndex(orig: ZIndexes, layer = Layer.Ground): number {
+  return orig + layer * layerCount;
+}
 
 function rotationToOrientation(rotation: number): number {
   return 3 - Numeric.absMod((rotation / Math.PI * 2) - 1, 4);
@@ -126,8 +131,8 @@ function getBuildingObjects(
 
     ...(building.subBuildings ?? [])
       .filter(b =>
-        (view === "second_floor" || b.layer !== Layer.Floor1)
-        && (view === "bunker" || b.layer !== Layer.Basement1)
+        (view === "second_floor" || b.layer !== Layer.Upstairs)
+        && (view === "bunker" || b.layer !== Layer.Basement)
       )
       .flatMap(b =>
         getBuildingObjects(
