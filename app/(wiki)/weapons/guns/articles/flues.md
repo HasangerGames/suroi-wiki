@@ -35,8 +35,12 @@ The Flues is currently the second-rarest shotgun in the game. It is about 5 time
   - The in-game Flues has its barrel sawn off.
 
 # History
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Updated world image
 - [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
   - Updated world image
+- [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)
+  - Updated loot image
 - [v0.21.5](https://github.com/HasangerGames/suroi/releases/tag/v0.21.5)
   - Recoil duration increased to 550 (from 100)
   - Recoil multiplier decreased to 0.5 (from 0.8)

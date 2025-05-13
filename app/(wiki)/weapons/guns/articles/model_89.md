@@ -22,6 +22,10 @@ The Model 89 can be found in [Regular Airdrops](/obstacles/airdrops), occasional
 - The Model 89 in-game is an 18" carbine with a standard walnut stock and a matte stainless steel finish.
 
 ## History
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Updated world image
+- [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
+  - Updated world image
 - [v0.21.0](https://github.com/HasangerGames/suroi/releases/tag/v0.21.0)
   - Damage increased to 55 (from 49)
   - Bullet speed increased to 0.31 (from 0.28)

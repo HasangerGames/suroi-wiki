@@ -44,7 +44,13 @@ The VSS is most easily found in special loot such as [AEGIS](/obstacles/aegis_cr
 - Out of all 9mm weapons, the VSS has the highest damage per bullet.
 
 # History
-
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Updated world image
+  - Updated loot image
+- [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
+  - Updated world image
+- [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+  - Renamed to VSS Vintorez (from VSS)
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
   - Casing type set to 9x39mm
 - [v0.12.1](https://github.com/HasangerGames/suroi/releases/tag/v0.12.1)

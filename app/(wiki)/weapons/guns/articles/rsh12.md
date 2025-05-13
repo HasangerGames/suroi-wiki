@@ -6,9 +6,9 @@ The RSh-12 was created for Russian Federal Security Service for use in high-stak
 # Strategies
 ## Using
 - The RSh-12 has limited ammo capacity, but enough damage to kill most players in 4-5 well placed shots. Try to lure your enemies away from cover, or destroy it with a secondary weapon such as an LMG.
-- You can use the RSh-12 as a good substitute for a shotgun at close ranges, with the same playstyle of peeking from cover. 
+- You can use the RSh-12 as a good substitute for a shotgun at close ranges, with the same play-style of peeking from cover.
 - Use the RSh-12 to start the fight on a significant health advantage, as two shots will bring your opponent to half health or lower, then finish with your secondary weapon. This can also be done in reverse if the enemy is trying to retreat.
-- Despite its otherwise short range, the RSh-12 can still outrange powerful weapons such as the [Vepr-12](/weapons/guns/vepr12), [Vector](/weapons/guns/vector), and [M3K](/weapons/guns/m3k) while doing significant burst damage to them. 
+- Despite its otherwise short range, the RSh-12 can still outrange powerful weapons such as the [Vepr-12](/weapons/guns/vepr12), [Vector](/weapons/guns/vector), and [M3K](/weapons/guns/m3k) while doing significant burst damage to them.
 - Wait between longer distance shots to take advantage of the First Shot Accuracy. This will waste fewer bullets to spread.
 - If you're running low on ammo, find a piercing weapon and look for ammo crates. They commonly drop 20 rounds of .50 cal ammunition.
 - If you find the dual variant of the RSh-12, don't hesitate to aggressively push players at close range and inside buildings. The dual RSh-12 DPS is high enough to win fights against anything but a [Flues](/weapons/guns/flues) or possibly [Dual DEagle](/weapons/guns/deagle).
@@ -25,11 +25,13 @@ The RSh-12 was created for Russian Federal Security Service for use in high-stak
 
 - The dual RSh-12 can be obtained from the [Dual RSh-12 Case](/obstacles/dual_rsh_case) which occasionally replaces the normal RSh-12 Case, the [Dual RSh-12 Gun Mount](/obstacles/gun_mounts) sometimes found in the [Plumpkin Bunker](/buildings/plumpkin_bunker)'s vault, and from [Gold Airdrops](/obstacles/gold_airdrop) and the [Flint Stone](/obstacles/flint_stone).
 
-# Trivia 
+# Trivia
 - The RSh-12 is the second revolver added to the game.
 - A variant of the RSh-12 chambered in 9x39mm also exists and is known as the RSh-9.
 
 # History
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Move speed penalty changed to increase of 13.6% (from decrease of 8%)
 - [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
   - Updated world image
   - Length increased to 5.35 (from 0.1)

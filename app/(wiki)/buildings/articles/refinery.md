@@ -12,7 +12,7 @@ The Loading Areas are located in the corners of the Refinery. Both have two [Reg
 
 ## Storage Area
 
-The Storage Area contains some AEGIS Crates, Regular Crates, and two [Large Refinery Barrels](/obstacles/large_refinery_barrel). 
+The Storage Area contains some AEGIS Crates, Regular Crates, and two [Large Refinery Barrels](/obstacles/large_refinery_barrel).
 - Each Large Refinery Barrel has 3500 health, but only one has to be broken to destroy the other due to the large explosion.
 
 ## Refinery
@@ -21,8 +21,8 @@ The actual Refinery building contains some tanks and equipment for refining oil,
 
 ## Office
 
-The Office, located towards the back of the Refinery, contains a wall mount and a [Table](/obstacles/table) with a [Chair](/obstacles/chair). 
-- The wall mount spawns with a [MCX Spear](/weapons/guns/mcx_spear) normally but also has a 1/100 chance to spawn a [Stoner 63](/weapons/guns/stoner_63) instead. 
+The Office, located towards the back of the Refinery, contains a wall mount and a [Table](/obstacles/table) with a [Chair](/obstacles/chair).
+- The wall mount spawns with a [MCX Spear](/weapons/guns/mcx_spear) normally but also has a 1/100 chance to spawn a [Stoner 63](/weapons/guns/stoner_63) instead.
 - You can hide under the Table to ambush players.
 
 # Tips
@@ -38,8 +38,11 @@ The Office, located towards the back of the Refinery, contains a wall mount and 
 - Exercise caution around the barrels in the hallway of the Refinery, as opponents will try to explode them to kill you.
 
 # History
-
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Increased chance of a Stoner 63 to 5% (from 1%)
+- [v0.23.1](https://github.com/HasangerGames/suroi/releases/tag/v0.23.1)
+  - Updated floor patterns
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
-  - The Stoner 63 now has a 1/100 chance of replacing the MCX Spear in the Office
+  - The Stoner 63 now has a 1% chance of replacing the MCX Spear in the Office
 - [v0.10.0](https://github.com/HasangerGames/suroi/releases/tag/v0.10.0)
   - Added

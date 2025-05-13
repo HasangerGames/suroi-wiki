@@ -18,10 +18,10 @@ Ammo Crates drop two loot instances of the following: 60 rounds of 5.56mm, 7.62m
 - [v0.21.3](https://github.com/HasangerGames/suroi/releases/tag/v0.21.3)
   - New Ammo Crate sprite
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
-  - Revamped the loot table for the Ammo Crate
+  - Ammo crates now drop 3 ammo types, instead of 1
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
-  - Now drops 10 rounds of 12.7 instead of 1
+  - Now drops 10 rounds of 12.7mm ammo instead of 1
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)
-  - Added 12.7 and curadell ammo types to loot table
+  - Added 12.7mm and Curadell ammo types to loot table
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added

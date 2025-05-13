@@ -16,7 +16,7 @@ The Center spawns on the right side of the Armory. It contains two [Chairs](/obs
 
 ## Vault
 
-The Vault spawns in the top left corner of the Armory. 
+The Vault spawns in the top left corner of the Armory.
 
 ### Outer Vault
 
@@ -64,6 +64,7 @@ The Porta Potty spawns near the exterior of the Vault.
 - In real life, an armory is a place for a military to store weapons.
 
 # History
-
+- [v0.23.1](https://github.com/HasangerGames/suroi/releases/tag/v0.23.1)
+  - Updated floor patterns
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Added

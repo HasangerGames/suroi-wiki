@@ -35,6 +35,8 @@ The Micro Uzi is a very common gun, and can be found from [Regular Crates](/obst
 - The Micro Uzi has the second highest DPS of any 9mm weapon in Suroi, and the lowest damage per bullet (of any 9mm weapon).
 
 # History
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Move speed penalty changed to increase of 13.6% (from decrease of 8%)
 - [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
   - Updated world image
   - Length decreased to 5.07 (from 5.8)

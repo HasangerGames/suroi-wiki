@@ -29,7 +29,12 @@ The most reliable way to get a Tango 51 is to head for the [Cargo Ship](/buildin
   - However, it is custom-made and far more precise than a standard Remington one.
 
 # History
-
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Now spawns with a 8x scope
+- [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
+  - Updated world image
+- [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)
+  - Updated loot image
 - [v0.14.0](https://github.com/HasangerGames/suroi/releases/tag/v0.14.0)
   - Length increased to 8.9 (from 8.2)
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
