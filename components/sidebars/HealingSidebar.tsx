@@ -48,7 +48,7 @@ export default function HealingSidebar({
       <InfoboxAudioGroup>
         <InfoboxAudio
           name="Use"
-          src={`https://github.com/HasangerGames/suroi/raw/master/client/public/audio/sfx/healing/${item.idString}.mp3`}
+          src={`https://suroi.io/audio/game/shared/healing/${item.idString}.mp3`}
         />
       </InfoboxAudioGroup>
 
