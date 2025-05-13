@@ -8,7 +8,7 @@ const BuildingArticles: string[] = [
   "warehouse", "containers",
   "porta_potty", "mobile_home", "shed", "tugboats", "lighthouse",
   "small_bridge", "large_bridge", "construction_site",
-  "refinery", "armory", "headquarters", "port_meta", "cargo_ship", "oil_tanker_ship",
+  "refinery", "armory", "headquarters", "port", "cargo_ship",
   "small_bunker",
   "lodge", "bombed_armory", "barn", "plumpkin_bunker",
   "outhouse", "tents", "hay_sheds",

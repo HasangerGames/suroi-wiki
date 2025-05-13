@@ -9,10 +9,10 @@ One Plumpkin Bunker attempts to spawn on the Harvest Map in a random position an
 ## Main Entrance
 The Main Entrance spawns in the center of a pumpkin patch. It contains two [Regular Crates](/obstacles/regular_crate), as well as an [Ammo Crate](/obstacles/ammo_crate), [Barrel](/obstacles/barrel), [Box](/obstacles/box) and a [Grenade Crate](/obstacles/grenade_crate). A sliding metal door leads down to the bunker itself.
 
-The entrance area of the bunker has no loot, only two Metal Detectors. Two sliding metal doors behind the Metal Detectors lead to the Foyer, while a blue sliding metal door on the side grants access to the Security Office. 
+The entrance area of the bunker has no loot, only two Metal Detectors. Two sliding metal doors behind the Metal Detectors lead to the Foyer, while a blue sliding metal door on the side grants access to the Security Office.
 
 ## Security Office
-The only way to access the Security Office is by activating the button located in the center of the Lobby. When pressed, it will unlock the blue metal sliding doors. 
+The only way to access the Security Office is by activating the button located in the center of the Lobby. When pressed, it will unlock the blue metal sliding doors.
 
 The storage side of the Security Office contains a [Gun Locker](/obstacles/gun_locker) flanked by two [Metal Shelves](/obstacles/metal_shelf). Opposite that are a [Gun Case](/obstacles/gun_case), [Barrel](/obstacles/barrel), and [Ammo Crate](/obstacles/ammo_crate).
 
@@ -42,7 +42,7 @@ The Warehouse is the largest space within the Plumpkin Bunker. It is accessible 
 In between the Utility Hallway and the Warehouse is the Generator Room. It contains a minor amount of loot, one each of a [Flint Crate](/obstacles/flint_crate), [Grenade Crate](/obstacles/grenade_crate), [Grenade Box](/obstacles/grenade_box), [Box](/obstacles/box), and [Metal Shelf](/obstacles/metal_shelf). Additional obstacles include a [Super Barrel](/obstacles/super_barrel), [Barrel](/obstacles/barrel), [Generator](/obstacles/generator), Primary Generator, and [Recorder](/obstacles/recorder). The Primary Generator provides power to the bunker, while the Generator is used as backup for auxiliary systems. The Generator Room is the site of a secret puzzle.
 
 <Spoiler spoiler="Generator Room Puzzle Solution">
-First, you must obtain a [Gas Can](/obstacles/gas_can). Because the [Port](/buildings/port_meta) does not spawn on the Harvest Map, the only way to obtain one is to use a melee weapon to destroy the [Mini Plumpkin](/obstacles/mini_plumpkin) in the Laboratory, and get lucky and get the Gas Can. Then, take the Gas Can and use it on the Generator. This will activate the Recorder and play a secret audio message.
+First, you must obtain a [Gas Can](/obstacles/gas_can). Because the [Port](/buildings/port) does not spawn on the Harvest Map, the only way to obtain one is to use a melee weapon to destroy the [Baby Plumpkin](/obstacles/baby_plumpkin) in the Laboratory, and get lucky and get the Gas Can. Then, take the Gas Can and use it on the Generator. This will activate the Recorder and play a secret audio message.
 
 NOTE: As of v0.20.0 there is currently no lore recording added and it plays static. A recording will be added in the future.
 </Spoiler>

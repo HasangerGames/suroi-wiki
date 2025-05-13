@@ -1,10 +1,10 @@
 <Mode />
 
-The **Baby Plumpkin** is an [Obstacle](/obstacles) that only spawns on the Harvest and Halloween Maps and was added alongside the Harvest Map in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. Visually, it resembles a smaller sized [Plumpkin](/obstacles/plumpkin).
+The **Baby Plumpkin** is an [Obstacle](/obstacles) that only spawns on the Harvest, Halloween, and Infection Maps, and was added alongside the Harvest Map in the [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0) "Open Season" update on October 27th, 2024. Visually, it resembles a smaller sized [Plumpkin](/obstacles/plumpkin).
 
 # Location & Spawning
 
-Three Baby Plumpkins spawn inside of the second chamber inside the laboratory of the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta). 
+Three Baby Plumpkins spawn inside of the second chamber inside the laboratory of the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta).
 
 # Loot & More
 

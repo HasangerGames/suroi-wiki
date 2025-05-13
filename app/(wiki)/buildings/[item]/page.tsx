@@ -10,24 +10,9 @@ export const BuildingMetaArticles = [
     fileName: "red_houses"
   },
   {
-    title: "Oil Tanker",
-    items: ["oil_tanker_ship"],
-    fileName: "oil_tanker"
-  },
-  {
     title: "Containers",
     items: range(11, 1).map(n => `container_${n}`), // This is so dumb lmao
     fileName: "containers"
-  },
-  {
-    title: "Port",
-    items: [
-      "port",
-      "port_complex",
-      "port_warehouse_red",
-      "port_warehouse_blue"
-    ],
-    fileName: "port_meta" // For some reason using `port` crashes my browser
   },
   {
     title: "Armory",
