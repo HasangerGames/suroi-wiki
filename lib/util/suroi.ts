@@ -52,7 +52,7 @@ export const IMAGE_BASE_URLS = {
   Backpack: "/loot",
   Scope: "/loot",
   Skin: "/skins",
-  ThrowableProjectile: "/projectiles",
+  Projectile: "/projectiles",
   Perk: "/perks",
 
   // Objects
@@ -115,7 +115,7 @@ type ObjectCategoryMapping<Category extends ObjectCategory> = {
   readonly [ObjectCategory.Building]: BuildingDefinition
   readonly [ObjectCategory.Decal]: DecalDefinition
   readonly [ObjectCategory.Parachute]: never
-  readonly [ObjectCategory.ThrowableProjectile]: never
+  readonly [ObjectCategory.Projectile]: never
   readonly [ObjectCategory.SyncedParticle]: SyncedParticleDefinition
 }[Category];
 
@@ -157,7 +157,7 @@ function _itemImageLink(
   append?: string | string[],
   dual?: boolean
 ) {
-  return `${IMAGE_BASE_URL}/game/${itemType === ItemType.Perk ? Perks.fromString(idString as ReferenceTo<PerkDefinition>).category === PerkCategories.Halloween ? "halloween" : "fall" : "shared"}${
+  return `${IMAGE_BASE_URL}/game/shared${
     IMAGE_BASE_URLS[ItemType[itemType] as keyof typeof ItemType]
   }/${dual ? idString : idString.replace("dual_", "")}${
     variation ? `_${variation}` : ""
