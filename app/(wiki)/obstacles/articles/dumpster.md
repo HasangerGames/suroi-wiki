@@ -2,7 +2,7 @@ The **Dumpster** is an [Obstacle](/obstacles) added in the [v0.19.0](https://git
 
 # Location & Spawning
 
-Dumpsters spawn in the [Port](/buildings/port_meta), inside the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta) and outside the [Headquarters](/buildings/headquarters).
+Dumpsters spawn in the [Port](/buildings/port), inside the [Plumpkin Bunker](/buildings/plumpkin_bunker_meta) and outside the [Headquarters](/buildings/headquarters).
 
 # Loot & More
 
