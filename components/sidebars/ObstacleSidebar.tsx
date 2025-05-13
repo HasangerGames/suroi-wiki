@@ -108,6 +108,7 @@ export default function ObstacleSidebar({
         {item.isStair && <InfoboxColumn title="Is Stair" />}
         {item.isWall && <InfoboxColumn title="Is Wall" />}
         {item.isWindow && <InfoboxColumn title="Is Window" />}
+        {item.customInteractMessage && <InfoboxColumn title="Custom Interact Message" />}
       </InfoboxRow>
 
       {/* Special Properties */}
@@ -139,11 +140,6 @@ export default function ObstacleSidebar({
             <InfoboxColumn title="Item Required">
               {item?.requiredItem ? getSuroiItem(item.requiredItem).name : "None"}
             </InfoboxColumn>
-            {item.interactText && (
-              <InfoboxColumn title="Interact Text">
-                {item.interactText}
-              </InfoboxColumn>
-            )}
             {/* TODO: Idk what happened here but blame hazinger */}
             {/* {item.interactDelay && (
               <InfoboxColumn title="Interaction Delay">
