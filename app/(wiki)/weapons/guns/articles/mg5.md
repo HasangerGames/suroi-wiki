@@ -32,7 +32,7 @@ The most common way to find an MG5 is through a [Gold Airdrop](/obstacles/gold_a
 
 # Trivia
 - In real life, the MG5 is classified as a GPMG (General Purpose Machine Gun), but it is a LMG in Suroi for simplicity.
-- The MG5 is one of two guns (the other being the [Negev](/weapons/guns/negev)) in Suroi that utilizes a belt feed system.
+- The MG5 is one of three guns (the others being the [Negev](/weapons/guns/negev) and the [PK-61](/weapons/guns/pk61) in Suroi that utilizes a belt feed system.
 
 # History
 - [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)
