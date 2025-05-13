@@ -35,7 +35,8 @@ The M3K is uncommon in general world loot, but fairly common in rarer loot sourc
   - Most likely, the M3K in-game uses an aftermarket magazine that only holds 9 rounds.
 
 # History
-
+- [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
+  - Updated world image
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - Center jitter on muzzle implicitly enabled
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)

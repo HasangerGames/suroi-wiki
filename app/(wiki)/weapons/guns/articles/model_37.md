@@ -22,7 +22,7 @@ After the shotgun was proven to be an effective weapon in WW1, demand for them s
 
 # Obtaining
 
-The Model 37 is fairly common as both ground loot as well as in places such as [Regular Crates](/obstacles/regular_crate).
+The Model 37 is fairly common as both ground loot as well as in places such as [Regular Crates](/obstacles/regular_crate). It can also spawn on the gun mount in the [Green House](/buildings/green_house).
 
 # Trivia
 
@@ -31,7 +31,10 @@ The Model 37 is fairly common as both ground loot as well as in places such as [
   - This is intended to make the shotgun more reliable by keeping out things that could foul it like dirt, dust, and water.
 
 # History
-
+- [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
+  - Updated world image
+- [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)
+  - Updated world image
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)
   - Center jitter on muzzle implicitly enabled
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)

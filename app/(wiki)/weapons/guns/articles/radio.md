@@ -16,6 +16,8 @@ Radios are a type of communication device that utilizes electromagnetic radio wa
 - The radio used the same sound effects as the [Deathray](/weapons/guns/death_ray) except for the firing sound until [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0).
 
 # History
+- [v0.23.1](https://github.com/HasangerGames/suroi/releases/tag/v0.23.1)
+  - Radios are now limited to 3 uses
 - [v0.17.1](https://github.com/HasangerGames/suroi/releases/tag/v0.17.1)
   - Bullet offset set to 1.5
 - [v0.17.0](https://github.com/HasangerGames/suroi/releases/tag/v0.17.0)

@@ -40,6 +40,15 @@ The Mosin-Nagant is an uncommon drop from higher-tier crates such as the [AEGIS 
   - It also the first sniper rifle added to Suroi.
 
 # History
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Updated world image
+  - Now spawns with a 4x scope
+- [v0.23.1](https://github.com/HasangerGames/suroi/releases/tag/v0.23.1)
+  - Updated loot and world images to have a scope, to distinguish from SKS
+- [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
+  - Updated world image
+- [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
+  - Updated loot image
 - [v0.19.0](https://github.com/HasangerGames/suroi/releases/tag/v0.19.0)
   - Can now be fully reloaded with a clip when empty
 - [v0.16.0](https://github.com/HasangerGames/suroi/releases/tag/v0.16.0)

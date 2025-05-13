@@ -28,6 +28,11 @@ The AUG is a very common gun, being more common than the [AK-47](weapons/guns/ak
 - The AUG was the first green colored gun added to the game.
 
 # History
+- [v0.24.1](https://github.com/HasangerGames/suroi/releases/tag/v0.24.1)
+  - Updated world image
+  - Updated killfeed image
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Updated world image
 - [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
   - Updated world image
   - Length increased to 6.8 (from 6.73)

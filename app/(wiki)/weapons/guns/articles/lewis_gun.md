@@ -39,7 +39,9 @@ The Lewis Gun can be rarely found as world loot, but it is more common in higher
 - The Lewis Gun is the first LMG added to the game.
 
 # History
-
+- [v0.23.0](https://github.com/HasangerGames/suroi/releases/tag/v0.23.0)
+  - Updated loot image
+  - Updated killfeed image
 - [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)
   - Updated world image
   - Damage increased to 16.5 (from 16)

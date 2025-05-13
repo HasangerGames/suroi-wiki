@@ -27,6 +27,11 @@ The VKS can be found rarely in [Airdrops](/obstacles/airdrop_crate), very rarely
 - In real-life, the VKS uses the same 12.7x55mm cartridge as the [RSh-12](/weapons/guns/rsh12) and ShAK-12.
 
 # History
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Updated world image
+  - Now spawns with a 8x scope
+- [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
+  - Updated world image
 - [v0.20.0](https://github.com/HasangerGames/suroi/releases/tag/v0.20.0)
   - Added
 

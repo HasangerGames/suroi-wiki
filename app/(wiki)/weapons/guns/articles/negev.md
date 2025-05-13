@@ -37,6 +37,13 @@ Finding a Negev is no easy task. The most common way to find a Negev is through 
   - This variant has been produced since 2012 and features many improvements such as a Picatinny rail.
 
 # History
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Moving spread decreased to 8° (from 10°)
+  - Updated killfeed image
+- [v0.23.0](https://github.com/HasangerGames/suroi/releases/tag/v0.23.0)
+  - Renamed to Negev SF (from Negev)
+- [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
+  - Updated world image
 - [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)
   - Updated world image
   - Length increased to 7.15 (from 8.1)

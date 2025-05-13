@@ -2,7 +2,7 @@ The **Stoner 63A Commando**, known in-game as the **Stoner 63**, is a 5.56mm LMG
 
 # Background
 
-The Stoner 63 was developed by Eugene Stoner after he left ArmaLite in 1961. Stoner also designed the AR-15/M-16 assault rifles and the AR-10 battle rifles. It was designed around the 5.56x45mm NATO cartridge and was a fully modular system. It could be configured as an assault rifle, carbine, top-fed light machine gun, belt-fed squad automatic weapon, or mounted to vehicles. The Stoner 63A was an improvement from the original design. The Stoner 63 saw limited use among U.S. special forces before being replaced by the M249 SAW. 
+The Stoner 63 was developed by Eugene Stoner after he left ArmaLite in 1961. Stoner also designed the AR-15/M-16 assault rifles and the AR-10 battle rifles. It was designed around the 5.56x45mm NATO cartridge and was a fully modular system. It could be configured as an assault rifle, carbine, top-fed light machine gun, belt-fed squad automatic weapon, or mounted to vehicles. The Stoner 63A was an improvement from the original design. The Stoner 63 saw limited use among U.S. special forces before being replaced by the M249 SAW.
 
 # Strategies
 
@@ -28,7 +28,7 @@ The Stoner 63 was developed by Eugene Stoner after he left ArmaLite in 1961. Sto
 
 # Obtaining
 
-The Stoner 63 is rarely found in [Flint](/obstacles/flint_crate) and [AEGIS Crates](/obstacles/aegis_crate) and uncommonly in [Airdrops](/obstacles/airdrop_crate). It can also be found extremely rarely as world loot. The Stoner 63 also has a 1% chance to spawn in the [Refinery](/buildings/refinery) in place of the [MCX Spear](/weapons/guns/mcx_spear).
+The Stoner 63 is rarely found in [Flint](/obstacles/flint_crate) and [AEGIS Crates](/obstacles/aegis_crate) and uncommonly in [Airdrops](/obstacles/airdrop_crate). It can also be found extremely rarely as world loot. The Stoner 63 also has a 5% chance to spawn in the [Refinery](/buildings/refinery) in place of the [MCX Spear](/weapons/guns/mcx_spear).
 
 # Trivia
 
@@ -37,6 +37,10 @@ The Stoner 63 is rarely found in [Flint](/obstacles/flint_crate) and [AEGIS Crat
 - Eugene Stoner also designed the [M16A2](/weapons/guns/m16a2) and the [SR-25](/weapons/guns/sr25).
 
 # History
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Increased spawn chance at the [Refinery](/buildings/refinery) to 5% (from 1%)
+- [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
+  - Updated world image
 - [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)
   - Updated world image
   - Length increased to 8 (from 7.7)

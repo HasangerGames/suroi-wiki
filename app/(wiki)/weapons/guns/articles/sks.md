@@ -16,16 +16,18 @@ The SKS was designed in the Soviet Union during the Second World War by Sergei G
 - All other DMRs are superior to the SKS in DPS and can easily dispatch an opponent with a SKS.
 - High-DPS weapons such as SMGs and shotguns can easily beat the SKS at close range.
 - Picking up Level 2 or 3 [Armor](/equipment/armor) will make you much harder for a SKS user to kill.
-- Strafe back and forth (especially with high adrenaline) to make the opponent miss. 
+- Strafe back and forth (especially with high adrenaline) to make the opponent miss.
 - One of the best defenses against a SKS user is either indestructible cover ([Oil Tanks](/obstacles/oil_tank), Containers, and [Buildings](/buildings)) or cover in general ([Rocks](/obstacles/rock) and [Trees](/obstacles/tree)). The low damage output of the SKS makes it difficult to effectively destroy cover.
 
 # Obtaining
-The SKS is very common and can be found in many basic loot sources such as [Regular Crates](/obstacles/regular_crate).
+The SKS is very common, and can be found in many basic loot sources such as [Regular Crates](/obstacles/regular_crate). It can also spawn on the gun mount in the [Green House](/buildings/green_house).
 
 # Trivia
 - The SKS is the second gun in Suroi that has the ability to reload bullets one at a time when partially empty, but do a full reload when emptied, the other being the [Mosin-Nagant](/weapons/guns/mosin_nagant)
 
 # History
+- [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
+  - Updated world image
 - [v0.22.1](https://github.com/HasangerGames/suroi/releases/tag/v0.22.1)
   - Shortened full reload time to 2.4s (from 3.2s)
 - [v0.20.1](https://github.com/HasangerGames/suroi/releases/tag/v0.20.1)

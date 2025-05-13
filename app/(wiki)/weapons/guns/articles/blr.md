@@ -11,7 +11,7 @@ The BLR Lightweight '81 is a lever action rifle and is a variant of the original
 ## Using
 
 - The BLR 556 can be seen as a worse version of the [Model 89](/weapons/guns/model_89) as it has the same fire delay.
-- The BLR 556 is a very useful gun early game as it can deal 80 damage just by hitting two shots, more than the damage of the [Tango 51](/weapons/guns/tango_51). 
+- The BLR 556 is a very useful gun early game as it can deal 80 damage just by hitting two shots, more than the damage of the [Tango 51](/weapons/guns/tango_51).
   - Make sure you always have all five shots ready to be fired to ensure maximum damage.
   - The BLR 556 becomes less useful mid game and almost obsolete end game due to the low magazine size and somewhat long reload time for such a low magazine capacity weapon which makes the BLR 556 unable to sustain solid DPS against an opponent as opposed to other DMRs like the [Mini-14](/weapons/guns/mini14) or even the [SKS](/weapons/guns/sks) due to its ability to reload two shots at a time.
 - The BLR 556 is somewhat similar to the [CZ-600](/weapons/guns/cz600), being chambered in the same ammunition, having the same rarity, and an identical magazine capacity. Compared to the CZ-600, the BLR 556 has a higher fire rate and DPS while the CZ-600 has higher single-shot damage, higher bullet speed, less spread, and a shorter reload time.
@@ -30,6 +30,9 @@ The BLR 556 can only be found on the Harvest Map, where it is a fairly common we
 - Similar to the [RG Scout](/weapons/guns/rgs) and [M1 Garand](/weapons/guns/m1_garand), the BLR 556 has a special firing sound that plays when the last round in the magazine is fired.
 
 ## History
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Increased bullet speed to 0.32 (from 0.28)
+  - Increased damage to 45 (from 40)
 - [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
   - Updated world image
   - Renamed to BLR 556 (from BLR)

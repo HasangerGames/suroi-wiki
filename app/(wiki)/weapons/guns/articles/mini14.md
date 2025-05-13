@@ -33,7 +33,12 @@ A Mini-14 always spawns on a [Gun Mount](/obstacles/gun_mounts) in the security 
 - The in-game Mini-14 is most likely the "Ranch" variant, which is the most basic configuration.
 
 # History
-
+- [v0.24.0](https://github.com/HasangerGames/suroi/releases/tag/v0.24.0)
+  - Updated world image
+- [v0.22.2](https://github.com/HasangerGames/suroi/releases/tag/v0.22.2)
+  - Updated world image
+- [v0.22.0](https://github.com/HasangerGames/suroi/releases/tag/v0.22.0)
+  - Updated loot image
 - [v0.15.0](https://github.com/HasangerGames/suroi/releases/tag/v0.15.0)
   - Casing velocity y-component set to [4, 15]
 - [v0.13.0](https://github.com/HasangerGames/suroi/releases/tag/v0.13.0)
