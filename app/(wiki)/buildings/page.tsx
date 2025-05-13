@@ -6,7 +6,7 @@ import { BuildingMetaArticles } from "./[item]/page";
 const BuildingArticles: string[] = [
   "red_houses", "green_house", "blue_house",
   "warehouse", "containers",
-  "porta_potty", "mobile_home", "shed", "tugboats", "sea_traffic_control",
+  "porta_potty", "mobile_home", "shed", "tugboats", "lighthouse",
   "small_bridge", "large_bridge", "construction_site",
   "refinery", "armory", "headquarters", "port_meta", "cargo_ship", "oil_tanker_ship",
   "small_bunker",

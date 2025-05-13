@@ -2,7 +2,7 @@ The **Life Preserver** is an [Obstacle](/obstacles) added in the [v0.16.0](https
 
 # Location & Spawning
 
-Two Life Preservers spawn on the walls of the [Sea Traffic Control](/buildings/sea_traffic_control) building. One Life Preserver also spawns in the interior of both types of [Tugboats](/buildings/tugboats).
+Four Life Preservers spawn on the upper level of the [Cargo Ship](/buildings/cargo_ship), and one on the lower level. One Life Preserver also spawns in the interior of both types of [Tugboats](/buildings/tugboats).
 
 # Loot & More
 
@@ -14,7 +14,7 @@ Life Preservers drop nothing upon being broken.
 
 # Trivia
 
-- In real life, life preservers are plastic portable buoys that provide buoyancy for a person who may be in danger from drowning, hence its name. 
+- In real life, life preservers are plastic portable buoys that provide buoyancy for a person who may be in danger from drowning, hence its name.
 
 # History
 

@@ -3,7 +3,7 @@ The **Gun Case** is an [Obstacle](/obstacles) added in the [v0.15.0](https://git
 
 # Location & Spawning
 
-Five Gun Cases spawn in the [Armory](/buildings/armory) in various locations around the structure, and one in the [Sea Traffic Control](/buildings/sea_traffic_control) building. 
+Five Gun Cases spawn in the [Armory](/buildings/armory) in various locations around the structure.
 
 # Loot & More
 

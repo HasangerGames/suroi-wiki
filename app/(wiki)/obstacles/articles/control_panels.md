@@ -1,4 +1,4 @@
-**Control Panels** are a type of explosive obstacle first added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023, which introduced three variants of the Control Panel. A fourth variant of the Control Panel was later added in update v0.16.0 "A Sailor's Dream" on February 26th, 2024. They come in four distinct variants. 
+**Control Panels** are a type of explosive obstacle first added in the [v0.11.0](https://github.com/HasangerGames/suroi/releases/tag/v0.11.0) "Making Waves" update on October 22nd, 2023, which introduced three variants of the Control Panel. A fourth variant of the Control Panel was later added in update v0.16.0 "A Sailor's Dream" on February 26th, 2024. They come in four distinct variants.
 
 # Location & Spawning
 
@@ -12,7 +12,7 @@ One Control Panel 2 spawns in the Captain's Cabin of the [Cargo Ship](/buildings
 
 ## Small Control Panel
 
-One Small Control panel spawns in the Captain's Cabin of the [Cargo Ship](/buildings/cargo_ship). Two Small Control Panels spawn in the Interior of the [Sea Traffic Control](/buildings/sea_traffic_control).
+One Small Control panel spawns in the Captain's Cabin of the [Cargo Ship](/buildings/cargo_ship). Two Small Control Panels spawn in the Interior of the [Lighthouse](/buildings/lighthouse).
 
 ## Tugboat Control Panel
 
