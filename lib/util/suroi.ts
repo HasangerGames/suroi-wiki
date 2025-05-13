@@ -157,7 +157,7 @@ function _itemImageLink(
   append?: string | string[],
   dual?: boolean
 ) {
-  return `${IMAGE_BASE_URL}/game/shared${
+  return `${IMAGE_BASE_URL}/game/${itemType === ItemType.Perk && Perks.fromString(idString as ReferenceTo<PerkDefinition>).category === PerkCategories.Halloween ? "halloween" : "shared"}${
     IMAGE_BASE_URLS[ItemType[itemType] as keyof typeof ItemType]
   }/${dual ? idString : idString.replace("dual_", "")}${
     variation ? `_${variation}` : ""
