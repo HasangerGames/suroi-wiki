@@ -1,6 +1,6 @@
 import GenericArticlePage from "@/components/generics/GenericArticlePage";
 import PerkSidebar from "@/components/sidebars/PerkSidebar";
-import { Perks } from "@/vendor/suroi/common/src/definitions/items/perks";
+import { Perks } from "@/vendor/suroi/common/src/definitions/perks";
 
 const toExport = GenericArticlePage({
   items: Perks.definitions,

@@ -8,18 +8,18 @@ import {
   DecalDefinition,
   Decals
 } from "@/vendor/suroi/common/src/definitions/decals";
-import { Guns } from "@/vendor/suroi/common/src/definitions/items/guns";
+import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import {
   LootDefinition,
   Loots,
   WeaponDefinition
 } from "@/vendor/suroi/common/src/definitions/loots";
-import { Melees } from "@/vendor/suroi/common/src/definitions/items/melees";
+import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import {
   ObstacleDefinition,
   Obstacles
 } from "@/vendor/suroi/common/src/definitions/obstacles";
-import { PerkCategories, PerkDefinition, Perks } from "@/vendor/suroi/common/src/definitions/items/perks";
+import { PerkCategories, PerkDefinition, Perks } from "@/vendor/suroi/common/src/definitions/perks";
 import { SyncedParticleDefinition } from "@/vendor/suroi/common/src/definitions/syncedParticles";
 import {
   ItemType,
@@ -115,9 +115,8 @@ type ObjectCategoryMapping<Category extends ObjectCategory> = {
   readonly [ObjectCategory.Building]: BuildingDefinition
   readonly [ObjectCategory.Decal]: DecalDefinition
   readonly [ObjectCategory.Parachute]: never
-  readonly [ObjectCategory.Projectile]: never
   readonly [ObjectCategory.SyncedParticle]: SyncedParticleDefinition
-}[Category];
+};
 
 export function getSuroiImageLink(obj: ObjectDefinition, variation?: number, append?: string | string[], dual?: boolean) {
   switch (true) {

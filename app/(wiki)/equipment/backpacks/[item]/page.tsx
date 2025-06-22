@@ -1,6 +1,6 @@
 import GenericArticlePage from "@/components/generics/GenericArticlePage";
 import BackpackSidebar from "@/components/sidebars/BackpackSidebar";
-import { Backpacks } from "@/vendor/suroi/common/src/definitions/items/backpacks";
+import { Backpacks } from "@/vendor/suroi/common/src/definitions/backpacks";
 
 const toExport = GenericArticlePage({
   items: Backpacks.definitions,

@@ -1,6 +1,6 @@
 import { getSuroiImageLink, imageLink } from "@/lib/util/suroi";
 import { SVGObject } from "@/lib/util/types";
-import { Layer, ObjectCategory, RotationMode, ZIndexes } from "@/vendor/suroi/common/src/constants";
+import { Layer, ObjectCategory, ZIndexes } from "@/vendor/suroi/common/src/constants";
 import { BuildingDefinition, Buildings } from "@/vendor/suroi/common/src/definitions/buildings";
 import { ObstacleDefinition, Obstacles } from "@/vendor/suroi/common/src/definitions/obstacles";
 import { Orientation } from "@/vendor/suroi/common/src/typings";
@@ -122,7 +122,7 @@ function getBuildingObjects(
             ? renderWall(obstacle as WallObstacle)
             : getSuroiImageLink(obstacle, (variation !== undefined ? variation + 1 : obstacle.variations !== undefined ? random(1, obstacle.variations) : undefined)),
           x, y,
-          rotation: obstacle.rotationMode === RotationMode.None ? 0 : Angle.radiansToDegrees(Angle.orientationToRotation(rotation)),
+          rotation: 0,
           scaleX: scale ?? 1,
           scaleY: scale ?? 1,
           zIndex: getEffectiveZIndex(obstacle.zIndex ?? ZIndexes.ObstaclesLayer1, layer)

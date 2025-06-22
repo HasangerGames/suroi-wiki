@@ -2,7 +2,7 @@ import EditButton from "@/components/interactive/EditButton";
 import GunGraphButton from "@/components/interactive/GunGraphButton";
 import GunSidebar from "@/components/sidebars/GunSidebar";
 import { Explosions } from "@/vendor/suroi/common/src/definitions/explosions";
-import { Guns } from "@/vendor/suroi/common/src/definitions/items/guns";
+import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
 import { notFound } from "next/navigation";
 
 export default function GunLayout({
@@ -30,7 +30,7 @@ export default function GunLayout({
         <GunGraphButton gun={gun} />
       </div>
       <GunSidebar gun={gun} explosion={explosion} />
-      {/* here because reverse flex-col */}
+      {}
       <div className="prose prose-invert sm:hidden">
         <h1>{gun.name}</h1>
       </div>

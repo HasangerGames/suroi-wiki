@@ -1,5 +1,5 @@
 import { getSuroiImageLink } from "@/lib/util/suroi";
-import { ArmorDefinition } from "@/vendor/suroi/common/src/definitions/items/armors";
+import { ArmorDefinition } from "@/vendor/suroi/common/src/definitions/armors";
 import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";
 import InfoboxHeader from "./utils/InfoboxHeader";

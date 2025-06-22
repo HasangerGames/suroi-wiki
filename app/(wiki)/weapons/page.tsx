@@ -2,10 +2,10 @@ import PageCard from "@/components/cards/PageCard";
 import Collapsible from "@/components/interactive/Collapsible";
 import GridTable from "@/components/tables/GridTable";
 import { getSuroiImageLink } from "@/lib/util/suroi";
-import { Guns } from "@/vendor/suroi/common/src/definitions/items/guns";
-import { Melees } from "@/vendor/suroi/common/src/definitions/items/melees";
+import { Guns } from "@/vendor/suroi/common/src/definitions/guns";
+import { Melees } from "@/vendor/suroi/common/src/definitions/melees";
 import { Explosions } from "@/vendor/suroi/common/src/definitions/explosions";
-import { Throwables } from "@/vendor/suroi/common/src/definitions/items/throwables";
+import { Throwables } from "@/vendor/suroi/common/src/definitions/throwables";
 import Link from "next/link";
 import TableWithHeader from "@/components/tables/TableWithHeader";
 import { FireMode } from "@/vendor/suroi/common/src/constants";
@@ -74,9 +74,6 @@ export default function WeaponsPage() {
       >
         <GridTable>
           {Guns.definitions
-            .filter(gun => {
-              return !gun.isDual;
-            })
             .map(gun => (
               <PageCard
                 title={gun.name}
@@ -87,6 +84,33 @@ export default function WeaponsPage() {
               />
             ))}
         </GridTable>
+        <pre>
+          {(function () {
+            let ammo = new Set<string>;
+            for (const gun of Guns.definitions) {
+              ammo.add(gun.ammoType)
+            }
+            let str = '';
+            for (let am of ammo) {
+              str += `=== [[File:${am}.svg|32px]] ${am} ===\n{{Item list\n`
+              str += Guns.definitions
+                .filter(gun => {
+                  return gun.ammoType == am && !gun.isDual;
+                })
+                .sort((a, b) => ((a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0))
+                .map(gun => {
+                  return `| {{Item|${gun.name}}}\n`
+                }).join("") + '}}\n'
+            }
+            return str
+          })()}
+        </pre>
+        <pre>
+          {Guns.definitions
+            .map(gun => {
+              return `["${gun.name}", "https://suroi.io/img/game/shared/weapons/${gun.idString}.svg"],\n`
+            })}
+        </pre>
       </Collapsible>
       <Collapsible
         label={(
@@ -107,6 +131,19 @@ export default function WeaponsPage() {
             />
           ))}
         </GridTable>
+        <pre>
+          {Melees.definitions
+            .map(melee => {
+              return `["${melee.name}", "https://suroi.io/img/game/shared/weapons/${melee.idString}.svg"],\n`
+            })}
+        </pre>
+        <pre>
+          {Melees.definitions
+                .sort((a, b) => ((a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0))
+            .map(gun => {
+                  return `| {{Item|${gun.name}}}\n`
+            }).join("")}
+        </pre>
       </Collapsible>
       <Collapsible
         label={(
@@ -130,6 +167,19 @@ export default function WeaponsPage() {
             />
           ))}
         </GridTable>
+        <pre>
+          {Throwables.definitions
+            .map(melee => {
+              return `["${melee.name}", "https://suroi.io/img/game/shared/weapons/${melee.idString}.svg"],\n`
+            })}
+        </pre>
+        <pre>
+          {Throwables.definitions
+                .sort((a, b) => ((a.name < b.name) ? -1 : (a.name > b.name) ? 1 : 0))
+            .map(gun => {
+                return `| {{Item|${gun.name}}}\n`
+            }).join("") + '\n'}
+        </pre>
       </Collapsible>
       <Collapsible
         label={(

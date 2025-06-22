@@ -1,7 +1,7 @@
 import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
 import { ImageTab } from "@/lib/util/types";
-import { Skins } from "@/vendor/suroi/common/src/definitions/items/skins";
-import { ThrowableDefinition } from "@/vendor/suroi/common/src/definitions/items/throwables";
+import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
+import { ThrowableDefinition } from "@/vendor/suroi/common/src/definitions/throwables";
 import PlayerHoldingThrowable from "../svg/special/PlayerHoldingThrowable";
 import ExplosionRow from "./utils/ExplosionRow";
 import GenericSidebar from "./utils/GenericSidebar";

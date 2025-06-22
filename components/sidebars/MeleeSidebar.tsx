@@ -1,6 +1,6 @@
 import { getSuroiImageLink, getSuroiKillfeedImageLink } from "@/lib/util/suroi";
-import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/items/melees";
-import { Skins } from "@/vendor/suroi/common/src/definitions/items/skins";
+import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/melees";
+import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 import PlayerHoldingMelee from "../svg/special/PlayerHoldingMelee";
 import GenericSidebar from "./utils/GenericSidebar";
 import InfoboxColumn from "./utils/InfoboxColumn";

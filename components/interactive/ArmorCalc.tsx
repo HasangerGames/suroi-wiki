@@ -4,11 +4,11 @@ import {
   ArmorDefinition,
   ArmorType,
   Armors
-} from "@/vendor/suroi/common/src/definitions/items/armors";
+} from "@/vendor/suroi/common/src/definitions/armors";
 import {
   GunDefinition,
   Guns
-} from "@/vendor/suroi/common/src/definitions/items/guns";
+} from "@/vendor/suroi/common/src/definitions/guns";
 import { useState } from "react";
 
 const Helmets = Armors.definitions.filter(

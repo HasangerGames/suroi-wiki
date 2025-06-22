@@ -1,5 +1,5 @@
 import ThrowableSidebar from "@/components/sidebars/ThrowableSidebar";
-import { Throwables } from "@/vendor/suroi/common/src/definitions/items/throwables";
+import { Throwables } from "@/vendor/suroi/common/src/definitions/throwables";
 import { notFound } from "next/navigation";
 
 export default function ThrowableLayout({

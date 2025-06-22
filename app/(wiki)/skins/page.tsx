@@ -1,6 +1,6 @@
 import SkinCard from "@/components/cards/SkinCard";
 import GridTable from "@/components/tables/GridTable";
-import { Skins } from "@/vendor/suroi/common/src/definitions/items/skins";
+import { Skins } from "@/vendor/suroi/common/src/definitions/skins";
 
 export default function SkinsPage() {
   return (

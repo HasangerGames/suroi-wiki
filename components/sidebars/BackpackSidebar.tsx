@@ -3,7 +3,7 @@ import {
   getSuroiImageLink,
   getSuroiItem
 } from "@/lib/util/suroi";
-import { BackpackDefinition } from "@/vendor/suroi/common/src/definitions/items/backpacks";
+import { BackpackDefinition } from "@/vendor/suroi/common/src/definitions/backpacks";
 import Image from "next/image";
 import AmmoIcon from "../icons/AmmoIcon";
 import HealingIcon from "../icons/HealingIcon";

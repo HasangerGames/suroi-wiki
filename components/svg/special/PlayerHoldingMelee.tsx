@@ -3,8 +3,8 @@
 import { easeLinear } from "@/lib/util/animation";
 import { getSuroiImageLink } from "@/lib/util/suroi";
 import { SVGObject } from "@/lib/util/types";
-import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/items/melees";
-import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/items/skins";
+import { MeleeDefinition } from "@/vendor/suroi/common/src/definitions/melees";
+import { SkinDefinition } from "@/vendor/suroi/common/src/definitions/skins";
 import { useEffect, useState } from "react";
 import SVGObjectRenderer from "../SVGObjectRenderer";
 
